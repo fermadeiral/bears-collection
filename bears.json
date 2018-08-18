@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327564166,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/327564166",
+      "date": "Jan 11, 2018 8:39:32 AM"
+    },
+    "fixerBuild": {
+      "id": 327583209,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/327583209",
+      "date": "Jan 11, 2018 9:50:11 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 18, 2018 4:34:18 AM",
+    "reproductionDateEnd": "Aug 18, 2018 5:09:25 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 159872472,
+      "totalMemory": 938999808
+    },
+    "totalDuration": 2100,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 280,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          280
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 122,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          119
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 757,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          757
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/327564166/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/327564166/languagetool-wikipedia",
+    "overallMetrics": {
+      "numberRunning": 916,
+      "numberPassing": 914,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 29,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.dev.wikipedia.atom.AtomFeedCheckerTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.dev.wikipedia.atom.AtomFeedCheckerTest",
+        "testMethod": "testCheck",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c1\u003e\n     but: was \u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.dev.wikipedia.atom.AtomFeedCheckerTest",
+        "testMethod": "testCheckToDatabase",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c1\u003e\n     but: was \u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 744,
+    "numberTestFiles": 482,
+    "numberLibrariesFailingModule": 95,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "215534ba154d73d5fda5e80e442627a4b0dd257a",
+      "url": "http://github.com/languagetool-org/languagetool/commit/215534ba154d73d5fda5e80e442627a4b0dd257a",
+      "date": "Jan 11, 2018 8:26:17 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "c0073715dd9c7f389ff27526b6d54e0cf6fd4557",
+      "url": "http://github.com/languagetool-org/languagetool/commit/c0073715dd9c7f389ff27526b6d54e0cf6fd4557",
+      "date": "Jan 11, 2018 9:37:45 AM"
+    }
+  },
+  "type": "failing_passing"
+}
