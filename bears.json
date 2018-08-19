@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/calcite",
+    "githubId": 21193524,
+    "url": "https://github.com/apache/calcite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327969229,
+      "url": "http://travis-ci.org/apache/calcite/builds/327969229",
+      "date": "Jan 12, 2018 5:11:54 AM"
+    },
+    "fixerBuild": {
+      "id": 329728731,
+      "url": "http://travis-ci.org/apache/calcite/builds/329728731",
+      "date": "Jan 17, 2018 1:51:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 6:48:28 PM",
+    "reproductionDateEnd": "Aug 19, 2018 7:10:46 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 251474784,
+      "totalMemory": 506462208
+    },
+    "totalDuration": 1328,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          20
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          124
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 480,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          480
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/calcite/327969229/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/calcite/327969229/core",
+    "overallMetrics": {
+      "numberRunning": 4504,
+      "numberPassing": 4501,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 109,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "numberRunning": 101,
+        "numberPassing": 98,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 17
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "testMethod": "testJoinMaterializationUKFK9",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"EnumerableTableScan(table\u003d[[hr, m0]])\"\n     but: was \"PLAN\u003dEnumerableCalc(expr#0..4\u003d[{inputs}], empid\u003d[$t1], empid0\u003d[$t4], deptno\u003d[$t2])\n  EnumerableJoin(condition\u003d[\u003d($0, $2)], joinType\u003d[inner])\n    EnumerableCalc(expr#0..3\u003d[{inputs}], deptno\u003d[$t0])\n      EnumerableTableScan(table\u003d[[hr, depts]])\n    EnumerableJoin(condition\u003d[\u003d($0, $3)], joinType\u003d[inner])\n      EnumerableCalc(expr#0..4\u003d[{inputs}], expr#5\u003d[CAST($t2):VARCHAR CHARACTER SET \"ISO-8859-1\" COLLATE \"ISO-8859-1$en_US$primary\"], expr#6\u003d[\u0027Bill\u0027], expr#7\u003d[\u003d($t5, $t6)], proj#0..2\u003d[{exprs}], $condition\u003d[$t7])\n        EnumerableTableScan(table\u003d[[hr, emps]])\n      EnumerableCalc(expr#0..1\u003d[{inputs}], empid\u003d[$t0])\n        EnumerableTableScan(table\u003d[[hr, dependents]])\n\n\"",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "testMethod": "testJoinMaterializationUKFK5",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"EnumerableCalc(expr#0..1\u003d[{inputs}], empid0\u003d[$t0])\\n  EnumerableTableScan(table\u003d[[hr, m0]])\"\n     but: was \"PLAN\u003dEnumerableCalc(expr#0..1\u003d[{inputs}], empid\u003d[$t0])\n  EnumerableTableScan(table\u003d[[hr, m0]])\n\n\"",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "testMethod": "testJoinMaterializationUKFK6",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"EnumerableCalc(expr#0..1\u003d[{inputs}], empid0\u003d[$t0])\\n  EnumerableTableScan(table\u003d[[hr, m0]])\"\n     but: was \"PLAN\u003dEnumerableCalc(expr#0..1\u003d[{inputs}], empid\u003d[$t0])\n  EnumerableTableScan(table\u003d[[hr, m0]])\n\n\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 18,
+    "numberSourceFiles": 1446,
+    "numberTestFiles": 182,
+    "numberLibrariesFailingModule": 46,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "fa19580ecfe404b75fcb6c9c174cfe9da73d2db8",
+      "url": "http://github.com/apache/calcite/commit/fa19580ecfe404b75fcb6c9c174cfe9da73d2db8",
+      "date": "Jan 12, 2018 4:53:24 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "73e57ad482b030368b8048874bc1f9159ecc42c4",
+      "url": "http://github.com/apache/calcite/commit/73e57ad482b030368b8048874bc1f9159ecc42c4",
+      "date": "Jan 17, 2018 4:24:35 AM"
+    }
+  },
+  "type": "passing_passing"
+}
