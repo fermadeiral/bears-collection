@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "atomix/atomix",
+    "githubId": 16294920,
+    "url": "https://github.com/atomix/atomix",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327498652,
+      "url": "http://travis-ci.org/atomix/atomix/builds/327498652",
+      "date": "Jan 11, 2018 3:27:01 AM"
+    },
+    "fixerBuild": {
+      "id": 328211277,
+      "url": "http://travis-ci.org/atomix/atomix/builds/328211277",
+      "date": "Jan 15, 2018 8:51:18 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 11:56:59 PM",
+    "reproductionDateEnd": "Aug 20, 2018 12:12:34 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 292347808,
+      "totalMemory": 458752000
+    },
+    "totalDuration": 928,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 107,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          107
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 242,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          242
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/atomix/atomix/327498652/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "c731c67280e574591d87d48217a53237175fbd02",
+      "url": "http://github.com/atomix/atomix/commit/c731c67280e574591d87d48217a53237175fbd02",
+      "date": "Jan 11, 2018 2:39:30 AM"
+    },
+    "fixerBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "url": "http://github.com/atomix/atomix/commit/832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "date": "Jan 12, 2018 6:36:15 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/atomix/atomix/327498652/protocols/raft",
+    "overallMetrics": {
+      "numberRunning": 772,
+      "numberPassing": 771,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.protocols.raft.proxy.impl.MemberSelectorTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.protocols.raft.proxy.impl.MemberSelectorTest",
+        "testMethod": "testSelectLeader",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "leader must be present in members list",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 694,
+    "numberTestFiles": 99,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
