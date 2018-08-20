@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp",
+    "githubId": 86105877,
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 330973656,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/330973656",
+      "date": "Jan 19, 2018 9:22:50 PM"
+    },
+    "fixerBuild": {
+      "id": 330980388,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/330980388",
+      "date": "Jan 19, 2018 9:42:27 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 20, 2018 4:44:37 AM",
+    "reproductionDateEnd": "Aug 20, 2018 4:54:54 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 326736600,
+      "totalMemory": 457179136
+    },
+    "totalDuration": 610,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 412,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          8,
+          4,
+          0,
+          400
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          21
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/330973656/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/330973656/spring-cloud-gcp-storage",
+    "overallMetrics": {
+      "numberRunning": 37,
+      "numberPassing": 36,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.storage.GoogleStorageTests",
+        "numberRunning": 22,
+        "numberPassing": 21,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.storage.GoogleStorageTests",
+        "testMethod": "testValidObjectWithUnderscore",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 95,
+    "numberTestFiles": 26,
+    "numberLibrariesFailingModule": 68,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "a3a51c0a9c3ec700ac2f3de60c25073fbdbdd41a",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/a3a51c0a9c3ec700ac2f3de60c25073fbdbdd41a",
+      "date": "Jan 19, 2018 9:18:46 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "6c5a5cede49cfa8c546dcdbeef4b34c0e4e33f95",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/6c5a5cede49cfa8c546dcdbeef4b34c0e4e33f95",
+      "date": "Jan 19, 2018 9:37:02 PM"
+    }
+  },
+  "type": "passing_passing"
+}
