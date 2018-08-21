@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 335666803,
+      "url": "http://travis-ci.org/aicis/fresco/builds/335666803",
+      "date": "Jan 31, 2018 4:33:31 PM"
+    },
+    "fixerBuild": {
+      "id": 335692003,
+      "url": "http://travis-ci.org/aicis/fresco/builds/335692003",
+      "date": "Jan 31, 2018 5:22:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 7:42:49 PM",
+    "reproductionDateEnd": "Aug 21, 2018 8:28:22 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 432103040,
+      "totalMemory": 495452160
+    },
+    "totalDuration": 2726,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 87,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          87
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1252,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1252
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/335666803/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/335666803/suite/spdz",
+    "overallMetrics": {
+      "numberRunning": 646,
+      "numberPassing": 645,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.storage.TestSpdzConfigurableDataSupplier",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.storage.TestSpdzConfigurableDataSupplier",
+        "testMethod": "testGetNextTriple",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c247\u003e but was:\u003c48\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 380,
+    "numberTestFiles": 209,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "226-dummy-supplier",
+      "sha": "b523ab08e6af2e7423111f61e2cb938b0cc64cdd",
+      "url": "http://github.com/aicis/fresco/commit/b523ab08e6af2e7423111f61e2cb938b0cc64cdd",
+      "date": "Jan 31, 2018 4:14:00 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "226-dummy-supplier",
+      "sha": "84f3c14ca7daf9105c4ca89c90a2ebb276b0be40",
+      "url": "http://github.com/aicis/fresco/commit/84f3c14ca7daf9105c4ca89c90a2ebb276b0be40",
+      "date": "Jan 31, 2018 5:04:21 PM"
+    }
+  },
+  "type": "passing_passing"
+}
