@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 334315742,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/334315742",
+      "date": "Jan 28, 2018 10:53:01 AM"
+    },
+    "fixerBuild": {
+      "id": 334319882,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/334319882",
+      "date": "Jan 28, 2018 11:16:03 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 12:36:00 PM",
+    "reproductionDateEnd": "Aug 21, 2018 1:02:31 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 809553496,
+      "totalMemory": 1341128704
+    },
+    "totalDuration": 1581,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 270,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          270
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 134,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          2,
+          131
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 194,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          194
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/334315742/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/334315742/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 411,
+      "numberPassing": 410,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest",
+        "testMethod": "testDetNounRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Found unexpected match in sentence \u0027Das erlaubt Forschern, neue Versuche durchzuführen.\u0027: [DE_AGREEMENT:0-21:Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen bezüglich Kasus, Numerus oder Genus. Beispiel: \u0027mein kleiner Haus\u0027 statt \u0027mein kleines Haus\u0027] expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 744,
+    "numberTestFiles": 482,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "452babc2259606eb6a26cbb940b26d4ac6665d83",
+      "url": "http://github.com/languagetool-org/languagetool/commit/452babc2259606eb6a26cbb940b26d4ac6665d83",
+      "date": "Jan 28, 2018 10:40:32 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "0a6fab10d6559038b3b5a56b8180fbf7523b7d93",
+      "url": "http://github.com/languagetool-org/languagetool/commit/0a6fab10d6559038b3b5a56b8180fbf7523b7d93",
+      "date": "Jan 28, 2018 11:03:32 AM"
+    }
+  }
+}
