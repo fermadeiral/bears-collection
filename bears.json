@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "cpesch/RouteConverter",
+    "githubId": 1271699,
+    "url": "https://github.com/cpesch/RouteConverter",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 331125693,
+      "url": "http://travis-ci.org/cpesch/RouteConverter/builds/331125693",
+      "date": "Jan 20, 2018 8:53:18 AM"
+    },
+    "fixerBuild": {
+      "id": 331749933,
+      "url": "http://travis-ci.org/cpesch/RouteConverter/builds/331749933",
+      "date": "Jan 22, 2018 11:53:38 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 11:17:00 PM",
+    "reproductionDateEnd": "Aug 21, 2018 11:23:27 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 294795312,
+      "totalMemory": 548405248
+    },
+    "totalDuration": 380,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 159,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          158
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/cpesch/RouteConverter/331125693/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/cpesch/RouteConverter/331125693/navigation-formats",
+    "overallMetrics": {
+      "numberRunning": 430,
+      "numberPassing": 429,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "slash.navigation.csv.ExcelFormatTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "slash.navigation.csv.ExcelFormatTest",
+        "testMethod": "testSetAndGetTime",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 1411,
+    "numberTestFiles": 165,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "cpesch/RouteConverter",
+      "branchName": "master",
+      "sha": "6776ddcd18f883f1f37810b50e824fcc70e534e6",
+      "url": "http://github.com/cpesch/RouteConverter/commit/6776ddcd18f883f1f37810b50e824fcc70e534e6",
+      "date": "Jan 20, 2018 8:26:26 AM"
+    },
+    "fixerBuild": {
+      "repoName": "cpesch/RouteConverter",
+      "branchName": "master",
+      "sha": "81710d9c624fb24dfa08e5bbfe853972b00ba71b",
+      "url": "http://github.com/cpesch/RouteConverter/commit/81710d9c624fb24dfa08e5bbfe853972b00ba71b",
+      "date": "Jan 22, 2018 11:47:15 AM"
+    }
+  },
+  "type": "passing_passing"
+}
