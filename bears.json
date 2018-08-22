@@ -1,0 +1,163 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 336061452,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/336061452",
+      "date": "Feb 1, 2018 1:19:09 PM"
+    },
+    "fixerBuild": {
+      "id": 336065127,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/336065127",
+      "date": "Feb 1, 2018 1:44:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 22, 2018 10:46:36 PM",
+    "reproductionDateEnd": "Aug 22, 2018 11:26:33 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 756121952,
+      "totalMemory": 1293942784
+    },
+    "totalDuration": 2388,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          48
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 499,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          497
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 541,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          541
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/336061452/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 12,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/336061452/molgenis-semantic-mapper",
+    "overallMetrics": {
+      "numberRunning": 3437,
+      "numberPassing": 3435,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.testng.TestException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest",
+        "numberRunning": 10,
+        "numberPassing": 8,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest",
+        "testMethod": "testApplyWithInvalidScript",
+        "failureName": "org.testng.TestException",
+        "detail": "\nExpected exception org.molgenis.script.core.ScriptException but got java.lang.NullPointerException",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest",
+        "testMethod": "testApplyAlgorithmWitInvalidScript",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [algorithm is not defined] but found [Applying an algorithm on a null source value caused an exception. Is the target attribute required?]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 56,
+    "numberSourceFiles": 1205,
+    "numberTestFiles": 515,
+    "numberLibrariesFailingModule": 203,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "6.0",
+      "sha": "bcdf56e5d7f1f49fad793871dbd0cb6ac1f3ad1b",
+      "url": "http://github.com/molgenis/molgenis/commit/bcdf56e5d7f1f49fad793871dbd0cb6ac1f3ad1b",
+      "date": "Feb 1, 2018 12:45:11 PM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "6.0",
+      "sha": "ad7d5e36da0a5e88be6acaf281c2f74e6f50d796",
+      "url": "http://github.com/molgenis/molgenis/commit/ad7d5e36da0a5e88be6acaf281c2f74e6f50d796",
+      "date": "Feb 1, 2018 12:55:08 PM"
+    }
+  },
+  "type": "passing_passing"
+}
