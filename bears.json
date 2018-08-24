@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 340081033,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/340081033",
+      "date": "Feb 11, 2018 10:51:05 AM"
+    },
+    "fixerBuild": {
+      "id": 340087615,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/340087615",
+      "date": "Feb 11, 2018 11:27:13 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 24, 2018 7:07:34 AM",
+    "reproductionDateEnd": "Aug 24, 2018 7:33:01 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 450913296,
+      "totalMemory": 933232640
+    },
+    "totalDuration": 1518,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 286,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          286
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 107,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          105
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 196,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          196
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/340081033/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/340081033/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 416,
+      "numberPassing": 415,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.DashRuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.DashRuleTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 748,
+    "numberTestFiles": 485,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "b31ccd05781d8c097f1f997c01928396761d1985",
+      "url": "http://github.com/languagetool-org/languagetool/commit/b31ccd05781d8c097f1f997c01928396761d1985",
+      "date": "Feb 11, 2018 10:39:43 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "9c56a1ecbc329abbe95d6c72d85b538ee5c9e2a6",
+      "url": "http://github.com/languagetool-org/languagetool/commit/9c56a1ecbc329abbe95d6c72d85b538ee5c9e2a6",
+      "date": "Feb 11, 2018 11:13:45 AM"
+    }
+  },
+  "type": "passing_passing"
+}
