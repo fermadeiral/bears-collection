@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 343169341,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/343169341",
+      "date": "Feb 19, 2018 1:40:31 AM"
+    },
+    "fixerBuild": {
+      "id": 343262003,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/343262003",
+      "date": "Feb 19, 2018 9:40:35 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 24, 2018 9:15:55 PM",
+    "reproductionDateEnd": "Aug 24, 2018 9:50:59 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 246783640,
+      "totalMemory": 1385693184
+    },
+    "totalDuration": 2098,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 272,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          272
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 121,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          118
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 761,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          761
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/343169341/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/343169341/languagetool-office-extension",
+    "overallMetrics": {
+      "numberRunning": 874,
+      "numberPassing": 872,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 26,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.openoffice.MainTest",
+        "numberRunning": 3,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.openoffice.MainTest",
+        "testMethod": "testDoProofreading",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.languagetool.openoffice.MainTest",
+        "testMethod": "testVariants",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 750,
+    "numberTestFiles": 488,
+    "numberLibrariesFailingModule": 76,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "66c9ee9d41f0ad54b93cd3b7cfbc11aba8a6b174",
+      "url": "http://github.com/languagetool-org/languagetool/commit/66c9ee9d41f0ad54b93cd3b7cfbc11aba8a6b174",
+      "date": "Feb 19, 2018 1:23:56 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "428ce2e94bc13ad0487a6ce220fc9c8384277fa6",
+      "url": "http://github.com/languagetool-org/languagetool/commit/428ce2e94bc13ad0487a6ce220fc9c8384277fa6",
+      "date": "Feb 19, 2018 9:22:00 AM"
+    }
+  },
+  "type": "failing_passing"
+}
