@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-jpa",
+    "githubId": 1072845,
+    "url": "https://github.com/spring-projects/spring-data-jpa",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 341944401,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/341944401",
+      "date": "Feb 15, 2018 7:39:36 PM"
+    },
+    "fixerBuild": {
+      "id": 342236799,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/342236799",
+      "date": "Feb 16, 2018 10:02:54 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 5:04:30 AM",
+    "reproductionDateEnd": "Aug 25, 2018 5:12:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262591144,
+      "totalMemory": 381681664
+    },
+    "totalDuration": 486,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 184,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          182
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-jpa/341944401/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-jpa/341944401",
+    "overallMetrics": {
+      "numberRunning": 305,
+      "numberPassing": 304,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.jpa.util.JpaMetamodelUnitTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.jpa.util.JpaMetamodelUnitTests",
+        "testMethod": "skipsEntityTypesWithoutJavaTypeForIdentifierLookup",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 246,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "2.0.x",
+      "sha": "1f5e757448be44559770c8b7c6709da559e0d528",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/1f5e757448be44559770c8b7c6709da559e0d528",
+      "date": "Feb 15, 2018 4:12:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "2.0.x",
+      "sha": "e35a0987992cc23ba06c6ddc15ae8a01d023bc84",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/e35a0987992cc23ba06c6ddc15ae8a01d023bc84",
+      "date": "Feb 16, 2018 9:19:37 AM"
+    }
+  },
+  "type": "passing_passing"
+}
