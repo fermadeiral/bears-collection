@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 343712961,
+      "url": "http://travis-ci.org/debezium/debezium/builds/343712961",
+      "date": "Feb 20, 2018 8:59:08 AM"
+    },
+    "fixerBuild": {
+      "id": 343714390,
+      "url": "http://travis-ci.org/debezium/debezium/builds/343714390",
+      "date": "Feb 20, 2018 9:05:48 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 1:26:18 PM",
+    "reproductionDateEnd": "Aug 25, 2018 1:30:05 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 371192192,
+      "totalMemory": 407896064
+    },
+    "totalDuration": 220,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 93,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          93
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/343712961/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 9
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "6e00924ee95f0624fac66d1a2b666dbda2fa8ea7",
+      "url": "http://github.com/debezium/debezium/commit/6e00924ee95f0624fac66d1a2b666dbda2fa8ea7",
+      "date": "Feb 20, 2018 8:47:43 AM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "a08a00d46e8cadf8eac802699afe9b3396a6fa0c",
+      "url": "http://github.com/debezium/debezium/commit/a08a00d46e8cadf8eac802699afe9b3396a6fa0c",
+      "date": "Feb 20, 2018 8:54:28 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/343712961/debezium-connector-mysql",
+    "overallMetrics": {
+      "numberRunning": 490,
+      "numberPassing": 488,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "numberRunning": 84,
+        "numberPassing": 82,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "testMethod": "parseDdlForUnscaledDecAndFixed",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[10]\u003e but was:\u003c[-1]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "testMethod": "parseDdlForDecAndFixed",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[0]\u003e but was:\u003c[-1]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 241,
+    "numberTestFiles": 128,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
