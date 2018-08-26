@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/jackrabbit-oak",
+    "githubId": 3657930,
+    "url": "https://github.com/apache/jackrabbit-oak",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 344414751,
+      "url": "http://travis-ci.org/apache/jackrabbit-oak/builds/344414751",
+      "date": "Feb 21, 2018 6:39:41 PM"
+    },
+    "fixerBuild": {
+      "id": 344705279,
+      "url": "http://travis-ci.org/apache/jackrabbit-oak/builds/344705279",
+      "date": "Feb 22, 2018 10:58:07 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 26, 2018 10:16:03 AM",
+    "reproductionDateEnd": "Aug 26, 2018 11:04:50 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 439960960,
+      "totalMemory": 824180736
+    },
+    "totalDuration": 2919,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 36,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          36
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 166,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          0,
+          163
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 636,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          636
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/jackrabbit-oak/344414751/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 13
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/jackrabbit-oak/344414751/oak-core",
+    "overallMetrics": {
+      "numberRunning": 2399,
+      "numberPassing": 2398,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 126,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.document.DisableBranchesTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.document.DisableBranchesTest",
+        "testMethod": "backgroundWrite",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: every item is is \u003c301\u003e      but: an item was \u003c94\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 21,
+    "numberSourceFiles": 1396,
+    "numberTestFiles": 723,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/jackrabbit-oak",
+      "branchName": "1.0",
+      "sha": "22c2719798a3b0c2cc47161c2f1f105829477fe0",
+      "url": "http://github.com/apache/jackrabbit-oak/commit/22c2719798a3b0c2cc47161c2f1f105829477fe0",
+      "date": "Feb 21, 2018 5:56:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/jackrabbit-oak",
+      "branchName": "1.0",
+      "sha": "17ca8c41ad6873f51f34db9a4cd2e9299dbd4b94",
+      "url": "http://github.com/apache/jackrabbit-oak/commit/17ca8c41ad6873f51f34db9a4cd2e9299dbd4b94",
+      "date": "Feb 22, 2018 10:02:21 AM"
+    }
+  }
+}
