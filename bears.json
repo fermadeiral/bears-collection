@@ -1,0 +1,158 @@
+{
+  "repository": {
+    "name": "apache/activemq-artemis",
+    "githubId": 36057260,
+    "url": "https://github.com/apache/activemq-artemis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 347800148,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347800148",
+      "date": "Mar 1, 2018 4:20:56 PM"
+    },
+    "fixerBuild": {
+      "id": 347925737,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347925737",
+      "date": "Mar 1, 2018 8:54:11 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 12:34:04 AM",
+    "reproductionDateEnd": "Aug 28, 2018 1:03:50 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 147866512,
+      "totalMemory": 548405248
+    },
+    "totalDuration": 1778,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          28
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 517,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          514
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 323,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          323
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/347800148/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 16
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "838859f59a27f7e8503510fe0547485c216fa5e4",
+      "url": "http://github.com/apache/activemq-artemis/commit/838859f59a27f7e8503510fe0547485c216fa5e4",
+      "date": "Mar 1, 2018 3:53:59 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "bdd2c09c5848b0a22992c7f7fa99758ca4989555",
+      "url": "http://github.com/apache/activemq-artemis/commit/bdd2c09c5848b0a22992c7f7fa99758ca4989555",
+      "date": "Mar 1, 2018 8:26:20 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/activemq-artemis/347800148/artemis-core-client",
+    "overallMetrics": {
+      "numberRunning": 784,
+      "numberPassing": 782,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest",
+        "testMethod": "testAddByteArrayToJsonArray",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "AMQ119034: Params for management operations must be of the following type: int long double String boolean Map or array thereof but found [B",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest",
+        "testMethod": "testAddByteArrayToJsonObject",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "AMQ119034: Params for management operations must be of the following type: int long double String boolean Map or array thereof but found [B",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 1486,
+    "numberTestFiles": 1152,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
