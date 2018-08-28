@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 349407853,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/349407853",
+      "date": "Mar 5, 2018 6:50:53 PM"
+    },
+    "fixerBuild": {
+      "id": 349461167,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/349461167",
+      "date": "Mar 5, 2018 8:38:18 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 3:11:39 AM",
+    "reproductionDateEnd": "Aug 28, 2018 3:41:17 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 322006336,
+      "totalMemory": 1055916032
+    },
+    "totalDuration": 1769,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 280,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          280
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 132,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          128
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 205,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          205
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/349407853/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/349407853/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 417,
+      "numberPassing": 416,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "testMethod": "testWrongVerb",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Got \u003e 0 matches for \u0027„Werde ich tun!“\u0027: [DE_VERBAGREEMENT:7-14:Möglicherweise fehlende grammatische Übereinstimmung zwischen Subjekt (ich) und Prädikat (tun) bezüglich Person oder Numerus (Einzahl, Mehrzahl - Beispiel: \u0027ich sind\u0027 statt \u0027ich bin\u0027).]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 489,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "f45a75ca38b73fb090b50450433fc0b7270c3fe7",
+      "url": "http://github.com/languagetool-org/languagetool/commit/f45a75ca38b73fb090b50450433fc0b7270c3fe7",
+      "date": "Mar 5, 2018 6:37:18 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "d4733d34c40386e94a38169be67044718c3250f1",
+      "url": "http://github.com/languagetool-org/languagetool/commit/d4733d34c40386e94a38169be67044718c3250f1",
+      "date": "Mar 5, 2018 8:25:04 PM"
+    }
+  }
+}
