@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 347256120,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/347256120",
+      "date": "Feb 28, 2018 2:09:27 PM"
+    },
+    "fixerBuild": {
+      "id": 347634018,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/347634018",
+      "date": "Mar 1, 2018 8:20:29 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 3:43:06 AM",
+    "reproductionDateEnd": "Aug 28, 2018 3:55:04 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 272759880,
+      "totalMemory": 498597888
+    },
+    "totalDuration": 710,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 341,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0,
+          0,
+          338
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/347256120/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 60,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/347256120/hessian-lite",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 31,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest",
+        "testMethod": "hessian2",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003czh-hant_CN\u003e but was:\u003czh_HANT_CN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest",
+        "testMethod": "hessian1",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003czh-hant_CN\u003e but was:\u003czh_HANT_CN\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 733,
+    "numberTestFiles": 404,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "3be23d9ac55407e2e2bda49570f7f76943a3b382",
+      "url": "http://github.com/apache/incubator-dubbo/commit/3be23d9ac55407e2e2bda49570f7f76943a3b382",
+      "date": "Feb 27, 2018 1:22:47 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "0423219d839404186b8a5ec7dec37f6addeb58d9",
+      "url": "http://github.com/apache/incubator-dubbo/commit/0423219d839404186b8a5ec7dec37f6addeb58d9",
+      "date": "Mar 1, 2018 7:58:01 AM"
+    }
+  },
+  "type": "passing_passing"
+}
