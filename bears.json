@@ -1,0 +1,144 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351742666,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351742666",
+      "date": "Mar 10, 2018 6:05:33 PM"
+    },
+    "fixerBuild": {
+      "id": 351759763,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351759763",
+      "date": "Mar 10, 2018 7:17:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 10:06:36 PM",
+    "reproductionDateEnd": "Aug 28, 2018 10:07:41 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 397908648,
+      "totalMemory": 437256192
+    },
+    "totalDuration": 62,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 19,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          19
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/351742666/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/351742666",
+    "overallMetrics": {
+      "numberRunning": 7,
+      "numberPassing": 6,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "testMethod": "allRequiredValuesReceivedOnUpdate",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "sprint1/team4/dashboard_AnalogSpeedoTacho",
+      "sha": "4efc1e696af816519a2d0d5d52b7deb11240dcc2",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4efc1e696af816519a2d0d5d52b7deb11240dcc2",
+      "date": "Mar 10, 2018 6:03:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "sprint1/team4/dashboard_AnalogSpeedoTacho",
+      "sha": "6a656ea5686fa563e85754282f059264f3664471",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/6a656ea5686fa563e85754282f059264f3664471",
+      "date": "Mar 10, 2018 7:13:13 PM"
+    }
+  },
+  "type": "failing_passing"
+}
