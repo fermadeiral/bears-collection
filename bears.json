@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 350438116,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/350438116",
+      "date": "Mar 7, 2018 6:57:53 PM"
+    },
+    "fixerBuild": {
+      "id": 350446305,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/350446305",
+      "date": "Mar 7, 2018 7:14:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 3:11:11 AM",
+    "reproductionDateEnd": "Aug 28, 2018 3:39:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 838372168,
+      "totalMemory": 1258815488
+    },
+    "totalDuration": 1708,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 291,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          291
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 123,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          1,
+          118
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 206,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          206
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/350438116/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/350438116/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 417,
+      "numberPassing": 416,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "testMethod": "testWrongVerb",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 489,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "fef3a5f5bb2294154adbfa090147efaea154dd24",
+      "url": "http://github.com/languagetool-org/languagetool/commit/fef3a5f5bb2294154adbfa090147efaea154dd24",
+      "date": "Mar 7, 2018 6:43:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "c93cf60668c6f03c80e3ab508ff122f98ca3a5de",
+      "url": "http://github.com/languagetool-org/languagetool/commit/c93cf60668c6f03c80e3ab508ff122f98ca3a5de",
+      "date": "Mar 7, 2018 7:00:32 PM"
+    }
+  }
+}
