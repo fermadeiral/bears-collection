@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 354485840,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/354485840",
+      "date": "Mar 16, 2018 9:02:29 PM"
+    },
+    "fixerBuild": {
+      "id": 354540203,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/354540203",
+      "date": "Mar 16, 2018 11:26:20 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 12:36:34 AM",
+    "reproductionDateEnd": "Aug 30, 2018 1:02:20 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 873519008,
+      "totalMemory": 1032323072
+    },
+    "totalDuration": 1540,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 286,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          286
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 106,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          1,
+          105
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 192,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          192
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/354485840/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/354485840/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 417,
+      "numberPassing": 416,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanWordRepeatBeginningRuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanWordRepeatBeginningRuleTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 490,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "31a1b8d05732b4164d62c9b7d1447981c68ca12a",
+      "url": "http://github.com/languagetool-org/languagetool/commit/31a1b8d05732b4164d62c9b7d1447981c68ca12a",
+      "date": "Mar 16, 2018 8:56:24 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "url": "http://github.com/languagetool-org/languagetool/commit/004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "date": "Mar 16, 2018 11:11:19 PM"
+    }
+  }
+}
