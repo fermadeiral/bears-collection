@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp",
+    "githubId": 86105877,
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 353059531,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353059531",
+      "date": "Mar 13, 2018 10:25:32 PM"
+    },
+    "fixerBuild": {
+      "id": 353471273,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353471273",
+      "date": "Mar 14, 2018 7:21:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 2:52:03 PM",
+    "reproductionDateEnd": "Aug 29, 2018 3:06:31 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 284921840,
+      "totalMemory": 1001914368
+    },
+    "totalDuration": 860,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 627,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          102,
+          101,
+          0,
+          424
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/353059531/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/353059531/spring-cloud-gcp-data-spanner",
+    "overallMetrics": {
+      "numberRunning": 159,
+      "numberPassing": 158,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests",
+        "numberRunning": 22,
+        "numberPassing": 21,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests",
+        "testMethod": "countTest",
+        "failureName": "Wanted but not invoked",
+        "detail": " Wanted but not invoked: resultSet.close(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests.countTest(SpannerTemplateTests.java:259)  However, there were exactly 2 interactions with this mock: resultSet.next(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplate.count(SpannerTemplate.java:204)  resultSet.getLong(0); -\u003e at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplate.count(SpannerTemplate.java:205)  ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 133,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 92,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "eda9b5608332afc63bcc131f4d36e70bf4de79c0",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/eda9b5608332afc63bcc131f4d36e70bf4de79c0",
+      "date": "Mar 13, 2018 10:20:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "eb5af6c7b2aca11a41adb6b1c481127c461aeb9e",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/eb5af6c7b2aca11a41adb6b1c481127c461aeb9e",
+      "date": "Mar 14, 2018 7:16:18 PM"
+    }
+  },
+  "type": "passing_passing"
+}
