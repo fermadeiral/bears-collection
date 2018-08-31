@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 360612492,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/360612492",
+      "date": "Mar 31, 2018 3:33:31 PM"
+    },
+    "fixerBuild": {
+      "id": 360637011,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/360637011",
+      "date": "Mar 31, 2018 5:31:20 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 12:01:47 AM",
+    "reproductionDateEnd": "Sep 1, 2018 12:31:07 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 506623216,
+      "totalMemory": 922222592
+    },
+    "totalDuration": 1751,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 287,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          287
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 133,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          2,
+          126
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 272,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          272
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/360612492/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 26
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "7faef3b828974a2e734ccd7e71c82d28795f9327",
+      "url": "http://github.com/languagetool-org/languagetool/commit/7faef3b828974a2e734ccd7e71c82d28795f9327",
+      "date": "Mar 31, 2018 3:19:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "14f6cd7bab8351cb868f12ebdad3608c06df7e58",
+      "url": "http://github.com/languagetool-org/languagetool/commit/14f6cd7bab8351cb868f12ebdad3608c06df7e58",
+      "date": "Mar 31, 2018 5:16:44 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/360612492/languagetool-language-modules/pl",
+    "overallMetrics": {
+      "numberRunning": 446,
+      "numberPassing": 445,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.pl.MorfologikPolishSpellerRuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.pl.MorfologikPolishSpellerRuleTest",
+        "testMethod": "testMorfologikSpeller",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
