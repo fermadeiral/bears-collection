@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "EnMasseProject/enmasse",
+    "githubId": 62793144,
+    "url": "https://github.com/EnMasseProject/enmasse",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 357424637,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/357424637",
+      "date": "Mar 23, 2018 4:19:02 PM"
+    },
+    "fixerBuild": {
+      "id": 357457887,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/357457887",
+      "date": "Mar 23, 2018 5:27:59 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 31, 2018 5:41:18 PM",
+    "reproductionDateEnd": "Aug 31, 2018 5:46:54 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 356415400,
+      "totalMemory": 517472256
+    },
+    "totalDuration": 329,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          28
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 97,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          1,
+          94
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/357424637/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 64
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/357424637/address-model-lib",
+    "overallMetrics": {
+      "numberRunning": 20,
+      "numberPassing": 18,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest",
+        "numberRunning": 16,
+        "numberPassing": 14,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest",
+        "testMethod": "testDeserializeAddressSpaceMissingDefaults",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cio.enmasse.address.model.v1.DeserializeException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+        "isError": true
+      },
+      {
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest",
+        "testMethod": "testDeserializeAddressMissingDefaults",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cio.enmasse.address.model.v1.DeserializeException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 339,
+    "numberTestFiles": 132,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "3f99a77cf84ce80b55fe67c3461e0ccf1f198aab",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/3f99a77cf84ce80b55fe67c3461e0ccf1f198aab",
+      "date": "Mar 23, 2018 3:42:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "161942d39310aa78cc89350d5155a7a41fc341af",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/161942d39310aa78cc89350d5155a7a41fc341af",
+      "date": "Mar 23, 2018 4:49:59 PM"
+    }
+  }
+}
