@@ -1,0 +1,181 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Activiti/Activiti",
+    "githubId": 5793738,
+    "url": "https://github.com/Activiti/Activiti",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 357660134,
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/357660134",
+      "date": "Mar 24, 2018 2:24:22 AM"
+    },
+    "fixerBuild": {
+      "id": 359342518,
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/359342518",
+      "date": "Mar 28, 2018 2:35:48 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 7:48:25 AM",
+    "reproductionDateEnd": "Sep 1, 2018 8:02:39 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 150557096,
+      "totalMemory": 588775424
+    },
+    "totalDuration": 847,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          31
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 67,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          3,
+          0,
+          1,
+          59
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 345,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          345
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Activiti/Activiti/357660134/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 24
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Activiti/Activiti",
+      "branchName": "5.x",
+      "sha": "8ddd177b8f70f6e25af810096aa43aaf87d28af2",
+      "url": "http://github.com/Activiti/Activiti/commit/8ddd177b8f70f6e25af810096aa43aaf87d28af2",
+      "date": "Mar 24, 2018 2:22:12 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Activiti/Activiti",
+      "branchName": "5.x",
+      "sha": "78b6b5f380d0bee2864b71cb5d2b65ec6536943a",
+      "url": "http://github.com/Activiti/Activiti/commit/78b6b5f380d0bee2864b71cb5d2b65ec6536943a",
+      "date": "Mar 28, 2018 2:33:35 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Activiti/Activiti/357660134/modules/activiti-engine",
+    "overallMetrics": {
+      "numberRunning": 1952,
+      "numberPassing": 1949,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.signal.SignalEventTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.message.MessageBoundaryEventTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest",
+        "testMethod": "testTimerOnUserTask",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Activity should have not ended yet",
+        "isError": false
+      },
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.signal.SignalEventTest",
+        "testMethod": "testSignalOnUserTask",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Activity should have not ended yet",
+        "isError": false
+      },
+      {
+        "testClass": "org.activiti.engine.test.bpmn.event.message.MessageBoundaryEventTest",
+        "testMethod": "testMessageOnUserTask",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Activity should have not ended yet",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 1286,
+    "numberTestFiles": 482,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
