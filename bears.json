@@ -1,0 +1,160 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 363993941,
+      "url": "http://travis-ci.org/aicis/fresco/builds/363993941",
+      "date": "Apr 9, 2018 9:48:28 AM"
+    },
+    "fixerBuild": {
+      "id": 363994940,
+      "url": "http://travis-ci.org/aicis/fresco/builds/363994940",
+      "date": "Apr 9, 2018 9:54:40 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 10:00:11 PM",
+    "reproductionDateEnd": "Sep 2, 2018 10:42:30 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 307066856,
+      "totalMemory": 432013312
+    },
+    "totalDuration": 2533,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 113,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          113
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1085,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          1085
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/363993941/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/363993941/suite/spdz",
+    "overallMetrics": {
+      "numberRunning": 755,
+      "numberPassing": 753,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic3Parties",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic2Parties",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic3Parties",
+        "testMethod": "testInputFromAllMascot",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.spdz.SpdzResourcePoolImpl@34fb81bf) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic2Parties",
+        "testMethod": "testInputFromAllMascot",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.spdz.SpdzResourcePoolImpl@4430ab63) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 439,
+    "numberTestFiles": 240,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "266-mascot-input-mask-fix",
+      "sha": "88b105ae0b512a28c957b5478b57021efaa6f4d0",
+      "url": "http://github.com/aicis/fresco/commit/88b105ae0b512a28c957b5478b57021efaa6f4d0",
+      "date": "Apr 9, 2018 9:32:55 AM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "266-mascot-input-mask-fix",
+      "sha": "fbce6a5211e49ee99af4da440bcf79653eba8f29",
+      "url": "http://github.com/aicis/fresco/commit/fbce6a5211e49ee99af4da440bcf79653eba8f29",
+      "date": "Apr 9, 2018 9:37:34 AM"
+    }
+  }
+}
