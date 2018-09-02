@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 362517584,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362517584",
+      "date": "Apr 5, 2018 11:04:25 AM"
+    },
+    "fixerBuild": {
+      "id": 362989296,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362989296",
+      "date": "Apr 6, 2018 10:01:24 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 6:07:53 AM",
+    "reproductionDateEnd": "Sep 2, 2018 6:56:42 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 127006680,
+      "totalMemory": 556793856
+    },
+    "totalDuration": 2919,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          39
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 774,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          772
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 160,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          160
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/362517584/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 5
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "b08235d75bc9c5177451e423d23136ac9a216e5c",
+      "url": "http://github.com/molgenis/molgenis/commit/b08235d75bc9c5177451e423d23136ac9a216e5c",
+      "date": "Apr 5, 2018 10:41:10 AM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "ece41bf216542f8af898b2e52eebcff601a709dd",
+      "url": "http://github.com/molgenis/molgenis/commit/ece41bf216542f8af898b2e52eebcff601a709dd",
+      "date": "Apr 6, 2018 9:40:30 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/362517584/molgenis-data-excel",
+    "overallMetrics": {
+      "numberRunning": 1673,
+      "numberPassing": 1672,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.testng.TestException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.data.excel.ExcelRepositoryTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.data.excel.ExcelRepositoryTest",
+        "testMethod": "iteratorDuplicateSheetHeader",
+        "failureName": "org.testng.TestException",
+        "detail": "\nMethod ExcelRepositoryTest.iteratorDuplicateSheetHeader()[pri:0, instance:org.molgenis.data.excel.ExcelRepositoryTest@18ffca6c] should have thrown an exception of class org.molgenis.data.MolgenisDataException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 57,
+    "numberSourceFiles": 1243,
+    "numberTestFiles": 518,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
