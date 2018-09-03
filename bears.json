@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "thelastpickle/cassandra-reaper",
+    "githubId": 70856121,
+    "url": "https://github.com/thelastpickle/cassandra-reaper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 364710673,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/364710673",
+      "date": "Apr 10, 2018 8:07:45 PM"
+    },
+    "fixerBuild": {
+      "id": 365484062,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/365484062",
+      "date": "Apr 12, 2018 10:09:19 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 3:08:19 AM",
+    "reproductionDateEnd": "Sep 3, 2018 3:13:04 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 296824136,
+      "totalMemory": 428343296
+    },
+    "totalDuration": 280,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          70
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          44
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/thelastpickle/cassandra-reaper/364710673/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/364710673/src/server",
+    "overallMetrics": {
+      "numberRunning": 110,
+      "numberPassing": 104,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "numberRunning": 12,
+        "numberPassing": 6,
+        "numberFailing": 6,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6Endpoint21WithHostnameStatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6EndpointCassandraWithHostnameStatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6Endpoint21StatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6Endpoint22StatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6EndpointCassandraStatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseIPv6Endpoint22WithHostnameStatusString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cNORMAL - [D]OWN\u003e but was:\u003cNORMAL - [UNKN]OWN\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 84,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 182,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "53b8f9c03ce3e8e1905aeb658bde238925195891",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/53b8f9c03ce3e8e1905aeb658bde238925195891",
+      "date": "Apr 10, 2018 7:00:43 PM"
+    },
+    "fixerBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "6a59feda5c2fd4ea6f05a41a8437c3749e29fd21",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/6a59feda5c2fd4ea6f05a41a8437c3749e29fd21",
+      "date": "Apr 12, 2018 9:43:16 AM"
+    }
+  }
+}
