@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "thelastpickle/cassandra-reaper",
+    "githubId": 70856121,
+    "url": "https://github.com/thelastpickle/cassandra-reaper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 365484062,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/365484062",
+      "date": "Apr 12, 2018 10:09:19 AM"
+    },
+    "fixerBuild": {
+      "id": 365554427,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/365554427",
+      "date": "Apr 12, 2018 2:18:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 3:05:41 AM",
+    "reproductionDateEnd": "Sep 3, 2018 3:09:52 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 284905496,
+      "totalMemory": 423100416
+    },
+    "totalDuration": 245,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 72,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          1,
+          71
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/thelastpickle/cassandra-reaper/365484062/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 28
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/365484062/src/server",
+    "overallMetrics": {
+      "numberRunning": 114,
+      "numberPassing": 112,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest",
+        "numberRunning": 6,
+        "numberPassing": 4,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest",
+        "testMethod": "testAbortedRepairDuration",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c30 seconds\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest",
+        "testMethod": "testRunningRepairDuration",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1 minute 0 seconds\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 84,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 182,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "6a59feda5c2fd4ea6f05a41a8437c3749e29fd21",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/6a59feda5c2fd4ea6f05a41a8437c3749e29fd21",
+      "date": "Apr 12, 2018 9:43:16 AM"
+    },
+    "fixerBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "3c0a1fae7bf21f40be319464bcd16ebf50397417",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/3c0a1fae7bf21f40be319464bcd16ebf50397417",
+      "date": "Apr 12, 2018 1:03:56 PM"
+    }
+  },
+  "type": "passing_passing"
+}
