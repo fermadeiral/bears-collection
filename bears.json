@@ -1,0 +1,165 @@
+{
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 363589915,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/363589915",
+      "date": "Apr 7, 2018 10:40:43 PM"
+    },
+    "fixerBuild": {
+      "id": 364299280,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/364299280",
+      "date": "Apr 9, 2018 10:28:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 8:17:30 AM",
+    "reproductionDateEnd": "Sep 3, 2018 8:27:36 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 709451064,
+      "totalMemory": 1901592576
+    },
+    "totalDuration": 599,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 247,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          247
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 111,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          1,
+          108
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 57,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          57
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/363589915/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/363589915/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 7689,
+      "numberPassing": 7686,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 31,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest",
+        "numberRunning": 57,
+        "numberPassing": 54,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest",
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[1]",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n",
+        "isError": false
+      },
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest",
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[2]",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n",
+        "isError": false
+      },
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest",
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[0]",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-\u003e at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 300,
+    "numberTestFiles": 681,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "7b3d0e22c09f7387ecfa82e0e16a8f281ba60d55",
+      "url": "http://github.com/raphw/byte-buddy/commit/7b3d0e22c09f7387ecfa82e0e16a8f281ba60d55",
+      "date": "Apr 7, 2018 10:36:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "538627753daf5ab1227d5157e6f682711d2fb1ae",
+      "url": "http://github.com/raphw/byte-buddy/commit/538627753daf5ab1227d5157e6f682711d2fb1ae",
+      "date": "Apr 9, 2018 10:23:38 PM"
+    }
+  },
+  "type": "passing_passing"
+}
