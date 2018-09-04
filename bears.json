@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 367638811,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/367638811",
+      "date": "Apr 17, 2018 3:11:20 PM"
+    },
+    "fixerBuild": {
+      "id": 367645808,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/367645808",
+      "date": "Apr 17, 2018 3:32:58 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 8:21:50 AM",
+    "reproductionDateEnd": "Sep 4, 2018 9:10:09 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 350951640,
+      "totalMemory": 1488977920
+    },
+    "totalDuration": 2889,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 51,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          51
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 735,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          4,
+          1,
+          0,
+          726
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 431,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          431
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/367638811/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/367638811/molgenis-data-postgresql",
+    "overallMetrics": {
+      "numberRunning": 3022,
+      "numberPassing": 3021,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.ClassCastException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.data.postgresql.PostgreSqlEntityFactoryTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.data.postgresql.PostgreSqlEntityFactoryTest",
+        "testMethod": "createRowMapperOneToManyIntegerIds",
+        "failureName": "java.lang.ClassCastException",
+        "detail": "[Ljava.lang.Integer; cannot be cast to [Ljava.lang.String;",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 57,
+    "numberSourceFiles": 1237,
+    "numberTestFiles": 518,
+    "numberLibrariesFailingModule": 72,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "b130683e9248d20cc98d4a4189e54ee43ba87f2c",
+      "url": "http://github.com/molgenis/molgenis/commit/b130683e9248d20cc98d4a4189e54ee43ba87f2c",
+      "date": "Apr 17, 2018 2:51:18 PM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "72111329e8e18c37c78a4e8f9de703f2a834a53c",
+      "url": "http://github.com/molgenis/molgenis/commit/72111329e8e18c37c78a4e8f9de703f2a834a53c",
+      "date": "Apr 17, 2018 3:08:26 PM"
+    }
+  },
+  "type": "passing_passing"
+}
