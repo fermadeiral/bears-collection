@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/activemq-artemis",
+    "githubId": 36057260,
+    "url": "https://github.com/apache/activemq-artemis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 367687093,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/367687093",
+      "date": "Apr 17, 2018 5:02:11 PM"
+    },
+    "fixerBuild": {
+      "id": 367688011,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/367688011",
+      "date": "Apr 17, 2018 5:03:24 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 6:39:34 AM",
+    "reproductionDateEnd": "Sep 4, 2018 7:08:06 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 184525056,
+      "totalMemory": 605552640
+    },
+    "totalDuration": 1704,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 27,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          27
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 487,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          7,
+          0,
+          1,
+          478
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 328,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          328
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/367687093/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 18,
+      "numberDeleted": 4
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "95e9e6e2b6783d17e5bddaf2a8855a1e124a20a5",
+      "url": "http://github.com/apache/activemq-artemis/commit/95e9e6e2b6783d17e5bddaf2a8855a1e124a20a5",
+      "date": "Apr 17, 2018 4:41:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "59162653a4f53275259e88c40e0ba2d861f0fc7a",
+      "url": "http://github.com/apache/activemq-artemis/commit/59162653a4f53275259e88c40e0ba2d861f0fc7a",
+      "date": "Apr 17, 2018 4:43:28 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/activemq-artemis/367687093/artemis-jdbc-store",
+    "overallMetrics": {
+      "numberRunning": 807,
+      "numberPassing": 805,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest",
+        "numberRunning": 10,
+        "numberPassing": 8,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest",
+        "testMethod": "testReadOutOfBoundsOnNotEmptyFile",
+        "failureName": "java.lang.AssertionError",
+        "detail": "bytes read should be \u003c 0",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest",
+        "testMethod": "testReadOutOfBoundsOnEmptyFile",
+        "failureName": "java.lang.AssertionError",
+        "detail": "bytes read should be \u003c 0",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 1491,
+    "numberTestFiles": 1164,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  }
+}
