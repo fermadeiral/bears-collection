@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 370383941,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/370383941",
+      "date": "Apr 24, 2018 4:41:13 AM"
+    },
+    "fixerBuild": {
+      "id": 370422750,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/370422750",
+      "date": "Apr 24, 2018 8:26:37 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 11:23:26 PM",
+    "reproductionDateEnd": "Sep 5, 2018 11:46:36 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 348655224,
+      "totalMemory": 462946304
+    },
+    "totalDuration": 1382,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 746,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          2,
+          0,
+          1,
+          741
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 137,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          137
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/370383941/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 29,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/370383941/dubbo-rpc/dubbo-rpc-dubbo",
+    "overallMetrics": {
+      "numberRunning": 754,
+      "numberPassing": 753,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvokerAvilableTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvokerAvilableTest",
+        "testMethod": "test_normal_channel_close_wait_gracefully",
+        "failureName": "junit.framework.AssertionFailedError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 60,
+    "numberSourceFiles": 733,
+    "numberTestFiles": 480,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "d07c64f809361ec629b738ca223c7e89d08c03f4",
+      "url": "http://github.com/apache/incubator-dubbo/commit/d07c64f809361ec629b738ca223c7e89d08c03f4",
+      "date": "Apr 24, 2018 4:21:04 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "d29052904765d59e549286fc8545bf5b0e760048",
+      "url": "http://github.com/apache/incubator-dubbo/commit/d29052904765d59e549286fc8545bf5b0e760048",
+      "date": "Apr 24, 2018 8:00:32 AM"
+    }
+  },
+  "type": "passing_passing"
+}
