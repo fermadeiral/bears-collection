@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/calcite",
+    "githubId": 21193524,
+    "url": "https://github.com/apache/calcite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 370260137,
+      "url": "http://travis-ci.org/apache/calcite/builds/370260137",
+      "date": "Apr 23, 2018 10:04:41 PM"
+    },
+    "fixerBuild": {
+      "id": 370643791,
+      "url": "http://travis-ci.org/apache/calcite/builds/370643791",
+      "date": "Apr 24, 2018 6:17:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 6:54:22 PM",
+    "reproductionDateEnd": "Sep 5, 2018 7:13:39 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 358997688,
+      "totalMemory": 492306432
+    },
+    "totalDuration": 1147,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          24
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 149,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          147
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 403,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          403
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/calcite/370260137/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/calcite/370260137/core",
+    "overallMetrics": {
+      "numberRunning": 4559,
+      "numberPassing": 4558,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 109,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "numberRunning": 113,
+        "numberPassing": 112,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 17
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.MaterializationTest",
+        "testMethod": "testJoinMaterialization11",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "exception while executing [explain plan for select \"empid\" from \"emps\"\nwhere \"deptno\" in (select \"deptno\" from \"depts\")]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1497,
+    "numberTestFiles": 192,
+    "numberLibrariesFailingModule": 46,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "26ce10f9d7cd16dfab4030995cfc0f4387097041",
+      "url": "http://github.com/apache/calcite/commit/26ce10f9d7cd16dfab4030995cfc0f4387097041",
+      "date": "Apr 23, 2018 9:43:47 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "fd5dc8adf4bca6a4f0c631479985cbb2b43b47e4",
+      "url": "http://github.com/apache/calcite/commit/fd5dc8adf4bca6a4f0c631479985cbb2b43b47e4",
+      "date": "Apr 24, 2018 5:51:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
