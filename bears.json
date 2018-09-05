@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/activemq-artemis",
+    "githubId": 36057260,
+    "url": "https://github.com/apache/activemq-artemis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 370393731,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/370393731",
+      "date": "Apr 24, 2018 5:36:13 AM"
+    },
+    "fixerBuild": {
+      "id": 370397486,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/370397486",
+      "date": "Apr 24, 2018 5:55:54 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 7:43:56 PM",
+    "reproductionDateEnd": "Sep 5, 2018 8:10:23 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 398944968,
+      "totalMemory": 919601152
+    },
+    "totalDuration": 1577,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          28
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 469,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          1,
+          0,
+          0,
+          465
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 325,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          325
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/370393731/pom.xml"
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "d1c3ed5543eb150d701753133cb0d3c5bdd2c3d3",
+      "url": "http://github.com/apache/activemq-artemis/commit/d1c3ed5543eb150d701753133cb0d3c5bdd2c3d3",
+      "date": "Apr 24, 2018 5:11:11 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "932f0f4086f4560ce013bbbc612225ea5695f678",
+      "url": "http://github.com/apache/activemq-artemis/commit/932f0f4086f4560ce013bbbc612225ea5695f678",
+      "date": "Apr 24, 2018 5:33:35 AM"
+    }
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/activemq-artemis/370393731/artemis-server",
+    "overallMetrics": {
+      "numberRunning": 808,
+      "numberPassing": 807,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.activemq.artemis.core.security.jaas.LDAPLoginModuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.activemq.artemis.core.security.jaas.LDAPLoginModuleTest",
+        "testMethod": "testCommitOnFailedLogin",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 1492,
+    "numberTestFiles": 1165,
+    "numberLibrariesFailingModule": 93,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
