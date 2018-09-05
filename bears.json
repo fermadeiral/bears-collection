@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 369514407,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/369514407",
+      "date": "Apr 21, 2018 5:22:42 PM"
+    },
+    "fixerBuild": {
+      "id": 370006117,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/370006117",
+      "date": "Apr 23, 2018 11:37:16 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 10:24:04 PM",
+    "reproductionDateEnd": "Sep 5, 2018 11:20:00 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 403901336,
+      "totalMemory": 761790464
+    },
+    "totalDuration": 3349,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          37
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 736,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          4,
+          1,
+          0,
+          730
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 142,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          142
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/369514407/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/369514407/molgenis-data-import",
+    "overallMetrics": {
+      "numberRunning": 1608,
+      "numberPassing": 1607,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.testng.TestException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.data.importer.DataPersisterImplTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.data.importer.DataPersisterImplTest",
+        "testMethod": "testPersistMetaNoneDataAddAbstractEntityType",
+        "failureName": "org.testng.TestException",
+        "detail": "\nMethod DataPersisterImplTest.testPersistMetaNoneDataAddAbstractEntityType()[pri:0, instance:org.molgenis.data.importer.DataPersisterImplTest@5c70d7f0] should have thrown an exception of class org.molgenis.data.MolgenisDataException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 57,
+    "numberSourceFiles": 1237,
+    "numberTestFiles": 518,
+    "numberLibrariesFailingModule": 78,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "8232a5510b92991b5ac185b3c8a2d7fa3e37bbbf",
+      "url": "http://github.com/molgenis/molgenis/commit/8232a5510b92991b5ac185b3c8a2d7fa3e37bbbf",
+      "date": "Apr 20, 2018 11:28:38 AM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "6c2f1aef91dd2bbf99814f8ab7d2c08e0cf7ffdc",
+      "url": "http://github.com/molgenis/molgenis/commit/6c2f1aef91dd2bbf99814f8ab7d2c08e0cf7ffdc",
+      "date": "Apr 23, 2018 11:14:21 AM"
+    }
+  }
+}
