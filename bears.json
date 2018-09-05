@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 371353019,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/371353019",
+      "date": "Apr 26, 2018 4:32:23 AM"
+    },
+    "fixerBuild": {
+      "id": 371886679,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/371886679",
+      "date": "Apr 27, 2018 8:49:26 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 6:25:08 PM",
+    "reproductionDateEnd": "Sep 5, 2018 6:39:09 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 235782768,
+      "totalMemory": 924319744
+    },
+    "totalDuration": 832,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 215,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          5,
+          1,
+          0,
+          208
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/371353019/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/371353019/foundations/foundation-config",
+    "overallMetrics": {
+      "numberRunning": 144,
+      "numberPassing": 143,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.config.TestConfigUtil",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.config.TestConfigUtil",
+        "testMethod": "testCreateLocalConfigWithExtraConfig",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[higher_priority]\u003e but was:\u003c[value]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberSourceFiles": 867,
+    "numberTestFiles": 530,
+    "numberLibrariesFailingModule": 74,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "5348393b977f5e6a8eac87016dd1f969a7a1e6df",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/5348393b977f5e6a8eac87016dd1f969a7a1e6df",
+      "date": "Apr 26, 2018 3:53:33 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "122a4865de381986700705eb8d7dcf286b294007",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/122a4865de381986700705eb8d7dcf286b294007",
+      "date": "Apr 27, 2018 8:10:59 AM"
+    }
+  },
+  "type": "passing_passing"
+}
