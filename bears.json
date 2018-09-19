@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/activemq-artemis",
+    "githubId": 36057260,
+    "url": "https://github.com/apache/activemq-artemis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 430707789,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/430707789",
+      "date": "Sep 19, 2018 10:26:48 PM"
+    },
+    "fixerBuild": {
+      "id": 430745973,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/430745973",
+      "date": "Sep 19, 2018 11:56:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 19, 2018 11:56:32 PM",
+    "reproductionDateEnd": "Sep 20, 2018 12:24:18 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 230757912,
+      "totalMemory": 643825664
+    },
+    "totalDuration": 1657,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          30
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 514,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          511
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 348,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          348
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/430707789/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/activemq-artemis/430707789/artemis-junit",
+    "overallMetrics": {
+      "numberRunning": 872,
+      "numberPassing": 871,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.activemq.artemis.junit.EmbeddedJMSResourceTopicTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.activemq.artemis.junit.EmbeddedJMSResourceTopicTest",
+        "testMethod": "testPushTextMessageWithProperties",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Unexpected message count in destination topic://test.topic expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 1514,
+    "numberTestFiles": 1201,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "2.6.x",
+      "sha": "e358fbde6610c6a7fbfa69650741cab0a5be3d46",
+      "url": "http://github.com/apache/activemq-artemis/commit/e358fbde6610c6a7fbfa69650741cab0a5be3d46",
+      "date": "Sep 19, 2018 9:32:24 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "2.6.x",
+      "sha": "9a949230d24f6aa0ca9e7e7da6ae29ede3dcc240",
+      "url": "http://github.com/apache/activemq-artemis/commit/9a949230d24f6aa0ca9e7e7da6ae29ede3dcc240",
+      "date": "Sep 19, 2018 11:05:28 PM"
+    }
+  },
+  "type": "passing_passing"
+}
