@@ -1,0 +1,172 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "societe-generale/ci-droid-tasks-consumer",
+    "githubId": 137922807,
+    "url": "https://github.com/societe-generale/ci-droid-tasks-consumer",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 420388707,
+      "url": "http://travis-ci.org/societe-generale/ci-droid-tasks-consumer/builds/420388707",
+      "date": "Aug 25, 2018 6:24:12 AM"
+    },
+    "fixerBuild": {
+      "id": 430936160,
+      "url": "http://travis-ci.org/societe-generale/ci-droid-tasks-consumer/builds/430936160",
+      "date": "Sep 20, 2018 11:22:06 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 11:22:21 AM",
+    "reproductionDateEnd": "Sep 20, 2018 11:24:42 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 329789176,
+      "totalMemory": 418381824
+    },
+    "totalDuration": 135,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 62,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          6,
+          0,
+          0,
+          56
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/societe-generale/ci-droid-tasks-consumer/420388707/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "societe-generale/ci-droid-tasks-consumer",
+      "branchName": "master",
+      "sha": "27d59c0db669b4e9b19c127028c7bcfd603f3320",
+      "url": "http://github.com/societe-generale/ci-droid-tasks-consumer/commit/27d59c0db669b4e9b19c127028c7bcfd603f3320",
+      "date": "Aug 25, 2018 6:13:55 AM"
+    },
+    "fixerBuild": {
+      "repoName": "societe-generale/ci-droid-tasks-consumer",
+      "branchName": "master",
+      "sha": "22675d288c728b3ce3bd0a65c823127fa39b070c",
+      "url": "http://github.com/societe-generale/ci-droid-tasks-consumer/commit/22675d288c728b3ce3bd0a65c823127fa39b070c",
+      "date": "Sep 20, 2018 11:18:46 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/societe-generale/ci-droid-tasks-consumer/420388707/ci-droid-tasks-consumer-services",
+    "overallMetrics": {
+      "numberRunning": 45,
+      "numberPassing": 41,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest",
+        "numberRunning": 14,
+        "numberPassing": 10,
+        "numberFailing": 4,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest",
+        "testMethod": "reuseBranchIfAlreadyExistWhenDoing_PULL_REQUEST",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[myPrBranch]\"\u003e but was:\u003c\"[this is the original commit message by the user]\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest",
+        "testMethod": "shouldCreatePRwithBranchName_whenPRtitleIsNotProvided",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[myPrBranch]\"\u003e but was:\u003c\"[this is the original commit message by the user]\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest",
+        "testMethod": "shouldCreatePRwithProvidedTitle",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[new feature branch]\"\u003e but was:\u003c\"[this is the original commit message by the user]\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest",
+        "testMethod": "performActionOfType_PULL_REQUEST",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[myPrBranch]\"\u003e but was:\u003c\"[this is the original commit message by the user]\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 58,
+    "numberTestFiles": 35,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  }
+}
