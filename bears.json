@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "apache/pdfbox",
+    "githubId": 318103,
+    "url": "https://github.com/apache/pdfbox",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431589312,
+      "url": "http://travis-ci.org/apache/pdfbox/builds/431589312",
+      "date": "Sep 21, 2018 7:04:53 PM"
+    },
+    "fixerBuild": {
+      "id": 431634565,
+      "url": "http://travis-ci.org/apache/pdfbox/builds/431634565",
+      "date": "Sep 21, 2018 9:03:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 21, 2018 9:27:16 PM",
+    "reproductionDateEnd": "Sep 21, 2018 9:35:11 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 335131016,
+      "totalMemory": 507510784
+    },
+    "totalDuration": 470,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          26
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 125,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          125
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 103,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          103
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/pdfbox/431589312/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/pdfbox/431589312/pdfbox",
+    "overallMetrics": {
+      "numberRunning": 1313,
+      "numberPassing": 1312,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "javax.imageio.IIOException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest",
+        "testMethod": "testCreateFromStreamCMYK",
+        "failureName": "javax.imageio.IIOException",
+        "detail": "Inconsistent metadata read from stream",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberSourceFiles": 1104,
+    "numberTestFiles": 185,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/pdfbox",
+      "branchName": "trunk",
+      "sha": "241d248c77aec46840d6f2ad72f92adc4976164d",
+      "url": "http://github.com/apache/pdfbox/commit/241d248c77aec46840d6f2ad72f92adc4976164d",
+      "date": "Sep 21, 2018 7:00:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/pdfbox",
+      "branchName": "trunk",
+      "sha": "b09eae6a6e33d71507bf7cfc76548cf3e8e9377d",
+      "url": "http://github.com/apache/pdfbox/commit/b09eae6a6e33d71507bf7cfc76548cf3e8e9377d",
+      "date": "Sep 21, 2018 8:57:02 PM"
+    }
+  }
+}
