@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "opentracing-contrib/java-p6spy",
+    "githubId": 105222576,
+    "url": "https://github.com/opentracing-contrib/java-p6spy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 390188323,
+      "url": "http://travis-ci.org/opentracing-contrib/java-p6spy/builds/390188323",
+      "date": "Jun 9, 2018 8:38:52 PM"
+    },
+    "fixerBuild": {
+      "id": 431527545,
+      "url": "http://travis-ci.org/opentracing-contrib/java-p6spy/builds/431527545",
+      "date": "Sep 21, 2018 4:43:22 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 21, 2018 5:25:37 PM",
+    "reproductionDateEnd": "Sep 21, 2018 5:27:31 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 281226472,
+      "totalMemory": 392167424
+    },
+    "totalDuration": 110,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 32,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          32
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/opentracing-contrib/java-p6spy/390188323/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 14,
+      "numberDeleted": 12
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "opentracing-contrib/java-p6spy",
+      "branchName": "master",
+      "sha": "c8426e6f359f5fb7ed928e151c97029d752955f8",
+      "url": "http://github.com/opentracing-contrib/java-p6spy/commit/c8426e6f359f5fb7ed928e151c97029d752955f8",
+      "date": "Jun 9, 2018 8:37:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "opentracing-contrib/java-p6spy",
+      "branchName": "master",
+      "sha": "72faab4a5a793b3251c29a2796dac3b95de14717",
+      "url": "http://github.com/opentracing-contrib/java-p6spy/commit/72faab4a5a793b3251c29a2796dac3b95de14717",
+      "date": "Sep 21, 2018 4:35:46 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/opentracing-contrib/java-p6spy/390188323",
+    "overallMetrics": {
+      "numberRunning": 19,
+      "numberPassing": 18,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.opentracing.contrib.p6spy.JdbcTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.opentracing.contrib.p6spy.JdbcTest",
+        "testMethod": "should_report_one_span_with_null_url",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 3,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
