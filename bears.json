@@ -1,0 +1,150 @@
+{
+  "repository": {
+    "name": "SpoonLabs/gumtree-spoon-ast-diff",
+    "githubId": 25924085,
+    "url": "https://github.com/SpoonLabs/gumtree-spoon-ast-diff",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431628140,
+      "url": "http://travis-ci.org/SpoonLabs/gumtree-spoon-ast-diff/builds/431628140",
+      "date": "Sep 21, 2018 8:44:35 PM"
+    },
+    "fixerBuild": {
+      "id": 431912220,
+      "url": "http://travis-ci.org/SpoonLabs/gumtree-spoon-ast-diff/builds/431912220",
+      "date": "Sep 22, 2018 6:50:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 22, 2018 6:50:16 PM",
+    "reproductionDateEnd": "Sep 22, 2018 6:54:00 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 283096968,
+      "totalMemory": 371195904
+    },
+    "totalDuration": 219,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 55,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          55
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 64,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          64
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SpoonLabs/gumtree-spoon-ast-diff/431628140/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 23
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SpoonLabs/gumtree-spoon-ast-diff/431628140",
+    "overallMetrics": {
+      "numberRunning": 96,
+      "numberPassing": 95,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "gumtree.spoon.AstComparatorTest",
+        "numberRunning": 80,
+        "numberPassing": 79,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "gumtree.spoon.AstComparatorTest",
+        "testMethod": "test_t_209184_buggy_allopsNPE",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 15,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SpoonLabs/gumtree-spoon-ast-diff",
+      "branchName": "master",
+      "sha": "820db5860556768256c5fbda3c41c9e62e772c33",
+      "url": "http://github.com/SpoonLabs/gumtree-spoon-ast-diff/commit/820db5860556768256c5fbda3c41c9e62e772c33",
+      "date": "Sep 21, 2018 8:41:08 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SpoonLabs/gumtree-spoon-ast-diff",
+      "branchName": "master",
+      "sha": "8eaaa2ac48a1bb384aa95b28bf00df444bf421f9",
+      "url": "http://github.com/SpoonLabs/gumtree-spoon-ast-diff/commit/8eaaa2ac48a1bb384aa95b28bf00df444bf421f9",
+      "date": "Sep 22, 2018 6:46:27 PM"
+    }
+  },
+  "type": "passing_passing"
+}
