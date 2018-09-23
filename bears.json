@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "tilln/jmeter-wssecurity",
+    "githubId": 81063858,
+    "url": "https://github.com/tilln/jmeter-wssecurity",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431819946,
+      "url": "http://travis-ci.org/tilln/jmeter-wssecurity/builds/431819946",
+      "date": "Sep 22, 2018 11:41:03 AM"
+    },
+    "fixerBuild": {
+      "id": 432218723,
+      "url": "http://travis-ci.org/tilln/jmeter-wssecurity/builds/432218723",
+      "date": "Sep 23, 2018 9:13:56 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 24, 2018 12:02:26 AM",
+    "reproductionDateEnd": "Sep 24, 2018 12:04:47 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252585200,
+      "totalMemory": 389021696
+    },
+    "totalDuration": 137,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 39,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          39
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          37
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/tilln/jmeter-wssecurity/431819946/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "tilln/jmeter-wssecurity",
+      "branchName": "feature/attachments",
+      "sha": "ff060984b7185641faa765f871ebccf5a3996e55",
+      "url": "http://github.com/tilln/jmeter-wssecurity/commit/ff060984b7185641faa765f871ebccf5a3996e55",
+      "date": "Sep 22, 2018 11:38:48 AM"
+    },
+    "fixerBuild": {
+      "repoName": "tilln/jmeter-wssecurity",
+      "branchName": "feature/attachments",
+      "sha": "82698a280229dd9dae1228494f485f944de98f35",
+      "url": "http://github.com/tilln/jmeter-wssecurity/commit/82698a280229dd9dae1228494f485f944de98f35",
+      "date": "Sep 23, 2018 9:11:30 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/tilln/jmeter-wssecurity/431819946",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 32,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nz.co.breakpoint.jmeter.modifiers.TestWSSDecryptionPostProcessor",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nz.co.breakpoint.jmeter.modifiers.TestWSSDecryptionPostProcessor",
+        "testMethod": "testSwADecryptionWithHeaders",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cContent-Type:[ ]text/plain\n\u003e but was:\u003cContent-Type:[]text/plain\n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 26,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 168,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
