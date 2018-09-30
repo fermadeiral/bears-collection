@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "mindmill/ladon-s3-server",
+    "githubId": 52228869,
+    "url": "https://github.com/mindmill/ladon-s3-server",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 432224417,
+      "url": "http://travis-ci.org/mindmill/ladon-s3-server/builds/432224417",
+      "date": "Sep 23, 2018 9:46:14 PM"
+    },
+    "fixerBuild": {
+      "id": 435321184,
+      "url": "http://travis-ci.org/mindmill/ladon-s3-server/builds/435321184",
+      "date": "Sep 30, 2018 8:43:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 30, 2018 8:43:41 PM",
+    "reproductionDateEnd": "Sep 30, 2018 8:45:32 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 365665352,
+      "totalMemory": 390070272
+    },
+    "totalDuration": 105,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 46,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          45
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/mindmill/ladon-s3-server/432224417/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 10
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "mindmill/ladon-s3-server",
+      "branchName": "master",
+      "sha": "88133dcf3928a27f02578cce7d548d10148854da",
+      "url": "http://github.com/mindmill/ladon-s3-server/commit/88133dcf3928a27f02578cce7d548d10148854da",
+      "date": "Sep 23, 2018 9:37:26 PM"
+    },
+    "fixerBuild": {
+      "repoName": "mindmill/ladon-s3-server",
+      "branchName": "master",
+      "sha": "5c3ea1c9ef811aa610f2d9e4a8af2f4e0f85f5f9",
+      "url": "http://github.com/mindmill/ladon-s3-server/commit/5c3ea1c9ef811aa610f2d9e4a8af2f4e0f85f5f9",
+      "date": "Sep 30, 2018 8:40:48 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/mindmill/ladon-s3-server/432224417/ladon-s3-server",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.mc.ladon.s3server.auth.TestAuthKeyGen",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.mc.ladon.s3server.auth.TestAuthKeyGen",
+        "testMethod": "testNoMinusNoUnderscore",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 141,
+    "numberTestFiles": 19,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
