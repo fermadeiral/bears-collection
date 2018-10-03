@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "dungba88/libra",
+    "githubId": 110289100,
+    "url": "https://github.com/dungba88/libra",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436514153,
+      "url": "http://travis-ci.org/dungba88/libra/builds/436514153",
+      "date": "Oct 3, 2018 10:10:51 AM"
+    },
+    "fixerBuild": {
+      "id": 436524727,
+      "url": "http://travis-ci.org/dungba88/libra/builds/436524727",
+      "date": "Oct 3, 2018 10:41:19 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 3, 2018 10:41:40 AM",
+    "reproductionDateEnd": "Oct 3, 2018 10:44:56 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 244856160,
+      "totalMemory": 382730240
+    },
+    "totalDuration": 192,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 40,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          40
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 61,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          61
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dungba88/libra/436514153/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dungba88/libra/436514153",
+    "overallMetrics": {
+      "numberRunning": 178,
+      "numberPassing": 176,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.joo.libra.test.TestSqlVariable",
+        "numberRunning": 68,
+        "numberPassing": 66,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.joo.libra.test.TestSqlVariable",
+        "testMethod": "testVariable[40]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cfalse\u003e but was:\u003ctrue\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.joo.libra.test.TestSqlVariable",
+        "testMethod": "testVariable[41]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cfalse\u003e but was:\u003ctrue\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 59,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dungba88/libra",
+      "branchName": "master",
+      "sha": "fd48492de18ad9abd87c58b286f1c3e5028d2fed",
+      "url": "http://github.com/dungba88/libra/commit/fd48492de18ad9abd87c58b286f1c3e5028d2fed",
+      "date": "Oct 3, 2018 10:06:19 AM"
+    },
+    "fixerBuild": {
+      "repoName": "dungba88/libra",
+      "branchName": "master",
+      "sha": "fbe5d265849641ee3e49f5ffe81db87534525859",
+      "url": "http://github.com/dungba88/libra/commit/fbe5d265849641ee3e49f5ffe81db87534525859",
+      "date": "Oct 3, 2018 10:38:04 AM"
+    }
+  },
+  "type": "passing_passing"
+}
