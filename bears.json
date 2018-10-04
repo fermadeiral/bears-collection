@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "square/javapoet",
+    "githubId": 7961991,
+    "url": "https://github.com/square/javapoet",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 418963407,
+      "url": "http://travis-ci.org/square/javapoet/builds/418963407",
+      "date": "Aug 22, 2018 3:16:05 AM"
+    },
+    "fixerBuild": {
+      "id": 436938143,
+      "url": "http://travis-ci.org/square/javapoet/builds/436938143",
+      "date": "Oct 4, 2018 5:01:24 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 4, 2018 5:01:39 AM",
+    "reproductionDateEnd": "Oct 4, 2018 5:03:33 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 304793552,
+      "totalMemory": 375390208
+    },
+    "totalDuration": 109,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 42,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          20
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/square/javapoet/418963407/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/square/javapoet/418963407",
+    "overallMetrics": {
+      "numberRunning": 334,
+      "numberPassing": 333,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.squareup.javapoet.ParameterSpecTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.squareup.javapoet.ParameterSpecTest",
+        "testMethod": "addNonFinalModifier",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 19,
+    "numberLibrariesFailingModule": 19,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "square/javapoet",
+      "branchName": "master",
+      "sha": "527c397d2987e44c4422412b8ab3ae5bca07db06",
+      "url": "http://github.com/square/javapoet/commit/527c397d2987e44c4422412b8ab3ae5bca07db06",
+      "date": "Aug 22, 2018 3:13:24 AM"
+    },
+    "fixerBuild": {
+      "repoName": "square/javapoet",
+      "branchName": "master",
+      "sha": "c93bfa88c30940d4f9bda88cac322ebbb83703a6",
+      "url": "http://github.com/square/javapoet/commit/c93bfa88c30940d4f9bda88cac322ebbb83703a6",
+      "date": "Oct 4, 2018 4:57:36 AM"
+    }
+  },
+  "type": "passing_passing"
+}
