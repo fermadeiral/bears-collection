@@ -1,0 +1,198 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "vitorenesduarte/VCD-java-client",
+    "githubId": 100865990,
+    "url": "https://github.com/vitorenesduarte/VCD-java-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437204853,
+      "url": "http://travis-ci.org/vitorenesduarte/VCD-java-client/builds/437204853",
+      "date": "Oct 4, 2018 5:54:09 PM"
+    },
+    "fixerBuild": {
+      "id": 437571024,
+      "url": "http://travis-ci.org/vitorenesduarte/VCD-java-client/builds/437571024",
+      "date": "Oct 5, 2018 1:20:16 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 5, 2018 1:20:35 PM",
+    "reproductionDateEnd": "Oct 5, 2018 1:23:00 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 244135576,
+      "totalMemory": 370147328
+    },
+    "totalDuration": 141,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 29,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          29
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          35
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/vitorenesduarte/VCD-java-client/437204853/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/vitorenesduarte/VCD-java-client/437204853",
+    "overallMetrics": {
+      "numberRunning": 24,
+      "numberPassing": 15,
+      "numberFailing": 0,
+      "numberErroring": 9,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 9
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "numberRunning": 9,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 9,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd2",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd3",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd4",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd6",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testRandom",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testFailures",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd1",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testFailure1",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.imdea.vcd.queue.ConfQueueTest",
+        "testMethod": "testAdd5",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 22,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "vitorenesduarte/VCD-java-client",
+      "branchName": "delay",
+      "sha": "6fb2081e7bd5dab2569b51a6348bc52222871fc9",
+      "url": "http://github.com/vitorenesduarte/VCD-java-client/commit/6fb2081e7bd5dab2569b51a6348bc52222871fc9",
+      "date": "Oct 4, 2018 5:51:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "vitorenesduarte/VCD-java-client",
+      "branchName": "delay",
+      "sha": "bba1c44e155e913e7108fa4c218915edd906e65a",
+      "url": "http://github.com/vitorenesduarte/VCD-java-client/commit/bba1c44e155e913e7108fa4c218915edd906e65a",
+      "date": "Oct 5, 2018 1:17:29 PM"
+    }
+  },
+  "type": "passing_passing"
+}
