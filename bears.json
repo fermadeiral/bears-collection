@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SonarOpenCommunity/sonar-cxx",
+    "githubId": 6140556,
+    "url": "https://github.com/SonarOpenCommunity/sonar-cxx",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437974912,
+      "url": "http://travis-ci.org/SonarOpenCommunity/sonar-cxx/builds/437974912",
+      "date": "Oct 6, 2018 1:55:17 PM"
+    },
+    "fixerBuild": {
+      "id": 438070185,
+      "url": "http://travis-ci.org/SonarOpenCommunity/sonar-cxx/builds/438070185",
+      "date": "Oct 6, 2018 8:51:20 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 8:51:36 PM",
+    "reproductionDateEnd": "Oct 6, 2018 8:55:27 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 318911656,
+      "totalMemory": 465043456
+    },
+    "totalDuration": 223,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 83,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          83
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SonarOpenCommunity/sonar-cxx/437974912/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 25
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SonarOpenCommunity/sonar-cxx",
+      "branchName": "master",
+      "sha": "21562864e471b5a1db1c85ef08ed082168894e1b",
+      "url": "http://github.com/SonarOpenCommunity/sonar-cxx/commit/21562864e471b5a1db1c85ef08ed082168894e1b",
+      "date": "Oct 6, 2018 1:18:31 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SonarOpenCommunity/sonar-cxx",
+      "branchName": "master",
+      "sha": "040a94a2104f7cd9ad7e0d0cb4d8935052264720",
+      "url": "http://github.com/SonarOpenCommunity/sonar-cxx/commit/040a94a2104f7cd9ad7e0d0cb4d8935052264720",
+      "date": "Oct 6, 2018 8:14:52 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SonarOpenCommunity/sonar-cxx/437974912/cxx-checks",
+    "overallMetrics": {
+      "numberRunning": 616,
+      "numberPassing": 615,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.cxx.checks.naming.MethodNameCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.cxx.checks.naming.MethodNameCheckTest",
+        "testMethod": "test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: 96\ngot: 67",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 226,
+    "numberTestFiles": 162,
+    "numberLibrariesFailingModule": 47,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
