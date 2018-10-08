@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "hexagonframework/spring-data-ebean",
+    "githubId": 93129711,
+    "url": "https://github.com/hexagonframework/spring-data-ebean",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 375829724,
+      "url": "http://travis-ci.org/hexagonframework/spring-data-ebean/builds/375829724",
+      "date": "May 7, 2018 12:41:42 PM"
+    },
+    "fixerBuild": {
+      "id": 438411426,
+      "url": "http://travis-ci.org/hexagonframework/spring-data-ebean/builds/438411426",
+      "date": "Oct 8, 2018 2:15:00 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 8, 2018 2:15:14 AM",
+    "reproductionDateEnd": "Oct 8, 2018 2:18:58 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 372293728,
+      "totalMemory": 398458880
+    },
+    "totalDuration": 219,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 115,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          115
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/hexagonframework/spring-data-ebean/375829724/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/hexagonframework/spring-data-ebean/375829724",
+    "overallMetrics": {
+      "numberRunning": 48,
+      "numberPassing": 47,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.ebean.repository.UserRepositoryIntegrationTest",
+        "numberRunning": 41,
+        "numberPassing": 40,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.ebean.repository.UserRepositoryIntegrationTest",
+        "testMethod": "findUserByEmailAddressEqualsOql_pageable",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "query not supported!",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 50,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "hexagonframework/spring-data-ebean",
+      "branchName": "master",
+      "sha": "92a18cd6a231154e1b812c037ea738b57e55ca85",
+      "url": "http://github.com/hexagonframework/spring-data-ebean/commit/92a18cd6a231154e1b812c037ea738b57e55ca85",
+      "date": "May 7, 2018 12:40:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "hexagonframework/spring-data-ebean",
+      "branchName": "master",
+      "sha": "827079b74c6eb27d2fba17f4ecf44ae62b97bae5",
+      "url": "http://github.com/hexagonframework/spring-data-ebean/commit/827079b74c6eb27d2fba17f4ecf44ae62b97bae5",
+      "date": "Oct 8, 2018 2:12:58 AM"
+    }
+  }
+}
