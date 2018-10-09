@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/calcite",
+    "githubId": 21193524,
+    "url": "https://github.com/apache/calcite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438471840,
+      "url": "http://travis-ci.org/apache/calcite/builds/438471840",
+      "date": "Oct 8, 2018 8:47:19 AM"
+    },
+    "fixerBuild": {
+      "id": 439261190,
+      "url": "http://travis-ci.org/apache/calcite/builds/439261190",
+      "date": "Oct 9, 2018 8:13:16 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 8:13:43 PM",
+    "reproductionDateEnd": "Oct 9, 2018 8:25:05 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 271401688,
+      "totalMemory": 617086976
+    },
+    "totalDuration": 675,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          22
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 178,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          177
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/calcite/438471840/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/calcite/438471840/linq4j",
+    "overallMetrics": {
+      "numberRunning": 278,
+      "numberPassing": 277,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.linq4j.test.BlockBuilderTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.linq4j.test.BlockBuilderTest",
+        "testMethod": "testOptimizeBoxedFalseEqNull",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "Expected to optimize Boolean.FALSE \u003d null to false expected:\u003c{\n  return [false];\n}\n\u003e but was:\u003c{\n  return [!null];\n}\n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1513,
+    "numberTestFiles": 231,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "6b3844c0634792263a5073b8ea93565fb3415f41",
+      "url": "http://github.com/apache/calcite/commit/6b3844c0634792263a5073b8ea93565fb3415f41",
+      "date": "Oct 7, 2018 10:34:53 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "dfd012cf082adf50688c2cc57c7e857f6d702f72",
+      "url": "http://github.com/apache/calcite/commit/dfd012cf082adf50688c2cc57c7e857f6d702f72",
+      "date": "Oct 9, 2018 7:49:56 PM"
+    }
+  }
+}
