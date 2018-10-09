@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 223024976,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/223024976",
+      "date": "Apr 18, 2017 7:15:44 AM"
+    },
+    "fixerBuild": {
+      "id": 223291136,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/223291136",
+      "date": "Apr 18, 2017 9:51:23 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 11:26:28 PM",
+    "reproductionDateEnd": "Oct 9, 2018 11:31:44 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 280575688,
+      "totalMemory": 555745280
+    },
+    "totalDuration": 311,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 69,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          69
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 62,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          60
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 66,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          66
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/223024976/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 14,
+      "numberDeleted": 17
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.7",
+      "sha": "8e98ed66bc262681a38052682ec5b6a42120f7f7",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/8e98ed66bc262681a38052682ec5b6a42120f7f7",
+      "date": "Apr 18, 2017 7:11:02 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.7",
+      "sha": "ec859af181fa5b2da62077d00154e3c13c9d8f28",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/ec859af181fa5b2da62077d00154e3c13c9d8f28",
+      "date": "Apr 18, 2017 9:46:33 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/223024976",
+    "overallMetrics": {
+      "numberRunning": 1575,
+      "numberPassing": 1574,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest",
+        "testMethod": "testIssue1607",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003c{\"alwaysClass\":[1],\"alwaysProp\":2}\u003e but was:\u003c{\"alwaysClass\":[{\"id\":1,\"value\":13}],\"alwaysProp\":2}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 389,
+    "numberTestFiles": 365,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
