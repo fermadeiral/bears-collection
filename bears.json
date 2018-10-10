@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 233857275,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/233857275",
+      "date": "May 19, 2017 3:39:30 AM"
+    },
+    "fixerBuild": {
+      "id": 234147085,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/234147085",
+      "date": "May 19, 2017 10:12:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 3:17:16 PM",
+    "reproductionDateEnd": "Oct 10, 2018 3:20:44 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 270497080,
+      "totalMemory": 377487360
+    },
+    "totalDuration": 201,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 49,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          49
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 45,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          45
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          37
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/233857275/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/233857275",
+    "overallMetrics": {
+      "numberRunning": 1722,
+      "numberPassing": 1721,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.filter.ProblemHandlerTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.filter.ProblemHandlerTest",
+        "testMethod": "testWeirdStringHandling",
+        "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+        "detail": "Can not deserialize value of type java.util.UUID from String \"not a uuid!\": not a valid textual representation\n at [Source: \"not a uuid!\"; line: 1, column: 1]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 396,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "edaa4ad8204dfda985d3c74ffe542c9eb67a201d",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/edaa4ad8204dfda985d3c74ffe542c9eb67a201d",
+      "date": "May 19, 2017 3:34:35 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "9a083ad56b20711eab368a7818fb079a870feb93",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/9a083ad56b20711eab368a7818fb079a870feb93",
+      "date": "May 19, 2017 10:07:44 PM"
+    }
+  },
+  "type": "passing_passing"
+}
