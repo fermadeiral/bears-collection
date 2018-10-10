@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 193356189,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/193356189",
+      "date": "Jan 19, 2017 12:49:41 PM"
+    },
+    "fixerBuild": {
+      "id": 194423789,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/194423789",
+      "date": "Jan 23, 2017 11:51:09 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:44:56 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:50:46 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 202264560,
+      "totalMemory": 242221056
+    },
+    "totalDuration": 344,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 190,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          187
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 36,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          36
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/193356189/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 25,
+      "numberDeleted": 8
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "e68be19054603862acf5db25f66cb9a94784fe1e",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/e68be19054603862acf5db25f66cb9a94784fe1e",
+      "date": "Jan 19, 2017 12:23:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "bf04e3232b959735a89ea2a06f77295773fce976",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/bf04e3232b959735a89ea2a06f77295773fce976",
+      "date": "Jan 23, 2017 11:41:39 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/193356189",
+    "overallMetrics": {
+      "numberRunning": 2006,
+      "numberPassing": 2004,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests",
+        "testMethod": "doesNotSupportUnannotatedInterfaceFromSpringNamespace",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003cfalse\u003e\n     but: was \u003ctrue\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests",
+        "testMethod": "doesNotSupportCoreJavaType",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003cfalse\u003e\n     but: was \u003ctrue\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 228,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
