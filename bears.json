@@ -1,0 +1,192 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 201940544,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/201940544",
+      "date": "Feb 15, 2017 6:14:42 PM"
+    },
+    "fixerBuild": {
+      "id": 203101555,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/203101555",
+      "date": "Feb 19, 2017 8:42:14 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 7:53:35 AM",
+    "reproductionDateEnd": "Oct 10, 2018 8:05:21 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 101301248,
+      "totalMemory": 296222720
+    },
+    "totalDuration": 700,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          20
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          69
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 259,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          259
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/201940544/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 28
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/201940544",
+    "overallMetrics": {
+      "numberRunning": 1022,
+      "numberPassing": 1017,
+      "numberFailing": 1,
+      "numberErroring": 4,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "spoon.SpoonException",
+          "isError": true,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "numberRunning": 25,
+        "numberPassing": 21,
+        "numberFailing": 1,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.main.MainTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testSpoonWithImports",
+        "failureName": "spoon.SpoonException",
+        "detail": "Cannot compute access path to type: spoon.test.imports.testclasses.internal.SuperClass$ProtectedInterface$NestedOfProtectedInterface in context of type: spoon.test.imports.testclasses.ClientClass$InnerClass5",
+        "isError": true
+      },
+      {
+        "testClass": "spoon.test.main.MainTest",
+        "testMethod": "testTest",
+        "failureName": "spoon.SpoonException",
+        "detail": "spoon.SpoonException: Cannot compute access path to type: spoon.test.imports.testclasses.internal.SuperClass$ProtectedInterface$NestedOfProtectedInterface in context of type: spoon.test.imports.testclasses.ClientClass$InnerClass5",
+        "isError": true
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testImportOfAnInnerClassInASuperClassPackageAutoImport",
+        "failureName": "spoon.SpoonException",
+        "detail": "spoon.SpoonException: Cannot compute access path to type: spoon.test.imports.testclasses.internal.SuperClass$ProtectedInterface$NestedOfProtectedInterface in context of type: spoon.test.imports.testclasses.ClientClass$InnerClass5",
+        "isError": true
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testImportOfAnInnerClassInASuperClassPackageFullQualified",
+        "failureName": "spoon.SpoonException",
+        "detail": "spoon.SpoonException: Cannot compute access path to type: spoon.test.imports.testclasses.internal.SuperClass$ProtectedInterface$NestedOfProtectedInterface in context of type: spoon.test.imports.testclasses.ClientClass$InnerClass5",
+        "isError": true
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testCanAccess",
+        "failureName": "java.lang.AssertionError",
+        "detail": "ClientClass should have access to spoon.test.imports.testclasses.internal.PublicInterface2$NestedInterface but it has not",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 463,
+    "numberTestFiles": 469,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "e5665b160f66a421bcf48c7625401a3d292bcb21",
+      "url": "http://github.com/INRIA/spoon/commit/e5665b160f66a421bcf48c7625401a3d292bcb21",
+      "date": "Feb 15, 2017 6:01:30 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "92cedf9af2909264092eff8d75069d74e9368ea6",
+      "url": "http://github.com/INRIA/spoon/commit/92cedf9af2909264092eff8d75069d74e9368ea6",
+      "date": "Feb 19, 2017 8:33:22 AM"
+    }
+  },
+  "type": "passing_passing"
+}
