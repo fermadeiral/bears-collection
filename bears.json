@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 210079209,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/210079209",
+      "date": "Mar 11, 2017 5:40:40 PM"
+    },
+    "fixerBuild": {
+      "id": 210080599,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/210080599",
+      "date": "Mar 11, 2017 5:48:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 7:29:54 AM",
+    "reproductionDateEnd": "Oct 10, 2018 7:38:20 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 175543448,
+      "totalMemory": 251658240
+    },
+    "totalDuration": 498,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          21
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 74,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          74
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 202,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          202
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/210079209/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/210079209",
+    "overallMetrics": {
+      "numberRunning": 1027,
+      "numberPassing": 1026,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "spoon.reflect.declaration.ParentNotInitializedException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.prettyprinter.QualifiedThisRefTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.prettyprinter.QualifiedThisRefTest",
+        "testMethod": "testPrintCtFieldAccessWorkEvenWhenParentNotInitialized",
+        "failureName": "spoon.reflect.declaration.ParentNotInitializedException",
+        "detail": "parent not initialized for class spoon.support.reflect.code.CtInvocationImpl (unknown file)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 469,
+    "numberTestFiles": 469,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "24ccd7213761c97d2de8586a48cc49c500ffd740",
+      "url": "http://github.com/INRIA/spoon/commit/24ccd7213761c97d2de8586a48cc49c500ffd740",
+      "date": "Mar 11, 2017 5:32:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "6d7af94b1e5cd9295c379ecfa886cacd97af7a9a",
+      "url": "http://github.com/INRIA/spoon/commit/6d7af94b1e5cd9295c379ecfa886cacd97af7a9a",
+      "date": "Mar 11, 2017 5:40:44 PM"
+    }
+  },
+  "type": "passing_passing"
+}
