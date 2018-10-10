@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apereo/java-cas-client",
+    "githubId": 3645037,
+    "url": "https://github.com/apereo/java-cas-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 408206584,
+      "url": "http://travis-ci.org/apereo/java-cas-client/builds/408206584",
+      "date": "Jul 25, 2018 10:12:15 PM"
+    },
+    "fixerBuild": {
+      "id": 439486928,
+      "url": "http://travis-ci.org/apereo/java-cas-client/builds/439486928",
+      "date": "Oct 10, 2018 8:59:34 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:59:53 AM",
+    "reproductionDateEnd": "Oct 10, 2018 9:03:00 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 318225856,
+      "totalMemory": 389545984
+    },
+    "totalDuration": 181,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 117,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          116
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apereo/java-cas-client/408206584/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apereo/java-cas-client/408206584/cas-client-core",
+    "overallMetrics": {
+      "numberRunning": 154,
+      "numberPassing": 153,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jasig.cas.client.util.CommonUtilsTests",
+        "numberRunning": 26,
+        "numberPassing": 25,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jasig.cas.client.util.CommonUtilsTests",
+        "testMethod": "testConstructServiceUrlWithServerNameContainingPathAndSchema",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "null expected:\u003c...//www.my.server.com/[app/]hello/hithere/\u003e but was:\u003c...//www.my.server.com/[]hello/hithere/\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 163,
+    "numberTestFiles": 40,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apereo/java-cas-client",
+      "branchName": "master",
+      "sha": "ee9dcc61cdaab8ce9b9d50dddea06a31bd363529",
+      "url": "http://github.com/apereo/java-cas-client/commit/ee9dcc61cdaab8ce9b9d50dddea06a31bd363529",
+      "date": "Jul 25, 2018 9:17:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apereo/java-cas-client",
+      "branchName": "master",
+      "sha": "82c21161b9ef7abf0001ecfcd8800e669bd54b43",
+      "url": "http://github.com/apereo/java-cas-client/commit/82c21161b9ef7abf0001ecfcd8800e669bd54b43",
+      "date": "Oct 10, 2018 8:22:17 AM"
+    }
+  }
+}
