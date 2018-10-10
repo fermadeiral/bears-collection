@@ -1,0 +1,216 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 234612953,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/234612953",
+      "date": "May 21, 2017 10:46:37 PM"
+    },
+    "fixerBuild": {
+      "id": 235302726,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/235302726",
+      "date": "May 23, 2017 6:51:13 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 4:14:08 PM",
+    "reproductionDateEnd": "Oct 10, 2018 4:22:44 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 89932184,
+      "totalMemory": 262668288
+    },
+    "totalDuration": 510,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 66,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          65
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 169,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          169
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/234612953/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 64,
+      "numberDeleted": 42
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/234612953",
+    "overallMetrics": {
+      "numberRunning": 1082,
+      "numberPassing": 1074,
+      "numberFailing": 8,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 8
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest",
+        "numberRunning": 9,
+        "numberPassing": 5,
+        "numberFailing": 4,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "numberRunning": 30,
+        "numberPassing": 27,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.imports.ImportScannerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest",
+        "testMethod": "testNoFQNWhenUsedInTryCatch",
+        "failureName": "java.lang.AssertionError",
+        "detail": "The java file should contain import for Launcher",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testJavaLangIsConsideredAsImported",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Can\u0027t compile spooned-javalang",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testSpoonWithImports",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Spoon ignores the arguments of CtInvocations expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.imports.ImportScannerTest",
+        "testMethod": "testComputeImportsInClass",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c4\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest",
+        "testMethod": "testNoFQNWhenUsedInLoop",
+        "failureName": "java.lang.AssertionError",
+        "detail": "The java file should contain import for Launcher",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.imports.ImportTest",
+        "testMethod": "testNotImportExecutableType",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest",
+        "testMethod": "testNoFQNWhenShadowedByLocalVariable",
+        "failureName": "java.lang.AssertionError",
+        "detail": "The java file should contain import for Launcher",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest",
+        "testMethod": "testNoFQNWhenShadowedByField",
+        "failureName": "java.lang.AssertionError",
+        "detail": "The java file should contain import for Launcher",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 483,
+    "numberTestFiles": 511,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "4a41286b73ef0230f3df61a921db0306195ca31e",
+      "url": "http://github.com/INRIA/spoon/commit/4a41286b73ef0230f3df61a921db0306195ca31e",
+      "date": "May 21, 2017 10:38:30 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "08151bda54b23451d85534763a4ec706708c2e53",
+      "url": "http://github.com/INRIA/spoon/commit/08151bda54b23451d85534763a4ec706708c2e53",
+      "date": "May 23, 2017 6:43:20 PM"
+    }
+  },
+  "type": "passing_passing"
+}
