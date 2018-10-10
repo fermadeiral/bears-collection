@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 190241752,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190241752",
+      "date": "Jan 9, 2017 2:13:49 PM"
+    },
+    "fixerBuild": {
+      "id": 190558172,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190558172",
+      "date": "Jan 10, 2017 11:21:52 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:15:11 PM",
+    "reproductionDateEnd": "Oct 10, 2018 8:25:08 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 196854312,
+      "totalMemory": 255328256
+    },
+    "totalDuration": 591,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          16
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 59,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          59
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 201,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          201
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/190241752/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 49,
+      "numberDeleted": 34
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/190241752",
+    "overallMetrics": {
+      "numberRunning": 970,
+      "numberPassing": 969,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.ClassCastException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.reference.VariableAccessTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.reference.VariableAccessTest",
+        "testMethod": "testParameterReferenceInConstructorNoClasspath",
+        "failureName": "java.lang.ClassCastException",
+        "detail": "spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtMethod",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 446,
+    "numberTestFiles": 460,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "669bcc077b462157d1e14fb771e10ae86075f59d",
+      "url": "http://github.com/INRIA/spoon/commit/669bcc077b462157d1e14fb771e10ae86075f59d",
+      "date": "Jan 9, 2017 2:04:17 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "e60e3ab92d706a87e3475645f312675fc278c9f1",
+      "url": "http://github.com/INRIA/spoon/commit/e60e3ab92d706a87e3475645f312675fc278c9f1",
+      "date": "Jan 10, 2017 11:13:22 AM"
+    }
+  },
+  "type": "passing_passing"
+}
