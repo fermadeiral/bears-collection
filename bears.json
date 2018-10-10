@@ -1,0 +1,192 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 199993301,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/199993301",
+      "date": "Feb 9, 2017 3:35:45 PM"
+    },
+    "fixerBuild": {
+      "id": 200108848,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/200108848",
+      "date": "Feb 9, 2017 9:06:23 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:05:48 AM",
+    "reproductionDateEnd": "Oct 10, 2018 8:18:45 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 128588560,
+      "totalMemory": 274726912
+    },
+    "totalDuration": 769,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 85,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          85
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 285,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          285
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/199993301/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 106,
+      "numberDeleted": 224
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "b63ac185bb5c83b60f1c1bdbc10aa9b4004ae3a6",
+      "url": "http://github.com/INRIA/spoon/commit/b63ac185bb5c83b60f1c1bdbc10aa9b4004ae3a6",
+      "date": "Feb 9, 2017 3:27:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "05592e51945eb22dd570955c33c83a01d757bac8",
+      "url": "http://github.com/INRIA/spoon/commit/05592e51945eb22dd570955c33c83a01d757bac8",
+      "date": "Feb 9, 2017 8:53:14 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/199993301",
+    "overallMetrics": {
+      "numberRunning": 1028,
+      "numberPassing": 1023,
+      "numberFailing": 4,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "spoon.SpoonException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.query_function.VariableReferencesTest",
+        "numberRunning": 7,
+        "numberPassing": 3,
+        "numberFailing": 3,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.reference.VariableAccessTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.query_function.VariableReferencesTest",
+        "testMethod": "testVariableReferenceFunction",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Test failed on VariableReferencesModelTest#localVarsInFor",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.reference.VariableAccessTest",
+        "testMethod": "testReferencesInInitExpression",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.query_function.VariableReferencesTest",
+        "testMethod": "testLocalVariableReferenceDeclarationFunction",
+        "failureName": "java.lang.AssertionError",
+        "detail": "CtLocalVariableReference#getDeclaration returned wrong declaration in VariableReferencesModelTest#localVarInNestedClass expected:\u003c23\u003e but was:\u003c25\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.query_function.VariableReferencesTest",
+        "testMethod": "testLocalVariableReferenceFunction",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Test failed on VariableReferencesModelTest#localVarsInFor",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.query_function.VariableReferencesTest",
+        "testMethod": "testVariableScopeFunction",
+        "failureName": "spoon.SpoonException",
+        "detail": "Cannot found index of local variable declaration int field \u003d 10 in statement list {\n    for (int field \u003d 10; field \u003d\u003d 10;) {\n        org.junit.Assert.assertTrue((field \u003d\u003d 10));\n        break;\n    }\n    int field \u003d 11;\n    org.junit.Assert.assertTrue((field \u003d\u003d 11));\n}",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 463,
+    "numberTestFiles": 473,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
