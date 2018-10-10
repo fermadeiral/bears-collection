@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "kmehrunes/valuestreams",
+    "githubId": 148899028,
+    "url": "https://github.com/kmehrunes/valuestreams",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438682914,
+      "url": "http://travis-ci.org/kmehrunes/valuestreams/builds/438682914",
+      "date": "Oct 8, 2018 5:25:03 PM"
+    },
+    "fixerBuild": {
+      "id": 439585987,
+      "url": "http://travis-ci.org/kmehrunes/valuestreams/builds/439585987",
+      "date": "Oct 10, 2018 1:10:25 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 1:45:19 PM",
+    "reproductionDateEnd": "Oct 10, 2018 1:46:20 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 299904696,
+      "totalMemory": 393740288
+    },
+    "totalDuration": 58,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 20,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          20
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/kmehrunes/valuestreams/438682914/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/kmehrunes/valuestreams/438682914",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NumberFormatException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "PipelineTests",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "PipelineTests",
+        "testMethod": "basicUsage",
+        "failureName": "java.lang.NumberFormatException",
+        "detail": "For input string: \"a\"",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 14,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "kmehrunes/valuestreams",
+      "branchName": "master",
+      "sha": "7ab21ffddc91744488f4459caaedb617872a5c9e",
+      "url": "http://github.com/kmehrunes/valuestreams/commit/7ab21ffddc91744488f4459caaedb617872a5c9e",
+      "date": "Oct 8, 2018 5:23:17 PM"
+    },
+    "fixerBuild": {
+      "repoName": "kmehrunes/valuestreams",
+      "branchName": "master",
+      "sha": "e9d52b5221079373033876d8b7a24277a1388568",
+      "url": "http://github.com/kmehrunes/valuestreams/commit/e9d52b5221079373033876d8b7a24277a1388568",
+      "date": "Oct 10, 2018 1:05:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
