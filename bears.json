@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 190406891,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/190406891",
+      "date": "Jan 9, 2017 10:50:43 PM"
+    },
+    "fixerBuild": {
+      "id": 190505536,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/190505536",
+      "date": "Jan 10, 2017 6:42:40 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:37:52 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:40:49 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 129327328,
+      "totalMemory": 364380160
+    },
+    "totalDuration": 172,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          48
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 43,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          43
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/190406891/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/190406891",
+    "overallMetrics": {
+      "numberRunning": 1681,
+      "numberPassing": 1680,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.util.NoSuchElementException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.TestUnwrapped",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.TestUnwrapped",
+        "testMethod": "testCaseInsensitiveUnwrap",
+        "failureName": "java.util.NoSuchElementException",
+        "detail": "No entry \u0027businessAddress\u0027 found, can\u0027t remove",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 382,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
+      "date": "Jan 9, 2017 10:45:35 PM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "d7155de6c37db3301b92b755bd0a02388f7dd07f",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/d7155de6c37db3301b92b755bd0a02388f7dd07f",
+      "date": "Jan 10, 2017 6:38:36 AM"
+    }
+  },
+  "type": "passing_passing"
+}
