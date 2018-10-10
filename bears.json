@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 207045952,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/207045952",
+      "date": "Mar 2, 2017 7:21:31 PM"
+    },
+    "fixerBuild": {
+      "id": 208573806,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/208573806",
+      "date": "Mar 7, 2017 1:57:07 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:53:45 AM",
+    "reproductionDateEnd": "Oct 10, 2018 6:59:01 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 111524648,
+      "totalMemory": 238551040
+    },
+    "totalDuration": 311,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 173,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          172
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/207045952/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 4
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "b46b84d4bf8acdfda56f01e3d6f2f5368cae9990",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/b46b84d4bf8acdfda56f01e3d6f2f5368cae9990",
+      "date": "Mar 2, 2017 4:57:41 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "6ef41f6a7625e67bebbd42bb6239c1b7382467ef",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/6ef41f6a7625e67bebbd42bb6239c1b7382467ef",
+      "date": "Mar 7, 2017 1:45:38 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/207045952",
+    "overallMetrics": {
+      "numberRunning": 2011,
+      "numberPassing": 2010,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.mapping.SimpleTypeHolderUnitTests",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.mapping.SimpleTypeHolderUnitTests",
+        "testMethod": "considersJavaLangTypesSimple",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 231,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
