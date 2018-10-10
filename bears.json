@@ -1,0 +1,178 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 207561899,
+      "url": "http://travis-ci.org/traccar/traccar/builds/207561899",
+      "date": "Mar 4, 2017 1:29:02 AM"
+    },
+    "fixerBuild": {
+      "id": 207563891,
+      "url": "http://travis-ci.org/traccar/traccar/builds/207563891",
+      "date": "Mar 4, 2017 1:30:36 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 5:04:36 AM",
+    "reproductionDateEnd": "Oct 10, 2018 5:07:33 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 187292416,
+      "totalMemory": 257949696
+    },
+    "totalDuration": 171,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          17
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 102,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          102
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/207561899/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "b29929c4c8f78f665dd1614e43ee108c6eeeaa89",
+      "url": "http://github.com/traccar/traccar/commit/b29929c4c8f78f665dd1614e43ee108c6eeeaa89",
+      "date": "Mar 4, 2017 1:18:16 AM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "1423209d00804948110e1b70c2e41248b4945877",
+      "url": "http://github.com/traccar/traccar/commit/1423209d00804948110e1b70c2e41248b4945877",
+      "date": "Mar 4, 2017 1:28:03 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/207561899",
+    "overallMetrics": {
+      "numberRunning": 230,
+      "numberPassing": 227,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.TotemProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.traccar.protocol.AquilaProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.AquilaProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.TotemProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 498,
+    "numberTestFiles": 207,
+    "numberLibrariesFailingModule": 84,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
