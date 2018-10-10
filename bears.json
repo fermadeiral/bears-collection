@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 228025083,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/228025083",
+      "date": "May 2, 2017 6:47:20 PM"
+    },
+    "fixerBuild": {
+      "id": 228873360,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/228873360",
+      "date": "May 4, 2017 9:53:36 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 3:21:59 PM",
+    "reproductionDateEnd": "Oct 10, 2018 3:24:48 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 238036008,
+      "totalMemory": 346554368
+    },
+    "totalDuration": 164,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          46
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/228025083/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/228025083",
+    "overallMetrics": {
+      "numberRunning": 1721,
+      "numberPassing": 1720,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.filter.IgnorePropertyOnDeserTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.filter.IgnorePropertyOnDeserTest",
+        "testMethod": "testIgnoreGetterNotSetter1595",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003cjack\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 396,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "f13cfb1f671af15814e2aa34e9f12cf00ab93b58",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/f13cfb1f671af15814e2aa34e9f12cf00ab93b58",
+      "date": "May 2, 2017 6:42:22 PM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "4a2b1ae08ded66b77e05bf8fa0ac8a2e8c60709d",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/4a2b1ae08ded66b77e05bf8fa0ac8a2e8c60709d",
+      "date": "May 4, 2017 9:48:52 PM"
+    }
+  },
+  "type": "passing_passing"
+}
