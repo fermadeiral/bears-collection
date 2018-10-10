@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 195752461,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195752461",
+      "date": "Jan 27, 2017 4:16:49 AM"
+    },
+    "fixerBuild": {
+      "id": 195777970,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195777970",
+      "date": "Jan 27, 2017 7:43:20 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:16:48 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:20:25 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 146750432,
+      "totalMemory": 337117184
+    },
+    "totalDuration": 210,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 59,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          59
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 42,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/195752461/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/195752461",
+    "overallMetrics": {
+      "numberRunning": 1692,
+      "numberPassing": 1690,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.EnumDeserializationTest",
+        "numberRunning": 28,
+        "numberPassing": 27,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.EnumDefaultReadTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.EnumDeserializationTest",
+        "testMethod": "testNumbersToEnums",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected an exception with one of substrings ([value not one of declared Enum]): got one with message \"Can not deserialize value of type com.fasterxml.jackson.databind.deser.EnumDeserializationTest$TestEnum from number 1: not allowed to deserialize Enum value out of number: disable DeserializationConfig.DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS to allow\n at [Source: \"1\"; line: 1, column: 1]\"",
+        "isError": false
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.EnumDefaultReadTest",
+        "testMethod": "testWithFailOnNumbersAndReadUnknownAsDefault",
+        "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+        "detail": "Can not deserialize value of type com.fasterxml.jackson.databind.deser.EnumDefaultReadTest$SimpleEnumWithDefault from number 0: not allowed to deserialize Enum value out of number: disable DeserializationConfig.DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS to allow\n at [Source: \"0\"; line: 1, column: 1]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 385,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "4d34006e4d8a566c6c64a3a0e04c17e50d63bb82",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/4d34006e4d8a566c6c64a3a0e04c17e50d63bb82",
+      "date": "Jan 27, 2017 4:12:29 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "ff441e82825ea48d28baee6ae7f0f705ff421def",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/ff441e82825ea48d28baee6ae7f0f705ff421def",
+      "date": "Jan 27, 2017 7:39:00 AM"
+    }
+  },
+  "type": "passing_passing"
+}
