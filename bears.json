@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "matsim-org/matsim",
+    "githubId": 39812341,
+    "url": "https://github.com/matsim-org/matsim",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439539681,
+      "url": "http://travis-ci.org/matsim-org/matsim/builds/439539681",
+      "date": "Oct 10, 2018 11:45:53 AM"
+    },
+    "fixerBuild": {
+      "id": 439592768,
+      "url": "http://travis-ci.org/matsim-org/matsim/builds/439592768",
+      "date": "Oct 10, 2018 3:18:03 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 3:46:09 PM",
+    "reproductionDateEnd": "Oct 10, 2018 4:55:33 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1363103472,
+      "totalMemory": 2337275904
+    },
+    "totalDuration": 4160,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 160,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          160
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 1328,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          1325
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1113,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          1113
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/matsim-org/matsim/439539681/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 18,
+      "numberDeleted": 21
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "matsim-org/matsim",
+      "branchName": "mr_improvements",
+      "sha": "c0d08a831bed77a4e9f2c1366815444b824abf27",
+      "url": "http://github.com/matsim-org/matsim/commit/c0d08a831bed77a4e9f2c1366815444b824abf27",
+      "date": "Oct 10, 2018 11:03:25 AM"
+    },
+    "fixerBuild": {
+      "repoName": "matsim-org/matsim",
+      "branchName": "mr_improvements",
+      "sha": "b112b0739b9c04720bdbd35bf1f283492acd49fb",
+      "url": "http://github.com/matsim-org/matsim/commit/b112b0739b9c04720bdbd35bf1f283492acd49fb",
+      "date": "Oct 10, 2018 1:29:14 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/matsim-org/matsim/439539681/contribs/signals",
+    "overallMetrics": {
+      "numberRunning": 1768,
+      "numberPassing": 1766,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest",
+        "testMethod": "testTrafficLightIntersection4armsWithUTurn",
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+        "detail": "java.io.FileNotFoundException: testAmberTimes_v1.0.xml",
+        "isError": true
+      },
+      {
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest",
+        "testMethod": "testTrafficLightIntersection4arms",
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+        "detail": "java.io.FileNotFoundException: testAmberTimes_v1.0.xml",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 3124,
+    "numberTestFiles": 648,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  },
+  "type": "failing_passing"
+}
