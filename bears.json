@@ -1,0 +1,181 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 204567691,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/204567691",
+      "date": "Feb 23, 2017 1:46:32 PM"
+    },
+    "fixerBuild": {
+      "id": 207361743,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/207361743",
+      "date": "Mar 3, 2017 2:53:53 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 7:40:15 AM",
+    "reproductionDateEnd": "Oct 10, 2018 7:52:52 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 164877992,
+      "totalMemory": 247463936
+    },
+    "totalDuration": 751,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          20
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 81,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          80
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 282,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          282
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/204567691/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 7
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "e7acf58718e88be92e7a50531510a152df03504d",
+      "url": "http://github.com/INRIA/spoon/commit/e7acf58718e88be92e7a50531510a152df03504d",
+      "date": "Feb 23, 2017 1:26:35 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "6433c2c6641e4e3eb172d04cb39ac5373b38ed74",
+      "url": "http://github.com/INRIA/spoon/commit/6433c2c6641e4e3eb172d04cb39ac5373b38ed74",
+      "date": "Mar 3, 2017 2:44:31 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/204567691",
+    "overallMetrics": {
+      "numberRunning": 1024,
+      "numberPassing": 1021,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.constructorcallnewclass.NewClassTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.type.TypeTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.arrays.ArraysTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.type.TypeTest",
+        "testMethod": "test",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[android.content.]DialogInterface$OnCl...\u003e but was:\u003c[]DialogInterface$OnCl...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.arrays.ArraysTest",
+        "testMethod": "testInitializeWithNewArray",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cnew [com.example.]Type[list.size()]\u003e but was:\u003cnew []Type[list.size()]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.constructorcallnewclass.NewClassTest",
+        "testMethod": "testCtNewClassInNoClasspath",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[org.apache.lucene.store.]Lock$With\u003e but was:\u003c[]Lock$With\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 463,
+    "numberTestFiles": 469,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
