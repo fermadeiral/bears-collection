@@ -1,0 +1,400 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "DmitriiSerikov/money-transfer-service",
+    "githubId": 153101102,
+    "url": "https://github.com/DmitriiSerikov/money-transfer-service",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441784509,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/441784509",
+      "date": "Oct 15, 2018 7:47:19 PM"
+    },
+    "fixerBuild": {
+      "id": 441791525,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/441791525",
+      "date": "Oct 15, 2018 8:04:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 15, 2018 8:04:34 PM",
+    "reproductionDateEnd": "Oct 15, 2018 8:07:18 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 238497536,
+      "totalMemory": 363855872
+    },
+    "totalDuration": 159,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 83,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          83
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          21
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DmitriiSerikov/money-transfer-service/441784509/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 107,
+      "numberDeleted": 72
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "7f2bfeb16fa678be648f7f1816b377019ebfb712",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/7f2bfeb16fa678be648f7f1816b377019ebfb712",
+      "date": "Oct 15, 2018 7:45:27 PM"
+    },
+    "fixerBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "b93049bd06be3aa0f727f417dfa41c38cf7a41a9",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/b93049bd06be3aa0f727f417dfa41c38cf7a41a9",
+      "date": "Oct 15, 2018 8:00:55 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DmitriiSerikov/money-transfer-service/441784509",
+    "overallMetrics": {
+      "numberRunning": 70,
+      "numberPassing": 35,
+      "numberFailing": 16,
+      "numberErroring": 19,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.spockframework.runtime.SpockComparisonFailure",
+          "isError": false,
+          "occurrences": 4
+        },
+        {
+          "failureName": "org.spockframework.mock.TooFewInvocationsError",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+          "isError": false,
+          "occurrences": 8
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true,
+          "occurrences": 19
+        },
+        {
+          "failureName": "org.spockframework.runtime.ConditionNotSatisfiedError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "numberRunning": 7,
+        "numberPassing": 1,
+        "numberFailing": 6,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "numberRunning": 9,
+        "numberPassing": 1,
+        "numberFailing": 8,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "numberRunning": 21,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 19,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should deposit into target account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should throw exception when accounts storage doesn\u0027t contains entity for given source account id and throws exception",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should return account by given id when accounts storage contains entity for given id",
+        "failureName": "org.spockframework.runtime.SpockComparisonFailure",
+        "detail": "Condition not satisfied:\n\nresult \u003d\u003d account\n|      |  |\nnull   |  \u003ccom.github.example.model.Account@295af370 id\u003d47 creationTime\u003d2018-10-15T18:06:20.704Z balance\u003d1\u003e\n       false\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should primarily lock account with lower id and then with greater id by accounts storage when executes transaction",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should execute transactions with same source account sequentially when transaction storage contains pending transactions only with one source account",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should withdraw from source account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should throw exception when try executes not pending transaction",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalStateException\u0027, but got \u0027java.lang.UnsupportedOperationException\u0027",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should throw exception when command for account creation is null",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as failed when source account balance after withdrawal less than zero",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should return transaction by given id when transactions storage contains entity for given id",
+        "failureName": "org.spockframework.runtime.SpockComparisonFailure",
+        "detail": "Condition not satisfied:\n\nresult \u003d\u003d transaction\n|      |  |\nnull   |  \u003ccom.github.example.model.Transaction@2cc788cc id\u003d24 creationTime\u003d2018-10-15T18:06:20.390Z sourceAccountId\u003d21 targetAccountId\u003d22 amount\u003d1 status\u003dPENDING\u003e\n       false\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should create transaction by given command and insert it into transactions storage when command for transaction creation is valid",
+        "failureName": "org.spockframework.mock.TooFewInvocationsError",
+        "detail": "Too few invocations for:\n\n1 * transactionDao.insert({\n            it.sourceAccountId \u003d\u003d sourceAccountId\n            it.targetAccountId \u003d\u003d targetAccountId\n            it.amount \u003d\u003d amount\n        } as Transaction)   (0 invocations)\n\nUnmatched invocations (ordered by similarity):\n\nNone\n\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as failed when source account balance after withdrawal less than zero",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as failed when accounts storage not found target account and throws exception",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as failed when source account balance after withdrawal less than zero",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should throw exception when accounts storage doesn\u0027t contains entity for given id and throws exception",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027com.github.example.exception.EntityNotFoundException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should throw exception when command for transaction creation is null",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should create account by given command and insert it into accounts storage when command for account creation is valid",
+        "failureName": "org.spockframework.mock.TooFewInvocationsError",
+        "detail": "Too few invocations for:\n\n1 * accountDao.insert({ it.balance \u003d\u003d initialBalance } as Account)   (0 invocations)\n\nUnmatched invocations (ordered by similarity):\n\nNone\n\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should withdraw from source account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should throw exception when transactions storage doesn\u0027t contains entity for given id and throws exception",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027com.github.example.exception.EntityNotFoundException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should primarily lock account with lower id and then with greater id by accounts storage when executes transaction",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should deposit into target account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should not throw exception when one of pending transactions already executed during execution of pending transactions",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should withdraw from source account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should not throw exception when couldn\u0027t lock one of transaction during execution of pending transactions",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as succeed when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should throw exception when accounts storage doesn\u0027t contains entity for given target account id and throws exception",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but no exception was thrown",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should mark transaction as failed when accounts storage not found source account and throws exception",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should return not empty collection of accounts when accounts storage returns not empty collection",
+        "failureName": "org.spockframework.runtime.ConditionNotSatisfiedError",
+        "detail": "Condition not satisfied:\n\n!result.empty\n||      |\n|[]     true\nfalse\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should return not empty collection of transactions when transactions storage returns not empty collection",
+        "failureName": "org.spockframework.runtime.ConditionNotSatisfiedError",
+        "detail": "Condition not satisfied:\n\n!result.empty\n||      |\n|[]     true\nfalse\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.AccountServiceSpec",
+        "testMethod": "should return created account when account successfully inserted and returned by accounts storage",
+        "failureName": "org.spockframework.runtime.SpockComparisonFailure",
+        "detail": "Condition not satisfied:\n\nresult \u003d\u003d account\n|      |  |\nnull   |  \u003ccom.github.example.model.Account@5c0d2c53 id\u003d50 creationTime\u003d2018-10-15T18:06:20.727Z balance\u003d1\u003e\n       false\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should not execute any transaction when transaction storage doesn\u0027t contains pending transactions",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should lock transaction for id by transactions storage when executes transaction",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should throw exception when transactions storage failed to lock transaction and throws exception",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027com.github.example.exception.CouldNotAcquireLockException\u0027, but got \u0027java.lang.UnsupportedOperationException\u0027",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionServiceSpec",
+        "testMethod": "should return created transaction when transaction successfully inserted and returned by transactions storage",
+        "failureName": "org.spockframework.runtime.SpockComparisonFailure",
+        "detail": "Condition not satisfied:\n\nresult \u003d\u003d transaction\n|      |  |\nnull   |  \u003ccom.github.example.model.Transaction@575dcac6 id\u003d29 creationTime\u003d2018-10-15T18:06:20.455Z sourceAccountId\u003d31 targetAccountId\u003d32 amount\u003d1 status\u003dPENDING\u003e\n       false\n",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.service.impl.TransactionExecutionServiceSpec",
+        "testMethod": "should deposit into target account and update it in storage when transaction executed successfully",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 23,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 45,
+    "numberLines": 0
+  },
+  "type": "failing_passing"
+}
