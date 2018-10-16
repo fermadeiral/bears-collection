@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "alan07sl/EventManager",
+    "githubId": 145768280,
+    "url": "https://github.com/alan07sl/EventManager",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 25
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441972900,
+      "url": "http://travis-ci.org/alan07sl/EventManager/builds/441972900",
+      "date": "Oct 16, 2018 4:40:35 AM"
+    },
+    "fixerBuild": {
+      "id": 441984157,
+      "url": "http://travis-ci.org/alan07sl/EventManager/builds/441984157",
+      "date": "Oct 16, 2018 5:40:51 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 16, 2018 5:41:03 AM",
+    "reproductionDateEnd": "Oct 16, 2018 5:45:35 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 275901072,
+      "totalMemory": 449839104
+    },
+    "totalDuration": 267,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 52,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          3,
+          0,
+          3,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 89,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          89
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/alan07sl/EventManager/441972900/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/alan07sl/EventManager/441972900",
+    "overallMetrics": {
+      "numberRunning": 41,
+      "numberPassing": 40,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.TelegramIntegrationServiceTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.TelegramIntegrationServiceTest",
+        "testMethod": "notEnoughParamsOnLoginTest",
+        "failureName": "java.lang.IndexOutOfBoundsException",
+        "detail": "Index: 1, Size: 1",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 86,
+    "numberTestFiles": 16,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "master",
+      "sha": "7af58c4d8e8349580fc9a6ad3f2cfe66134b6963",
+      "url": "http://github.com/alan07sl/EventManager/commit/7af58c4d8e8349580fc9a6ad3f2cfe66134b6963",
+      "date": "Oct 16, 2018 4:35:05 AM"
+    },
+    "fixerBuild": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "master",
+      "sha": "487bfff92b4c227b9d9391ed9cbbeaba20c8743d",
+      "url": "http://github.com/alan07sl/EventManager/commit/487bfff92b4c227b9d9391ed9cbbeaba20c8743d",
+      "date": "Oct 16, 2018 5:35:02 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "TelegramIntegration",
+      "sha": "898ce6ec592cfc0b02df37af0fa2f73d3fd35fdb",
+      "url": "https://github.com/alan07sl/EventManager/commit/898ce6ec592cfc0b02df37af0fa2f73d3fd35fdb",
+      "date": "Oct 16, 2018 5:35:02 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "master",
+      "sha": "04d6803226fdd47ad80ce8cd9fc039634b6bc038",
+      "url": "https://github.com/alan07sl/EventManager/commit/04d6803226fdd47ad80ce8cd9fc039634b6bc038",
+      "date": "Oct 15, 2018 10:06:39 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "TelegramIntegration",
+      "sha": "898ce6ec592cfc0b02df37af0fa2f73d3fd35fdb",
+      "url": "https://github.com/alan07sl/EventManager/commit/898ce6ec592cfc0b02df37af0fa2f73d3fd35fdb",
+      "date": "Oct 16, 2018 5:35:02 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "master",
+      "sha": "04d6803226fdd47ad80ce8cd9fc039634b6bc038",
+      "url": "https://github.com/alan07sl/EventManager/commit/04d6803226fdd47ad80ce8cd9fc039634b6bc038",
+      "date": "Oct 15, 2018 10:06:39 PM"
+    }
+  },
+  "type": "passing_passing"
+}
