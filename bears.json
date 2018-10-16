@@ -1,0 +1,961 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "authorjapps/zerocode",
+    "githubId": 62640065,
+    "url": "https://github.com/authorjapps/zerocode",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 139
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441294479,
+      "url": "http://travis-ci.org/authorjapps/zerocode/builds/441294479",
+      "date": "Oct 14, 2018 4:38:22 PM"
+    },
+    "fixerBuild": {
+      "id": 442408301,
+      "url": "http://travis-ci.org/authorjapps/zerocode/builds/442408301",
+      "date": "Oct 17, 2018 12:06:46 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 17, 2018 12:07:01 AM",
+    "reproductionDateEnd": "Oct 17, 2018 12:10:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 289152248,
+      "totalMemory": 454033408
+    },
+    "totalDuration": 213,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 37,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          4,
+          31
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          39
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/authorjapps/zerocode/441294479/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 44
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/authorjapps/zerocode/441294479",
+    "overallMetrics": {
+      "numberRunning": 125,
+      "numberPassing": 51,
+      "numberFailing": 3,
+      "numberErroring": 71,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.util.NoSuchElementException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        },
+        {
+          "failureName": "com.google.inject.CreationException",
+          "isError": true,
+          "occurrences": 62
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 8
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.loopreport.SmartJUnitNavigatorReportGenTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.domain.ScenarioSpecTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.unit.PropertiesFileFromEnvTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerGroupTest)",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointSingleRunnerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.di.ApplicationMainModuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.wiremock.WireMockIntegrationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.mocker.RestEndPointMockerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.converter.ConverterEndToEndTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitCustomRuntimeUseHttpClientTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.domain.StepTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.httpclient.ssl.SslTrustCorporateProxyHttpClientTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitNumberNotEqualsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.github.TestGitHubApi",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.junit.JunitUsualWithZerocodeUnitTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImplVerifyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "numberRunning": 24,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 24,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.queryparams.QueryParamVerifyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeUnitRunnerTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.localdate.LocalDateAndTimeGenerationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.SslTrustUseHttpClientTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitNumberEqualsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.suite.ZeroCodeEnvPropertyReaderPackageTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.soap.SoapEndPointTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.unit.ZeroCodeEnvPropertyReaderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerTest)",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.utils.SmartUtilsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 1
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.soap.SoapCorpProxySslHttpClientTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeJUnitHostPortContextAnnotationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willExecuteARESTCallForA_POST",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionGT",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.localdate.LocalDateAndTimeGenerationTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testString_regexMatch",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveIntegerNodeFor_Assertion",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerGroupTest)",
+        "testMethod": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass ",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerGroupTest with load/stress test(s): \u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerGroupTest) have Failed",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "willHaveListOf_TestCases_Frompackage",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willReturnRESTResult_textNodeJson",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "testMethod": "willExecuteJsonRequestFor_CustomObject_back_to_basics",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveJsonPathOfJayWayWith_SuppliedScenarioState",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "willComplain_If_Annotation_Missing",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "testMethod": "willExecuteJsonRequestFor_java_method_basics",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.suite.ZeroCodeEnvPropertyReaderPackageTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "testWillResolve_PlaceHolders_InASingleStep_Child",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.loopreport.SmartJUnitNavigatorReportGenTest",
+        "testMethod": "willGeneratReportLoopSceneMultiStepsLoop2_once",
+        "failureName": "java.util.NoSuchElementException",
+        "detail": "No value present",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointSingleRunnerTest",
+        "testMethod": "\u003c\u003cLoad\u003e\u003etestGetCallToHome_pass",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointSingleRunnerTest.testGetCallToHome_pass Failed",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "testMethod": "willExecuteJsonRequestFor_CustomObject_java_method",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.unit.PropertiesFileFromEnvTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.junit.JunitUsualWithZerocodeUnitTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitNumberNotEqualsTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeJUnitHostPortContextAnnotationTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionNotEQ",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.converter.ConverterEndToEndTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.di.ApplicationMainModuleTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "com.google.inject.CreationException: Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.di.ApplicationMainModuleTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.di.ApplicationMainModuleTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.di.ApplicationMainModuleTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionEQ",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.wiremock.WireMockIntegrationTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitNumberEqualsTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willExecuteARESTCallForA_GET_smart_json",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeUnitRunnerTest",
+        "testMethod": "testPureJUnitExecution",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testIgnoreCaseWith_containsNoMatch",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.domain.StepTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "com.google.inject.CreationException: Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.StepTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.StepTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.StepTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willExecuteARESTCallForA_Scenario",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeUnitRunnerTest",
+        "testMethod": "testWillReadTheAnnotationAndRunVia_BlockJunitRunner",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_numberOnlyNegative",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.github.TestGitHubApi",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "testMethod": "willExecuteA_Java_Method",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testIgnoreCaseWith_containsMatch",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.SslTrustUseHttpClientTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willEvaluatePlaceHolder",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.queryparams.QueryParamVerifyTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.httpclient.ssl.SslTrustCorporateProxyHttpClientTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.soap.SoapCorpProxySslHttpClientTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "testCanDescribeAChild_oldFashined",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.mocker.RestEndPointMockerTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "com.google.inject.CreationException: Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.engine.mocker.RestEndPointMockerTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.engine.mocker.RestEndPointMockerTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.engine.mocker.RestEndPointMockerTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointTest",
+        "testMethod": "testLoad_Pass",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c0\u003e      but: was \u003c3\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.loopreport.SmartJUnitNavigatorReportGenTest",
+        "testMethod": "willGenerateloopReportIfRunLoop2OneFailRun_twice",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c2\u003e      but: was \u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "testWillFireASingleStep_Child",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_numberOnly",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JavaExecutorImplTest",
+        "testMethod": "willExecuteJsonRequestFor_java_method",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testLocalDateTime_formatter",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveTextNodeFor_Assertion",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willCaptureAllPlaceHolders",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionFailNotEQ",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willResolvePlaceHolder",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionLT",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testRandom_UUID",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.ZeroCodeUnitCustomRuntimeUseHttpClientTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveJsonPathOfJayWayFor_AssertionSection",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveWithParamMap",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "willResolveJsonPathOfJayWay",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodePackageRunnerTest",
+        "testMethod": "willHaveListOf_TestCases_Here",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.soap.SoapEndPointTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.verification.loopreport.SmartJUnitNavigatorReportGenTest",
+        "testMethod": "willGenerateloopReportIfRunLoop2AllPassRun_twice",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c2\u003e      but: was \u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionFailTest",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testLocalDate_formatter",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.executor.JsonServiceExecutorImplTest",
+        "testMethod": "willReturnRESTResult_nonJsonString",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.domain.ScenarioSpecTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "com.google.inject.CreationException: Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.ScenarioSpecTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.ScenarioSpecTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.domain.ScenarioSpecTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionFailLT",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.engine.preprocessor.ZeroCodeJsonTestProcesorImplTest",
+        "testMethod": "testArraySize_expressionFailEQ",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeUnitRunnerTest",
+        "testMethod": "testWillReadTheAnnotationAnd_Notify",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerTest)",
+        "testMethod": "\u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass ",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerTest with load/stress test(s): \u003c\u003cMulti-Load\u003e\u003e 1)JunitRestTestSample.testGetCallToHome_pass, 2)JunitRestTestSample.testGetCallToHome_pass (org.jsmart.zerocode.parallel.restful.LoadRestEndPointMultiRunnerTest) have Failed",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImplVerifyTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.envprop.unit.ZeroCodeEnvPropertyReaderTest",
+        "testMethod": "initializationError",
+        "failureName": "com.google.inject.CreationException",
+        "detail": "Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: com.google.inject.util.Modules$OverrideModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      },
+      {
+        "testClass": "org.jsmart.zerocode.core.utils.SmartUtilsTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "com.google.inject.CreationException: Unable to create injector, see the following errors:  1) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.context)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.applicationContext(ZeroCodeMultiStepsScenarioRunnerImpl.java:333)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.utils.SmartUtilsTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  2) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.host)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.host(ZeroCodeMultiStepsScenarioRunnerImpl.java:329)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.utils.SmartUtilsTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3) No implementation for java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port) was bound.   while locating java.lang.String annotated with @com.google.inject.name.Named(value\u003drestful.application.endpoint.port)     for field at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.port(ZeroCodeMultiStepsScenarioRunnerImpl.java:325)   at org.jsmart.zerocode.core.di.ApplicationMainModule.configure(ApplicationMainModule.java:43) (via modules: org.jsmart.zerocode.core.utils.SmartUtilsTest$JukitoModule -\u003e org.jsmart.zerocode.core.di.ApplicationMainModule)  3 errors",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 114,
+    "numberTestFiles": 75,
+    "numberLibrariesFailingModule": 76,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "authorjapps/zerocode",
+      "branchName": "master",
+      "sha": "7f28bb22326d2c44eced2c755c0bb13cdc10ef3f",
+      "url": "http://github.com/authorjapps/zerocode/commit/7f28bb22326d2c44eced2c755c0bb13cdc10ef3f",
+      "date": "Oct 14, 2018 4:33:51 PM"
+    },
+    "fixerBuild": {
+      "repoName": "authorjapps/zerocode",
+      "branchName": "master",
+      "sha": "85d68fa475171fd5052e89a4a2d2fd370a611ba5",
+      "url": "http://github.com/authorjapps/zerocode/commit/85d68fa475171fd5052e89a4a2d2fd370a611ba5",
+      "date": "Oct 17, 2018 12:03:46 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "arunvelusamyd/zerocode",
+      "branchName": "ISSUE-49_upgrade_wiremock",
+      "sha": "77dabc509eadc22e53bdc4cb58bf48089c1a1fa1",
+      "url": "https://github.com/arunvelusamyd/zerocode/commit/77dabc509eadc22e53bdc4cb58bf48089c1a1fa1",
+      "date": "Oct 17, 2018 12:03:46 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "authorjapps/zerocode",
+      "branchName": "master",
+      "sha": "82007d0ff2b7783f14f25711d1064a739a3146a2",
+      "url": "https://github.com/authorjapps/zerocode/commit/82007d0ff2b7783f14f25711d1064a739a3146a2",
+      "date": "Oct 16, 2018 11:58:06 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "arunvelusamyd/zerocode",
+      "branchName": "ISSUE-49_upgrade_wiremock",
+      "sha": "77dabc509eadc22e53bdc4cb58bf48089c1a1fa1",
+      "url": "https://github.com/arunvelusamyd/zerocode/commit/77dabc509eadc22e53bdc4cb58bf48089c1a1fa1",
+      "date": "Oct 17, 2018 12:03:46 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "authorjapps/zerocode",
+      "branchName": "master",
+      "sha": "82007d0ff2b7783f14f25711d1064a739a3146a2",
+      "url": "https://github.com/authorjapps/zerocode/commit/82007d0ff2b7783f14f25711d1064a739a3146a2",
+      "date": "Oct 16, 2018 11:58:06 AM"
+    }
+  },
+  "type": "passing_passing"
+}
