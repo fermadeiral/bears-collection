@@ -1,0 +1,258 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "alan07sl/EventManager",
+    "githubId": 145768280,
+    "url": "https://github.com/alan07sl/EventManager",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441864824,
+      "url": "http://travis-ci.org/alan07sl/EventManager/builds/441864824",
+      "date": "Oct 15, 2018 10:38:21 PM"
+    },
+    "fixerBuild": {
+      "id": 441957791,
+      "url": "http://travis-ci.org/alan07sl/EventManager/builds/441957791",
+      "date": "Oct 16, 2018 3:26:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 16, 2018 3:26:52 AM",
+    "reproductionDateEnd": "Oct 16, 2018 3:30:49 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 241136608,
+      "totalMemory": 395837440
+    },
+    "totalDuration": 233,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 70,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          70
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/alan07sl/EventManager/441864824/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/alan07sl/EventManager/441864824",
+    "overallMetrics": {
+      "numberRunning": 38,
+      "numberPassing": 22,
+      "numberFailing": 0,
+      "numberErroring": 16,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 16
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "numberRunning": 8,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 8,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "numberRunning": 8,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 8,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldFailGetOfUserBecauseNotExist",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldCreateUser",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldAuthenticateUser",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldDeleteEventList",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldFailOnInvalidPassword",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldCountEventLists",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldUpdateEventList",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldCountUserInterested",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldSearchPaginatedEventLists",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldSuccessGetOfUser",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldAddEventToEventList",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldSuccessSearchPaginatedOfUsers",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldFailCreateUserBecauseAlreadyExist",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldCreateEventList",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.EventListServiceTest",
+        "testMethod": "shouldFailUpdateEventListBecauseNotExist",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "com.utn.tacs.eventmanager.services.UserServiceTest",
+        "testMethod": "shouldFailOnInvalidEmail",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 88,
+    "numberTestFiles": 14,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "TelegramIntegration",
+      "sha": "dbb2bbc8dce9dc3c4dff627276e1413b27eb5b57",
+      "url": "http://github.com/alan07sl/EventManager/commit/dbb2bbc8dce9dc3c4dff627276e1413b27eb5b57",
+      "date": "Oct 15, 2018 10:33:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "alan07sl/EventManager",
+      "branchName": "TelegramIntegration",
+      "sha": "d7c6d279a00a063abe0920aef4fc49d1e2c96170",
+      "url": "http://github.com/alan07sl/EventManager/commit/d7c6d279a00a063abe0920aef4fc49d1e2c96170",
+      "date": "Oct 16, 2018 3:21:19 AM"
+    }
+  }
+}
