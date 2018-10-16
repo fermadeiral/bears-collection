@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "rkonovalov/jsonignore",
+    "githubId": 152902358,
+    "url": "https://github.com/rkonovalov/jsonignore",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 442009574,
+      "url": "http://travis-ci.org/rkonovalov/jsonignore/builds/442009574",
+      "date": "Oct 16, 2018 7:50:39 AM"
+    },
+    "fixerBuild": {
+      "id": 442015798,
+      "url": "http://travis-ci.org/rkonovalov/jsonignore/builds/442015798",
+      "date": "Oct 16, 2018 8:17:22 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 16, 2018 8:17:35 AM",
+    "reproductionDateEnd": "Oct 16, 2018 8:18:35 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 293823496,
+      "totalMemory": 387973120
+    },
+    "totalDuration": 56,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 19,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          19
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/rkonovalov/jsonignore/442009574/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/rkonovalov/jsonignore/442009574",
+    "overallMetrics": {
+      "numberRunning": 9,
+      "numberPassing": 7,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest",
+        "numberRunning": 9,
+        "numberPassing": 7,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest",
+        "testMethod": "testConstructorMap",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c{\"intValue\":[-2147483648,\"boolValue\":fals]e}\u003e but was:\u003c{\"intValue\":[0,\"boolValue\":tru]e}\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest",
+        "testMethod": "testMultipleAnnotationMethod",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c{\"intValue\":[-2147483648,\"boolValue\":fals]e}\u003e but was:\u003c{\"intValue\":[0,\"boolValue\":tru]e}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 3,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "rkonovalov/jsonignore",
+      "branchName": "master",
+      "sha": "ca101d8215af7403bf3d52bcd4650a3e09be7d74",
+      "url": "http://github.com/rkonovalov/jsonignore/commit/ca101d8215af7403bf3d52bcd4650a3e09be7d74",
+      "date": "Oct 16, 2018 7:49:29 AM"
+    },
+    "fixerBuild": {
+      "repoName": "rkonovalov/jsonignore",
+      "branchName": "master",
+      "sha": "6332d138bad2ab898f1759eb65d5061681737f5d",
+      "url": "http://github.com/rkonovalov/jsonignore/commit/6332d138bad2ab898f1759eb65d5061681737f5d",
+      "date": "Oct 16, 2018 8:16:01 AM"
+    }
+  },
+  "type": "passing_passing"
+}
