@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "smallcreep/cucumber-seeds",
+    "githubId": 149168009,
+    "url": "https://github.com/smallcreep/cucumber-seeds",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 442531821,
+      "url": "http://travis-ci.org/smallcreep/cucumber-seeds/builds/442531821",
+      "date": "Oct 17, 2018 9:01:19 AM"
+    },
+    "fixerBuild": {
+      "id": 442559338,
+      "url": "http://travis-ci.org/smallcreep/cucumber-seeds/builds/442559338",
+      "date": "Oct 17, 2018 10:23:19 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 17, 2018 10:23:38 AM",
+    "reproductionDateEnd": "Oct 17, 2018 10:29:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 335051448,
+      "totalMemory": 398983168
+    },
+    "totalDuration": 344,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 244,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          244
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/smallcreep/cucumber-seeds/442531821/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 24,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/smallcreep/cucumber-seeds/442531821/seeds-core",
+    "overallMetrics": {
+      "numberRunning": 26,
+      "numberPassing": 25,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.smallcreep.cucumber.seeds.suit.StDefaultTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.smallcreep.cucumber.seeds.suit.StDefaultTest",
+        "testMethod": "checkSystemPropertiesOverriddenInContext",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \"overridden\"\n     but: was \"test2\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 28,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "smallcreep/cucumber-seeds",
+      "branchName": "master",
+      "sha": "ce492ac132444ce379262d1f6b3ed5175ea5f364",
+      "url": "http://github.com/smallcreep/cucumber-seeds/commit/ce492ac132444ce379262d1f6b3ed5175ea5f364",
+      "date": "Oct 17, 2018 8:37:25 AM"
+    },
+    "fixerBuild": {
+      "repoName": "smallcreep/cucumber-seeds",
+      "branchName": "master",
+      "sha": "3bb56dcd0df3b928c893cca953db6df99656dbb6",
+      "url": "http://github.com/smallcreep/cucumber-seeds/commit/3bb56dcd0df3b928c893cca953db6df99656dbb6",
+      "date": "Oct 17, 2018 9:46:28 AM"
+    }
+  },
+  "type": "passing_passing"
+}
