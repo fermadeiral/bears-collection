@@ -1,0 +1,184 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "julianhyde/calcite",
+    "githubId": 22561571,
+    "url": "https://github.com/julianhyde/calcite",
+    "isFork": true,
+    "original": {
+      "name": "apache/calcite",
+      "githubId": 21193524,
+      "url": "https://github.com/apache/calcite"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438375556,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/438375556",
+      "date": "Oct 7, 2018 11:25:52 PM"
+    },
+    "fixerBuild": {
+      "id": 442466899,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/442466899",
+      "date": "Oct 17, 2018 4:10:21 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 17, 2018 4:10:34 AM",
+    "reproductionDateEnd": "Oct 17, 2018 4:27:36 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 242801432,
+      "totalMemory": 594542592
+    },
+    "totalDuration": 1015,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          28
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 214,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          213
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 249,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          249
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/julianhyde/calcite/438375556/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 18,
+      "numberDeleted": 18
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/julianhyde/calcite/438375556/core",
+    "overallMetrics": {
+      "numberRunning": 4738,
+      "numberPassing": 4734,
+      "numberFailing": 2,
+      "numberErroring": 2,
+      "numberSkipping": 117,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "numberRunning": 59,
+        "numberPassing": 57,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.apache.calcite.rel.rel2sql.RelToSqlConverterTest",
+        "numberRunning": 144,
+        "numberPassing": 142,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "testMethod": "testSimplifyNotAnd",
+        "failureName": "java.lang.AssertionError",
+        "detail": "result mismatch: when applied to {?0.bool1\u003dNULL}, OR(\u003c\u003d(?0.bool1, true), \u003d(false, \u003d(false, ?0.bool1))) yielded NULL, and true yielded true",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.rel.rel2sql.RelToSqlConverterTest",
+        "testMethod": "testNestedAggregatesMySqlTable",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "While invoking method \u0027public org.apache.calcite.rel.rel2sql.SqlImplementor$Result org.apache.calcite.rel.rel2sql.RelToSqlConverter.visit(org.apache.calcite.rel.core.Aggregate)\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.calcite.rel.rel2sql.RelToSqlConverterTest",
+        "testMethod": "testNestedAggregatesMySqlStar",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "While invoking method \u0027public org.apache.calcite.rel.rel2sql.SqlImplementor$Result org.apache.calcite.rel.rel2sql.RelToSqlConverter.visit(org.apache.calcite.rel.core.Aggregate)\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "testMethod": "testSimplifyOrTerms",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \"OR(\u003c\u003e(?0.b, 1), \u003d(?0.b, 1))\"\n     but: was \"OR(\u003c\u003e(?0.b, 1), IS NOT NULL(?0.b))\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1513,
+    "numberTestFiles": 231,
+    "numberLibrariesFailingModule": 55,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "master",
+      "sha": "6b3844c0634792263a5073b8ea93565fb3415f41",
+      "url": "http://github.com/julianhyde/calcite/commit/6b3844c0634792263a5073b8ea93565fb3415f41"
+    },
+    "fixerBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "master",
+      "sha": "e76e82ef19b6a9e6965438a3bb118c7cd756e5dd",
+      "url": "http://github.com/julianhyde/calcite/commit/e76e82ef19b6a9e6965438a3bb118c7cd756e5dd",
+      "date": "Oct 17, 2018 3:47:44 AM"
+    }
+  },
+  "type": "passing_passing"
+}
