@@ -93,7 +93,8 @@
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ communication-api ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ communication-api ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/api/communication-api/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/api/communication-api/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ communication-api ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -111,18 +112,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ communication-api ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 6.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 63.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 860.1 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.communication.api.metadata.SuiteTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 s - in com.cognifide.aet.communication.api.metadata.SuiteTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.385 s - in com.cognifide.aet.communication.api.metadata.SuiteTest
 [INFO] Running com.cognifide.aet.communication.api.metadata.SerializingOperationTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.cognifide.aet.communication.api.metadata.SerializingOperationTest
 [INFO] 
@@ -249,7 +244,8 @@
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ jobs-api ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ jobs-api ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/api/jobs-api/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/api/jobs-api/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jobs-api ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -273,11 +269,11 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.job.api.ParametersValidatorTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s - in com.cognifide.aet.job.api.ParametersValidatorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.34 s - in com.cognifide.aet.job.api.ParametersValidatorTest
 [INFO] Running com.cognifide.aet.job.api.collector.ResponseObjectTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.cognifide.aet.job.api.collector.ResponseObjectTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.cognifide.aet.job.api.collector.ResponseObjectTest
 [INFO] Running com.cognifide.aet.job.api.collector.JsErrorLogTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.cognifide.aet.job.api.collector.JsErrorLogTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.cognifide.aet.job.api.collector.JsErrorLogTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -363,7 +359,8 @@
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ client-core ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ client-core ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/client/client-core/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/client/client-core/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ client-core ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -382,26 +379,20 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ client-core ---
 [INFO] Surefire report directory: /root/workspace/Cognifide/aet/442554552/client/client-core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 57.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 60.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 751.2 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.cognifide.aet.common.RunnerTerminatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.478 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 sec
 Running com.cognifide.aet.common.SuiteFinishedProcessorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec
 Running com.cognifide.aet.common.ProcessorFactoryTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running com.cognifide.aet.common.ProcessingErrorMessageProcessorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
 Running com.cognifide.aet.common.RedirectWriterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec
 
 Results :
 
@@ -500,7 +491,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ validation ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ validation ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/core/validation/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/core/validation/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ validation ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -523,9 +515,9 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.validation.impl.ValidationUtilsTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.853 s - in com.cognifide.aet.validation.impl.ValidationUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.99 s - in com.cognifide.aet.validation.impl.ValidationUtilsTest
 [INFO] Running com.cognifide.aet.validation.impl.ValidationResultBuilderImplTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.cognifide.aet.validation.impl.ValidationResultBuilderImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.cognifide.aet.validation.impl.ValidationResultBuilderImplTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -551,7 +543,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ datastorage ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ datastorage ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/core/datastorage/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/core/datastorage/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ datastorage ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -574,7 +567,7 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.vs.mongodb.MongoDBClientTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.941 s - in com.cognifide.aet.vs.mongodb.MongoDBClientTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.737 s - in com.cognifide.aet.vs.mongodb.MongoDBClientTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -600,7 +593,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ cleaner ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ cleaner ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/core/cleaner/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/core/cleaner/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ cleaner ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -623,11 +617,11 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.cleaner.validation.CleanerSchedulerValidatorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in com.cognifide.aet.cleaner.validation.CleanerSchedulerValidatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in com.cognifide.aet.cleaner.validation.CleanerSchedulerValidatorTest
 [INFO] Running com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest
-[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.292 s - in com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 s - in com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest
 [INFO] Running com.cognifide.aet.cleaner.processors.filters.DBKeyProjectCompanyPredicateTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.cognifide.aet.cleaner.processors.filters.DBKeyProjectCompanyPredicateTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in com.cognifide.aet.cleaner.processors.filters.DBKeyProjectCompanyPredicateTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -653,7 +647,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ communication ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ communication ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/core/communication/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/core/communication/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ communication ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -676,7 +671,7 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.queues.JmsUtilsTest
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.293 s - in com.cognifide.aet.queues.JmsUtilsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.964 s - in com.cognifide.aet.queues.JmsUtilsTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -780,7 +775,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ jobs ---
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ jobs ---
-[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] Loading execution data file /root/workspace/Cognifide/aet/442554552/core/jobs/target/jacoco.exec
+[INFO] Writing merged execution data to /root/workspace/Cognifide/aet/442554552/core/jobs/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jobs ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -788,7 +784,8 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Copying 2 resources to META-INF
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jobs ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 132 source files to /root/workspace/Cognifide/aet/442554552/core/jobs/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jobs ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -803,142 +800,510 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.cognifide.aet.job.common.datafilters.statuscodesfilter.ExcludeStatusCodesFilterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.764 s - in com.cognifide.aet.job.common.datafilters.statuscodesfilter.ExcludeStatusCodesFilterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.098 s - in com.cognifide.aet.job.common.datafilters.statuscodesfilter.ExcludeStatusCodesFilterTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.statuscodesfilter.IncludeStatusCodesFilterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.cognifide.aet.job.common.datafilters.statuscodesfilter.IncludeStatusCodesFilterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.cognifide.aet.job.common.datafilters.statuscodesfilter.IncludeStatusCodesFilterTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.removenodes.RemoveNodesDataModifierTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.925 s - in com.cognifide.aet.job.common.datafilters.removenodes.RemoveNodesDataModifierTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 s - in com.cognifide.aet.job.common.datafilters.removenodes.RemoveNodesDataModifierTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifierTest
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 s - in com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifierTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 s - in com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifierTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.extractelement.ExtractElementDataModifierTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in com.cognifide.aet.job.common.datafilters.extractelement.ExtractElementDataModifierTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in com.cognifide.aet.job.common.datafilters.extractelement.ExtractElementDataModifierTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.jserrorsfilter.JsErrorsFilterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.cognifide.aet.job.common.datafilters.jserrorsfilter.JsErrorsFilterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in com.cognifide.aet.job.common.datafilters.jserrorsfilter.JsErrorsFilterTest
 [INFO] Running com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilterTest
-[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilterTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.executejavascript.ExecuteJavaScriptModifierTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in com.cognifide.aet.job.common.modifiers.executejavascript.ExecuteJavaScriptModifierTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in com.cognifide.aet.job.common.modifiers.executejavascript.ExecuteJavaScriptModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifierTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.037 s - in com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifierTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.049 s - in com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.hide.HideModifierTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.cognifide.aet.job.common.modifiers.hide.HideModifierTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.cognifide.aet.job.common.modifiers.hide.HideModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.header.HeaderModifierTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in com.cognifide.aet.job.common.modifiers.header.HeaderModifierTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.cognifide.aet.job.common.modifiers.header.HeaderModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.login.LoginModifierTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.312 s - in com.cognifide.aet.job.common.modifiers.login.LoginModifierTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.243 s - in com.cognifide.aet.job.common.modifiers.login.LoginModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.182 s <<< FAILURE! - in com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest
-[ERROR] collectTest_setOnlyWidth_reachedBrowserHeightLimit(com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest)  Time elapsed: 0.046 s  <<< FAILURE!
-org.mockito.exceptions.verification.junit.ArgumentsAreDifferent: 
-
-Argument(s) are different! Wanted:
-window.setSize((800, 35000));
--> at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest.collectTest_setOnlyWidth_reachedBrowserHeightLimit(ResolutionModifierTest.java:180)
-Actual invocation has different arguments:
-window.setSize((800, 300));
--> at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifier.setResolution(ResolutionModifier.java:79)
-
-	at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest.collectTest_setOnlyWidth_reachedBrowserHeightLimit(ResolutionModifierTest.java:180)
-
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.replacetext.ReplaceTextModifierTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.cognifide.aet.job.common.modifiers.replacetext.ReplaceTextModifierTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.cognifide.aet.job.common.modifiers.replacetext.ReplaceTextModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.click.ClickModifierTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.cognifide.aet.job.common.modifiers.click.ClickModifierTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.cognifide.aet.job.common.modifiers.click.ClickModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.cookie.CookieModifierTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.cognifide.aet.job.common.modifiers.cookie.CookieModifierTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.cognifide.aet.job.common.modifiers.cookie.CookieModifierTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.cookie.CookieModifierValidatorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.cognifide.aet.job.common.modifiers.cookie.CookieModifierValidatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.cognifide.aet.job.common.modifiers.cookie.CookieModifierValidatorTest
 [INFO] Running com.cognifide.aet.job.common.modifiers.cookie.ModifyActionTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.cognifide.aet.job.common.modifiers.cookie.ModifyActionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.cognifide.aet.job.common.modifiers.cookie.ModifyActionTest
 [INFO] Running com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest
-[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest
 [INFO] Running com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparatorTest
-[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparatorTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 s - in com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparatorTest
 [INFO] Running com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonConvertImageTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonConvertImageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonConvertImageTest
 [INFO] Running com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.345 s - in com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.344 s - in com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonTest
 [INFO] Running com.cognifide.aet.job.common.comparators.layout.LayoutComparatorTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in com.cognifide.aet.job.common.comparators.layout.LayoutComparatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.cognifide.aet.job.common.comparators.layout.LayoutComparatorTest
 [INFO] Running com.cognifide.aet.job.common.comparators.source.SourceComparatorRegExpTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in com.cognifide.aet.job.common.comparators.source.SourceComparatorRegExpTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.cognifide.aet.job.common.comparators.source.SourceComparatorRegExpTest
 [INFO] Running com.cognifide.aet.job.common.comparators.source.SourceComparatorTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s - in com.cognifide.aet.job.common.comparators.source.SourceComparatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in com.cognifide.aet.job.common.comparators.source.SourceComparatorTest
 [INFO] Running com.cognifide.aet.job.common.comparators.source.diff.DiffParserTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.cognifide.aet.job.common.comparators.source.diff.DiffParserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.cognifide.aet.job.common.comparators.source.diff.DiffParserTest
 [INFO] Running com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparatorTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparatorTest
 [INFO] Running com.cognifide.aet.job.common.comparators.cookie.CookieComparatorTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in com.cognifide.aet.job.common.comparators.cookie.CookieComparatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in com.cognifide.aet.job.common.comparators.cookie.CookieComparatorTest
 [INFO] Running com.cognifide.aet.job.common.comparators.jserrors.JsErrorsComparatorTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.cognifide.aet.job.common.comparators.jserrors.JsErrorsComparatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in com.cognifide.aet.job.common.comparators.jserrors.JsErrorsComparatorTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   ResolutionModifierTest.collectTest_setOnlyWidth_reachedBrowserHeightLimit:180 
-Argument(s) are different! Wanted:
-window.setSize((800, 35000));
--> at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest.collectTest_setOnlyWidth_reachedBrowserHeightLimit(ResolutionModifierTest.java:180)
-Actual invocation has different arguments:
-window.setSize((800, 300));
--> at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifier.setResolution(ResolutionModifier.java:79)
-
+[INFO] Tests run: 211, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 211, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Core :: Runner 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ runner ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/core/runner/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ runner ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ runner ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ runner ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/core/runner/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ runner ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ runner ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/core/runner/src/main/resources
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ runner ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cognifide.aet.runner.RunnerConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.01 s - in com.cognifide.aet.runner.RunnerConfigurationTest
+[INFO] Running com.cognifide.aet.runner.scheduler.CollectorJobSchedulerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.902 s - in com.cognifide.aet.runner.scheduler.CollectorJobSchedulerTest
+[INFO] Running com.cognifide.aet.runner.MessagesManagerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in com.cognifide.aet.runner.MessagesManagerTest
+[INFO] Running com.cognifide.aet.runner.processing.TimeoutWatchTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.028 s - in com.cognifide.aet.runner.processing.TimeoutWatchTest
+[INFO] Running com.cognifide.aet.runner.processing.data.SuiteMergeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 s - in com.cognifide.aet.runner.processing.data.SuiteMergeStrategyTest
+[INFO] Running com.cognifide.aet.runner.processing.ProgressLogTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.cognifide.aet.runner.processing.ProgressLogTest
+[INFO] Running com.cognifide.aet.runner.processing.steps.CollectionResultsRouterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 s - in com.cognifide.aet.runner.processing.steps.CollectionResultsRouterTest
+[INFO] Running com.cognifide.aet.runner.processing.steps.CollectDispatcherTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in com.cognifide.aet.runner.processing.steps.CollectDispatcherTest
+[INFO] Running com.cognifide.aet.runner.processing.steps.ComparisonResultsRouterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in com.cognifide.aet.runner.processing.steps.ComparisonResultsRouterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Core :: Worker 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ worker ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/core/worker/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ worker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ worker ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ worker ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/core/worker/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ worker ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ worker ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ worker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/core/worker/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.3:run (default) @ worker ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ worker ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ worker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/core/worker/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ worker ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ worker ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cognifide.aet.worker.impl.JobRegistryImplTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.054 s - in com.cognifide.aet.worker.impl.JobRegistryImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Documentation 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ documentation ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/documentation/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ documentation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ documentation ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ documentation ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/documentation/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (default) @ documentation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ documentation ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ documentation ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Integration Tests :: Sample Site 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ sample-site ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/integration-tests/sample-site/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ sample-site ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ sample-site ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ sample-site ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/integration-tests/sample-site/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ sample-site ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ sample-site ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ sample-site ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ sample-site ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ sample-site ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/integration-tests/sample-site/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ sample-site ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sample-site ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Integration Tests :: Test Suite 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ test-suite ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/integration-tests/test-suite/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ test-suite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ test-suite ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ test-suite ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/integration-tests/test-suite/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (default) @ test-suite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- xml-maven-plugin:1.0.1:transform (default) @ test-suite ---
+[INFO] Transforming file: /root/workspace/Cognifide/aet/442554552/integration-tests/test-suite/xml/main-test-template.xml
+[INFO] Transformed 1 file(s).
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ test-suite ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ test-suite ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Configs 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ configs ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/osgi-dependencies/configs/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ configs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ configs ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ configs ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/osgi-dependencies/configs/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ configs ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ configs ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Report 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ report ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/report/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ report ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ report ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ report ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/report/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ report ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ report ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:install-node-and-npm (install node and npm) @ report ---
+[INFO] Node v8.11.3 is already installed.
+[INFO] NPM 6.2.0 is already installed.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:npm (npm install) @ report ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:gulp (build-with-gulp) @ report ---
+[INFO] Skipping execution.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Rest Endpoint 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ rest-endpoint ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/rest-endpoint/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ rest-endpoint ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ rest-endpoint ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ rest-endpoint ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/rest-endpoint/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ rest-endpoint ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ rest-endpoint ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ rest-endpoint ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/rest-endpoint/src/main/resources
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ rest-endpoint ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ rest-endpoint ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/rest-endpoint/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ rest-endpoint ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ rest-endpoint ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cognifide.aet.rest.helpers.ReportConfigurationManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 s - in com.cognifide.aet.rest.helpers.ReportConfigurationManagerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Test Executor 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ test-executor ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/test-executor/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ test-executor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ test-executor ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ test-executor ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/test-executor/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ test-executor ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ test-executor ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ test-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/aet/442554552/test-executor/src/main/resources
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ test-executor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ test-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ test-executor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ test-executor ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cognifide.aet.executor.common.RunnerTerminatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 s - in com.cognifide.aet.executor.common.RunnerTerminatorTest
+[INFO] Running com.cognifide.aet.executor.common.SuiteFinishedProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 s - in com.cognifide.aet.executor.common.SuiteFinishedProcessorTest
+[INFO] Running com.cognifide.aet.executor.common.ProcessorFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in com.cognifide.aet.executor.common.ProcessorFactoryTest
+[INFO] Running com.cognifide.aet.executor.common.ProcessingErrorMessageProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.cognifide.aet.executor.common.ProcessingErrorMessageProcessorTest
+[INFO] Running com.cognifide.aet.executor.xmlparser.xml.XmlTestSuiteParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.532 s - in com.cognifide.aet.executor.xmlparser.xml.XmlTestSuiteParserTest
+[INFO] Running com.cognifide.aet.executor.xmlparser.xml.utils.ValidationUtilsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.cognifide.aet.executor.xmlparser.xml.utils.ValidationUtilsTest
+[INFO] Running com.cognifide.aet.executor.xmlparser.xml.utils.EscapeUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in com.cognifide.aet.executor.xmlparser.xml.utils.EscapeUtilsTest
+[INFO] Running com.cognifide.aet.executor.xmlparser.xml.BasicPhaseConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.cognifide.aet.executor.xmlparser.xml.BasicPhaseConverterTest
+[INFO] Running com.cognifide.aet.executor.xmlparser.xml.models.ModelConverterUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.cognifide.aet.executor.xmlparser.xml.models.ModelConverterUtilsTest
+[INFO] Running com.cognifide.aet.executor.SuiteFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 s - in com.cognifide.aet.executor.SuiteFactoryTest
+[INFO] Running com.cognifide.aet.executor.SuiteValidatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in com.cognifide.aet.executor.SuiteValidatorTest
+[INFO] Running com.cognifide.aet.executor.model.CorrelationIdGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.cognifide.aet.executor.model.CorrelationIdGeneratorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AET :: Zip 3.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.8.0:verify (default) @ zip ---
+[INFO] Verifying file /root/workspace/Cognifide/aet/442554552/zip/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-poms-quality) @ zip ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ zip ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default-prepare-agent) @ zip ---
+[INFO] argLine set to -javaagent:/root/./workspace/Cognifide/aet/442554552/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/Cognifide/aet/442554552/zip/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ zip ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:merge (merge-submodules) @ zip ---
+[INFO] Skipping JaCoCo merge execution due to missing execution data files
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] AET ................................................ SUCCESS [  1.876 s]
-[INFO] AET :: API ......................................... SUCCESS [  0.060 s]
-[INFO] AET :: API :: Communication API .................... SUCCESS [  6.502 s]
-[INFO] AET :: API :: Data Storage API ..................... SUCCESS [  0.091 s]
-[INFO] AET :: OSGi Dependencies ........................... SUCCESS [  0.036 s]
-[INFO] AET :: OSGi Dependencies :: Selenium ............... SUCCESS [  0.297 s]
-[INFO] AET :: API :: Jobs API ............................. SUCCESS [  4.517 s]
-[INFO] AET :: API :: Validation API ....................... SUCCESS [  0.081 s]
-[INFO] AET :: Client ...................................... SUCCESS [  0.042 s]
-[INFO] AET :: Client :: Client Core ....................... SUCCESS [  3.914 s]
-[INFO] AET :: Client :: Maven Plugin ...................... SUCCESS [  4.821 s]
-[INFO] AET :: Core ........................................ SUCCESS [  0.037 s]
-[INFO] AET :: Core :: Validation .......................... SUCCESS [  2.609 s]
-[INFO] AET :: Core :: Data Storage ........................ SUCCESS [  2.470 s]
-[INFO] AET :: Core :: Cleaner ............................. SUCCESS [  3.986 s]
-[INFO] AET :: Core :: Communication ....................... SUCCESS [  3.335 s]
-[INFO] AET :: OSGi Dependencies :: Proxy .................. SUCCESS [  0.103 s]
-[INFO] AET :: OSGi Dependencies :: HTML validator ......... SUCCESS [  0.182 s]
-[INFO] AET :: Core :: Jobs ................................ FAILURE [ 55.895 s]
-[INFO] AET :: Core :: Runner .............................. SKIPPED
-[INFO] AET :: Core :: Worker .............................. SKIPPED
-[INFO] AET :: Documentation ............................... SKIPPED
-[INFO] AET :: Integration Tests :: Sample Site ............ SKIPPED
-[INFO] AET :: Integration Tests :: Test Suite ............. SKIPPED
-[INFO] AET :: Configs ..................................... SKIPPED
-[INFO] AET :: Report ...................................... SKIPPED
-[INFO] AET :: Rest Endpoint ............................... SKIPPED
-[INFO] AET :: Test Executor ............................... SKIPPED
-[INFO] AET :: Zip ......................................... SKIPPED
+[INFO] AET ................................................ SUCCESS [  1.589 s]
+[INFO] AET :: API ......................................... SUCCESS [  0.048 s]
+[INFO] AET :: API :: Communication API .................... SUCCESS [  5.584 s]
+[INFO] AET :: API :: Data Storage API ..................... SUCCESS [  0.097 s]
+[INFO] AET :: OSGi Dependencies ........................... SUCCESS [  0.032 s]
+[INFO] AET :: OSGi Dependencies :: Selenium ............... SUCCESS [  0.295 s]
+[INFO] AET :: API :: Jobs API ............................. SUCCESS [  4.414 s]
+[INFO] AET :: API :: Validation API ....................... SUCCESS [  0.067 s]
+[INFO] AET :: Client ...................................... SUCCESS [  0.047 s]
+[INFO] AET :: Client :: Client Core ....................... SUCCESS [  3.084 s]
+[INFO] AET :: Client :: Maven Plugin ...................... SUCCESS [  5.232 s]
+[INFO] AET :: Core ........................................ SUCCESS [  0.021 s]
+[INFO] AET :: Core :: Validation .......................... SUCCESS [  2.458 s]
+[INFO] AET :: Core :: Data Storage ........................ SUCCESS [  2.518 s]
+[INFO] AET :: Core :: Cleaner ............................. SUCCESS [  4.127 s]
+[INFO] AET :: Core :: Communication ....................... SUCCESS [  3.017 s]
+[INFO] AET :: OSGi Dependencies :: Proxy .................. SUCCESS [  0.067 s]
+[INFO] AET :: OSGi Dependencies :: HTML validator ......... SUCCESS [  0.116 s]
+[INFO] AET :: Core :: Jobs ................................ SUCCESS [01:02 min]
+[INFO] AET :: Core :: Runner .............................. SUCCESS [  9.362 s]
+[INFO] AET :: Core :: Worker .............................. SUCCESS [  3.274 s]
+[INFO] AET :: Documentation ............................... SUCCESS [  0.069 s]
+[INFO] AET :: Integration Tests :: Sample Site ............ SUCCESS [  0.075 s]
+[INFO] AET :: Integration Tests :: Test Suite ............. SUCCESS [  0.544 s]
+[INFO] AET :: Configs ..................................... SUCCESS [  0.019 s]
+[INFO] AET :: Report ...................................... SUCCESS [  0.365 s]
+[INFO] AET :: Rest Endpoint ............................... SUCCESS [  2.093 s]
+[INFO] AET :: Test Executor ............................... SUCCESS [  3.936 s]
+[INFO] AET :: Zip ......................................... SUCCESS [  0.038 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:32 min
-[INFO] Finished at: 2018-10-17T15:28:49+02:00
-[INFO] Final Memory: 55M/994M
+[INFO] Total time: 01:56 min
+[INFO] Finished at: 2018-10-17T15:32:11+02:00
+[INFO] Final Memory: 57M/783M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project jobs: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/Cognifide/aet/442554552/core/jobs/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :jobs
