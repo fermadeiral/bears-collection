@@ -1,0 +1,180 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "vivian-v/RiskBoardGame",
+    "githubId": 147297651,
+    "url": "https://github.com/vivian-v/RiskBoardGame",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443007567,
+      "url": "http://travis-ci.org/vivian-v/RiskBoardGame/builds/443007567",
+      "date": "Oct 18, 2018 6:13:27 AM"
+    },
+    "fixerBuild": {
+      "id": 443007714,
+      "url": "http://travis-ci.org/vivian-v/RiskBoardGame/builds/443007714",
+      "date": "Oct 18, 2018 6:14:14 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 18, 2018 6:14:28 AM",
+    "reproductionDateEnd": "Oct 18, 2018 6:15:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 259365096,
+      "totalMemory": 364380160
+    },
+    "totalDuration": 77,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 28,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          28
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 12,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 40,
+      "numberFailing": 0,
+      "numberErroring": 6,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "TestBoard",
+        "numberRunning": 7,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testKillPlayer",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      },
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testAttack",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      },
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testfortify",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      },
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testIsAttackable",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      },
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testReinforcement",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      },
+      {
+        "testClass": "TestBoard",
+        "testMethod": "testArmyPlacement",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "consumer key/secret pair already set.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 113,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "vivian-v/RiskBoardGame",
+      "branchName": "master",
+      "sha": "2639851c2fbaa10f6d1bdd5b4878bce246d9187b",
+      "url": "http://github.com/vivian-v/RiskBoardGame/commit/2639851c2fbaa10f6d1bdd5b4878bce246d9187b",
+      "date": "Oct 18, 2018 6:12:00 AM"
+    },
+    "fixerBuild": {
+      "repoName": "vivian-v/RiskBoardGame",
+      "branchName": "master",
+      "sha": "2755625f9b1b09b830fe994433b9a757215a8a93",
+      "url": "http://github.com/vivian-v/RiskBoardGame/commit/2755625f9b1b09b830fe994433b9a757215a8a93",
+      "date": "Oct 18, 2018 6:12:42 AM"
+    }
+  },
+  "type": "failing_passing"
+}
