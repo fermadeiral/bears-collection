@@ -31,18 +31,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ riskboardgame ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 4.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 64.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 759.3 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestRisk
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in TestRisk
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in TestRisk
 Running TestBoard
 Enter name for Player 1: Enter name for Player 2: 
 Chang being attacked
@@ -53,84 +47,84 @@ Remaining Credit After Buy an Undo Action : 14
 Transferable Credit : 14
 14
 Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
 Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
 Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
 Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
 Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
 Enter name for Player 1: Enter name for Player 2: 
-Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.696 sec <<< FAILURE! - in TestBoard
-testArmyPlacement(TestBoard)  Time elapsed: 0.025 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testArmyPlacement(TestBoard.java:54)
-
-testReinforcement(TestBoard)  Time elapsed: 0.015 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testReinforcement(TestBoard.java:68)
-
-testAttack(TestBoard)  Time elapsed: 0.01 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testAttack(TestBoard.java:20)
-
-testIsAttackable(TestBoard)  Time elapsed: 0.013 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testIsAttackable(TestBoard.java:27)
-
-testfortify(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testfortify(TestBoard.java:61)
-
-testKillPlayer(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
-java.lang.IllegalStateException: consumer key/secret pair already set.
-	at TestBoard.testKillPlayer(TestBoard.java:49)
-
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.591 sec - in TestBoard
 Running TestDice
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestDice
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestDice
 Running TestUndoSystem
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestUndoSystem
 Running TestCountry
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestCountry
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestCountry
 Running TestCard
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestCard
 Running TestPlayer
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in TestPlayer
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestPlayer
 Running TestWarObserver
 Vivian being attacked
 Vincent being attacked
 Vivian being attacked
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestWarObserver
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in TestWarObserver
 Running TestProxy
-Remaining Credit After Buy a Card : Transferable Credit : Transferable Credit : Remaining Credit After Buy an Undo Action : Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestProxy
+Remaining Credit After Buy a Card : Transferable Credit : Transferable Credit : Remaining Credit After Buy an Undo Action : Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in TestProxy
 Running TestDeck
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestDeck
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in TestDeck
 Running TestHistory
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestHistory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestHistory
 
 Results :
 
-Tests in error: 
-  TestBoard.testArmyPlacement:54 » IllegalState consumer key/secret pair already...
-  TestBoard.testAttack:20 » IllegalState consumer key/secret pair already set.
-  TestBoard.testIsAttackable:27 » IllegalState consumer key/secret pair already ...
-  TestBoard.testKillPlayer:49 » IllegalState consumer key/secret pair already se...
-  TestBoard.testReinforcement:68 » IllegalState consumer key/secret pair already...
-  TestBoard.testfortify:61 » IllegalState consumer key/secret pair already set.
-
-Tests run: 46, Failures: 0, Errors: 6, Skipped: 0
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.338 s
-[INFO] Finished at: 2018-10-18T06:15:13+02:00
-[INFO] Final Memory: 29M/488M
+[INFO] Total time: 7.666 s
+[INFO] Finished at: 2018-10-18T06:15:46+02:00
+[INFO] Final Memory: 25M/475M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project riskboardgame: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
