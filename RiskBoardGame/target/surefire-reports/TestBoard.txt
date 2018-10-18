@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestBoard
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.696 sec <<< FAILURE! - in TestBoard
+testArmyPlacement(TestBoard)  Time elapsed: 0.025 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testArmyPlacement(TestBoard.java:54)
+
+testReinforcement(TestBoard)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testReinforcement(TestBoard.java:68)
+
+testAttack(TestBoard)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testAttack(TestBoard.java:20)
+
+testIsAttackable(TestBoard)  Time elapsed: 0.013 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testIsAttackable(TestBoard.java:27)
+
+testfortify(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testfortify(TestBoard.java:61)
+
+testKillPlayer(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testKillPlayer(TestBoard.java:49)
+

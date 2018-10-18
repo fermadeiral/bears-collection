@@ -1,0 +1,136 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for MeowCat:riskboardgame:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-javadoc-plugin @ line 26, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building riskboardgame 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ riskboardgame ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ riskboardgame ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 17 source files to /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/target/classes
+[WARNING] /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/src/main/java/UndoSystem.java: /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/src/main/java/UndoSystem.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/src/main/java/UndoSystem.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ riskboardgame ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ riskboardgame ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ riskboardgame ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 4.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 64.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 759.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestRisk
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in TestRisk
+Running TestBoard
+Enter name for Player 1: Enter name for Player 2: 
+Chang being attacked
+Vincent being attacked
+20
+Remaining Credit After Buy a Card : 19
+Remaining Credit After Buy an Undo Action : 14
+Transferable Credit : 14
+14
+Enter name for Player 1: Enter name for Player 2: 
+Enter name for Player 1: Enter name for Player 2: 
+Enter name for Player 1: Enter name for Player 2: 
+Enter name for Player 1: Enter name for Player 2: 
+Enter name for Player 1: Enter name for Player 2: 
+Enter name for Player 1: Enter name for Player 2: 
+Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.696 sec <<< FAILURE! - in TestBoard
+testArmyPlacement(TestBoard)  Time elapsed: 0.025 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testArmyPlacement(TestBoard.java:54)
+
+testReinforcement(TestBoard)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testReinforcement(TestBoard.java:68)
+
+testAttack(TestBoard)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testAttack(TestBoard.java:20)
+
+testIsAttackable(TestBoard)  Time elapsed: 0.013 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testIsAttackable(TestBoard.java:27)
+
+testfortify(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testfortify(TestBoard.java:61)
+
+testKillPlayer(TestBoard)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: consumer key/secret pair already set.
+	at TestBoard.testKillPlayer(TestBoard.java:49)
+
+Running TestDice
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestDice
+Running TestUndoSystem
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestUndoSystem
+Running TestCountry
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestCountry
+Running TestCard
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestCard
+Running TestPlayer
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in TestPlayer
+Running TestWarObserver
+Vivian being attacked
+Vincent being attacked
+Vivian being attacked
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestWarObserver
+Running TestProxy
+Remaining Credit After Buy a Card : Transferable Credit : Transferable Credit : Remaining Credit After Buy an Undo Action : Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestProxy
+Running TestDeck
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in TestDeck
+Running TestHistory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in TestHistory
+
+Results :
+
+Tests in error: 
+  TestBoard.testArmyPlacement:54 » IllegalState consumer key/secret pair already...
+  TestBoard.testAttack:20 » IllegalState consumer key/secret pair already set.
+  TestBoard.testIsAttackable:27 » IllegalState consumer key/secret pair already ...
+  TestBoard.testKillPlayer:49 » IllegalState consumer key/secret pair already se...
+  TestBoard.testReinforcement:68 » IllegalState consumer key/secret pair already...
+  TestBoard.testfortify:61 » IllegalState consumer key/secret pair already set.
+
+Tests run: 46, Failures: 0, Errors: 6, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.338 s
+[INFO] Finished at: 2018-10-18T06:15:13+02:00
+[INFO] Final Memory: 29M/488M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project riskboardgame: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/vivian-v/RiskBoardGame/443007567/RiskBoardGame/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
