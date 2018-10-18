@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "vert-x3/vertx-consul-client",
+    "githubId": 68827963,
+    "url": "https://github.com/vert-x3/vertx-consul-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438227467,
+      "url": "http://travis-ci.org/vert-x3/vertx-consul-client/builds/438227467",
+      "date": "Oct 7, 2018 2:01:50 PM"
+    },
+    "fixerBuild": {
+      "id": 443003871,
+      "url": "http://travis-ci.org/vert-x3/vertx-consul-client/builds/443003871",
+      "date": "Oct 18, 2018 6:02:43 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 18, 2018 6:02:54 AM",
+    "reproductionDateEnd": "Oct 18, 2018 6:16:12 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 256622280,
+      "totalMemory": 397934592
+    },
+    "totalDuration": 792,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          1,
+          0,
+          65
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 342,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          342
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/vert-x3/vertx-consul-client/438227467/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 30,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 66
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/vert-x3/vertx-consul-client/438227467",
+    "overallMetrics": {
+      "numberRunning": 112,
+      "numberPassing": 111,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.vertx.ext.consul.suite.Sessions",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.vertx.ext.consul.suite.Sessions",
+        "testMethod": "createSessionWithOptionsWithZeroLockDelay",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Not equals : 0 !\u003d 15",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 73,
+    "numberTestFiles": 35,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "vert-x3/vertx-consul-client",
+      "branchName": "master",
+      "sha": "ac279cf3b4e1725e23712c932c9168d3403f71b0",
+      "url": "http://github.com/vert-x3/vertx-consul-client/commit/ac279cf3b4e1725e23712c932c9168d3403f71b0",
+      "date": "Oct 7, 2018 12:11:08 PM"
+    },
+    "fixerBuild": {
+      "repoName": "vert-x3/vertx-consul-client",
+      "branchName": "master",
+      "sha": "9c470e9e7d4ec7b9dd531d8ac2f7871f7b4ee807",
+      "url": "http://github.com/vert-x3/vertx-consul-client/commit/9c470e9e7d4ec7b9dd531d8ac2f7871f7b4ee807",
+      "date": "Oct 18, 2018 5:53:10 AM"
+    }
+  },
+  "type": "passing_passing"
+}
