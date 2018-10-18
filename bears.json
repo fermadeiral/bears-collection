@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Cognifide/aet",
+    "githubId": 60241390,
+    "url": "https://github.com/Cognifide/aet",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 442517850,
+      "url": "http://travis-ci.org/Cognifide/aet/builds/442517850",
+      "date": "Oct 17, 2018 8:07:22 AM"
+    },
+    "fixerBuild": {
+      "id": 443032750,
+      "url": "http://travis-ci.org/Cognifide/aet/builds/443032750",
+      "date": "Oct 18, 2018 8:27:21 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 18, 2018 8:27:36 AM",
+    "reproductionDateEnd": "Oct 18, 2018 8:35:55 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 347237856,
+      "totalMemory": 420478976
+    },
+    "totalDuration": 491,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 188,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          187
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 96,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          96
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Cognifide/aet/442517850/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Cognifide/aet/442517850/core/jobs",
+    "overallMetrics": {
+      "numberRunning": 341,
+      "numberPassing": 340,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest",
+        "testMethod": "collectTest_setOnlyWidth_reachedBrowserHeightLimit",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nwindow.setSize((800, 35000));\n-\u003e at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierTest.collectTest_setOnlyWidth_reachedBrowserHeightLimit(ResolutionModifierTest.java:174)\nActual invocation has different arguments:\nwindow.setSize((800, 300));\n-\u003e at com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifier.setResolution(ResolutionModifier.java:85)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 28,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 75,
+    "numberLibrariesFailingModule": 155,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Cognifide/aet",
+      "branchName": "hotfix/conditional-tests-side-panel",
+      "sha": "5e1ab4656bf991fe23092cb94f13be6024bf4348",
+      "url": "http://github.com/Cognifide/aet/commit/5e1ab4656bf991fe23092cb94f13be6024bf4348",
+      "date": "Oct 17, 2018 8:01:11 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Cognifide/aet",
+      "branchName": "hotfix/conditional-tests-side-panel",
+      "sha": "00cb1ce50e076041a54ff950a6b9c17b9b9afb6f",
+      "url": "http://github.com/Cognifide/aet/commit/00cb1ce50e076041a54ff950a6b9c17b9b9afb6f",
+      "date": "Oct 18, 2018 8:21:25 AM"
+    }
+  },
+  "type": "passing_passing"
+}
