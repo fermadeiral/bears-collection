@@ -1,0 +1,984 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "dbmalkovsky/flowable-engine",
+    "githubId": 70846560,
+    "url": "https://github.com/dbmalkovsky/flowable-engine",
+    "isFork": true,
+    "original": {
+      "name": "flowable/flowable-engine",
+      "githubId": 70780002,
+      "url": "https://github.com/flowable/flowable-engine"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 442595113,
+      "url": "http://travis-ci.org/dbmalkovsky/flowable-engine/builds/442595113",
+      "date": "Oct 17, 2018 12:28:29 PM"
+    },
+    "fixerBuild": {
+      "id": 443108144,
+      "url": "http://travis-ci.org/dbmalkovsky/flowable-engine/builds/443108144",
+      "date": "Oct 18, 2018 12:56:13 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 18, 2018 12:56:32 PM",
+    "reproductionDateEnd": "Oct 18, 2018 1:16:37 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 494810152,
+      "totalMemory": 894435328
+    },
+    "totalDuration": 1197,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 56,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          56
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 86,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          2,
+          82
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 60,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          60
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dbmalkovsky/flowable-engine/442595113/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 8,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 50,
+      "numberDeleted": 17
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dbmalkovsky/flowable-engine/442595113/modules/flowable-cmmn-engine",
+    "overallMetrics": {
+      "numberRunning": 337,
+      "numberPassing": 266,
+      "numberFailing": 48,
+      "numberErroring": 23,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 46
+        },
+        {
+          "failureName": "org.opentest4j.MultipleFailuresError",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "org.flowable.common.engine.api.FlowableException",
+          "isError": true,
+          "occurrences": 4
+        },
+        {
+          "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+          "isError": true,
+          "occurrences": 19
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.ManualActivationRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.VariablesTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StageTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.TimerEventListenerTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.RepetitionRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.el.VariableFunctionDelegatesTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.prefix.CmmnPrefixTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StartCaseWithFormTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ExitCriteriaTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.RuntimeServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.HumanTaskTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.EntryCriteriaTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.async.AsyncCmmnHistoryTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.authorization.StartAuthorizationTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ServiceTaskTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.MilestoneQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CmmnRuntimeServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnScriptTaskTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.RequiredRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.UserEventListenerTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseTaskTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.MilestoneHistoryServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionQueryTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoryServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.IfPartTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.async.AsyncTaskTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.tenant.MultiTenantTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.ManualActivationRuleTest",
+        "testMethod": "ManualActivationRuleTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest",
+        "testMethod": "CaseDefinitionCategoryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest.testDescriptionPersistency: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 17 record(s)   ACT_CMMN_CASEDEF: 11 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 11 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ExitCriteriaTest",
+        "testMethod": "ExitCriteriaTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.ExitCriteriaTest.testExitThreeNestedStagesThroughPlanModel: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.UserEventListenerTest",
+        "testMethod": "UserEventListenerTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.UserEventListenerTest.testAutocompleteStageWithoutFiringTheEvent: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.HumanTaskTest",
+        "testMethod": "testTaskCompletionExitsStage",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:52.799\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:52.799\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentTest",
+        "testMethod": "DeploymentTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.repository.DeploymentTest.testCaseDefinitionDI: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskQueryTest",
+        "testMethod": "CmmnTaskQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.task.CmmnTaskQueryTest.testQueryByVariableValueEquals: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 55 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 61 record(s)   ACT_RU_VARIABLE: 29 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 27 record(s)   ACT_CMMN_CASEDEF: 20 record(s)   ACT_RU_TASK: 27 record(s)   ACT_HI_TASKINST: 27 record(s)   ACT_CMMN_RU_CASE_INST: 20 record(s)   ACT_CMMN_DEPLOYMENT: 19 record(s)   ACT_HI_IDENTITYLINK: 5 record(s)   ACT_RU_IDENTITYLINK: 5 record(s)   ACT_CMMN_HI_CASE_INST: 20 record(s)   ACT_HI_VARINST: 29 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.async.AsyncTaskTest",
+        "testMethod": "testTerminateCaseInstance",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:48.12\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:48.12\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskQueryTest",
+        "testMethod": "testQueryByVariableValueEquals",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:54.961\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:54.961\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ExitCriteriaTest",
+        "testMethod": "testExitThreeNestedStagesThroughPlanModel",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c8\u003e but was:\u003c50\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.VariablesTest",
+        "testMethod": "VariablesTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.VariablesTest.testSetVariables: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.HumanTaskTest",
+        "testMethod": "HumanTaskTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:52.799\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:52.799\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoryServiceTest",
+        "testMethod": "HistoryServiceTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.history.HistoryServiceTest.testStartSimplePassthroughCaseWithBlockingTask: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 22 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 23 record(s)   ACT_RU_VARIABLE: 8 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 7 record(s)   ACT_CMMN_CASEDEF: 4 record(s)   ACT_RU_TASK: 9 record(s)   ACT_HI_TASKINST: 9 record(s)   ACT_CMMN_RU_CASE_INST: 6 record(s)   ACT_CMMN_DEPLOYMENT: 4 record(s)   ACT_CMMN_HI_CASE_INST: 6 record(s)   ACT_HI_VARINST: 8 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest",
+        "testMethod": "testByPlanItemInstanceId",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:53.131\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:53.131\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StartCaseWithFormTest",
+        "testMethod": "StartCaseWithFormTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.StartCaseWithFormTest.testStartCaseWithFormWithoutFormKeyInModel: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest",
+        "testMethod": "testDescriptionPersistency",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.TimerEventListenerTest",
+        "testMethod": "TimerEventListenerTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.TimerEventListenerTest.testTimerExpressionDuration: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.authorization.StartAuthorizationTest",
+        "testMethod": "StartAuthorizationTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.authorization.StartAuthorizationTest.testCaseDefinitionList: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 6 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 7 record(s)   ACT_RU_VARIABLE: 1 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 3 record(s)   ACT_CMMN_CASEDEF: 2 record(s)   ACT_RU_TASK: 2 record(s)   ACT_HI_TASKINST: 2 record(s)   ACT_CMMN_RU_CASE_INST: 2 record(s)   ACT_CMMN_DEPLOYMENT: 2 record(s)   ACT_CMMN_HI_CASE_INST: 2 record(s)   ACT_HI_VARINST: 1 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.MilestoneQueryTest",
+        "testMethod": "testSimpleMilestoneInstanceQuery",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c7\u003e but was:\u003c53\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StageTest",
+        "testMethod": "testThreeNestedStagesNonBlocking",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c50\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest",
+        "testMethod": "testByPlanItemInstanceId",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:49.988\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:49.988\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnScriptTaskTest",
+        "testMethod": "CmmnScriptTaskTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.task.CmmnScriptTaskTest.testReturnJavaObject: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.MilestoneHistoryServiceTest",
+        "testMethod": "MilestoneHistoryServiceTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.history.MilestoneHistoryServiceTest.testMilestoneInstanceHistoryQuery: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 22 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 23 record(s)   ACT_RU_VARIABLE: 8 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 7 record(s)   ACT_CMMN_CASEDEF: 4 record(s)   ACT_RU_TASK: 9 record(s)   ACT_HI_TASKINST: 9 record(s)   ACT_CMMN_RU_CASE_INST: 6 record(s)   ACT_CMMN_DEPLOYMENT: 4 record(s)   ACT_CMMN_HI_CASE_INST: 6 record(s)   ACT_HI_VARINST: 8 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.MilestoneHistoryServiceTest",
+        "testMethod": "testMilestoneInstanceHistoryQuery",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c7\u003e but was:\u003c29\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.UserEventListenerTest",
+        "testMethod": "testAutocompleteStageWithoutFiringTheEvent",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c16\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.tenant.MultiTenantTest",
+        "testMethod": "MultiTenantTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.tenant.MultiTenantTest.testDeployments: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 56 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 62 record(s)   ACT_RU_VARIABLE: 29 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 28 record(s)   ACT_CMMN_CASEDEF: 21 record(s)   ACT_RU_TASK: 28 record(s)   ACT_HI_TASKINST: 28 record(s)   ACT_CMMN_RU_CASE_INST: 21 record(s)   ACT_CMMN_DEPLOYMENT: 20 record(s)   ACT_HI_IDENTITYLINK: 6 record(s)   ACT_RU_IDENTITYLINK: 6 record(s)   ACT_CMMN_HI_CASE_INST: 21 record(s)   ACT_HI_VARINST: 29 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentQueryTest",
+        "testMethod": "testQueryByDeploymentCategoryNotEquals",
+        "failureName": "org.opentest4j.MultipleFailuresError",
+        "detail": "Multiple Failures (2 failures)\n Query return 15 results instead of max 1\n \n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseTaskTest",
+        "testMethod": "CaseTaskTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.CaseTaskTest.testRuntimeServiceTriggerNonBlockingCasePlanItem: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.RuntimeServiceTest",
+        "testMethod": "RuntimeServiceTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.RuntimeServiceTest.testStartSimplePassthroughCaseWithBlockingTask: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest",
+        "testMethod": "PlanItemInstanceLifeCycleListenerTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest.testFilterOnType: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 16 record(s)   ACT_CMMN_CASEDEF: 10 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 10 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest",
+        "testMethod": "CaseInstanceInvolvementTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest.getCaseInstanceWithNullInvolvedGroups: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.async.AsyncCmmnHistoryTest",
+        "testMethod": "AsyncCmmnHistoryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.async.AsyncCmmnHistoryTest.testIdentityLinks: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 1 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 1 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 1 record(s)   ACT_CMMN_CASEDEF: 1 record(s)   ACT_RU_TASK: 1 record(s)   ACT_HI_TASKINST: 1 record(s)   ACT_CMMN_RU_CASE_INST: 1 record(s)   ACT_CMMN_DEPLOYMENT: 1 record(s)   ACT_CMMN_HI_CASE_INST: 1 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest",
+        "testMethod": "HistoricCaseInstanceInvolvementTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest.getCaseInstanceWithNullInvolvedGroups: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 18 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 19 record(s)   ACT_RU_VARIABLE: 7 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 5 record(s)   ACT_CMMN_CASEDEF: 3 record(s)   ACT_RU_TASK: 8 record(s)   ACT_HI_TASKINST: 8 record(s)   ACT_CMMN_RU_CASE_INST: 5 record(s)   ACT_CMMN_DEPLOYMENT: 3 record(s)   ACT_CMMN_HI_CASE_INST: 5 record(s)   ACT_HI_VARINST: 7 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseTaskTest",
+        "testMethod": "testRuntimeServiceTriggerNonBlockingCasePlanItem",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c15\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.IfPartTest",
+        "testMethod": "testStageWithExitIfPart2",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c27\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.TimerEventListenerTest",
+        "testMethod": "testTimerExpressionDuration",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c16\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest",
+        "testMethod": "HistoricCaseInstanceQueryImplTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest.getCaseInstanceByBusinessKey: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 18 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 19 record(s)   ACT_RU_VARIABLE: 7 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 5 record(s)   ACT_CMMN_CASEDEF: 3 record(s)   ACT_RU_TASK: 8 record(s)   ACT_HI_TASKINST: 8 record(s)   ACT_CMMN_RU_CASE_INST: 5 record(s)   ACT_CMMN_DEPLOYMENT: 3 record(s)   ACT_CMMN_HI_CASE_INST: 5 record(s)   ACT_HI_VARINST: 7 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionQueryTest",
+        "testMethod": "CaseDefinitionQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.repository.CaseDefinitionQueryTest.testQueryByInvalidDeploymentIds: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 21 record(s)   ACT_CMMN_CASEDEF: 15 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 14 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.el.VariableFunctionDelegatesTest",
+        "testMethod": "VariableFunctionDelegatesTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:49.128\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:49.128\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StageTest",
+        "testMethod": "StageTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.StageTest.testThreeNestedStagesNonBlocking: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest",
+        "testMethod": "testSimpleStage",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c25\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest",
+        "testMethod": "CompletionNeutralTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.EntryCriteriaTest",
+        "testMethod": "testTerminateCaseInstanceAfterOneOutOfMultipleOnPartsSatisfied",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c13\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest",
+        "testMethod": "testRequiredPrecedenceDeepNest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5\u003e but was:\u003c29\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterTest",
+        "testMethod": "extensionUsageExample{CmmnEngine}",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentTest",
+        "testMethod": "testCaseDefinitionDI",
+        "failureName": "org.flowable.common.engine.api.FlowableException",
+        "detail": "Query return 17 results instead of max 1",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.EntryCriteriaTest",
+        "testMethod": "EntryCriteriaTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.EntryCriteriaTest.testTerminateCaseInstanceAfterOneOutOfMultipleOnPartsSatisfied: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ServiceTaskTest",
+        "testMethod": "ServiceTaskTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.ServiceTaskTest.testJavaServiceTask: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.RequiredRuleTest",
+        "testMethod": "RequiredRuleTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskServiceTest",
+        "testMethod": "testTriggerOneHumanTaskCaseProgrammatically",
+        "failureName": "org.flowable.common.engine.api.FlowableException",
+        "detail": "Query return 34 results instead of max 1",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.ServiceTaskTest",
+        "testMethod": "testJavaServiceTask",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c15\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.authorization.StartAuthorizationTest",
+        "testMethod": "testCaseDefinitionList",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c5\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.RuntimeServiceTest",
+        "testMethod": "testStartSimplePassthroughCaseWithBlockingTask",
+        "failureName": "org.flowable.common.engine.api.FlowableException",
+        "detail": "Query return 20 results instead of max 1",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionQueryTest",
+        "testMethod": "testQueryByInvalidDeploymentIds",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:44.8\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest",
+        "testMethod": "PlanItemInstanceHistoryServiceTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:50.408\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoryServiceTest",
+        "testMethod": "testStartSimplePassthroughCaseWithBlockingTask",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c6\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.MilestoneQueryTest",
+        "testMethod": "MilestoneQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.MilestoneQueryTest.testSimpleMilestoneInstanceQuery: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 46 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 52 record(s)   ACT_RU_VARIABLE: 23 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 24 record(s)   ACT_CMMN_CASEDEF: 18 record(s)   ACT_RU_TASK: 21 record(s)   ACT_HI_TASKINST: 21 record(s)   ACT_CMMN_RU_CASE_INST: 14 record(s)   ACT_CMMN_DEPLOYMENT: 17 record(s)   ACT_CMMN_HI_CASE_INST: 14 record(s)   ACT_HI_VARINST: 23 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.IfPartTest",
+        "testMethod": "IfPartTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.IfPartTest.testStageWithExitIfPart2: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 46 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 52 record(s)   ACT_RU_VARIABLE: 23 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 24 record(s)   ACT_CMMN_CASEDEF: 18 record(s)   ACT_RU_TASK: 21 record(s)   ACT_HI_TASKINST: 21 record(s)   ACT_CMMN_RU_CASE_INST: 14 record(s)   ACT_CMMN_DEPLOYMENT: 17 record(s)   ACT_CMMN_HI_CASE_INST: 14 record(s)   ACT_HI_VARINST: 23 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest",
+        "testMethod": "HistoricPlanItemInstanceQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest.testByPlanItemInstanceId: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 22 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 23 record(s)   ACT_RU_VARIABLE: 8 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 7 record(s)   ACT_CMMN_CASEDEF: 4 record(s)   ACT_RU_TASK: 9 record(s)   ACT_HI_TASKINST: 9 record(s)   ACT_CMMN_RU_CASE_INST: 6 record(s)   ACT_CMMN_DEPLOYMENT: 4 record(s)   ACT_CMMN_HI_CASE_INST: 6 record(s)   ACT_HI_VARINST: 8 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CmmnRuntimeServiceTest",
+        "testMethod": "CmmnRuntimeServiceTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.CmmnRuntimeServiceTest.updateCaseNameSetEmpty: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.StartCaseWithFormTest",
+        "testMethod": "testStartCaseWithFormWithoutFormKeyInModel",
+        "failureName": "org.flowable.common.engine.api.FlowableException",
+        "detail": "Query return 6 results instead of max 1",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest",
+        "testMethod": "testFilterOnType",
+        "failureName": "org.opentest4j.MultipleFailuresError",
+        "detail": "Multiple Failures (2 failures)\n Query return 3 results instead of max 1\n \n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.tenant.MultiTenantTest",
+        "testMethod": "testDeployments",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c22\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.RepetitionRuleTest",
+        "testMethod": "RepetitionRuleTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:05:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:05:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.repository.DeploymentQueryTest",
+        "testMethod": "DeploymentQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.repository.DeploymentQueryTest.testQueryByDeploymentCategoryNotEquals: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest",
+        "testMethod": "CaseInstanceQueryImplTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest.getCaseInstanceByBusinessKey: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 42 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 48 record(s)   ACT_RU_VARIABLE: 22 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 23 record(s)   ACT_CMMN_CASEDEF: 17 record(s)   ACT_RU_TASK: 18 record(s)   ACT_HI_TASKINST: 18 record(s)   ACT_CMMN_RU_CASE_INST: 13 record(s)   ACT_CMMN_DEPLOYMENT: 16 record(s)   ACT_CMMN_HI_CASE_INST: 13 record(s)   ACT_HI_VARINST: 22 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.task.CmmnTaskServiceTest",
+        "testMethod": "CmmnTaskServiceTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:55.049\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:55.049\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.async.AsyncTaskTest",
+        "testMethod": "AsyncTaskTest",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:48.12\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 12:59:48.12\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest",
+        "testMethod": "PlanItemInstanceQueryTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DB not clean for test org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest.testByPlanItemInstanceId: \n  ACT_CMMN_RU_PLAN_ITEM_INST: 50 record(s)   ACT_CMMN_HI_PLAN_ITEM_INST: 56 record(s)   ACT_RU_VARIABLE: 24 record(s)   ACT_CMMN_DEPLOYMENT_RESOURCE: 26 record(s)   ACT_CMMN_CASEDEF: 19 record(s)   ACT_RU_TASK: 22 record(s)   ACT_HI_TASKINST: 22 record(s)   ACT_CMMN_RU_CASE_INST: 15 record(s)   ACT_CMMN_DEPLOYMENT: 18 record(s)   ACT_CMMN_HI_CASE_INST: 15 record(s)   ACT_HI_VARINST: 24 record(s) ",
+        "isError": false
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.itemcontrol.RequiredRuleTest",
+        "testMethod": "testOneRequiredHumanTask",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "org.flowable.cmmn.test.prefix.CmmnPrefixTest",
+        "testMethod": "testPrefixCase",
+        "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+        "detail": "\n### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027\n### The error may exist in org/flowable/task/service/db/mapping/entity/HistoricTaskInstance.xml\n### The error may involve org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl.selectHistoricTaskInstance\n### The error occurred while handling results\n### SQL: select * from ACT_HI_TASKINST where ID_ \u003d ?\n### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property \u0027createTime\u0027 of \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027 with value \u00272018-10-18 13:17:50.742\u0027 Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named \u0027createTime\u0027 in \u0027class org.flowable.task.service.impl.persistence.entity.HistoricTaskInstanceEntityImpl\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 2654,
+    "numberTestFiles": 631,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dbmalkovsky/flowable-engine",
+      "branchName": "master",
+      "sha": "e436cfd9be95805dfc945cc519a4f556936c1638",
+      "url": "http://github.com/dbmalkovsky/flowable-engine/commit/e436cfd9be95805dfc945cc519a4f556936c1638",
+      "date": "Oct 17, 2018 8:50:00 AM"
+    },
+    "fixerBuild": {
+      "repoName": "dbmalkovsky/flowable-engine",
+      "branchName": "master",
+      "sha": "65a2e4649611ac9c6b1fd9ff441c31fc40030951",
+      "url": "http://github.com/dbmalkovsky/flowable-engine/commit/65a2e4649611ac9c6b1fd9ff441c31fc40030951",
+      "date": "Oct 18, 2018 12:08:29 PM"
+    }
+  },
+  "type": "passing_passing"
+}
