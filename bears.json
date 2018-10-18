@@ -1,0 +1,170 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "angelozerr/lsp4xml",
+    "githubId": 138315669,
+    "url": "https://github.com/angelozerr/lsp4xml",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443190790,
+      "url": "http://travis-ci.org/angelozerr/lsp4xml/builds/443190790",
+      "date": "Oct 18, 2018 3:39:12 PM"
+    },
+    "fixerBuild": {
+      "id": 443349058,
+      "url": "http://travis-ci.org/angelozerr/lsp4xml/builds/443349058",
+      "date": "Oct 18, 2018 9:16:56 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 18, 2018 10:02:51 PM",
+    "reproductionDateEnd": "Oct 18, 2018 10:05:07 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 298339992,
+      "totalMemory": 393740288
+    },
+    "totalDuration": 130,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 39,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          39
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          25
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/angelozerr/lsp4xml/443190790/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 47,
+      "numberDeleted": 48
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/angelozerr/lsp4xml/443190790/org.eclipse.lsp4xml",
+    "overallMetrics": {
+      "numberRunning": 271,
+      "numberPassing": 268,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.eclipse.lsp4xml.services.XMLCompletionTest",
+        "numberRunning": 11,
+        "numberPassing": 8,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.eclipse.lsp4xml.services.XMLCompletionTest",
+        "testMethod": "testAutoCompletionPrologWithoutXML",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...0\" encoding\u003d\"UTF-8\"?[\u003e]$0\u003e but was:\u003c...0\" encoding\u003d\"UTF-8\"?[]$0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.eclipse.lsp4xml.services.XMLCompletionTest",
+        "testMethod": "testAutoCompletionPrologWithXML",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[xml] version\u003d\"1.0\" encod...\u003e but was:\u003c[] version\u003d\"1.0\" encod...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.eclipse.lsp4xml.services.XMLCompletionTest",
+        "testMethod": "testAutoCompletionPrologWithPartialXML",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\u003c?xml ... ?\u003e should only exist once: Actual:  expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberSourceFiles": 134,
+    "numberTestFiles": 30,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "angelozerr/lsp4xml",
+      "branchName": "master",
+      "sha": "16b91e4d45ca322e03b45b21f2e1d1d14b2acaf3",
+      "url": "http://github.com/angelozerr/lsp4xml/commit/16b91e4d45ca322e03b45b21f2e1d1d14b2acaf3",
+      "date": "Oct 18, 2018 3:35:47 PM"
+    },
+    "fixerBuild": {
+      "repoName": "angelozerr/lsp4xml",
+      "branchName": "master",
+      "sha": "326fa9edff7564c5e79f1e7c5f9df7cb0408e583",
+      "url": "http://github.com/angelozerr/lsp4xml/commit/326fa9edff7564c5e79f1e7c5f9df7cb0408e583",
+      "date": "Oct 18, 2018 9:15:05 PM"
+    }
+  },
+  "type": "passing_passing"
+}
