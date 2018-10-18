@@ -52,35 +52,28 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ vertx-consul-client ---
 [INFO] Surefire report directory: /root/workspace/vert-x3/vertx-consul-client/438227467/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 5.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 55.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 754.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.vertx.ext.consul.common.StateConsumerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 sec - in io.vertx.ext.consul.common.StateConsumerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.804 sec - in io.vertx.ext.consul.common.StateConsumerTest
 Running io.vertx.ext.consul.AggregateStatusTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.vertx.ext.consul.AggregateStatusTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in io.vertx.ext.consul.AggregateStatusTest
 Running io.vertx.ext.consul.OptionsTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in io.vertx.ext.consul.OptionsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in io.vertx.ext.consul.OptionsTest
 Running io.vertx.ext.consul.CopyTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec - in io.vertx.ext.consul.CopyTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in io.vertx.ext.consul.CopyTest
 Running io.vertx.ext.consul.ConsulClientTest
-    [unzip] Expanding: /tmp/embedded-consul-1.1.0/consul.zip into /tmp/embedded-consul-1.1.0
 ==> Starting Consul agent...
 ==> Consul agent running!
            Version: 'v1.1.0'
-           Node ID: '5133f9b9-280c-f3eb-f30e-cace75046f16'
-         Node name: 'node-3b69cce07bac90e6'
-        Datacenter: 'dc-1151624844' (Segment: '<all>')
+           Node ID: '6864a69d-8691-7526-73a1-88977be59efa'
+         Node name: 'node-d34a2f069b141e5a'
+        Datacenter: 'dc-2006025809' (Segment: '<all>')
             Server: true (Bootstrap: false)
-SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 42439, HTTPS: 33403, DNS: 38683)
-SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 42587, WAN: 39759)
+SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 39813, HTTPS: 41519, DNS: 45679)
+SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 36593, WAN: 39143)
 SUREFIRE-859:            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
 ==> Log data will now stream in as it occurs:
 >>>>>>> wait for new node
@@ -90,164 +83,137 @@ SUREFIRE-859:            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incomi
     Join completed. Synced with 1 initial agents
 ==> Consul agent running!
            Version: 'v1.1.0'
-           Node ID: '6e224b40-0ed4-b6e1-903b-6ac8fd82a52a'
+           Node ID: '9a57ea8b-5705-0def-fe3b-7db3b6cd112c'
          Node name: 'attached_node'
-        Datacenter: 'dc-1151624844' (Segment: '<all>')
+        Datacenter: 'dc-2006025809' (Segment: '<all>')
             Server: true (Bootstrap: false)
-SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 44213, HTTPS: 44309, DNS: 42011)
-SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 43061, WAN: 46179)
+SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 38659, HTTPS: 46329, DNS: 36915)
+SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 35343, WAN: 43077)
 SUREFIRE-859:            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
 ==> Log data will now stream in as it occurs:
 >>>>>>> new node event received
-2018/10/18 04:04:43 [DEBUG] raft-net: 127.0.0.1:45121 accepted connection from: 127.0.0.1:33603
-2018/10/18 04:04:43 [DEBUG] raft-net: 127.0.0.1:45121 accepted connection from: 127.0.0.1:48139
-2018/10/18 04:04:43 [DEBUG] raft-net: 127.0.0.1:33817 accepted connection from: 127.0.0.1:41263
-2018/10/18 04:04:43 [DEBUG] raft-net: 127.0.0.1:33817 accepted connection from: 127.0.0.1:55899
-2018/10/18 04:04:43 [DEBUG] raft-net: 127.0.0.1:45121 accepted connection from: 127.0.0.1:43893
+2018/10/18 04:10:57 [DEBUG] raft-net: 127.0.0.1:34339 accepted connection from: 127.0.0.1:57237
+2018/10/18 04:10:57 [DEBUG] raft-net: 127.0.0.1:34339 accepted connection from: 127.0.0.1:41407
 >>>>>>> new node attached
 >>>>>>> wait for new node detaching
-2018/10/18 04:04:47 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:45121->127.0.0.1:48139: write: broken pipe
-    2018/10/18 04:04:47 [ERR] memberlist: Failed to send ping: write udp 127.0.0.1:43061->127.0.0.1:42587: use of closed network connection
+2018/10/18 04:11:01 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:34339->127.0.0.1:57237: write: broken pipe
 >>>>>>> new node detached
 ==> Starting Consul agent...
 ==> Joining cluster...
     Join completed. Synced with 1 initial agents
 ==> Consul agent running!
            Version: 'v1.1.0'
-           Node ID: '1195ca67-b4be-a6ab-4134-6f268568f3db'
+           Node ID: 'abda6cd0-038a-890f-b244-5c7380fc51e7'
          Node name: 'new_node'
-        Datacenter: 'dc-1151624844' (Segment: '<all>')
+        Datacenter: 'dc-2006025809' (Segment: '<all>')
             Server: true (Bootstrap: false)
-SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 32925, HTTPS: 33469, DNS: 45875)
-SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 44491, WAN: 36449)
+SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 37439, HTTPS: 38307, DNS: 34609)
+SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 45989, WAN: 45221)
 SUREFIRE-859:            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
 ==> Log data will now stream in as it occurs:
-2018/10/18 04:05:25 [DEBUG] raft-net: 127.0.0.1:45411 accepted connection from: 127.0.0.1:44749
-2018/10/18 04:05:25 [DEBUG] raft-net: 127.0.0.1:45411 accepted connection from: 127.0.0.1:60231
+2018/10/18 04:11:39 [DEBUG] raft-net: 127.0.0.1:44561 accepted connection from: 127.0.0.1:46465
+2018/10/18 04:11:39 [DEBUG] raft-net: 127.0.0.1:44561 accepted connection from: 127.0.0.1:33719
 ... rounds left: 9
-2018/10/18 04:05:54 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:45411->127.0.0.1:44749: write: broken pipe
-SUREFIRE-859:     2018/10/18 04:06:02 [ERR] http: Request PUT /v1/kv/foo%2Fbar1?dc=dc-1151624844, error: Permission denied from=127.0.0.1:43562
-SUREFIRE-859:     2018/10/18 04:06:05 [ERR] http: Request DELETE /v1/kv/unknown?dc=dc-1151624844, error: Permission denied from=127.0.0.1:43576
---- {"Node":"node-3b69cce07bac90e6","Address":"127.0.0.1","ServiceID":"consul","ServiceName":"consul","ServiceTags":[],"ServiceAddress":"","ServicePort":33817}
---- {"Node":"node-3b69cce07bac90e6","Address":"127.0.0.1","ServiceID":"id1","ServiceName":"service1","ServiceTags":[],"ServiceAddress":""}
--+- {"Node":"node-3b69cce07bac90e6","Address":"127.0.0.1","ServiceID":"consul","ServiceName":"consul","ServiceTags":[],"ServiceAddress":"","ServicePort":33817}
--+- {"Node":"node-3b69cce07bac90e6","Address":"127.0.0.1","ServiceID":"id1","ServiceName":"service1","ServiceTags":[],"ServiceAddress":""}
--+- {"Node":"node-3b69cce07bac90e6","Address":"127.0.0.1","ServiceID":"id2","ServiceName":"service2","ServiceTags":[],"ServiceAddress":""}
+2018/10/18 04:12:12 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:44561->127.0.0.1:46465: write: broken pipe
+SUREFIRE-859:     2018/10/18 04:12:21 [ERR] http: Request PUT /v1/kv/foo%2Fbar1?dc=dc-2006025809, error: Permission denied from=127.0.0.1:38510
+SUREFIRE-859:     2018/10/18 04:12:23 [ERR] http: Request DELETE /v1/kv/unknown?dc=dc-2006025809, error: Permission denied from=127.0.0.1:38524
+--- {"Node":"node-d34a2f069b141e5a","Address":"127.0.0.1","ServiceID":"consul","ServiceName":"consul","ServiceTags":[],"ServiceAddress":"","ServicePort":33705}
+--- {"Node":"node-d34a2f069b141e5a","Address":"127.0.0.1","ServiceID":"id1","ServiceName":"service1","ServiceTags":[],"ServiceAddress":""}
+-+- {"Node":"node-d34a2f069b141e5a","Address":"127.0.0.1","ServiceID":"consul","ServiceName":"consul","ServiceTags":[],"ServiceAddress":"","ServicePort":33705}
+-+- {"Node":"node-d34a2f069b141e5a","Address":"127.0.0.1","ServiceID":"id1","ServiceName":"service1","ServiceTags":[],"ServiceAddress":""}
+-+- {"Node":"node-d34a2f069b141e5a","Address":"127.0.0.1","ServiceID":"id2","ServiceName":"service2","ServiceTags":[],"ServiceAddress":""}
 --- {"ServiceName":"consul","ServiceTags":[]}
 --- {"ServiceName":"service1","ServiceTags":[]}
 -+- {"ServiceName":"consul","ServiceTags":[]}
 -+- {"ServiceName":"service1","ServiceTags":[]}
 -+- {"ServiceName":"service2","ServiceTags":[]}
-SUREFIRE-859:     2018/10/18 04:08:56 [ERR] http: Request PUT /v1/session/create?dc=dc-1151624844, error: Missing node registration from=127.0.0.1:43700
-12 ms: await 'SLWLUSNICE'
-29 ms: consume 'SLWLUSNICE'
-34 ms: await 'SLWLUSNICE/WLOAMCBCFO'
-34 ms: consume 'SLWLUSNICE/WLOAMCBCFO'
-38 ms: consume 'TQBBTKNWXQ'
-38 ms: await 'TQBBTKNWXQ'
-2 ms: await 'TQBBTKNWXQ'
-9 ms: consume 'TQBBTKNWXQ'
-17 ms: await 'SFJOXHEKSA'
-1016 ms: consume 'SFJOXHEKSA'
-1021 ms: consume 'VHHRRMTNCW'
-1021 ms: await 'VHHRRMTNCW'
-1025 ms: await 'TQBBTKNWXQ'
-1025 ms: consume 'TQBBTKNWXQ'
+SUREFIRE-859:     2018/10/18 04:15:14 [ERR] http: Request PUT /v1/session/create?dc=dc-2006025809, error: Missing node registration from=127.0.0.1:38692
+9 ms: await 'RFBRQNWPSD'
+22 ms: consume 'RFBRQNWPSD'
+25 ms: await 'QMRCUWLSJQ/RFBRQNWPSD'
+25 ms: consume 'QMRCUWLSJQ/RFBRQNWPSD'
+29 ms: await 'TMHLLHYUIR'
+31 ms: consume 'TMHLLHYUIR'
+2 ms: await 'TMHLLHYUIR'
+6 ms: consume 'TMHLLHYUIR'
+11 ms: await 'LOBYDBUCFH'
+1012 ms: consume 'LOBYDBUCFH'
+1016 ms: consume 'IUOYJGBCDG'
+1016 ms: await 'IUOYJGBCDG'
+1018 ms: consume 'TMHLLHYUIR'
+1018 ms: await 'TMHLLHYUIR'
 3 ms: await any
 7 ms: consume '7'
 7 ms: await any
-1015 ms: consume '1015'
-1015 ms: await any
-5022 ms: consume '5022'
-5022 ms: await any
-14033 ms: consume '14033'
-14035 ms: await any
-30052 ms: consume '30052'
-zero: -1
+1014 ms: consume '1014'
+1014 ms: await any
+5020 ms: consume '5020'
+5020 ms: await any
+14031 ms: consume '14031'
+14031 ms: await any
+30048 ms: consume '30048'
+zero: -5
 3 ms: await ''
-12 ms: consume ''
+11 ms: consume ''
 ==> Starting Consul agent...
 ==> Joining cluster...
     Join completed. Synced with 1 initial agents
 ==> Consul agent running!
            Version: 'v1.1.0'
-           Node ID: 'be5682f2-faa1-3771-6779-799da9a8c9fb'
-         Node name: 'UYHFSEVKHP'
-        Datacenter: 'dc-1151624844' (Segment: '<all>')
+           Node ID: '517153b4-5c6d-ac3a-8c39-6b5b8fa04abd'
+         Node name: 'ERNOYWBDYB'
+        Datacenter: 'dc-2006025809' (Segment: '<all>')
             Server: true (Bootstrap: false)
-SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 43865, HTTPS: 39217, DNS: 37985)
-SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 34101, WAN: 43101)
+SUREFIRE-859:        Client Addr: [127.0.0.1] (HTTP: 40547, HTTPS: 38141, DNS: 42017)
+SUREFIRE-859:       Cluster Addr: 127.0.0.1 (LAN: 44721, WAN: 37541)
 SUREFIRE-859:            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
 ==> Log data will now stream in as it occurs:
-149 ms: consume 'UYHFSEVKHP'
-2018/10/18 04:09:29 [DEBUG] raft-net: 127.0.0.1:35733 accepted connection from: 127.0.0.1:36755
-2018/10/18 04:09:29 [DEBUG] raft-net: 127.0.0.1:35733 accepted connection from: 127.0.0.1:44677
-222 ms: consume 'UYHFSEVKHP'
-2018/10/18 04:09:32 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:35733->127.0.0.1:36755: write: broken pipe
-3943 ms: consume ''
-3980 ms: await 'UYHFSEVKHP'
-3981 ms: await ''
-3981 ms: await ''
+161 ms: consume 'ERNOYWBDYB'
+2018/10/18 04:15:47 [DEBUG] raft-net: 127.0.0.1:32983 accepted connection from: 127.0.0.1:58793
+2018/10/18 04:15:47 [DEBUG] raft-net: 127.0.0.1:32983 accepted connection from: 127.0.0.1:43465
+217 ms: consume 'ERNOYWBDYB'
+2018/10/18 04:15:51 [ERR] raft-net: Failed to flush response: write tcp 127.0.0.1:32983->127.0.0.1:58793: write: broken pipe
+3871 ms: consume ''
+3901 ms: await 'ERNOYWBDYB'
+3901 ms: await ''
+3902 ms: await ''
 3 ms: await ''
-11 ms: consume ''
-20 ms: await 'MTAYHMPXMW/PASSING'
-24 ms: consume 'MTAYHMPXMW/PASSING'
-24 ms: await 'MTAYHMPXMW/CRITICAL'
-4022 ms: consume 'MTAYHMPXMW/CRITICAL'
-3 ms: await ''
-10 ms: consume ''
-27 ms: consume 'BXIXEHWECA'
-33 ms: await 'BXIXEHWECA'
-33 ms: await 'BXIXEHWECA,RBPCBXHQFP'
-35 ms: consume 'BXIXEHWECA,RBPCBXHQFP'
+12 ms: consume ''
+108 ms: await 'GPLQQKTWQF/PASSING'
+112 ms: consume 'GPLQQKTWQF/PASSING'
+112 ms: await 'GPLQQKTWQF/CRITICAL'
+4110 ms: consume 'GPLQQKTWQF/CRITICAL'
 2 ms: await ''
 10 ms: consume ''
-18 ms: await 'KIJNGKQNWM'
-18 ms: consume 'KIJNGKQNWM'
-7 ms: await 'TOKOKXXLIX'
-12 ms: consume 'TOKOKXXLIX'
-15 ms: await 'JKXTKUTLXV'
-15 ms: consume 'JKXTKUTLXV'
-18 ms: await 'TQBBTKNWXQ'
-18 ms: consume 'TQBBTKNWXQ'
-Tests run: 80, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 309.494 sec <<< FAILURE! - in io.vertx.ext.consul.ConsulClientTest
-createSessionWithOptionsWithZeroLockDelay(io.vertx.ext.consul.suite.Sessions)  Time elapsed: 0.045 sec  <<< FAILURE!
-java.lang.AssertionError: Not equals : 0 != 15
-	at io.vertx.ext.unit.impl.TestContextImpl.reportAssertionError(TestContextImpl.java:467)
-	at io.vertx.ext.unit.impl.TestContextImpl.assertEquals(TestContextImpl.java:363)
-	at io.vertx.ext.unit.impl.TestContextImpl.assertEquals(TestContextImpl.java:350)
-	at io.vertx.ext.consul.suite.Sessions.lambda$null$4(Sessions.java:79)
-
-    2018/10/18 04:09:43 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
-    2018/10/18 04:09:43 [ERR] autopilot: Error promoting servers: error getting server raft protocol versions: No servers found
-    2018/10/18 04:09:43 [ERR] consul: failed to reconcile member: {UYHFSEVKHP 127.0.0.1 34101 map[wan_join_port:43101 id:be5682f2-faa1-3771-6779-799da9a8c9fb vsn_max:3 build:1.1.0:5174058f raft_vsn:3 port:35733 vsn_min:2 role:consul segment: use_tls:1 dc:dc-1151624844 vsn:2] left 1 5 2 2 5 4}: No servers found
-    2018/10/18 04:09:43 [ERR] consul: failed to reconcile member: {attached_node 127.0.0.1 43061 map[id:6e224b40-0ed4-b6e1-903b-6ac8fd82a52a raft_vsn:3 wan_join_port:46179 dc:dc-1151624844 vsn_max:3 segment: build:1.1.0:5174058f port:45121 vsn:2 vsn_min:2 use_tls:1 role:consul] left 1 5 2 2 5 4}: No servers found
-    2018/10/18 04:09:43 [ERR] consul: failed to reconcile member: {new_node 127.0.0.1 44491 map[vsn_min:2 vsn_max:3 raft_vsn:3 use_tls:1 segment: port:45411 wan_join_port:36449 id:1195ca67-b4be-a6ab-4134-6f268568f3db dc:dc-1151624844 build:1.1.0:5174058f vsn:2 role:consul] left 1 5 2 2 5 4}: No servers found
-    2018/10/18 04:09:45 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
-    2018/10/18 04:09:47 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
-    2018/10/18 04:09:49 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
+16 ms: consume 'XAOJJKQKRV'
+22 ms: await 'XAOJJKQKRV'
+22 ms: await 'XAOJJKQKRV,PAUCHOEHSR'
+22 ms: consume 'XAOJJKQKRV,PAUCHOEHSR'
+3 ms: await ''
+10 ms: consume ''
+16 ms: await 'FOXSNIHRVA'
+17 ms: consume 'FOXSNIHRVA'
+7 ms: await 'YBBXAXXNFF'
+16 ms: consume 'YBBXAXXNFF'
+22 ms: await 'EOLRGXMCVJ'
+23 ms: consume 'EOLRGXMCVJ'
+25 ms: consume 'TMHLLHYUIR'
+26 ms: await 'TMHLLHYUIR'
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 310.535 sec - in io.vertx.ext.consul.ConsulClientTest
+    2018/10/18 04:16:00 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
+    2018/10/18 04:16:02 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
+    2018/10/18 04:16:03 [ERR] agent: Coordinate update error: No cluster leader
+    2018/10/18 04:16:04 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
+    2018/10/18 04:16:06 [ERR] autopilot: Error updating cluster health: error getting server raft protocol versions: No servers found
 
 Results :
 
-Failed tests: 
-  Sessions.lambda$null$4:79 Not equals : 0 != 15
-
-Tests run: 112, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 112, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 05:38 min
-[INFO] Finished at: 2018-10-18T06:09:50+02:00
-[INFO] Final Memory: 45M/1032M
+[INFO] Finished at: 2018-10-18T06:16:09+02:00
+[INFO] Final Memory: 38M/923M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project vertx-consul-client: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/vert-x3/vertx-consul-client/438227467/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
