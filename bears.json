@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Cognifide/AEM-Rules-for-SonarQube",
+    "githubId": 37844030,
+    "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 98
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443576191,
+      "url": "http://travis-ci.org/Cognifide/AEM-Rules-for-SonarQube/builds/443576191",
+      "date": "Oct 19, 2018 10:15:01 AM"
+    },
+    "fixerBuild": {
+      "id": 443659587,
+      "url": "http://travis-ci.org/Cognifide/AEM-Rules-for-SonarQube/builds/443659587",
+      "date": "Oct 19, 2018 1:59:07 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 19, 2018 1:59:27 PM",
+    "reproductionDateEnd": "Oct 19, 2018 2:02:36 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 272448160,
+      "totalMemory": 396886016
+    },
+    "totalDuration": 183,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 123,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          4,
+          117
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Cognifide/AEM-Rules-for-SonarQube/443576191/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 34
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Cognifide/AEM-Rules-for-SonarQube/443576191",
+    "overallMetrics": {
+      "numberRunning": 55,
+      "numberPassing": 54,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cognifide.aemrules.checks.SlingQueryImplicitStrategyCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cognifide.aemrules.checks.SlingQueryImplicitStrategyCheckTest",
+        "testMethod": "checkImplicitSearches",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected {99\u003d[{}]}, Unexpected at [68, 71, 82, 89, 101]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 43,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "master",
+      "sha": "be47c99b08784f621749f2f2b2c8a5ef76fa62c0",
+      "url": "http://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/be47c99b08784f621749f2f2b2c8a5ef76fa62c0",
+      "date": "Oct 19, 2018 10:11:07 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "master",
+      "sha": "a8db38a9d31141b6f8c467cfcf088eb3369f6bce",
+      "url": "http://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/a8db38a9d31141b6f8c467cfcf088eb3369f6bce",
+      "date": "Oct 19, 2018 1:55:05 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "issue-51",
+      "sha": "5fb6d95c7c36c1b4011b1037084de1d95ea42620",
+      "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/5fb6d95c7c36c1b4011b1037084de1d95ea42620",
+      "date": "Oct 19, 2018 1:55:05 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "master",
+      "sha": "2b78ce4f5bac9cafcc3b5085284d10d66f82f0e9",
+      "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/2b78ce4f5bac9cafcc3b5085284d10d66f82f0e9",
+      "date": "Oct 18, 2018 3:23:17 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "issue-51",
+      "sha": "5fb6d95c7c36c1b4011b1037084de1d95ea42620",
+      "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/5fb6d95c7c36c1b4011b1037084de1d95ea42620",
+      "date": "Oct 19, 2018 1:55:05 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "master",
+      "sha": "2b78ce4f5bac9cafcc3b5085284d10d66f82f0e9",
+      "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/2b78ce4f5bac9cafcc3b5085284d10d66f82f0e9",
+      "date": "Oct 18, 2018 3:23:17 PM"
+    }
+  },
+  "type": "passing_passing"
+}
