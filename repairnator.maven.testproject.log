@@ -57,7 +57,8 @@
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-core ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 114 source files to /root/workspace/Cognifide/bobcat/443732807/bb-core/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-core ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -68,29 +69,23 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-core ---
 [INFO] Surefire report directory: /root/workspace/Cognifide/bobcat/443732807/bb-core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 52.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 507.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.cognifide.qa.bb.cookies.CookiesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.285 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.282 sec
 Running com.cognifide.qa.bb.cookies.DefaultCookiesProviderTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
 Running com.cognifide.qa.bb.wait.BobcatWaitTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.776 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec
 Running com.cognifide.qa.bb.utils.XpathUtilsTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running com.cognifide.qa.bb.frame.FrameAspectTest
 [MockitoHint] FrameAspectTest.shouldInvokeMethodWithoutChangingFrameWhenMethodComesFromObject (see javadoc for MockitoHint):
 [MockitoHint] 1. Unused -> at com.cognifide.qa.bb.frame.FrameAspectTest.setUp(FrameAspectTest.java:71)
 
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec
 Running com.cognifide.qa.bb.frame.FrameSwitcherTest
 [MockitoHint] FrameSwitcherTest.shouldPutFrameOnStackById (see javadoc for MockitoHint):
 [MockitoHint] 1. Unused -> at com.cognifide.qa.bb.frame.FrameSwitcherTest.setUp(FrameSwitcherTest.java:69)
@@ -104,107 +99,267 @@ Running com.cognifide.qa.bb.frame.FrameSwitcherTest
 [MockitoHint] FrameSwitcherTest.shouldNotSwitchBackWhenThereAreNotEnoughFramesOnDeque (see javadoc for MockitoHint):
 [MockitoHint] 1. Unused -> at com.cognifide.qa.bb.frame.FrameSwitcherTest.setUp(FrameSwitcherTest.java:69)
 
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.057 sec <<< FAILURE!
-shouldSwitchBetweenFramesAndProvidedFramePathShouldBeOnHead(com.cognifide.qa.bb.frame.FrameSwitcherTest)  Time elapsed: 0.025 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.cognifide.qa.bb.scope.frame.type.NamedFrame.switchTo(NamedFrame.java:54)
-	at com.cognifide.qa.bb.frame.FrameSwitcher.lambda$doSwitch$0(FrameSwitcher.java:191)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-	at com.cognifide.qa.bb.frame.FrameSwitcher.doSwitch(FrameSwitcher.java:191)
-	at com.cognifide.qa.bb.frame.FrameSwitcher.switchTo(FrameSwitcher.java:87)
-	at com.cognifide.qa.bb.frame.FrameSwitcher.switchTo(FrameSwitcher.java:123)
-	at com.cognifide.qa.bb.frame.FrameSwitcherTest.shouldSwitchBetweenFramesAndProvidedFramePathShouldBeOnHead(FrameSwitcherTest.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.mockito.internal.junit.JUnitRule$1.evaluateSafely(JUnitRule.java:52)
-	at org.mockito.internal.junit.JUnitRule$1.evaluate(JUnitRule.java:43)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
 Running com.cognifide.qa.bb.provider.selenium.DesiredCapabilitiesProviderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec
 Running com.cognifide.qa.bb.provider.selenium.webdriver.close.ClosingAwareWebDriverWrapperTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.79 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.441 sec
 Running com.cognifide.qa.bb.provider.selenium.webdriver.modifiers.WebDriverModifiersTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
 Running com.cognifide.qa.bb.config.ConfigStrategyProviderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running com.cognifide.qa.bb.config.YamlConfigTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
 Running com.cognifide.qa.bb.config.ConfigStrategyTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
 Running com.cognifide.qa.bb.scope.frame.FramePathTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 Running com.cognifide.qa.bb.scope.CurrentScopeHelperTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
 Running com.cognifide.qa.bb.scope.current.CurrentWebElementProviderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
 Running com.cognifide.qa.bb.scope.current.CurrentScopeListProviderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
 
 Results :
 
-Tests in error: 
-  shouldSwitchBetweenFramesAndProvidedFramePathShouldBeOnHead(com.cognifide.qa.bb.frame.FrameSwitcherTest)
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 73, Failures: 0, Errors: 1, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bobcat JUnit 5 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-junit5 ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-junit5 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-junit5 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-junit5 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-junit5/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-junit5 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-junit5 ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bobcat Integration Tests 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-integration-tests ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default-prepare-agent) @ bb-integration-tests ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-integration-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-integration-tests/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-integration-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-integration-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-integration-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-integration-tests ---
+[INFO] Surefire report directory: /root/workspace/Cognifide/bobcat/443732807/bb-integration-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bobcat Cumber 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-cumber ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-cumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-cumber/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-cumber ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-cumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-cumber/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-cumber ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-cumber ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bobcat Email 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-email ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-email/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-email ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-email ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-email ---
+[INFO] Surefire report directory: /root/workspace/Cognifide/bobcat/443732807/bb-email/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cognifide.qa.bb.email.CommonEmailDataPredicatesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 sec
+Running com.cognifide.qa.bb.email.SubjectSearchTermTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.39 sec
+Running com.cognifide.qa.bb.email.EmailTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.779 sec
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bobcat Traffic 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-traffic ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-traffic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-traffic/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-traffic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-traffic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-traffic/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-traffic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-traffic ---
+[INFO] Surefire report directory: /root/workspace/Cognifide/bobcat/443732807/bb-traffic/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cognifide.qa.bb.proxy.analyzer.predicate.RequestPredicateImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.581 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bb-aem-core 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-aem-core ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-aem-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-aem-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-aem-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-aem-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-aem-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-aem-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-aem-core ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bb-aem-64 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default) @ bb-aem-64 ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bb-aem-64 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Cognifide/bobcat/443732807/bb-aem-64/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ bb-aem-64 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bb-aem-64 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ bb-aem-64 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bb-aem-64 ---
+[INFO] Surefire report directory: /root/workspace/Cognifide/bobcat/443732807/bb-aem-64/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cognifide.qa.bb.aem.core.pages.sling.SlingTestDataXMLBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
 [INFO] Bobcat ............................................. SUCCESS [  0.005 s]
-[INFO] Bobcat Annotations ................................. SUCCESS [  1.982 s]
-[INFO] Bobcat Core ........................................ FAILURE [  7.928 s]
-[INFO] Bobcat JUnit 5 ..................................... SKIPPED
-[INFO] Bobcat Integration Tests ........................... SKIPPED
-[INFO] Bobcat Cumber ...................................... SKIPPED
-[INFO] Bobcat Email ....................................... SKIPPED
-[INFO] Bobcat Traffic ..................................... SKIPPED
-[INFO] bb-aem-core ........................................ SKIPPED
-[INFO] bb-aem-64 .......................................... SKIPPED
+[INFO] Bobcat Annotations ................................. SUCCESS [  2.320 s]
+[INFO] Bobcat Core ........................................ SUCCESS [ 10.025 s]
+[INFO] Bobcat JUnit 5 ..................................... SUCCESS [  0.273 s]
+[INFO] Bobcat Integration Tests ........................... SUCCESS [  0.897 s]
+[INFO] Bobcat Cumber ...................................... SUCCESS [  0.088 s]
+[INFO] Bobcat Email ....................................... SUCCESS [ 21.074 s]
+[INFO] Bobcat Traffic ..................................... SUCCESS [  2.356 s]
+[INFO] bb-aem-core ........................................ SUCCESS [  0.093 s]
+[INFO] bb-aem-64 .......................................... SUCCESS [  1.295 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.387 s
-[INFO] Finished at: 2018-10-19T17:00:02+02:00
-[INFO] Final Memory: 27M/607M
+[INFO] Total time: 38.974 s
+[INFO] Finished at: 2018-10-19T17:01:39+02:00
+[INFO] Final Memory: 20M/355M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project bb-core: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/Cognifide/bobcat/443732807/bb-core/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :bb-core
