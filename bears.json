@@ -1,0 +1,178 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "Cognifide/bobcat",
+    "githubId": 62303580,
+    "url": "https://github.com/Cognifide/bobcat",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 295
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443732807,
+      "url": "http://travis-ci.org/Cognifide/bobcat/builds/443732807",
+      "date": "Oct 19, 2018 4:41:26 PM"
+    },
+    "fixerBuild": {
+      "id": 443740425,
+      "url": "http://travis-ci.org/Cognifide/bobcat/builds/443740425",
+      "date": "Oct 19, 2018 4:57:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 19, 2018 4:58:05 PM",
+    "reproductionDateEnd": "Oct 19, 2018 5:01:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 250271112,
+      "totalMemory": 486014976
+    },
+    "totalDuration": 211,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 93,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          5,
+          85
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Cognifide/bobcat/443732807/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 20,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 142,
+      "numberDeleted": 76
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Cognifide/bobcat/443732807/bb-core",
+    "overallMetrics": {
+      "numberRunning": 73,
+      "numberPassing": 72,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cognifide.qa.bb.frame.FrameSwitcherTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cognifide.qa.bb.frame.FrameSwitcherTest",
+        "testMethod": "shouldSwitchBetweenFramesAndProvidedFramePathShouldBeOnHead",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 262,
+    "numberTestFiles": 38,
+    "numberLibrariesFailingModule": 113,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "2.0.0-develop",
+      "sha": "b1c69ccab0c1f0de816d67b5322ad7ac196b9580",
+      "url": "http://github.com/Cognifide/bobcat/commit/b1c69ccab0c1f0de816d67b5322ad7ac196b9580",
+      "date": "Oct 12, 2018 12:34:01 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "2.0.0-develop",
+      "sha": "e2f57890f7fff794b407d1afb32bda2284e7caa2",
+      "url": "http://github.com/Cognifide/bobcat/commit/e2f57890f7fff794b407d1afb32bda2284e7caa2",
+      "date": "Oct 19, 2018 4:53:03 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "293-remove-deprecated-api",
+      "sha": "b910c1cdf39ec7588bab7ced789d83ca0afdea12",
+      "url": "https://github.com/Cognifide/bobcat/commit/b910c1cdf39ec7588bab7ced789d83ca0afdea12",
+      "date": "Oct 19, 2018 4:53:03 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "2.0.0-develop",
+      "sha": "5269457d9213626ecb86d1c129e5b1f1e95d35c2",
+      "url": "https://github.com/Cognifide/bobcat/commit/5269457d9213626ecb86d1c129e5b1f1e95d35c2",
+      "date": "Oct 10, 2018 9:09:26 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "293-remove-deprecated-api",
+      "sha": "b910c1cdf39ec7588bab7ced789d83ca0afdea12",
+      "url": "https://github.com/Cognifide/bobcat/commit/b910c1cdf39ec7588bab7ced789d83ca0afdea12",
+      "date": "Oct 19, 2018 4:53:03 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "Cognifide/bobcat",
+      "branchName": "2.0.0-develop",
+      "sha": "5269457d9213626ecb86d1c129e5b1f1e95d35c2",
+      "url": "https://github.com/Cognifide/bobcat/commit/5269457d9213626ecb86d1c129e5b1f1e95d35c2",
+      "date": "Oct 10, 2018 9:09:26 AM"
+    }
+  }
+}
