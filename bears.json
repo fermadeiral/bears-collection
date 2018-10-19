@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443225947,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/443225947",
+      "date": "Oct 18, 2018 5:08:27 PM"
+    },
+    "fixerBuild": {
+      "id": 443504181,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/443504181",
+      "date": "Oct 19, 2018 5:35:36 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 19, 2018 5:35:51 AM",
+    "reproductionDateEnd": "Oct 19, 2018 5:57:39 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 253416352,
+      "totalMemory": 661127168
+    },
+    "totalDuration": 1301,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 404,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          30,
+          20,
+          0,
+          354
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 93,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          93
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/443225947/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/443225947/dubbo-remoting/dubbo-remoting-api",
+    "overallMetrics": {
+      "numberRunning": 894,
+      "numberPassing": 893,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.io.IOException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.remoting.codec.ExchangeCodecTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.remoting.codec.ExchangeCodecTest",
+        "testMethod": "testInvalidSerializaitonId",
+        "failureName": "java.io.IOException",
+        "detail": "Unexpected serialization id:15 received from network, please check if the peer send the right id.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 65,
+    "numberSourceFiles": 761,
+    "numberTestFiles": 631,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "d8282fe1b8075a453c7b44b4ae7982a4285df7b7",
+      "url": "http://github.com/apache/incubator-dubbo/commit/d8282fe1b8075a453c7b44b4ae7982a4285df7b7",
+      "date": "Oct 17, 2018 4:14:45 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "b7238372a2f65d03517693a0a99ce63e2c03cc42",
+      "url": "http://github.com/apache/incubator-dubbo/commit/b7238372a2f65d03517693a0a99ce63e2c03cc42",
+      "date": "Oct 19, 2018 5:19:57 AM"
+    }
+  },
+  "type": "passing_passing"
+}
