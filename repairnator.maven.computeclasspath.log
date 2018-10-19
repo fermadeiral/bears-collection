@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.pom (10 KB at 12.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom (15 KB at 321.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.jar (81 KB at 512.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom (14 KB at 309.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 KB at 409.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (5 KB at 100.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar (57 KB at 1077.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom (11 KB at 277.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom (5 KB at 136.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar (52 KB at 1035.3 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AEM Rules for SonarQube 0.11-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.0:build-classpath (default-cli) @ aemrules ---
+[INFO] Wrote classpath file '/root/workspace/Cognifide/AEM-Rules-for-SonarQube/443576191/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.782 s
+[INFO] Finished at: 2018-10-19T14:02:01+02:00
+[INFO] Final Memory: 24M/465M
+[INFO] ------------------------------------------------------------------------
