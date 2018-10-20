@@ -1,0 +1,194 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 2684
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443341148,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/443341148",
+      "date": "Oct 18, 2018 9:38:26 PM"
+    },
+    "fixerBuild": {
+      "id": 444170512,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/444170512",
+      "date": "Oct 20, 2018 10:01:16 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 20, 2018 10:01:34 PM",
+    "reproductionDateEnd": "Oct 20, 2018 10:35:58 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 406082208,
+      "totalMemory": 476053504
+    },
+    "totalDuration": 2056,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 99,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          4,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1034,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1034
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/443341148/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 8,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 37,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/443341148",
+    "overallMetrics": {
+      "numberRunning": 1587,
+      "numberPassing": 1585,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.condition.ConditionalTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.template.TemplateReplaceReturnTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.template.TemplateReplaceReturnTest",
+        "testMethod": "testReturnReplaceTemplate",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c... { return \"Panna\"; }[ ]else { return \"Orel\"...\u003e but was:\u003c... { return \"Panna\"; }[]else { return \"Orel\"...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.condition.ConditionalTest",
+        "testMethod": "testBlockInConditionAndLoop",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...tem.out.println();\n}[ else\n    if (true) {\n        java.lang.System.out.println();\n    } ]else {\n        java....\u003e but was:\u003c...tem.out.println();\n}[else\n    if (true) {\n        java.lang.System.out.println();\n    }]else {\n        java....\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 649,
+    "numberTestFiles": 709,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "e5b7c6302546db6e63001bcfaebc5585f8b51978",
+      "url": "http://github.com/INRIA/spoon/commit/e5b7c6302546db6e63001bcfaebc5585f8b51978",
+      "date": "Oct 18, 2018 8:59:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "638e030a9220d664f186723a5c313100a54584cc",
+      "url": "http://github.com/INRIA/spoon/commit/638e030a9220d664f186723a5c313100a54584cc",
+      "date": "Oct 18, 2018 8:59:39 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "zielint0/spoon",
+      "branchName": "refactor-simplify-logic-in-scanCtElement",
+      "sha": "555acd41a515b7d0b82312d51e3b8f4b7c8b7f18",
+      "url": "https://github.com/zielint0/spoon/commit/555acd41a515b7d0b82312d51e3b8f4b7c8b7f18",
+      "date": "Oct 18, 2018 8:59:39 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "93cedbc4a1e5d3fc478458ae848ca8c9c1a1bafd",
+      "url": "https://github.com/INRIA/spoon/commit/93cedbc4a1e5d3fc478458ae848ca8c9c1a1bafd",
+      "date": "Oct 17, 2018 8:31:03 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "zielint0/spoon",
+      "branchName": "refactor-simplify-logic-in-scanCtElement",
+      "sha": "555acd41a515b7d0b82312d51e3b8f4b7c8b7f18",
+      "url": "https://github.com/zielint0/spoon/commit/555acd41a515b7d0b82312d51e3b8f4b7c8b7f18",
+      "date": "Oct 18, 2018 8:59:39 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "93cedbc4a1e5d3fc478458ae848ca8c9c1a1bafd",
+      "url": "https://github.com/INRIA/spoon/commit/93cedbc4a1e5d3fc478458ae848ca8c9c1a1bafd",
+      "date": "Oct 17, 2018 8:31:03 PM"
+    }
+  }
+}
