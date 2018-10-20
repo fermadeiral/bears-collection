@@ -1,5 +1,6 @@
 package view;
 
+import controller.FortificationController;
 import model.map.Country;
 import model.player.Player;
 
@@ -7,6 +8,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
 
 /**
  * This class shows a pop-up window to initiate the attack
@@ -14,8 +17,11 @@ import java.awt.event.ActionListener;
  * @author Mahedi Hassan
  */
 public class AttackView {
+    private FortificationController fortificationController;
     private Country country;
     private JComboBox adjacentCountriesCombo;
+    private JComboBox fortCountryCombo;
+    private JComboBox fortArmyCombo;
     private JComboBox reinforcementCombo;
     private AttackListener attackListener;
 
@@ -29,6 +35,7 @@ public class AttackView {
         void onAttack(Country attacker, Country attacked);
 
         void onReinforcement(Country country, Player player, int newArmies);
+        void onFortification(Country countryGainsArmy, Country countryLosesArmy, Player player, int newArmies);
 
         void onAttackCancel();
     }
@@ -40,6 +47,7 @@ public class AttackView {
      */
     public AttackView(Country country) {
         this.country = country;
+        fortificationController = new FortificationController();
     }
 
 
@@ -54,6 +62,9 @@ public class AttackView {
         JPanel panel = new JPanel();
         panel.setLayout(new GridBagLayout());
         GridBagConstraints gridBag = new GridBagConstraints();
+
+        fortificationView(attackListener, player, panel, gridBag);
+
         gridBag.gridx = 0;
         gridBag.gridx = 0;
         gridBag.insets = new Insets(2, 2, 2, 2);
@@ -68,7 +79,7 @@ public class AttackView {
         gridBag.gridx++;
         gridBag.fill = GridBagConstraints.HORIZONTAL;
         panel.add(reinforcementCombo, gridBag);
-        gridBag.gridx++;
+
         final JButton btn = new JButton("Add");
         btn.setAlignmentX(Component.CENTER_ALIGNMENT);
         btn.addActionListener(new ActionListener() {
@@ -84,6 +95,9 @@ public class AttackView {
                 }
             }
         });
+        gridBag.gridx++;
+        gridBag.gridx++;
+        gridBag.fill = GridBagConstraints.HORIZONTAL;
         panel.add(btn, gridBag);
         JLabel countryLabel = new JLabel("Country : " + country.getName());
         gridBag.gridx = 0;
@@ -113,14 +127,98 @@ public class AttackView {
 
 
     /**
+     *
      * this method is written to get array of armies
      *
-     * @param armies the number of armies
-     * @return the array of string of armies
+     * @param attackListener
+     * @param player
+     * @param panel
+     * @param gridBag
      */
+    private void fortificationView(AttackListener attackListener, Player player, JPanel panel, GridBagConstraints gridBag) {
+        gridBag.gridx = 0;
+        gridBag.gridx = 0;
+        gridBag.insets = new Insets(2, 2, 2, 2);
+        JLabel reinforcement = new JLabel("Fortification : ");
+        gridBag.gridx = 0;
+        gridBag.gridx++;
+        panel.add(reinforcement, gridBag);
+
+        final ArrayList<Country> countryArray = fortificationController.getFortificationCountries(country);
+        String[] countryNameArray = null;
+        int i = 0;
+        if (countryArray.size() > 0){
+            countryNameArray = new String [countryArray.size()];
+            for (Country country :countryArray){
+                countryNameArray[i] = country.getName();
+                i++;
+            }
+        }
+
+        fortCountryCombo = new JComboBox(countryNameArray == null ? new String [] {} : countryNameArray);
+        fortCountryCombo.setMaximumSize(fortCountryCombo.getPreferredSize());
+        fortCountryCombo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        gridBag.gridx++;
+        gridBag.fill = GridBagConstraints.HORIZONTAL;
+        panel.add(fortCountryCombo, gridBag);
+        gridBag.gridx++;
+        fortCountryCombo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (countryArray.size() > 0) {
+                    DefaultComboBoxModel model = new DefaultComboBoxModel(getArrayOfArmies(countryArray.get(fortCountryCombo.getSelectedIndex()).getArmyCount()));
+                    fortArmyCombo.setModel(model);
+                }
+            }
+        });
+
+        String [] fortificationArmy = loadFortificationArmy(gridBag, panel, (countryArray.size() > 0 ? countryArray.get(0) : null));
+
+        final JButton btn = new JButton("Move");
+        btn.setAlignmentX(Component.CENTER_ALIGNMENT);
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (fortArmyCombo != null && fortCountryCombo != null){
+                    int army = 0;
+                    if (fortificationArmy != null && fortificationArmy.length > 0){
+                        army = Integer.parseInt((String) fortArmyCombo.getSelectedItem());
+                        Country countryLosesArmy = countryArray.get(fortCountryCombo.getSelectedIndex());
+                        if (countryLosesArmy.getArmyCount() > army){
+                            attackListener.onFortification(country, countryLosesArmy, player, army);
+                        }
+                        else {
+                            MessagePanel.showMessage("A country must have at-least one army", MessagePanel.Type.Error);
+                        }
+                    }
+                    Window w = SwingUtilities.getWindowAncestor(btn);
+                    if (w != null) {
+                        w.setVisible(false);
+                    }
+                }
+            }
+        });
+        panel.add(btn, gridBag);
+    }
+
+    private String[] loadFortificationArmy(GridBagConstraints gridBag, JPanel panel, Country country){
+        String[] armyArray = null;
+        if (country != null){
+            armyArray = this.getArrayOfArmies(country.getArmyCount());
+        }
+        fortArmyCombo = new JComboBox(armyArray == null ? new String[]{} : armyArray);
+        fortArmyCombo.setMaximumSize(fortArmyCombo.getPreferredSize());
+        fortArmyCombo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        gridBag.gridx++;
+        gridBag.fill = GridBagConstraints.HORIZONTAL;
+        panel.add(fortArmyCombo, gridBag);
+        gridBag.gridx++;
+        return armyArray;
+    }
+
     private String[] getArrayOfArmies(int armies) {
-        String[] tmpArmies = new String[armies - 1];
-        for (int i = 1; i < armies; i++) {
+        String[] tmpArmies = new String[armies];
+        for (int i = 1; i < armies + 1; i++){
             tmpArmies[i - 1] = String.valueOf(i);
         }
         return tmpArmies;

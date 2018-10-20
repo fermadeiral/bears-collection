@@ -706,7 +706,7 @@ public class GeographicalMapController {
                 player.setTotalReservedArmies(20);
             }
         }
-        distributeCountriesAndArmies(players);
+//        distributeCountriesAndArmies(players);
 
     }
 
@@ -775,5 +775,15 @@ public class GeographicalMapController {
         country.getOwner().decreaseReservedArmy(armyNumber);
         country.addAttribute("ui.label", player.getName() + "(" + country.getArmyCount() + ")");
         geographicalMap.addUpdateCountry(country);
+    }
+
+    public void fortifyArmy(Country countryGainsArmy, Country countryLosesArmy, Player player, int newArmies){
+        countryGainsArmy.increaseArmy(newArmies);
+        countryLosesArmy.decreaseArmy(newArmies);
+
+        countryGainsArmy.addAttribute("ui.label", player.getName() + "(" + countryGainsArmy.getArmyCount() + ")");
+        geographicalMap.addUpdateCountry(countryGainsArmy);
+        countryLosesArmy.addAttribute("ui.label", player.getName() + "(" + countryLosesArmy.getArmyCount() + ")");
+        geographicalMap.addUpdateCountry(countryLosesArmy);
     }
 }

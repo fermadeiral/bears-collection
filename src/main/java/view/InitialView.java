@@ -237,7 +237,7 @@ public class InitialView implements CurrentPlayerView.CurrentPlayerListener {
 
         public void onButtonSelect(ArrayList<Player> players) {
 //            mapController.assignCountries(players);
-            mapController.assignArmies(players);
+//            mapController.assignArmies(players);
             setUpMapView();
         }
     };

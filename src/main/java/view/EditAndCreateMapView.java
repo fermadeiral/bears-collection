@@ -29,7 +29,6 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
     public static String selectedFilePath;
     private JFrame window;
     private JPanel panel;
-    private GeographicalMapController geographicalMapController;
     private GeographicalMap geographicalMap;
     private GeographicalMapController mapController;
     private PlayerController playerController;
@@ -44,7 +43,6 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
      * @param selectedFilePath the string value of the selected file path
      */
     public EditAndCreateMapView(String selectedFilePath) {
-        geographicalMapController = new GeographicalMapController();
         playerController = new PlayerController();
         mapController = new GeographicalMapController();
         jFileChooserMap = new JFileChooser(mapController.getMapFileDirectory());
@@ -122,7 +120,7 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
         }
 
         public void onButtonSelect(ArrayList<Player> players) {
-            geographicalMapController.assignArmies(players);
+            mapController.assignArmies(players);
             mapController.distributeCountriesAndArmies(players);
             calculateReinforcementArmies(players);
             setUpMapView();
@@ -228,7 +226,13 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
 
         public void onReinforcement(Country country, Player player, int newArmies) {
             System.out.println(newArmies);
+            mapController.setGeographicalMap(geographicalMap);
             mapController.deployNewArmy(country, player, newArmies);
+        }
+
+        @Override
+        public void onFortification(Country countryGainsArmy, Country countryLosesArmy, Player player, int newArmies) {
+            mapController.fortifyArmy(countryGainsArmy, countryLosesArmy, player, newArmies);
         }
     };
 
@@ -279,7 +283,7 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
      */
     private ActionListener actionListenerEditMap = new ActionListener() {
         public void actionPerformed(ActionEvent ae) {
-            geographicalMap = geographicalMapController.parseMapFile(selectedFilePath);
+            geographicalMap = mapController.parseMapFile(selectedFilePath);
             EditMapView editMapView = new EditMapView(selectedFilePath, geographicalMap);
             window.hide();
             editMapView.showEditMapFrame();
@@ -306,9 +310,9 @@ public class EditAndCreateMapView implements CurrentPlayerView.CurrentPlayerList
                     return;
                 }
 
-                geographicalMap = geographicalMapController.parseMapFile(selectedFilePath);
+                geographicalMap = mapController.parseMapFile(selectedFilePath);
                 if (geographicalMap.getConnected()) {
-                    geographicalMapController.setGeographicalMap(geographicalMap);
+                    mapController.setGeographicalMap(geographicalMap);
                     showSelectUsersPanel();
                 } else {
                     MessagePanel.showMessage("Graph is not Connected", MessagePanel.Type.Error);

@@ -101,7 +101,10 @@ public class Country extends AdjacencyListNode{
         this.continentOrder = continentOrder;
     }
 
-    public void incrementArmy(int incrementValue){
-        this.armyCount = armyCount + incrementValue;
+    public void increaseArmy(int incrementValue){
+        this.armyCount += incrementValue;
+    }
+    public void decreaseArmy(int incrementValue){
+        this.armyCount -= incrementValue;
     }
 }

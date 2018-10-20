@@ -13,7 +13,7 @@ public class MessagePanel {
      * this class of enum is made for Type of messages
      */
     public enum Type {
-        Error, Info;
+        Error, Info
     }
 
     public static final String Message_Error = "Error";//this is a static final String for Error Message

@@ -30,7 +30,7 @@ public class RollTheDice {
         Collections.shuffle(countries);
         Country tmpCountry = countries.get(0);
         tmpCountry.setOwner(player, null);
-        tmpCountry.incrementArmy(1);
+        tmpCountry.increaseArmy(1);
         player.decreaseOneArmy();
 
         return countries.get(0);
