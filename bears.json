@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jgrapht/jgrapht",
+    "githubId": 3969325,
+    "url": "https://github.com/jgrapht/jgrapht",
+    "isFork": true,
+    "original": {
+      "name": "lingeringsocket/jgrapht",
+      "githubId": 3945718,
+      "url": "https://github.com/lingeringsocket/jgrapht"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443997242,
+      "url": "http://travis-ci.org/jgrapht/jgrapht/builds/443997242",
+      "date": "Oct 20, 2018 8:31:18 AM"
+    },
+    "fixerBuild": {
+      "id": 444189432,
+      "url": "http://travis-ci.org/jgrapht/jgrapht/builds/444189432",
+      "date": "Oct 20, 2018 11:07:22 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 20, 2018 11:07:33 PM",
+    "reproductionDateEnd": "Oct 20, 2018 11:15:53 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 548639008,
+      "totalMemory": 761790464
+    },
+    "totalDuration": 494,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          47
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 84,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          84
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 126,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          126
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jgrapht/jgrapht/443997242/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jgrapht/jgrapht/443997242/jgrapht-core",
+    "overallMetrics": {
+      "numberRunning": 2973,
+      "numberPassing": 2972,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jgrapht.generate.WattsStrogatzGraphGeneratorTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jgrapht.generate.WattsStrogatzGraphGeneratorTest",
+        "testMethod": "testNonIntegerVertices",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 415,
+    "numberTestFiles": 266,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jgrapht/jgrapht",
+      "branchName": "master",
+      "sha": "8f3cb1acf8221df2fd16a807dae6be1daa33298a",
+      "url": "http://github.com/jgrapht/jgrapht/commit/8f3cb1acf8221df2fd16a807dae6be1daa33298a",
+      "date": "Oct 20, 2018 8:22:09 AM"
+    },
+    "fixerBuild": {
+      "repoName": "jgrapht/jgrapht",
+      "branchName": "master",
+      "sha": "c5c2971e96eb59a2e8a846b4ce570c872a4c5595",
+      "url": "http://github.com/jgrapht/jgrapht/commit/c5c2971e96eb59a2e8a846b4ce570c872a4c5595",
+      "date": "Oct 20, 2018 10:58:14 PM"
+    }
+  },
+  "type": "passing_passing"
+}
