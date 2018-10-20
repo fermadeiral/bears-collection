@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "s-webber/projog",
+    "githubId": 15373660,
+    "url": "https://github.com/s-webber/projog",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443920024,
+      "url": "http://travis-ci.org/s-webber/projog/builds/443920024",
+      "date": "Oct 20, 2018 12:37:30 AM"
+    },
+    "fixerBuild": {
+      "id": 444007235,
+      "url": "http://travis-ci.org/s-webber/projog/builds/444007235",
+      "date": "Oct 20, 2018 9:37:55 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 20, 2018 9:38:12 AM",
+    "reproductionDateEnd": "Oct 20, 2018 9:40:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 356674280,
+      "totalMemory": 388497408
+    },
+    "totalDuration": 149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 26,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          26
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/s-webber/projog/443920024/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 9
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "s-webber/projog",
+      "branchName": "master",
+      "sha": "5a3d871d5d886b0ffad31eeb5a117238d203516f",
+      "url": "http://github.com/s-webber/projog/commit/5a3d871d5d886b0ffad31eeb5a117238d203516f",
+      "date": "Oct 20, 2018 12:35:18 AM"
+    },
+    "fixerBuild": {
+      "repoName": "s-webber/projog",
+      "branchName": "master",
+      "sha": "9719aab83bfbdda84dc86e5842a67e9e069bbc5f",
+      "url": "http://github.com/s-webber/projog/commit/9719aab83bfbdda84dc86e5842a67e9e069bbc5f",
+      "date": "Oct 20, 2018 9:35:18 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/s-webber/projog/443920024",
+    "overallMetrics": {
+      "numberRunning": 471,
+      "numberPassing": 470,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.projog.core.PredicateKeyTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.projog.core.PredicateKeyTest",
+        "testMethod": "testCannotCreateFromNameAndArity",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Managed to create: test for: test",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 260,
+    "numberTestFiles": 61,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
