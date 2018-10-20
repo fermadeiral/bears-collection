@@ -1,0 +1,5 @@
+total_country 12
+total_continent 2
+user 1 Gras,Gorshen,Queensryche 9
+user 2 Cannon,Cyan,Queew 7
+user 3 Marrian,Cannon 8

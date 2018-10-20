@@ -1,0 +1,17 @@
+[Map]
+image=null
+wrap=no
+scroll=null
+author=minaaa2
+warn=no
+
+[Continents]
+europe=222
+africa=2222
+europe2=222
+
+[Territories]
+spain,0,0,europe,italy,south africa
+moraco,0,0,africa,south africa
+south africa,0,0,africa,spain,italy,moraco
+italy,0,0,europe2,spain,south africa

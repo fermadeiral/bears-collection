@@ -1,0 +1,15 @@
+[Map]
+image=null
+wrap=no
+scroll=null
+author=mina
+warn=no
+
+[Continents]
+africa=6
+asia=4
+
+[Territories]
+south africa,0,0,africa
+iran,100,201,asia,iraq
+iraq,0,0,asia,iran

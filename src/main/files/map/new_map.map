@@ -1,0 +1,15 @@
+[Map]
+image=null
+wrap=no
+scroll=null
+author=2323
+warn=no
+
+[Continents]
+ssss=1
+c2=22
+
+[Territories]
+1,0,0,ssss,3,2
+2,0,0,ssss,1
+3,0,0,c2,1

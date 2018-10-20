@@ -1,0 +1,16 @@
+[Map]
+image=null
+wrap=no
+scroll=null
+author=minaaa2
+warn=no
+
+[Continents]
+c1=3
+c4=5
+c3=3
+
+[Territories]
+1,0,0,c1,2,8
+2,0,0,c1,1
+8,0,0,c4,1

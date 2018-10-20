@@ -1,0 +1,15 @@
+[Map]
+image=null
+wrap=no
+scroll=null
+author=sss
+warn=no
+
+[Continents]
+con1=4
+con2=5
+
+[Territories]
+c1,0,0,con1,c2
+c2,0,0,con1,c1,c3
+c3,0,0,con2,c2

@@ -1,0 +1,15 @@
+[Map]
+image=Aden.bmp
+wrap=no
+scroll=none
+author=Dustwhirl
+warn=yes
+
+[Continents]
+Asia=2
+Europ=4
+
+[Territories]
+Iran,508,106,Asia,Pakestan,italy
+Pakestan,508,106,Asia,Iran
+italy,0,0,Europ,Iran
