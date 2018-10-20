@@ -1,0 +1,17 @@
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/FieldClassNotFoundTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/file/FileConfigTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/mock/MockMethods.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/AnnotationUtilTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/file/FileFilterTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/field/FieldFilterTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/FilterFactoryTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/strategy/StrategyFilterTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/mock/MockClasses.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/FieldAccessExceptionTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/FileUtilTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/FileIOExceptionTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/advice/FilterProviderTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/field/FieldProcessorTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/com/json/ignore/filter/BaseFilterTest.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/mock/MockUser.java
+/root/workspace/rkonovalov/jsonignore/443988015/src/test/java/mock/MockHttpRequest.java

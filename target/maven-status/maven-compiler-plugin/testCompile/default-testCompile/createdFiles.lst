@@ -1,0 +1,17 @@
+com/json/ignore/filter/file/FileFilterTest.class
+mock/MockClasses.class
+com/json/ignore/filter/AnnotationUtilTest.class
+com/json/ignore/filter/field/FieldProcessorTest.class
+com/json/ignore/filter/field/FieldFilterTest.class
+com/json/ignore/FileIOExceptionTest.class
+com/json/ignore/FieldClassNotFoundTest.class
+mock/MockMethods.class
+mock/MockHttpRequest.class
+com/json/ignore/FieldAccessExceptionTest.class
+com/json/ignore/advice/FilterProviderTest.class
+mock/MockUser.class
+com/json/ignore/filter/FilterFactoryTest.class
+com/json/ignore/filter/strategy/StrategyFilterTest.class
+com/json/ignore/filter/BaseFilterTest.class
+com/json/ignore/filter/FileUtilTest.class
+com/json/ignore/filter/file/FileConfigTest.class
