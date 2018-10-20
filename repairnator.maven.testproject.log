@@ -1,0 +1,531 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Caelum Stella
+[INFO] Stella Core
+[INFO] Stella Bean Validation
+[INFO] Stella Hibernate User-Types
+[INFO] Stella Faces
+[INFO] Stella Boleto
+[INFO] Stella Frete
+[INFO] Example: Stella Faces 1x
+[INFO] Example: Stella Faces 2x
+[INFO] Example: Validator and Persistence
+[INFO] Example: Validator and VRaptor
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Caelum Stella 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Core 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ caelum-stella-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ caelum-stella-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ caelum-stella-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/caelum/caelum-stella/443990502/stella-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ caelum-stella-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (default-test) @ caelum-stella-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.2/surefire-junit4-2.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.2/surefire-junit4-2.4.2.pom (2 KB at 2.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.2/surefire-providers-2.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.2/surefire-providers-2.4.2.pom (2 KB at 40.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom (210 B at 4.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.2/surefire-junit4-2.4.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.jar (104 KB at 716.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.2/surefire-junit4-2.4.2.jar (12 KB at 55.9 KB/sec)
+[INFO] Surefire report directory: /root/workspace/caelum/caelum-stella/443990502/stella-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.tinytype.CPFTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running br.com.caelum.stella.validation.ie.IERoraimaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec
+Running br.com.caelum.stella.formatter.CEPFormatterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running br.com.caelum.stella.validation.ie.IEAlagoasValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running br.com.caelum.stella.validation.ie.IECearaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoNovaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running br.com.caelum.stella.validation.AcceptAnyValidatorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoAntigaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running br.com.caelum.stella.validation.ie.IEParaibaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running br.com.caelum.stella.validation.ie.IERioDeJaneiroValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running br.com.caelum.stella.validation.ie.IEAmazonasValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running br.com.caelum.stella.validation.ie.IEDistritoFederalValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running br.com.caelum.stella.validation.ie.IEMaranhaoValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running br.com.caelum.stella.ResourceBundleMessageProducerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running br.com.caelum.stella.validation.ie.IETocantinsValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running br.com.caelum.stella.validation.TituloEleitoralValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running br.com.caelum.stella.validation.ie.IEGoiasValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running br.com.caelum.stella.type.EstadoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running br.com.caelum.stella.tinytype.CNPJTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.validation.ie.IEBahiaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running br.com.caelum.stella.validation.ie.IEParaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running br.com.caelum.stella.validation.ie.IEAmapaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.validation.ie.IEMatoGrossoValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running br.com.caelum.stella.inwords.IntegerNumericToWordsConverterPT_BR_Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running br.com.caelum.stella.formatter.NITFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.SimpleMessageProducerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running br.com.caelum.stella.validation.LogicOrComposedValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.inwords.RealNumericToWordsConverterTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running br.com.caelum.stella.validation.NITValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running br.com.caelum.stella.validation.CNPJValidatorTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running br.com.caelum.stella.validation.ie.IERioGrandeDoSulValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running br.com.caelum.stella.tinytype.CEPTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.inwords.MultiLocaleNumericToWordsConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IEPiauiValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.inwords.IntegerNumericToWordsConverterEN_US_Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IERioGrandeDoNorteValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.formatter.CNPJFormatterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloProdutorRuralValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.DigitoParaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running br.com.caelum.stella.validation.CPFValidatorTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.formatter.CPFFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoValidatorTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running br.com.caelum.stella.type.RegiaoTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloComercioIndustriaValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.validation.ie.IESantaCatarinaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running br.com.caelum.stella.validation.ie.IEMinasGeraisValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running br.com.caelum.stella.validation.ie.IESergipeValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.inwords.DolarNumericToWordsConverterTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running br.com.caelum.stella.validation.LengthValidatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running br.com.caelum.stella.formatter.RenavamFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.formatter.TituloEleitoralFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running br.com.caelum.stella.format.LeftSideZerosFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloValidatorTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running br.com.caelum.stella.validation.ie.IEMatoGrossoDoSulValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running br.com.caelum.stella.validation.BaseValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running br.com.caelum.stella.inwords.NoFormatNumericToEnglishWordsConverterTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running br.com.caelum.stella.validation.RenavamValidationTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.validation.ie.IERondoniaValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running br.com.caelum.stella.inwords.FormatoDeMoedaTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.validation.ie.IEEspiritoSantoValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running br.com.caelum.stella.inwords.NoFormatNumericToWordsConverterTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IEAcreValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running br.com.caelum.stella.validation.ie.IEParanaValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+
+Results :
+
+Tests run: 740, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Bean Validation 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella-bean-validation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ caelum-stella-bean-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ caelum-stella-bean-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ caelum-stella-bean-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ caelum-stella-bean-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (default-test) @ caelum-stella-bean-validation ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella-bean-validation ---
+[INFO] Surefire report directory: /root/workspace/caelum/caelum-stella/443990502/stella-bean-validation/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.bean.validation.StellaAcceptAnyValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 sec
+Running br.com.caelum.stella.bean.validation.StellaNITValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.bean.validation.StellaTituloEleitoralBeanValidationTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec
+Running br.com.caelum.stella.bean.validation.StellaIEValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+Running br.com.caelum.stella.bean.validation.StellaCPFValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running br.com.caelum.stella.bean.validation.StellaIEBeanValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running br.com.caelum.stella.bean.validation.StellaTituloEleitoralValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.bean.validation.StellaCNPJBeanValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running br.com.caelum.stella.bean.validation.StellaNITBeanValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaPatternValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.bean.validation.xml.logic.StellaMaxValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaMinElementsValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running br.com.caelum.stella.bean.validation.StellaCPFBeanValidationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaLengthValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaMaxElementsValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running br.com.caelum.stella.bean.validation.StellaCNPJValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaChoiceValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running br.com.caelum.stella.bean.validation.xml.StellaRequiredValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.bean.validation.AnnotationMessageProducerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running br.com.caelum.stella.bean.validation.xml.logic.StellaMinValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+
+Results :
+
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Hibernate User-Types 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella-hibernate-user-types ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ caelum-stella-hibernate-user-types ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/caelum/caelum-stella/443990502/stella-hibernate-user-types/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ caelum-stella-hibernate-user-types ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ caelum-stella-hibernate-user-types ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ caelum-stella-hibernate-user-types ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (default-test) @ caelum-stella-hibernate-user-types ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella-hibernate-user-types ---
+[INFO] Surefire report directory: /root/workspace/caelum/caelum-stella/443990502/stella-hibernate-user-types/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.usertype.CpfUserTypeTest
+out 20, 2018 7:45:13 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.1.12.Final}
+out 20, 2018 7:45:13 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.hsqldb.jdbcDriver, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=sa, hibernate.cache.region_prefix=hibernate.test, hibernate.hbm2ddl.auto=create-drop, hibernate.connection.url=jdbc:hsqldb:test, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+out 20, 2018 7:45:13 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000407: Using java.io streams to persist binary types
+out 20, 2018 7:45:13 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+out 20, 2018 7:45:13 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator instantiateProxoolProvider
+WARN: HHH000209: proxool properties were encountered, but the proxool provider class was not found on the classpath; these properties are going to be ignored.
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:test]
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=sa, password=****}
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+out 20, 2018 7:45:13 AM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.041 sec
+Running br.com.caelum.stella.usertype.CepUserTypeTest
+2018-10-20T07:45:16.131+0200  WARN  HHH000209: proxool properties were encountered, but the proxool provider class was not found on the classpath; these properties are going to be ignored.
+2018-10-20T07:45:16.133+0200  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Faces 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella-faces ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ caelum-stella-faces ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ caelum-stella-faces ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ caelum-stella-faces ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ caelum-stella-faces ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (default-test) @ caelum-stella-faces ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella-faces ---
+[INFO] Surefire report directory: /root/workspace/caelum/caelum-stella/443990502/stella-faces/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.faces.validation.StellaNITValidatorTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running br.com.caelum.stella.faces.validation.StellaTituloEleitoralValidatorTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running br.com.caelum.stella.faces.validation.StellaCPFValidatorTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running br.com.caelum.stella.faces.validation.StellaCNPJValidatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 sec
+Running br.com.caelum.stella.faces.validation.StellaMessagesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running br.com.caelum.stella.faces.validation.StellaIEValidatorTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running br.com.caelum.stella.faces.validation.StellaNITValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running br.com.caelum.stella.faces.validation.StellaCNPJValidatorTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running br.com.caelum.stella.faces.validation.StellaCPFValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running br.com.caelum.stella.faces.validation.ResourceBundleFinderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running br.com.caelum.stella.faces.validation.StellaIEValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running br.com.caelum.stella.faces.validation.StellaTituloEleitoralValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Boleto 2.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ caelum-stella-boleto ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ caelum-stella-boleto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ caelum-stella-boleto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jasperreports-maven-plugin:1.0-beta-2:compile-reports (default) @ caelum-stella-boleto ---
+[INFO] Downloading: http://snapshots.repository.codehaus.org/commons-beanutils/commons-beanutils/maven-metadata.xml
+[WARNING] Could not transfer metadata commons-beanutils:commons-beanutils/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org: Name or service not known
+[INFO] Downloading: http://snapshots.repository.codehaus.org/commons-collections/commons-collections/maven-metadata.xml
+[WARNING] Could not transfer metadata commons-collections:commons-collections/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/commons-digester/commons-digester/maven-metadata.xml
+[WARNING] Could not transfer metadata commons-digester:commons-digester/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/commons-logging/commons-logging/maven-metadata.xml
+[WARNING] Could not transfer metadata commons-logging:commons-logging/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/itext/itext/maven-metadata.xml
+[WARNING] Could not transfer metadata itext:itext/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/jfree/jcommon/maven-metadata.xml
+[WARNING] Could not transfer metadata jfree:jcommon/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/jfree/jfreechart/maven-metadata.xml
+[WARNING] Could not transfer metadata jfree:jfreechart/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Downloading: http://snapshots.repository.codehaus.org/eclipse/jdtcore/maven-metadata.xml
+[WARNING] Could not transfer metadata eclipse:jdtcore/maven-metadata.xml from/to codehaus.org (http://snapshots.repository.codehaus.org): snapshots.repository.codehaus.org
+[INFO] Nothing to compile - all Jasper reports are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ caelum-stella-boleto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/caelum/caelum-stella/443990502/stella-boleto/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ caelum-stella-boleto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (default-test) @ caelum-stella-boleto ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.2:test (run unit tests) @ caelum-stella-boleto ---
+[INFO] Surefire report directory: /root/workspace/caelum/caelum-stella/443990502/stella-boleto/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.boleto.bancos.SantanderTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+Running br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 1.396 sec <<< FAILURE!
+Running br.com.caelum.stella.boleto.EnderecoTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.boleto.SacadoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.boleto.utils.StellaStringUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running br.com.caelum.stella.boleto.bancos.BradescoTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running br.com.caelum.stella.boleto.bancos.ItauTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.boleto.bancos.CaixaCarteira24Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.boleto.bancos.HSBCTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running br.com.caelum.stella.boleto.BoletoTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running br.com.caelum.stella.boleto.bancos.CaixaTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.boleto.bancos.BancosTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running br.com.caelum.stella.boleto.bancos.GeradorDeDigitoPadraoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running br.com.caelum.stella.boleto.bancos.CodigoDeBarrasBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.093 sec <<< FAILURE!
+Running br.com.caelum.stella.boleto.bancos.BancoDoBrasilTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+
+Results :
+
+Tests in error: 
+  testPDFWriterEscreveLinhaDigitavelCorreta(br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest)
+  testPDFWriterEscreveValorCorreto(br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest)
+  testPDFWriterGeneration(br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest)
+  testByteArrayGeneration(br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest)
+  testPNGWriteGeneration(br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest)
+  testHTMLWriterEscreveLinhaDigitavelCorreta(br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest)
+  testHTMLWriterGeneration(br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest)
+  testHTMLWriterEscreveValorCorreto(br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest)
+
+Tests run: 115, Failures: 0, Errors: 8, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Caelum Stella ...................................... SUCCESS [  1.038 s]
+[INFO] Stella Core ........................................ SUCCESS [  4.835 s]
+[INFO] Stella Bean Validation ............................. SUCCESS [  1.523 s]
+[INFO] Stella Hibernate User-Types ........................ SUCCESS [  4.255 s]
+[INFO] Stella Faces ....................................... SUCCESS [  1.080 s]
+[INFO] Stella Boleto ...................................... FAILURE [  2.505 s]
+[INFO] Stella Frete ....................................... SKIPPED
+[INFO] Example: Stella Faces 1x ........................... SKIPPED
+[INFO] Example: Stella Faces 2x ........................... SKIPPED
+[INFO] Example: Validator and Persistence ................. SKIPPED
+[INFO] Example: Validator and VRaptor ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.654 s
+[INFO] Finished at: 2018-10-20T07:45:19+02:00
+[INFO] Final Memory: 21M/467M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.2:test (run unit tests) on project caelum-stella-boleto: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/caelum/caelum-stella/443990502/stella-boleto/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :caelum-stella-boleto
