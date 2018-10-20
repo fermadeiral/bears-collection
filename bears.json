@@ -1,0 +1,236 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "caelum/caelum-stella",
+    "githubId": 209853,
+    "url": "https://github.com/caelum/caelum-stella",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 233
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443990502,
+      "url": "http://travis-ci.org/caelum/caelum-stella/builds/443990502",
+      "date": "Oct 20, 2018 7:29:44 AM"
+    },
+    "fixerBuild": {
+      "id": 443991898,
+      "url": "http://travis-ci.org/caelum/caelum-stella/builds/443991898",
+      "date": "Oct 20, 2018 7:39:51 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 20, 2018 7:40:04 AM",
+    "reproductionDateEnd": "Oct 20, 2018 7:47:15 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 324425752,
+      "totalMemory": 386924544
+    },
+    "totalDuration": 426,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 290,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          4,
+          281
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/caelum/caelum-stella/443990502/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 8
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/caelum/caelum-stella/443990502/stella-boleto",
+    "overallMetrics": {
+      "numberRunning": 967,
+      "numberPassing": 959,
+      "numberFailing": 0,
+      "numberErroring": 8,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+          "isError": true,
+          "occurrences": 8
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "testMethod": "testPDFWriterGeneration",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "testMethod": "testPDFWriterEscreveLinhaDigitavelCorreta",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "testMethod": "testPDFWriterEscreveValorCorreto",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "testMethod": "testByteArrayGeneration",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest",
+        "testMethod": "testHTMLWriterEscreveLinhaDigitavelCorreta",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest",
+        "testMethod": "testHTMLWriterGeneration",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoHTMLTransformerIntegrationTest",
+        "testMethod": "testHTMLWriterEscreveValorCorreto",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      },
+      {
+        "testClass": "br.com.caelum.stella.boleto.transformer.BoletoTransformerIntegrationTest",
+        "testMethod": "testPNGWriteGeneration",
+        "failureName": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException",
+        "detail": "br.com.caelum.stella.boleto.exception.GeracaoBoletoException: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean : digitoNossoNumero",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberSourceFiles": 186,
+    "numberTestFiles": 122,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "caelum/caelum-stella",
+      "branchName": "master",
+      "sha": "76d7323932e0c8347878a4a5d51bfeb1799dc1eb",
+      "url": "http://github.com/caelum/caelum-stella/commit/76d7323932e0c8347878a4a5d51bfeb1799dc1eb",
+      "date": "Oct 20, 2018 7:26:38 AM"
+    },
+    "fixerBuild": {
+      "repoName": "caelum/caelum-stella",
+      "branchName": "master",
+      "sha": "4ea8c959ac783f69aa94a4b8f44876447ed0aaf2",
+      "url": "http://github.com/caelum/caelum-stella/commit/4ea8c959ac783f69aa94a4b8f44876447ed0aaf2",
+      "date": "Oct 20, 2018 7:37:35 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "williamrodrigues/caelum-stella",
+      "branchName": "master",
+      "sha": "e6f78697a0834b26369fd3294299240acf228d62",
+      "url": "https://github.com/williamrodrigues/caelum-stella/commit/e6f78697a0834b26369fd3294299240acf228d62",
+      "date": "Oct 20, 2018 7:37:35 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "caelum/caelum-stella",
+      "branchName": "master",
+      "sha": "0d861ba9d8cd6a8bb880603be7d86cc81a6336b9",
+      "url": "https://github.com/caelum/caelum-stella/commit/0d861ba9d8cd6a8bb880603be7d86cc81a6336b9",
+      "date": "Sep 25, 2018 2:29:37 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "williamrodrigues/caelum-stella",
+      "branchName": "master",
+      "sha": "e6f78697a0834b26369fd3294299240acf228d62",
+      "url": "https://github.com/williamrodrigues/caelum-stella/commit/e6f78697a0834b26369fd3294299240acf228d62",
+      "date": "Oct 20, 2018 7:37:35 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "caelum/caelum-stella",
+      "branchName": "master",
+      "sha": "0d861ba9d8cd6a8bb880603be7d86cc81a6336b9",
+      "url": "https://github.com/caelum/caelum-stella/commit/0d861ba9d8cd6a8bb880603be7d86cc81a6336b9",
+      "date": "Sep 25, 2018 2:29:37 PM"
+    }
+  },
+  "type": "passing_passing"
+}
