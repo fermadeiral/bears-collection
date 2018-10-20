@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "nsalazar1992/Risk_Game_SE_6441",
+    "githubId": 148689224,
+    "url": "https://github.com/nsalazar1992/Risk_Game_SE_6441",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443970539,
+      "url": "http://travis-ci.org/nsalazar1992/Risk_Game_SE_6441/builds/443970539",
+      "date": "Oct 20, 2018 5:26:35 AM"
+    },
+    "fixerBuild": {
+      "id": 443987368,
+      "url": "http://travis-ci.org/nsalazar1992/Risk_Game_SE_6441/builds/443987368",
+      "date": "Oct 20, 2018 7:12:05 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 20, 2018 7:12:19 AM",
+    "reproductionDateEnd": "Oct 20, 2018 7:13:24 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 338590424,
+      "totalMemory": 397934592
+    },
+    "totalDuration": 60,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 18,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          18
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/nsalazar1992/Risk_Game_SE_6441/443970539/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 158
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/nsalazar1992/Risk_Game_SE_6441/443970539",
+    "overallMetrics": {
+      "numberRunning": 36,
+      "numberPassing": 35,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "controller.play.CalculateReinforcementTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "controller.play.CalculateReinforcementTest",
+        "testMethod": "testCalculate",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 27,
+    "numberTestFiles": 18,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "nsalazar1992/Risk_Game_SE_6441",
+      "branchName": "develop",
+      "sha": "98f1ca74cb91557c2a69a9cf9dee56b5ae20ef5d",
+      "url": "http://github.com/nsalazar1992/Risk_Game_SE_6441/commit/98f1ca74cb91557c2a69a9cf9dee56b5ae20ef5d",
+      "date": "Oct 20, 2018 5:25:08 AM"
+    },
+    "fixerBuild": {
+      "repoName": "nsalazar1992/Risk_Game_SE_6441",
+      "branchName": "develop",
+      "sha": "3cbd953855ad7265d23a329111eb845ffbb04c51",
+      "url": "http://github.com/nsalazar1992/Risk_Game_SE_6441/commit/3cbd953855ad7265d23a329111eb845ffbb04c51",
+      "date": "Oct 20, 2018 7:10:24 AM"
+    }
+  }
+}
