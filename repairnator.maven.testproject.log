@@ -1,0 +1,685 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building projog-core 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default-prepare-agent) @ projog-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/s-webber/projog/443920024/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/s-webber/projog/443920024/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ projog-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ projog-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 260 source files to /root/workspace/s-webber/projog/443920024/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ projog-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ projog-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 61 source files to /root/workspace/s-webber/projog/443920024/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ projog-core ---
+[INFO] Surefire report directory: /root/workspace/s-webber/projog/443920024/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 4.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 47.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 507.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.projog.PrologTest
+Checking script: src/test/prolog/CompiledPredicateSourceGeneratorTest/CompiledPredicateSourceGeneratorTest.pl
+Checking script: src/test/prolog/applications/towers-of-hanoi.pl
+Checking script: src/test/prolog/concepts/getting-started.pl
+Checking script: src/test/prolog/concepts/prolog-arithmetic.pl
+Checking script: src/test/prolog/concepts/prolog-debugging.pl
+Checking script: src/test/prolog/concepts/prolog-introduction.pl
+Checking script: src/test/prolog/concepts/prolog-io.pl
+Checking script: src/test/prolog/concepts/prolog-lists.pl
+Checking script: src/test/prolog/concepts/prolog-term-comparison.pl
+Checking script: src/test/prolog/concepts/prolog-unification.pl
+Checking script: src/test/prolog/miscellaneous/1.pl
+Checking script: src/test/prolog/miscellaneous/10.pl
+Checking script: src/test/prolog/miscellaneous/11.pl
+Checking script: src/test/prolog/miscellaneous/12.pl
+Checking script: src/test/prolog/miscellaneous/13.pl
+Checking script: src/test/prolog/miscellaneous/14.pl
+Checking script: src/test/prolog/miscellaneous/15.pl
+Checking script: src/test/prolog/miscellaneous/16.pl
+Checking script: src/test/prolog/miscellaneous/17.pl
+Checking script: src/test/prolog/miscellaneous/18.pl
+Checking script: src/test/prolog/miscellaneous/19.pl
+Checking script: src/test/prolog/miscellaneous/2.pl
+Checking script: src/test/prolog/miscellaneous/20.pl
+WARN Not defined: false
+WARN Not defined: false
+WARN Not defined: false
+Checking script: src/test/prolog/miscellaneous/21.pl
+Checking script: src/test/prolog/miscellaneous/22.pl
+Checking script: src/test/prolog/miscellaneous/23.pl
+Checking script: src/test/prolog/miscellaneous/24.pl
+Checking script: src/test/prolog/miscellaneous/25.pl
+Checking script: src/test/prolog/miscellaneous/26.pl
+Checking script: src/test/prolog/miscellaneous/27.pl
+Checking script: src/test/prolog/miscellaneous/28.pl
+Checking script: src/test/prolog/miscellaneous/29.pl
+Checking script: src/test/prolog/miscellaneous/3.pl
+Checking script: src/test/prolog/miscellaneous/30.pl
+Checking script: src/test/prolog/miscellaneous/31.pl
+Checking script: src/test/prolog/miscellaneous/32.pl
+Checking script: src/test/prolog/miscellaneous/33.pl
+Checking script: src/test/prolog/miscellaneous/34.pl
+Checking script: src/test/prolog/miscellaneous/35.pl
+Checking script: src/test/prolog/miscellaneous/36.pl
+Checking script: src/test/prolog/miscellaneous/37.pl
+Checking script: src/test/prolog/miscellaneous/38.pl
+Checking script: src/test/prolog/miscellaneous/39.pl
+WARN Not defined: test
+WARN Not defined: test
+Checking script: src/test/prolog/miscellaneous/4.pl
+Checking script: src/test/prolog/miscellaneous/40.pl
+Checking script: src/test/prolog/miscellaneous/41.pl
+Checking script: src/test/prolog/miscellaneous/42.pl
+Checking script: src/test/prolog/miscellaneous/43.pl
+Checking script: src/test/prolog/miscellaneous/44.pl
+Checking script: src/test/prolog/miscellaneous/45.pl
+Checking script: src/test/prolog/miscellaneous/46.pl
+Checking script: src/test/prolog/miscellaneous/47.pl
+Checking script: src/test/prolog/miscellaneous/48.pl
+Checking script: src/test/prolog/miscellaneous/49.pl
+Checking script: src/test/prolog/miscellaneous/5.pl
+Checking script: src/test/prolog/miscellaneous/50.pl
+Checking script: src/test/prolog/miscellaneous/51.pl
+Checking script: src/test/prolog/miscellaneous/52.pl
+Checking script: src/test/prolog/miscellaneous/53.pl
+Checking script: src/test/prolog/miscellaneous/54.pl
+Checking script: src/test/prolog/miscellaneous/55.pl
+Checking script: src/test/prolog/miscellaneous/56.pl
+Checking script: src/test/prolog/miscellaneous/57.pl
+Checking script: src/test/prolog/miscellaneous/58.pl
+Checking script: src/test/prolog/miscellaneous/59.pl
+Checking script: src/test/prolog/miscellaneous/6.pl
+Checking script: src/test/prolog/miscellaneous/60.pl
+Checking script: src/test/prolog/miscellaneous/61.pl
+Checking script: src/test/prolog/miscellaneous/62.pl
+Checking script: src/test/prolog/miscellaneous/63.pl
+Checking script: src/test/prolog/miscellaneous/7.pl
+Checking script: src/test/prolog/miscellaneous/8.pl
+Checking script: src/test/prolog/miscellaneous/9.pl
+Completed 645 queries from 73 files with 0 failures in: 1643ms
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.bool.Fail.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.bool.True.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.CharType.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsAtom.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsAtomic.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsCompound.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsFloat.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsInteger.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsNonVar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsNumber.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsVar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Between.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Compare.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Equal.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NotStrictEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NotUnifiable.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericGreaterThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericGreaterThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericInequality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericLessThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericLessThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.PredSort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.StrictEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermGreaterThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermGreaterThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermLessThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermLessThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.BagOf.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Call.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Conjunction.pl
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: z
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Disjunction.pl
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: z
+WARN Not defined: z
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.FindAll.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.IfThen.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Not.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Once.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.SetOf.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Arg.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.AtomConcat.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.CopyTerm.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Functor.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.NumberVars.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.TermSplit.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Univ.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.Erase.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.InsertRecord.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.Recorded.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.AlterSpyPoint.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.Debugging.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.NoDebug.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.NoTrace.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.Trace.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.Cut.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.RepeatInfinitely.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.RepeatSetAmount.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Close.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.CurrentInput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.CurrentOutput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.GetChar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.GetCode.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.NewLine.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Op.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Open.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.PutChar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Read.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.See.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Seen.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.SetInput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.SetOutput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Tab.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Tell.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Told.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Write.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.WriteCanonical.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Writef.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.AddCalculatable.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.AddPredicateFactory.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Assert.pl
+WARN Not defined: z/1
+WARN Not defined: z/1
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Consult.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.EnsureLoaded.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Flag.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Inspect.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Listing.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.RetractAll.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Append.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Delete.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Flatten.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.KeySort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Length.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.MapList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Member.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.MemberCheck.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Nth.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Reverse.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Select.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Sort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SortAsSet.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SubList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Subset.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SubtractFromList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Abs.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Add.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.AddArithmeticFunction.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.BitwiseAnd.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.BitwiseOr.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Divide.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.IntegerDivide.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Is.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Max.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Minus.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Modulo.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Multiply.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Power.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Random.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Remainder.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.ShiftRight.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Subtract.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.time.ConvertTime.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.time.GetTime.pl
+Completed 966 queries from 120 files with 0 failures in: 5351ms
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.bool.Fail.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.bool.True.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.CharType.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsAtom.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsAtomic.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsCompound.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsFloat.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsInteger.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsNonVar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsNumber.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.classify.IsVar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Between.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Compare.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.Equal.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NotStrictEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NotUnifiable.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericGreaterThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericGreaterThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericInequality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericLessThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.NumericLessThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.PredSort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.StrictEquality.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermGreaterThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermGreaterThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermLessThan.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compare.TermLessThanOrEqual.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.BagOf.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Call.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Conjunction.pl
+WARN Not defined: z
+WARN Not defined: z
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Disjunction.pl
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: z
+WARN Not defined: z
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: x
+WARN Not defined: y
+WARN Not defined: y
+WARN Not defined: z
+WARN Not defined: z
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.FindAll.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.IfThen.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Not.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.Once.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.compound.SetOf.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Arg.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.AtomConcat.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.CopyTerm.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Functor.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.NumberVars.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.TermSplit.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.construct.Univ.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.Erase.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.InsertRecord.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.db.Recorded.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.AlterSpyPoint.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.Debugging.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.NoDebug.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.NoTrace.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.debug.Trace.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.Cut.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.RepeatInfinitely.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.flow.RepeatSetAmount.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Close.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.CurrentInput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.CurrentOutput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.GetChar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.GetCode.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.NewLine.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Op.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Open.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.PutChar.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Read.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.See.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Seen.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.SetInput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.SetOutput.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Tab.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Tell.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Told.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Write.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.WriteCanonical.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.io.Writef.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.AddCalculatable.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.AddPredicateFactory.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Assert.pl
+WARN Not defined: z/1
+WARN Not defined: z/1
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Consult.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.EnsureLoaded.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Flag.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Inspect.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.Listing.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.kb.RetractAll.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Append.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Delete.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Flatten.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.KeySort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Length.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.MapList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Member.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.MemberCheck.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Nth.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Reverse.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Select.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Sort.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SortAsSet.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SubList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.Subset.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.list.SubtractFromList.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Abs.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Add.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.AddArithmeticFunction.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.BitwiseAnd.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.BitwiseOr.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Divide.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.IntegerDivide.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Is.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Max.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Minus.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Modulo.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Multiply.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Power.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Random.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Remainder.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.ShiftRight.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.math.Subtract.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.time.ConvertTime.pl
+Checking script: target/prolog-tests-extracted-from-java/org.projog.core.function.time.GetTime.pl
+Completed 966 queries from 120 files with 0 failures in: 676ms
+Checking script: src/test/prolog/CompiledPredicateSourceGeneratorTest/CompiledPredicateSourceGeneratorTest.pl
+Checking script: src/test/prolog/applications/towers-of-hanoi.pl
+Checking script: src/test/prolog/concepts/getting-started.pl
+Checking script: src/test/prolog/concepts/prolog-arithmetic.pl
+Checking script: src/test/prolog/concepts/prolog-debugging.pl
+Checking script: src/test/prolog/concepts/prolog-introduction.pl
+Checking script: src/test/prolog/concepts/prolog-io.pl
+Checking script: src/test/prolog/concepts/prolog-lists.pl
+Checking script: src/test/prolog/concepts/prolog-term-comparison.pl
+Checking script: src/test/prolog/concepts/prolog-unification.pl
+Checking script: src/test/prolog/miscellaneous/1.pl
+Checking script: src/test/prolog/miscellaneous/10.pl
+Checking script: src/test/prolog/miscellaneous/11.pl
+Checking script: src/test/prolog/miscellaneous/12.pl
+Checking script: src/test/prolog/miscellaneous/13.pl
+Checking script: src/test/prolog/miscellaneous/14.pl
+Checking script: src/test/prolog/miscellaneous/15.pl
+Checking script: src/test/prolog/miscellaneous/16.pl
+Checking script: src/test/prolog/miscellaneous/17.pl
+Checking script: src/test/prolog/miscellaneous/18.pl
+Checking script: src/test/prolog/miscellaneous/19.pl
+Checking script: src/test/prolog/miscellaneous/2.pl
+Checking script: src/test/prolog/miscellaneous/20.pl
+WARN Not defined: false
+WARN Not defined: false
+WARN Not defined: false
+WARN Not defined: false
+WARN Not defined: false
+Checking script: src/test/prolog/miscellaneous/21.pl
+Checking script: src/test/prolog/miscellaneous/22.pl
+Checking script: src/test/prolog/miscellaneous/23.pl
+Checking script: src/test/prolog/miscellaneous/24.pl
+Checking script: src/test/prolog/miscellaneous/25.pl
+Checking script: src/test/prolog/miscellaneous/26.pl
+Checking script: src/test/prolog/miscellaneous/27.pl
+Checking script: src/test/prolog/miscellaneous/28.pl
+Checking script: src/test/prolog/miscellaneous/29.pl
+Checking script: src/test/prolog/miscellaneous/3.pl
+Checking script: src/test/prolog/miscellaneous/30.pl
+Checking script: src/test/prolog/miscellaneous/31.pl
+Checking script: src/test/prolog/miscellaneous/32.pl
+Checking script: src/test/prolog/miscellaneous/33.pl
+Checking script: src/test/prolog/miscellaneous/34.pl
+Checking script: src/test/prolog/miscellaneous/35.pl
+Checking script: src/test/prolog/miscellaneous/36.pl
+Checking script: src/test/prolog/miscellaneous/37.pl
+Checking script: src/test/prolog/miscellaneous/38.pl
+Checking script: src/test/prolog/miscellaneous/39.pl
+WARN Not defined: test
+WARN Not defined: test
+Checking script: src/test/prolog/miscellaneous/4.pl
+Checking script: src/test/prolog/miscellaneous/40.pl
+Checking script: src/test/prolog/miscellaneous/41.pl
+Checking script: src/test/prolog/miscellaneous/42.pl
+Checking script: src/test/prolog/miscellaneous/43.pl
+Checking script: src/test/prolog/miscellaneous/44.pl
+Checking script: src/test/prolog/miscellaneous/45.pl
+Checking script: src/test/prolog/miscellaneous/46.pl
+Checking script: src/test/prolog/miscellaneous/47.pl
+Checking script: src/test/prolog/miscellaneous/48.pl
+Checking script: src/test/prolog/miscellaneous/49.pl
+Checking script: src/test/prolog/miscellaneous/5.pl
+Checking script: src/test/prolog/miscellaneous/50.pl
+Checking script: src/test/prolog/miscellaneous/51.pl
+Checking script: src/test/prolog/miscellaneous/52.pl
+Checking script: src/test/prolog/miscellaneous/53.pl
+Checking script: src/test/prolog/miscellaneous/54.pl
+Checking script: src/test/prolog/miscellaneous/55.pl
+Checking script: src/test/prolog/miscellaneous/56.pl
+Checking script: src/test/prolog/miscellaneous/57.pl
+Checking script: src/test/prolog/miscellaneous/58.pl
+Checking script: src/test/prolog/miscellaneous/59.pl
+Checking script: src/test/prolog/miscellaneous/6.pl
+Checking script: src/test/prolog/miscellaneous/60.pl
+WARN Not defined: b1/3
+WARN Not defined: b1/3
+WARN Not defined: b1/3
+WARN Not defined: b2/3
+WARN Not defined: b2/3
+WARN Not defined: b2/3
+WARN Not defined: b3/3
+WARN Not defined: b3/3
+WARN Not defined: b3/3
+Checking script: src/test/prolog/miscellaneous/61.pl
+Checking script: src/test/prolog/miscellaneous/62.pl
+Checking script: src/test/prolog/miscellaneous/63.pl
+Checking script: src/test/prolog/miscellaneous/7.pl
+Checking script: src/test/prolog/miscellaneous/8.pl
+Checking script: src/test/prolog/miscellaneous/9.pl
+Completed 645 queries from 73 files with 0 failures in: 22008ms
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.404 sec
+Running org.projog.api.ProjogStackTraceElementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.projog.api.ProjogTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 sec
+Running org.projog.core.SpyPointsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.projog.core.ProjogDefaultPropertiesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.projog.core.CoreUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.projog.core.udp.interpreter.InterpretedUserDefinedPredicateTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.projog.core.udp.interpreter.InterpretedTailRecursivePredicateFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.projog.core.udp.interpreter.ClauseActionFactoryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.projog.core.udp.ClauseModelTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.projog.core.udp.StaticUserDefinedPredicateFactoryTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Running org.projog.core.udp.compiler.CompiledPredicateSourceGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.996 sec
+Running org.projog.core.udp.compiler.CompiledPredicateSourceGeneratorUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.projog.core.udp.compiler.JavaSourceCompilerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.projog.core.udp.TailRecursivePredicateMetaDataTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.projog.core.udp.DefiniteClauseGrammerConvertorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.projog.core.udp.DynamicUserDefinedPredicateFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running org.projog.core.function.db.RecordedDatabaseTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.projog.core.function.AbstractPredicateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.projog.core.function.AbstractSingletonPredicateTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.projog.core.function.AbstractPredicateFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.projog.core.function.math.AbstractCalculatableTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running org.projog.core.KnowledgeBaseServiceLocatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.projog.core.term.NumericTermComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.projog.core.term.ListUtilsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.projog.core.term.VariableTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.projog.core.term.UnifierTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.projog.core.term.TermUtilsTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.projog.core.term.TermTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.projog.core.term.AtomTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.projog.core.term.TermComparatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.projog.core.term.EmptyListTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.projog.core.term.StructureTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.projog.core.term.TermTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.projog.core.term.ListTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Running org.projog.core.term.ListFactoryTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.projog.core.term.TermFormatterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.projog.core.term.IntegerNumberTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.projog.core.term.DecimalFractionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.projog.core.CalculatablesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running org.projog.core.ProjogSourceReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.projog.core.BootstrapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.projog.core.parser.TokenParserTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Running org.projog.core.parser.CharacterParserTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.projog.core.parser.DelimitersTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.projog.core.parser.SentenceParserTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Running org.projog.core.parser.TermParserTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.projog.core.KnowledgeBaseTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running org.projog.core.event.ProjogEventsObservableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.projog.core.FileHandlesTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.projog.core.UnknownPredicateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running org.projog.core.OperandsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.projog.core.KnowledgeBaseUtilsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.projog.core.PredicateKeyTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE!
+testCannotCreateFromNameAndArity(org.projog.core.PredicateKeyTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: Managed to create: test for: test
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.projog.core.PredicateKeyTest.testCannotCreateFromNameAndArity(PredicateKeyTest.java:140)
+	at org.projog.core.PredicateKeyTest.testCannotCreateFromNameAndArity(PredicateKeyTest.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.projog.tools.ProjogConsoleTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.projog.SourceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec
+
+Results :
+
+Failed tests:   testCannotCreateFromNameAndArity(org.projog.core.PredicateKeyTest): Managed to create: test for: test
+
+Tests run: 471, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 44.674 s
+[INFO] Finished at: 2018-10-20T09:39:30+02:00
+[INFO] Final Memory: 23M/585M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project projog-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/s-webber/projog/443920024/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
