@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "ctripcorp/apollo",
+    "githubId": 53127403,
+    "url": "https://github.com/ctripcorp/apollo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444069339,
+      "url": "http://travis-ci.org/ctripcorp/apollo/builds/444069339",
+      "date": "Oct 20, 2018 3:09:51 PM"
+    },
+    "fixerBuild": {
+      "id": 444288772,
+      "url": "http://travis-ci.org/ctripcorp/apollo/builds/444288772",
+      "date": "Oct 21, 2018 9:43:01 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 21, 2018 9:43:15 AM",
+    "reproductionDateEnd": "Oct 21, 2018 9:51:33 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 456639608,
+      "totalMemory": 575143936
+    },
+    "totalDuration": 490,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          20
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          9,
+          0,
+          0,
+          82
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 137,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          137
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/ctripcorp/apollo/444069339/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 8
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "ctripcorp/apollo",
+      "branchName": "master",
+      "sha": "2dbb811267a56fffcdaff38915d376646fad8d98",
+      "url": "http://github.com/ctripcorp/apollo/commit/2dbb811267a56fffcdaff38915d376646fad8d98",
+      "date": "Oct 20, 2018 2:53:55 PM"
+    },
+    "fixerBuild": {
+      "repoName": "ctripcorp/apollo",
+      "branchName": "master",
+      "sha": "a8a4a0d3f00e4193df90a76e20b4089574005d23",
+      "url": "http://github.com/ctripcorp/apollo/commit/a8a4a0d3f00e4193df90a76e20b4089574005d23",
+      "date": "Oct 21, 2018 9:27:40 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/ctripcorp/apollo/444069339/apollo-adminservice",
+    "overallMetrics": {
+      "numberRunning": 490,
+      "numberPassing": 489,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.ctrip.framework.apollo.adminservice.controller.ClusterControllerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.ctrip.framework.apollo.adminservice.controller.ClusterControllerTest",
+        "testMethod": "testDeleteDefaultFail",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: com.ctrip.framework.apollo.common.exception.BadRequestException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 491,
+    "numberTestFiles": 135,
+    "numberLibrariesFailingModule": 169,
+    "numberLines": 0
+  }
+}
