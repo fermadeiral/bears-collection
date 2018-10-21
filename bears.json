@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "webfirmframework/wff",
+    "githubId": 46187719,
+    "url": "https://github.com/webfirmframework/wff",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443190639,
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/443190639",
+      "date": "Oct 18, 2018 3:38:52 PM"
+    },
+    "fixerBuild": {
+      "id": 444280620,
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/444280620",
+      "date": "Oct 21, 2018 8:35:34 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 21, 2018 8:35:51 AM",
+    "reproductionDateEnd": "Oct 21, 2018 8:37:42 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 367596168,
+      "totalMemory": 487063552
+    },
+    "totalDuration": 105,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 26,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          26
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          21
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/webfirmframework/wff/443190639/wffweb/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/webfirmframework/wff/443190639/wffweb",
+    "overallMetrics": {
+      "numberRunning": 1909,
+      "numberPassing": 1908,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.webfirmframework.wffweb.tag.html.attribute.global.StyleTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.webfirmframework.wffweb.tag.html.attribute.global.StyleTest",
+        "testMethod": "testImportantInConstructorString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cstyle\u003d\"color:green[ !important];\"\u003e but was:\u003cstyle\u003d\"color:green[];\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 768,
+    "numberTestFiles": 150,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "webfirmframework/wff",
+      "branchName": "develop",
+      "sha": "6942b30de97510caae82812d1f6bdff0e43b2f65",
+      "url": "http://github.com/webfirmframework/wff/commit/6942b30de97510caae82812d1f6bdff0e43b2f65",
+      "date": "Oct 18, 2018 3:35:23 PM"
+    },
+    "fixerBuild": {
+      "repoName": "webfirmframework/wff",
+      "branchName": "develop",
+      "sha": "0019138859f4f31f381b06f9d89c870048addf8b",
+      "url": "http://github.com/webfirmframework/wff/commit/0019138859f4f31f381b06f9d89c870048addf8b",
+      "date": "Oct 21, 2018 8:33:16 AM"
+    }
+  },
+  "type": "passing_passing"
+}
