@@ -308,15 +308,88 @@ public class StyleTest {
          fail("Not yet implemented");
     }
 
-//    @Test
+    @Test
     public void testMarkAsImportant() {
-         fail("Not yet implemented");
+//         fail("Not yet implemented");
+        final Style style = new Style("color:green");
+        
+        style.markAsImportant("color");
+        
+        assertEquals("style=\"color:green !important;\"", style.toHtmlString());
+        assertEquals("color:green !important;", style.getAttributeValue());
+        
+        final CssProperty cssProperty = style.getCssProperty("color");
+        
+        assertNotNull(cssProperty);
+        
+        {
+            boolean important = style.isImportant("color");
+            assertTrue(important);
+            important = style.isImportant(cssProperty);
+            assertTrue(important);
+        }
+        
+        style.markAsUnimportant("color");
+        {
+            boolean important = style.isImportant("color");
+            assertFalse(important);
+            important = style.isImportant(cssProperty);
+            assertFalse(important);
+            assertEquals("style=\"color:green;\"", style.toHtmlString());
+            assertEquals("color:green;", style.getAttributeValue());
+        }
     }
-
-//    @Test
+    
+    @Test
     public void testMarkAsUnimportant() {
-         fail("Not yet implemented");
+        final Style style = new Style("color:green !important");
+        
+        style.markAsUnimportant("color");
+        
+        assertEquals("style=\"color:green;\"", style.toHtmlString());
+        assertEquals("color:green;", style.getAttributeValue());
+        
+        final CssProperty cssProperty = style.getCssProperty("color");
+        
+        assertNotNull(cssProperty);
+        
+        {
+            boolean important = style.isImportant("color");
+            assertFalse(important);
+            important = style.isImportant(cssProperty);
+            assertFalse(important);
+        }
+        style.markAsImportant("color");
+        {
+            boolean important = style.isImportant("color");
+            assertTrue(important);
+            important = style.isImportant(cssProperty);
+            assertTrue(important);            
+            assertEquals("style=\"color:green !important;\"", style.toHtmlString());
+            assertEquals("color:green !important;", style.getAttributeValue());
+        }
     }
+    
+    @Test
+    public void testImportantInConstructorString() {
+//         fail("Not yet implemented");
+        final Style style = new Style("color:green !important");
+        
+        assertEquals("style=\"color:green !important;\"", style.toHtmlString());
+        assertEquals("color:green !important;", style.getAttributeValue());
+        
+        final CssProperty cssProperty = style.getCssProperty("color");
+        
+        assertNotNull(cssProperty);
+        
+        {
+            boolean important = style.isImportant("color");
+            assertTrue(important);
+            important = style.isImportant(cssProperty);
+            assertTrue(important);
+        }
+        
+    }    
 
 //    @Test
     public void testInit() {
