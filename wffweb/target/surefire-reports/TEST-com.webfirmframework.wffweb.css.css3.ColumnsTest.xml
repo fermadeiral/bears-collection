@@ -74,20 +74,20 @@
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testToString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsColumns" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsColumns" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsNullValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testSetColumnCount" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testSetColumnWidth" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetCssValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetCssValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumns" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsInvalidValueValue2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsSetCssValueInvalidValueValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testSetCssValueString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsInvalidValueValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testColumnsInvalidValueValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testSetAsInherit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testSetAsInitial" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetColumnCount" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetColumnWidth" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testGetColumnWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.ColumnsTest" name="testIsValid" time="0"/>
 </testsuite>

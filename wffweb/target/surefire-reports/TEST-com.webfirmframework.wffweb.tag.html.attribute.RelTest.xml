@@ -71,8 +71,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testRelStringArray" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testContainsAll" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testRelStringArray" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testContainsAll" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testContains" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.attribute.RelTest" name="testRelString" time="0"/>
 </testsuite>

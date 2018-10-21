@@ -81,8 +81,8 @@
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testGetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testSetAsInherit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testSetAsInitial" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testGetCssName" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testSetAsInitial" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testIsValid" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest" name="testSetValue" time="0"/>
 </testsuite>

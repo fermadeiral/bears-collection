@@ -71,10 +71,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetIdBasedJsObject" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString2" time="0.024"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString3" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetIdBasedJsObjectPlus" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObject" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetIdBasedJsObject" time="0.006"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString2" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString3" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetIdBasedJsObjectPlus" time="0.004"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObjectSetOfString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest" name="testGetNameBasedJsObject" time="0.008"/>
 </testsuite>

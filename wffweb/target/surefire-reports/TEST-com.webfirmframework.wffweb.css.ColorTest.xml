@@ -77,10 +77,10 @@
   <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testColorString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testColumnRuleColor" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testColorColor" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetCssValueString" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetRgbCssValue" time="0.002"/>
-  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetAsInherit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetAsInitial" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetCssValueString" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetRgbCssValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetAsInherit" time="0.004"/>
+  <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetAsInitial" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.ColorTest" name="testSetValue" time="0"/>
 </testsuite>

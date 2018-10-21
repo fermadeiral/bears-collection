@@ -72,10 +72,10 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetBInvalidValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetValue" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetB" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetG" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetR" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testGetR" time="0.002"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetB" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetG" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetR" time="0"/>
@@ -83,9 +83,9 @@
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testRgbaCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testRgbaCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testRgbaCssValueIntIntInt" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetGInvalidValue" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetGInvalidValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testRgbaCssValueRgbaCssValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testIsValid" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testIsValid" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetRsl" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.RgbaCssValueTest" name="testSetRInvalidValue" time="0"/>
 </testsuite>

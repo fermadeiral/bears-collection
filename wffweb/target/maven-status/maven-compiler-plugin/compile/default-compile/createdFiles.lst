@@ -734,7 +734,6 @@ com/webfirmframework/wffweb/css/Src.class
 com/webfirmframework/wffweb/css/css3/WebkitColumnRule.class
 com/webfirmframework/wffweb/css/Margin.class
 com/webfirmframework/wffweb/tag/html/html5/attribute/Max.class
-com/webfirmframework/wffweb/tag/html/attribute/global/Style$2.class
 com/webfirmframework/wffweb/tag/html/stylesandsemantics/Div.class
 com/webfirmframework/wffweb/tag/html/html5/attribute/global/Dropzone.class
 com/webfirmframework/wffweb/tag/html/attribute/ReadOnly.class

@@ -21,13 +21,15 @@ import static com.webfirmframework.wffweb.css.CssConstants.IMPORTANT_UPPERCASE;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.StampedLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -213,6 +215,7 @@ import com.webfirmframework.wffweb.tag.html.attribute.AttributeNameConstants;
 import com.webfirmframework.wffweb.tag.html.attribute.core.AbstractAttribute;
 import com.webfirmframework.wffweb.tag.html.identifier.GlobalAttributable;
 import com.webfirmframework.wffweb.util.StringUtil;
+import com.webfirmframework.wffweb.util.TagStringUtil;
 
 // @formatter:off
 /**
@@ -425,13 +428,16 @@ public class Style extends AbstractAttribute
     protected Map<String, AbstractCssProperty<?>> abstractCssPropertyClassObjects;
 
     // for internal use.
-    private boolean fromAddCssProperty;
+    // private boolean fromAddCssProperty;
 
     // for internal use.
-    private boolean fromRemoveCssProperty;
+    // private boolean fromRemoveCssProperty;
 
     // for internal use.
-    private boolean clearOnlyInCssProperties;
+    // private boolean clearOnlyInCssProperties;
+
+    // for internal use
+    protected StampedLock lock = new StampedLock();
 
     static {
         CSSPROPERTY_CLASSES.put(CssNameConstants.ALIGN_CONTENT,
@@ -807,7 +813,7 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public Style(final CssProperty... cssProperties) {
-        addCssProperties(cssProperties);
+        addCssPropertiesLockless(cssProperties);
     }
 
     /**
@@ -820,7 +826,7 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public Style(final boolean important, final CssProperty... cssProperties) {
-        addCssProperties(important, cssProperties);
+        addCssPropertiesLockless(important, cssProperties);
     }
 
     /**
@@ -884,7 +890,12 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public void addCssProperties(final String cssProperties) {
-        extractStylesAndAddToAttributeValueMap(cssProperties);
+        final long stamp = lock.writeLock();
+        try {
+            extractStylesAndAddToAttributeValueMap(cssProperties);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
     }
 
     /**
@@ -900,16 +911,24 @@ public class Style extends AbstractAttribute
      * @return true if the values are added otherwise false.
      */
     public boolean addCssProperties(final Map<String, String> cssProperties) {
-        final boolean addAllToAttributeValueMap = addAllToAttributeValueMap(
-                cssProperties);
-        if (addAllToAttributeValueMap) {
-            final Set<String> cssNames = cssProperties.keySet();
-            for (final String cssName : cssNames) {
-                getCssProperty(cssName);// to save the corresponding object to
-                                        // abstractCssPropertyClassObjects
+
+        final long stamp = lock.writeLock();
+        try {
+            final boolean addAllToAttributeValueMap = addAllToAttributeValueMap(
+                    cssProperties);
+            if (addAllToAttributeValueMap) {
+                final Set<String> cssNames = cssProperties.keySet();
+                for (final String cssName : cssNames) {
+                    getCssPropertyLockless(cssName);// to save the corresponding
+                                                    // object
+                    // to
+                    // abstractCssPropertyClassObjects
+                }
             }
+            return addAllToAttributeValueMap;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return addAllToAttributeValueMap;
     }
 
     /**
@@ -925,31 +944,39 @@ public class Style extends AbstractAttribute
      *         it contains same style name and value then it will return false.
      */
     public boolean addCssProperty(final String cssName, final String cssValue) {
-        if (cssName == null) {
-            throw new NullValueException("styleName cannot be null");
-        }
-        if (StringUtil.endsWithColon(cssName.trim())) {
-            throw new InvalidValueException(
-                    "cssName can not end with : (colon)");
-        }
-        if (cssValue == null) {
-            throw new NullValueException("cssValue cannot be null");
-        }
-        final String trimmedCssValue = cssValue.trim();
-        if (trimmedCssValue.length() > 0
-                && (trimmedCssValue.charAt(0) == ':' || trimmedCssValue
-                        .charAt(trimmedCssValue.length() - 1) == ';')) {
-            throw new InvalidValueException(
-                    "value can not start with : (colon) or end with ; (semicolon)");
-        }
 
-        final boolean addToAttributeValueMap = super.addToAttributeValueMap(
-                cssName, cssValue);
-        if (addToAttributeValueMap) {
-            getCssProperty(cssName);// to save the corresponding object to
-                                    // abstractCssPropertyClassObjects
+        final long stamp = lock.writeLock();
+        try {
+
+            if (cssName == null) {
+                throw new NullValueException("styleName cannot be null");
+            }
+            if (StringUtil.endsWithColon(cssName.trim())) {
+                throw new InvalidValueException(
+                        "cssName can not end with : (colon)");
+            }
+            if (cssValue == null) {
+                throw new NullValueException("cssValue cannot be null");
+            }
+            final String trimmedCssValue = cssValue.trim();
+            if (trimmedCssValue.length() > 0
+                    && (trimmedCssValue.charAt(0) == ':' || trimmedCssValue
+                            .charAt(trimmedCssValue.length() - 1) == ';')) {
+                throw new InvalidValueException(
+                        "value can not start with : (colon) or end with ; (semicolon)");
+            }
+
+            final boolean addToAttributeValueMap = super.addToAttributeValueMap(
+                    cssName, cssValue);
+            if (addToAttributeValueMap) {
+                getCssPropertyLockless(cssName);// to save the corresponding
+                                                // object to
+                // abstractCssPropertyClassObjects
+            }
+            return addToAttributeValueMap;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return addToAttributeValueMap;
     }
 
     /**
@@ -962,6 +989,27 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public void addCssProperties(final boolean important,
+            final CssProperty... cssProperties) {
+
+        final long stamp = lock.writeLock();
+        try {
+
+            addCssPropertiesLockless(important, cssProperties);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * @param important
+     *            true to mark the given style as important.
+     * @param cssProperties
+     *            eg :-
+     *            {@code addCssProperties(true, AlignContent.FLEX_END, AlignItems.FLEX_END)}
+     * @since 1.0.0
+     * @author WFF
+     */
+    private void addCssPropertiesLockless(final boolean important,
             final CssProperty... cssProperties) {
         if (important) {
             for (final CssProperty styleValue : cssProperties) {
@@ -1006,9 +1054,28 @@ public class Style extends AbstractAttribute
      */
     public List<CssProperty> addCssProperties(
             final CssProperty... cssProperties) {
+        final long stamp = lock.writeLock();
+        try {
+            return addCssPropertiesLockless(cssProperties);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * @param cssProperties
+     *            eg :-
+     *            {@code addStyles(AlignContent.FLEX_END, AlignItems.FLEX_END)}
+     * @since 1.0.0
+     * @author WFF
+     * @return the added {@code CssProperty} objects as a
+     *         {@code List<CssProperty>}.
+     */
+    private List<CssProperty> addCssPropertiesLockless(
+            final CssProperty... cssProperties) {
         final List<CssProperty> addedCssPropertys = new ArrayList<>();
         for (final CssProperty cssProperty : cssProperties) {
-            addedCssPropertys.add(addCssProperty(cssProperty));
+            addedCssPropertys.add(addCssPropertyLockless(cssProperty));
         }
         return addedCssPropertys;
     }
@@ -1036,11 +1103,16 @@ public class Style extends AbstractAttribute
         if (cssProperties == null) {
             throw new NullValueException("cssProperties cannot be null");
         }
-        final List<CssProperty> addedCssPropertys = new ArrayList<>();
-        for (final CssProperty cssProperty : cssProperties) {
-            addedCssPropertys.add(addCssProperty(cssProperty));
+        final long stamp = lock.writeLock();
+        try {
+            final List<CssProperty> addedCssPropertys = new ArrayList<>();
+            for (final CssProperty cssProperty : cssProperties) {
+                addedCssPropertys.add(addCssPropertyLockless(cssProperty));
+            }
+            return addedCssPropertys;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return addedCssPropertys;
     }
 
     /**
@@ -1051,6 +1123,22 @@ public class Style extends AbstractAttribute
      * @return the added {@code CssProperty} objects as a {@code CssProperty}.
      */
     public CssProperty addCssProperty(final CssProperty cssProperty) {
+        final long stamp = lock.writeLock();
+        try {
+            return addCssPropertyLockless(cssProperty);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * @param cssProperty
+     *            eg :- {@code addStyle(AlignContent.FLEX_END)}
+     * @since 1.0.0
+     * @author WFF
+     * @return the added {@code CssProperty} objects as a {@code CssProperty}.
+     */
+    private CssProperty addCssPropertyLockless(final CssProperty cssProperty) {
 
         CssProperty sameOrCloneCssProperty = cssProperty;
 
@@ -1093,9 +1181,9 @@ public class Style extends AbstractAttribute
                 // ((AbstractCssProperty<?>) sameOrCloneCssProperty)
                 // .setStateChangeInformer(this);
             }
-            fromAddCssProperty = true;
+            // fromAddCssProperty = true;
             cssProperties.add(sameOrCloneCssProperty);
-            fromAddCssProperty = false;
+            // fromAddCssProperty = false;
             return sameOrCloneCssProperty;
         }
         return null;
@@ -1113,10 +1201,30 @@ public class Style extends AbstractAttribute
      *         then false.
      */
     public boolean removeCssProperty(final String cssName) {
+        final long stamp = lock.writeLock();
+        try {
+            return removeCssPropertyLockless(cssName);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * removes the style.
+     *
+     * @param cssName
+     *            eg: color
+     * @since 1.0.0
+     * @author WFF
+     * @return true if the given cssName (as well as value contained
+     *         corresponding to it) has been removed, if it contains no cssName
+     *         then false.
+     */
+    private boolean removeCssPropertyLockless(final String cssName) {
         if (getAttributeValueMap().get(cssName) != null) {
-            fromRemoveCssProperty = true;
-            cssProperties.remove(getCssProperty(cssName));
-            fromRemoveCssProperty = false;
+            // fromRemoveCssProperty = true;
+            cssProperties.remove(getCssPropertyLockless(cssName));
+            // fromRemoveCssProperty = false;
         }
         final boolean removeFromAttributeValueMap = super.removeFromAttributeValueMap(
                 cssName);
@@ -1141,13 +1249,37 @@ public class Style extends AbstractAttribute
      */
     public boolean removeCssProperty(final String cssName,
             final String cssValue) {
+        final long stamp = lock.writeLock();
+        try {
+
+            return removeCssPropertyLockless(cssName, cssValue);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * removes only if it contains the given style name and value.
+     *
+     * @param cssName
+     *            eg: color
+     * @param cssValue
+     *            eg: green (for color styleName)
+     * @since 1.0.0
+     * @return true if the given syleName (as well as value contained
+     *         corresponding to it) has been removed, or false if it doesn't
+     *         contain the given styleName and value.
+     * @author WFF
+     */
+    private boolean removeCssPropertyLockless(final String cssName,
+            final String cssValue) {
 
         final String value = getAttributeValueMap().get(cssName);
         // the value may contain !important that's why startsWith method is used
         // here.
         if (value != null && value.startsWith(
                 cssValue.toLowerCase().replace(IMPORTANT, "").trim())) {
-            return removeCssProperty(cssName);
+            return removeCssPropertyLockless(cssName);
         }
 
         return false;
@@ -1164,6 +1296,25 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public boolean removeCssProperty(final CssProperty cssProperty) {
+        final long stamp = lock.writeLock();
+        try {
+            return removeCssPropertyLockless(cssProperty);
+        } finally {
+            lock.unlockWrite(stamp);
+        }
+    }
+
+    /**
+     * removes the style.
+     *
+     * @param cssProperty
+     * @since 1.0.0
+     * @return true if the given syleName (as well as value contained
+     *         corresponding to it) has been removed, or false if it doesn't
+     *         contain the given styleName and value.
+     * @author WFF
+     */
+    private boolean removeCssPropertyLockless(final CssProperty cssProperty) {
         final AbstractCssProperty<?> abstractCssProperty = abstractCssPropertyClassObjects
                 .get(cssProperty.getCssName());
         if (abstractCssProperty != null
@@ -1172,10 +1323,10 @@ public class Style extends AbstractAttribute
                     "The added CssProperty object is different. Use the same object which was used to add the style.");
             return false;
         }
-        fromRemoveCssProperty = true;
+        // fromRemoveCssProperty = true;
         cssProperties.remove(cssProperty);
-        fromRemoveCssProperty = false;
-        return removeCssProperty(cssProperty.getCssName(),
+        // fromRemoveCssProperty = false;
+        return removeCssPropertyLockless(cssProperty.getCssName(),
                 cssProperty.getCssValue());
     }
 
@@ -1188,11 +1339,17 @@ public class Style extends AbstractAttribute
      */
     public List<Boolean> removeCssProperties(
             final CssProperty... cssProperties) {
-        final List<Boolean> removedStatus = new ArrayList<>();
-        for (final CssProperty cssProperty : cssProperties) {
-            removedStatus.add(removeCssProperty(cssProperty));
+        final long stamp = lock.writeLock();
+        try {
+
+            final List<Boolean> removedStatus = new ArrayList<>();
+            for (final CssProperty cssProperty : cssProperties) {
+                removedStatus.add(removeCssPropertyLockless(cssProperty));
+            }
+            return removedStatus;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return removedStatus;
     }
 
     /**
@@ -1212,11 +1369,17 @@ public class Style extends AbstractAttribute
     @Deprecated
     public List<Boolean> removeCssProperties(
             final Collection<CssProperty> cssProperties) {
-        final List<Boolean> removedStatus = new ArrayList<>();
-        for (final CssProperty cssProperty : cssProperties) {
-            removedStatus.add(removeCssProperty(cssProperty));
+        final long stamp = lock.writeLock();
+        try {
+
+            final List<Boolean> removedStatus = new ArrayList<>();
+            for (final CssProperty cssProperty : cssProperties) {
+                removedStatus.add(removeCssPropertyLockless(cssProperty));
+            }
+            return removedStatus;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return removedStatus;
     }
 
     /**
@@ -1233,13 +1396,19 @@ public class Style extends AbstractAttribute
         if (styleName == null) {
             return false;
         }
-        final String trimmedStyleName = styleName.trim();
-        final String value = getAttributeValueMap().get(trimmedStyleName);
-        if (value != null && !value.isEmpty()) {
-            return super.addToAttributeValueMap(trimmedStyleName,
-                    value + " " + IMPORTANT);
+        final long stamp = lock.writeLock();
+        try {
+
+            final String trimmedStyleName = styleName.trim();
+            final String value = getAttributeValueMap().get(trimmedStyleName);
+            if (value != null && !value.isEmpty()) {
+                return super.addToAttributeValueMap(trimmedStyleName,
+                        value + " " + IMPORTANT);
+            }
+            return false;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return false;
     }
 
     /**
@@ -1256,13 +1425,19 @@ public class Style extends AbstractAttribute
         if (styleName == null) {
             return false;
         }
-        final String trimmedStyleName = styleName.trim();
-        final String value = getAttributeValueMap().get(trimmedStyleName);
-        if (value != null && !value.isEmpty()) {
-            return super.addToAttributeValueMap(trimmedStyleName,
-                    value.replace(IMPORTANT, "").trim());
+        final long stamp = lock.writeLock();
+        try {
+
+            final String trimmedStyleName = styleName.trim();
+            final String value = getAttributeValueMap().get(trimmedStyleName);
+            if (value != null && !value.isEmpty()) {
+                return super.addToAttributeValueMap(trimmedStyleName,
+                        value.replace(IMPORTANT, "").trim());
+            }
+            return false;
+        } finally {
+            lock.unlockWrite(stamp);
         }
-        return false;
     }
 
     private void extractStylesAndAddToAttributeValueMap(final String styles) {
@@ -1278,8 +1453,8 @@ public class Style extends AbstractAttribute
                         && !styleNameValue[1].trim().isEmpty()) {
                     super.addToAttributeValueMap(styleNameValue[0],
                             styleNameValue[1]);
-                    getCssProperty(styleNameValue[0]);// to save the
-                                                      // corresponding object to
+                    getCssPropertyLockless(styleNameValue[0]);// to save the
+                    // corresponding object to
                     // abstractCssPropertyClassObjects
                 } else {
                     LOGGER.warning("\"" + styles
@@ -1314,14 +1489,21 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     public boolean isImportant(final CssProperty cssProperty) {
-        String value = getAttributeValueMap().get(cssProperty.getCssName());
-        if (value != null) {
-            value = value.toUpperCase();
-            return value.contains(cssProperty.getCssValue().toUpperCase())
-                    && value.contains(IMPORTANT_UPPERCASE);
+
+        final long stamp = lock.readLock();
+        try {
+            String value = getAttributeValueMap().get(cssProperty.getCssName());
+            if (value != null) {
+                value = value.toUpperCase();
+                return value.contains(cssProperty.getCssValue().toUpperCase())
+                        && value.contains(IMPORTANT_UPPERCASE);
+            }
+
+            return false;
+        } finally {
+            lock.unlockRead(stamp);
         }
 
-        return false;
     }
 
     /**
@@ -1336,13 +1518,45 @@ public class Style extends AbstractAttribute
      */
     public boolean isImportant(final String styleName) {
 
-        String value = getAttributeValueMap().get(styleName);
-        if (value != null) {
-            value = value.toUpperCase();
-            return value.contains(IMPORTANT_UPPERCASE);
-        }
+        final long stamp = lock.readLock();
+        try {
 
-        return false;
+            String value = getAttributeValueMap().get(styleName);
+            if (value != null) {
+                value = value.toUpperCase();
+                return value.contains(IMPORTANT_UPPERCASE);
+            }
+
+            return false;
+        } finally {
+            lock.unlockRead(stamp);
+        }
+    }
+
+    /**
+     * @param cssName
+     * @return the Enum object which implements {@code CssProperty} interface.
+     *         This object be may type casted in to the corresponding enum,
+     *         eg:-<br>
+     *         {@code CssProperty cssProperty = style.getCssProperty(CssConstants.ALIGN_CONTENT);}
+     *         <br>
+     *         {@code if (cssProperty != null &&
+     *         CssConstants.ALIGN_CONTENT.equals(cssProperty.getName())) } <br>
+     *         {@code      AlignContent alignContent = (AlignContent) cssProperty;}
+     *         <br>
+     *         {@code  } <br>
+     * @since 1.0.0
+     * @author WFF
+     */
+    public CssProperty getCssProperty(final String cssName) {
+
+        // TODO review if write lock is required
+        final long stamp = lock.readLock();
+        try {
+            return getCssPropertyLockless(cssName);
+        } finally {
+            lock.unlockRead(stamp);
+        }
     }
 
     /**
@@ -1361,7 +1575,7 @@ public class Style extends AbstractAttribute
      * @author WFF
      */
     @SuppressWarnings("unchecked")
-    public CssProperty getCssProperty(final String cssName) {
+    private CssProperty getCssPropertyLockless(final String cssName) {
         // given priority for optimization rather than coding standard.
 
         @SuppressWarnings("rawtypes")
@@ -1372,14 +1586,14 @@ public class Style extends AbstractAttribute
         if (classClass != null && classClass.isEnum()
                 && (value = getAttributeValueMap().get(cssName)) != null) {
 
-            value = value.toUpperCase().replace(IMPORTANT_UPPERCASE, "")
-                    .replace('-', '_').trim();
+            value = TagStringUtil.toUpperCase(value)
+                    .replace(IMPORTANT_UPPERCASE, "").replace('-', '_').trim();
 
             final CssProperty cssProperty = (CssProperty) Enum
                     .valueOf(classClass, value);
-            fromAddCssProperty = true;
+            // fromAddCssProperty = true;
             cssProperties.add(cssProperty);
-            fromAddCssProperty = false;
+            // fromAddCssProperty = false;
             return cssProperty;
             // given priority for optimization rather than coding standard.
         } else if (classClass != null
@@ -1408,9 +1622,9 @@ public class Style extends AbstractAttribute
                 // abstractCssProperty.setStateChangeInformer(this);
                 // abstractCssProperty.setAlreadyInUse(true);
 
-                fromAddCssProperty = true;
+                // fromAddCssProperty = true;
                 cssProperties.add(abstractCssProperty);
-                fromAddCssProperty = false;
+                // fromAddCssProperty = false;
                 return abstractCssProperty;
             } catch (InstantiationException | IllegalAccessException e) {
                 LOGGER.severe(String.valueOf(e));
@@ -1433,96 +1647,99 @@ public class Style extends AbstractAttribute
             // customCssProperty.setAlreadyInUse(true);
             // customCssProperty.setStateChangeInformer(this);
 
-            fromAddCssProperty = true;
+            // fromAddCssProperty = true;
             cssProperties.add(customCssProperty);
-            fromAddCssProperty = false;
+            // fromAddCssProperty = false;
             return customCssProperty;
         }
 
         return null;
     }
 
+    private final Set<CssProperty> cssProperties = ConcurrentHashMap
+            .newKeySet();
+
     // TODO review this code later
-    private final Set<CssProperty> cssProperties = new HashSet<CssProperty>() {
-
-        private static final long serialVersionUID = 1_0_0L;
-
-        @Override
-        public boolean add(final CssProperty cssProperty) {
-            synchronized (this) {
-                if (!fromAddCssProperty) {
-                    addCssProperty(cssProperty);
-                }
-                return super.add(cssProperty);
-            }
-        }
-
-        @Override
-        public boolean addAll(
-                final Collection<? extends CssProperty> cssProperties) {
-            synchronized (this) {
-                if (!fromAddCssProperty) {
-                    for (final CssProperty cssProperty : cssProperties) {
-                        addCssProperty(cssProperty);
-                    }
-                }
-                return super.addAll(cssProperties);
-            }
-        }
-
-        @Override
-        public void clear() {
-            synchronized (this) {
-                if (!clearOnlyInCssProperties) {
-                    abstractCssPropertyClassObjects.clear();
-                    Style.super.removeAllFromAttributeValueMap();
-                }
-                super.clear();
-            }
-        }
-
-        @Override
-        public boolean remove(final Object cssProperty) {
-            synchronized (this) {
-                if (!fromRemoveCssProperty) {
-                    try {
-                        removeCssProperty((CssProperty) cssProperty);
-                    } catch (final Exception e) {
-                        throw new IllegalArgumentException(
-                                "the object to remove should be an instance of CssProperty");
-                    }
-                }
-                return super.remove(cssProperty);
-            }
-        }
-
-        @Override
-        public boolean removeAll(final Collection<?> cssProperties) {
-            synchronized (this) {
-                if (!fromRemoveCssProperty) {
-                    try {
-                        for (final Object cssProperty : cssProperties) {
-                            removeCssProperty((CssProperty) cssProperty);
-                        }
-                    } catch (final RuntimeException e) {
-                        throw new IllegalArgumentException(
-                                "the given collection should be Collection<? extends CssProperty>");
-                    }
-                }
-                return super.removeAll(cssProperties);
-            }
-        }
-    };
+    // To use ConcurrentSkipListSet, CssProperty must be Comparable
+    // private final Set<CssProperty> cssProperties = new HashSet<CssProperty>()
+    // {
+    //
+    // private static final long serialVersionUID = 1_0_0L;
+    //
+    // @Override
+    // public boolean add(final CssProperty cssProperty) {
+    // if (!fromAddCssProperty) {
+    // addCssPropertyLockless(cssProperty);
+    // }
+    // return super.add(cssProperty);
+    // }
+    //
+    // @Override
+    // public boolean addAll(
+    // final Collection<? extends CssProperty> cssProperties) {
+    // if (!fromAddCssProperty) {
+    // for (final CssProperty cssProperty : cssProperties) {
+    // addCssPropertyLockless(cssProperty);
+    // }
+    // }
+    // return super.addAll(cssProperties);
+    // }
+    //
+    // @Override
+    // public void clear() {
+    // if (!clearOnlyInCssProperties) {
+    // abstractCssPropertyClassObjects.clear();
+    // Style.super.removeAllFromAttributeValueMap();
+    // }
+    // super.clear();
+    // }
+    //
+    // @Override
+    // public boolean remove(final Object cssProperty) {
+    // if (!fromRemoveCssProperty) {
+    // try {
+    // removeCssPropertyLockless((CssProperty) cssProperty);
+    // } catch (final Exception e) {
+    // throw new IllegalArgumentException(
+    // "the object to remove should be an instance of CssProperty");
+    // }
+    // }
+    // return super.remove(cssProperty);
+    // }
+    //
+    // @Override
+    // public boolean removeAll(final Collection<?> cssProperties) {
+    // if (!fromRemoveCssProperty) {
+    // try {
+    // for (final Object cssProperty : cssProperties) {
+    // removeCssPropertyLockless((CssProperty) cssProperty);
+    // }
+    // } catch (final RuntimeException e) {
+    // throw new IllegalArgumentException(
+    // "the given collection should be Collection<? extends CssProperty>");
+    // }
+    // }
+    // return super.removeAll(cssProperties);
+    // }
+    // };
 
     /**
-     * gets the {@code Collection<CssProperty>}.
+     * gets the {@code Collection<CssProperty>}. It's unmodifiable set since
+     * 3.0.1.
      *
      * @return {@code Collection<CssProperty>}
      * @since 1.0.0
      * @author WFF
      */
     public Collection<CssProperty> getCssProperties() {
-        return cssProperties;
+
+        final long stamp = lock.readLock();
+        try {
+
+            return Collections.unmodifiableSet(cssProperties);
+        } finally {
+            lock.unlockRead(stamp);
+        }
     }
 
     @Override
@@ -1552,8 +1769,16 @@ public class Style extends AbstractAttribute
      */
     @Override
     public String getAttributeValue() {
-        final String htmlString = this.toHtmlString();
-        return htmlString.substring(AttributeNameConstants.STYLE.length() + 2,
-                htmlString.length() - 1);
+
+        final long stamp = lock.readLock();
+        try {
+
+            final String htmlString = this.toHtmlString();
+            return htmlString.substring(
+                    AttributeNameConstants.STYLE.length() + 2,
+                    htmlString.length() - 1);
+        } finally {
+            lock.unlockRead(stamp);
+        }
     }
 }
