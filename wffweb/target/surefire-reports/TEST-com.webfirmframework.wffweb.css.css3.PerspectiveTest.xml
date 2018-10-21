@@ -81,8 +81,8 @@
   <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testSetAsAuto" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testPerspectiveFloatCssLengthUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testPerspectivePerspective" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testSetCssValueString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testSetPercent" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testIsValid" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.PerspectiveTest" name="testIsValid" time="0.001"/>
 </testsuite>

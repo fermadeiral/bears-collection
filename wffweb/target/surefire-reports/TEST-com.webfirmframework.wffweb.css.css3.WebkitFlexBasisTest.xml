@@ -73,10 +73,10 @@
   </properties>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testWebkitFlexBasisString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testGetValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testToString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testToString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testWebkitFlexBasisWebkitFlexBasis" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testWebkitFlexBasisFloatCssLengthUnit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testGetUnit" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testGetUnit" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testGetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testSetAsAuto" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest" name="testWebkitFlexBasis" time="0"/>

@@ -71,22 +71,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForRuntimeInvalidValues" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForRuntimeInvalidValues" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testGetBorderWidth" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testToString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testToString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testBorderWidthString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForNullValues" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetAsTransparent" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForRuntimeInvalidValuesWithRollback" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetAsTransparent" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForRuntimeInvalidValuesWithRollback" time="0.002"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testBorderWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testGetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthAlreadyInUse" time="0.002"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetCssValueString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetAsInherit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetAsInitial" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForInvalidValues" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testSetBorderWidthForInvalidValues" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testGetCssName" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testIsValid" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testIsValid" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderWidthTest" name="testBorderWidthBorderWidth" time="0"/>
 </testsuite>

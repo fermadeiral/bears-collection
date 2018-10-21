@@ -71,21 +71,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacingString" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacingString" time="0.004"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacingFloatCssLengthUnit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetHorizontalValue" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetHorizontalValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testToString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetValueFloatCssLengthUnitFloatCssLengthUnit" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetValueFloatCssLengthUnitFloatCssLengthUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetHorizontalUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetCssValueString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetVerticalValue" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetVerticalValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetAsInherit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetAsInitial" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetCssName" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testGetVerticalUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testSetValueFloatCssLengthUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testIsValid" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacingBorderSpacing" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacingBorderSpacing" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderSpacingTest" name="testBorderSpacing" time="0"/>
 </testsuite>

@@ -1394,13 +1394,20 @@ public class Style extends AbstractAttribute
                     return abstractCssProperty;
                 }
 
+                // must be set setCssValue before putting to
+                // abstractCssPropertyClassObjects
                 abstractCssProperty = (AbstractCssProperty<?>) classClass
                         .newInstance();
-                abstractCssProperty.setStateChangeInformer(this);
+                abstractCssProperty.setCssValue(value);
+
                 abstractCssPropertyClassObjects.put(cssName,
                         abstractCssProperty);
 
-                abstractCssProperty.setCssValue(value);
+                // below two methods are called in
+                // abstractCssPropertyClassObjects
+                // abstractCssProperty.setStateChangeInformer(this);
+                // abstractCssProperty.setAlreadyInUse(true);
+
                 fromAddCssProperty = true;
                 cssProperties.add(abstractCssProperty);
                 fromAddCssProperty = false;
@@ -1419,9 +1426,13 @@ public class Style extends AbstractAttribute
 
             final CustomCssProperty customCssProperty = new CustomCssProperty(
                     cssName, value);
-            customCssProperty.setAlreadyInUse(true);
-            customCssProperty.setStateChangeInformer(this);
+
             abstractCssPropertyClassObjects.put(cssName, customCssProperty);
+
+            // below two methods are called in abstractCssPropertyClassObjects
+            // customCssProperty.setAlreadyInUse(true);
+            // customCssProperty.setStateChangeInformer(this);
+
             fromAddCssProperty = true;
             cssProperties.add(customCssProperty);
             fromAddCssProperty = false;

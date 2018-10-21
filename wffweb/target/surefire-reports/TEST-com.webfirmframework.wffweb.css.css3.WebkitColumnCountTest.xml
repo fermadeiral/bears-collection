@@ -77,10 +77,10 @@
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetCssValueInvalidValue1" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetCssValueInvalidValue2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testGetCssValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetAsAuto" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetAsAuto" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testWebkitColumnCount" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetAsInherit" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetAsInherit" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testSetAsInitial" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest" name="testWebkitColumnCountString" time="0"/>

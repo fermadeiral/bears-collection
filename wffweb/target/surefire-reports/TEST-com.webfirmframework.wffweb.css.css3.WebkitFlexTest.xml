@@ -72,22 +72,22 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testAddPredefinedConstant" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testWebkitFlexString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexShrink" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testWebkitFlexString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexShrink" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetWebkitFlexBasis" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetCssValueStringInvalid" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testToString" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexBasis" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetCssValueStringInvalid" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testToString" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexBasis" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testWebkitFlexWebkitFlex" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetWebkitFlexShrink" time="0.008"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetCssValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetWebkitFlexShrink" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetCssValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetCssValueString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexGrow" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetWebkitFlexGrow" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetAsInherit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetAsInitial" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testSetAsInitial" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetCssName" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testIsValid" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testIsValid" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testStateChanged" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testGetWebkitFlexGrow" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testWebkitFlex" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.css3.WebkitFlexTest" name="testWebkitFlex" time="0.001"/>
 </testsuite>

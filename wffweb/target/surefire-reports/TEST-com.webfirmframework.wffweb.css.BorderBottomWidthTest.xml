@@ -73,12 +73,12 @@
   </properties>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testBorderBottomWidthFloatCssLengthUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testGetValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testBorderBottomWidthString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testBorderBottomWidthString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testToString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testGetUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testSetAsMedium" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testBorderBottomWidthBorderBottomWidth" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testGetCssValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testGetCssValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testBorderBottomWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testSetAsThin" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomWidthTest" name="testSetCssValueString" time="0"/>

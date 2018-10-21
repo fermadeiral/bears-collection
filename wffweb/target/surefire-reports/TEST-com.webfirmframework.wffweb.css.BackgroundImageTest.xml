@@ -77,10 +77,10 @@
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testBackgroundImageUrlCss3ValueArrayInvalidValueAssignment2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetImageUrlsUrlCss3ValueArray" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetImageUrlsUrlCss3ValueArrayInvalidValueAssignment1" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetImageUrlsUrlCss3ValueArrayInvalidValueAssignment2" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetImageUrlsUrlCss3ValueArrayInvalidValueAssignment2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testBackgroundImageBackgroundImage" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testGetCssValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testGetUrlCss3Values" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testGetUrlCss3Values" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testBackgroundImageStringArray" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetImageUrlsStringArray" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BackgroundImageTest" name="testSetCssValueString" time="0"/>

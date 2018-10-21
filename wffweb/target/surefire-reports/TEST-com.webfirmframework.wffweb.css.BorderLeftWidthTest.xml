@@ -71,14 +71,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testToString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testBorderLeftWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetAsMedium" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetCssValue" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetCssValue" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testBorderLeftWidthString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetAsThin" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetAsThin" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testBorderLeftWidthFloatCssLengthUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetAsInherit" time="0"/>
@@ -87,5 +87,5 @@
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testGetCssName" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetAsThick" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testSetPercent" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testBorderLeftWidthBorderLeftWidth" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderLeftWidthTest" name="testBorderLeftWidthBorderLeftWidth" time="0"/>
 </testsuite>

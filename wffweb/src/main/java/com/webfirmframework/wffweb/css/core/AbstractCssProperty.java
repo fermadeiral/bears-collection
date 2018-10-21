@@ -104,7 +104,7 @@ public abstract class AbstractCssProperty<EXTENDEDCLASS extends AbstractCssPrope
      * @author WFF
      */
     public String toCssString() {
-        return getCssName() + ":" + getCssValue();
+        return getCssName() + ':' + getCssValue();
     }
 
 }

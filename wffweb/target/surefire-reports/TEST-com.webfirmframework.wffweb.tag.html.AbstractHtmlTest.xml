@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="34" failures="0" name="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" time="2.541" errors="0" skipped="0">
+<testsuite tests="34" failures="0" name="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" time="2.069" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -71,38 +71,38 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceByArrayDeque" time="0.867"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchyInvalidTagException" time="0.122"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testSetGetSharedData" time="0.004"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceByArrayDeque" time="0.565"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchyInvalidTagException" time="0.008"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testSetGetSharedData" time="0.003"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesNoTagWithParentInvalidTagException" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStream" time="0.011"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsNonInnerClassFormat" time="0.36"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsInnerClassFormat" time="0.246"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStream" time="0.009"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsNonInnerClassFormat" time="0.296"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsInnerClassFormat" time="0.232"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testHierarchy" time="0.003"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testDiv" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStreamNoStackoverflowError" time="0.015"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStreamReturnedLength" time="0.477"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStreamNoStackoverflowError" time="0.012"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStreamReturnedLength" time="0.463"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtWithExp" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter" time="0.003"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream1" time="0.008"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream2" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBeforeWithNoParentException" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfterWithNoParentException" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesAndGetTagFromWffBMBytes" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream1" time="0.005"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream2" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBeforeWithNoParentException" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfterWithNoParentException" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesAndGetTagFromWffBMBytes" time="0.004"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlString" time="0.009"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchy" time="0.007"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtAndGetChildrenSize" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testAddRemoveAttributesAttributes" time="0.004"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChildClassCastException" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter2" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchy" time="0.008"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtAndGetChildrenSize" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testAddRemoveAttributesAttributes" time="0.014"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChildClassCastException" time="0.004"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBefore" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChild" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString1" time="0.005"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString2" time="0.003"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtTypeCastedWithClassCastException" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlStringNoStackoverflowError" time="0.004"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetRootTag" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild1" time="0.195"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild2" time="0.186"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesNoTagWithoutParentInvalidTagException" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtTypeCastedWithClassCastException" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlStringNoStackoverflowError" time="0.005"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetRootTag" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild1" time="0.209"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild2" time="0.201"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesNoTagWithoutParentInvalidTagException" time="0.001"/>
 </testsuite>

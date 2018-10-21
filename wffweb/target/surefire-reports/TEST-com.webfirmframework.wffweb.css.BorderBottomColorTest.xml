@@ -77,8 +77,8 @@
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetAsTransparent" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testGetCssValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testBorderBottomColor" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetCssValueString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetRgbCssValue" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetCssValueString" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetRgbCssValue" time="0.002"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetAsInherit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testSetAsInitial" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderBottomColorTest" name="testGetCssName" time="0"/>

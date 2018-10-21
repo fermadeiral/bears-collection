@@ -71,21 +71,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testGetValue" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testGetValue" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testToString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testGetUnit" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsMedium" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthBorderRightWidth" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthBorderRightWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthFloat" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testGetCssValue" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthFloatCssLengthUnit" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthFloatCssLengthUnit" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidthString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsThin" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsThin" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetCssValueString" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsInherit" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsInitial" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsInitial" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testBorderRightWidth" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testGetCssName" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsThick" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetAsThick" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.css.BorderRightWidthTest" name="testSetPercent" time="0"/>
 </testsuite>

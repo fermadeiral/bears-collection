@@ -73,6 +73,6 @@
   </properties>
   <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testBlankAbstractHtmlAbstractHtmlArray" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testBlankAbstractHtmlString" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testBlankAbstractHtmlCollectionOfAbstractHtml" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testAddChildAbstractHtml" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testBlankAbstractHtmlCollectionOfAbstractHtml" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.htmlwff.BlankTest" name="testAddChildAbstractHtml" time="0.002"/>
 </testsuite>

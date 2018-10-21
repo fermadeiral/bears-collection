@@ -71,12 +71,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue1" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue2" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue1" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue3" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue4" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue5" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplit1" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplitForInvalidValue5" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplit1" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplit2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplit3" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.util.CssValueUtilTest" name="testSplit4" time="0"/>
