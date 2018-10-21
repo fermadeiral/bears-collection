@@ -38,7 +38,6 @@ import com.webfirmframework.wffweb.css.core.CssProperty;
 import com.webfirmframework.wffweb.css.css3.AlignContent;
 import com.webfirmframework.wffweb.css.css3.BackfaceVisibility;
 import com.webfirmframework.wffweb.csswff.CustomCssProperty;
-import com.webfirmframework.wffweb.tag.html.stylesandsemantics.Div;
 
 /**
  * 
@@ -257,13 +256,13 @@ public class StyleTest {
         assertEquals(1, cssProperties.size());
         
         HeightCss heightCss = new HeightCss(50F);
-        cssProperties.add(heightCss);
+        style.addCssProperty(heightCss);
         
         assertEquals(heightCss, style.getCssProperty(CssNameConstants.HEIGHT));
         
         HeightCss heightCss2 = new HeightCss(50F);
         {
-            cssProperties.add(heightCss2);
+            style.addCssProperty(heightCss2);
             
             assertEquals(heightCss2, style.getCssProperty(CssNameConstants.HEIGHT));
             style.removeCssProperty(CssNameConstants.HEIGHT);
@@ -271,21 +270,21 @@ public class StyleTest {
             assertFalse(cssProperties.contains(heightCss2));
         }
         {
-            cssProperties.add(heightCss2);
+            style.addCssProperty(heightCss2);
             
             assertEquals(heightCss2, style.getCssProperty(CssNameConstants.HEIGHT));
-            cssProperties.remove(heightCss2);
+            style.removeCssProperty(heightCss2);
             assertNull(style.getCssProperty(CssNameConstants.HEIGHT));
         }
         {
             style.addCssProperty(heightCss2);
             
             assertEquals(heightCss2, style.getCssProperty(CssNameConstants.HEIGHT));
-            cssProperties.remove(heightCss2);
+            style.removeCssProperty(heightCss2);
             
             assertNull(style.getCssProperty(CssNameConstants.HEIGHT));
             
-            cssProperties.add(heightCss2);
+            style.removeCssProperty(heightCss2);
             
             style.removeCssProperty(heightCss2);
             assertNull(style.getCssProperty(CssNameConstants.HEIGHT));
@@ -389,11 +388,35 @@ public class StyleTest {
         
     }    
 
-//    @Test
-    public void testInit() {
-         fail("Not yet implemented");
+    @Test
+    public void testGetCssProperty() {
+        final Style style = new Style("color:green !important");
+        
+        assertEquals("style=\"color:green !important;\"", style.toHtmlString());
+        assertEquals("color:green !important;", style.getAttributeValue());
+        
+        final CssProperty cssProperty1 = style.getCssProperty("color");
+        
+        assertNotNull(cssProperty1);
+        
+        final CssProperty cssProperty2 = style.getCssProperty("color");
+        
+        assertNotNull(cssProperty2);
+        
+        assertEquals(cssProperty1, cssProperty2);
+        
+        final CssProperty customCssProperty2 = style.getCssProperty("custom");
+        
+        assertNull(customCssProperty2);
+        
+        
     }
 
+//    @Test
+    public void testInit() {
+        fail("Not yet implemented");
+    }
+    
 //    @Test
     public void testIsImportantCssProperty() {
          fail("Not yet implemented");
@@ -401,11 +424,6 @@ public class StyleTest {
 
 //    @Test
     public void testIsImportantString() {
-         fail("Not yet implemented");
-    }
-
-//    @Test
-    public void testGetCssProperty() {
          fail("Not yet implemented");
     }
 
@@ -522,11 +540,18 @@ public class StyleTest {
 
         assertEquals(1, style.getCssProperties().size());
 
+    }
+    
+    @Test(expected = UnsupportedOperationException.class)
+    public void testGetCssPropertiesUnsupportedOperationException() {
+        Style style = new Style("background:green");
+        
+        style.addCssProperty("background", "green");
+
         style.getCssProperties().clear();
 
-        assertEquals(0, style.getCssProperties().size());
-
     }
+ 
     
     @Test
     public void testGetAttributeValue() {
