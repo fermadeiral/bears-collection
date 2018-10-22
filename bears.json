@@ -1,0 +1,156 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "danfickle/openhtmltopdf",
+    "githubId": 45526710,
+    "url": "https://github.com/danfickle/openhtmltopdf",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444287866,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/444287866",
+      "date": "Oct 21, 2018 9:23:20 AM"
+    },
+    "fixerBuild": {
+      "id": 444553133,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/444553133",
+      "date": "Oct 22, 2018 7:49:02 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 22, 2018 8:08:42 AM",
+    "reproductionDateEnd": "Oct 22, 2018 8:13:37 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 357482528,
+      "totalMemory": 439877632
+    },
+    "totalDuration": 290,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 88,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          88
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 52,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          52
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/danfickle/openhtmltopdf/444287866/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 15,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/danfickle/openhtmltopdf/444287866/openhtmltopdf-examples",
+    "overallMetrics": {
+      "numberRunning": 95,
+      "numberPassing": 93,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "numberRunning": 51,
+        "numberPassing": 49,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 6
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "testMethod": "testRunningNestedFloat",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "testMethod": "testRunningNestedListItems",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 395,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "08766ddbd4af79ef633c35367c9d457e1a166560",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/08766ddbd4af79ef633c35367c9d457e1a166560",
+      "date": "Oct 21, 2018 9:20:11 AM"
+    },
+    "fixerBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "968163c69ebab634c16a6d602f1da3621312af3e",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/968163c69ebab634c16a6d602f1da3621312af3e",
+      "date": "Oct 22, 2018 7:45:47 AM"
+    }
+  }
+}
