@@ -1,0 +1,184 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Winegrower
+[INFO] Apache Winegrower :: Core
+[INFO] Apache Winegrower :: Extension
+[INFO] Apache Winegrower :: Extension :: Testing
+[INFO] Apache Winegrower :: Extension :: Testing :: JUnit5
+[INFO] Apache Winegrower :: Extension :: Build
+[INFO] Apache Winegrower :: Extension :: Build :: Common
+[INFO] Apache Winegrower :: Extension :: Build :: Maven
+[INFO] Apache Winegrower :: Extension :: CDI
+[INFO] Apache Winegrower :: Extension :: Servlet
+[INFO] Apache Winegrower :: Cepages
+[INFO] Apache Winegrower :: Cepages :: HTTP
+[INFO] Apache Winegrower :: Cepages :: CXF JAX-RS
+[INFO] Apache Winegrower :: Cepages :: JAXRS
+[INFO] Apache Winegrower :: Extension :: Agent
+[INFO] Apache Winegrower :: Cepages :: Shell
+[INFO] Apache Winegrower :: Examples
+[INFO] Apache Winegrower :: Examples :: Simple
+[INFO] Apache Winegrower :: Examples :: Bundle
+[INFO] Apache Winegrower :: Examples :: Config
+[INFO] Apache Winegrower :: Examples :: Shell
+[INFO] Apache Winegrower :: Examples :: HTTP
+[INFO] Apache Winegrower :: Examples :: JAX-RS
+[INFO] Apache Winegrower :: Examples :: JAXRS Whiteboard
+[INFO] Apache Winegrower :: Extension :: CDI
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Winegrower 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ winegrower ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (prepare-agent) @ winegrower ---
+[INFO] argLine set to -javaagent:/root/./workspace/jbonofre/winegrower/444415761/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/jbonofre/winegrower/444415761/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ winegrower ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (post-unit-test) @ winegrower ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Winegrower :: Core 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ winegrower-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (prepare-agent) @ winegrower-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/jbonofre/winegrower/444415761/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/jbonofre/winegrower/444415761/winegrower-core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ winegrower-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ winegrower-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/jbonofre/winegrower/444415761/winegrower-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ winegrower-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ winegrower-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ winegrower-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ winegrower-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom (7 KB at 14.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 54.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.pom (3 KB at 55.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar (65 KB at 794.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.jar (93 KB at 796.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.winegrower.InjectionTest
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.446
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.686
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 s - in org.apache.winegrower.InjectionTest
+[INFO] Running org.apache.winegrower.RipenerTest
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.716
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.795
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.803
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.831
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.832
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.835
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.863
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.876
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.902
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.912
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.934
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.937
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.955
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.955
+[main] INFO org.apache.winegrower.Ripener - Starting Apache Winegrower application on 2018-10-22T08:10:38.957
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.984
+[main] INFO org.apache.winegrower.Ripener - Stopping Apache Winegrower application on 2018-10-22T08:10:38.986
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 s - in org.apache.winegrower.RipenerTest
+[INFO] Running org.apache.winegrower.deployer.BundleImplTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.apache.winegrower.deployer.BundleImplTest
+[INFO] Running org.apache.winegrower.service.DefaultConfigurationAdminTest
+/root/workspace/jbonofre/winegrower/444415761/winegrower-core/src/test/resources
+[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! - in org.apache.winegrower.service.DefaultConfigurationAdminTest
+[ERROR] externalConfigPathTest  Time elapsed: 0.026 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <bar> but was: <null>
+	at org.apache.winegrower.service.DefaultConfigurationAdminTest.externalConfigPathTest(DefaultConfigurationAdminTest.java:50)
+
+[ERROR] externalConfigClasspathTest  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <bar> but was: <null>
+	at org.apache.winegrower.service.DefaultConfigurationAdminTest.externalConfigClasspathTest(DefaultConfigurationAdminTest.java:39)
+
+[INFO] Running org.apache.winegrower.service.ServiceReferenceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.winegrower.service.ServiceReferenceImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultConfigurationAdminTest.externalConfigClasspathTest:39 expected: <bar> but was: <null>
+[ERROR]   DefaultConfigurationAdminTest.externalConfigPathTest:50 expected: <bar> but was: <null>
+[INFO] 
+[ERROR] Tests run: 35, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Winegrower .................................. SUCCESS [  1.511 s]
+[INFO] Apache Winegrower :: Core .......................... FAILURE [  5.140 s]
+[INFO] Apache Winegrower :: Extension ..................... SKIPPED
+[INFO] Apache Winegrower :: Extension :: Testing .......... SKIPPED
+[INFO] Apache Winegrower :: Extension :: Testing :: JUnit5  SKIPPED
+[INFO] Apache Winegrower :: Extension :: Build ............ SKIPPED
+[INFO] Apache Winegrower :: Extension :: Build :: Common .. SKIPPED
+[INFO] Apache Winegrower :: Extension :: Build :: Maven ... SKIPPED
+[INFO] Apache Winegrower :: Extension :: CDI .............. SKIPPED
+[INFO] Apache Winegrower :: Extension :: Servlet .......... SKIPPED
+[INFO] Apache Winegrower :: Cepages ....................... SKIPPED
+[INFO] Apache Winegrower :: Cepages :: HTTP ............... SKIPPED
+[INFO] Apache Winegrower :: Cepages :: CXF JAX-RS ......... SKIPPED
+[INFO] Apache Winegrower :: Cepages :: JAXRS .............. SKIPPED
+[INFO] Apache Winegrower :: Extension :: Agent ............ SKIPPED
+[INFO] Apache Winegrower :: Cepages :: Shell .............. SKIPPED
+[INFO] Apache Winegrower :: Examples ...................... SKIPPED
+[INFO] Apache Winegrower :: Examples :: Simple ............ SKIPPED
+[INFO] Apache Winegrower :: Examples :: Bundle ............ SKIPPED
+[INFO] Apache Winegrower :: Examples :: Config ............ SKIPPED
+[INFO] Apache Winegrower :: Examples :: Shell ............. SKIPPED
+[INFO] Apache Winegrower :: Examples :: HTTP .............. SKIPPED
+[INFO] Apache Winegrower :: Examples :: JAX-RS ............ SKIPPED
+[INFO] Apache Winegrower :: Examples :: JAXRS Whiteboard .. SKIPPED
+[INFO] Apache Winegrower :: Extension :: CDI .............. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.855 s
+[INFO] Finished at: 2018-10-22T08:10:39+02:00
+[INFO] Final Memory: 34M/616M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project winegrower-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/jbonofre/winegrower/444415761/winegrower-core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :winegrower-core
