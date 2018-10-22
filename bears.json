@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "jbonofre/winegrower",
+    "githubId": 152871165,
+    "url": "https://github.com/jbonofre/winegrower",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444573819,
+      "url": "http://travis-ci.org/jbonofre/winegrower/builds/444573819",
+      "date": "Oct 22, 2018 10:25:37 AM"
+    },
+    "fixerBuild": {
+      "id": 444592052,
+      "url": "http://travis-ci.org/jbonofre/winegrower/builds/444592052",
+      "date": "Oct 22, 2018 12:30:03 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 22, 2018 12:30:31 PM",
+    "reproductionDateEnd": "Oct 22, 2018 12:34:34 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 315597256,
+      "totalMemory": 400031744
+    },
+    "totalDuration": 237,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 101,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          100
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          39
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jbonofre/winegrower/444573819/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 362
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jbonofre/winegrower/444573819/winegrower-extension/winegrower-servlet",
+    "overallMetrics": {
+      "numberRunning": 44,
+      "numberPassing": 43,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.winegrower.servlet.RipenerLifecycleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.winegrower.servlet.RipenerLifecycleTest",
+        "testMethod": "ensureIsStarted",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: not \u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberSourceFiles": 49,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jbonofre/winegrower",
+      "branchName": "master",
+      "sha": "7155e7cf87278aaa89a7c0740fb3e7d1e2c93fc8",
+      "url": "http://github.com/jbonofre/winegrower/commit/7155e7cf87278aaa89a7c0740fb3e7d1e2c93fc8",
+      "date": "Oct 22, 2018 10:01:10 AM"
+    },
+    "fixerBuild": {
+      "repoName": "jbonofre/winegrower",
+      "branchName": "master",
+      "sha": "e5bd665afc8908431394c1a0dfaa1b2a5a79737d",
+      "url": "http://github.com/jbonofre/winegrower/commit/e5bd665afc8908431394c1a0dfaa1b2a5a79737d",
+      "date": "Oct 22, 2018 11:18:09 AM"
+    }
+  },
+  "type": "passing_passing"
+}
