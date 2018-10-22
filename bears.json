@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jbonofre/winegrower",
+    "githubId": 152871165,
+    "url": "https://github.com/jbonofre/winegrower",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444415761,
+      "url": "http://travis-ci.org/jbonofre/winegrower/builds/444415761",
+      "date": "Oct 21, 2018 7:20:43 PM"
+    },
+    "fixerBuild": {
+      "id": 444551875,
+      "url": "http://travis-ci.org/jbonofre/winegrower/builds/444551875",
+      "date": "Oct 22, 2018 7:35:48 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 22, 2018 8:08:36 AM",
+    "reproductionDateEnd": "Oct 22, 2018 8:12:20 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 329509248,
+      "totalMemory": 405798912
+    },
+    "totalDuration": 218,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 107,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          106
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jbonofre/winegrower/444415761/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 61,
+      "numberDeleted": 118
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jbonofre/winegrower/444415761/winegrower-core",
+    "overallMetrics": {
+      "numberRunning": 35,
+      "numberPassing": 33,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.winegrower.service.DefaultConfigurationAdminTest",
+        "numberRunning": 3,
+        "numberPassing": 1,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.winegrower.service.DefaultConfigurationAdminTest",
+        "testMethod": "externalConfigClasspathTest",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cbar\u003e but was: \u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.winegrower.service.DefaultConfigurationAdminTest",
+        "testMethod": "externalConfigPathTest",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cbar\u003e but was: \u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberSourceFiles": 48,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jbonofre/winegrower",
+      "branchName": "master",
+      "sha": "bca634ba641ef28b3ad583ec6d92738b1f6aeb51",
+      "url": "http://github.com/jbonofre/winegrower/commit/bca634ba641ef28b3ad583ec6d92738b1f6aeb51",
+      "date": "Oct 21, 2018 7:17:40 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jbonofre/winegrower",
+      "branchName": "master",
+      "sha": "21204ecc57d9347cb3735e391faed130b20cdae5",
+      "url": "http://github.com/jbonofre/winegrower/commit/21204ecc57d9347cb3735e391faed130b20cdae5",
+      "date": "Oct 22, 2018 7:32:56 AM"
+    }
+  },
+  "type": "passing_passing"
+}
