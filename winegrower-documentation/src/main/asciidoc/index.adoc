@@ -1,0 +1,4 @@
+= Apache Winegrower
+
+* xref:core/index.adoc[Core] documentation
+* xref:extension/index.adoc[Extension] documentation
