@@ -63,50 +63,44 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-common ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 5.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 64.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 866.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.gradoop.common.util.AsciiGraphLoaderTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.934 sec - in org.gradoop.common.util.AsciiGraphLoaderTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.997 sec - in org.gradoop.common.util.AsciiGraphLoaderTest
 Running org.gradoop.common.util.NetworkHelperTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.common.util.NetworkHelperTest
 Running org.gradoop.common.model.impl.pojo.VertexTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.gradoop.common.model.impl.pojo.VertexTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.gradoop.common.model.impl.pojo.VertexTest
 Running org.gradoop.common.model.impl.pojo.GraphElementTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.52 sec - in org.gradoop.common.model.impl.pojo.GraphElementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.022 sec - in org.gradoop.common.model.impl.pojo.GraphElementTest
 Running org.gradoop.common.model.impl.pojo.ElementTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.gradoop.common.model.impl.pojo.ElementTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.gradoop.common.model.impl.pojo.ElementTest
 Running org.gradoop.common.model.impl.pojo.GraphHeadTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.gradoop.common.model.impl.pojo.GraphHeadTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.common.model.impl.pojo.GraphHeadTest
 Running org.gradoop.common.model.impl.pojo.EdgeTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.gradoop.common.model.impl.pojo.EdgeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.common.model.impl.pojo.EdgeTest
 Running org.gradoop.common.model.impl.properties.PropertiesTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.gradoop.common.model.impl.properties.PropertiesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.gradoop.common.model.impl.properties.PropertiesTest
 Running org.gradoop.common.model.impl.properties.PropertyValueTest
-Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in org.gradoop.common.model.impl.properties.PropertyValueTest
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in org.gradoop.common.model.impl.properties.PropertyValueTest
 Running org.gradoop.common.model.impl.properties.PropertyValueListTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.gradoop.common.model.impl.properties.PropertyValueListTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.common.model.impl.properties.PropertyValueListTest
 Running org.gradoop.common.model.impl.properties.PropertyValueUtilsTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest
 Running org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$BytesTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$BytesTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$BytesTest
 Running org.gradoop.common.model.impl.properties.PropertyTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.common.model.impl.properties.PropertyTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.gradoop.common.model.impl.properties.PropertyTest
 Running org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$BooleanTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$BooleanTest
 Running org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$NumericTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$NumericTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.common.model.impl.properties.PropertyValueUtilsTest$NumericTest
 Running org.gradoop.common.model.impl.id.GradoopIdTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.common.model.impl.id.GradoopIdTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.common.model.impl.id.GradoopIdTest
 Running org.gradoop.common.model.impl.id.GradoopIdsTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.common.model.impl.id.GradoopIdsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.common.model.impl.id.GradoopIdsTest
 
 Results :
 
@@ -126,7 +120,7 @@ Tests run: 298, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-flink ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1119 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/target/classes
+[INFO] Compiling 1066 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/target/classes
 [INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/src/main/java/org/gradoop/flink/io/impl/csv/indexed/functions/MultipleFileOutputFormat.java: /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/src/main/java/org/gradoop/flink/io/impl/csv/indexed/functions/MultipleFileOutputFormat.java uses or overrides a deprecated API.
 [INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/src/main/java/org/gradoop/flink/io/impl/csv/indexed/functions/MultipleFileOutputFormat.java: Recompile with -Xlint:deprecation for details.
 [INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/src/main/java/org/gradoop/flink/model/impl/layouts/transactional/tuples/GraphTransaction.java: Some input files use unchecked or unsafe operations.
@@ -150,353 +144,497 @@ Tests run: 298, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running org.gradoop.flink.representation.RepresentationConverterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.077 sec - in org.gradoop.flink.representation.RepresentationConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.539 sec - in org.gradoop.flink.representation.RepresentationConverterTest
 Running org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientDirectedTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.389 sec - in org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientDirectedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.359 sec - in org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientDirectedTest
 Running org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientUndirectedTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.801 sec - in org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientUndirectedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.155 sec - in org.gradoop.flink.algorithms.gelly.clusteringcoefficient.GellyClusteringCoefficientUndirectedTest
 Running org.gradoop.flink.algorithms.gelly.connectedcomponents.WeaklyConnectedComponentsAsCollectionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.087 sec - in org.gradoop.flink.algorithms.gelly.connectedcomponents.WeaklyConnectedComponentsAsCollectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.245 sec - in org.gradoop.flink.algorithms.gelly.connectedcomponents.WeaklyConnectedComponentsAsCollectionTest
 Running org.gradoop.flink.algorithms.gelly.vertexdegrees.DistinctVertexDegreesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 sec - in org.gradoop.flink.algorithms.gelly.vertexdegrees.DistinctVertexDegreesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.846 sec - in org.gradoop.flink.algorithms.gelly.vertexdegrees.DistinctVertexDegreesTest
 Running org.gradoop.flink.algorithms.gelly.shortestpaths.SingleSourceShortestPathsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.351 sec - in org.gradoop.flink.algorithms.gelly.shortestpaths.SingleSourceShortestPathsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.88 sec - in org.gradoop.flink.algorithms.gelly.shortestpaths.SingleSourceShortestPathsTest
 Running org.gradoop.flink.algorithms.gelly.hits.HITSTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.08 sec - in org.gradoop.flink.algorithms.gelly.hits.HITSTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.246 sec - in org.gradoop.flink.algorithms.gelly.hits.HITSTest
 Running org.gradoop.flink.algorithms.gelly.pagerank.PageRankTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.402 sec - in org.gradoop.flink.algorithms.gelly.pagerank.PageRankTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.658 sec - in org.gradoop.flink.algorithms.gelly.pagerank.PageRankTest
 Running org.gradoop.flink.algorithms.gelly.labelpropagation.GradoopLabelPropagationTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.991 sec - in org.gradoop.flink.algorithms.gelly.labelpropagation.GradoopLabelPropagationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.676 sec - in org.gradoop.flink.algorithms.gelly.labelpropagation.GradoopLabelPropagationTest
 Running org.gradoop.flink.algorithms.gelly.trianglecounting.GellyTriangleCountingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.262 sec - in org.gradoop.flink.algorithms.gelly.trianglecounting.GellyTriangleCountingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.223 sec - in org.gradoop.flink.algorithms.gelly.trianglecounting.GellyTriangleCountingTest
 Running org.gradoop.flink.algorithms.btgs.BusinessTransactionGraphsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 sec - in org.gradoop.flink.algorithms.btgs.BusinessTransactionGraphsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.643 sec - in org.gradoop.flink.algorithms.btgs.BusinessTransactionGraphsTest
 Running org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsDIMSpanTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.387 sec - in org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsDIMSpanTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.519 sec - in org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsDIMSpanTest
 Running org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsThinkLikeAnEmbeddingTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.041 sec - in org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsThinkLikeAnEmbeddingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.254 sec - in org.gradoop.flink.algorithms.fsm.transactional.basic.BasicPatternsThinkLikeAnEmbeddingTest
 Running org.gradoop.flink.io.impl.edgelist.VertexLabeledEdgeListDataSourceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.094 sec - in org.gradoop.flink.io.impl.edgelist.VertexLabeledEdgeListDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 sec - in org.gradoop.flink.io.impl.edgelist.VertexLabeledEdgeListDataSourceTest
 Running org.gradoop.flink.io.impl.edgelist.EdgeListDataSourceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 sec - in org.gradoop.flink.io.impl.edgelist.EdgeListDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.958 sec - in org.gradoop.flink.io.impl.edgelist.EdgeListDataSourceTest
 Running org.gradoop.flink.io.impl.tlf.TLFDataSinkTest
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.899 sec <<< FAILURE! - in org.gradoop.flink.io.impl.tlf.TLFDataSinkTest
-testWriteWithoutEdgesWithDictionaries(org.gradoop.flink.io.impl.tlf.TLFDataSinkTest)  Time elapsed: 2.523 sec  <<< ERROR!
-org.apache.flink.runtime.client.JobExecutionException: Job execution failed.
-Caused by: java.io.IOException: Mkdirs failed to create /tmp/junit3696118353473629836/data/tlf/dictionaries
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.827 sec - in org.gradoop.flink.io.impl.tlf.TLFDataSinkTest
 Running org.gradoop.flink.io.impl.tlf.TLFDataSourceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.777 sec - in org.gradoop.flink.io.impl.tlf.TLFDataSourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.262 sec - in org.gradoop.flink.io.impl.tlf.TLFDataSourceTest
 Running org.gradoop.flink.io.impl.graph.GraphDataSourceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.372 sec - in org.gradoop.flink.io.impl.graph.GraphDataSourceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.449 sec - in org.gradoop.flink.io.impl.graph.GraphDataSourceTest
 Running org.gradoop.flink.io.impl.statistics.GraphStatisticsDataSinkTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.421 sec - in org.gradoop.flink.io.impl.statistics.GraphStatisticsDataSinkTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.917 sec - in org.gradoop.flink.io.impl.statistics.GraphStatisticsDataSinkTest
 Running org.gradoop.flink.io.impl.gdl.GDLDataSinkTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.365 sec - in org.gradoop.flink.io.impl.gdl.GDLDataSinkTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.354 sec - in org.gradoop.flink.io.impl.gdl.GDLDataSinkTest
 Running org.gradoop.flink.io.impl.deprecated.json.JSONDataSinkTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.909 sec - in org.gradoop.flink.io.impl.deprecated.json.JSONDataSinkTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 sec - in org.gradoop.flink.io.impl.deprecated.json.JSONDataSinkTest
 Running org.gradoop.flink.io.impl.deprecated.json.JSONDataSourceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.gradoop.flink.io.impl.deprecated.json.JSONDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.624 sec - in org.gradoop.flink.io.impl.deprecated.json.JSONDataSourceTest
 Running org.gradoop.flink.io.impl.dot.DOTDataSinkTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 sec - in org.gradoop.flink.io.impl.dot.DOTDataSinkTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.806 sec - in org.gradoop.flink.io.impl.dot.DOTDataSinkTest
 Running org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSinkTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.033 sec - in org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSinkTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.174 sec - in org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSinkTest
 Running org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.08 sec - in org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.421 sec - in org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest
 Running org.gradoop.flink.io.impl.csv.CSVDataSourceTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.58 sec - in org.gradoop.flink.io.impl.csv.CSVDataSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.115 sec - in org.gradoop.flink.io.impl.csv.CSVDataSourceTest
 Running org.gradoop.flink.io.impl.csv.conversion.LogicalGraphIndexedCSVToCSVTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.552 sec - in org.gradoop.flink.io.impl.csv.conversion.LogicalGraphIndexedCSVToCSVTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.422 sec - in org.gradoop.flink.io.impl.csv.conversion.LogicalGraphIndexedCSVToCSVTest
 Running org.gradoop.flink.io.impl.csv.conversion.LogicalGraphCSVToCSVTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in org.gradoop.flink.io.impl.csv.conversion.LogicalGraphCSVToCSVTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.234 sec - in org.gradoop.flink.io.impl.csv.conversion.LogicalGraphCSVToCSVTest
 Running org.gradoop.flink.io.impl.csv.functions.StringEscaperTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.gradoop.flink.io.impl.csv.functions.StringEscaperTest
 Running org.gradoop.flink.io.impl.csv.CSVDataSinkTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.455 sec - in org.gradoop.flink.io.impl.csv.CSVDataSinkTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.909 sec - in org.gradoop.flink.io.impl.csv.CSVDataSinkTest
 Running org.gradoop.flink.util.FlinkAsciiGraphLoaderTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.885 sec - in org.gradoop.flink.util.FlinkAsciiGraphLoaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.891 sec - in org.gradoop.flink.util.FlinkAsciiGraphLoaderTest
 Running org.gradoop.flink.model.impl.pojo.PojoSerializationTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in org.gradoop.flink.model.impl.pojo.PojoSerializationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.543 sec - in org.gradoop.flink.model.impl.pojo.PojoSerializationTest
 Running org.gradoop.flink.model.impl.properties.PropertiesSerializationTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 sec - in org.gradoop.flink.model.impl.properties.PropertiesSerializationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 sec - in org.gradoop.flink.model.impl.properties.PropertiesSerializationTest
 Running org.gradoop.flink.model.impl.functions.epgm.RenameLabelTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 sec - in org.gradoop.flink.model.impl.functions.epgm.RenameLabelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec - in org.gradoop.flink.model.impl.functions.epgm.RenameLabelTest
 Running org.gradoop.flink.model.impl.functions.epgm.RenamePropertyKeysTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in org.gradoop.flink.model.impl.functions.epgm.RenamePropertyKeysTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 sec - in org.gradoop.flink.model.impl.functions.epgm.RenamePropertyKeysTest
 Running org.gradoop.flink.model.impl.functions.filters.CombinableFilterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.823 sec - in org.gradoop.flink.model.impl.functions.filters.CombinableFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.861 sec - in org.gradoop.flink.model.impl.functions.filters.CombinableFilterTest
 Running org.gradoop.flink.model.impl.functions.filters.AbstractRichCombinedFilterFunctionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 sec - in org.gradoop.flink.model.impl.functions.filters.AbstractRichCombinedFilterFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec - in org.gradoop.flink.model.impl.functions.filters.AbstractRichCombinedFilterFunctionTest
 Running org.gradoop.flink.model.impl.LogicalGraphTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec - in org.gradoop.flink.model.impl.LogicalGraphTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.634 sec - in org.gradoop.flink.model.impl.LogicalGraphTest
 Running org.gradoop.flink.model.impl.id.GradoopIdSerializationTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.557 sec - in org.gradoop.flink.model.impl.id.GradoopIdSerializationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec - in org.gradoop.flink.model.impl.id.GradoopIdSerializationTest
 Running org.gradoop.flink.model.impl.operators.tostring.CanonicalAdjacencyMatrixBuilderTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.304 sec - in org.gradoop.flink.model.impl.operators.tostring.CanonicalAdjacencyMatrixBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.322 sec - in org.gradoop.flink.model.impl.operators.tostring.CanonicalAdjacencyMatrixBuilderTest
 Running org.gradoop.flink.model.impl.operators.limit.LimitTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.254 sec - in org.gradoop.flink.model.impl.operators.limit.LimitTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.292 sec - in org.gradoop.flink.model.impl.operators.limit.LimitTest
 Running org.gradoop.flink.model.impl.operators.exclusion.ExclusionTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.126 sec - in org.gradoop.flink.model.impl.operators.exclusion.ExclusionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.988 sec - in org.gradoop.flink.model.impl.operators.exclusion.ExclusionTest
 Running org.gradoop.flink.model.impl.operators.neighborhood.NeighborhoodTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.983 sec - in org.gradoop.flink.model.impl.operators.neighborhood.NeighborhoodTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.911 sec - in org.gradoop.flink.model.impl.operators.neighborhood.NeighborhoodTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.TripleTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.TripleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.TripleTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.PropertySelectorComparableTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.PropertySelectorComparableTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.ElementSelectorComparableTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.ElementSelectorComparableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.ElementSelectorComparableTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.LiteralComparableTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.LiteralComparableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.compareables.LiteralComparableTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.expressions.ComparisonExpressionTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.expressions.ComparisonExpressionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.expressions.ComparisonExpressionTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.XorPredicateTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.XorPredicateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.XorPredicateTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.NotPredicateTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.NotPredicateTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.NotPredicateTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.OrPredicateTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.OrPredicateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.OrPredicateTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.AndPredicateTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.AndPredicateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.booleans.AndPredicateTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFElementTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFElementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFElementTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.predicates.CNFTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.DFSTraverserTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.DFSTraverserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.DFSTraverserTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.GraphMetricsTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.GraphMetricsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.GraphMetricsTest
 Running org.gradoop.flink.model.impl.operators.matching.common.query.QueryHandlerTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.QueryHandlerTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.gradoop.flink.model.impl.operators.matching.common.query.QueryHandlerTest
 Running org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsLocalFSReaderTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsLocalFSReaderTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsLocalFSReaderTest
 Running org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsHDFSReaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsHDFSReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.gradoop.flink.model.impl.operators.matching.common.statistics.GraphStatisticsHDFSReaderTest
 Running org.gradoop.flink.model.impl.operators.matching.common.functions.ElementsFromEmbeddingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.gradoop.flink.model.impl.operators.matching.common.functions.ElementsFromEmbeddingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.gradoop.flink.model.impl.operators.matching.common.functions.ElementsFromEmbeddingTest
 Running org.gradoop.flink.model.impl.operators.matching.common.functions.AddGraphElementToNewGraphTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.common.functions.AddGraphElementToNewGraphTest
 Running org.gradoop.flink.model.impl.operators.matching.transactional.TransactionalPatternMatchingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.624 sec - in org.gradoop.flink.model.impl.operators.matching.transactional.TransactionalPatternMatchingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.198 sec - in org.gradoop.flink.model.impl.operators.matching.transactional.TransactionalPatternMatchingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairBulkTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.792 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairBulkTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.904 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairBulkTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairLoopUnrollingTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.117 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairLoopUnrollingTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.29 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairLoopUnrollingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismTriplesForLoopTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.015 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismTriplesForLoopTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.654 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismTriplesForLoopTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairForLoopTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.513 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairForLoopTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 66.544 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismSetPairForLoopTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairBulkTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.087 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairBulkTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.402 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeHomomorphismSetPairBulkTest
 Running org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismTriplesForLoopTest
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.689 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismTriplesForLoopTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.064 sec - in org.gradoop.flink.model.impl.operators.matching.single.preserving.explorative.ExplorativeIsomorphismTriplesForLoopTest
 Running org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationBulkTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.48 sec - in org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationBulkTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.207 sec - in org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationBulkTest
 Running org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationDeltaTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.44 sec - in org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationDeltaTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.3 sec - in org.gradoop.flink.model.impl.operators.matching.single.simulation.dual.DualSimulationDeltaTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.common.EmbeddingFactoryTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.EmbeddingFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.EmbeddingFactoryTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.common.functions.ReverseEdgeEmbeddingTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.functions.ReverseEdgeEmbeddingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingMetaDataTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingMetaDataTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingMetaDataTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.common.pojos.EmbeddingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingHomomorphismTest
-Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.395 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingHomomorphismTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.228 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingHomomorphismTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingIsomorphismTest
-Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.379 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingIsomorphismTest
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.692 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherPatternMatchingIsomorphismTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherGraphConstructionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.933 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherGraphConstructionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.CypherGraphConstructionTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEdgesTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEdgesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEdgesTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectVerticesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectVerticesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectVerticesTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEmbeddingsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.411 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEmbeddingsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.project.ProjectEmbeddingsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsBulkTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.276 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsBulkTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.207 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsBulkTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.ExtractExpandColumnTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.ExtractExpandColumnTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.CreateInitialExpandEmbeddingTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.CreateInitialExpandEmbeddingTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.CreateInitialExpandEmbeddingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.AdoptEmptyPathsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.AdoptEmptyPathsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.AdoptEmptyPathsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.MergeExpandEmbeddingsTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.MergeExpandEmbeddingsTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.MergeExpandEmbeddingsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.PostProcessExpandEmbeddingTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.PostProcessExpandEmbeddingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.functions.PostProcessExpandEmbeddingTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsForLoopTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.485 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsForLoopTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.048 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.expand.ExpandEmbeddingsForLoopTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectEdgesTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectEdgesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectEdgesTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectVerticesTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectVerticesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectVerticesTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectTriplesTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectTriplesTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.796 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterAndProjectTriplesTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterEmbeddingsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.551 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterEmbeddingsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.filter.FilterEmbeddingsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.JoinEmbeddingsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.854 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.JoinEmbeddingsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.019 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.JoinEmbeddingsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractJoinColumnsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractJoinColumnsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractJoinColumnsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.MergeEmbeddingsTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.MergeEmbeddingsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.MergeEmbeddingsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractPropertyJoinColumnsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractPropertyJoinColumnsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.551 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.functions.ExtractPropertyJoinColumnsTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.ValueJoinTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.729 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.ValueJoinTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.85 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.ValueJoinTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.CartesianProductTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.055 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.CartesianProductTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.322 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.operators.join.CartesianProductTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectEdgesNodeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectEdgesNodeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.649 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectEdgesNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectVerticesNodeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectVerticesNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.leaf.FilterAndProjectVerticesNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ExpandEmbeddingsNodeTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.745 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ExpandEmbeddingsNodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.079 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ExpandEmbeddingsNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.CartesianProductNodeTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.687 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.CartesianProductNodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.883 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.CartesianProductNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.JoinEmbeddingsNodeTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.JoinEmbeddingsNodeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.02 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.JoinEmbeddingsNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ValueJoinNodeTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.886 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ValueJoinNodeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.904 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.binary.ValueJoinNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.ProjectEmbeddingsNodeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.ProjectEmbeddingsNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.ProjectEmbeddingsNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.FilterEmbeddingsNodeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.FilterEmbeddingsNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.queryplan.unary.FilterEmbeddingsNodeTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.QueryPlanEstimatorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.QueryPlanEstimatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.QueryPlanEstimatorTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.FilterEstimatorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.FilterEstimatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.FilterEstimatorTest
 Running org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.JoinEstimatorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.JoinEstimatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.gradoop.flink.model.impl.operators.matching.single.cypher.planning.estimation.JoinEstimatorTest
 Running org.gradoop.flink.model.impl.operators.split.SplitTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.884 sec - in org.gradoop.flink.model.impl.operators.split.SplitTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.034 sec - in org.gradoop.flink.model.impl.operators.split.SplitTest
 Running org.gradoop.flink.model.impl.operators.selection.SelectionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.963 sec - in org.gradoop.flink.model.impl.operators.selection.SelectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in org.gradoop.flink.model.impl.operators.selection.SelectionTest
 Running org.gradoop.flink.model.impl.operators.propertytransformation.PropertyTransformationTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.013 sec - in org.gradoop.flink.model.impl.operators.propertytransformation.PropertyTransformationTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.741 sec - in org.gradoop.flink.model.impl.operators.propertytransformation.PropertyTransformationTest
 Running org.gradoop.flink.model.impl.operators.distinction.DistinctByIdTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.944 sec - in org.gradoop.flink.model.impl.operators.distinction.DistinctByIdTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.234 sec - in org.gradoop.flink.model.impl.operators.distinction.DistinctByIdTest
 Running org.gradoop.flink.model.impl.operators.distinction.DistinctByIsomorphismTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.809 sec - in org.gradoop.flink.model.impl.operators.distinction.DistinctByIsomorphismTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.059 sec - in org.gradoop.flink.model.impl.operators.distinction.DistinctByIsomorphismTest
 Running org.gradoop.flink.model.impl.operators.distinction.GroupByIsomorphismTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.867 sec - in org.gradoop.flink.model.impl.operators.distinction.GroupByIsomorphismTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.947 sec - in org.gradoop.flink.model.impl.operators.distinction.GroupByIsomorphismTest
 Running org.gradoop.flink.model.impl.operators.overlap.OverlapTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.678 sec - in org.gradoop.flink.model.impl.operators.overlap.OverlapTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.322 sec - in org.gradoop.flink.model.impl.operators.overlap.OverlapTest
 Running org.gradoop.flink.model.impl.operators.cloning.CloningTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.176 sec - in org.gradoop.flink.model.impl.operators.cloning.CloningTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.249 sec - in org.gradoop.flink.model.impl.operators.cloning.CloningTest
 Running org.gradoop.flink.model.impl.operators.intersection.ReduceIntersectionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.341 sec - in org.gradoop.flink.model.impl.operators.intersection.ReduceIntersectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.477 sec - in org.gradoop.flink.model.impl.operators.intersection.ReduceIntersectionTest
 Running org.gradoop.flink.model.impl.operators.statistics.StatisticsTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.504 sec - in org.gradoop.flink.model.impl.operators.statistics.StatisticsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.936 sec - in org.gradoop.flink.model.impl.operators.statistics.StatisticsTest
 Running org.gradoop.flink.model.impl.operators.fusion.VertexFusionTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.619 sec - in org.gradoop.flink.model.impl.operators.fusion.VertexFusionTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.337 sec - in org.gradoop.flink.model.impl.operators.fusion.VertexFusionTest
 Running org.gradoop.flink.model.impl.operators.subgraph.SubgraphTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.44 sec - in org.gradoop.flink.model.impl.operators.subgraph.SubgraphTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.743 sec - in org.gradoop.flink.model.impl.operators.subgraph.SubgraphTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomVertexSamplingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.358 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexSamplingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.539 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.statistics.ConnectedComponentsDistributionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.ConnectedComponentsDistributionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.972 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.ConnectedComponentsDistributionTest
 Running org.gradoop.flink.model.impl.operators.sampling.statistics.GraphDensityTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.GraphDensityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.649 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.GraphDensityTest
 Running org.gradoop.flink.model.impl.operators.sampling.statistics.AverageOutgoingDegreeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.867 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageOutgoingDegreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.851 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageOutgoingDegreeTest
 Running org.gradoop.flink.model.impl.operators.sampling.statistics.AverageIncomingDegreeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageIncomingDegreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.887 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageIncomingDegreeTest
 Running org.gradoop.flink.model.impl.operators.sampling.statistics.AverageDegreeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageDegreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 sec - in org.gradoop.flink.model.impl.operators.sampling.statistics.AverageDegreeTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomEdgeSamplingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomEdgeSamplingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.257 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomEdgeSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.PageRankSamplingTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 113.144 sec - in org.gradoop.flink.model.impl.operators.sampling.PageRankSamplingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 107.798 sec - in org.gradoop.flink.model.impl.operators.sampling.PageRankSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomVertexNeighborhoodSamplingTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.718 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexNeighborhoodSamplingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.634 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexNeighborhoodSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomNonUniformVertexSamplingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.437 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomNonUniformVertexSamplingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.535 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomNonUniformVertexSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomLimitedDegreeVertexSamplingTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.591 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomLimitedDegreeVertexSamplingTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.569 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomLimitedDegreeVertexSamplingTest
 Running org.gradoop.flink.model.impl.operators.sampling.RandomVertexEdgeSamplingTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.059 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexEdgeSamplingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.063 sec - in org.gradoop.flink.model.impl.operators.sampling.RandomVertexEdgeSamplingTest
 Running org.gradoop.flink.model.impl.operators.combination.CombinationTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.154 sec - in org.gradoop.flink.model.impl.operators.combination.CombinationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.357 sec - in org.gradoop.flink.model.impl.operators.combination.CombinationTest
 Running org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationTxLayoutTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.365 sec - in org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationTxLayoutTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.517 sec - in org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationTxLayoutTest
 Running org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationGVELayoutTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.952 sec - in org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationGVELayoutTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.395 sec - in org.gradoop.flink.model.impl.operators.aggregation.ApplyAggregationGVELayoutTest
 Running org.gradoop.flink.model.impl.operators.aggregation.AggregationTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.857 sec - in org.gradoop.flink.model.impl.operators.aggregation.AggregationTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.808 sec - in org.gradoop.flink.model.impl.operators.aggregation.AggregationTest
 Running org.gradoop.flink.model.impl.operators.difference.DifferenceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.111 sec - in org.gradoop.flink.model.impl.operators.difference.DifferenceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.526 sec - in org.gradoop.flink.model.impl.operators.difference.DifferenceTest
 Running org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationTxLayoutTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.685 sec - in org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationTxLayoutTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.944 sec - in org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationTxLayoutTest
 Running org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationGVELayoutTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.109 sec - in org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationGVELayoutTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.271 sec - in org.gradoop.flink.model.impl.operators.transformation.ApplyTransformationGVELayoutTest
 Running org.gradoop.flink.model.impl.operators.transformation.TransformationTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.846 sec - in org.gradoop.flink.model.impl.operators.transformation.TransformationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.169 sec - in org.gradoop.flink.model.impl.operators.transformation.TransformationTest
 Running org.gradoop.flink.model.impl.operators.equality.EqualityTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.413 sec - in org.gradoop.flink.model.impl.operators.equality.EqualityTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.599 sec - in org.gradoop.flink.model.impl.operators.equality.EqualityTest
 Running org.gradoop.flink.model.impl.operators.grouping.GroupingGroupReduceTest
-Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.906 sec - in org.gradoop.flink.model.impl.operators.grouping.GroupingGroupReduceTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.157 sec - in org.gradoop.flink.model.impl.operators.grouping.GroupingGroupReduceTest
 Running org.gradoop.flink.model.impl.operators.grouping.GroupingGroupCombineTest
-Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.968 sec - in org.gradoop.flink.model.impl.operators.grouping.GroupingGroupCombineTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.529 sec - in org.gradoop.flink.model.impl.operators.grouping.GroupingGroupCombineTest
 Running org.gradoop.flink.model.impl.operators.union.UnionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.885 sec - in org.gradoop.flink.model.impl.operators.union.UnionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.019 sec - in org.gradoop.flink.model.impl.operators.union.UnionTest
 Running org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVECollectionLayoutFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.194 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVECollectionLayoutFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVECollectionLayoutFactoryTest
 Running org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVEGraphLayoutFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVEGraphLayoutFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.248 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVEGraphLayoutFactoryTest
 Running org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVELayoutTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.116 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVELayoutTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.175 sec - in org.gradoop.flink.model.impl.layouts.gve.indexed.IndexedGVELayoutTest
 Running org.gradoop.flink.model.impl.layouts.gve.GVEGraphLayoutFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.149 sec - in org.gradoop.flink.model.impl.layouts.gve.GVEGraphLayoutFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.142 sec - in org.gradoop.flink.model.impl.layouts.gve.GVEGraphLayoutFactoryTest
 Running org.gradoop.flink.model.impl.layouts.gve.GVELayoutTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 sec - in org.gradoop.flink.model.impl.layouts.gve.GVELayoutTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 sec - in org.gradoop.flink.model.impl.layouts.gve.GVELayoutTest
 Running org.gradoop.flink.model.impl.layouts.gve.GVEGraphCollectionLayoutFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.114 sec - in org.gradoop.flink.model.impl.layouts.gve.GVEGraphCollectionLayoutFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 sec - in org.gradoop.flink.model.impl.layouts.gve.GVEGraphCollectionLayoutFactoryTest
 Running org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.81 sec - in org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.999 sec - in org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutFactoryTest
 Running org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.511 sec - in org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.811 sec - in org.gradoop.flink.model.impl.layouts.transactional.TxCollectionLayoutTest
 Running org.gradoop.flink.model.impl.GraphTransactionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.6 sec - in org.gradoop.flink.model.impl.GraphTransactionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.608 sec - in org.gradoop.flink.model.impl.GraphTransactionTest
 
 Results :
 
-Tests in error: 
-  TLFDataSinkTest.testWriteWithoutEdgesWithDictionaries » JobExecution Job execu...
+Tests run: 1270, Failures: 0, Errors: 0, Skipped: 1
 
-Tests run: 1270, Failures: 0, Errors: 1, Skipped: 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop Examples 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ gradoop-examples ---
+[INFO] argLine set to -javaagent:/root/./workspace/dbs-leipzig/gradoop/443724672/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-examples/target/jacoco.exec -Xmx1G -Dlog4j.configuration=log4j-test.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gradoop-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-examples ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 94 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-examples/target/classes
+[INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-examples/src/main/java/org/gradoop/examples/AbstractRunner.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-examples/src/main/java/org/gradoop/examples/AbstractRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gradoop-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-examples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gradoop-examples ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-examples ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop Store 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop Store API 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ gradoop-store-api ---
+[INFO] argLine set to -javaagent:/root/./workspace/dbs-leipzig/gradoop/443724672/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-store-api/target/jacoco.exec -Xmx1G -Dlog4j.configuration=log4j-test.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gradoop-store-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-store-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-store-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-store-api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gradoop-store-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-store-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gradoop-store-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-store-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop Accumulo 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ gradoop-accumulo ---
+[INFO] argLine set to -javaagent:/root/./workspace/dbs-leipzig/gradoop/443724672/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-accumulo/target/jacoco.exec -Xmx1G -Dlog4j.configuration=log4j-test.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gradoop-accumulo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-accumulo/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-accumulo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 47 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-accumulo/target/classes
+[INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-accumulo/src/main/java/org/gradoop/storage/impl/accumulo/predicate/filter/api/AccumuloElementFilter.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-accumulo/src/main/java/org/gradoop/storage/impl/accumulo/predicate/filter/api/AccumuloElementFilter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gradoop-accumulo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gradoop-accumulo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-accumulo ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.gradoop.storage.impl.accumulo.AccumuloTestSuite
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 115.016 sec - in org.gradoop.storage.impl.accumulo.AccumuloTestSuite
+
+Results :
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop HBase 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ gradoop-hbase ---
+[INFO] argLine set to -javaagent:/root/./workspace/dbs-leipzig/gradoop/443724672/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-hbase/target/jacoco.exec -Xmx1G -Dlog4j.configuration=log4j-test.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gradoop-hbase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-hbase/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-hbase ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-store/gradoop-hbase/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gradoop-hbase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gradoop-hbase ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-hbase ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.gradoop.storage.impl.hbase.HBaseTestSuite
+Formatting using clusterid: testClusterID
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 247.852 sec - in org.gradoop.storage.impl.hbase.HBaseTestSuite
+
+Results :
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gradoop Data Integration 0.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ gradoop-data-integration ---
+[INFO] argLine set to -javaagent:/root/./workspace/dbs-leipzig/gradoop/443724672/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-data-integration/target/jacoco.exec -Xmx1G -Dlog4j.configuration=log4j-test.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gradoop-data-integration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-data-integration/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gradoop-data-integration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-data-integration/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gradoop-data-integration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-data-integration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gradoop-data-integration ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gradoop-data-integration ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.gradoop.dataintegration.transformation.InvertEdgesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.082 sec - in org.gradoop.dataintegration.transformation.InvertEdgesTest
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Gradoop Parent ..................................... SUCCESS [  0.004 s]
-[INFO] Gradoop Checkstyle ................................. SUCCESS [  1.435 s]
-[INFO] Gradoop Common ..................................... SUCCESS [ 10.154 s]
-[INFO] Gradoop Flink ...................................... FAILURE [14:59 min]
-[INFO] Gradoop Examples ................................... SKIPPED
-[INFO] Gradoop Store ...................................... SKIPPED
-[INFO] Gradoop Store API .................................. SKIPPED
-[INFO] Gradoop Accumulo ................................... SKIPPED
-[INFO] Gradoop HBase ...................................... SKIPPED
-[INFO] Gradoop Data Integration ........................... SKIPPED
+[INFO] Gradoop Parent ..................................... SUCCESS [  0.005 s]
+[INFO] Gradoop Checkstyle ................................. SUCCESS [  1.579 s]
+[INFO] Gradoop Common ..................................... SUCCESS [  9.782 s]
+[INFO] Gradoop Flink ...................................... SUCCESS [15:14 min]
+[INFO] Gradoop Examples ................................... SUCCESS [  0.881 s]
+[INFO] Gradoop Store ...................................... SUCCESS [  0.000 s]
+[INFO] Gradoop Store API .................................. SUCCESS [  0.224 s]
+[INFO] Gradoop Accumulo ................................... SUCCESS [01:58 min]
+[INFO] Gradoop HBase ...................................... SUCCESS [04:11 min]
+[INFO] Gradoop Data Integration ........................... SUCCESS [  9.545 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15:11 min
-[INFO] Finished at: 2018-10-23T16:51:10+02:00
-[INFO] Final Memory: 58M/812M
+[INFO] Total time: 21:47 min
+[INFO] Finished at: 2018-10-23T17:14:15+02:00
+[INFO] Final Memory: 77M/1168M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project gradoop-flink: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :gradoop-flink
