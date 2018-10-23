@@ -1,0 +1,149 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "alipay/sofa-bolt",
+    "githubId": 128709569,
+    "url": "https://github.com/alipay/sofa-bolt",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443171647,
+      "url": "http://travis-ci.org/alipay/sofa-bolt/builds/443171647",
+      "date": "Oct 18, 2018 3:02:50 PM"
+    },
+    "fixerBuild": {
+      "id": 444920477,
+      "url": "http://travis-ci.org/alipay/sofa-bolt/builds/444920477",
+      "date": "Oct 23, 2018 6:19:49 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 6:20:04 AM",
+    "reproductionDateEnd": "Oct 23, 2018 6:32:03 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 286522056,
+      "totalMemory": 402128896
+    },
+    "totalDuration": 713,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 54,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          54
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 304,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          304
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/alipay/sofa-bolt/443171647/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 44
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/alipay/sofa-bolt/443171647",
+    "overallMetrics": {
+      "numberRunning": 261,
+      "numberPassing": 260,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest",
+        "testMethod": "testRuntimeCloseAndEnableHeartbeat",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 148,
+    "numberTestFiles": 96,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "alipay/sofa-bolt",
+      "branchName": "dev_1.6.0",
+      "sha": "1f501a297efc50ae12dd196e0937d89a75c7d762",
+      "url": "http://github.com/alipay/sofa-bolt/commit/1f501a297efc50ae12dd196e0937d89a75c7d762"
+    },
+    "fixerBuild": {
+      "repoName": "alipay/sofa-bolt",
+      "branchName": "dev_1.6.0",
+      "sha": "401c94706981ed90afe08ac6424f4428f6651f89",
+      "url": "http://github.com/alipay/sofa-bolt/commit/401c94706981ed90afe08ac6424f4428f6651f89",
+      "date": "Oct 23, 2018 6:11:40 AM"
+    }
+  },
+  "type": "passing_passing"
+}
