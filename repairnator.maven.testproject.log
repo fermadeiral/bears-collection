@@ -1,0 +1,1407 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] build-tools
+[INFO] gateway
+[INFO] gateway-test-utils
+[INFO] gateway-i18n
+[INFO] gateway-util-common
+[INFO] gateway-util-configinjector
+[INFO] gateway-util-launcher
+[INFO] gateway-util-urltemplate
+[INFO] gateway-demo-ldap
+[INFO] gateway-demo-ldap-launcher
+[INFO] gateway-i18n-logging-log4j
+[INFO] gateway-i18n-logging-sl4j
+[INFO] gateway-service-definitions
+[INFO] gateway-spi
+[INFO] gateway-discovery-ambari
+[INFO] gateway-provider-rewrite
+[INFO] gateway-server-xforwarded-filter
+[INFO] gateway-service-remoteconfig
+[INFO] gateway-server
+[INFO] gateway-server-launcher
+[INFO] gateway-provider-rewrite-func-hostmap-static
+[INFO] gateway-provider-ha
+[INFO] gateway-provider-rewrite-func-service-registry
+[INFO] gateway-provider-rewrite-func-inbound-url
+[INFO] gateway-provider-rewrite-step-secure-query
+[INFO] gateway-provider-rewrite-step-encrypt-uri
+[INFO] gateway-provider-security-jwt
+[INFO] gateway-provider-security-webappsec
+[INFO] gateway-provider-security-preauth
+[INFO] gateway-provider-security-hadoop-auth
+[INFO] gateway-provider-security-shiro
+[INFO] gateway-provider-security-pac4j
+[INFO] gateway-provider-security-authz-acls
+[INFO] gateway-provider-security-authc-anon
+[INFO] gateway-provider-identity-assertion-common
+[INFO] gateway-provider-identity-assertion-concat
+[INFO] gateway-provider-identity-assertion-hadoop-groups
+[INFO] gateway-provider-identity-assertion-regex
+[INFO] gateway-provider-identity-assertion-switchcase
+[INFO] gateway-provider-identity-assertion-pseudo
+[INFO] gateway-provider-jersey
+[INFO] gateway-service-admin
+[INFO] gateway-service-as
+[INFO] gateway-service-hbase
+[INFO] gateway-service-hive
+[INFO] gateway-service-knoxsso
+[INFO] gateway-service-knoxssout
+[INFO] gateway-service-knoxtoken
+[INFO] gateway-service-health
+[INFO] gateway-service-webhdfs
+[INFO] gateway-service-tgs
+[INFO] gateway-service-rm
+[INFO] gateway-service-storm
+[INFO] gateway-shell
+[INFO] gateway-shell-launcher
+[INFO] knox-cli-launcher
+[INFO] gateway-service-nifi
+[INFO] gateway-adapter
+[INFO] hadoop-examples
+[INFO] gateway-service-test
+[INFO] gateway-applications
+[INFO] gateway-shell-samples
+[INFO] gateway-release
+[INFO] gateway-service-vault
+[INFO] gateway-test-release-utils
+[INFO] gateway-test
+[INFO] gateway-test-release
+[INFO] webhdfs-kerb-test
+[INFO] webhdfs-test
+[INFO] gateway-shell-release
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building build-tools 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ build-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ build-tools ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/build-tools/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ build-tools ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305427066
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-test-utils 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-test-utils ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-test-utils' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-test-utils
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305427839
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-test-utils' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-test-utils
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-test-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-test-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-test-utils ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-test-utils ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-test-utils/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-test-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-test-utils/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-test-utils ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-test-utils ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-i18n 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-i18n ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305428540
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-i18n ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-i18n ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-i18n ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-i18n ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-i18n/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-i18n ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.pom (7 KB at 14.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 63.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.pom (4 KB at 75.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.pom (3 KB at 54.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.pom (2 KB at 41.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 74.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 160.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 71.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.jar (12 KB at 232.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.jar (28 KB at 245.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.jar (22 KB at 181.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 354.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 1802.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.jar (157 KB at 1009.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 813.4 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.i18n.messages.MessagesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.knox.gateway.i18n.messages.MessagesTest
+[INFO] Running org.apache.knox.gateway.i18n.resources.ResourcesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.i18n.resources.ResourcesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-util-common 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-util-common ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-common' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-common
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305431616
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-common' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-common
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-util-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-util-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-util-common ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-util-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-util-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-util-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-util-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-util-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-util-common ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.util.JsonPathTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 s - in org.apache.knox.gateway.util.JsonPathTest
+[INFO] Running org.apache.knox.gateway.util.HttpUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.util.HttpUtilsTest
+[INFO] Running org.apache.knox.gateway.util.IpAddressValidatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.knox.gateway.util.IpAddressValidatorTest
+[INFO] Running org.apache.knox.gateway.util.UrlsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.knox.gateway.util.UrlsTest
+[INFO] Running org.apache.knox.gateway.util.MimeTypeMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.util.MimeTypeMapTest
+[INFO] Running org.apache.knox.gateway.util.JsonUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.knox.gateway.util.JsonUtilsTest
+[INFO] Running org.apache.knox.gateway.audit.StoreAndForwardAppenderTest
+Running org.apache.knox.gateway.audit.StoreAndForwardAppenderTest#testAppender
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.97 s - in org.apache.knox.gateway.audit.StoreAndForwardAppenderTest
+[INFO] Running org.apache.knox.gateway.audit.AuditLayoutTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 s - in org.apache.knox.gateway.audit.AuditLayoutTest
+[INFO] Running org.apache.knox.gateway.audit.JdbmQueueTest
+Running org.apache.knox.gateway.audit.JdbmQueueTest#testConcurrentConsumer
+Running org.apache.knox.gateway.audit.JdbmQueueTest#testConcurrentProcessor
+Running org.apache.knox.gateway.audit.JdbmQueueTest#testSimple
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.764 s - in org.apache.knox.gateway.audit.JdbmQueueTest
+[INFO] Running org.apache.knox.gateway.audit.AuditServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 s - in org.apache.knox.gateway.audit.AuditServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-util-configinjector 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-util-configinjector ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-configinjector' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-configinjector
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305460946
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-configinjector' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-configinjector
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-util-configinjector ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-util-configinjector ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-util-configinjector ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-util-configinjector ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-util-configinjector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-util-configinjector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-util-configinjector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-configinjector/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-util-configinjector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-util-configinjector ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.config.PropertiesMethodSampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in org.apache.knox.gateway.config.PropertiesMethodSampleTest
+[INFO] Running org.apache.knox.gateway.config.MapMethodSampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.knox.gateway.config.MapMethodSampleTest
+[INFO] Running org.apache.knox.gateway.config.OptionalTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.knox.gateway.config.OptionalTest
+[INFO] Running org.apache.knox.gateway.config.UsageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.knox.gateway.config.UsageTest
+[INFO] Running org.apache.knox.gateway.config.PropertiesFieldSampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.config.PropertiesFieldSampleTest
+[INFO] Running org.apache.knox.gateway.config.MapFieldSampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.config.MapFieldSampleTest
+[INFO] Running org.apache.knox.gateway.config.PropertiesFactorySampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.knox.gateway.config.PropertiesFactorySampleTest
+[INFO] Running org.apache.knox.gateway.config.impl.BeanConfigurationAdapterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.apache.knox.gateway.config.impl.BeanConfigurationAdapterTest
+[INFO] Running org.apache.knox.gateway.config.impl.BeanConfigurationAdapterDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.knox.gateway.config.impl.BeanConfigurationAdapterDescriptorTest
+[INFO] Running org.apache.knox.gateway.config.FuncTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.apache.knox.gateway.config.FuncTest
+[INFO] Running org.apache.knox.gateway.config.AdapterSampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.config.AdapterSampleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-util-launcher 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-util-launcher ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-launcher' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-launcher
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305462662
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-launcher' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-launcher
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-util-launcher ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-util-launcher ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-util-launcher ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-util-launcher ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-util-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-launcher/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-util-launcher ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-util-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-launcher/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-util-launcher ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-util-launcher ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.launcher.ConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.knox.gateway.launcher.ConfigTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-util-urltemplate 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-util-urltemplate ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-urltemplate' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-urltemplate
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305463791
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-util-urltemplate' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-util-urltemplate
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-util-urltemplate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-util-urltemplate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-util-urltemplate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-util-urltemplate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-util-urltemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-urltemplate/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-util-urltemplate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-util-urltemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-util-urltemplate/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-util-urltemplate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-util-urltemplate ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.util.urltemplate.RewriterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in org.apache.knox.gateway.util.urltemplate.RewriterTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.TokenTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.util.urltemplate.TokenTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.FunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.knox.gateway.util.urltemplate.FunctionTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.SegmentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.knox.gateway.util.urltemplate.SegmentTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.ExpanderTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.knox.gateway.util.urltemplate.ExpanderTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.ParserTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.knox.gateway.util.urltemplate.ParserTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.TemplateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.knox.gateway.util.urltemplate.TemplateTest
+[INFO] Running org.apache.knox.gateway.util.urltemplate.MatcherTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.knox.gateway.util.urltemplate.MatcherTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 74, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-demo-ldap 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-demo-ldap ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-demo-ldap' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-demo-ldap
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305465423
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-demo-ldap' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-demo-ldap
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-demo-ldap ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-demo-ldap ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-demo-ldap ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-demo-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-demo-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-demo-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-demo-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-demo-ldap/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-demo-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-demo-ldap ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.security.ldap.SimpleLdapServerTest
+2018-10-23 16:37:53,008 ERROR ERR_6 Authentication error : Attempt to lookup non-existant entry: uid=nobody,ou=people,dc=hadoop,dc=apache,dc=org
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.122 s - in org.apache.knox.gateway.security.ldap.SimpleLdapServerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-demo-ldap-launcher 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-demo-ldap-launcher ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-demo-ldap-launcher' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-demo-ldap-launcher
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305474187
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-demo-ldap-launcher' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-demo-ldap-launcher
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-demo-ldap-launcher ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-demo-ldap-launcher ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-demo-ldap-launcher ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-demo-ldap-launcher ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-demo-ldap-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-demo-ldap-launcher ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-demo-ldap-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-demo-ldap-launcher/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-demo-ldap-launcher ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-demo-ldap-launcher ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-i18n-logging-log4j 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-i18n-logging-log4j ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n-logging-log4j' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-log4j
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305474295
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n-logging-log4j' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-log4j
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-i18n-logging-log4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-i18n-logging-log4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-i18n-logging-log4j ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-i18n-logging-log4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-i18n-logging-log4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-i18n-logging-log4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-i18n-logging-log4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-log4j/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-i18n-logging-log4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-i18n-logging-log4j ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.i18n.messages.loggers.log4j.Log4jMessageLoggerFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.knox.gateway.i18n.messages.loggers.log4j.Log4jMessageLoggerFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-i18n-logging-sl4j 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-i18n-logging-sl4j ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n-logging-sl4j' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-sl4j
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305475402
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-i18n-logging-sl4j' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-sl4j
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-i18n-logging-sl4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-i18n-logging-sl4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-i18n-logging-sl4j ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-i18n-logging-sl4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-i18n-logging-sl4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-i18n-logging-sl4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-i18n-logging-sl4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-i18n-logging-sl4j/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-i18n-logging-sl4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-i18n-logging-sl4j ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.i18n.messages.loggers.sl4j.Sl4jMessageLoggerFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.knox.gateway.i18n.messages.loggers.sl4j.Sl4jMessageLoggerFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-service-definitions 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-service-definitions ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-service-definitions' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-service-definitions
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305476624
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-service-definitions' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-service-definitions
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-service-definitions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-service-definitions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-service-definitions ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-service-definitions ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-service-definitions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 96 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-service-definitions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-service-definitions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-service-definitions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-service-definitions ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.service.definition.ServiceDefinitionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 s - in org.apache.knox.gateway.service.definition.ServiceDefinitionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-spi 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-spi ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-spi' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-spi
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305478268
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-spi' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-spi
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-spi ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-spi ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.topology.VersionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.knox.gateway.topology.VersionTest
+[INFO] Running org.apache.knox.gateway.dispatch.GatewayDispatchFilterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 s - in org.apache.knox.gateway.dispatch.GatewayDispatchFilterTest
+[INFO] Running org.apache.knox.gateway.dispatch.URLDecodingDispatchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.knox.gateway.dispatch.URLDecodingDispatchTest
+[INFO] Running org.apache.knox.gateway.dispatch.DefaultDispatchTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.916 s - in org.apache.knox.gateway.dispatch.DefaultDispatchTest
+[INFO] Running org.apache.knox.gateway.dispatch.CappedBufferHttpEntityTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.knox.gateway.dispatch.CappedBufferHttpEntityTest
+[INFO] Running org.apache.knox.gateway.dispatch.PassAllHeadersNoEncodingDispatchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.knox.gateway.dispatch.PassAllHeadersNoEncodingDispatchTest
+[INFO] Running org.apache.knox.gateway.dispatch.HadoopAuthCookieStoreTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.knox.gateway.dispatch.HadoopAuthCookieStoreTest
+[INFO] Running org.apache.knox.gateway.dispatch.PartiallyRepeatableHttpEntityTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.knox.gateway.dispatch.PartiallyRepeatableHttpEntityTest
+[INFO] Running org.apache.knox.gateway.security.principal.PrincipalMapperTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.knox.gateway.security.principal.PrincipalMapperTest
+[INFO] Running org.apache.knox.gateway.services.hostmap.FileBasedHostMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 s - in org.apache.knox.gateway.services.hostmap.FileBasedHostMapperTest
+[INFO] Running org.apache.knox.gateway.services.security.token.impl.JWTTokenTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in org.apache.knox.gateway.services.security.token.impl.JWTTokenTest
+[INFO] Running org.apache.knox.gateway.services.security.impl.CMFMasterServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 s - in org.apache.knox.gateway.services.security.impl.CMFMasterServiceTest
+[INFO] Running org.apache.knox.gateway.services.security.impl.CMFKeystoreServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 s - in org.apache.knox.gateway.services.security.impl.CMFKeystoreServiceTest
+[INFO] Running org.apache.knox.gateway.util.WhitelistUtilsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.knox.gateway.util.WhitelistUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 139, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-discovery-ambari 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-discovery-ambari ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-discovery-ambari' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-discovery-ambari
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305483228
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-discovery-ambari' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-discovery-ambari
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-discovery-ambari ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-discovery-ambari ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-discovery-ambari ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-discovery-ambari ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-discovery-ambari ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-discovery-ambari ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-discovery-ambari ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-discovery-ambari/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-discovery-ambari ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-discovery-ambari ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.YarnUIV2URLCreatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.apache.knox.gateway.topology.discovery.ambari.YarnUIV2URLCreatorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.YarnUIURLCreatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.topology.discovery.ambari.YarnUIURLCreatorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.AmbariDynamicServiceURLCreatorTest
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.45 s - in org.apache.knox.gateway.topology.discovery.ambari.AmbariDynamicServiceURLCreatorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.ResourceManagerURLCreatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.topology.discovery.ambari.ResourceManagerURLCreatorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.WebHdfsUrlCreatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.knox.gateway.topology.discovery.ambari.WebHdfsUrlCreatorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.AmbariConfigurationMonitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.587 s - in org.apache.knox.gateway.topology.discovery.ambari.AmbariConfigurationMonitorTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.AmbariServiceDiscoveryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.064 s - in org.apache.knox.gateway.topology.discovery.ambari.AmbariServiceDiscoveryTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.AmbariClusterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.192 s - in org.apache.knox.gateway.topology.discovery.ambari.AmbariClusterTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ambari.SparkServiceURLCreatorTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.knox.gateway.topology.discovery.ambari.SparkServiceURLCreatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-provider-rewrite 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-provider-rewrite ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-provider-rewrite' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-provider-rewrite
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305517212
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-provider-rewrite' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-provider-rewrite
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-provider-rewrite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-provider-rewrite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-provider-rewrite ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-provider-rewrite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-provider-rewrite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-provider-rewrite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-provider-rewrite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-provider-rewrite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-provider-rewrite ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.filter.rewrite.api.UrlRewriteProcessorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.apache.knox.gateway.filter.rewrite.api.UrlRewriteProcessorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.api.FrontendFunctionDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.api.FrontendFunctionDescriptorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.api.UrlRewriteRulesDescriptorFactoryTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.532 s - in org.apache.knox.gateway.filter.rewrite.api.UrlRewriteRulesDescriptorFactoryTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.api.UrlRewriteServletFilterTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.225 s - in org.apache.knox.gateway.filter.rewrite.api.UrlRewriteServletFilterTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.api.UrlRewriteServletEnvironmentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.knox.gateway.filter.rewrite.api.UrlRewriteServletEnvironmentTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.xml.XmlFilterReaderTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.621 s - in org.apache.knox.gateway.filter.rewrite.impl.xml.XmlFilterReaderTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.xml.XmlUrlRewriteRulesExporterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 s - in org.apache.knox.gateway.filter.rewrite.impl.xml.XmlUrlRewriteRulesExporterTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.CookieScopeResponseWrapperTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.knox.gateway.filter.rewrite.impl.CookieScopeResponseWrapperTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.json.JsonFilterReaderTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.knox.gateway.filter.rewrite.impl.json.JsonFilterReaderTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteResponseTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.html.HtmlPostfixProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.html.HtmlPostfixProcessorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.html.HtmlImportFunctionProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.html.HtmlImportFunctionProcessorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.html.HtmlPrefixProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.knox.gateway.filter.rewrite.impl.html.HtmlPrefixProcessorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.html.HtmlFilterReaderBaseTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in org.apache.knox.gateway.filter.rewrite.impl.html.HtmlFilterReaderBaseTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.html.HtmlInfixProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.html.HtmlInfixProcessorTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteStepProcessorStateTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteStepProcessorStateTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.javascript.JavaScriptFilterReaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.javascript.JavaScriptFilterReaderTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteRequestTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteContextImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.filter.rewrite.impl.UrlRewriteContextImplTest
+[INFO] Running org.apache.knox.gateway.filter.rewrite.impl.FrontendFunctionProcessorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.apache.knox.gateway.filter.rewrite.impl.FrontendFunctionProcessorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 133, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-server-xforwarded-filter 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-server-xforwarded-filter ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305525624
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-server-xforwarded-filter ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-server-xforwarded-filter ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-server-xforwarded-filter ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-server-xforwarded-filter ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-server-xforwarded-filter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-server-xforwarded-filter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-server-xforwarded-filter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-server-xforwarded-filter/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-server-xforwarded-filter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-server-xforwarded-filter ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.filter.XForwardHeaderFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s - in org.apache.knox.gateway.filter.XForwardHeaderFilterTest
+[INFO] Running org.apache.knox.gateway.filter.CompositeEnumerationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.knox.gateway.filter.CompositeEnumerationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-service-remoteconfig 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-service-remoteconfig ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-service-remoteconfig' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-service-remoteconfig
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305527600
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-service-remoteconfig' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-service-remoteconfig
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-service-remoteconfig ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-service-remoteconfig ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-service-remoteconfig ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-service-remoteconfig ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-service-remoteconfig ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-service-remoteconfig ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-service-remoteconfig ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/risdenk/knox/445114641/gateway-service-remoteconfig/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-service-remoteconfig ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-service-remoteconfig ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.service.config.remote.zk.RemoteConfigurationRegistryJAASConfigTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in org.apache.knox.gateway.service.config.remote.zk.RemoteConfigurationRegistryJAASConfigTest
+[INFO] Running org.apache.knox.gateway.service.config.remote.zk.RemoteConfigurationRegistryClientServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.169 s - in org.apache.knox.gateway.service.config.remote.zk.RemoteConfigurationRegistryClientServiceTest
+[INFO] Running org.apache.knox.gateway.service.config.remote.config.RemoteConfigurationRegistryConfigParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.knox.gateway.service.config.remote.config.RemoteConfigurationRegistryConfigParserTest
+[INFO] Running org.apache.knox.gateway.service.config.remote.config.DefaultRemoteConfigurationRegistriesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.knox.gateway.service.config.remote.config.DefaultRemoteConfigurationRegistriesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-server 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ gateway-server ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-server' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-server
+[INFO] Storing buildNumber: 732893e5b49cfc099957cd0bca4a445424a358ed at timestamp: 1540305551016
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/risdenk/knox/445114641/gateway-server' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/risdenk/knox/445114641/gateway-server
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ gateway-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ gateway-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ gateway-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ gateway-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gateway-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gateway-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gateway-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 46 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gateway-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ gateway-server ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.knox.gateway.topology.xml.TopologyRulesModuleTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s - in org.apache.knox.gateway.topology.xml.TopologyRulesModuleTest
+[INFO] Running org.apache.knox.gateway.topology.validation.TopologyValidatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.874 s - in org.apache.knox.gateway.topology.validation.TopologyValidatorTest
+[INFO] Running org.apache.knox.gateway.topology.monitor.ZooKeeperConfigurationMonitorTest
+ERROR [org.apache.curator.framework.imps.CuratorFrameworkImpl] Background exception was not retry-able or retry gave up
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getData(CuratorFrameworkImpl.java:440)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:304)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:57)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:123)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:865)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:635)
+	at org.apache.curator.framework.imps.WatcherRemovalFacade.processBackgroundOperation(WatcherRemovalFacade.java:152)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:166)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:554)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+ERROR [org.apache.zookeeper.server.quorum.QuorumCnxManager] Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:744)
+ERROR [org.apache.zookeeper.server.quorum.QuorumCnxManager] Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:744)
+ERROR [org.apache.zookeeper.server.quorum.QuorumCnxManager] Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:744)
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.465 s <<< FAILURE! - in org.apache.knox.gateway.topology.monitor.ZooKeeperConfigurationMonitorTest
+[ERROR] testZooKeeperConfigMonitor(org.apache.knox.gateway.topology.monitor.ZooKeeperConfigurationMonitorTest)  Time elapsed: 0.356 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.knox.gateway.topology.monitor.ZooKeeperConfigurationMonitorTest.testZooKeeperConfigMonitor(ZooKeeperConfigurationMonitorTest.java:202)
+
+[INFO] Running org.apache.knox.gateway.topology.builder.PropertyTopologyBuilderTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.knox.gateway.topology.builder.PropertyTopologyBuilderTest
+[INFO] Running org.apache.knox.gateway.topology.simple.SimpleDescriptorHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 s - in org.apache.knox.gateway.topology.simple.SimpleDescriptorHandlerTest
+[INFO] Running org.apache.knox.gateway.topology.simple.SimpleDescriptorFactoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.937 s - in org.apache.knox.gateway.topology.simple.SimpleDescriptorFactoryTest
+[INFO] Running org.apache.knox.gateway.topology.simple.ProviderConfigurationParserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.apache.knox.gateway.topology.simple.ProviderConfigurationParserTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.ServiceDiscoveryFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.knox.gateway.topology.discovery.ServiceDiscoveryFactoryTest
+[INFO] Running org.apache.knox.gateway.topology.discovery.PropertiesFileServiceDiscoveryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 s - in org.apache.knox.gateway.topology.discovery.PropertiesFileServiceDiscoveryTest
+[INFO] Running org.apache.knox.gateway.GatewayPortMappingConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 s - in org.apache.knox.gateway.GatewayPortMappingConfigTest
+[INFO] Running org.apache.knox.gateway.GatewayGlobalConfigTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 s - in org.apache.knox.gateway.GatewayGlobalConfigTest
+[INFO] Running org.apache.knox.gateway.deploy.DeploymentFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.688 s - in org.apache.knox.gateway.deploy.DeploymentFactoryTest
+[INFO] Running org.apache.knox.gateway.deploy.impl.GenericProviderDeploymentContributorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.deploy.impl.GenericProviderDeploymentContributorTest
+[INFO] Running org.apache.knox.gateway.deploy.impl.ServiceDefinitionDeploymentContributorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in org.apache.knox.gateway.deploy.impl.ServiceDefinitionDeploymentContributorTest
+[INFO] Running org.apache.knox.gateway.GatewayForwardingServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in org.apache.knox.gateway.GatewayForwardingServletTest
+[INFO] Running org.apache.knox.gateway.websockets.BadBackendTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.791 s - in org.apache.knox.gateway.websockets.BadBackendTest
+[INFO] Running org.apache.knox.gateway.websockets.WebsocketEchoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 s - in org.apache.knox.gateway.websockets.WebsocketEchoTest
+[INFO] Running org.apache.knox.gateway.websockets.MessageFailureTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in org.apache.knox.gateway.websockets.MessageFailureTest
+[INFO] Running org.apache.knox.gateway.websockets.ProxyInboundClientTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.919 s - in org.apache.knox.gateway.websockets.ProxyInboundClientTest
+[INFO] Running org.apache.knox.gateway.websockets.WebsocketMultipleConnectionTest
+heapUsed = 57929696
+nonHeapUsed = 6445128
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.27 s - in org.apache.knox.gateway.websockets.WebsocketMultipleConnectionTest
+[INFO] Running org.apache.knox.gateway.websockets.BadUrlTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.knox.gateway.websockets.BadUrlTest
+[INFO] Running org.apache.knox.gateway.websockets.ConnectionDroppedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.061 s - in org.apache.knox.gateway.websockets.ConnectionDroppedTest
+[INFO] Running org.apache.knox.gateway.AuditLoggingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s - in org.apache.knox.gateway.AuditLoggingTest
+[INFO] Running org.apache.knox.gateway.config.impl.GatewayConfigImplTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 s - in org.apache.knox.gateway.config.impl.GatewayConfigImplTest
+[INFO] Running org.apache.knox.gateway.security.impl.RemoteAliasServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.035 s - in org.apache.knox.gateway.security.impl.RemoteAliasServiceTest
+[INFO] Running org.apache.knox.gateway.security.impl.RemoteAliasMonitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.744 s - in org.apache.knox.gateway.security.impl.RemoteAliasMonitorTest
+[INFO] Running org.apache.knox.gateway.services.topology.DefaultTopologyServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in org.apache.knox.gateway.services.topology.DefaultTopologyServiceTest
+[INFO] Running org.apache.knox.gateway.services.registry.DefaultServiceDefinitionRegistryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.knox.gateway.services.registry.DefaultServiceDefinitionRegistryTest
+[INFO] Running org.apache.knox.gateway.services.token.impl.DefaultTokenAuthorityServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in org.apache.knox.gateway.services.token.impl.DefaultTokenAuthorityServiceTest
+[INFO] Running org.apache.knox.gateway.services.metrics.impl.DefaultMetricsServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.knox.gateway.services.metrics.impl.DefaultMetricsServiceTest
+[INFO] Running org.apache.knox.gateway.util.KnoxCLITest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.405 s - in org.apache.knox.gateway.util.KnoxCLITest
+[INFO] Running org.apache.knox.gateway.util.ServiceDefinitionsLoaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.knox.gateway.util.ServiceDefinitionsLoaderTest
+[INFO] Running org.apache.knox.gateway.descriptor.xml.XmlGatewayDescriptorExporterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.knox.gateway.descriptor.xml.XmlGatewayDescriptorExporterTest
+[INFO] Running org.apache.knox.gateway.descriptor.xml.XmlGatewayDescriptorImporterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.knox.gateway.descriptor.xml.XmlGatewayDescriptorImporterTest
+[INFO] Running org.apache.knox.gateway.descriptor.GatewayDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.descriptor.GatewayDescriptorTest
+[INFO] Running org.apache.knox.gateway.GatewayFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.knox.gateway.GatewayFilterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ZooKeeperConfigurationMonitorTest.testZooKeeperConfigMonitor:202
+[INFO] 
+[ERROR] Tests run: 159, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] build-tools ........................................ SUCCESS [  1.625 s]
+[INFO] gateway ............................................ SUCCESS [  0.985 s]
+[INFO] gateway-test-utils ................................. SUCCESS [  0.764 s]
+[INFO] gateway-i18n ....................................... SUCCESS [  3.035 s]
+[INFO] gateway-util-common ................................ SUCCESS [ 29.383 s]
+[INFO] gateway-util-configinjector ........................ SUCCESS [  1.718 s]
+[INFO] gateway-util-launcher .............................. SUCCESS [  1.126 s]
+[INFO] gateway-util-urltemplate ........................... SUCCESS [  1.619 s]
+[INFO] gateway-demo-ldap .................................. SUCCESS [  8.781 s]
+[INFO] gateway-demo-ldap-launcher ......................... SUCCESS [  0.108 s]
+[INFO] gateway-i18n-logging-log4j ......................... SUCCESS [  1.106 s]
+[INFO] gateway-i18n-logging-sl4j .......................... SUCCESS [  1.209 s]
+[INFO] gateway-service-definitions ........................ SUCCESS [  1.574 s]
+[INFO] gateway-spi ........................................ SUCCESS [  5.024 s]
+[INFO] gateway-discovery-ambari ........................... SUCCESS [ 33.955 s]
+[INFO] gateway-provider-rewrite ........................... SUCCESS [  8.442 s]
+[INFO] gateway-server-xforwarded-filter ................... SUCCESS [  1.956 s]
+[INFO] gateway-service-remoteconfig ....................... SUCCESS [ 23.098 s]
+[INFO] gateway-server ..................................... FAILURE [ 38.257 s]
+[INFO] gateway-server-launcher ............................ SKIPPED
+[INFO] gateway-provider-rewrite-func-hostmap-static ....... SKIPPED
+[INFO] gateway-provider-ha ................................ SKIPPED
+[INFO] gateway-provider-rewrite-func-service-registry ..... SKIPPED
+[INFO] gateway-provider-rewrite-func-inbound-url .......... SKIPPED
+[INFO] gateway-provider-rewrite-step-secure-query ......... SKIPPED
+[INFO] gateway-provider-rewrite-step-encrypt-uri .......... SKIPPED
+[INFO] gateway-provider-security-jwt ...................... SKIPPED
+[INFO] gateway-provider-security-webappsec ................ SKIPPED
+[INFO] gateway-provider-security-preauth .................. SKIPPED
+[INFO] gateway-provider-security-hadoop-auth .............. SKIPPED
+[INFO] gateway-provider-security-shiro .................... SKIPPED
+[INFO] gateway-provider-security-pac4j .................... SKIPPED
+[INFO] gateway-provider-security-authz-acls ............... SKIPPED
+[INFO] gateway-provider-security-authc-anon ............... SKIPPED
+[INFO] gateway-provider-identity-assertion-common ......... SKIPPED
+[INFO] gateway-provider-identity-assertion-concat ......... SKIPPED
+[INFO] gateway-provider-identity-assertion-hadoop-groups .. SKIPPED
+[INFO] gateway-provider-identity-assertion-regex .......... SKIPPED
+[INFO] gateway-provider-identity-assertion-switchcase ..... SKIPPED
+[INFO] gateway-provider-identity-assertion-pseudo ......... SKIPPED
+[INFO] gateway-provider-jersey ............................ SKIPPED
+[INFO] gateway-service-admin .............................. SKIPPED
+[INFO] gateway-service-as ................................. SKIPPED
+[INFO] gateway-service-hbase .............................. SKIPPED
+[INFO] gateway-service-hive ............................... SKIPPED
+[INFO] gateway-service-knoxsso ............................ SKIPPED
+[INFO] gateway-service-knoxssout .......................... SKIPPED
+[INFO] gateway-service-knoxtoken .......................... SKIPPED
+[INFO] gateway-service-health ............................. SKIPPED
+[INFO] gateway-service-webhdfs ............................ SKIPPED
+[INFO] gateway-service-tgs ................................ SKIPPED
+[INFO] gateway-service-rm ................................. SKIPPED
+[INFO] gateway-service-storm .............................. SKIPPED
+[INFO] gateway-shell ...................................... SKIPPED
+[INFO] gateway-shell-launcher ............................. SKIPPED
+[INFO] knox-cli-launcher .................................. SKIPPED
+[INFO] gateway-service-nifi ............................... SKIPPED
+[INFO] gateway-adapter .................................... SKIPPED
+[INFO] hadoop-examples .................................... SKIPPED
+[INFO] gateway-service-test ............................... SKIPPED
+[INFO] gateway-applications ............................... SKIPPED
+[INFO] gateway-shell-samples .............................. SKIPPED
+[INFO] gateway-release .................................... SKIPPED
+[INFO] gateway-service-vault .............................. SKIPPED
+[INFO] gateway-test-release-utils ......................... SKIPPED
+[INFO] gateway-test ....................................... SKIPPED
+[INFO] gateway-test-release ............................... SKIPPED
+[INFO] webhdfs-kerb-test .................................. SKIPPED
+[INFO] webhdfs-test ....................................... SKIPPED
+[INFO] gateway-shell-release .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:46 min
+[INFO] Finished at: 2018-10-23T16:39:48+02:00
+[INFO] Final Memory: 73M/1047M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project gateway-server: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/risdenk/knox/445114641/gateway-server/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :gateway-server
