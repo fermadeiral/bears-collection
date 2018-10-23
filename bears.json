@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "milaboratory/milib",
+    "githubId": 20955566,
+    "url": "https://github.com/milaboratory/milib",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444855015,
+      "url": "http://travis-ci.org/milaboratory/milib/builds/444855015",
+      "date": "Oct 23, 2018 1:39:10 AM"
+    },
+    "fixerBuild": {
+      "id": 444858326,
+      "url": "http://travis-ci.org/milaboratory/milib/builds/444858326",
+      "date": "Oct 23, 2018 1:44:00 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 2:12:16 AM",
+    "reproductionDateEnd": "Oct 23, 2018 2:17:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 230165016,
+      "totalMemory": 381157376
+    },
+    "totalDuration": 328,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 132,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          132
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/milaboratory/milib/444855015/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "milaboratory/milib",
+      "branchName": "develop",
+      "sha": "1b5501f7bd80fd4435686d039116e8434b29084b",
+      "url": "http://github.com/milaboratory/milib/commit/1b5501f7bd80fd4435686d039116e8434b29084b",
+      "date": "Oct 23, 2018 1:29:08 AM"
+    },
+    "fixerBuild": {
+      "repoName": "milaboratory/milib",
+      "branchName": "develop",
+      "sha": "039ae34f1f7a5436970703da1168f882c814b3bb",
+      "url": "http://github.com/milaboratory/milib/commit/039ae34f1f7a5436970703da1168f882c814b3bb",
+      "date": "Oct 23, 2018 1:41:47 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/milaboratory/milib/444855015",
+    "overallMetrics": {
+      "numberRunning": 426,
+      "numberPassing": 425,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 12,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.milaboratory.core.alignment.kaligner2.KAligner2Test",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.milaboratory.core.alignment.kaligner2.KAligner2Test",
+        "testMethod": "caseJ1",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Class com.milaboratory.core.alignment.kaligner1.KAlignerParameters not subtype of [simple type, class com.milaboratory.core.alignment.kaligner2.KAlignerParameters2]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 576,
+    "numberTestFiles": 220,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  }
+}
