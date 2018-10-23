@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gateway-server 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ gateway-server ---
+[INFO] Wrote classpath file '/root/workspace/risdenk/knox/445114641/gateway-server/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.852 s
+[INFO] Finished at: 2018-10-23T16:40:02+02:00
+[INFO] Final Memory: 23M/483M
+[INFO] ------------------------------------------------------------------------
