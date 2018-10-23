@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "DmitriiSerikov/money-transfer-service",
+    "githubId": 153101102,
+    "url": "https://github.com/DmitriiSerikov/money-transfer-service",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 445139607,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/445139607",
+      "date": "Oct 23, 2018 4:03:33 PM"
+    },
+    "fixerBuild": {
+      "id": 445153241,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/445153241",
+      "date": "Oct 23, 2018 4:33:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 4:33:32 PM",
+    "reproductionDateEnd": "Oct 23, 2018 4:37:04 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 268151208,
+      "totalMemory": 401080320
+    },
+    "totalDuration": 207,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 128,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          128
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DmitriiSerikov/money-transfer-service/445139607/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 12,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DmitriiSerikov/money-transfer-service/445139607",
+    "overallMetrics": {
+      "numberRunning": 102,
+      "numberPassing": 101,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.spockframework.mock.TooFewInvocationsError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.example.job.TransactionsProcessingJobSpec",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.example.job.TransactionsProcessingJobSpec",
+        "testMethod": "should start processing of pending transaction with specified limit when job is triggered by scheduler",
+        "failureName": "org.spockframework.mock.TooFewInvocationsError",
+        "detail": "Too few invocations for:\n\n1 * transactionExecutionService.executePending(_)   (0 invocations)\n\nUnmatched invocations (ordered by similarity):\n\nNone\n\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 31,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "7823bf8210ad796b4983ad8cbab0f8a92bf7b4ce",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/7823bf8210ad796b4983ad8cbab0f8a92bf7b4ce",
+      "date": "Oct 23, 2018 4:00:58 PM"
+    },
+    "fixerBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "84750fbf3da6a7fd9b9de996b2a4b026ded7bde5",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/84750fbf3da6a7fd9b9de996b2a4b026ded7bde5",
+      "date": "Oct 23, 2018 4:28:33 PM"
+    }
+  },
+  "type": "failing_passing"
+}
