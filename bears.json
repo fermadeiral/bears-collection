@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "dbs-leipzig/gradoop",
+    "githubId": 26323526,
+    "url": "https://github.com/dbs-leipzig/gradoop",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443724672,
+      "url": "http://travis-ci.org/dbs-leipzig/gradoop/builds/443724672",
+      "date": "Oct 19, 2018 4:41:35 PM"
+    },
+    "fixerBuild": {
+      "id": 445143515,
+      "url": "http://travis-ci.org/dbs-leipzig/gradoop/builds/445143515",
+      "date": "Oct 23, 2018 4:33:40 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 4:33:49 PM",
+    "reproductionDateEnd": "Oct 23, 2018 5:14:21 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 396348568,
+      "totalMemory": 624951296
+    },
+    "totalDuration": 2424,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          26
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 99,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          99
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 915,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          915
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dbs-leipzig/gradoop/443724672/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dbs-leipzig/gradoop/443724672/gradoop-flink",
+    "overallMetrics": {
+      "numberRunning": 1567,
+      "numberPassing": 1566,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.apache.flink.runtime.client.JobExecutionException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.gradoop.flink.io.impl.tlf.TLFDataSinkTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.gradoop.flink.io.impl.tlf.TLFDataSinkTest",
+        "testMethod": "testWriteWithoutEdgesWithDictionaries",
+        "failureName": "org.apache.flink.runtime.client.JobExecutionException",
+        "detail": "Job execution failed.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 1330,
+    "numberTestFiles": 224,
+    "numberLibrariesFailingModule": 173,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dbs-leipzig/gradoop",
+      "branchName": "develop",
+      "sha": "b84a3e26ce0c55c63b13939ab34cc7391d0dd380",
+      "url": "http://github.com/dbs-leipzig/gradoop/commit/b84a3e26ce0c55c63b13939ab34cc7391d0dd380",
+      "date": "Oct 19, 2018 4:19:09 PM"
+    },
+    "fixerBuild": {
+      "repoName": "dbs-leipzig/gradoop",
+      "branchName": "develop",
+      "sha": "e4e4bc0203118c6beabdd552fa08af4df764a234",
+      "url": "http://github.com/dbs-leipzig/gradoop/commit/e4e4bc0203118c6beabdd552fa08af4df764a234",
+      "date": "Oct 23, 2018 4:09:45 PM"
+    }
+  }
+}
