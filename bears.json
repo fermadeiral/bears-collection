@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "SonarSource/sonar-php",
+    "githubId": 4544982,
+    "url": "https://github.com/SonarSource/sonar-php",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 445024700,
+      "url": "http://travis-ci.org/SonarSource/sonar-php/builds/445024700",
+      "date": "Oct 23, 2018 11:40:40 AM"
+    },
+    "fixerBuild": {
+      "id": 445150230,
+      "url": "http://travis-ci.org/SonarSource/sonar-php/builds/445150230",
+      "date": "Oct 23, 2018 4:27:23 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 4:27:35 PM",
+    "reproductionDateEnd": "Oct 23, 2018 4:30:11 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 394780480,
+      "totalMemory": 466092032
+    },
+    "totalDuration": 149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 47,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          47
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SonarSource/sonar-php/445024700/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 130,
+      "numberDeleted": 47
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SonarSource/sonar-php",
+      "branchName": "SONARPHP-473-dead-store",
+      "sha": "df4897b32466227b554d17f7d15cbe5309e66310",
+      "url": "http://github.com/SonarSource/sonar-php/commit/df4897b32466227b554d17f7d15cbe5309e66310",
+      "date": "Oct 23, 2018 11:39:12 AM"
+    },
+    "fixerBuild": {
+      "repoName": "SonarSource/sonar-php",
+      "branchName": "SONARPHP-473-dead-store",
+      "sha": "72f96970146d7f3dac93596a478f045e8ae19007",
+      "url": "http://github.com/SonarSource/sonar-php/commit/72f96970146d7f3dac93596a478f045e8ae19007",
+      "date": "Oct 23, 2018 4:22:17 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SonarSource/sonar-php/445024700/php-frontend",
+    "overallMetrics": {
+      "numberRunning": 576,
+      "numberPassing": 573,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.php.cfg.LiveVariablesAnalysisTest",
+        "numberRunning": 12,
+        "numberPassing": 9,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.php.cfg.LiveVariablesAnalysisTest",
+        "testMethod": "test_with_ignored_param",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Not expected CFG structure. Hint: Gen Variables size expected 2 and is 6 for \u0027condition\u0027.\nUse a tool like http://www.webgraphviz.com/ to visualize the below graph in dot notation\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\ndigraph G { 0[label\u003d\"\u003cEND\u003e\"];1[label\u003d\"Expected: insideIf (succ \u003d [END], liveIn \u003d [x], liveOut \u003d [], gen \u003d [x])\"];2[label\u003d\"Expected: condition( succ \u003d [insideIf], liveIn \u003d [foo, bar], liveOut \u003d [x], gen \u003d [foo, bar], kill \u003d [x,y,z,w])\"];1-\u003e0;2-\u003e1[label\u003dtrue];2-\u003e0[label\u003dfalse]; }\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+        "isError": false
+      },
+      {
+        "testClass": "org.sonar.php.cfg.LiveVariablesAnalysisTest",
+        "testMethod": "test_with_array_assignment",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Not expected CFG structure. Hint: Gen Variables size expected 0 and is 2 for \u0027condition\u0027.\nUse a tool like http://www.webgraphviz.com/ to visualize the below graph in dot notation\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\ndigraph G { 0[label\u003d\"Expected: insideIf (succ \u003d [END], liveIn \u003d [x], liveOut \u003d [], gen \u003d [x])\"];1[label\u003d\"\u003cEND\u003e\"];2[label\u003d\"Expected: condition( succ \u003d [insideIf], liveIn \u003d [], liveOut \u003d [x], gen \u003d [], kill \u003d [x,y])\"];0-\u003e1;2-\u003e0[label\u003dtrue];2-\u003e1[label\u003dfalse]; }\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+        "isError": false
+      },
+      {
+        "testClass": "org.sonar.php.cfg.LiveVariablesAnalysisTest",
+        "testMethod": "unary_minus_plus_expression",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Not expected CFG structure. Hint: Killed Variables size expected 0 and is 1 for \u0027condition\u0027.\nUse a tool like http://www.webgraphviz.com/ to visualize the below graph in dot notation\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\ndigraph G { 0[label\u003d\"Expected: condition( succ \u003d [insideIf], liveIn \u003d [a], liveOut \u003d [a], gen \u003d [a], kill \u003d [])\"];1[label\u003d\"\u003cEND\u003e\"];2[label\u003d\"Expected: insideIf (succ \u003d [END], liveIn \u003d [a], liveOut \u003d [], gen \u003d [a])\"];0-\u003e2[label\u003dtrue];0-\u003e1[label\u003dfalse];2-\u003e1; }\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberSourceFiles": 499,
+    "numberTestFiles": 433,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  }
+}
