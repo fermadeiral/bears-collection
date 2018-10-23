@@ -1,0 +1,1327 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.alipay.sofa:bolt 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ bolt ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 243
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 243 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ bolt ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bolt ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ bolt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bolt ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ bolt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ bolt ---
+[INFO] Surefire report directory: /root/workspace/alipay/sofa-bolt/443171647/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 71.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 897.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.alipay.remoting.rpc.prehandle.PrehandleTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.867 sec - in com.alipay.remoting.rpc.prehandle.PrehandleTest
+Running com.alipay.remoting.rpc.watermark.WaterMark_SystemProperty_ExceptionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:21:16,126 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-10] overflow exception!
+2018-10-23 06:21:16,126 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-6] overflow exception!
+2018-10-23 06:21:16,126 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-7] overflow exception!
+2018-10-23 06:21:16,126 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-3] overflow exception!
+2018-10-23 06:21:16,126 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-5] overflow exception!
+2018-10-23 06:21:16,132 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-4] overflow exception!
+2018-10-23 06:21:16,140 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-2] overflow exception!
+2018-10-23 06:21:16,157 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-11] overflow exception!
+2018-10-23 06:21:16,165 ERROR [WaterMark_SystemProperty_ExceptionTest$1#113] [Thread-8] overflow exception!
+2018-10-23 06:21:18,992 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-16] overflow exception!
+2018-10-23 06:21:18,992 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-17] overflow exception!
+2018-10-23 06:21:19,003 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-18] overflow exception!
+2018-10-23 06:21:19,051 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-20] overflow exception!
+2018-10-23 06:21:19,051 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-12] overflow exception!
+2018-10-23 06:21:19,050 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-19] overflow exception!
+2018-10-23 06:21:19,087 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-21] overflow exception!
+2018-10-23 06:21:19,091 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-14] overflow exception!
+2018-10-23 06:21:19,104 ERROR [WaterMark_SystemProperty_ExceptionTest$2#161] [Thread-15] overflow exception!
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.636 sec - in com.alipay.remoting.rpc.watermark.WaterMark_SystemProperty_ExceptionTest
+Running com.alipay.remoting.rpc.watermark.WaterMarkTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.939 sec - in com.alipay.remoting.rpc.watermark.WaterMarkTest
+Running com.alipay.remoting.rpc.watermark.WaterMarkInitTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.091 sec - in com.alipay.remoting.rpc.watermark.WaterMarkInitTest
+Running com.alipay.remoting.rpc.watermark.WaterMark_UserProperty_ExceptionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-10] overflow exception!
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-4] overflow exception!
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-2] overflow exception!
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-8] overflow exception!
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-3] overflow exception!
+2018-10-23 06:21:39,120 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-11] overflow exception!
+2018-10-23 06:21:39,126 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-6] overflow exception!
+2018-10-23 06:21:39,145 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-7] overflow exception!
+2018-10-23 06:21:39,157 ERROR [WaterMark_UserProperty_ExceptionTest$1#111] [Thread-9] overflow exception!
+2018-10-23 06:21:42,062 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-14] overflow exception!
+2018-10-23 06:21:42,064 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-17] overflow exception!
+2018-10-23 06:21:42,066 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-15] overflow exception!
+2018-10-23 06:21:42,066 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-18] overflow exception!
+2018-10-23 06:21:42,066 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-19] overflow exception!
+2018-10-23 06:21:42,066 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-20] overflow exception!
+2018-10-23 06:21:42,075 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-21] overflow exception!
+2018-10-23 06:21:42,112 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-13] overflow exception!
+2018-10-23 06:21:42,126 ERROR [WaterMark_UserProperty_ExceptionTest$2#159] [Thread-12] overflow exception!
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.572 sec - in com.alipay.remoting.rpc.watermark.WaterMark_UserProperty_ExceptionTest
+Running com.alipay.remoting.rpc.resrelease.ServerClientStopTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:21:54,327 ERROR [ServerClientStopTest#98] [main] invoke sync failed!
+com.alipay.remoting.exception.RemotingException: Create connection failed. The address is 127.0.0.1:45743?_CONNECTIONNUM=8&_CONNECTIONWARMUP=true
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:507) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.doCreate(DefaultConnectionManager.java:790) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.access$000(DefaultConnectionManager.java:52) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:732) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:706) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_121]
+	at com.alipay.remoting.util.RunStateRecordedFutureTask.run(RunStateRecordedFutureTask.java:39) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getConnectionPoolAndCreateIfAbsent(DefaultConnectionManager.java:599) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getAndCreateIfAbsent(DefaultConnectionManager.java:465) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.getConnectionAndInitInvokeContext(RpcClientRemoting.java:124) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:62) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.resrelease.ServerClientStopTest.testRpcServerStop(ServerClientStopTest.java:95) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.Exception: Create connection to 127.0.0.1:45743 error!
+	at com.alipay.remoting.connection.AbstractConnectionFactory.doCreateConnection(AbstractConnectionFactory.java:206) ~[classes/:?]
+	at com.alipay.remoting.connection.AbstractConnectionFactory.createConnection(AbstractConnectionFactory.java:131) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:504) ~[classes/:?]
+	... 38 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: syscall:getsockopt(..) failed: Connection refused: /127.0.0.1:45743
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+Caused by: io.netty.channel.unix.Errors$NativeConnectException: syscall:getsockopt(..) failed: Connection refused
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.306 sec - in com.alipay.remoting.rpc.resrelease.ServerClientStopTest
+Running com.alipay.remoting.rpc.ServerBasicUsageTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.995 sec - in com.alipay.remoting.rpc.ServerBasicUsageTest
+Running com.alipay.remoting.rpc.BasicUsageTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.253 sec - in com.alipay.remoting.rpc.BasicUsageTest
+Running com.alipay.remoting.rpc.userprocessor.processinio.BasicUsage_ProcessInIoThread_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.881 sec - in com.alipay.remoting.rpc.userprocessor.processinio.BasicUsage_ProcessInIoThread_Test
+Running com.alipay.remoting.rpc.userprocessor.executorselector.BasicUsage_ExecutorSelector_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.195 sec - in com.alipay.remoting.rpc.userprocessor.executorselector.BasicUsage_ExecutorSelector_Test
+Running com.alipay.remoting.rpc.userprocessor.UserProcessorRegisterHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.864 sec - in com.alipay.remoting.rpc.userprocessor.UserProcessorRegisterHelperTest
+Running com.alipay.remoting.rpc.userprocessor.multiinterestprocessor.BasicUsage_MultiInterestUserProcessorTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.113 sec - in com.alipay.remoting.rpc.userprocessor.multiinterestprocessor.BasicUsage_MultiInterestUserProcessorTest
+Running com.alipay.remoting.rpc.connectionmanage.ReconnectManagerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.73 sec - in com.alipay.remoting.rpc.connectionmanage.ReconnectManagerTest
+Running com.alipay.remoting.rpc.connectionmanage.ScheduledDisconnectStrategyTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.258 sec - in com.alipay.remoting.rpc.connectionmanage.ScheduledDisconnectStrategyTest
+Running com.alipay.remoting.rpc.lock.CreateConnLockTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:22:59,267 ERROR [CreateConnLockTest$MyThread#163] [Thread-2] error!
+com.alipay.remoting.exception.RemotingException: Create connection failed. The address is 127.0.0.0:12200
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:507) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.doCreate(DefaultConnectionManager.java:801) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.access$000(DefaultConnectionManager.java:52) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:732) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:706) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_121]
+	at com.alipay.remoting.util.RunStateRecordedFutureTask.run(RunStateRecordedFutureTask.java:39) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getConnectionPoolAndCreateIfAbsent(DefaultConnectionManager.java:599) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getAndCreateIfAbsent(DefaultConnectionManager.java:465) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.getConnectionAndInitInvokeContext(RpcClientRemoting.java:124) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:62) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:355) ~[classes/:?]
+	at com.alipay.remoting.rpc.lock.CreateConnLockTest$MyThread.run(CreateConnLockTest.java:159) [test-classes/:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: java.lang.Exception: Create connection to 127.0.0.0:12200 error!
+	at com.alipay.remoting.connection.AbstractConnectionFactory.doCreateConnection(AbstractConnectionFactory.java:206) ~[classes/:?]
+	at com.alipay.remoting.connection.AbstractConnectionFactory.createConnection(AbstractConnectionFactory.java:131) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:504) ~[classes/:?]
+	... 13 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: null: /127.0.0.0:12200
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:104) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.unix.Socket.connect(Socket.java:257) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:732) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:717) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:559) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1366) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:47) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at com.alipay.remoting.ConnectionEventHandler.connect(ConnectionEventHandler.java:88) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:512) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:1024) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:259) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:252) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:313) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	... 1 more
+Caused by: java.net.NoRouteToHostException
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:104) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.unix.Socket.connect(Socket.java:257) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doConnect0(AbstractEpollChannel.java:732) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doConnect(AbstractEpollChannel.java:717) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.connect(AbstractEpollChannel.java:559) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1366) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:47) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.ChannelDuplexHandler.connect(ChannelDuplexHandler.java:50) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at com.alipay.remoting.ConnectionEventHandler.connect(ConnectionEventHandler.java:88) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:545) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:530) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:512) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:1024) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:259) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:252) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:313) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	... 1 more
+2018-10-23 06:23:09,480 ERROR [CreateConnLockTest$MyThread#163] [Thread-9] error!
+com.alipay.remoting.exception.RemotingException: Create connection failed. The address is 127.0.0.1:12201
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:507) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.doCreate(DefaultConnectionManager.java:801) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.access$000(DefaultConnectionManager.java:52) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:732) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:706) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_121]
+	at com.alipay.remoting.util.RunStateRecordedFutureTask.run(RunStateRecordedFutureTask.java:39) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getConnectionPoolAndCreateIfAbsent(DefaultConnectionManager.java:599) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getAndCreateIfAbsent(DefaultConnectionManager.java:465) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.getConnectionAndInitInvokeContext(RpcClientRemoting.java:124) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:62) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:355) ~[classes/:?]
+	at com.alipay.remoting.rpc.lock.CreateConnLockTest$MyThread.run(CreateConnLockTest.java:159) [test-classes/:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: java.lang.Exception: Create connection to 127.0.0.1:12201 error!
+	at com.alipay.remoting.connection.AbstractConnectionFactory.doCreateConnection(AbstractConnectionFactory.java:206) ~[classes/:?]
+	at com.alipay.remoting.connection.AbstractConnectionFactory.createConnection(AbstractConnectionFactory.java:131) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:504) ~[classes/:?]
+	... 13 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: syscall:getsockopt(..) failed: Connection refused: /127.0.0.1:12201
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+Caused by: io.netty.channel.unix.Errors$NativeConnectException: syscall:getsockopt(..) failed: Connection refused
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+2018-10-23 06:23:09,483 ERROR [CreateConnLockTest$MyThread#163] [Thread-10] error!
+com.alipay.remoting.exception.RemotingException: Create connection failed. The address is 127.0.0.1:12202
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:507) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.doCreate(DefaultConnectionManager.java:801) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.access$000(DefaultConnectionManager.java:52) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:732) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager$ConnectionPoolCall.call(DefaultConnectionManager.java:706) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_121]
+	at com.alipay.remoting.util.RunStateRecordedFutureTask.run(RunStateRecordedFutureTask.java:39) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getConnectionPoolAndCreateIfAbsent(DefaultConnectionManager.java:599) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.getAndCreateIfAbsent(DefaultConnectionManager.java:465) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.getConnectionAndInitInvokeContext(RpcClientRemoting.java:124) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:62) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:355) ~[classes/:?]
+	at com.alipay.remoting.rpc.lock.CreateConnLockTest$MyThread.run(CreateConnLockTest.java:159) [test-classes/:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: java.lang.Exception: Create connection to 127.0.0.1:12202 error!
+	at com.alipay.remoting.connection.AbstractConnectionFactory.doCreateConnection(AbstractConnectionFactory.java:206) ~[classes/:?]
+	at com.alipay.remoting.connection.AbstractConnectionFactory.createConnection(AbstractConnectionFactory.java:131) ~[classes/:?]
+	at com.alipay.remoting.DefaultConnectionManager.create(DefaultConnectionManager.java:504) ~[classes/:?]
+	... 13 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: syscall:getsockopt(..) failed: Connection refused: /127.0.0.1:12202
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+Caused by: io.netty.channel.unix.Errors$NativeConnectException: syscall:getsockopt(..) failed: Connection refused
+	at io.netty.channel.unix.Socket.finishConnect(..)(Unknown Source) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.596 sec - in com.alipay.remoting.rpc.lock.CreateConnLockTest
+Running com.alipay.remoting.rpc.RpcConfigManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.alipay.remoting.rpc.RpcConfigManagerTest
+Running com.alipay.remoting.rpc.RpcServerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.06 sec - in com.alipay.remoting.rpc.RpcServerTest
+Running com.alipay.remoting.rpc.client.ClientConnectionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.783 sec - in com.alipay.remoting.rpc.client.ClientConnectionTest
+Running com.alipay.remoting.rpc.BasicUsage_SHARE_SAME_SERVER_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.823 sec - in com.alipay.remoting.rpc.BasicUsage_SHARE_SAME_SERVER_Test
+Running com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_Url_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.818 sec - in com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_Url_Test
+Running com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.877 sec - in com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_Test
+Running com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_resuable_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.061 sec - in com.alipay.remoting.rpc.invokecontext.BasicUsage_InvokeContext_resuable_Test
+Running com.alipay.remoting.rpc.exception.ServerInvokeExceptionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:23:41,940 ERROR [ServerInvokeExceptionTest#112] [main] Client address [127.0.0.1:34230] not connected yet!
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.889 sec - in com.alipay.remoting.rpc.exception.ServerInvokeExceptionTest
+Running com.alipay.remoting.rpc.exception.ServerUnsupportedOperationExceptionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:23:44,513 ERROR [ServerUnsupportedOperationExceptionTest#108] [main] Please enable connection manage feature of Rpc Server before call this method! See comments in constructor RpcServer(int port, boolean manageConnection) to find how to enable!
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.723 sec - in com.alipay.remoting.rpc.exception.ServerUnsupportedOperationExceptionTest
+Running com.alipay.remoting.rpc.exception.ServerBusyTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.28 sec - in com.alipay.remoting.rpc.exception.ServerBusyTest
+Running com.alipay.remoting.rpc.exception.BadServerIpTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:23:51,507 ERROR [BadServerIpTest#55] [main] Start server failed!
+java.lang.IllegalStateException: ERROR: Failed to start the Server!
+	at com.alipay.remoting.AbstractRemotingServer.start(AbstractRemotingServer.java:74) ~[classes/:?]
+	at com.alipay.remoting.rpc.exception.BadServerIpTest$BadServer.startServer(BadServerIpTest.java:90) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.exception.BadServerIpTest.cantResolveTest(BadServerIpTest.java:53) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.nio.channels.UnresolvedAddressException
+	at io.netty.channel.epoll.AbstractEpollChannel.checkResolvable(AbstractEpollChannel.java:336) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doBind(AbstractEpollChannel.java:686) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:70) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:313) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+2018-10-23 06:23:51,522 ERROR [BadServerIpTest#45] [main] Start server failed!
+java.lang.IllegalStateException: ERROR: Failed to start the Server!
+	at com.alipay.remoting.AbstractRemotingServer.start(AbstractRemotingServer.java:74) ~[classes/:?]
+	at com.alipay.remoting.rpc.exception.BadServerIpTest$BadServer.startServer(BadServerIpTest.java:90) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.exception.BadServerIpTest.cantAssignTest(BadServerIpTest.java:43) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Cannot assign requested address
+	at io.netty.channel.unix.Errors.newIOException(Errors.java:122) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.unix.Socket.bind(Socket.java:287) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel.doBind(AbstractEpollChannel.java:688) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:70) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:313) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.022 sec - in com.alipay.remoting.rpc.exception.BadServerIpTest
+Running com.alipay.remoting.rpc.exception.ExceptionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:23:54,562 ERROR [ExceptionTest$2#322] [Bolt-default-executor-4-thread-7] Error in callback
+com.alipay.remoting.rpc.exception.InvokeServerException: Server exception when invoke with callback.Please check the server log! The address is 127.0.0.1:41553
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:138) [classes/:?]
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener.onResponse(RpcInvokeCallbackListener.java:72) [classes/:?]
+	at com.alipay.remoting.rpc.DefaultInvokeFuture.executeInvokeCallback(DefaultInvokeFuture.java:164) [classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcResponseProcessor.doProcess(RpcResponseProcessor.java:73) [classes/:?]
+	at com.alipay.remoting.AbstractRemotingProcessor$ProcessTask.run(AbstractRemotingProcessor.java:148) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: java.lang.RuntimeException: Hello exception!. AdditionalErrorMsg: AYSNC process rpc request failed in RpcRequestProcessor, id=7
+	at com.alipay.remoting.rpc.common.AsyncExceptionUserProcessor.handleRequest(AsyncExceptionUserProcessor.java:90) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.common.AsyncExceptionUserProcessor.handleRequest(AsyncExceptionUserProcessor.java:39) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.dispatchToUserProcessor(RpcRequestProcessor.java:224) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:145) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	... 3 more
+2018-10-23 06:23:54,696 ERROR [ExceptionTest$1#283] [Bolt-default-executor-4-thread-8] Error in callback
+com.alipay.remoting.rpc.exception.InvokeServerException: Server exception when invoke with callback.Please check the server log! The address is 127.0.0.1:44059
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:138) [classes/:?]
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener.onResponse(RpcInvokeCallbackListener.java:72) [classes/:?]
+	at com.alipay.remoting.rpc.DefaultInvokeFuture.executeInvokeCallback(DefaultInvokeFuture.java:164) [classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcResponseProcessor.doProcess(RpcResponseProcessor.java:73) [classes/:?]
+	at com.alipay.remoting.AbstractRemotingProcessor$ProcessTask.run(AbstractRemotingProcessor.java:148) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: java.lang.Exception: Hello exception!. AdditionalErrorMsg: SYNC process rpc request failed in RpcRequestProcessor, id=8
+	at com.alipay.remoting.rpc.common.ExceptionUserProcessor.handleRequest(ExceptionUserProcessor.java:74) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.common.ExceptionUserProcessor.handleRequest(ExceptionUserProcessor.java:38) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.dispatchToUserProcessor(RpcRequestProcessor.java:240) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:145) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	... 3 more
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.005 sec - in com.alipay.remoting.rpc.exception.ExceptionTest
+Running com.alipay.remoting.rpc.exception.BasicUsage_AsyncProcessor_Null_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.172 sec - in com.alipay.remoting.rpc.exception.BasicUsage_AsyncProcessor_Null_Test
+Running com.alipay.remoting.rpc.exception.BasicUsage_AsyncProcessor_Exception_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.318 sec - in com.alipay.remoting.rpc.exception.BasicUsage_AsyncProcessor_Exception_Test
+Running com.alipay.remoting.rpc.BasicUsage_ProtocolV2_1_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.293 sec - in com.alipay.remoting.rpc.BasicUsage_ProtocolV2_1_Test
+Running com.alipay.remoting.rpc.BasicUsage_AsyncProcessor_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.139 sec - in com.alipay.remoting.rpc.BasicUsage_AsyncProcessor_Test
+Running com.alipay.remoting.rpc.heartbeat.ClientHeartBeatTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.414 sec - in com.alipay.remoting.rpc.heartbeat.ClientHeartBeatTest
+Running com.alipay.remoting.rpc.heartbeat.ServerHeartBeatTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.18 sec - in com.alipay.remoting.rpc.heartbeat.ServerHeartBeatTest
+Running com.alipay.remoting.rpc.heartbeat.HeartBeatDisableTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.901 sec - in com.alipay.remoting.rpc.heartbeat.HeartBeatDisableTest
+Running com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.646 sec <<< FAILURE! - in com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest
+testRuntimeCloseAndEnableHeartbeat(com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest)  Time elapsed: 3.609 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.alipay.remoting.rpc.heartbeat.RuntimeClientHeartBeatTest.testRuntimeCloseAndEnableHeartbeat(RuntimeClientHeartBeatTest.java:112)
+
+Running com.alipay.remoting.rpc.serializer.CodecTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.354 sec - in com.alipay.remoting.rpc.serializer.CodecTest
+Running com.alipay.remoting.rpc.serializer.CustomSerializerCodecTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:24:37,697 ERROR [CustomSerializerCodecTest#382] [main] IllegalArgumentException
+java.lang.IllegalArgumentException: Illegal custom serializer [0], the type of value should be [byte], but now is [java.lang.Integer].
+	at com.alipay.remoting.rpc.RpcRemoting.toRemotingCommand(RpcRemoting.java:335) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:179) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:309) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.CustomSerializerCodecTest.testIllegalType(CustomSerializerCodecTest.java:375) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.772 sec - in com.alipay.remoting.rpc.serializer.CustomSerializerCodecTest
+Running com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:24:39,914 ERROR [ClassCustomSerializerTest#173] [main] 
+com.alipay.remoting.exception.SerializationException: Exception caught when serialize content of rpc request command!
+	at com.alipay.remoting.rpc.protocol.RpcRequestCommand.serializeContent(RpcRequestCommand.java:134) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.serialize(RpcCommand.java:105) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.toRemotingCommand(RpcRemoting.java:354) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:179) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testRequestSerialRuntimeException(ClassCustomSerializerTest.java:170) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.RuntimeException: serialRuntimeException in ExceptionRequestBodyCustomSerializer!
+	at com.alipay.remoting.rpc.serializer.ExceptionRequestBodyCustomSerializer.serializeContent(ExceptionRequestBodyCustomSerializer.java:67) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestCommand.serializeContent(RpcRequestCommand.java:125) ~[classes/:?]
+	... 33 more
+2018-10-23 06:24:40,196 ERROR [ClassCustomSerializerTest#295] [main] 
+com.alipay.remoting.exception.SerializationException: Server serialize response exception! the address is 127.0.0.1:40751, id=2, serverSide=true, ServerErrorMsg:null
+	at com.alipay.remoting.rpc.RpcResponseResolver.preProcess(RpcResponseResolver.java:109) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:54) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testResponseSerialRuntimeException(ClassCustomSerializerTest.java:292) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: com.alipay.remoting.exception.SerializationException: Exception caught when serialize content of rpc response command!. AdditionalErrorMsg: null
+	at com.alipay.remoting.rpc.protocol.RpcResponseCommand.serializeContent(RpcResponseCommand.java:119) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.serialize(RpcCommand.java:105) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.sendResponseIfNecessary(RpcRequestProcessor.java:162) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.dispatchToUserProcessor(RpcRequestProcessor.java:243) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:145) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+2018-10-23 06:24:40,321 ERROR [ClassCustomSerializerTest#265] [main] 
+com.alipay.remoting.exception.SerializationException: Server serialize response exception! the address is 127.0.0.1:38073, id=3, serverSide=true, ServerErrorMsg:null
+	at com.alipay.remoting.rpc.RpcResponseResolver.preProcess(RpcResponseResolver.java:109) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:54) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testResponseSerialException(ClassCustomSerializerTest.java:262) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: com.alipay.remoting.exception.SerializationException: serialException in ExceptionStringCustomSerializer!. AdditionalErrorMsg: null
+	at com.alipay.remoting.rpc.serializer.ExceptionStringCustomSerializer.serializeContent(ExceptionStringCustomSerializer.java:67) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcResponseCommand.serializeContent(RpcResponseCommand.java:110) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.serialize(RpcCommand.java:105) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.sendResponseIfNecessary(RpcRequestProcessor.java:162) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.dispatchToUserProcessor(RpcRequestProcessor.java:243) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:145) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+2018-10-23 06:24:40,508 ERROR [ClassCustomSerializerTest#204] [main] 
+com.alipay.remoting.exception.DeserializationException: Server deserialize request exception! the address is 127.0.0.1:46595, id=4, serverSide=true, ServerErrorMsg:null
+	at com.alipay.remoting.rpc.RpcResponseResolver.preProcess(RpcResponseResolver.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:54) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testRequestDeserialException(ClassCustomSerializerTest.java:201) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: com.alipay.remoting.exception.DeserializationException: deserialException in ExceptionRequestBodyCustomSerializer!. AdditionalErrorMsg: null
+	at com.alipay.remoting.rpc.serializer.ExceptionRequestBodyCustomSerializer.deserializeContent(ExceptionRequestBodyCustomSerializer.java:88) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestCommand.deserializeContent(RpcRequestCommand.java:145) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:138) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.deserializeRequestCommand(RpcRequestProcessor.java:267) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:142) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+2018-10-23 06:24:40,628 ERROR [ClassCustomSerializerTest#325] [main] 
+com.alipay.remoting.exception.DeserializationException: deserialException in ExceptionStringCustomSerializer!
+	at com.alipay.remoting.rpc.serializer.ExceptionStringCustomSerializer.deserializeContent(ExceptionStringCustomSerializer.java:85) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcResponseCommand.deserializeContent(RpcResponseCommand.java:130) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.toResponseObject(RpcResponseResolver.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:56) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testResponseDeserialzeException(ClassCustomSerializerTest.java:322) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:40,738 ERROR [ClassCustomSerializerTest#143] [main] 
+com.alipay.remoting.exception.SerializationException: serialException in ExceptionRequestBodyCustomSerializer!
+	at com.alipay.remoting.rpc.serializer.ExceptionRequestBodyCustomSerializer.serializeContent(ExceptionRequestBodyCustomSerializer.java:70) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestCommand.serializeContent(RpcRequestCommand.java:125) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.serialize(RpcCommand.java:105) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.toRemotingCommand(RpcRemoting.java:354) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:179) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testRequestSerialException(ClassCustomSerializerTest.java:140) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:41,223 ERROR [ClassCustomSerializerTest#235] [main] 
+com.alipay.remoting.exception.DeserializationException: Server deserialize request exception! the address is 127.0.0.1:46481, id=12, serverSide=true, ServerErrorMsg:null
+	at com.alipay.remoting.rpc.RpcResponseResolver.preProcess(RpcResponseResolver.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:54) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testRequestDeserialRuntimeException(ClassCustomSerializerTest.java:232) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: com.alipay.remoting.rpc.exception.RpcServerException: [Server]OriginErrorMsg: com.alipay.remoting.exception.DeserializationException: Exception caught when deserialize content of rpc request command!. AdditionalErrorMsg: null
+	at com.alipay.remoting.rpc.protocol.RpcRequestCommand.deserializeContent(RpcRequestCommand.java:155) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:138) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.deserializeRequestCommand(RpcRequestProcessor.java:267) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor.doProcess(RpcRequestProcessor.java:142) ~[classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcRequestProcessor$ProcessTask.run(RpcRequestProcessor.java:366) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+2018-10-23 06:24:41,472 ERROR [ClassCustomSerializerTest#355] [main] 
+com.alipay.remoting.exception.DeserializationException: Exception caught when deserialize content of rpc response command!
+	at com.alipay.remoting.rpc.protocol.RpcResponseCommand.deserializeContent(RpcResponseCommand.java:140) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcCommand.deserialize(RpcCommand.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.toResponseObject(RpcResponseResolver.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcResponseResolver.resolveResponseObject(RpcResponseResolver.java:56) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:186) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClientRemoting.invokeSync(RpcClientRemoting.java:64) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcRemoting.invokeSync(RpcRemoting.java:143) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcClient.invokeSync(RpcClient.java:291) ~[classes/:?]
+	at com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest.testResponseDeserialzeRuntimeException(ClassCustomSerializerTest.java:352) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.RuntimeException: deserialRuntimeException in ExceptionStringCustomSerializer!
+	at com.alipay.remoting.rpc.serializer.ExceptionStringCustomSerializer.deserializeContent(ExceptionStringCustomSerializer.java:82) ~[test-classes/:?]
+	at com.alipay.remoting.rpc.protocol.RpcResponseCommand.deserializeContent(RpcResponseCommand.java:130) ~[classes/:?]
+	... 34 more
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.917 sec - in com.alipay.remoting.rpc.serializer.ClassCustomSerializerTest
+Running com.alipay.remoting.rpc.callback.InvokeCallbackTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.16 sec - in com.alipay.remoting.rpc.callback.InvokeCallbackTest
+Running com.alipay.remoting.rpc.addressargs.RpcAddressParserTest
+2018-10-23 06:24:46,166 ERROR [RpcAddressParserTest#90] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.0.1], must have one COLON[:]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:83) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:87) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,182 ERROR [RpcAddressParserTest#101] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.0.1:], should not end with COLON[:]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:76) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:98) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,184 ERROR [RpcAddressParserTest#112] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.0.1:1111?_CONNECTTIMEOUT], must have one EQUAL[=]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:125) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:109) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,186 ERROR [RpcAddressParserTest#123] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.0.1:100?], should not end with QUES[?]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:94) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:120) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,188 ERROR [RpcAddressParserTest#134] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.1:100?A=B&], should not end with AND[&]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:135) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:131) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,189 ERROR [RpcAddressParserTest#145] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.1:100?A=B&C], must have one EQUAL[=]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:125) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:142) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,191 ERROR [RpcAddressParserTest#156] [main] URL FORMAT ERROR!
+java.lang.IllegalArgumentException: Illegal format address string [127.0.1:100?A=B&C=], should not end with EQUAL[=]! 
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:117) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testUrlIllegal(RpcAddressParserTest.java:153) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,193 ERROR [RpcAddressParserTest#171] [main] URL ARGS ILLEAGL!
+java.lang.IllegalArgumentException: Url args illegal value of key [_CONNECTTIMEOUT] must be positive integer! The origin url is [127.0.0.1:1111?_CONNECTTIMEOUT=-1&_TIMEOUT=3000&_SERIALIZETYPE=hessian2&_PROTOCOL=1]
+	at com.alipay.remoting.rpc.RpcAddressParser.initUrlArgs(RpcAddressParser.java:213) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:151) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testArgsIllegal(RpcAddressParserTest.java:167) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,195 ERROR [RpcAddressParserTest#182] [main] URL ARGS ILLEAGL!
+java.lang.IllegalArgumentException: Url args illegal value of key [_PROTOCOL] must be positive integer! The origin url is [127.0.0.1:1111?_CONNECTTIMEOUT=1000&_TIMEOUT=3000&_SERIALIZETYPE=hessian2&_PROTOCOL=-11]
+	at com.alipay.remoting.rpc.RpcAddressParser.initUrlArgs(RpcAddressParser.java:227) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:151) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testArgsIllegal(RpcAddressParserTest.java:178) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-10-23 06:24:46,197 ERROR [RpcAddressParserTest#193] [main] URL ARGS ILLEAGL!
+java.lang.IllegalArgumentException: Url args illegal value of key [_CONNECTIONNUM] must be positive integer! The origin url is [127.0.0.1:1111?_CONNECTTIMEOUT=1000&_TIMEOUT=3000&_SERIALIZETYPE=hessian2&_CONNECTIONNUM=-11]
+	at com.alipay.remoting.rpc.RpcAddressParser.initUrlArgs(RpcAddressParser.java:255) ~[classes/:?]
+	at com.alipay.remoting.rpc.RpcAddressParser.parse(RpcAddressParser.java:151) ~[classes/:?]
+	at com.alipay.remoting.rpc.addressargs.RpcAddressParserTest.testArgsIllegal(RpcAddressParserTest.java:189) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.775 sec - in com.alipay.remoting.rpc.addressargs.RpcAddressParserTest
+Running com.alipay.remoting.rpc.addressargs.AddressArgs_CONNECTIONNUM_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.236 sec - in com.alipay.remoting.rpc.addressargs.AddressArgs_CONNECTIONNUM_Test
+Running com.alipay.remoting.rpc.BasicUsage_ProtocolV2_2_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.779 sec - in com.alipay.remoting.rpc.BasicUsage_ProtocolV2_2_Test
+Running com.alipay.remoting.rpc.BasicUsage_ProtocolV1_Test
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.866 sec - in com.alipay.remoting.rpc.BasicUsage_ProtocolV1_Test
+Running com.alipay.remoting.rpc.timeout.ServerTimeoutTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:25:10,946 ERROR [ServerTimeoutTest$10#426] [pool-3-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40482
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-10-23 06:25:11,022 ERROR [ServerTimeoutTest$10#426] [pool-2-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40482
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-10-23 06:25:13,123 ERROR [ServerTimeoutTest$9#399] [pool-5-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40185
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-10-23 06:25:13,212 ERROR [ServerTimeoutTest$9#399] [pool-4-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40185
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.259 sec - in com.alipay.remoting.rpc.timeout.ServerTimeoutTest
+Running com.alipay.remoting.rpc.timeout.ServerTimeoutSwitchTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:25:22,427 ERROR [ServerTimeoutSwitchTest$10#431] [pool-3-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:36340
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-10-23 06:25:22,501 ERROR [ServerTimeoutSwitchTest$10#431] [pool-2-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:36340
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2
+2018-10-23 06:25:24,531 ERROR [ServerTimeoutSwitchTest$9#404] [pool-5-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40653
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-10-23 06:25:24,634 ERROR [ServerTimeoutSwitchTest$9#404] [pool-4-thread-1] Process exception in callback.
+com.alipay.remoting.rpc.exception.InvokeTimeoutException: Invoke timeout when invoke with callback.The address is 127.0.0.1:40653
+	at com.alipay.remoting.rpc.RpcInvokeCallbackListener$CallbackTask.run(RpcInvokeCallbackListener.java:117) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.521 sec - in com.alipay.remoting.rpc.timeout.ServerTimeoutSwitchTest
+Running com.alipay.remoting.rpc.timeout.TimeoutTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.894 sec - in com.alipay.remoting.rpc.timeout.TimeoutTest
+Running com.alipay.remoting.ProcessorManagerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.116 sec - in com.alipay.remoting.ProcessorManagerTest
+Running com.alipay.remoting.config.DefaultConfigContainerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.102 sec - in com.alipay.remoting.config.DefaultConfigContainerTest
+Running com.alipay.remoting.RemotingServerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.582 sec - in com.alipay.remoting.RemotingServerTest
+Running com.alipay.remoting.compatible.BasicUsageTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.467 sec - in com.alipay.remoting.compatible.BasicUsageTest
+Running com.alipay.remoting.inner.connection.UrlTest
+2018-10-23 06:25:45,920 ERROR [UrlTest#45] [main] Illegal value of connection number [-1], must be an integer between [1, 1000000].
+2018-10-23 06:25:45,922 ERROR [UrlTest#52] [main] Illegal value of connection number [0], must be a positive integer].
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 sec - in com.alipay.remoting.inner.connection.UrlTest
+Running com.alipay.remoting.inner.connection.ConcurrentCreateConnectionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.857 sec - in com.alipay.remoting.inner.connection.ConcurrentCreateConnectionTest
+Running com.alipay.remoting.inner.connection.ConnectionTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.605 sec - in com.alipay.remoting.inner.connection.ConnectionTest
+Running com.alipay.remoting.inner.connection.RpcConnectionManagerTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+2018-10-23 06:25:59,417 ERROR [RpcConnectionManagerTest#281] [main] Connection null
+com.alipay.remoting.exception.RemotingException: Connection is null when do check!
+	at com.alipay.remoting.DefaultConnectionManager.check(DefaultConnectionManager.java:401) ~[classes/:?]
+	at com.alipay.remoting.inner.connection.RpcConnectionManagerTest.testCheckConnectionException(RpcConnectionManagerTest.java:278) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.126 sec - in com.alipay.remoting.inner.connection.RpcConnectionManagerTest
+Running com.alipay.remoting.inner.utiltest.ConfigManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.alipay.remoting.inner.utiltest.ConfigManagerTest
+Running com.alipay.remoting.inner.utiltest.RemotingUtilTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.729 sec - in com.alipay.remoting.inner.utiltest.RemotingUtilTest
+Running com.alipay.remoting.inner.utiltest.GlobalSwitchTest
+Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.remoting Log4j2 ]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 sec - in com.alipay.remoting.inner.utiltest.GlobalSwitchTest
+Running com.alipay.remoting.inner.utiltest.ProtocolSwitchTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.alipay.remoting.inner.utiltest.ProtocolSwitchTest
+Running com.alipay.remoting.inner.utiltest.StringUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.alipay.remoting.inner.utiltest.StringUtilsTest
+
+Results :
+
+Failed tests: 
+  RuntimeClientHeartBeatTest.testRuntimeCloseAndEnableHeartbeat:112 null
+
+Tests run: 261, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:00 min
+[INFO] Finished at: 2018-10-23T06:26:06+02:00
+[INFO] Final Memory: 22M/575M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project bolt: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/alipay/sofa-bolt/443171647/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
