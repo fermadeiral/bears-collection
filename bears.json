@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 2165
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444752399,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/444752399",
+      "date": "Oct 22, 2018 11:11:11 PM"
+    },
+    "fixerBuild": {
+      "id": 445293769,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/445293769",
+      "date": "Oct 23, 2018 9:54:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 23, 2018 9:55:11 PM",
+    "reproductionDateEnd": "Oct 23, 2018 10:31:53 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 237977688,
+      "totalMemory": 488636416
+    },
+    "totalDuration": 2193,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 153,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          5,
+          144
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1033,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1033
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/444752399/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 20
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/444752399",
+    "overallMetrics": {
+      "numberRunning": 1590,
+      "numberPassing": 1589,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "numberRunning": 22,
+        "numberPassing": 21,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "testMethod": "testBug2209",
+        "failureName": "java.lang.IndexOutOfBoundsException",
+        "detail": "Index: 0, Size: 0",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 649,
+    "numberTestFiles": 709,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "69832ceddfc47710192152f3ea696608ea6ae7f1",
+      "url": "http://github.com/INRIA/spoon/commit/69832ceddfc47710192152f3ea696608ea6ae7f1",
+      "date": "Oct 22, 2018 8:34:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "ace06bae6db1fab9e461e51a613d46e96e1c4773",
+      "url": "http://github.com/INRIA/spoon/commit/ace06bae6db1fab9e461e51a613d46e96e1c4773",
+      "date": "Oct 23, 2018 9:21:24 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "mehdi-kaytoue/spoon",
+      "branchName": "master",
+      "sha": "b58f4161697c23f6dc54ba8d6c8b21810d1738ae",
+      "url": "https://github.com/mehdi-kaytoue/spoon/commit/b58f4161697c23f6dc54ba8d6c8b21810d1738ae",
+      "date": "Oct 23, 2018 9:21:24 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "988b15e1c4edc8545ba21a1e90945d647d497ce7",
+      "url": "https://github.com/INRIA/spoon/commit/988b15e1c4edc8545ba21a1e90945d647d497ce7",
+      "date": "Oct 22, 2018 8:26:10 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "mehdi-kaytoue/spoon",
+      "branchName": "master",
+      "sha": "b58f4161697c23f6dc54ba8d6c8b21810d1738ae",
+      "url": "https://github.com/mehdi-kaytoue/spoon/commit/b58f4161697c23f6dc54ba8d6c8b21810d1738ae",
+      "date": "Oct 23, 2018 9:21:24 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "988b15e1c4edc8545ba21a1e90945d647d497ce7",
+      "url": "https://github.com/INRIA/spoon/commit/988b15e1c4edc8545ba21a1e90945d647d497ce7",
+      "date": "Oct 22, 2018 8:26:10 PM"
+    }
+  },
+  "type": "passing_passing"
+}
