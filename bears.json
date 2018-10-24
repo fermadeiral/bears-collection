@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "HubSpot/Baragon",
+    "githubId": 14145875,
+    "url": "https://github.com/HubSpot/Baragon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444834347,
+      "url": "http://travis-ci.org/HubSpot/Baragon/builds/444834347",
+      "date": "Oct 23, 2018 12:33:53 AM"
+    },
+    "fixerBuild": {
+      "id": 445744181,
+      "url": "http://travis-ci.org/HubSpot/Baragon/builds/445744181",
+      "date": "Oct 24, 2018 6:10:40 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 24, 2018 6:10:54 PM",
+    "reproductionDateEnd": "Oct 24, 2018 6:19:10 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 231297224,
+      "totalMemory": 386924544
+    },
+    "totalDuration": 490,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 220,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          219
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 61,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          61
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/HubSpot/Baragon/444834347/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/HubSpot/Baragon/444834347/BaragonAgentService",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.ArithmeticException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.hubspot.baragon.agent.PreferSameRackWeightingBalancedTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.hubspot.baragon.agent.PreferSameRackWeightingBalancedTest",
+        "testMethod": "test1d_null",
+        "failureName": "java.lang.ArithmeticException",
+        "detail": "/ by zero",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 192,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 118,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "HubSpot/Baragon",
+      "branchName": "staging",
+      "sha": "e4e4e0e6b0c78cdf3c9c0815805df542a991fa8e",
+      "url": "http://github.com/HubSpot/Baragon/commit/e4e4e0e6b0c78cdf3c9c0815805df542a991fa8e",
+      "date": "Oct 23, 2018 12:23:28 AM"
+    },
+    "fixerBuild": {
+      "repoName": "HubSpot/Baragon",
+      "branchName": "staging",
+      "sha": "a4a9387af8b9f5ffa93c922b6865bb789cc07b1d",
+      "url": "http://github.com/HubSpot/Baragon/commit/a4a9387af8b9f5ffa93c922b6865bb789cc07b1d",
+      "date": "Oct 24, 2018 6:02:05 PM"
+    }
+  },
+  "type": "passing_passing"
+}
