@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Axway/iron",
+    "githubId": 88985813,
+    "url": "https://github.com/Axway/iron",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 444990711,
+      "url": "http://travis-ci.org/Axway/iron/builds/444990711",
+      "date": "Oct 23, 2018 10:25:23 AM"
+    },
+    "fixerBuild": {
+      "id": 445681394,
+      "url": "http://travis-ci.org/Axway/iron/builds/445681394",
+      "date": "Oct 24, 2018 4:10:44 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 24, 2018 4:10:56 PM",
+    "reproductionDateEnd": "Oct 24, 2018 4:15:41 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 241967336,
+      "totalMemory": 389545984
+    },
+    "totalDuration": 278,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 46,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          46
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 97,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          97
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Axway/iron/444990711/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Axway/iron/444990711/iron-inttest",
+    "overallMetrics": {
+      "numberRunning": 121,
+      "numberPassing": 120,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.TimeoutException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.axway.iron.spi.kafka.SingleKafkaSpiTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.axway.iron.spi.kafka.SingleKafkaSpiTest",
+        "testMethod": "shouldStartFromInitialSnapshotWithNoTx",
+        "failureName": "java.util.concurrent.TimeoutException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 145,
+    "numberTestFiles": 138,
+    "numberLibrariesFailingModule": 58,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Axway/iron",
+      "branchName": "master",
+      "sha": "1254d3e69be64a9525f7ecd1ddd169388ee426ef",
+      "url": "http://github.com/Axway/iron/commit/1254d3e69be64a9525f7ecd1ddd169388ee426ef",
+      "date": "Oct 23, 2018 10:19:49 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Axway/iron",
+      "branchName": "master",
+      "sha": "1740622fec3b758b28d72d91302cd37a41ce63fe",
+      "url": "http://github.com/Axway/iron/commit/1740622fec3b758b28d72d91302cd37a41ce63fe",
+      "date": "Oct 24, 2018 4:04:11 PM"
+    }
+  }
+}
