@@ -92,30 +92,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi-jackson ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom (3 KB at 7.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 67.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 68.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom (4 KB at 92.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 75.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar (43 KB at 659.3 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar (27 KB at 262.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 364.9 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 450.4 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running io.axway.iron.spi.jackson.JacksonSerializerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.454 s - in io.axway.iron.spi.jackson.JacksonSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.179 s - in io.axway.iron.spi.jackson.JacksonSerializerTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -151,7 +133,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-Execution ID=3dc52484-bdb7-4f88-bbd5-66d558ecfd77
+Execution ID=43a45aee-e7ac-44bb-b7aa-10a7c449411a
 Test io.axway.iron.core.internal.StoreManagerImpl$StoreImpl failed as expected, with message: io.axway.iron.error.StoreException: Kaboom
 class io.axway.iron.core.model.validation.command.InvalidNonInterfaceCommand => Command class is not an interface {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonInterfaceCommand"}}
 interface io.axway.iron.core.model.validation.command.InvalidNonPublicCommand => Command interface is not public {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonPublicCommand"}}
@@ -201,8 +183,8 @@ interface io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand =
 [interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity] => Reverse relation method miss call to the appropriate DSL method {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity", "reverseRelationMethodName": "reverse"}}
 [interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchTargetEntity] => Tail entity class mismatch between signature and DSL {"args": {"signatureTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity", "dslTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity"}}
 [interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity] => Head entity class mismatch between signature and DSL {"args": {"signatureTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity", "dslTailEntityClassName": "io.axway.iron.core.model.validation.TargetEntity"}}
-[interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantTargetEntity] => Relation has already a reverse relation defined so reverse relation cannot be added {"args": {"entityName": "io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity", "relationName": "relation", "reverseRelationName": "reverse2"}}
-[INFO] Tests run: 94, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.028 s - in TestSuite
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantTargetEntity] => Relation has already a reverse relation defined so reverse relation cannot be added {"args": {"entityName": "io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity", "relationName": "relation", "reverseRelationName": "reverse1"}}
+[INFO] Tests run: 94, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.054 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -239,7 +221,7 @@ interface io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand =
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.245 s - in TestSuite
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.292 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -330,8 +312,8 @@ interface io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand =
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-Migration done from tmp-iron-test/iron-spi-file-inttest/2528e83a-2af5-40cb-a5b1-8f57adecb25c/iron to tmp-iron-test/iron-spi-file-inttest/2528e83a-2af5-40cb-a5b1-8f57adecb25c/iron.new.
-Migration done from tmp-iron-test/iron-spi-file-inttest/493c1d48-b06b-4146-8bf5-c1444d2481cf/ironWithRealData to tmp-iron-test/iron-spi-file-inttest/493c1d48-b06b-4146-8bf5-c1444d2481cf/ironWithRealData.new.
+Migration done from tmp-iron-test/iron-spi-file-inttest/2b25f81d-55f8-4e77-8ddb-3bfdbf45399b/iron to tmp-iron-test/iron-spi-file-inttest/2b25f81d-55f8-4e77-8ddb-3bfdbf45399b/iron.new.
+Migration done from tmp-iron-test/iron-spi-file-inttest/e3566835-2e0c-4089-b66e-9bad1481d1a3/ironWithRealData to tmp-iron-test/iron-spi-file-inttest/e3566835-2e0c-4089-b66e-9bad1481d1a3/ironWithRealData.new.
 Persons:
 
 Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
@@ -410,49 +392,38 @@ Company Microsoft
 Company Axway
     previous employee bill
 Query6: Microsoft @ Seattle
-[ERROR] Tests run: 22, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.026 s <<< FAILURE! - in TestSuite
-[ERROR] shouldStartFromInitialSnapshotWithNoTx(io.axway.iron.spi.kafka.SingleKafkaSpiTest)  Time elapsed: 6.257 s  <<< FAILURE!
-java.util.concurrent.TimeoutException
-	at io.axway.iron.spi.kafka.SingleKafkaSpiTest.shouldStartFromInitialSnapshotWithNoTx(SingleKafkaSpiTest.java:270)
-
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.256 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   SingleKafkaSpiTest.shouldStartFromInitialSnapshotWithNoTx:270 Timeout
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 22, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron ---
+[INFO] Generating flattened POM of project io.axway.iron:iron:pom:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] iron-api ........................................... SUCCESS [  3.119 s]
-[INFO] iron-spi ........................................... SUCCESS [  0.971 s]
-[INFO] iron-spi-jackson ................................... SUCCESS [  4.210 s]
-[INFO] iron-core .......................................... SUCCESS [ 45.758 s]
-[INFO] iron-spi-aws ....................................... SUCCESS [  2.816 s]
-[INFO] iron-spi-chronicle ................................. SUCCESS [  0.417 s]
-[INFO] iron-spi-kafka ..................................... SUCCESS [  0.276 s]
-[INFO] iron-inttest ....................................... FAILURE [ 35.572 s]
-[INFO] iron ............................................... SKIPPED
+[INFO] iron-api ........................................... SUCCESS [  3.812 s]
+[INFO] iron-spi ........................................... SUCCESS [  0.953 s]
+[INFO] iron-spi-jackson ................................... SUCCESS [  3.378 s]
+[INFO] iron-core .......................................... SUCCESS [ 45.666 s]
+[INFO] iron-spi-aws ....................................... SUCCESS [  2.783 s]
+[INFO] iron-spi-chronicle ................................. SUCCESS [  0.811 s]
+[INFO] iron-spi-kafka ..................................... SUCCESS [  0.237 s]
+[INFO] iron-inttest ....................................... SUCCESS [ 38.802 s]
+[INFO] iron ............................................... SUCCESS [  0.033 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:33 min
-[INFO] Finished at: 2018-10-24T16:13:22+02:00
-[INFO] Final Memory: 35M/733M
+[INFO] Total time: 01:37 min
+[INFO] Finished at: 2018-10-24T16:15:38+02:00
+[INFO] Final Memory: 37M/1048M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project iron-inttest: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/Axway/iron/444990711/iron-inttest/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :iron-inttest
