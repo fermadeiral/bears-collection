@@ -1,0 +1,458 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] iron-api
+[INFO] iron-spi
+[INFO] iron-spi-jackson
+[INFO] iron-core
+[INFO] iron-spi-aws
+[INFO] iron-spi-chronicle
+[INFO] iron-spi-kafka
+[INFO] iron-inttest
+[INFO] iron
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-api 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-api/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-api ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-api:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-api ---
+[WARNING] Manifest io.axway.iron:iron-api:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-spi ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-spi:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /root/workspace/Axway/iron/444990711/iron-spi/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-spi ---
+[WARNING] Manifest io.axway.iron:iron-spi:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-spi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-jackson 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-spi-jackson ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-jackson/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-spi-jackson ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-spi-jackson:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-spi-jackson ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-spi-jackson ---
+[WARNING] Manifest io.axway.iron:iron-spi-jackson:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-spi-jackson ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-spi-jackson ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi-jackson ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom (3 KB at 7.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 67.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 68.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom (4 KB at 92.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 75.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar (43 KB at 659.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar (27 KB at 262.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 364.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 450.4 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.axway.iron.spi.jackson.JacksonSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.454 s - in io.axway.iron.spi.jackson.JacksonSerializerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-core 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-core/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-core ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-core:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Execution ID=3dc52484-bdb7-4f88-bbd5-66d558ecfd77
+Test io.axway.iron.core.internal.StoreManagerImpl$StoreImpl failed as expected, with message: io.axway.iron.error.StoreException: Kaboom
+class io.axway.iron.core.model.validation.command.InvalidNonInterfaceCommand => Command class is not an interface {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonInterfaceCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidNonPublicCommand => Command interface is not public {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonPublicCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidNonExtendingCommandCommand => Command class doesn't extends from Command interface {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonExtendingCommandCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidInheritanceCommand => Command extends others interface, which is not supported {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidInheritanceCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidMissingExecuteMethodCommand => Command doesn't implements method execute(ReadWriteTransaction) {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMissingExecuteMethodCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidMissingExecuteMethodImplementationCommand => Command doesn't provides a default implementation of method execute(ReadWriteTransaction) {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMissingExecuteMethodImplementationCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodReservedNameCommand => Command interface contains a forbidden method name {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodReservedNameCommand", "methodName": "hashCode"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodReservedPrefixCommand => Command interface contains a forbidden method name {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodReservedPrefixCommand", "methodName": "__value"}}
+interface io.axway.iron.core.model.validation.command.InvalidNonnullAndNullableMethodCommand => Command method cannot be both @Nonnull and @Nullable {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonnullAndNullableMethodCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidNonnullPrimitiveWrapperCommand => Command attribute is not @Nullable but has a primitive wrapper datatype, primitive datatype must be used instead {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNonnullPrimitiveWrapperCommand", "methodName": "value", "dataType": "java.lang.Integer", "primitiveDataType": "int"}}
+interface io.axway.iron.core.model.validation.command.InvalidNullablePrimitiveCommand => Command attribute is @Nullable but has a primitive datatype that cannot be null {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNullablePrimitiveCommand", "methodName": "value", "dataType": "int"}}
+interface io.axway.iron.core.model.validation.command.InvalidNullableCollectionCommand => Command relation is a multiple relation that cannot be @Nullable {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidNullableCollectionCommand", "methodName": "ids"}}
+interface io.axway.iron.core.model.validation.command.InvalidTransientNonImplementedMethodCommand => Command method is @Transient but has no default implementation {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidTransientNonImplementedMethodCommand", "methodName": "value2"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodWithArgsCommand => Command method has parameters, only no parameters methods are supported {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodWithArgsCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodWithExceptionsCommand => Command method must not declare exceptions {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodWithExceptionsCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodVoidCommand => Command method is a void method, only non void methods are supported {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodVoidCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodIdCommand => Command method cannot be annotated with @Id {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodIdCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodUniqueCommand => Command method cannot be annotated with @Unique {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodUniqueCommand", "methodName": "value"}}
+interface io.axway.iron.core.model.validation.command.InvalidEntityAnnotationCommand => Command must not be annotated with @Entity {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidEntityAnnotationCommand"}}
+interface io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand => Command method data type is not supported {"args": {"commandClassName": "io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand", "methodName": "value", "dataTypeName": "java.lang.reflect.Method"}}
+[class io.axway.iron.core.model.validation.InvalidNonInterfaceEntity] => Entity class is not an interface {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNonInterfaceEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidNonPublicEntity] => Entity interface is not public {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNonPublicEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidMissingEntityAnnotationEntity] => Entity interface is not annotated with @Entity {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMissingEntityAnnotationEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidExtendsEntity] => Entity interface extends others interface, which is not supported {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidExtendsEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidEmptyEntity] => Entity interface doesn't declare any methods {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidEmptyEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodReservedPrefixEntity] => Entity interface contains a forbidden method name {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodReservedPrefixEntity", "methodName": "__value"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodReservedNameEntity] => Entity interface contains a forbidden method name {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodReservedNameEntity", "methodName": "hashCode"}}
+[interface io.axway.iron.core.model.validation.InvalidTransientNonImplementedMethodEntity] => Entity method is @Transient but has no default implementation {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidTransientNonImplementedMethodEntity", "methodName": "value2"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithArgsEntity] => Entity method has parameters, only no parameters methods are supported {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodWithArgsEntity", "methodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithExceptionsEntity] => Entity method must not declare exceptions {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodWithExceptionsEntity", "methodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodVoidEntity] => Entity method is a void method, only non void methods are supported {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodVoidEntity", "methodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidNonnullAndNullableMethodEntity] => Entity method cannot be both @Nonnull and @Nullable {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNonnullAndNullableMethodEntity", "methodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidUniqueRelationEntity] => Entity relation cannot be annotated with @Unique. Not implemented yet. {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidUniqueRelationEntity", "relationMethodName": "relation"}}
+[interface io.axway.iron.core.model.validation.InvalidIdDefaultEntity] => Entity attribute must not have a default implementation {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidIdDefaultEntity", "attributeMethodName": "id"}}
+[interface io.axway.iron.core.model.validation.InvalidIdMultipleEntity] => Entity has multiple @Id annotation {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidIdMultipleEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidIdNonLongEntity] => Entity attribute is annotated with @Id but is not returning long {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidIdNonLongEntity", "attributeMethodName": "id"}}
+[interface io.axway.iron.core.model.validation.InvalidIdRelationEntity] => Entity relation cannot be annotated with @Id {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidIdRelationEntity", "relationMethodName": "id"}}
+[interface io.axway.iron.core.model.validation.InvalidIdUniqueEntity] => Entity attribute must not be annotated by both @Id and @Unique {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidIdUniqueEntity", "attributeMethodName": "id"}}
+[interface io.axway.iron.core.model.validation.InvalidNullableMultipleRelationEntity] => Entity relation is a multiple relation that cannot be @Nullable {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNullableMultipleRelationEntity", "methodName": "relations"}}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithDefaultImplementationEntity] => Entity attribute must not have a default implementation {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidMethodWithDefaultImplementationEntity", "attributeMethodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidNullablePrimitiveEntity] => Entity attribute is @Nullable but has a primitive datatype that cannot be null {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNullablePrimitiveEntity", "methodName": "value", "dataType": "int"}}
+[interface io.axway.iron.core.model.validation.InvalidNonnullPrimitiveWrapperEntity] => Entity attribute is not @Nullable but has a primitive wrapper datatype, primitive datatype must be used instead {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidNonnullPrimitiveWrapperEntity", "methodName": "value", "dataType": "java.lang.Integer", "primitiveDataType": "int"}}
+[interface io.axway.iron.core.model.validation.InvalidDatatypeEntity] => Entity method is not supported {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidDatatypeEntity", "methodName": "value"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleTargetEntity] => Entity reverse relation must be multiple and return Collection<TailEntity> {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleTargetEntity", "reverseRelationMethodName": "reverse"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationNullableEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationNullableTargetEntity] => Entity relation is a multiple relation that cannot be @Nullable {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationNullableTargetEntity", "methodName": "reverse"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity] => Reverse relation method miss call to the appropriate DSL method {"args": {"entityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity", "reverseRelationMethodName": "reverse"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchTargetEntity] => Tail entity class mismatch between signature and DSL {"args": {"signatureTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity", "dslTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity] => Head entity class mismatch between signature and DSL {"args": {"signatureTailEntityClassName": "io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity", "dslTailEntityClassName": "io.axway.iron.core.model.validation.TargetEntity"}}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantTargetEntity] => Relation has already a reverse relation defined so reverse relation cannot be added {"args": {"entityName": "io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity", "relationName": "relation", "reverseRelationName": "reverse2"}}
+[INFO] Tests run: 94, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.028 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 94, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-aws 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-spi-aws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-aws/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-spi-aws ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-spi-aws:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-spi-aws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-spi-aws ---
+[WARNING] Manifest io.axway.iron:iron-spi-aws:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-spi-aws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-aws/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-spi-aws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi-aws ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.245 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-chronicle 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-spi-chronicle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-chronicle/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-spi-chronicle ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-spi-chronicle:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-spi-chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-spi-chronicle ---
+[WARNING] Manifest io.axway.iron:iron-spi-chronicle:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-spi-chronicle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-chronicle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-spi-chronicle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi-chronicle ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-kafka 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-spi-kafka ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-kafka/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-spi-kafka ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-spi-kafka:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-spi-kafka ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-spi-kafka ---
+[WARNING] Manifest io.axway.iron:iron-spi-kafka:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-spi-kafka ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-spi-kafka/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-spi-kafka ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-spi-kafka ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-inttest 0.11.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ iron-inttest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Axway/iron/444990711/iron-inttest/src/main/resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.1:flatten (flatten) @ iron-inttest ---
+[INFO] Generating flattened POM of project io.axway.iron:iron-inttest:jar:0.11.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ iron-inttest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ iron-inttest ---
+[WARNING] Manifest io.axway.iron:iron-inttest:jar:0.11.0-SNAPSHOT : Unused Import-Package instructions: [com.google.common.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ iron-inttest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 33 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ iron-inttest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ iron-inttest ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Migration done from tmp-iron-test/iron-spi-file-inttest/2528e83a-2af5-40cb-a5b1-8f57adecb25c/iron to tmp-iron-test/iron-spi-file-inttest/2528e83a-2af5-40cb-a5b1-8f57adecb25c/iron.new.
+Migration done from tmp-iron-test/iron-spi-file-inttest/493c1d48-b06b-4146-8bf5-c1444d2481cf/ironWithRealData to tmp-iron-test/iron-spi-file-inttest/493c1d48-b06b-4146-8bf5-c1444d2481cf/ironWithRealData.new.
+Persons:
+
+Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
+Batch2: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch3: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch4: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456}, io.axway.iron.sample.model.Person(2)={name=mark, id=789}]
+Batch5: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0}, io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0}]
+Query6: Microsoft @ Seattle
+Persons:
+  io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=631148460000} currently works in Microsoft
+     previously works in Google
+     previously works in Axway
+  io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0} currently works in Microsoft
+  io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0} currently works in Google
+
+Company Google
+    employee mark
+    previous employee bill
+Company Microsoft
+    employee bill
+    employee john
+Company Axway
+    previous employee bill
+Query6: Microsoft @ Seattle
+Persons:
+
+Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
+Batch2: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+New country must be null or not empty
+New address must be null or not empty
+You cannot delete Google!
+Batch3: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch4: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456}, io.axway.iron.sample.model.Person(2)={name=mark, id=789}]
+Batch5: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0}, io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0}]
+Query6: Microsoft @ Seattle
+Persons:
+  io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990} currently works in Microsoft
+     previously works in Google
+     previously works in Axway
+  io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0} currently works in Microsoft
+  io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0} currently works in Google
+
+Company Google
+    employee mark
+    previous employee bill
+Company Microsoft
+    employee bill
+    employee john
+Company Axway
+    previous employee bill
+Query6: Microsoft @ Seattle
+Persons:
+
+Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
+Batch2: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+New country must be null or not empty
+New address must be null or not empty
+You cannot delete Google!
+Batch3: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch4: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456}, io.axway.iron.sample.model.Person(2)={name=mark, id=789}]
+Batch5: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0}, io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0}]
+Query6: Microsoft @ Seattle
+Persons:
+  io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990} currently works in Microsoft
+     previously works in Google
+     previously works in Axway
+  io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0} currently works in Microsoft
+  io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0} currently works in Google
+
+Company Google
+    employee mark
+    previous employee bill
+Company Microsoft
+    employee bill
+    employee john
+Company Axway
+    previous employee bill
+Query6: Microsoft @ Seattle
+[ERROR] Tests run: 22, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.026 s <<< FAILURE! - in TestSuite
+[ERROR] shouldStartFromInitialSnapshotWithNoTx(io.axway.iron.spi.kafka.SingleKafkaSpiTest)  Time elapsed: 6.257 s  <<< FAILURE!
+java.util.concurrent.TimeoutException
+	at io.axway.iron.spi.kafka.SingleKafkaSpiTest.shouldStartFromInitialSnapshotWithNoTx(SingleKafkaSpiTest.java:270)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SingleKafkaSpiTest.shouldStartFromInitialSnapshotWithNoTx:270 Timeout
+[INFO] 
+[ERROR] Tests run: 22, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] iron-api ........................................... SUCCESS [  3.119 s]
+[INFO] iron-spi ........................................... SUCCESS [  0.971 s]
+[INFO] iron-spi-jackson ................................... SUCCESS [  4.210 s]
+[INFO] iron-core .......................................... SUCCESS [ 45.758 s]
+[INFO] iron-spi-aws ....................................... SUCCESS [  2.816 s]
+[INFO] iron-spi-chronicle ................................. SUCCESS [  0.417 s]
+[INFO] iron-spi-kafka ..................................... SUCCESS [  0.276 s]
+[INFO] iron-inttest ....................................... FAILURE [ 35.572 s]
+[INFO] iron ............................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:33 min
+[INFO] Finished at: 2018-10-24T16:13:22+02:00
+[INFO] Final Memory: 35M/733M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project iron-inttest: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/Axway/iron/444990711/iron-inttest/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :iron-inttest
