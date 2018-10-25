@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "yahoo/HaloDB",
+    "githubId": 137792810,
+    "url": "https://github.com/yahoo/HaloDB",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440778451,
+      "url": "http://travis-ci.org/yahoo/HaloDB/builds/440778451",
+      "date": "Oct 12, 2018 9:29:46 PM"
+    },
+    "fixerBuild": {
+      "id": 446394127,
+      "url": "http://travis-ci.org/yahoo/HaloDB/builds/446394127",
+      "date": "Oct 26, 2018 12:00:58 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 26, 2018 12:44:43 AM",
+    "reproductionDateEnd": "Oct 26, 2018 1:27:18 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 342136392,
+      "totalMemory": 393216000
+    },
+    "totalDuration": 2550,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 24,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          24
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1292,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1292
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/yahoo/HaloDB/440778451/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 41,
+      "numberDeleted": 28
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/yahoo/HaloDB/440778451",
+    "overallMetrics": {
+      "numberRunning": 251,
+      "numberPassing": 249,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.testng.TestException",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.oath.halodb.HaloDBTest",
+        "numberRunning": 25,
+        "numberPassing": 23,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.oath.halodb.HaloDBTest",
+        "testMethod": "testPutAfterCloseWithoutWrites",
+        "failureName": "org.testng.TestException",
+        "detail": "\nMethod HaloDBTest.testPutAfterCloseWithoutWrites()[pri:0, instance:com.oath.halodb.HaloDBTest@402e37bc] should have thrown an exception of type class java.lang.NullPointerException",
+        "isError": false
+      },
+      {
+        "testClass": "com.oath.halodb.HaloDBTest",
+        "testMethod": "testDeleteAfterCloseWithoutWrites",
+        "failureName": "org.testng.TestException",
+        "detail": "\nMethod HaloDBTest.testDeleteAfterCloseWithoutWrites()[pri:0, instance:com.oath.halodb.HaloDBTest@402e37bc] should have thrown an exception of type class java.lang.NullPointerException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 47,
+    "numberTestFiles": 42,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "yahoo/HaloDB",
+      "branchName": "master",
+      "sha": "cd0ce8ff8c52590e7cfeb392afc35405a1c82b0c",
+      "url": "http://github.com/yahoo/HaloDB/commit/cd0ce8ff8c52590e7cfeb392afc35405a1c82b0c",
+      "date": "Oct 12, 2018 9:15:08 PM"
+    },
+    "fixerBuild": {
+      "repoName": "yahoo/HaloDB",
+      "branchName": "master",
+      "sha": "87089ddb567bc7c03afb1e8d0476edb82413ca31",
+      "url": "http://github.com/yahoo/HaloDB/commit/87089ddb567bc7c03afb1e8d0476edb82413ca31",
+      "date": "Oct 25, 2018 11:47:20 PM"
+    }
+  }
+}
