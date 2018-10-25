@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2018, Oath Inc
+  ~ Licensed under the terms of the Apache License 2.0. Please refer to accompanying LICENSE file for terms.
+  -->
+
+<Configuration>
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p  [%c{1}] %m %n"/>
+            <RegexFilter regex=".*Completed scanning.*" onMatch="DENY" onMismatch="ACCEPT"/>
+        </Console>
+        <Async name="async">
+            <AppenderRef ref="console"/>
+        </Async>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.oath.halodb.CompactionManager" level="info" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="com.oath.halodb.HaloDBIterator" level="info" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

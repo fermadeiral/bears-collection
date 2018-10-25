@@ -1,0 +1,1 @@
+ HaloDB was designed and implemented by [Arjun Mannaly](https://github.com/amannaly) 
