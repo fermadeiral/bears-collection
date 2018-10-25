@@ -1,0 +1,44 @@
+sudo: false
+install: true
+
+language: java
+jdk:
+- openjdk8
+
+addons:
+  sonarcloud:
+    organization: 'dmitriiserikov-github'
+    token:
+      secure: 'lUJYzYL4CmC3GG6PfoNjDu8qEZ/I1CRDRPyWtQoQAqbu6dtZJv++FgoyolfxgbTmUkVBzdWR+CqhKTXd0jftgYnaCJpU/YUuFYbjTN0Hmru6yan0IMJ90jfcJv6mgGzbFsDpIqBFf5ECf03VZICs9jivS4bCuV1O2jlT7POvnxcrtgjefxe/PIJuftDp5SCGO7PhYrBRdvMrhAoatk7Zf5qLupj/eDHzsxP//ZN6oTB+yg/gSMt1ZCmA0VjAZXOiAooSe+cJqVcMg/WTnTPu3f01qrIK2ePj4Rz9Hm+fQku6mC2SpWjq69bk6tBuoXTW3mnCc4nw0Zf7+B+ukZAWqG3ydkogdPX02tuGOw3VTzaH8yU1CyFu8EGCsp0KloKArSnebPKNvLmDQweMOuIzmrYRi2LPfPA6OJXLCbk98pjWw2OxR+58qJEmqjwlG15jCK0lPY1z1zh8yeQc57yY4PbLvsKbVCPwH0T72dN5Ot0TVhcaAAF6b6Wm2kexmOvD7sAY+R39Cgh4yzvHUJypLByYIwsHahQ/eJLodD2JxJCTA0mxKyfxyszEa4vlMCN/X7xHkMf8JI5ISOs+Yr7k3QSk8OSYw2Pd8f+3oUzOtUp5rytOGFbUFlxZZZxa47F8ChMBypH3sfYUakKzjZH37QS0r/GJwh9oVvmsagKex2s='
+
+stages:
+- test
+- deploy
+
+jobs:
+  include:
+  - stage: test
+    script: ./mvnw clean test -P dev
+    name: 'Unit tests'
+  - stage: test
+    script: ./mvnw clean install -P integration-test
+    name: 'Integration tests'
+  - stage: test
+    script: ./mvnw clean jacoco:prepare-agent install sonar:sonar -P sonar
+    name: 'Sonar'
+  - stage: deploy
+    script: skip
+    name: "Deploy to Heroku"
+    deploy:
+      provider: heroku
+      api_key:
+        secure: 'LNLFiM0yZbN7ylQxALSidtC9e0daju8nQilPOVbhDPjVKpzfzCGLvOsJAYK0zvy7T5i9dcJ7bGmC0v3u0pPwB7ZMP9CAQ6k3wDviF8nSWCj1CQclLv9LCVAbMK3WWdpsDfPzVwchnnI/FhSp/9mDGbQSSGriQqULPrbQ5VQTFOLrfY3JVMt7/xoxai5/EWoc9W8WUKBRcz5y/Lmq84xEyOkB45QfX6JBxO7/6MlQMAYE59+u8dfRwsoUZDyAtJGiNl550WSQ4oX/R8pZYmjesDOCWAJ8ieOHS2VXXZ0RjRTXcCbckRsDEhByLSsZAd+iAleb4PqCUStgZE69DVQT6x9SMJDP7iz5/XleIZHtD9vVetl2udXB/Hi/zpIeC1BA2wm/DvRTY9UqTp3PChWWzyTTde2d/ly+UWnfXqA+v6sfV7grx+uKgFbGUDGU4DLdt4lSdGN4vp/aaIpAN2UiNPD5Z0jr8NeFrBuVLEEN4uWgONMuPs3nIEXU8BCqtkYaKyVKzNIZ+qSL6tt4FhGr8N9Po4tQK3O4eQGuZVISUA11ayQRAO80tS0CuYaYszgqzamAaun4kAvyUxXU5xcD5MMbMIPs06F+esD3cgBzgLETjlD/SQabvVoEs/AJuhLdNIu1KNSuiitO54BfT+AHMIz96BegNoGv9SZdrL01PUA='
+      app: money-transfer-service
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+  - '$HOME/.sonar/cache'
