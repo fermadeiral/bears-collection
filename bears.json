@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "DmitriiSerikov/money-transfer-service",
+    "githubId": 153101102,
+    "url": "https://github.com/DmitriiSerikov/money-transfer-service",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446104441,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/446104441",
+      "date": "Oct 25, 2018 12:26:22 PM"
+    },
+    "fixerBuild": {
+      "id": 446106577,
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/446106577",
+      "date": "Oct 25, 2018 12:34:58 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 25, 2018 12:35:19 PM",
+    "reproductionDateEnd": "Oct 25, 2018 12:38:17 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262127528,
+      "totalMemory": 396886016
+    },
+    "totalDuration": 174,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 100,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          100
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DmitriiSerikov/money-transfer-service/446104441/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DmitriiSerikov/money-transfer-service/446104441",
+    "overallMetrics": {
+      "numberRunning": 106,
+      "numberPassing": 104,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.example.holder.impl.LockHolderSpec",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.example.holder.impl.LockHolderSpec",
+        "testMethod": "should throw exception when try acquire lock by null instead of id",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but got \u0027java.lang.NullPointerException\u0027",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.example.holder.impl.LockHolderSpec",
+        "testMethod": "should throw exception when try release lock by null instead of id",
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError",
+        "detail": "Expected exception of type \u0027java.lang.IllegalArgumentException\u0027, but got \u0027java.lang.NullPointerException\u0027",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 31,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "953154b15baf0ff4fd15d17ddcf6c9b40d943ee2",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/953154b15baf0ff4fd15d17ddcf6c9b40d943ee2",
+      "date": "Oct 25, 2018 12:23:58 PM"
+    },
+    "fixerBuild": {
+      "repoName": "DmitriiSerikov/money-transfer-service",
+      "branchName": "master",
+      "sha": "e5d2df4a4d4a99932d8e2c2dbdc7a0f2ac02e685",
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/e5d2df4a4d4a99932d8e2c2dbdc7a0f2ac02e685",
+      "date": "Oct 25, 2018 12:29:40 PM"
+    }
+  }
+}
