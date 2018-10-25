@@ -1,0 +1,178 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "wso2/transport-http",
+    "githubId": 107353521,
+    "url": "https://github.com/wso2/transport-http",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 266
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 443531910,
+      "url": "http://travis-ci.org/wso2/transport-http/builds/443531910",
+      "date": "Oct 19, 2018 7:46:27 AM"
+    },
+    "fixerBuild": {
+      "id": 445995260,
+      "url": "http://travis-ci.org/wso2/transport-http/builds/445995260",
+      "date": "Oct 25, 2018 6:30:11 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 25, 2018 6:30:30 AM",
+    "reproductionDateEnd": "Oct 25, 2018 7:05:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 310196856,
+      "totalMemory": 412090368
+    },
+    "totalDuration": 2109,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 801,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          4,
+          794
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 621,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          621
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/wso2/transport-http/443531910/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/wso2/transport-http/443531910/components/org.wso2.transport.http.netty",
+    "overallMetrics": {
+      "numberRunning": 144,
+      "numberPassing": 143,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.wso2.transport.http.netty.http2.TestHttp2WithALPN",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.wso2.transport.http.netty.http2.TestHttp2WithALPN",
+        "testMethod": "testHttp1_1Post",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 194,
+    "numberTestFiles": 134,
+    "numberLibrariesFailingModule": 65,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "wso2/transport-http",
+      "branchName": "master",
+      "sha": "1b4efbd664273c3788848f3ceab2c983c969d431",
+      "url": "http://github.com/wso2/transport-http/commit/1b4efbd664273c3788848f3ceab2c983c969d431",
+      "date": "Oct 19, 2018 7:34:03 AM"
+    },
+    "fixerBuild": {
+      "repoName": "wso2/transport-http",
+      "branchName": "master",
+      "sha": "8eb82bc33ef2bd8363ac8345aea178930a2a9538",
+      "url": "http://github.com/wso2/transport-http/commit/8eb82bc33ef2bd8363ac8345aea178930a2a9538",
+      "date": "Oct 25, 2018 6:17:40 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "riyafa/transport-http",
+      "branchName": "another-outbound",
+      "sha": "b9809cef4f15554b28467d56d7632b0a8d78244e",
+      "url": "https://github.com/riyafa/transport-http/commit/b9809cef4f15554b28467d56d7632b0a8d78244e",
+      "date": "Oct 25, 2018 6:17:40 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "wso2/transport-http",
+      "branchName": "master",
+      "sha": "227b9818cc343f9659579ac9d2074b3d36c855f5",
+      "url": "https://github.com/wso2/transport-http/commit/227b9818cc343f9659579ac9d2074b3d36c855f5",
+      "date": "Oct 23, 2018 7:42:49 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "riyafa/transport-http",
+      "branchName": "another-outbound",
+      "sha": "b9809cef4f15554b28467d56d7632b0a8d78244e",
+      "url": "https://github.com/riyafa/transport-http/commit/b9809cef4f15554b28467d56d7632b0a8d78244e",
+      "date": "Oct 25, 2018 6:17:40 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "wso2/transport-http",
+      "branchName": "master",
+      "sha": "227b9818cc343f9659579ac9d2074b3d36c855f5",
+      "url": "https://github.com/wso2/transport-http/commit/227b9818cc343f9659579ac9d2074b3d36c855f5",
+      "date": "Oct 23, 2018 7:42:49 AM"
+    }
+  },
+  "type": "passing_passing"
+}
