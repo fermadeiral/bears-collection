@@ -1,0 +1,44 @@
+# Words that extend the spell checker. See ignore.txt for words that should be
+# completely ignored (i.e. not used to create suggestions).
+# For multi-word terms, refer to https://github.com/languagetool-org/languagetool/issues/700
+a posteriori
+a priori
+ab initio
+Abu Dhabi
+ad hoc
+ad infinitum
+ad nauseam
+Al Jazeera
+au fait
+blackbody radiation
+déjà vu
+El Niño
+et al
+ex officio
+exempli gratia
+fait accompli
+in toto
+inter alia
+ipso facto
+lingua franca
+lingua francas
+modus operandi
+modus vivendi
+mutatis mutandis
+nota bene
+pacta sunt servanda
+pari passu
+per annum
+per capita
+per centum
+per diem
+prima facie
+quod vide
+raison d'être
+Rio Grande
+spina bifida
+sui generis
+sui juris
+summa cum laude
+tabula rasa
+von Neumann
