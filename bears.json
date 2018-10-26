@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446814939,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/446814939",
+      "date": "Oct 26, 2018 8:12:16 PM"
+    },
+    "fixerBuild": {
+      "id": 446866111,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/446866111",
+      "date": "Oct 26, 2018 10:21:16 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 26, 2018 10:21:40 PM",
+    "reproductionDateEnd": "Oct 26, 2018 10:52:12 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1042709768,
+      "totalMemory": 1235222528
+    },
+    "totalDuration": 1823,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 307,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          307
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 161,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          2,
+          158
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 228,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          228
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/446814939/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 6
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "fd7a9e1a907030d988beb3030885fe54676540a1",
+      "url": "http://github.com/languagetool-org/languagetool/commit/fd7a9e1a907030d988beb3030885fe54676540a1",
+      "date": "Oct 26, 2018 7:56:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "e3271bdf7e94ec2035dc2fc061541e8a61a5309d",
+      "url": "http://github.com/languagetool-org/languagetool/commit/e3271bdf7e94ec2035dc2fc061541e8a61a5309d",
+      "date": "Oct 26, 2018 10:04:11 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/446814939/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 431,
+      "numberPassing": 430,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Damenhafte, damenhafte, Knabenhafte, namhafte, sagenhafte, Laienhafte, Damenhüfte, Gnomenhafte, damenhaft, Sagenhafte, damenhaftem, damenhaften, damenhafter, damenhaftes, gnomenhafte, knabenhafte, Damen-hafte, laienhafte, Samen-hafte, namens-hafte]\nExpected: is \"namhafte\"\n     but: was \"Damenhafte\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 824,
+    "numberTestFiles": 511,
+    "numberLibrariesFailingModule": 42,
+    "numberLines": 0
+  }
+}
