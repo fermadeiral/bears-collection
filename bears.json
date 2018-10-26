@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "qubole/caching-metastore-client",
+    "githubId": 97685016,
+    "url": "https://github.com/qubole/caching-metastore-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 344756627,
+      "url": "http://travis-ci.org/qubole/caching-metastore-client/builds/344756627",
+      "date": "Feb 22, 2018 12:48:32 PM"
+    },
+    "fixerBuild": {
+      "id": 446509185,
+      "url": "http://travis-ci.org/qubole/caching-metastore-client/builds/446509185",
+      "date": "Oct 26, 2018 6:54:16 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 26, 2018 6:58:01 AM",
+    "reproductionDateEnd": "Oct 26, 2018 6:59:19 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 263248752,
+      "totalMemory": 378011648
+    },
+    "totalDuration": 74,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 35,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          35
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/qubole/caching-metastore-client/344756627/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 36,
+      "numberDeleted": 33
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/qubole/caching-metastore-client/344756627",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 5,
+      "numberFailing": 0,
+      "numberErroring": 6,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+          "isError": true,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "numberRunning": 11,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testGetFromSource",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      },
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testGetAllFromSourceIfRedisDown",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      },
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testInvalidateIfRedisDown",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      },
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testPutAllIfRedisDown",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      },
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testGetException",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      },
+      {
+        "testClass": "com.qubole.utility.RedisCacheTest",
+        "testMethod": "testGetIfPresentIfRedisDown",
+        "failureName": "redis.clients.jedis.exceptions.JedisConnectionException",
+        "detail": "Could not get a resource from the pool.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 106,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "qubole/caching-metastore-client",
+      "branchName": "master",
+      "sha": "34a3e33e60b35b946da3ccdf22d9abe0f4661bb3",
+      "url": "http://github.com/qubole/caching-metastore-client/commit/34a3e33e60b35b946da3ccdf22d9abe0f4661bb3",
+      "date": "Feb 22, 2018 12:47:08 PM"
+    },
+    "fixerBuild": {
+      "repoName": "qubole/caching-metastore-client",
+      "branchName": "master",
+      "sha": "f37aae51e5d0c0583c10a41814ca22f0350b2c24",
+      "url": "http://github.com/qubole/caching-metastore-client/commit/f37aae51e5d0c0583c10a41814ca22f0350b2c24",
+      "date": "Oct 26, 2018 6:52:47 AM"
+    }
+  },
+  "type": "passing_passing"
+}
