@@ -64,66 +64,60 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-core ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 10.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 73.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 982.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.RetryerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.326 s - in feign.RetryerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.324 s - in feign.RetryerTest
 [INFO] Running feign.codec.RetryAfterDecoderTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in feign.codec.RetryAfterDecoderTest
 [INFO] Running feign.codec.DefaultDecoderTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in feign.codec.DefaultDecoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in feign.codec.DefaultDecoderTest
 [INFO] Running feign.codec.DefaultErrorDecoderTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 s - in feign.codec.DefaultErrorDecoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in feign.codec.DefaultErrorDecoderTest
 [INFO] Running feign.codec.DefaultEncoderTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in feign.codec.DefaultEncoderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in feign.codec.DefaultEncoderTest
 [INFO] Running feign.auth.BasicAuthRequestInterceptorTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in feign.auth.BasicAuthRequestInterceptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in feign.auth.BasicAuthRequestInterceptorTest
 [INFO] Running feign.LoggerTest
-[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.177 s - in feign.LoggerTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.241 s - in feign.LoggerTest
 [INFO] Running feign.RequestTemplateTest
-[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in feign.RequestTemplateTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in feign.RequestTemplateTest
 [INFO] Running feign.stream.StreamDecoderTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in feign.stream.StreamDecoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in feign.stream.StreamDecoderTest
 [INFO] Running feign.template.UriTemplateTest
-[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in feign.template.UriTemplateTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in feign.template.UriTemplateTest
 [INFO] Running feign.template.QueryTemplateTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in feign.template.QueryTemplateTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in feign.template.QueryTemplateTest
 [INFO] Running feign.template.UriUtilsTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in feign.template.UriUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in feign.template.UriUtilsTest
 [INFO] Running feign.UtilTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in feign.UtilTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in feign.UtilTest
 [INFO] Running feign.DefaultQueryMapEncoderTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in feign.DefaultQueryMapEncoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in feign.DefaultQueryMapEncoderTest
 [INFO] Running feign.client.DefaultClientTest
-[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.415 s - in feign.client.DefaultClientTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.35 s - in feign.client.DefaultClientTest
 [INFO] Running feign.FeignTest
-[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 s - in feign.FeignTest
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.964 s - in feign.FeignTest
 [INFO] Running feign.ContractWithRuntimeInjectionTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.941 s - in feign.ContractWithRuntimeInjectionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.847 s - in feign.ContractWithRuntimeInjectionTest
 [INFO] Running feign.DefaultContractTest
-[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in feign.DefaultContractTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in feign.DefaultContractTest
 [INFO] Running feign.ResponseTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in feign.ResponseTest
 [INFO] Running feign.querymap.PropertyQueryMapEncoderTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in feign.querymap.PropertyQueryMapEncoderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in feign.querymap.PropertyQueryMapEncoderTest
 [INFO] Running feign.TargetTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in feign.TargetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in feign.TargetTest
 [INFO] Running feign.EmptyTargetTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in feign.EmptyTargetTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in feign.EmptyTargetTest
 [INFO] Running feign.BaseApiTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in feign.BaseApiTest
 [INFO] Running feign.FeignBuilderTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in feign.FeignBuilderTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in feign.FeignBuilderTest
 [INFO] Running feign.optionals.OptionalDecoderTests
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in feign.optionals.OptionalDecoderTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in feign.optionals.OptionalDecoderTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -161,7 +155,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.gson.GsonCodecTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in feign.gson.GsonCodecTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 s - in feign.gson.GsonCodecTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -199,7 +193,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.jaxrs.JAXRSContractTest
-[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 s - in feign.jaxrs.JAXRSContractTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 s - in feign.jaxrs.JAXRSContractTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -237,7 +231,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.httpclient.ApacheHttpClientTest
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.091 s - in feign.httpclient.ApacheHttpClientTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.002 s - in feign.httpclient.ApacheHttpClientTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -275,11 +269,11 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.hystrix.SetterFactoryTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.154 s - in feign.hystrix.SetterFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.133 s - in feign.hystrix.SetterFactoryTest
 [INFO] Running feign.hystrix.FallbackFactoryTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s - in feign.hystrix.FallbackFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 s - in feign.hystrix.FallbackFactoryTest
 [INFO] Running feign.hystrix.HystrixBuilderTest
-[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.861 s - in feign.hystrix.HystrixBuilderTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 s - in feign.hystrix.HystrixBuilderTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -317,9 +311,9 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.jackson.JacksonIteratorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 s - in feign.jackson.JacksonIteratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.658 s - in feign.jackson.JacksonIteratorTest
 [INFO] Running feign.jackson.JacksonCodecTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in feign.jackson.JacksonCodecTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in feign.jackson.JacksonCodecTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -357,7 +351,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.jackson.jaxb.JacksonJaxbCodecTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.993 s - in feign.jackson.jaxb.JacksonJaxbCodecTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.644 s - in feign.jackson.jaxb.JacksonJaxbCodecTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -395,9 +389,9 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.jaxb.JAXBContextFactoryTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in feign.jaxb.JAXBContextFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in feign.jaxb.JAXBContextFactoryTest
 [INFO] Running feign.jaxb.JAXBCodecTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in feign.jaxb.JAXBCodecTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 s - in feign.jaxb.JAXBCodecTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -435,9 +429,9 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.jaxrs2.JAXRSClientTest
-[WARNING] Tests run: 22, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 3.335 s - in feign.jaxrs2.JAXRSClientTest
+[WARNING] Tests run: 22, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.771 s - in feign.jaxrs2.JAXRSClientTest
 [INFO] Running feign.jaxrs2.JAXRS2ContractTest
-[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in feign.jaxrs2.JAXRS2ContractTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in feign.jaxrs2.JAXRS2ContractTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -475,95 +469,361 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running feign.okhttp.OkHttpClientTest
-[ERROR] Tests run: 23, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.742 s <<< FAILURE! - in feign.okhttp.OkHttpClientTest
-[ERROR] noResponseBodyForPatch(feign.okhttp.OkHttpClientTest)  Time elapsed: 0.022 s  <<< ERROR!
-java.lang.IllegalArgumentException: method PATCH must have a request body.
-	at okhttp3.Request$Builder.method(Request.java:237)
-	at feign.okhttp.OkHttpClient.toOkHttpRequest(OkHttpClient.java:92)
-	at feign.okhttp.OkHttpClient.execute(OkHttpClient.java:170)
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
-	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
-	at com.sun.proxy.$Proxy9.noPatchBody(Unknown Source)
-	at feign.client.AbstractClientTest.noResponseBodyForPatch(AbstractClientTest.java:209)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.643 s - in feign.okhttp.OkHttpClientTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   OkHttpClientTest>AbstractClientTest.noResponseBodyForPatch:209 » IllegalArgument
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 23, Failures: 0, Errors: 1, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Ribbon 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-ribbon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/ribbon/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-ribbon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-ribbon ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-ribbon ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-ribbon ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-ribbon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/ribbon/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-ribbon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-ribbon ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.ribbon.PropagateFirstIOExceptionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in feign.ribbon.PropagateFirstIOExceptionTest
+[INFO] Running feign.ribbon.RibbonClientTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.511 s - in feign.ribbon.RibbonClientTest
+[INFO] Running feign.ribbon.LoadBalancingTargetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.265 s - in feign.ribbon.LoadBalancingTargetTest
+[INFO] Running feign.ribbon.LBClientTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in feign.ribbon.LBClientTest
+[INFO] Running feign.ribbon.LBClientFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in feign.ribbon.LBClientFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign SAX 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-sax ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/sax/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-sax ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-sax ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-sax ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-sax ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-sax ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/sax/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-sax ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-sax ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.sax.SAXDecoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 s - in feign.sax.SAXDecoderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign SLF4J 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/slf4j/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-slf4j ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-slf4j ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/slf4j/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-slf4j ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.slf4j.Slf4jLoggerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in feign.slf4j.Slf4jLoggerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Reactive Wrappers 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-reactive-wrappers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/reactive/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-reactive-wrappers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-reactive-wrappers ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-reactive-wrappers ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-reactive-wrappers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-reactive-wrappers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/reactive/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-reactive-wrappers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-reactive-wrappers ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.reactive.ReactiveFeignIntegrationTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.411 s - in feign.reactive.ReactiveFeignIntegrationTest
+[INFO] Running feign.reactive.ReactiveInvocationHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in feign.reactive.ReactiveInvocationHandlerTest
+[INFO] Running feign.reactive.ReactiveDelegatingContractTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in feign.reactive.ReactiveDelegatingContractTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GitHub Example 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-example-github ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/example-github/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-example-github ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-example-github ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-example-github ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-example-github ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-example-github ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/example-github/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-example-github ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-example-github ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wikipedia Example 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-example-wikipedia ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/example-wikipedia/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-example-wikipedia ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-example-wikipedia ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-example-wikipedia ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-example-wikipedia ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-example-wikipedia ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/example-wikipedia/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-example-wikipedia ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-example-wikipedia ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Java 8 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/java8/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-java8 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-java8 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-java8 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-java8 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/java8/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-java8 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-java8 ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Mock 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-mock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/mock/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-mock ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-mock ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-mock ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-mock ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-mock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-mock ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-mock ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.mock.RequestHeadersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 s - in feign.mock.RequestHeadersTest
+[INFO] Running feign.mock.MockClientTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 s - in feign.mock.MockClientTest
+[INFO] Running feign.mock.MockTargetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in feign.mock.MockTargetTest
+[INFO] Running feign.mock.RequestKeyTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in feign.mock.RequestKeyTest
+[INFO] Running feign.mock.MockClientSequentialTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in feign.mock.MockClientSequentialTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Benchmark (JMH) 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/benchmark/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-benchmark ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-benchmark ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (default) @ feign-benchmark ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:4.0.0:manifest (bundle-manifest) @ feign-benchmark ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/446877977/benchmark/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-benchmark ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-benchmark ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Feign (Parent) ..................................... SUCCESS [  2.616 s]
-[INFO] Feign Core ......................................... SUCCESS [ 20.579 s]
-[INFO] Feign Gson ......................................... SUCCESS [  2.530 s]
-[INFO] Feign JAX-RS ....................................... SUCCESS [  2.563 s]
-[INFO] Feign Apache HttpClient ............................ SUCCESS [  4.412 s]
-[INFO] Feign Hystrix ...................................... SUCCESS [  4.553 s]
-[INFO] Feign Jackson ...................................... SUCCESS [  3.234 s]
-[INFO] Feign Jackson JAXB ................................. SUCCESS [  3.368 s]
-[INFO] Feign JAXB ......................................... SUCCESS [  2.379 s]
-[INFO] Feign JAX-RS 2 ..................................... SUCCESS [  5.561 s]
-[INFO] Feign OkHttp ....................................... FAILURE [  3.622 s]
-[INFO] Feign Ribbon ....................................... SKIPPED
-[INFO] Feign SAX .......................................... SKIPPED
-[INFO] Feign SLF4J ........................................ SKIPPED
-[INFO] Feign Reactive Wrappers ............................ SKIPPED
-[INFO] GitHub Example ..................................... SKIPPED
-[INFO] Wikipedia Example .................................. SKIPPED
-[INFO] Feign Java 8 ....................................... SKIPPED
-[INFO] Feign Mock ......................................... SKIPPED
-[INFO] Feign Benchmark (JMH) .............................. SKIPPED
+[INFO] Feign (Parent) ..................................... SUCCESS [  2.749 s]
+[INFO] Feign Core ......................................... SUCCESS [ 19.554 s]
+[INFO] Feign Gson ......................................... SUCCESS [  2.671 s]
+[INFO] Feign JAX-RS ....................................... SUCCESS [  2.314 s]
+[INFO] Feign Apache HttpClient ............................ SUCCESS [  4.288 s]
+[INFO] Feign Hystrix ...................................... SUCCESS [  4.393 s]
+[INFO] Feign Jackson ...................................... SUCCESS [  3.024 s]
+[INFO] Feign Jackson JAXB ................................. SUCCESS [  3.119 s]
+[INFO] Feign JAXB ......................................... SUCCESS [  2.722 s]
+[INFO] Feign JAX-RS 2 ..................................... SUCCESS [  4.929 s]
+[INFO] Feign OkHttp ....................................... SUCCESS [  3.726 s]
+[INFO] Feign Ribbon ....................................... SUCCESS [  6.763 s]
+[INFO] Feign SAX .......................................... SUCCESS [  2.042 s]
+[INFO] Feign SLF4J ........................................ SUCCESS [  2.225 s]
+[INFO] Feign Reactive Wrappers ............................ SUCCESS [  5.165 s]
+[INFO] GitHub Example ..................................... SUCCESS [  1.386 s]
+[INFO] Wikipedia Example .................................. SUCCESS [  0.955 s]
+[INFO] Feign Java 8 ....................................... SUCCESS [  0.875 s]
+[INFO] Feign Mock ......................................... SUCCESS [  2.450 s]
+[INFO] Feign Benchmark (JMH) .............................. SUCCESS [  1.885 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 55.754 s
-[INFO] Finished at: 2018-10-27T00:20:27+02:00
-[INFO] Final Memory: 25M/491M
+[INFO] Total time: 01:17 min
+[INFO] Finished at: 2018-10-27T00:22:39+02:00
+[INFO] Final Memory: 23M/490M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project feign-okhttp: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/OpenFeign/feign/446877977/okhttp/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :feign-okhttp
