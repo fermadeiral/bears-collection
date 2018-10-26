@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "OpenFeign/feign",
+    "githubId": 10981994,
+    "url": "https://github.com/OpenFeign/feign",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446877977,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/446877977",
+      "date": "Oct 26, 2018 10:37:05 PM"
+    },
+    "fixerBuild": {
+      "id": 446881797,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/446881797",
+      "date": "Oct 26, 2018 10:46:33 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 27, 2018 12:18:00 AM",
+    "reproductionDateEnd": "Oct 27, 2018 12:22:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 297469264,
+      "totalMemory": 396361728
+    },
+    "totalDuration": 275,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 83,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          83
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 58,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          58
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/OpenFeign/feign/446877977/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/OpenFeign/feign/446877977/okhttp",
+    "overallMetrics": {
+      "numberRunning": 489,
+      "numberPassing": 488,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "feign.okhttp.OkHttpClientTest",
+        "numberRunning": 23,
+        "numberPassing": 22,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "feign.okhttp.OkHttpClientTest",
+        "testMethod": "noResponseBodyForPatch",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "method PATCH must have a request body.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 99,
+    "numberTestFiles": 74,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "4da6d5cad674e4eeae5b56035ac1f94992499449",
+      "url": "http://github.com/OpenFeign/feign/commit/4da6d5cad674e4eeae5b56035ac1f94992499449",
+      "date": "Oct 26, 2018 10:31:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "b6d8bb1a46d390cd675c05880d3e0aa03ff5880e",
+      "url": "http://github.com/OpenFeign/feign/commit/b6d8bb1a46d390cd675c05880d3e0aa03ff5880e",
+      "date": "Oct 26, 2018 10:39:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
