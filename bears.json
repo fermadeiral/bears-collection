@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "JodaOrg/joda-time",
+    "githubId": 1756350,
+    "url": "https://github.com/JodaOrg/joda-time",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434852681,
+      "url": "http://travis-ci.org/JodaOrg/joda-time/builds/434852681",
+      "date": "Sep 29, 2018 1:49:54 AM"
+    },
+    "fixerBuild": {
+      "id": 447168358,
+      "url": "http://travis-ci.org/JodaOrg/joda-time/builds/447168358",
+      "date": "Oct 27, 2018 8:41:48 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 27, 2018 8:42:06 PM",
+    "reproductionDateEnd": "Oct 27, 2018 8:44:38 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 352634208,
+      "totalMemory": 403701760
+    },
+    "totalDuration": 147,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 53,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          53
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/JodaOrg/joda-time/434852681/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/JodaOrg/joda-time/434852681",
+    "overallMetrics": {
+      "numberRunning": 4224,
+      "numberPassing": 4223,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.joda.time.tz.TestCompiler",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.joda.time.tz.TestCompiler",
+        "testMethod": "test_Tokyo_1949",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003c-640861200000\u003e but was:\u003c-640864800000\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 166,
+    "numberTestFiles": 159,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "JodaOrg/joda-time",
+      "branchName": "master",
+      "sha": "d1ea2a53929d7d56d4f4560852e5586517a0dd47",
+      "url": "http://github.com/JodaOrg/joda-time/commit/d1ea2a53929d7d56d4f4560852e5586517a0dd47",
+      "date": "Sep 29, 2018 1:47:44 AM"
+    },
+    "fixerBuild": {
+      "repoName": "JodaOrg/joda-time",
+      "branchName": "master",
+      "sha": "2f168eb3a389465a5ff47a0d00e53e4a0f4ba851",
+      "url": "http://github.com/JodaOrg/joda-time/commit/2f168eb3a389465a5ff47a0d00e53e4a0f4ba851",
+      "date": "Oct 27, 2018 8:26:13 PM"
+    }
+  }
+}
