@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "danfickle/openhtmltopdf",
+    "githubId": 45526710,
+    "url": "https://github.com/danfickle/openhtmltopdf",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 445988164,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/445988164",
+      "date": "Oct 25, 2018 5:42:50 AM"
+    },
+    "fixerBuild": {
+      "id": 446994292,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/446994292",
+      "date": "Oct 27, 2018 7:42:36 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 27, 2018 8:23:59 AM",
+    "reproductionDateEnd": "Oct 27, 2018 8:29:02 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 230150424,
+      "totalMemory": 458752000
+    },
+    "totalDuration": 297,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 55,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          55
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/danfickle/openhtmltopdf/445988164/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/danfickle/openhtmltopdf/445988164/openhtmltopdf-examples",
+    "overallMetrics": {
+      "numberRunning": 103,
+      "numberPassing": 102,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "numberRunning": 59,
+        "numberPassing": 58,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 6
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "testMethod": "testRtlPageOverflowTransform",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 395,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "289be205ec3de706538ce48f4fcac547ed111250",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/289be205ec3de706538ce48f4fcac547ed111250",
+      "date": "Oct 25, 2018 5:38:30 AM"
+    },
+    "fixerBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "586693546977cbda9fcc2d611388b4d0b6800fdc",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/586693546977cbda9fcc2d611388b4d0b6800fdc",
+      "date": "Oct 27, 2018 7:36:21 AM"
+    }
+  },
+  "type": "passing_passing"
+}
