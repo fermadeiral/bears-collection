@@ -29,12 +29,6 @@ Writing ZoneInfoMap
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ joda-time ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.21.0/surefire-junit3-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.21.0/surefire-junit3-2.21.0.pom (3 KB at 3.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 62.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.21.0/surefire-junit3-2.21.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.21.0/surefire-junit3-2.21.0.jar (27 KB at 358.5 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
@@ -56,39 +50,16 @@ Testing Julian chronology over 1000 iterations
 100% complete (i=1000)
 Writing zoneinfo files
 Writing ZoneInfoMap
-[ERROR] Tests run: 4224, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.694 s <<< FAILURE! - in org.joda.time.TestAllPackages
-[ERROR] test_Tokyo_1949(org.joda.time.tz.TestCompiler)  Time elapsed: 0.008 s  <<< FAILURE!
-junit.framework.AssertionFailedError: expected:<-640861200000> but was:<-640864800000>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:133)
-	at junit.framework.Assert.assertEquals(Assert.java:139)
-	at org.joda.time.tz.TestCompiler.test_Tokyo_1949(TestCompiler.java:280)
-
+[INFO] Tests run: 4224, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.094 s - in org.joda.time.TestAllPackages
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   org.joda.time.tz.TestCompiler#test_Tokyo_1949 AssertionFailedError expected:<-...
-[INFO] 
-[ERROR] Tests run: 4224, Failures: 1, Errors: 0, Skipped: 0
+[INFO] Tests run: 4224, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.450 s
-[INFO] Finished at: 2018-10-27T20:43:27+02:00
-[INFO] Final Memory: 17M/395M
+[INFO] Total time: 13.182 s
+[INFO] Finished at: 2018-10-27T20:44:34+02:00
+[INFO] Final Memory: 16M/589M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project joda-time: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/JodaOrg/joda-time/434852681/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
