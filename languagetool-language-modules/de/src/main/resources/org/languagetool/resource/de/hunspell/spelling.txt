@@ -1,0 +1,324 @@
+# Words that extend the spell checker. See ignore.txt for words that should be
+# completely ignored (i.e. not used to create suggestions).
+# Hyphenated compound words containing words listed here will be accepted, too:
+# If this file contains "Au-pair", then "Au-pair-Agentur" will not be marked as incorrect.
+# Compound words starting with words listed here will be accepted, too:
+# If this file contains "Secondhand" or "Helizität", then "Secondhandladen" or "Helizitätsoperator" will not be marked as incorrect.
+# Supported suffixes for German:
+# /E will add e
+# /S will add s
+# /N will add n
+# /A will add e, er, es, en, em (for adjectives - no comparative, no superlative)
+# /F will add in (for gendered nouns)
+μ
+λ
+ächz #ugs
+ähem #ugs
+a cappella
+Absorptionshygrometer/NS
+abteilungsbezogen/A
+al Forno
+Anbohrung
+Anbohrungen
+Anna Gasser/S
+ante portas
+App Store
+aspartamfrei/A
+augenähnlich/A
+Auskofferung
+ausleitend/A
+Ausmauerung
+Austrian Airlines
+auszeichnungswürdig/A
+Behinderungsausgleich/S
+Best Practice
+betriebstätig/A
+Billy the Kid
+Black Box
+Boko Haram
+Carboxy
+Career Day
+Center Court/S
+Chalkolithikum/S
+Cheerleading
+Chevrolet Tahoe
+Codewars
+Complex Event Processing
+Coulombbarriere/N
+Cruise Missile/S
+Crystal Meth
+culpa in contrahendo
+Darth Vader/S
+Degu/S
+Detektorpixel/NS
+Direktabhebungsfunktion
+Dreikantfeile/N
+Drogerieimperium/S
+Dual Use
+dyadisch/A
+E-MTB/S
+Effi Briest
+Eigentümerpaar/S
+einsandte
+Einzelkälberbox
+Einzelkälberboxen
+Elektivzentrum/S
+Elton John/S
+Entrundung
+Erder/NS
+Erstattungsmöglichkeit
+Erstattungsmöglichkeiten
+Eventtechnik
+Fadenabschneiden/S
+FC Everton
+Federal Express
+fehlangepasst/A
+Feilbild
+Feilbilder/N
+Feilbildes
+Femme fatale
+Fensterleibung
+Fensterleibungen
+Fernspeiseweiche/N
+Feuerungsbau/S
+Fin de Siècle
+Fish and Chips
+FOM
+Formatbeschreibung
+Formatbeschreibungen
+Fotovoltaikbranche
+Frömmigkeitskultur
+Frömmigkeitskulturen
+Framing #eng
+freikünstlerisch/A
+Freilegungsmaßnahme/N
+Friedrich Loeffler/S
+Full HD
+gehaltsmäßig/A
+geklöppelt/A
+gelatinefrei/A
+Gesichtshaartrimmer/NS
+Gewinnerfoto/S
+Glaukomchirugie
+Golden Delicious
+Golden Globe/S
+Goldman Sachs
+Gorch Fock
+Grabungstechnik
+Gradiometer/NS
+grosso modo
+Guardia Civil
+Gymnasialabschluss
+Gymnasialabschlusses
+Haarhygrometer/NS
+Hahnblöcke/N
+Hahnblock/S
+Hahnblockes
+Handabbund
+Hard Disk/S
+Hard- und Software
+Heidelbeerkuchen/S
+High Heels
+hochfrequenztauglich/A
+Horchata de Chufa
+Huckleberry Finn/S
+hysteretisch/A
+IEC
+Imjin-Krieg/S
+Implantatverlust
+Implantatverluste/NS
+in- und auswendig
+informationsbedingt/A
+Infratest dimap
+Inkonvenienzen
+Inkulturation
+insensitiv/A
+instantan/A
+Institute for Advanced Study
+Inter Mailand/S
+Intralogistik
+Ivy League
+Jansenist
+Jansenisten
+Jesse James
+Jimmy Carter/S
+Joint Venture/S
+Jom Kippur
+Kartwelologie
+Kim Jong-un/S
+KIZ Royal
+Klientenorientierung
+komedogen/A
+Kommersabend/S
+Kommersabende/N
+Konsonantenschwächung
+koplanar/A
+Koplanarleitung
+Koplanarleitungen
+Kryostate/N
+Lagemaßzahlen
+Lagotto Romagnolo
+Lakritzsoße/N
+Landwirtsbetrieb/S
+Landwirtsbetriebe/NS
+Leuchtweitenregulierung
+Lieferavis
+Lineareinheit
+logorrhoisch/A
+Machine Learning
+Malübung
+Malübungen
+Manchester United
+Marquis de Sade
+Masseaufbau/S
+Massefläche/N
+Mata Hari/S
+Medizinprodukterichtlinie
+merkfähig/A
+Microservice/S
+Millennien
+mineralisiere/N
+mineralisierend/A
+Mineralisierens
+mineralisierst
+mineralisiert/A
+mineralisiertest
+Miracast
+Missing Link
+Missverständlichkeit
+mitgesandt/A
+Mitgliedschaftserneuerung
+moinsen #colloquial
+MSI
+Muay Thai
+mutmachend/A
+My Lai
+Nabla-Operator/S
+Nanga Parbat
+National Rifle Association
+Nations League
+natureigen/A
+Nebenbuhlerschaft
+Neil Armstrong/S
+Neonsystem/S
+Neonsysteme/N
+Noise Cancelling
+Nordic Walking
+NotSan #abk
+Nyquist-Shannon-Abtasttheorem/S
+Olvenstedter
+Omelette surprise
+Open Source
+Palo Alto
+Patek Philippe
+Pax Americana
+Periphetes
+phononisch/A
+Photovoltaikbranche
+Pinot Noir
+PME
+Political Correctness
+posaunenartig/A
+post mortem
+ppa. #abk
+Präsentationstraining/S
+Predictive Maintenance
+Principia Mathematica
+Purple Heart
+Registrierungsaktion
+Registrierungsaktionen
+Reißnadel/N
+Reinhold Mitterlehner
+Ressortvermögen/S
+rhomäisch/A
+Ringerder/NS
+RLT
+Round Table
+Rubinsplitter/NS
+Samtbeutel/NS
+Santa Monica
+Schützsteuerungen
+Schachtkopierung
+Scheuersaugmaschine/N
+Schlauchaufroller/NS
+Schlauchtrommel/N
+schreibfähig/A
+Schwimmerleitung
+Schwimmerleitungen
+Science Fiction
+Slam #eng
+Soft- und Hardware
+Sozio-oekonomische Panel
+Sozio-oekonomischen Panel
+Sozio-oekonomischen Panels
+Sozio-oekonomisches Panel
+Spinning #eng
+State of the Art
+Stationsbeamte/N
+Stationsbeamter
+Stationsbeamtin
+Stationsbeamtinnen
+Stedelijk Museum
+supi #ugs
+Töle/N #ugs
+techniksüchtig/A
+technikversiert/A
+Terrarientier/S
+Terrarientiere/NS
+Tetra Pak/S
+THB
+Thermalisierung
+tiefpassartig/A
+tierversuchsfrei/A
+Toll Collect
+Tom Sawyer/S
+Tourenpläne/N
+Tropfrohr
+Tropfrohre/NS
+Trump Jr.
+tsakonisch/A
+Twin Peaks
+Unbewohnbarkeit
+United Parcel Service
+univariat/A
+Urban Gardening
+Urkommunismus
+Verbesserungsprogramm/S
+Verbesserungsprogramme/N
+Verdrillung
+Veredelungsprozess
+Veredelungsprozesse/NS
+Verklebesystem/S
+Verklebesysteme/N
+Verlader/NS
+Vermesserin
+Vermesserinnen
+Vernissagegäste/N
+Vernissagegast
+Vernissagegastes
+Verwalterabrechnung
+vielschneidig/A
+Virtual Reality
+Vitaldrink/S
+Walletsoftware
+Wasserung
+Websiteprogrammiersprache/N
+wegsteckend/A
+Wernher von Braun
+Wi-Fi Direct
+Windungssinn/S
+Workflow #en
+World Wide Web/S
+Wyatt Earp
+Yellow Press
+YOLO #colloquial
+Youngsters #en
+Youngtimer/NS #en
+zeitkontinuierlich/A
+Zertifizierer/NS
+Zirkulator/S
+Zirkulatoren
+Zuluftsystem/S
+Zuluftsysteme/N
+Zuständigkeitsstreitereien
+Zwergbartagame/N
