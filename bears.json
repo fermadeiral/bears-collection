@@ -1,0 +1,184 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jenkinsci/jira-plugin",
+    "githubId": 1163626,
+    "url": "https://github.com/jenkinsci/jira-plugin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 168
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447254351,
+      "url": "http://travis-ci.org/jenkinsci/jira-plugin/builds/447254351",
+      "date": "Oct 28, 2018 2:21:17 AM"
+    },
+    "fixerBuild": {
+      "id": 447274050,
+      "url": "http://travis-ci.org/jenkinsci/jira-plugin/builds/447274050",
+      "date": "Oct 28, 2018 3:25:12 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 28, 2018 3:50:18 AM",
+    "reproductionDateEnd": "Oct 28, 2018 4:13:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 268573576,
+      "totalMemory": 392167424
+    },
+    "totalDuration": 1384,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 369,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          2,
+          367
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 610,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          610
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jenkinsci/jira-plugin/447254351/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 28,
+      "numberDeleted": 37
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jenkinsci/jira-plugin/447254351",
+    "overallMetrics": {
+      "numberRunning": 180,
+      "numberPassing": 178,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hudson.plugins.jira.JiraProjectPropertyTest",
+        "numberRunning": 8,
+        "numberPassing": 6,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hudson.plugins.jira.JiraProjectPropertyTest",
+        "testMethod": "configRoundtripWithNestedFolder",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003chttps://[first].com/\u003e but was:\u003chttps://[jira].com/\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "hudson.plugins.jira.JiraProjectPropertyTest",
+        "testMethod": "testChooseWithFolder",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 63,
+    "numberTestFiles": 44,
+    "numberLibrariesFailingModule": 242,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jenkinsci/jira-plugin",
+      "branchName": "master",
+      "sha": "4fa30879d21db50f5dd8b046a1ae1cfadc16345e",
+      "url": "http://github.com/jenkinsci/jira-plugin/commit/4fa30879d21db50f5dd8b046a1ae1cfadc16345e",
+      "date": "Oct 28, 2018 2:13:28 AM"
+    },
+    "fixerBuild": {
+      "repoName": "jenkinsci/jira-plugin",
+      "branchName": "master",
+      "sha": "cdcd6edeb3c2500b1f3e724d548b08bc09b94226",
+      "url": "http://github.com/jenkinsci/jira-plugin/commit/cdcd6edeb3c2500b1f3e724d548b08bc09b94226",
+      "date": "Oct 28, 2018 3:14:04 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "casz/jira-plugin",
+      "branchName": "JENKINS-52906",
+      "sha": "8b53d00362460aca992e89af99313944164d1b9d",
+      "url": "https://github.com/casz/jira-plugin/commit/8b53d00362460aca992e89af99313944164d1b9d",
+      "date": "Oct 28, 2018 3:14:04 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "jenkinsci/jira-plugin",
+      "branchName": "master",
+      "sha": "401258dcc60bbd40325f1b359dec60ce97774b7c",
+      "url": "https://github.com/jenkinsci/jira-plugin/commit/401258dcc60bbd40325f1b359dec60ce97774b7c",
+      "date": "Oct 26, 2018 1:02:52 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "casz/jira-plugin",
+      "branchName": "JENKINS-52906",
+      "sha": "8b53d00362460aca992e89af99313944164d1b9d",
+      "url": "https://github.com/casz/jira-plugin/commit/8b53d00362460aca992e89af99313944164d1b9d",
+      "date": "Oct 28, 2018 3:14:04 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "jenkinsci/jira-plugin",
+      "branchName": "master",
+      "sha": "401258dcc60bbd40325f1b359dec60ce97774b7c",
+      "url": "https://github.com/jenkinsci/jira-plugin/commit/401258dcc60bbd40325f1b359dec60ce97774b7c",
+      "date": "Oct 26, 2018 1:02:52 PM"
+    }
+  },
+  "type": "failing_passing"
+}
