@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "rutor/PA165-projekt",
+    "githubId": 152389116,
+    "url": "https://github.com/rutor/PA165-projekt",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 19
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447548001,
+      "url": "http://travis-ci.org/rutor/PA165-projekt/builds/447548001",
+      "date": "Oct 28, 2018 11:31:29 PM"
+    },
+    "fixerBuild": {
+      "id": 447548751,
+      "url": "http://travis-ci.org/rutor/PA165-projekt/builds/447548751",
+      "date": "Oct 28, 2018 11:34:37 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 28, 2018 11:34:51 PM",
+    "reproductionDateEnd": "Oct 28, 2018 11:36:37 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 243036056,
+      "totalMemory": 396361728
+    },
+    "totalDuration": 101,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 32,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          4,
+          26
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/rutor/PA165-projekt/447548001/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 11,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 27,
+      "numberDeleted": 48
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/integration",
+      "sha": "f712a43fdac7bbed4dc33c45e1740783d96de00d",
+      "url": "http://github.com/rutor/PA165-projekt/commit/f712a43fdac7bbed4dc33c45e1740783d96de00d",
+      "date": "Oct 28, 2018 11:16:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/integration",
+      "sha": "7aace01876fb4bd48f3a7a9d37d29eef4681af87",
+      "url": "http://github.com/rutor/PA165-projekt/commit/7aace01876fb4bd48f3a7a9d37d29eef4681af87",
+      "date": "Oct 28, 2018 11:32:24 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/RD_fin",
+      "sha": "35fdbc9a6bbe6b5de5a1d92e26c36dbc96913291",
+      "url": "https://github.com/rutor/PA165-projekt/commit/35fdbc9a6bbe6b5de5a1d92e26c36dbc96913291",
+      "date": "Oct 28, 2018 11:32:24 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/integration",
+      "sha": "2ce19184790699a3aba89019721f19c83c0456c7",
+      "url": "https://github.com/rutor/PA165-projekt/commit/2ce19184790699a3aba89019721f19c83c0456c7",
+      "date": "Oct 28, 2018 4:59:05 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/RD_fin",
+      "sha": "35fdbc9a6bbe6b5de5a1d92e26c36dbc96913291",
+      "url": "https://github.com/rutor/PA165-projekt/commit/35fdbc9a6bbe6b5de5a1d92e26c36dbc96913291",
+      "date": "Oct 28, 2018 11:32:24 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "rutor/PA165-projekt",
+      "branchName": "milestone1/integration",
+      "sha": "2ce19184790699a3aba89019721f19c83c0456c7",
+      "url": "https://github.com/rutor/PA165-projekt/commit/2ce19184790699a3aba89019721f19c83c0456c7",
+      "date": "Oct 28, 2018 4:59:05 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/rutor/PA165-projekt/447548001",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "cz.muni.fi.pa165.dao.ShowDaoTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "cz.muni.fi.pa165.dao.ShowDaoTest",
+        "testMethod": "createTest",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 27,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 54,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
