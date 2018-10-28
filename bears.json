@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "ExpediaDotCom/haystack-client-java",
+    "githubId": 103698172,
+    "url": "https://github.com/ExpediaDotCom/haystack-client-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447294348,
+      "url": "http://travis-ci.org/ExpediaDotCom/haystack-client-java/builds/447294348",
+      "date": "Oct 28, 2018 5:46:16 AM"
+    },
+    "fixerBuild": {
+      "id": 447295420,
+      "url": "http://travis-ci.org/ExpediaDotCom/haystack-client-java/builds/447295420",
+      "date": "Oct 28, 2018 5:56:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 28, 2018 5:56:51 AM",
+    "reproductionDateEnd": "Oct 28, 2018 5:58:57 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 280706600,
+      "totalMemory": 393216000
+    },
+    "totalDuration": 120,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 53,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          52
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/ExpediaDotCom/haystack-client-java/447294348/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/ExpediaDotCom/haystack-client-java/447294348/core",
+    "overallMetrics": {
+      "numberRunning": 49,
+      "numberPassing": 48,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.expedia.www.haystack.client.dispatchers.clients.HttpCollectorClientTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.expedia.www.haystack.client.dispatchers.clients.HttpCollectorClientTest",
+        "testMethod": "testDispatch",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 72,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 38,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "ExpediaDotCom/haystack-client-java",
+      "branchName": "http-collector-client",
+      "sha": "54ae1563afa593b2a0adf5d86fbade5cbdac1cbe",
+      "url": "http://github.com/ExpediaDotCom/haystack-client-java/commit/54ae1563afa593b2a0adf5d86fbade5cbdac1cbe",
+      "date": "Oct 28, 2018 5:43:07 AM"
+    },
+    "fixerBuild": {
+      "repoName": "ExpediaDotCom/haystack-client-java",
+      "branchName": "http-collector-client",
+      "sha": "7289e627909c99fc188658d69a624ea404fcd578",
+      "url": "http://github.com/ExpediaDotCom/haystack-client-java/commit/7289e627909c99fc188658d69a624ea404fcd578",
+      "date": "Oct 28, 2018 5:54:12 AM"
+    }
+  }
+}
