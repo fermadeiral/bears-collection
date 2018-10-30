@@ -15,12 +15,20 @@
  */
 package org.springframework.data.jpa.repository.config;
 
+import static org.mockito.Matchers.*;
+import static org.mockito.Mockito.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.core.type.AnnotationMetadata;
+import org.springframework.core.type.classreading.MetadataReader;
+import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
+import org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor;
 
 /**
  * Unit tests for {@link JpaAuditingRegistrar}.
@@ -44,4 +52,27 @@ public class JpaAuditingRegistrarUnitTests {
 	public void rejectsNullBeanDefinitionRegistry() {
 		registrar.registerBeanDefinitions(metadata, null);
 	}
+
+	@Test // DATAJPA-1448
+	public void doesNotRegisterBeanConfigurerTwice() throws Exception {
+
+		SimpleMetadataReaderFactory factory = new SimpleMetadataReaderFactory();
+		MetadataReader reader = factory.getMetadataReader(Sample.class.getName());
+		AnnotationMetadata annotationMetadata = reader.getAnnotationMetadata();
+
+		// Given a bean already present
+		String beanName = AuditingBeanFactoryPostProcessor.BEAN_CONFIGURER_ASPECT_BEAN_NAME;
+		when(registry.containsBeanDefinition(beanName)).thenReturn(true);
+
+		// When invoking configuration
+		registrar.registerBeanDefinitions(annotationMetadata, registry);
+
+		// Then the bean is not registered again
+		verify(registry, times(0)).registerBeanDefinition(eq(beanName), Mockito.<BeanDefinition> any());
+
+		registrar.registerBeanDefinitions(annotationMetadata, registry);
+	}
+
+	@EnableJpaAuditing
+	static class Sample {}
 }
