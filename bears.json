@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "spring-projects/spring-data-jpa",
+    "githubId": 1072845,
+    "url": "https://github.com/spring-projects/spring-data-jpa",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447793961,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/447793961",
+      "date": "Oct 30, 2018 7:19:33 AM"
+    },
+    "fixerBuild": {
+      "id": 448225810,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/448225810",
+      "date": "Oct 30, 2018 11:35:18 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 30, 2018 11:35:30 AM",
+    "reproductionDateEnd": "Oct 30, 2018 11:43:16 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252853264,
+      "totalMemory": 388497408
+    },
+    "totalDuration": 459,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 196,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          193
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-jpa/447793961/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 5
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "1.11.x",
+      "sha": "b33921784fc7872a679f0b6a21d9f7ee05ca62d4",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/b33921784fc7872a679f0b6a21d9f7ee05ca62d4",
+      "date": "Oct 29, 2018 2:30:29 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "1.11.x",
+      "sha": "e18f5c2ea3489eeaf12d64745036e79e9045923c",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/e18f5c2ea3489eeaf12d64745036e79e9045923c",
+      "date": "Oct 30, 2018 10:14:55 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-jpa/447793961",
+    "overallMetrics": {
+      "numberRunning": 282,
+      "numberPassing": 281,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.jpa.repository.config.JpaAuditingRegistrarUnitTests",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.jpa.repository.config.JpaAuditingRegistrarUnitTests",
+        "testMethod": "doesNotRegisterBeanConfigurerTwice",
+        "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+        "detail": " registry.registerBeanDefinition(     \"org.springframework.context.config.internalBeanConfigurerAspect\",     \u003cany\u003e ); Never wanted here: -\u003e at org.springframework.data.jpa.repository.config.JpaAuditingRegistrarUnitTests.doesNotRegisterBeanConfigurerTwice(JpaAuditingRegistrarUnitTests.java:71) But invoked here: -\u003e at org.springframework.data.jpa.repository.config.JpaAuditingRegistrar.registerBeanConfigurerAspectIfNecessary(JpaAuditingRegistrar.java:135) ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 101,
+    "numberTestFiles": 241,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
+}
