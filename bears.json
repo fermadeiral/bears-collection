@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "exxcellent/olingo-jpa-processor-v4",
+    "githubId": 124388335,
+    "url": "https://github.com/exxcellent/olingo-jpa-processor-v4",
+    "isFork": true,
+    "original": {
+      "name": "SAP/olingo-jpa-processor-v4",
+      "githubId": 77145569,
+      "url": "https://github.com/SAP/olingo-jpa-processor-v4"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 448016475,
+      "url": "http://travis-ci.org/exxcellent/olingo-jpa-processor-v4/builds/448016475",
+      "date": "Oct 29, 2018 9:52:42 PM"
+    },
+    "fixerBuild": {
+      "id": 448344758,
+      "url": "http://travis-ci.org/exxcellent/olingo-jpa-processor-v4/builds/448344758",
+      "date": "Oct 30, 2018 2:57:55 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 30, 2018 5:35:55 PM",
+    "reproductionDateEnd": "Oct 30, 2018 5:40:51 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 218030128,
+      "totalMemory": 385351680
+    },
+    "totalDuration": 290,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 66,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          66
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 69,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          69
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/exxcellent/olingo-jpa-processor-v4/448016475/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 15,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 147,
+      "numberDeleted": 226
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/exxcellent/olingo-jpa-processor-v4/448016475/jpa/odata-jpa-processor",
+    "overallMetrics": {
+      "numberRunning": 341,
+      "numberPassing": 340,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 66,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.olingo.jpa.processor.core.action.TestJPAActions",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.olingo.jpa.processor.core.action.TestJPAActions",
+        "testMethod": "testBoundPrimitiveActionWithEnumParameter",
+        "failureName": "java.lang.AssertionError",
+        "detail": "{\"error\":{\"code\":null,\"message\":\"The type of the type cast \u0027org.apache.olingo.jpa.sendBackEnumParameter\u0027 is not defined.\"}} expected:\u003c200\u003e but was:\u003c400\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 217,
+    "numberTestFiles": 81,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "exxcellent/olingo-jpa-processor-v4",
+      "branchName": "eXXcellent_adaptions",
+      "sha": "1b517e4fb437e3cca48e2860ba26ef0654fc6ebf",
+      "url": "http://github.com/exxcellent/olingo-jpa-processor-v4/commit/1b517e4fb437e3cca48e2860ba26ef0654fc6ebf",
+      "date": "Oct 29, 2018 9:45:11 PM"
+    },
+    "fixerBuild": {
+      "repoName": "exxcellent/olingo-jpa-processor-v4",
+      "branchName": "eXXcellent_adaptions",
+      "sha": "5181a399369f6767d43b8647747c45e8fc97f245",
+      "url": "http://github.com/exxcellent/olingo-jpa-processor-v4/commit/5181a399369f6767d43b8647747c45e8fc97f245",
+      "date": "Oct 30, 2018 2:52:36 PM"
+    }
+  }
+}
