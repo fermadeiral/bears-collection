@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "eclipse-ee4j/jersey",
+    "githubId": 129954828,
+    "url": "https://github.com/eclipse-ee4j/jersey",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446011039,
+      "url": "http://travis-ci.org/eclipse-ee4j/jersey/builds/446011039",
+      "date": "Oct 25, 2018 8:11:02 AM"
+    },
+    "fixerBuild": {
+      "id": 448342307,
+      "url": "http://travis-ci.org/eclipse-ee4j/jersey/builds/448342307",
+      "date": "Oct 30, 2018 3:16:26 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 30, 2018 5:34:20 PM",
+    "reproductionDateEnd": "Oct 30, 2018 6:34:36 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252553696,
+      "totalMemory": 446693376
+    },
+    "totalDuration": 3607,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 423,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0,
+          1,
+          419
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 128,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          128
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/eclipse-ee4j/jersey/446011039/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 20,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector",
+    "overallMetrics": {
+      "numberRunning": 1411,
+      "numberPassing": 1410,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 20,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.glassfish.jersey.apache.connector.StreamingTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.glassfish.jersey.apache.connector.StreamingTest",
+        "testMethod": "reuseConnectionTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 74,
+    "numberSourceFiles": 1309,
+    "numberTestFiles": 453,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "eclipse-ee4j/jersey",
+      "branchName": "master",
+      "sha": "e0d0c7cbecdb99697234406fbfee896dd0f58f54",
+      "url": "http://github.com/eclipse-ee4j/jersey/commit/e0d0c7cbecdb99697234406fbfee896dd0f58f54",
+      "date": "Oct 25, 2018 7:42:35 AM"
+    },
+    "fixerBuild": {
+      "repoName": "eclipse-ee4j/jersey",
+      "branchName": "master",
+      "sha": "0cfff66c55e31d44cc02b615e274ed9fb3a3593c",
+      "url": "http://github.com/eclipse-ee4j/jersey/commit/0cfff66c55e31d44cc02b615e274ed9fb3a3593c",
+      "date": "Oct 30, 2018 2:48:37 PM"
+    }
+  },
+  "type": "passing_passing"
+}
