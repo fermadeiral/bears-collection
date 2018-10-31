@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "paritytrading/foundation",
+    "githubId": 55721706,
+    "url": "https://github.com/paritytrading/foundation",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 364820616,
+      "url": "http://travis-ci.org/paritytrading/foundation/builds/364820616",
+      "date": "Apr 10, 2018 11:10:56 PM"
+    },
+    "fixerBuild": {
+      "id": 448899327,
+      "url": "http://travis-ci.org/paritytrading/foundation/builds/448899327",
+      "date": "Oct 31, 2018 4:03:20 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 31, 2018 4:03:41 PM",
+    "reproductionDateEnd": "Oct 31, 2018 4:04:46 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 287827424,
+      "totalMemory": 390070272
+    },
+    "totalDuration": 60,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 20,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          20
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/paritytrading/foundation/364820616/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/paritytrading/foundation/364820616",
+    "overallMetrics": {
+      "numberRunning": 80,
+      "numberPassing": 77,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.paritytrading.foundation.ByteArraysTest",
+        "numberRunning": 16,
+        "numberPassing": 13,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.paritytrading.foundation.ByteArraysTest",
+        "testMethod": "shortRoundtrip",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c511\u003e but was:\u003c-1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.paritytrading.foundation.ByteArraysTest",
+        "testMethod": "longRoundtrip",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1376528744703\u003e but was:\u003c-1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.paritytrading.foundation.ByteArraysTest",
+        "testMethod": "intRoundtrip",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c25133567\u003e but was:\u003c-1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "paritytrading/foundation",
+      "branchName": "master",
+      "sha": "334b11fcbe2aa44f9c29db2043cddf60930541c0",
+      "url": "http://github.com/paritytrading/foundation/commit/334b11fcbe2aa44f9c29db2043cddf60930541c0",
+      "date": "Apr 10, 2018 11:08:55 PM"
+    },
+    "fixerBuild": {
+      "repoName": "paritytrading/foundation",
+      "branchName": "master",
+      "sha": "fa92de0233a116cdf14764657651c6158dd97004",
+      "url": "http://github.com/paritytrading/foundation/commit/fa92de0233a116cdf14764657651c6158dd97004",
+      "date": "Oct 31, 2018 4:02:00 PM"
+    }
+  },
+  "type": "passing_passing"
+}
