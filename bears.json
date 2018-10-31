@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "proshin-roman/finapi-java-client",
+    "githubId": 140089655,
+    "url": "https://github.com/proshin-roman/finapi-java-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447964634,
+      "url": "http://travis-ci.org/proshin-roman/finapi-java-client/builds/447964634",
+      "date": "Oct 29, 2018 7:52:34 PM"
+    },
+    "fixerBuild": {
+      "id": 448931377,
+      "url": "http://travis-ci.org/proshin-roman/finapi-java-client/builds/448931377",
+      "date": "Oct 31, 2018 5:04:09 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 31, 2018 5:04:23 PM",
+    "reproductionDateEnd": "Oct 31, 2018 5:05:44 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 352408968,
+      "totalMemory": 398458880
+    },
+    "totalDuration": 75,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 30,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/proshin-roman/finapi-java-client/447964634/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 31,
+      "numberDeleted": 61
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/proshin-roman/finapi-java-client/447964634",
+    "overallMetrics": {
+      "numberRunning": 18,
+      "numberPassing": 17,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.proshin.finapi.user.UsersTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.proshin.finapi.user.UsersTest",
+        "testMethod": "testDeleteUnverified",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No routes found for path \u0027/api/v1/users/verify/user-1\u0027",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 157,
+    "numberTestFiles": 16,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "proshin-roman/finapi-java-client",
+      "branchName": "master",
+      "sha": "5f3e28a1af38ccaed94b6145bfd0900c3c362159",
+      "url": "http://github.com/proshin-roman/finapi-java-client/commit/5f3e28a1af38ccaed94b6145bfd0900c3c362159",
+      "date": "Oct 29, 2018 7:37:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "proshin-roman/finapi-java-client",
+      "branchName": "master",
+      "sha": "6c8c73b5e100c735bd98027650b268636b41f783",
+      "url": "http://github.com/proshin-roman/finapi-java-client/commit/6c8c73b5e100c735bd98027650b268636b41f783",
+      "date": "Oct 31, 2018 4:50:15 PM"
+    }
+  },
+  "type": "passing_passing"
+}
