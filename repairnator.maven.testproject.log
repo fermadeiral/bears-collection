@@ -1,0 +1,200 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building config 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce) @ config ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (pre-unit-test) @ config ---
+[INFO] surefireArgLine set to -javaagent:/root/./workspace/cucumber/config-java/447553046/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/cucumber/config-java/447553046/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cucumber/config-java/447553046/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ config ---
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 23.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 46.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1032.0 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.cucumber.config.OptparseTest
+[ERROR] Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.195 s <<< FAILURE! - in io.cucumber.config.OptparseTest
+[ERROR] sets_surplus_to_special_property(io.cucumber.config.OptparseTest)  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] ignores_arg_after_boolean_option(io.cucumber.config.OptparseTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] supports_no_boolean_option(io.cucumber.config.OptparseTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] aliases_options(io.cucumber.config.OptparseTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] adds_options_to_list(io.cucumber.config.OptparseTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_int_field(io.cucumber.config.OptparseTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_list_field(io.cucumber.config.OptparseTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_enum_field(io.cucumber.config.OptparseTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_field(io.cucumber.config.OptparseTest)  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_boolean_field(io.cucumber.config.OptparseTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum
+
+[INFO] Running io.cucumber.config.JsonTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.255 s <<< FAILURE! - in io.cucumber.config.JsonTest
+[ERROR] sets_int_field(io.cucumber.config.JsonTest)  Time elapsed: 0.248 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_list_field(io.cucumber.config.JsonTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_enum_field(io.cucumber.config.JsonTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_field(io.cucumber.config.JsonTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_boolean_field(io.cucumber.config.JsonTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[INFO] Running io.cucumber.config.AnnotationTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! - in io.cucumber.config.AnnotationTest
+[ERROR] sets_int_field(io.cucumber.config.AnnotationTest)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_list_field(io.cucumber.config.AnnotationTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_enum_field(io.cucumber.config.AnnotationTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_field(io.cucumber.config.AnnotationTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_boolean_field(io.cucumber.config.AnnotationTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum
+
+[INFO] Running io.cucumber.config.ConfigBuilderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 s - in io.cucumber.config.ConfigBuilderTest
+[INFO] Running io.cucumber.config.StringMapTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in io.cucumber.config.StringMapTest
+[ERROR] sets_int_field(io.cucumber.config.StringMapTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_list_field(io.cucumber.config.StringMapTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_enum_field(io.cucumber.config.StringMapTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_field(io.cucumber.config.StringMapTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_boolean_field(io.cucumber.config.StringMapTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[INFO] Running io.cucumber.config.YamlTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.052 s <<< FAILURE! - in io.cucumber.config.YamlTest
+[ERROR] sets_int_field(io.cucumber.config.YamlTest)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_list_field(io.cucumber.config.YamlTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_enum_field(io.cucumber.config.YamlTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_string_field(io.cucumber.config.YamlTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[ERROR] sets_boolean_field(io.cucumber.config.YamlTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.RuntimeException: Can't convert java.lang.String to io.cucumber.config.MyConfig$Myenum
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   AnnotationTest>FieldSetterContract.setFields:14 » Runtime Can't convert io.cuc...
+[ERROR]   AnnotationTest>FieldSetterContract.setFields:14 » Runtime Can't convert io.cuc...
+[ERROR]   AnnotationTest>FieldSetterContract.setFields:14 » Runtime Can't convert io.cuc...
+[ERROR]   AnnotationTest>FieldSetterContract.setFields:14 » Runtime Can't convert io.cuc...
+[ERROR]   AnnotationTest>FieldSetterContract.setFields:14 » Runtime Can't convert io.cuc...
+[ERROR]   JsonTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   JsonTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   JsonTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   JsonTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   JsonTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   OptparseTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.uti...
+[ERROR]   StringMapTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.la...
+[ERROR]   StringMapTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.la...
+[ERROR]   StringMapTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.la...
+[ERROR]   StringMapTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.la...
+[ERROR]   StringMapTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.la...
+[ERROR]   YamlTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   YamlTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   YamlTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   YamlTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[ERROR]   YamlTest>FieldSetterContract.setFields:14 » Runtime Can't convert java.lang.St...
+[INFO] 
+[ERROR] Tests run: 32, Failures: 0, Errors: 30, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.934 s
+[INFO] Finished at: 2018-10-31T03:03:23+01:00
+[INFO] Final Memory: 25M/600M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project config: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/cucumber/config-java/447553046/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
