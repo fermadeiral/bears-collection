@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpBankConnections.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.bankconnection</a> &gt; <span class="el_source">FpBankConnections.java</span></div><h1>FpBankConnections.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.bankconnection;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.bankconnection.in.ImportParameters;
+import org.proshin.finapi.bankconnection.in.UpdateParameters;
+import org.proshin.finapi.endpoint.Endpoint;
+import org.proshin.finapi.primitives.IterableJsonArray;
+import org.proshin.finapi.primitives.pair.CommaSeparatedPair;
+
+/**
+ * Bank Connections endpoint.
+ * @todo #20 Cover FpBankConnections by unit tests with mocked JSON structures.
+ */
+public final class FpBankConnections implements BankConnections {
+
+    private final Endpoint endpoint;
+    private final AccessToken token;
+
+<span class="nc" id="L38">    public FpBankConnections(final Endpoint endpoint, final AccessToken token) {</span>
+<span class="nc" id="L39">        this.endpoint = endpoint;</span>
+<span class="nc" id="L40">        this.token = token;</span>
+<span class="nc" id="L41">    }</span>
+
+    @Override
+    public BankConnection one(final Long id) {
+<span class="nc" id="L45">        return new FpBankConnection(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L49">                this.endpoint.get(</span>
+<span class="nc" id="L50">                    String.format(&quot;/api/v1/bankConnections/%d&quot;, id),</span>
+                    this.token
+                )
+            )
+        );
+    }
+
+    @Override
+    public Iterable&lt;BankConnection&gt; query(final Iterable&lt;Long&gt; ids) {
+<span class="nc" id="L59">        return new IterableJsonArray&lt;&gt;(</span>
+            new JSONArray(
+<span class="nc" id="L61">                this.endpoint.get(</span>
+                    &quot;api/v1/bankConnections&quot;,
+                    this.token,
+                    new CommaSeparatedPair&lt;&gt;(&quot;ids&quot;, ids)
+                )
+            ),
+<span class="nc" id="L67">            (array, index) -&gt; new FpBankConnection(this.endpoint, this.token, array.getJSONObject(index))</span>
+        );
+    }
+
+    @Override
+    public Future&lt;BankConnection&gt; importNew(final ImportParameters parameters) {
+<span class="nc" id="L73">        return Executors.newSingleThreadExecutor().submit(</span>
+<span class="nc" id="L74">            () -&gt; new FpBankConnection(</span>
+                this.endpoint,
+                this.token,
+                new JSONObject(
+<span class="nc" id="L78">                    this.endpoint.post(</span>
+                        &quot;/api/v1/bankConnections/import&quot;,
+                        this.token,
+                        parameters,
+                        201
+                    )
+                )
+            ));
+    }
+
+    @Override
+    public Future&lt;BankConnection&gt; update(final UpdateParameters parameters) {
+<span class="nc" id="L90">        return Executors.newSingleThreadExecutor().submit(</span>
+<span class="nc" id="L91">            () -&gt; new FpBankConnection(</span>
+                this.endpoint,
+                this.token,
+                new JSONObject(
+<span class="nc" id="L95">                    this.endpoint.post(</span>
+                        &quot;/api/v1/bankConnections/update&quot;,
+                        this.token,
+                        parameters
+                    )
+                )
+            ));
+    }
+
+    @Override
+    public Iterable&lt;Long&gt; deleteAll() {
+<span class="nc" id="L106">        return new IterableJsonArray&lt;&gt;(</span>
+            new JSONObject(
+<span class="nc" id="L108">                this.endpoint.delete(&quot;/api/v1/bankConnections&quot;, this.token)</span>
+<span class="nc" id="L109">            ).getJSONArray(&quot;identifiers&quot;),</span>
+            JSONArray::getLong
+        );
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

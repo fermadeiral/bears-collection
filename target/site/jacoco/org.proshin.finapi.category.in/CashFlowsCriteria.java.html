@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CashFlowsCriteria.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.category.in</a> &gt; <span class="el_source">CashFlowsCriteria.java</span></div><h1>CashFlowsCriteria.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.category.in;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import org.apache.http.NameValuePair;
+import org.proshin.finapi.primitives.Direction;
+import org.proshin.finapi.primitives.StringOf;
+import org.proshin.finapi.primitives.pair.CommaSeparatedPair;
+import org.proshin.finapi.primitives.pair.UrlEncodedPair;
+
+public final class CashFlowsCriteria implements Iterable&lt;NameValuePair&gt; {
+
+    private final List&lt;NameValuePair&gt; pairs;
+
+    public CashFlowsCriteria() {
+<span class="nc" id="L34">        this(new ArrayList&lt;&gt;());</span>
+<span class="nc" id="L35">    }</span>
+
+<span class="nc" id="L37">    public CashFlowsCriteria(final List&lt;NameValuePair&gt; pairs) {</span>
+<span class="nc" id="L38">        this.pairs = pairs;</span>
+<span class="nc" id="L39">    }</span>
+
+    public CashFlowsCriteria withSearch(final String search) {
+<span class="nc" id="L42">        this.pairs.add(new UrlEncodedPair(&quot;search&quot;, search));</span>
+<span class="nc" id="L43">        return this;</span>
+    }
+
+    public CashFlowsCriteria withCounterpart(final String counterpart) {
+<span class="nc" id="L47">        this.pairs.add(new UrlEncodedPair(&quot;counterpart&quot;, counterpart));</span>
+<span class="nc" id="L48">        return this;</span>
+    }
+
+    public CashFlowsCriteria withPurpose(final String purpose) {
+<span class="nc" id="L52">        this.pairs.add(new UrlEncodedPair(&quot;purpose&quot;, purpose));</span>
+<span class="nc" id="L53">        return this;</span>
+    }
+
+    public CashFlowsCriteria withAccounts(final Iterable&lt;Long&gt; accounts) {
+<span class="nc" id="L57">        this.pairs.add(new UrlEncodedPair(new CommaSeparatedPair&lt;&gt;(&quot;accountIds&quot;, accounts)));</span>
+<span class="nc" id="L58">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMinBankBookingDate(final OffsetDateTime minBankBookingDate) {
+<span class="nc" id="L62">        this.pairs.add(new UrlEncodedPair(&quot;minBankBookingDate&quot;, new StringOf(minBankBookingDate)));</span>
+<span class="nc" id="L63">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMaxBankBookingDate(final OffsetDateTime maxBankBookingDate) {
+<span class="nc" id="L67">        this.pairs.add(new UrlEncodedPair(&quot;maxBankBookingDate&quot;, new StringOf(maxBankBookingDate)));</span>
+<span class="nc" id="L68">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMinFinapiBookingDate(final OffsetDateTime minFinapiBookingDate) {
+<span class="nc" id="L72">        this.pairs.add(new UrlEncodedPair(&quot;minFinapiBookingDate&quot;, new StringOf(minFinapiBookingDate)));</span>
+<span class="nc" id="L73">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMaxFinapiBookingDate(final OffsetDateTime maxFinapiBookingDate) {
+<span class="nc" id="L77">        this.pairs.add(new UrlEncodedPair(&quot;maxFinapiBookingDate&quot;, new StringOf(maxFinapiBookingDate)));</span>
+<span class="nc" id="L78">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMinAmount(final BigDecimal minAmount) {
+<span class="nc" id="L82">        this.pairs.add(new UrlEncodedPair(&quot;minAmount&quot;, new StringOf(minAmount)));</span>
+<span class="nc" id="L83">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMaxAmount(final BigDecimal maxAmount) {
+<span class="nc" id="L87">        this.pairs.add(new UrlEncodedPair(&quot;maxAmount&quot;, new StringOf(maxAmount)));</span>
+<span class="nc" id="L88">        return this;</span>
+    }
+
+    public CashFlowsCriteria withDirection(final Direction direction) {
+<span class="nc" id="L92">        this.pairs.add(new UrlEncodedPair(&quot;direction&quot;, direction.label()));</span>
+<span class="nc" id="L93">        return this;</span>
+    }
+
+    public CashFlowsCriteria withLabels(final Iterable&lt;Long&gt; labels) {
+<span class="nc" id="L97">        this.pairs.add(new UrlEncodedPair(new CommaSeparatedPair&lt;&gt;(&quot;labelIds&quot;, labels)));</span>
+<span class="nc" id="L98">        return this;</span>
+    }
+
+    public CashFlowsCriteria withCategories(final Iterable&lt;Long&gt; categories) {
+<span class="nc" id="L102">        this.pairs.add(new UrlEncodedPair(new CommaSeparatedPair&lt;&gt;(&quot;categoryIds&quot;, categories)));</span>
+<span class="nc" id="L103">        return this;</span>
+    }
+
+    public CashFlowsCriteria withIsNew(final boolean isNew) {
+<span class="nc" id="L107">        this.pairs.add(new UrlEncodedPair(&quot;isNew&quot;, isNew));</span>
+<span class="nc" id="L108">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMinImportDate(final OffsetDateTime minImportDate) {
+<span class="nc" id="L112">        this.pairs.add(new UrlEncodedPair(&quot;minImportDate&quot;, new StringOf(minImportDate)));</span>
+<span class="nc" id="L113">        return this;</span>
+    }
+
+    public CashFlowsCriteria withMaxImportDate(final OffsetDateTime maxImportDate) {
+<span class="nc" id="L117">        this.pairs.add(new UrlEncodedPair(&quot;maxImportDate&quot;, new StringOf(maxImportDate)));</span>
+<span class="nc" id="L118">        return this;</span>
+    }
+
+    public CashFlowsCriteria withoutSubCashFlows() {
+<span class="nc" id="L122">        this.pairs.add(new UrlEncodedPair(&quot;includeSubCashFlows&quot;, false));</span>
+<span class="nc" id="L123">        return this;</span>
+    }
+
+    public CashFlowsCriteria withOrdering(final String... orders) {
+<span class="nc bnc" id="L127" title="All 2 branches missed.">        for (String order : orders) {</span>
+<span class="nc" id="L128">            this.pairs.add(new UrlEncodedPair(&quot;order&quot;, order));</span>
+        }
+<span class="nc" id="L130">        return this;</span>
+    }
+
+    @Override
+    public Iterator&lt;NameValuePair&gt; iterator() {
+<span class="nc" id="L135">        return this.pairs.iterator();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

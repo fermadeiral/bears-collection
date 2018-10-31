@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpBankConnection.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.bankconnection</a> &gt; <span class="el_source">FpBankConnection.java</span></div><h1>FpBankConnection.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.bankconnection;
+
+import java.util.Optional;
+import org.json.JSONObject;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.account.Accounts;
+import org.proshin.finapi.bank.Bank;
+import org.proshin.finapi.bank.FpBank;
+import org.proshin.finapi.bankconnection.in.FpEditParameters;
+import org.proshin.finapi.bankconnection.out.Credentials;
+import org.proshin.finapi.bankconnection.out.FpCredentials;
+import org.proshin.finapi.bankconnection.out.FpStatus;
+import org.proshin.finapi.bankconnection.out.FpTwoStepProcedures;
+import org.proshin.finapi.bankconnection.out.FpUpdateResult;
+import org.proshin.finapi.bankconnection.out.Owner;
+import org.proshin.finapi.bankconnection.out.Status;
+import org.proshin.finapi.bankconnection.out.TwoStepProcedures;
+import org.proshin.finapi.bankconnection.out.Type;
+import org.proshin.finapi.bankconnection.out.UpdateResult;
+import org.proshin.finapi.endpoint.Endpoint;
+import org.proshin.finapi.primitives.optional.OptionalJsonField;
+import org.proshin.finapi.primitives.optional.OptionalObjectOf;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+
+/**
+ * Bank Connection model
+ * @todo #20 Cover FpBankConnection by unit tests with mocked JSON structures.
+ */
+public final class FpBankConnection implements BankConnection {
+
+    private final Endpoint endpoint;
+    private final AccessToken token;
+    private final JSONObject origin;
+
+<span class="nc" id="L50">    public FpBankConnection(final Endpoint endpoint, final AccessToken token, final JSONObject origin) {</span>
+<span class="nc" id="L51">        this.endpoint = endpoint;</span>
+<span class="nc" id="L52">        this.token = token;</span>
+<span class="nc" id="L53">        this.origin = origin;</span>
+<span class="nc" id="L54">    }</span>
+
+    @Override
+    public Long id() {
+<span class="nc" id="L58">        return this.origin.getLong(&quot;id&quot;);</span>
+    }
+
+    @Override
+    public Bank bank() {
+<span class="nc" id="L63">        return new FpBank(this.origin.getJSONObject(&quot;bank&quot;));</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; name() {
+<span class="nc" id="L68">        return new OptionalStringOf(this.origin, &quot;name&quot;).get();</span>
+    }
+
+    @Override
+    public Credentials credentials() {
+<span class="nc" id="L73">        return new FpCredentials(this.origin);</span>
+    }
+
+    @Override
+    public Type type() {
+<span class="nc" id="L78">        return Type.valueOf(this.origin.getString(&quot;type&quot;));</span>
+    }
+
+    @Override
+    public Status status() {
+<span class="nc" id="L83">        return new FpStatus(this.origin);</span>
+    }
+
+    @Override
+    public Optional&lt;UpdateResult&gt; lastManualUpdate() {
+<span class="nc" id="L88">        return new OptionalObjectOf(this.origin, &quot;lastManualUpdate&quot;).get()</span>
+<span class="nc" id="L89">            .map(FpUpdateResult::new);</span>
+    }
+
+    @Override
+    public Optional&lt;UpdateResult&gt; lastAutoUpdate() {
+<span class="nc" id="L94">        return new OptionalObjectOf(this.origin, &quot;lastAutoUpdate&quot;).get()</span>
+<span class="nc" id="L95">            .map(FpUpdateResult::new);</span>
+    }
+
+    @Override
+    public Optional&lt;TwoStepProcedures&gt; twoStepProcedures() {
+<span class="nc" id="L100">        return new OptionalJsonField&lt;TwoStepProcedures&gt;(</span>
+            this.origin,
+            &quot;twoStepProcedures&quot;,
+<span class="nc" id="L103">            (jsonObject, key) -&gt; new FpTwoStepProcedures(jsonObject)</span>
+<span class="nc" id="L104">        ).get();</span>
+    }
+
+    @Override
+    public Accounts accounts() {
+<span class="nc" id="L109">        throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
+    }
+
+    @Override
+    public Iterable&lt;Owner&gt; owners() {
+<span class="nc" id="L114">        throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
+    }
+
+    @Override
+    public BankConnection edit(final FpEditParameters parameters) {
+<span class="nc" id="L119">        return new FpBankConnection(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L123">                this.endpoint.patch(</span>
+<span class="nc" id="L124">                    String.format(&quot;/api/v1/bankConnections/%d&quot;, this.id()),</span>
+                    this.token,
+                    parameters
+                )
+            )
+        );
+    }
+
+    @Override
+    public void delete() {
+<span class="nc" id="L134">        this.endpoint.delete(String.format(&quot;/api/v1/bankConnections/%d&quot;, this.id()), this.token);</span>
+<span class="nc" id="L135">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

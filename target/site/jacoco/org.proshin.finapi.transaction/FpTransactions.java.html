@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpTransactions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.transaction</a> &gt; <span class="el_source">FpTransactions.java</span></div><h1>FpTransactions.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.transaction;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.endpoint.Endpoint;
+import org.proshin.finapi.primitives.IterableJsonArray;
+import org.proshin.finapi.transaction.in.DeleteTransactionsCriteria;
+import org.proshin.finapi.transaction.in.EditTransactionsParameters;
+import org.proshin.finapi.transaction.in.TransactionsCriteria;
+import org.proshin.finapi.transaction.out.FpTransactionsPage;
+import org.proshin.finapi.transaction.out.TransactionsPage;
+
+public final class FpTransactions implements Transactions {
+
+    private final Endpoint endpoint;
+    private final AccessToken token;
+    private final String url;
+
+    public FpTransactions(final Endpoint endpoint, final AccessToken token) {
+<span class="nc" id="L36">        this(endpoint, token, &quot;/api/v1/transactions/&quot;);</span>
+<span class="nc" id="L37">    }</span>
+
+<span class="nc" id="L39">    public FpTransactions(final Endpoint endpoint, final AccessToken token, final String url) {</span>
+<span class="nc" id="L40">        this.endpoint = endpoint;</span>
+<span class="nc" id="L41">        this.token = token;</span>
+<span class="nc" id="L42">        this.url = url;</span>
+<span class="nc" id="L43">    }</span>
+
+    @Override
+    public Transaction one(final Long id) {
+<span class="nc" id="L47">        return new FpTransaction(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L51">                this.endpoint.get(this.url + id, this.token)</span>
+            ),
+            this.url
+        );
+    }
+
+    @Override
+    public TransactionsPage query(final TransactionsCriteria criteria) {
+<span class="nc" id="L59">        return new FpTransactionsPage(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L63">                this.endpoint.get(</span>
+                    this.url,
+                    this.token,
+                    criteria
+                )
+            ),
+            this.url
+        );
+    }
+
+    @Override
+    public Iterable&lt;Long&gt; edit(final EditTransactionsParameters parameters) {
+<span class="nc" id="L75">        return new IterableJsonArray&lt;&gt;(</span>
+            new JSONObject(
+<span class="nc" id="L77">                this.endpoint.patch(this.url, this.token, parameters)</span>
+<span class="nc" id="L78">            ).getJSONArray(&quot;identifiers&quot;),</span>
+            JSONArray::getLong
+        );
+    }
+
+    @Override
+    public void triggerCategorization(final Iterable&lt;Long&gt; bankConnections) {
+<span class="nc" id="L85">        final JSONObject parameters = new JSONObject();</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">        for (final Long bankConnection : bankConnections) {</span>
+<span class="nc" id="L87">            parameters.append(&quot;bankConnectionIds&quot;, bankConnection);</span>
+<span class="nc" id="L88">        }</span>
+<span class="nc" id="L89">        this.endpoint.post(this.url + &quot;triggerCategorization&quot;, this.token, () -&gt; parameters);</span>
+<span class="nc" id="L90">    }</span>
+
+    @Override
+    public Iterable&lt;Long&gt; deleteAll(final DeleteTransactionsCriteria criteria) {
+<span class="nc" id="L94">        return new IterableJsonArray&lt;&gt;(</span>
+            new JSONObject(
+<span class="nc" id="L96">                this.endpoint.delete(this.url, this.token, criteria)</span>
+<span class="nc" id="L97">            ).getJSONArray(&quot;identifiers&quot;),</span>
+            JSONArray::getLong
+        );
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

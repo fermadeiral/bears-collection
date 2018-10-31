@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpTransaction.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.transaction</a> &gt; <span class="el_source">FpTransaction.java</span></div><h1>FpTransaction.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.transaction;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.Optional;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.category.Category;
+import org.proshin.finapi.category.FpCategory;
+import org.proshin.finapi.endpoint.Endpoint;
+import org.proshin.finapi.label.FpLabel;
+import org.proshin.finapi.label.Label;
+import org.proshin.finapi.primitives.IterableJsonArray;
+import org.proshin.finapi.primitives.OffsetDateTimeOf;
+import org.proshin.finapi.primitives.optional.OptionalLongOf;
+import org.proshin.finapi.primitives.optional.OptionalObjectOf;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+import org.proshin.finapi.transaction.in.EditTransactionParameters;
+import org.proshin.finapi.transaction.in.SplitTransactionParameters;
+import org.proshin.finapi.transaction.out.Counterpart;
+import org.proshin.finapi.transaction.out.FpCounterpart;
+import org.proshin.finapi.transaction.out.FpPayPalData;
+import org.proshin.finapi.transaction.out.FpType;
+import org.proshin.finapi.transaction.out.PayPalData;
+import org.proshin.finapi.transaction.out.Type;
+
+public final class FpTransaction implements Transaction {
+
+    private final Endpoint endpoint;
+    private final AccessToken token;
+    private final JSONObject origin;
+    private final String url;
+
+    public FpTransaction(final Endpoint endpoint, final AccessToken token, final JSONObject origin,
+<span class="nc" id="L51">        final String url) {</span>
+<span class="nc" id="L52">        this.endpoint = endpoint;</span>
+<span class="nc" id="L53">        this.token = token;</span>
+<span class="nc" id="L54">        this.origin = origin;</span>
+<span class="nc" id="L55">        this.url = url;</span>
+<span class="nc" id="L56">    }</span>
+
+    @Override
+    public Long id() {
+<span class="nc" id="L60">        return this.origin.getLong(&quot;id&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;Long&gt; parent() {
+<span class="nc" id="L65">        return new OptionalLongOf(this.origin, &quot;parentId&quot;).get();</span>
+    }
+
+    @Override
+    public Long account() {
+<span class="nc" id="L70">        return this.origin.getLong(&quot;accountId&quot;);</span>
+    }
+
+    @Override
+    public OffsetDateTime valueDate() {
+<span class="nc" id="L75">        return new OffsetDateTimeOf(this.origin.getString(&quot;valueDate&quot;)).get();</span>
+    }
+
+    @Override
+    public OffsetDateTime bankBookingDate() {
+<span class="nc" id="L80">        return new OffsetDateTimeOf(this.origin.getString(&quot;bankBookingDate&quot;)).get();</span>
+    }
+
+    @Override
+    public OffsetDateTime finapiBookingDate() {
+<span class="nc" id="L85">        return new OffsetDateTimeOf(this.origin.getString(&quot;finapiBookingDate&quot;)).get();</span>
+    }
+
+    @Override
+    public BigDecimal amount() {
+<span class="nc" id="L90">        return this.origin.getBigDecimal(&quot;amount&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; purpose() {
+<span class="nc" id="L95">        return new OptionalStringOf(this.origin, &quot;purpose&quot;).get();</span>
+    }
+
+    @Override
+    public Counterpart counterpart() {
+<span class="nc" id="L100">        return new FpCounterpart(this.origin);</span>
+    }
+
+    @Override
+    public Type type() {
+<span class="nc" id="L105">        return new FpType(this.origin);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; sepaPurposeCode() {
+<span class="nc" id="L110">        return new OptionalStringOf(this.origin, &quot;sepaPurposeCode&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; primanota() {
+<span class="nc" id="L115">        return new OptionalStringOf(this.origin, &quot;primanota&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;Category&gt; category() {
+<span class="nc" id="L120">        return new OptionalObjectOf(this.origin, &quot;category&quot;).get()</span>
+<span class="nc" id="L121">            .map(json -&gt; new FpCategory(this.endpoint, this.token, json));</span>
+    }
+
+    @Override
+    public Iterable&lt;Label&gt; labels() {
+<span class="nc" id="L126">        return new IterableJsonArray&lt;&gt;(</span>
+<span class="nc" id="L127">            this.origin.getJSONArray(&quot;labels&quot;),</span>
+<span class="nc" id="L128">            (array, index) -&gt; new FpLabel(this.endpoint, this.token, array.getJSONObject(index))</span>
+        );
+    }
+
+    @Override
+    public boolean isPotentialDuplicate() {
+<span class="nc" id="L134">        return this.origin.getBoolean(&quot;isPotentialDuplicate&quot;);</span>
+    }
+
+    @Override
+    public boolean isAdjustingEntry() {
+<span class="nc" id="L139">        return this.origin.getBoolean(&quot;isAdjustingEntry&quot;);</span>
+    }
+
+    @Override
+    public boolean isNew() {
+<span class="nc" id="L144">        return this.origin.getBoolean(&quot;isNew&quot;);</span>
+    }
+
+    @Override
+    public OffsetDateTime importDate() {
+<span class="nc" id="L149">        return new OffsetDateTimeOf(this.origin.getString(&quot;importDate&quot;)).get();</span>
+    }
+
+    @Override
+    public Iterable&lt;Long&gt; children() {
+<span class="nc" id="L154">        return new IterableJsonArray&lt;&gt;(</span>
+<span class="nc" id="L155">            this.origin.getJSONArray(&quot;children&quot;),</span>
+            JSONArray::getLong
+        );
+    }
+
+    @Override
+    public Optional&lt;PayPalData&gt; payPalData() {
+<span class="nc" id="L162">        return new OptionalObjectOf(this.origin, &quot;paypalData&quot;).get()</span>
+<span class="nc" id="L163">            .map(FpPayPalData::new);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; endToEndReference() {
+<span class="nc" id="L168">        return new OptionalStringOf(this.origin, &quot;endToEndReference&quot;).get();</span>
+    }
+
+    @Override
+    public Transaction split(final SplitTransactionParameters parameters) {
+<span class="nc" id="L173">        return new FpTransaction(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L177">                this.endpoint.post(</span>
+<span class="nc" id="L178">                    String.format(&quot;%s/%d/split&quot;, this.url, this.id()),</span>
+                    this.token,
+                    parameters
+                )
+            ),
+            this.url
+        );
+    }
+
+    @Override
+    public Transaction restore() {
+<span class="nc" id="L189">        return new FpTransaction(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L193">                this.endpoint.post(</span>
+<span class="nc" id="L194">                    String.format(</span>
+                        &quot;%s/%d/restore&quot;,
+                        this.url,
+<span class="nc" id="L197">                        this.id()</span>
+                    ),
+                    this.token
+                )
+            ),
+            this.url
+        );
+    }
+
+    @Override
+    public Transaction edit(final EditTransactionParameters parameters) {
+<span class="nc" id="L208">        return new FpTransaction(</span>
+            this.endpoint,
+            this.token,
+            new JSONObject(
+<span class="nc" id="L212">                this.endpoint.patch(</span>
+<span class="nc" id="L213">                    this.url + this.id(),</span>
+                    this.token,
+                    parameters
+                )
+            ),
+            this.url
+        );
+    }
+
+    @Override
+    public void delete() {
+<span class="nc" id="L224">        this.endpoint.delete(this.url + this.id(), this.token);</span>
+<span class="nc" id="L225">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

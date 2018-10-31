@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DirectDebitParameters.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.account.in</a> &gt; <span class="el_source">DirectDebitParameters.java</span></div><h1>DirectDebitParameters.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.account.in;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import org.json.JSONObject;
+import org.proshin.finapi.Jsonable;
+import org.proshin.finapi.primitives.StringOf;
+
+public final class DirectDebitParameters implements Jsonable {
+
+    private final JSONObject origin;
+
+    public DirectDebitParameters() {
+<span class="nc" id="L29">        this(new JSONObject());</span>
+<span class="nc" id="L30">    }</span>
+
+<span class="nc" id="L32">    public DirectDebitParameters(final JSONObject origin) {</span>
+<span class="nc" id="L33">        this.origin = origin;</span>
+<span class="nc" id="L34">    }</span>
+
+    public DirectDebitParameters withAccount(final Long account) {
+<span class="nc" id="L37">        this.origin.put(&quot;accountId&quot;, account);</span>
+<span class="nc" id="L38">        return this;</span>
+    }
+
+    public DirectDebitParameters withBankingPin(final String bankingPin) {
+<span class="nc" id="L42">        this.origin.put(&quot;bankingPin&quot;, bankingPin);</span>
+<span class="nc" id="L43">        return this;</span>
+    }
+
+    public DirectDebitParameters withStoringPin() {
+<span class="nc" id="L47">        this.origin.put(&quot;storePin&quot;, true);</span>
+<span class="nc" id="L48">        return this;</span>
+    }
+
+    public DirectDebitParameters withTwoStepProcedure(final String id) {
+<span class="nc" id="L52">        this.origin.put(&quot;twoStepProcedureId&quot;, id);</span>
+<span class="nc" id="L53">        return this;</span>
+    }
+
+    public DirectDebitParameters withDirectDebitType(final DirectDebitType type) {
+<span class="nc" id="L57">        this.origin.put(&quot;directDebitType&quot;, type);</span>
+<span class="nc" id="L58">        return this;</span>
+    }
+
+    public DirectDebitParameters withSequenceType(final SequenceType type) {
+<span class="nc" id="L62">        this.origin.put(&quot;sequenceType&quot;, type);</span>
+<span class="nc" id="L63">        return this;</span>
+    }
+
+    public DirectDebitParameters withExecutionDate(final OffsetDateTime executionDate) {
+<span class="nc" id="L67">        this.origin.put(&quot;executionDate&quot;, new StringOf(executionDate));</span>
+<span class="nc" id="L68">        return this;</span>
+    }
+
+    public DirectDebitParameters asSingleBooking() {
+<span class="nc" id="L72">        this.origin.put(&quot;singleBooking&quot;, true);</span>
+<span class="nc" id="L73">        return this;</span>
+    }
+
+    public DirectDebitParameters withDebtors(final Debtor... debtors) {
+<span class="nc bnc" id="L77" title="All 2 branches missed.">        for (final Debtor debtor : debtors) {</span>
+<span class="nc" id="L78">            this.origin.append(&quot;directDebits&quot;, debtor.asJson());</span>
+        }
+<span class="nc" id="L80">        return this;</span>
+    }
+
+    @Override
+    public JSONObject asJson() {
+<span class="nc" id="L85">        return this.origin;</span>
+    }
+
+<span class="nc" id="L88">    public enum DirectDebitType {</span>
+<span class="nc" id="L89">        BASIC, B2B</span>
+    }
+
+<span class="nc" id="L92">    public enum SequenceType {</span>
+<span class="nc" id="L93">        OOFF, FRST, RCUR, FNAL</span>
+    }
+
+    public static final class Debtor implements Jsonable {
+        private final JSONObject origin;
+
+        public Debtor() {
+<span class="nc" id="L100">            this(new JSONObject());</span>
+<span class="nc" id="L101">        }</span>
+
+<span class="nc" id="L103">        public Debtor(final JSONObject origin) {</span>
+<span class="nc" id="L104">            this.origin = origin;</span>
+<span class="nc" id="L105">        }</span>
+
+        public Debtor withName(final String name) {
+<span class="nc" id="L108">            this.origin.put(&quot;debitorName&quot;, name);</span>
+<span class="nc" id="L109">            return this;</span>
+        }
+
+        public Debtor withIban(final String iban) {
+<span class="nc" id="L113">            this.origin.put(&quot;debitorIban&quot;, iban);</span>
+<span class="nc" id="L114">            return this;</span>
+        }
+
+        public Debtor withBic(final String bic) {
+<span class="nc" id="L118">            this.origin.put(&quot;debitorBic&quot;, bic);</span>
+<span class="nc" id="L119">            return this;</span>
+        }
+
+        public Debtor withAmount(final BigDecimal amount) {
+<span class="nc" id="L123">            this.origin.put(&quot;amount&quot;, amount);</span>
+<span class="nc" id="L124">            return this;</span>
+        }
+
+        public Debtor withPurpose(final String purpose) {
+<span class="nc" id="L128">            this.origin.put(&quot;purpose&quot;, purpose);</span>
+<span class="nc" id="L129">            return this;</span>
+        }
+
+        public Debtor withSepaPurposeCode(final String sepaPurposeCode) {
+<span class="nc" id="L133">            this.origin.put(&quot;sepaPurposeCode&quot;, sepaPurposeCode);</span>
+<span class="nc" id="L134">            return this;</span>
+        }
+
+        public Debtor withMandateId(final String mandateId) {
+<span class="nc" id="L138">            this.origin.put(&quot;mandateId&quot;, mandateId);</span>
+<span class="nc" id="L139">            return this;</span>
+        }
+
+        public Debtor withMandateDate(final OffsetDateTime mandateDate) {
+<span class="nc" id="L143">            this.origin.put(&quot;mandateDate&quot;, new StringOf(mandateDate));</span>
+<span class="nc" id="L144">            return this;</span>
+        }
+
+        public Debtor withCreditorId(final String creditorId) {
+<span class="nc" id="L148">            this.origin.put(&quot;creditorId&quot;, creditorId);</span>
+<span class="nc" id="L149">            return this;</span>
+        }
+
+        public Debtor withEndToEndId(final String endToEndId) {
+<span class="nc" id="L153">            this.origin.put(&quot;endToEndIdId&quot;, endToEndId);</span>
+<span class="nc" id="L154">            return this;</span>
+        }
+
+        @Override
+        public JSONObject asJson() {
+<span class="nc" id="L159">            return this.origin;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpBank.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.bank</a> &gt; <span class="el_source">FpBank.java</span></div><h1>FpBank.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.bank;
+
+import java.time.OffsetDateTime;
+import java.util.Optional;
+import org.json.JSONObject;
+import org.proshin.finapi.primitives.IterableJsonArray;
+import org.proshin.finapi.primitives.OffsetDateTimeOf;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+
+public final class FpBank implements Bank {
+
+    private final JSONObject origin;
+
+<span class="fc" id="L29">    public FpBank(final JSONObject origin) {</span>
+<span class="fc" id="L30">        this.origin = origin;</span>
+<span class="fc" id="L31">    }</span>
+
+    @Override
+    public Long id() {
+<span class="fc" id="L35">        return this.origin.getLong(&quot;id&quot;);</span>
+    }
+
+    @Override
+    public String name() {
+<span class="fc" id="L40">        return this.origin.getString(&quot;name&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; loginHint() {
+<span class="fc" id="L45">        return new OptionalStringOf(this.origin, &quot;loginHint&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; bic() {
+<span class="fc" id="L50">        return new OptionalStringOf(this.origin, &quot;bic&quot;).get();</span>
+    }
+
+    @Override
+    public String blz() {
+<span class="fc" id="L55">        return this.origin.getString(&quot;blz&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; loginFieldUserId() {
+<span class="fc" id="L60">        return new OptionalStringOf(this.origin, &quot;loginFieldUserId&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; loginFieldCustomerId() {
+<span class="fc" id="L65">        return new OptionalStringOf(this.origin, &quot;loginFieldCustomerId&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; loginFieldPin() {
+<span class="fc" id="L70">        return new OptionalStringOf(this.origin, &quot;loginFieldPin&quot;).get();</span>
+    }
+
+    @Override
+    public boolean isSupported() {
+<span class="fc" id="L75">        return this.origin.getBoolean(&quot;isSupported&quot;);</span>
+    }
+
+    @Override
+    public Iterable&lt;DataSource&gt; supportedDataSources() {
+<span class="fc" id="L80">        return new IterableJsonArray&lt;&gt;(</span>
+<span class="fc" id="L81">            this.origin.getJSONArray(&quot;supportedDataSources&quot;),</span>
+<span class="fc" id="L82">            (array, index) -&gt; DataSource.valueOf(array.getString(index))</span>
+        );
+    }
+
+    @Override
+    public boolean pinsAreVolatile() {
+<span class="fc" id="L88">        return this.origin.getBoolean(&quot;pinsAreVolatile&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; location() {
+<span class="fc" id="L93">        return new OptionalStringOf(this.origin, &quot;location&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; city() {
+<span class="fc" id="L98">        return new OptionalStringOf(this.origin, &quot;city&quot;).get();</span>
+    }
+
+    @Override
+    public boolean isTestBank() {
+<span class="fc" id="L103">        return this.origin.getBoolean(&quot;isTestBank&quot;);</span>
+    }
+
+    @Override
+    public int popularity() {
+<span class="fc" id="L108">        return this.origin.getInt(&quot;popularity&quot;);</span>
+    }
+
+    @Override
+    public int health() {
+<span class="fc" id="L113">        return this.origin.getInt(&quot;health&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;OffsetDateTime&gt; lastCommunicationAttempt() {
+<span class="fc" id="L118">        return new OptionalStringOf(this.origin, &quot;lastCommunicationAttempt&quot;).get()</span>
+<span class="pc" id="L119">                   .map(string -&gt; new OffsetDateTimeOf(string).get());</span>
+    }
+
+    @Override
+    public Optional&lt;OffsetDateTime&gt; lastSuccessfulCommunication() {
+<span class="fc" id="L124">        return new OptionalStringOf(this.origin, &quot;lastSuccessfulCommunication&quot;).get()</span>
+<span class="fc" id="L125">                   .map(string -&gt; new OffsetDateTimeOf(string).get());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

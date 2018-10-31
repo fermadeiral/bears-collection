@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpSecurity.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.security</a> &gt; <span class="el_source">FpSecurity.java</span></div><h1>FpSecurity.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.security;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.Optional;
+import org.json.JSONObject;
+import org.proshin.finapi.primitives.optional.OptionalBigDecimalOf;
+import org.proshin.finapi.primitives.optional.OptionalOffsetDateTimeOf;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+import org.proshin.finapi.security.out.QuantityNominalType;
+import org.proshin.finapi.security.out.QuoteType;
+
+public final class FpSecurity implements Security {
+
+    private final JSONObject origin;
+
+<span class="nc" id="L32">    public FpSecurity(final JSONObject origin) {</span>
+<span class="nc" id="L33">        this.origin = origin;</span>
+<span class="nc" id="L34">    }</span>
+
+    @Override
+    public Long id() {
+<span class="nc" id="L38">        return this.origin.getLong(&quot;id&quot;);</span>
+    }
+
+    @Override
+    public Long account() {
+<span class="nc" id="L43">        return this.origin.getLong(&quot;accountId&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; name() {
+<span class="nc" id="L48">        return new OptionalStringOf(this.origin, &quot;name&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; isin() {
+<span class="nc" id="L53">        return new OptionalStringOf(this.origin, &quot;isin&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; wkn() {
+<span class="nc" id="L58">        return new OptionalStringOf(this.origin, &quot;wkn&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; quote() {
+<span class="nc" id="L63">        return new OptionalBigDecimalOf(this.origin, &quot;quote&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; quoteCurrency() {
+<span class="nc" id="L68">        return new OptionalStringOf(this.origin, &quot;quoteCurrency&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;QuoteType&gt; quoteType() {
+<span class="nc" id="L73">        return new OptionalStringOf(this.origin, &quot;quoteType&quot;).get().map(QuoteType::valueOf);</span>
+    }
+
+    @Override
+    public Optional&lt;OffsetDateTime&gt; quoteDate() {
+<span class="nc" id="L78">        return new OptionalOffsetDateTimeOf(this.origin, &quot;quoteDate&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; quantityNominal() {
+<span class="nc" id="L83">        return new OptionalBigDecimalOf(this.origin, &quot;quantityNominal&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;QuantityNominalType&gt; quantityNominalType() {
+<span class="nc" id="L88">        return new OptionalStringOf(this.origin, &quot;quantityNominalType&quot;).get().map(QuantityNominalType::valueOf);</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; marketValue() {
+<span class="nc" id="L93">        return new OptionalBigDecimalOf(this.origin, &quot;marketValue&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; marketValueCurrency() {
+<span class="nc" id="L98">        return new OptionalStringOf(this.origin, &quot;marketValueCurrency&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; entryQuote() {
+<span class="nc" id="L103">        return new OptionalBigDecimalOf(this.origin, &quot;entryQuote&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; entryQuoteCurrency() {
+<span class="nc" id="L108">        return new OptionalStringOf(this.origin, &quot;entryQuoteCurrency&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; profitOrLoss() {
+<span class="nc" id="L113">        return new OptionalBigDecimalOf(this.origin, &quot;profitOrLoss&quot;).get();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

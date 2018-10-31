@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpAccount.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.account</a> &gt; <span class="el_source">FpAccount.java</span></div><h1>FpAccount.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.account;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.Optional;
+import org.json.JSONObject;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.account.in.FpEditParameters;
+import org.proshin.finapi.account.out.ClearingAccount;
+import org.proshin.finapi.account.out.FpClearingAccount;
+import org.proshin.finapi.account.out.FpHolder;
+import org.proshin.finapi.account.out.Holder;
+import org.proshin.finapi.account.out.Order;
+import org.proshin.finapi.account.out.Status;
+import org.proshin.finapi.bankconnection.BankConnection;
+import org.proshin.finapi.bankconnection.FpBankConnections;
+import org.proshin.finapi.endpoint.Endpoint;
+import org.proshin.finapi.primitives.IterableJsonArray;
+import org.proshin.finapi.primitives.optional.OptionalBigDecimalOf;
+import org.proshin.finapi.primitives.optional.OptionalOffsetDateTimeOf;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+
+/**
+ * @todo #21 Write unit tests for FpAccount class
+ */
+public final class FpAccount implements Account {
+
+    private final Endpoint endpoint;
+    private final AccessToken token;
+    private final JSONObject origin;
+    private final String url;
+
+<span class="nc" id="L48">    public FpAccount(final Endpoint endpoint, final AccessToken token, final JSONObject origin, final String url) {</span>
+<span class="nc" id="L49">        this.endpoint = endpoint;</span>
+<span class="nc" id="L50">        this.token = token;</span>
+<span class="nc" id="L51">        this.origin = origin;</span>
+<span class="nc" id="L52">        this.url = url;</span>
+<span class="nc" id="L53">    }</span>
+
+    @Override
+    public Long id() {
+<span class="nc" id="L57">        return this.origin.getLong(&quot;id&quot;);</span>
+    }
+
+    @Override
+    public BankConnection bankConnection() {
+<span class="nc" id="L62">        return new FpBankConnections(this.endpoint, this.token)</span>
+<span class="nc" id="L63">            .one(this.origin.getLong(&quot;bankConnectionId&quot;));</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; name() {
+<span class="nc" id="L68">        return new OptionalStringOf(this.origin, &quot;accountName&quot;).get();</span>
+    }
+
+    @Override
+    public String number() {
+<span class="nc" id="L73">        return this.origin.getString(&quot;accountNumber&quot;);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; subNumber() {
+<span class="nc" id="L78">        return new OptionalStringOf(this.origin, &quot;subAccountNumber&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; iban() {
+<span class="nc" id="L83">        return new OptionalStringOf(this.origin, &quot;iban&quot;).get();</span>
+    }
+
+    @Override
+    public Holder holder() {
+<span class="nc" id="L88">        return new FpHolder(this.origin);</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; currency() {
+<span class="nc" id="L93">        return new OptionalStringOf(this.origin, &quot;accountCurrency&quot;).get();</span>
+    }
+
+    @Override
+    public Type type() {
+<span class="nc" id="L98">        return new Type.TypeOf(this.origin.getInt(&quot;accountTypeId&quot;)).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; balance() {
+<span class="nc" id="L103">        return new OptionalBigDecimalOf(this.origin, &quot;balance&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; overdraft() {
+<span class="nc" id="L108">        return new OptionalBigDecimalOf(this.origin, &quot;overdraft&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; overdraftLimit() {
+<span class="nc" id="L113">        return new OptionalBigDecimalOf(this.origin, &quot;overdraftLimit&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;BigDecimal&gt; availableFunds() {
+<span class="nc" id="L118">        return new OptionalBigDecimalOf(this.origin, &quot;availableFunds&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;OffsetDateTime&gt; lastSuccessfulUpdate() {
+<span class="nc" id="L123">        return new OptionalOffsetDateTimeOf(this.origin, &quot;lastSuccessfulUpdate&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;OffsetDateTime&gt; lastUpdateAttempt() {
+<span class="nc" id="L128">        return new OptionalOffsetDateTimeOf(this.origin, &quot;lastUpdateAttempt&quot;).get();</span>
+    }
+
+    @Override
+    public boolean isNew() {
+<span class="nc" id="L133">        return this.origin.getBoolean(&quot;isNew&quot;);</span>
+    }
+
+    @Override
+    public Status status() {
+<span class="nc" id="L138">        return Status.valueOf(this.origin.getString(&quot;status&quot;));</span>
+    }
+
+    @Override
+    public Iterable&lt;Order&gt; supportedOrders() {
+<span class="nc" id="L143">        return new IterableJsonArray&lt;&gt;(</span>
+<span class="nc" id="L144">            this.origin.getJSONArray(&quot;supportedOrders&quot;),</span>
+<span class="nc" id="L145">            (array, index) -&gt; Order.valueOf(array.getString(index))</span>
+        );
+    }
+
+    @Override
+    public Iterable&lt;ClearingAccount&gt; clearingAccounts() {
+<span class="nc" id="L151">        return new IterableJsonArray&lt;&gt;(</span>
+<span class="nc" id="L152">            this.origin.getJSONArray(&quot;clearingAccounts&quot;),</span>
+<span class="nc" id="L153">            (array, index) -&gt; new FpClearingAccount(array.getJSONObject(index))</span>
+        );
+    }
+
+    @Override
+    public void edit(final FpEditParameters parameters) {
+<span class="nc" id="L159">        this.endpoint.patch(this.url + this.id(), this.token, parameters);</span>
+<span class="nc" id="L160">    }</span>
+
+    @Override
+    public void delete(final Long id) {
+<span class="nc" id="L164">        this.endpoint.delete(</span>
+<span class="nc" id="L165">            this.url + this.id(),</span>
+            this.token
+        );
+<span class="nc" id="L168">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

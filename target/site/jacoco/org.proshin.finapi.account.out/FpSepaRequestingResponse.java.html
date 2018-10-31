@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpSepaRequestingResponse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.account.out</a> &gt; <span class="el_source">FpSepaRequestingResponse.java</span></div><h1>FpSepaRequestingResponse.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.account.out;
+
+import java.util.Optional;
+import org.json.JSONObject;
+import org.proshin.finapi.primitives.optional.OptionalStringOf;
+
+public final class FpSepaRequestingResponse implements SepaRequestingResponse {
+
+    private final JSONObject origin;
+
+    public FpSepaRequestingResponse() {
+<span class="nc" id="L27">        this(new JSONObject());</span>
+<span class="nc" id="L28">    }</span>
+
+<span class="nc" id="L30">    public FpSepaRequestingResponse(final JSONObject origin) {</span>
+<span class="nc" id="L31">        this.origin = origin;</span>
+<span class="nc" id="L32">    }</span>
+
+    @Override
+    public Optional&lt;String&gt; successMessage() {
+<span class="nc" id="L36">        return new OptionalStringOf(this.origin, &quot;successMessage&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; warnMessage() {
+<span class="nc" id="L41">        return new OptionalStringOf(this.origin, &quot;warnMessage&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; challengeMessage() {
+<span class="nc" id="L46">        return new OptionalStringOf(this.origin, &quot;challengeMessage&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; answerFieldLabel() {
+<span class="nc" id="L51">        return new OptionalStringOf(this.origin, &quot;answerFieldLabel&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; tanListNumber() {
+<span class="nc" id="L56">        return new OptionalStringOf(this.origin, &quot;tanListNumber&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; opticalData() {
+<span class="nc" id="L61">        return new OptionalStringOf(this.origin, &quot;opticalData&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; photoTanMimeType() {
+<span class="nc" id="L66">        return new OptionalStringOf(this.origin, &quot;photoTanMimeType&quot;).get();</span>
+    }
+
+    @Override
+    public Optional&lt;String&gt; photoTanData() {
+<span class="nc" id="L71">        return new OptionalStringOf(this.origin, &quot;photoTanData&quot;).get();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

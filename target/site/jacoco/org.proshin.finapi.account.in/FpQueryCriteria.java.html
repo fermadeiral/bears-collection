@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpQueryCriteria.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.account.in</a> &gt; <span class="el_source">FpQueryCriteria.java</span></div><h1>FpQueryCriteria.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.account.in;
+
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+import org.apache.http.NameValuePair;
+import org.proshin.finapi.account.Type;
+import org.proshin.finapi.primitives.StringOf;
+import org.proshin.finapi.primitives.pair.CommaSeparatedPair;
+import org.proshin.finapi.primitives.pair.UrlEncodedPair;
+
+public final class FpQueryCriteria implements Iterable&lt;NameValuePair&gt; {
+
+    private final List&lt;NameValuePair&gt; pairs;
+
+    public FpQueryCriteria() {
+<span class="nc" id="L36">        this(new ArrayList&lt;&gt;());</span>
+<span class="nc" id="L37">    }</span>
+
+<span class="nc" id="L39">    public FpQueryCriteria(final List&lt;NameValuePair&gt; pairs) {</span>
+<span class="nc" id="L40">        this.pairs = pairs;</span>
+<span class="nc" id="L41">    }</span>
+
+    public FpQueryCriteria withIds(final Iterable&lt;Long&gt; ids) {
+<span class="nc" id="L44">        this.pairs.add(new UrlEncodedPair(new CommaSeparatedPair&lt;&gt;(&quot;ids&quot;, ids)));</span>
+<span class="nc" id="L45">        return this;</span>
+    }
+
+    public FpQueryCriteria withSearch(final String search) {
+<span class="nc" id="L49">        this.pairs.add(new UrlEncodedPair(&quot;search&quot;, search));</span>
+<span class="nc" id="L50">        return this;</span>
+    }
+
+    public FpQueryCriteria withTypes(final Type... types) {
+<span class="nc" id="L54">        this.pairs.add(</span>
+            new UrlEncodedPair(
+                new CommaSeparatedPair&lt;&gt;(
+                    &quot;accountTypeIds&quot;,
+<span class="nc" id="L58">                    Arrays.stream(types)</span>
+<span class="nc" id="L59">                        .map(Type::asCode)</span>
+<span class="nc" id="L60">                        .collect(Collectors.toList())</span>
+                )
+            )
+        );
+<span class="nc" id="L64">        return this;</span>
+    }
+
+    public FpQueryCriteria withBankConnections(final Iterable&lt;Long&gt; ids) {
+<span class="nc" id="L68">        this.pairs.add(new UrlEncodedPair(new CommaSeparatedPair&lt;&gt;(&quot;bankConnectionIds&quot;, ids)));</span>
+<span class="nc" id="L69">        return this;</span>
+    }
+
+    public FpQueryCriteria withMinLastSuccessfulUpdate(final OffsetDateTime minLastSuccessfulUpdate) {
+<span class="nc" id="L73">        this.pairs.add(</span>
+            new UrlEncodedPair(
+                &quot;minLastSuccessfulUpdate&quot;,
+                new StringOf(minLastSuccessfulUpdate)
+            )
+        );
+<span class="nc" id="L79">        return this;</span>
+    }
+
+    public FpQueryCriteria withMaxLastSuccessfulUpdate(final OffsetDateTime maxLastSuccessfulUpdate) {
+<span class="nc" id="L83">        this.pairs.add(</span>
+            new UrlEncodedPair(
+                &quot;maxLastSuccessfulUpdate&quot;,
+                new StringOf(maxLastSuccessfulUpdate)
+            )
+        );
+<span class="nc" id="L89">        return this;</span>
+    }
+
+    public FpQueryCriteria withMinBalance(final BigDecimal minBalance) {
+<span class="nc" id="L93">        this.pairs.add(new UrlEncodedPair(&quot;minBalance&quot;, new StringOf(minBalance)));</span>
+<span class="nc" id="L94">        return this;</span>
+    }
+
+    public FpQueryCriteria withMaxBalance(final BigDecimal maxBalance) {
+<span class="nc" id="L98">        this.pairs.add(new UrlEncodedPair(&quot;maxBalance&quot;, new StringOf(maxBalance)));</span>
+<span class="nc" id="L99">        return this;</span>
+    }
+
+    @Override
+    public Iterator&lt;NameValuePair&gt; iterator() {
+<span class="nc" id="L104">        return this.pairs.iterator();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

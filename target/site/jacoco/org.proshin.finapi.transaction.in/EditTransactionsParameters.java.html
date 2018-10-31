@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EditTransactionsParameters.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.transaction.in</a> &gt; <span class="el_source">EditTransactionsParameters.java</span></div><h1>EditTransactionsParameters.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.transaction.in;
+
+import org.json.JSONObject;
+import org.proshin.finapi.Jsonable;
+
+public final class EditTransactionsParameters implements Jsonable {
+    private final JSONObject origin;
+
+    public EditTransactionsParameters() {
+<span class="nc" id="L25">        this(new JSONObject());</span>
+<span class="nc" id="L26">    }</span>
+
+<span class="nc" id="L28">    public EditTransactionsParameters(final JSONObject origin) {</span>
+<span class="nc" id="L29">        this.origin = origin;</span>
+<span class="nc" id="L30">    }</span>
+
+    public EditTransactionsParameters withIsNew(final boolean isNew) {
+<span class="nc" id="L33">        this.origin.put(&quot;isNew&quot;, isNew);</span>
+<span class="nc" id="L34">        return this;</span>
+    }
+
+    public EditTransactionsParameters withIsPotentialDuplicate(final boolean isPotentialDuplicate) {
+<span class="nc" id="L38">        this.origin.put(&quot;isPotentialDuplicate&quot;, isPotentialDuplicate);</span>
+<span class="nc" id="L39">        return this;</span>
+    }
+
+    public EditTransactionsParameters withCategory(final Long category) {
+<span class="nc" id="L43">        this.origin.put(&quot;categoryId&quot;, category);</span>
+<span class="nc" id="L44">        return this;</span>
+    }
+
+    public EditTransactionsParameters withTrainCategorization(final boolean trainCategorization) {
+<span class="nc" id="L48">        this.origin.put(&quot;trainCategorization&quot;, trainCategorization);</span>
+<span class="nc" id="L49">        return this;</span>
+    }
+
+    public EditTransactionsParameters withLabels(final Iterable&lt;Long&gt; labels) {
+<span class="nc bnc" id="L53" title="All 2 branches missed.">        for (final Long label : labels) {</span>
+<span class="nc" id="L54">            this.origin.append(&quot;labelIds&quot;, label);</span>
+<span class="nc" id="L55">        }</span>
+<span class="nc" id="L56">        return this;</span>
+    }
+
+    public EditTransactionsParameters withIds(final Iterable&lt;Long&gt; ids) {
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        for (final Long id : ids) {</span>
+<span class="nc" id="L61">            this.origin.append(&quot;ids&quot;, id);</span>
+<span class="nc" id="L62">        }</span>
+<span class="nc" id="L63">        return this;</span>
+    }
+
+    public EditTransactionsParameters withAccounts(final Iterable&lt;Long&gt; accounts) {
+<span class="nc bnc" id="L67" title="All 2 branches missed.">        for (final Long account : accounts) {</span>
+<span class="nc" id="L68">            this.origin.append(&quot;accountIds&quot;, account);</span>
+<span class="nc" id="L69">        }</span>
+<span class="nc" id="L70">        return this;</span>
+    }
+
+    @Override
+    public JSONObject asJson() {
+<span class="nc" id="L75">        return this.origin;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

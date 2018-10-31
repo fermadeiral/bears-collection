@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FpEndpoint.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finAPI Java client</a> &gt; <a href="index.source.html" class="el_package">org.proshin.finapi.endpoint</a> &gt; <span class="el_source">FpEndpoint.java</span></div><h1>FpEndpoint.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2018 Roman Proshin
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.proshin.finapi.endpoint;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.http.Header;
+import org.apache.http.HeaderElement;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.ParseException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpDelete;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPatch;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.message.BasicHeaderElement;
+import org.cactoos.io.InputOf;
+import org.cactoos.list.ListOf;
+import org.cactoos.text.FormattedText;
+import org.cactoos.text.TextOf;
+import org.cactoos.text.UncheckedText;
+import org.proshin.finapi.Jsonable;
+import org.proshin.finapi.accesstoken.AccessToken;
+import org.proshin.finapi.exception.FinapiException;
+
+<span class="nc" id="L47">@Slf4j</span>
+public final class FpEndpoint implements Endpoint {
+
+    private final HttpClient client;
+    private final String endpoint;
+
+    public FpEndpoint(final String endpoint) {
+<span class="nc" id="L54">        this(HttpClientBuilder.create().build(), endpoint);</span>
+<span class="nc" id="L55">    }</span>
+
+<span class="nc" id="L57">    public FpEndpoint(final HttpClient client, final String endpoint) {</span>
+<span class="nc" id="L58">        this.client = client;</span>
+<span class="nc" id="L59">        this.endpoint = endpoint;</span>
+<span class="nc" id="L60">    }</span>
+
+    @Override
+    public String get(final String path, final AccessToken token, final Iterable&lt;NameValuePair&gt; parameters) {
+        try {
+<span class="nc" id="L65">            final URIBuilder builder = new URIBuilder(this.endpoint + path);</span>
+<span class="nc" id="L66">            builder.setParameters(new ListOf&lt;&gt;(parameters));</span>
+<span class="nc" id="L67">            final HttpGet get = new HttpGet(builder.build());</span>
+<span class="nc" id="L68">            get.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L69">            final HttpResponse response = this.client.execute(get);</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != 200) {</span>
+<span class="nc" id="L71">                throw new FinapiException(200, response);</span>
+            }
+<span class="nc" id="L73">            final String responseBody = new TextOf(</span>
+<span class="nc" id="L74">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L76">            ).asString();</span>
+<span class="nc" id="L77">            log.info(&quot;Response body was: {}&quot;, responseBody);</span>
+<span class="nc" id="L78">            return responseBody;</span>
+<span class="nc" id="L79">        } catch (final IOException | URISyntaxException e) {</span>
+<span class="nc" id="L80">            throw new RuntimeException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't get '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L86">                ).asString(),</span>
+                e
+            );
+        }
+    }
+
+    @Override
+    public String delete(final String path, final AccessToken token, final Iterable&lt;NameValuePair&gt; parameters) {
+        try {
+<span class="nc" id="L95">            final URIBuilder builder = new URIBuilder(this.endpoint + path);</span>
+<span class="nc" id="L96">            builder.setParameters(new ListOf&lt;&gt;(parameters));</span>
+<span class="nc" id="L97">            final HttpDelete delete = new HttpDelete(builder.build());</span>
+<span class="nc" id="L98">            delete.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L99">            final HttpResponse response = this.client.execute(delete);</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != 200) {</span>
+<span class="nc" id="L101">                throw new FinapiException(200, response);</span>
+            }
+<span class="nc" id="L103">            final String responseBody = new TextOf(</span>
+<span class="nc" id="L104">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L106">            ).asString();</span>
+<span class="nc" id="L107">            log.info(&quot;Response body was: {}&quot;, responseBody);</span>
+<span class="nc" id="L108">            return responseBody;</span>
+<span class="nc" id="L109">        } catch (final IOException | URISyntaxException e) {</span>
+<span class="nc" id="L110">            throw new IllegalStateException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't delete '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L116">                ).asString()</span>
+            );
+        }
+    }
+
+    @Override
+    public HttpPost post(final String path) {
+<span class="nc" id="L123">        return new HttpPost(this.endpoint + path);</span>
+    }
+
+    /**
+     * @param path Path to make a request to.
+     * @param entity Body of the request.
+     * @param expected Expected result code.
+     * @return a body of the respose in JSON format
+     * @todo #16 Remove duplicated code by refactoring all &quot;post...&quot; methods into a single method or even a class.
+     */
+    @Override
+    public String post(final String path, final HttpEntity entity, final int expected) {
+        try {
+<span class="nc" id="L136">            final HttpPost post = new HttpPost(this.endpoint + path);</span>
+<span class="nc" id="L137">            post.setEntity(entity);</span>
+<span class="nc" id="L138">            final HttpResponse response = this.client.execute(post);</span>
+<span class="nc bnc" id="L139" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != expected) {</span>
+<span class="nc" id="L140">                throw new FinapiException(expected, response);</span>
+            }
+<span class="nc" id="L142">            return new TextOf(</span>
+<span class="nc" id="L143">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L145">            ).asString();</span>
+<span class="nc" id="L146">        } catch (final IOException e) {</span>
+<span class="nc" id="L147">            throw new IllegalStateException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't post to '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L153">                ).asString()</span>
+            );
+        }
+    }
+
+    @Override
+    public HttpPost post(final String path, final AccessToken token) {
+<span class="nc" id="L160">        final HttpPost post = this.post(path);</span>
+<span class="nc" id="L161">        post.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L162">        return post;</span>
+    }
+
+    @Override
+    public String post(final String path, final AccessToken token, final int expected) {
+        try {
+<span class="nc" id="L168">            final HttpPost post = new HttpPost(this.endpoint + path);</span>
+<span class="nc" id="L169">            post.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L170">            final HttpResponse response = this.client.execute(post);</span>
+<span class="nc bnc" id="L171" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != expected) {</span>
+<span class="nc" id="L172">                throw new FinapiException(expected, response);</span>
+            }
+<span class="nc" id="L174">            return new TextOf(</span>
+<span class="nc" id="L175">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L177">            ).asString();</span>
+<span class="nc" id="L178">        } catch (final IOException e) {</span>
+<span class="nc" id="L179">            throw new IllegalStateException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't post to '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L185">                ).asString()</span>
+            );
+        }
+    }
+
+    @Override
+    public String post(final String path, final AccessToken token, final HttpEntity entity, final int expected) {
+        try {
+<span class="nc" id="L193">            final HttpPost post = new HttpPost(this.endpoint + path);</span>
+<span class="nc" id="L194">            post.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L195">            post.setEntity(entity);</span>
+<span class="nc" id="L196">            final HttpResponse response = this.client.execute(post);</span>
+<span class="nc bnc" id="L197" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != expected) {</span>
+<span class="nc" id="L198">                throw new FinapiException(expected, response);</span>
+            }
+<span class="nc" id="L200">            return new TextOf(</span>
+<span class="nc" id="L201">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L203">            ).asString();</span>
+<span class="nc" id="L204">        } catch (final IOException e) {</span>
+<span class="nc" id="L205">            throw new IllegalStateException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't post to '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L211">                ).asString()</span>
+            );
+        }
+    }
+
+    @Override
+    public String patch(final String path, final AccessToken token, final HttpEntity entity, final int expected) {
+        try {
+<span class="nc" id="L219">            final HttpPatch patch = new HttpPatch(this.endpoint + path);</span>
+<span class="nc" id="L220">            patch.addHeader(new AuthorizationHeader(token.accessToken()));</span>
+<span class="nc" id="L221">            patch.setEntity(entity);</span>
+<span class="nc" id="L222">            final HttpResponse response = this.client.execute(patch);</span>
+<span class="nc bnc" id="L223" title="All 2 branches missed.">            if (response.getStatusLine().getStatusCode() != expected) {</span>
+<span class="nc" id="L224">                throw new FinapiException(expected, response);</span>
+            }
+<span class="nc" id="L226">            return new TextOf(</span>
+<span class="nc" id="L227">                new InputOf(response.getEntity().getContent()),</span>
+                StandardCharsets.UTF_8
+<span class="nc" id="L229">            ).asString();</span>
+<span class="nc" id="L230">        } catch (final IOException e) {</span>
+<span class="nc" id="L231">            throw new IllegalStateException(</span>
+                new UncheckedText(
+                    new FormattedText(
+                        &quot;Couldn't post to '%s'&quot;,
+                        path
+                    )
+<span class="nc" id="L237">                ).asString()</span>
+            );
+        }
+    }
+
+    @Override
+    public String patch(final String path, final AccessToken token, final Jsonable body) {
+<span class="nc" id="L244">        return this.patch(</span>
+            path, token,
+            new StringEntity(
+<span class="nc" id="L247">                body.asString(),</span>
+<span class="nc" id="L248">                ContentType.create(&quot;application/json&quot;, StandardCharsets.UTF_8)</span>
+            ),
+            200
+        );
+    }
+
+    private static final class AuthorizationHeader implements Header {
+
+        private final String token;
+
+<span class="nc" id="L258">        private AuthorizationHeader(final String token) {</span>
+<span class="nc" id="L259">            this.token = token;</span>
+<span class="nc" id="L260">        }</span>
+
+        @Override
+        public HeaderElement[] getElements() throws ParseException {
+<span class="nc" id="L264">            return new HeaderElement[]{</span>
+<span class="nc" id="L265">                new BasicHeaderElement(this.getName(), this.getValue())</span>
+            };
+        }
+
+        @Override
+        public String getName() {
+<span class="nc" id="L271">            return &quot;Authorization&quot;;</span>
+        }
+
+        @Override
+        public String getValue() {
+<span class="nc" id="L276">            return &quot;Bearer &quot; + this.token;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
