@@ -1,0 +1,16 @@
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/label/LabelTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/bank/BanksTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/matcher/token/TokenMatcher.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/FakeRoute.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/label/LabelsTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/matcher/path/PathMatcher.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/accesstoken/AccessTokensTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/webform/WebFormTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/FakeEndpoint.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/FakeAccessToken.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/matcher/token/AnyTokenMatcher.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/matcher/path/ExactPathMatcher.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/user/UsersTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/primitives/StringOfTest.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/fake/matcher/path/AnyPathMatcher.java
+/root/workspace/proshin-roman/finapi-java-client/447964634/src/test/java/org/proshin/finapi/webform/WebFormsTest.java
