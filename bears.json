@@ -1,0 +1,386 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "cucumber/config-java",
+    "githubId": 125213296,
+    "url": "https://github.com/cucumber/config-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 447553046,
+      "url": "http://travis-ci.org/cucumber/config-java/builds/447553046",
+      "date": "Oct 28, 2018 11:54:47 PM"
+    },
+    "fixerBuild": {
+      "id": 448648307,
+      "url": "http://travis-ci.org/cucumber/config-java/builds/448648307",
+      "date": "Oct 31, 2018 2:58:43 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 31, 2018 2:59:04 AM",
+    "reproductionDateEnd": "Oct 31, 2018 3:04:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 253446408,
+      "totalMemory": 386400256
+    },
+    "totalDuration": 337,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 244,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          244
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/cucumber/config-java/447553046/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 25
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/cucumber/config-java/447553046",
+    "overallMetrics": {
+      "numberRunning": 32,
+      "numberPassing": 2,
+      "numberFailing": 0,
+      "numberErroring": 30,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 30
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "numberRunning": 10,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 10,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "testMethod": "sets_boolean_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "testMethod": "sets_enum_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "testMethod": "sets_boolean_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "testMethod": "sets_string_list_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "supports_no_boolean_option",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "testMethod": "sets_int_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_int_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "testMethod": "sets_string_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "testMethod": "sets_string_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "testMethod": "sets_string_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "testMethod": "sets_int_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_string_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "testMethod": "sets_enum_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.AnnotationTest",
+        "testMethod": "sets_boolean_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert io.cucumber.config.MyConfig$Myenum to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "testMethod": "sets_enum_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "testMethod": "sets_string_list_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "ignores_arg_after_boolean_option",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "testMethod": "sets_string_list_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "aliases_options",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "testMethod": "sets_int_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "testMethod": "sets_enum_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_string_list_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_surplus_to_special_property",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "adds_options_to_list",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_enum_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.YamlTest",
+        "testMethod": "sets_int_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "testMethod": "sets_boolean_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.OptparseTest",
+        "testMethod": "sets_boolean_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.util.ArrayList to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.StringMapTest",
+        "testMethod": "sets_string_list_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.config.JsonTest",
+        "testMethod": "sets_string_field",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Can\u0027t convert java.lang.String to io.cucumber.config.MyConfig$Myenum",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "cucumber/config-java",
+      "branchName": "master",
+      "sha": "3294d413e7d3617fde5b1fa4fcf77f43b5341206",
+      "url": "http://github.com/cucumber/config-java/commit/3294d413e7d3617fde5b1fa4fcf77f43b5341206",
+      "date": "Oct 28, 2018 11:23:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "cucumber/config-java",
+      "branchName": "master",
+      "sha": "935333ceca9e876745bdf857a479f2a4c4ea1bad",
+      "url": "http://github.com/cucumber/config-java/commit/935333ceca9e876745bdf857a479f2a4c4ea1bad",
+      "date": "Oct 31, 2018 2:53:14 AM"
+    }
+  }
+}
