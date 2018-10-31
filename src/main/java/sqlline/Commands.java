@@ -1424,6 +1424,7 @@ public class Commands {
       try {
         // ### NOTE: fix for sf.net bug 879427
         StringBuilder cmd = null;
+        String waitingPattern = null;
         for (;;) {
           String scriptLine = reader.readLine();
 
@@ -1431,28 +1432,28 @@ public class Commands {
             break;
           }
 
-          String trimmedLine = scriptLine.trim();
-          if (sqlLine.getOpts().getTrimScripts()) {
-            scriptLine = trimmedLine;
-          }
-
           if (cmd != null) {
             // we're continuing an existing command
             cmd.append(" \n");
             cmd.append(scriptLine);
-            if (trimmedLine.endsWith(";")) {
+
+            waitingPattern =
+                sqlLine.getWaitingPattern(scriptLine, waitingPattern);
+            if (waitingPattern == null) {
               // this command has terminated
-              cmds.add(cmd.toString());
+              cmds.add(maybeTrim(cmd.toString()));
               cmd = null;
             }
           } else {
             // we're starting a new command
-            if (sqlLine.needsContinuation(scriptLine)) {
+            waitingPattern =
+                sqlLine.getWaitingPattern(scriptLine, waitingPattern);
+            if (waitingPattern != null) {
               // multi-line
               cmd = new StringBuilder(scriptLine);
             } else {
               // single-line
-              cmds.add(scriptLine);
+              cmds.add(maybeTrim(scriptLine));
             }
           }
         }
@@ -1478,6 +1479,12 @@ public class Commands {
       callback.setToFailure();
       sqlLine.error(e);
     }
+  }
+
+  /** Returns a line, trimmed if the
+   * {@link BuiltInProperty#TRIM_SCRIPTS options require trimming}. */
+  private String maybeTrim(String line) {
+    return sqlLine.getOpts().getTrimScripts() ? line.trim() : line;
   }
 
   /** Expands "~" to the home directory.

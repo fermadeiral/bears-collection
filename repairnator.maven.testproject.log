@@ -41,72 +41,27 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.16:test (default-test) @ sqlline ---
 [INFO] Surefire report directory: /root/workspace/snuyanzin/sqlline/446990980/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 8.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 58.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 872.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running sqlline.SqlLineTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 sec - in sqlline.SqlLineTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in sqlline.SqlLineTest
 Running sqlline.SqlLineParserTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec <<< FAILURE! - in sqlline.SqlLineParserTest
-testSqlLineParserForWrongLines(sqlline.SqlLineParserTest)  Time elapsed: 0.024 sec  <<< FAILURE!
-java.lang.AssertionError: Missing closing quote or semicolon for line select --
-
---
---;
-	at sqlline.SqlLineParserTest.testSqlLineParserForWrongLines(SqlLineParserTest.java:113)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in sqlline.SqlLineParserTest
 Running sqlline.SqlLineArgsTest
-[?2004hsqlline> [?2004hsqlline> [?2004hsqlline> [?2004hsqlline> Tests run: 75, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.171 sec <<< FAILURE! - in sqlline.SqlLineArgsTest
-testMultilineScriptWithComments(sqlline.SqlLineArgsTest)  Time elapsed: 0.078 sec  <<< ERROR!
-java.lang.RuntimeException: java.lang.AssertionError: 
-Expected: a string containing "+-----+----+\n| C1  | C2 |\n+-----+----+\n| ; \n | \"  |\n+-----+----+"
-     but: was "1/6          --comment
-2/6          values (';
-Error: malformed string: ' (state=42584,code=-5584)
-Aborting command set because "force" is false and command failed: "values (';"
-Closing: org.hsqldb.jdbc.JDBCConnection
-"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at sqlline.SqlLineArgsTest.checkScriptFile(SqlLineArgsTest.java:145)
-	at sqlline.SqlLineArgsTest.testMultilineScriptWithComments(SqlLineArgsTest.java:193)
-
+[?2004hsqlline> [?2004hsqlline> [?2004hsqlline> [?2004hsqlline> Tests run: 75, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.002 sec - in sqlline.SqlLineArgsTest
 Running sqlline.RowsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in sqlline.RowsTest
 
 Results :
 
-Failed tests: 
-  SqlLineParserTest.testSqlLineParserForWrongLines:113 Missing closing quote or semicolon for line select --
-
---
---;
-
-Tests in error: 
-  SqlLineArgsTest.testMultilineScriptWithComments:193->checkScriptFile:151 Runtime
-
-Tests run: 82, Failures: 1, Errors: 1, Skipped: 0
+Tests run: 82, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 19.540 s
-[INFO] Finished at: 2018-10-31T06:05:10+01:00
-[INFO] Final Memory: 44M/884M
+[INFO] Total time: 18.220 s
+[INFO] Finished at: 2018-10-31T06:06:07+01:00
+[INFO] Final Memory: 43M/905M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project sqlline: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/snuyanzin/sqlline/446990980/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
