@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "snuyanzin/sqlline",
+    "githubId": 142073154,
+    "url": "https://github.com/snuyanzin/sqlline",
+    "isFork": true,
+    "original": {
+      "name": "julianhyde/sqlline",
+      "githubId": 8804093,
+      "url": "https://github.com/julianhyde/sqlline"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446990980,
+      "url": "http://travis-ci.org/snuyanzin/sqlline/builds/446990980",
+      "date": "Oct 27, 2018 7:21:01 AM"
+    },
+    "fixerBuild": {
+      "id": 448686306,
+      "url": "http://travis-ci.org/snuyanzin/sqlline/builds/448686306",
+      "date": "Oct 31, 2018 6:03:17 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 31, 2018 6:03:28 AM",
+    "reproductionDateEnd": "Oct 31, 2018 6:06:10 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 319613480,
+      "totalMemory": 403701760
+    },
+    "totalDuration": 157,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 75,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          23
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/snuyanzin/sqlline/446990980/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 303,
+      "numberDeleted": 95
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/snuyanzin/sqlline/446990980",
+    "overallMetrics": {
+      "numberRunning": 82,
+      "numberPassing": 80,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "sqlline.SqlLineArgsTest",
+        "numberRunning": 75,
+        "numberPassing": 74,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "sqlline.SqlLineParserTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "sqlline.SqlLineParserTest",
+        "testMethod": "testSqlLineParserForWrongLines",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Missing closing quote or semicolon for line select --\n\n--\n--;",
+        "isError": false
+      },
+      {
+        "testClass": "sqlline.SqlLineArgsTest",
+        "testMethod": "testMultilineScriptWithComments",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.lang.AssertionError: \nExpected: a string containing \"+-----+----+\\n| C1  | C2 |\\n+-----+----+\\n| ; \\n | \\\"  |\\n+-----+----+\"\n     but: was \"1/6          --comment\n2/6          values (\u0027;\nError: malformed string: \u0027 (state\u003d42584,code\u003d-5584)\nAborting command set because \"force\" is false and command failed: \"values (\u0027;\"\nClosing: org.hsqldb.jdbc.JDBCConnection\n\"",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 38,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "snuyanzin/sqlline",
+      "branchName": "master",
+      "sha": "f6b196ba1df4ebe0522b9d185dbd1ad706c4e2f4",
+      "url": "http://github.com/snuyanzin/sqlline/commit/f6b196ba1df4ebe0522b9d185dbd1ad706c4e2f4",
+      "date": "Oct 27, 2018 3:00:24 AM"
+    },
+    "fixerBuild": {
+      "repoName": "snuyanzin/sqlline",
+      "branchName": "master",
+      "sha": "d3802ae99861c6828b9a544d52795e4516f3a77f",
+      "url": "http://github.com/snuyanzin/sqlline/commit/d3802ae99861c6828b9a544d52795e4516f3a77f",
+      "date": "Oct 30, 2018 11:59:30 PM"
+    }
+  },
+  "type": "passing_passing"
+}
