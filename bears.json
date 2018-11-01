@@ -1,0 +1,151 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "jenkinsci/ansicolor-plugin",
+    "githubId": 2314797,
+    "url": "https://github.com/jenkinsci/ansicolor-plugin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440438437,
+      "url": "http://travis-ci.org/jenkinsci/ansicolor-plugin/builds/440438437",
+      "date": "Oct 12, 2018 3:55:33 AM"
+    },
+    "fixerBuild": {
+      "id": 449394834,
+      "url": "http://travis-ci.org/jenkinsci/ansicolor-plugin/builds/449394834",
+      "date": "Nov 1, 2018 4:48:34 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 1, 2018 4:48:59 PM",
+    "reproductionDateEnd": "Nov 1, 2018 4:57:35 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 259816488,
+      "totalMemory": 371720192
+    },
+    "totalDuration": 511,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 331,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          330
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 88,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          88
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jenkinsci/ansicolor-plugin/440438437/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 35
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jenkinsci/ansicolor-plugin/440438437",
+    "overallMetrics": {
+      "numberRunning": 53,
+      "numberPassing": 52,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hudson.plugins.ansicolor.AnsiColorBuildWrapperTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hudson.plugins.ansicolor.AnsiColorBuildWrapperTest",
+        "testMethod": "testWorkflowWrap",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Failed to match color attribute in following HTML log output:\nStarted\nRunning in Durability level: MAX_SURVIVABILITY\n\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"3\" startId\u003d\"3\" enclosingId\u003d\"2\"\u003e[Pipeline] node\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-node-3\"\u003eRunning on \u003ca href\u003d\u0027http://localhost:43071/jenkins/computer/slave0/\u0027 class\u003d\u0027model-link\u0027\u003eslave0\u003c/a\u003e in /root/workspace/jenkinsci/ansicolor-plugin/440438437/target/tmp/jkh5115025623875060259/workspace/p\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"4\" startId\u003d\"4\" enclosingId\u003d\"3\"\u003e[Pipeline] {\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"5\" startId\u003d\"5\" enclosingId\u003d\"4\"\u003e[Pipeline] wrap\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"6\" startId\u003d\"6\" enclosingId\u003d\"5\"\u003e[Pipeline] {\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"7\" enclosingId\u003d\"6\"\u003e[Pipeline] sh\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-node-7\"\u003e[p] Running shell script\nThe following word is supposed to be red\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"8\" startId\u003d\"6\"\u003e[Pipeline] }\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"9\" startId\u003d\"5\"\u003e[Pipeline] // wrap\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"10\" startId\u003d\"4\"\u003e[Pipeline] }\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"11\" startId\u003d\"3\"\u003e[Pipeline] // node\n\u003c/span\u003e\u003cspan class\u003d\"pipeline-new-node\" nodeId\u003d\"12\" startId\u003d\"2\"\u003e[Pipeline] End of Pipeline\n\u003c/span\u003eFinished: SUCCESS\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 193,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "85b06cda14180a3f842f15dfa4e5e4138a4cff11",
+      "url": "http://github.com/jenkinsci/ansicolor-plugin/commit/85b06cda14180a3f842f15dfa4e5e4138a4cff11",
+      "date": "Oct 12, 2018 3:49:55 AM"
+    },
+    "fixerBuild": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "url": "http://github.com/jenkinsci/ansicolor-plugin/commit/e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "date": "Nov 1, 2018 4:43:46 PM"
+    }
+  }
+}
