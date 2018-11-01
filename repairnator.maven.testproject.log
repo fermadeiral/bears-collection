@@ -1,0 +1,113 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Not installing Nexus Staging features:
+[INFO]  * Preexisting staging related goal bindings found in 1 modules.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sesseltjonna-csv 1.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sesseltjonna-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/skjolber/sesseltjonna-csv/449012601/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ sesseltjonna-csv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sesseltjonna-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ sesseltjonna-csv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ sesseltjonna-csv ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom (7 KB at 13.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 67.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom (3 KB at 60.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.pom (3 KB at 63.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.pom (2 KB at 56.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.pom (2 KB at 45.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar (77 KB at 813.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar (7 KB at 62.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar (88 KB at 697.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar (65 KB at 417.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar (79 KB at 483.3 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.skjolber.stcsv.worldcities.WorldCititesTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 s - in com.github.skjolber.stcsv.worldcities.WorldCititesTest
+[INFO] Running com.github.skjolber.stcsv.gtfs.TripsTest
+Parsed 4999 lines
+Parsed 4999 lines
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.937 s - in com.github.skjolber.stcsv.gtfs.TripsTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipTrailingWhitespaceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipTrailingWhitespaceTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipLeadingWhitespaceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipLeadingWhitespaceTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerRequiredFieldTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerRequiredFieldTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDividerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDividerTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSingleValueTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSingleValueTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipEndOfLineTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipEndOfLineTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerEscapeTest
+[ERROR] Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerEscapeTest
+[ERROR] testEscapeWithNoLinebreaksAndCustomQuoteCharacter  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.RuntimeException
+	at com.github.skjolber.stcsv.prototype.CsvLineObjectScannerEscapeTest.testEscapeWithNoLinebreaksAndCustomQuoteCharacter(CsvLineObjectScannerEscapeTest.java:331)
+
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipEmptyLineTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerSkipEmptyLineTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDefaultTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDefaultTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDefaultFinalInitializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerDefaultFinalInitializerTest
+[INFO] Running com.github.skjolber.stcsv.prototype.CsvLineObjectScannerFixedFieldTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! - in com.github.skjolber.stcsv.prototype.CsvLineObjectScannerFixedFieldTest
+[ERROR] testQuotedValueOfCorrectSizeValueCustomQuotes  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException
+	at com.github.skjolber.stcsv.prototype.CsvLineObjectScannerFixedFieldTest.testQuotedValueOfCorrectSizeValueCustomQuotes(CsvLineObjectScannerFixedFieldTest.java:196)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   CsvLineObjectScannerEscapeTest.testEscapeWithNoLinebreaksAndCustomQuoteCharacter:331 » Runtime
+[ERROR]   CsvLineObjectScannerFixedFieldTest.testQuotedValueOfCorrectSizeValueCustomQuotes:196 » Runtime
+[INFO] 
+[ERROR] Tests run: 48, Failures: 0, Errors: 2, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.556 s
+[INFO] Finished at: 2018-11-01T02:13:02+01:00
+[INFO] Final Memory: 25M/614M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project sesseltjonna-csv: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/skjolber/sesseltjonna-csv/449012601/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
