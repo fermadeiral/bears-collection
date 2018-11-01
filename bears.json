@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jenkinsci/ansicolor-plugin",
+    "githubId": 2314797,
+    "url": "https://github.com/jenkinsci/ansicolor-plugin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 130
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 449454706,
+      "url": "http://travis-ci.org/jenkinsci/ansicolor-plugin/builds/449454706",
+      "date": "Nov 1, 2018 6:42:35 PM"
+    },
+    "fixerBuild": {
+      "id": 449458475,
+      "url": "http://travis-ci.org/jenkinsci/ansicolor-plugin/builds/449458475",
+      "date": "Nov 1, 2018 6:49:32 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 1, 2018 6:49:54 PM",
+    "reproductionDateEnd": "Nov 1, 2018 6:58:51 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 322970216,
+      "totalMemory": 368574464
+    },
+    "totalDuration": 530,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 334,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          5,
+          326
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 92,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          92
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jenkinsci/ansicolor-plugin/449454706/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jenkinsci/ansicolor-plugin/449454706",
+    "overallMetrics": {
+      "numberRunning": 76,
+      "numberPassing": 75,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 15,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hudson.plugins.ansicolor.AnsiColorConsoleLogFilterTest",
+        "numberRunning": 23,
+        "numberPassing": 22,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 15
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hudson.plugins.ansicolor.AnsiColorConsoleLogFilterTest",
+        "testMethod": "testForegroundColorHighIntensity",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"\u003cspan style\u003d\\\"color: #4C4C4C;\\\"\u003eDark gray\u003c/span\u003e\"\n     but: was \"Dark gray\u003c/span\u003e\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 193,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "fe22893056af4010169706a16578a21c242af9b5",
+      "url": "http://github.com/jenkinsci/ansicolor-plugin/commit/fe22893056af4010169706a16578a21c242af9b5",
+      "date": "Nov 1, 2018 6:36:59 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "70237d3c263c3d4603be7cf3e0729d07c73fa4ca",
+      "url": "http://github.com/jenkinsci/ansicolor-plugin/commit/70237d3c263c3d4603be7cf3e0729d07c73fa4ca",
+      "date": "Nov 1, 2018 6:42:11 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "jglick/ansicolor-plugin",
+      "branchName": "AnsiColorConsoleLogFilterTest",
+      "sha": "94d289da0c7c0509e104b850dc7e477802e72eb4",
+      "url": "https://github.com/jglick/ansicolor-plugin/commit/94d289da0c7c0509e104b850dc7e477802e72eb4",
+      "date": "Nov 1, 2018 6:42:11 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "url": "https://github.com/jenkinsci/ansicolor-plugin/commit/e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "date": "Nov 1, 2018 4:43:46 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "jglick/ansicolor-plugin",
+      "branchName": "AnsiColorConsoleLogFilterTest",
+      "sha": "94d289da0c7c0509e104b850dc7e477802e72eb4",
+      "url": "https://github.com/jglick/ansicolor-plugin/commit/94d289da0c7c0509e104b850dc7e477802e72eb4",
+      "date": "Nov 1, 2018 6:42:11 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "jenkinsci/ansicolor-plugin",
+      "branchName": "master",
+      "sha": "e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "url": "https://github.com/jenkinsci/ansicolor-plugin/commit/e854a4cbecdbbd4b8d6247f007c5bea378013bf6",
+      "date": "Nov 1, 2018 4:43:46 PM"
+    }
+  },
+  "type": "passing_passing"
+}
