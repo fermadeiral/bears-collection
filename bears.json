@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 449069943,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/449069943",
+      "date": "Oct 31, 2018 10:20:58 PM"
+    },
+    "fixerBuild": {
+      "id": 450332514,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/450332514",
+      "date": "Nov 3, 2018 11:06:24 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 3, 2018 11:08:09 PM",
+    "reproductionDateEnd": "Nov 3, 2018 11:19:48 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 869923568,
+      "totalMemory": 2165309440
+    },
+    "totalDuration": 693,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 263,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          263
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 145,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          1,
+          142
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 67,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          67
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/449069943/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 2
+    }
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 311,
+    "numberTestFiles": 725,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "5c76c3a53c42948c9ef191c9c3300f1dc6682559",
+      "url": "http://github.com/raphw/byte-buddy/commit/5c76c3a53c42948c9ef191c9c3300f1dc6682559",
+      "date": "Oct 31, 2018 10:14:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "84b475284384fe388c0c5f9553265c695f93d1ee",
+      "url": "http://github.com/raphw/byte-buddy/commit/84b475284384fe388c0c5f9553265c695f93d1ee",
+      "date": "Nov 3, 2018 11:01:18 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/449069943/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 8606,
+      "numberPassing": 8605,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 24,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.implementation.FieldAccessorOtherTest",
+        "numberRunning": 19,
+        "numberPassing": 18,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.implementation.FieldAccessorOtherTest",
+        "testMethod": "testStaticFieldOfOtherClass",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "public static final java.lang.String net.bytebuddy.implementation.FieldAccessorOtherTest$StaticFieldHolder.FOO is not declared by class net.bytebuddy.renamed.java.util.concurrent.Callable$ByteBuddy$QG8psM5c",
+        "isError": true
+      }
+    ]
+  },
+  "type": "passing_passing"
+}
