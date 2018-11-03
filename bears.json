@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "jensgerdes/sonar-pmd",
+    "githubId": 15221298,
+    "url": "https://github.com/jensgerdes/sonar-pmd",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 448552914,
+      "url": "http://travis-ci.org/jensgerdes/sonar-pmd/builds/448552914",
+      "date": "Oct 30, 2018 10:18:01 PM"
+    },
+    "fixerBuild": {
+      "id": 450336952,
+      "url": "http://travis-ci.org/jensgerdes/sonar-pmd/builds/450336952",
+      "date": "Nov 3, 2018 11:31:50 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 4, 2018 12:54:38 AM",
+    "reproductionDateEnd": "Nov 4, 2018 12:56:32 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 294520512,
+      "totalMemory": 395837440
+    },
+    "totalDuration": 108,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 43,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          43
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jensgerdes/sonar-pmd/448552914/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jensgerdes/sonar-pmd/448552914",
+    "overallMetrics": {
+      "numberRunning": 73,
+      "numberPassing": 72,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.plugins.pmd.PmdConstantsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.plugins.pmd.PmdConstantsTest",
+        "testMethod": "checkDefinedKeys",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "\nExpecting:\n \u003c\"1.5\"\u003e\nto be equal to:\n \u003c\"1.6\"\u003e\nbut was not.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 21,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 58,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jensgerdes/sonar-pmd",
+      "branchName": "master",
+      "sha": "b118e67f15d4f913fcd4e4952ad31b56291476a2",
+      "url": "http://github.com/jensgerdes/sonar-pmd/commit/b118e67f15d4f913fcd4e4952ad31b56291476a2",
+      "date": "Oct 30, 2018 10:03:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jensgerdes/sonar-pmd",
+      "branchName": "master",
+      "sha": "7cb35b8f9d7f8defebc9ded7cd139a641088524c",
+      "url": "http://github.com/jensgerdes/sonar-pmd/commit/7cb35b8f9d7f8defebc9ded7cd139a641088524c",
+      "date": "Nov 3, 2018 11:24:55 PM"
+    }
+  }
+}
