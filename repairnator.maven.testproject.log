@@ -9,7 +9,7 @@
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ sonar-pmd-plugin ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/jensgerdes/sonar-pmd/448552914' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/jensgerdes/sonar-pmd/448552914
-[INFO] Storing buildNumber: 0c76ef955e50ee203fff4ac520f347ea12008843 at timestamp: 1541289332064
+[INFO] Storing buildNumber: 7cb35b8f9d7f8defebc9ded7cd139a641088524c at timestamp: 1541289380515
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -45,98 +45,47 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ sonar-pmd-plugin ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom (7 KB at 25.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom (3 KB at 63.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.pom (3 KB at 61.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.pom (2 KB at 53.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.pom (2 KB at 36.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar (7 KB at 95.1 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar (88 KB at 552.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar (65 KB at 376.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar (77 KB at 434.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar (79 KB at 444.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running org.sonar.plugins.pmd.PmdLevelUtilsTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in org.sonar.plugins.pmd.PmdLevelUtilsTest
-[INFO] Running org.sonar.plugins.pmd.PmdConfigurationTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.053 s - in org.sonar.plugins.pmd.PmdConfigurationTest
-[INFO] Running org.sonar.plugins.pmd.profile.PmdProfileImporterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 s - in org.sonar.plugins.pmd.profile.PmdProfileImporterTest
-[INFO] Running org.sonar.plugins.pmd.rule.ExternalDescriptionLoaderTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.sonar.plugins.pmd.rule.ExternalDescriptionLoaderTest
-[INFO] Running org.sonar.plugins.pmd.PmdPluginTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 s - in org.sonar.plugins.pmd.PmdPluginTest
-[INFO] Running org.sonar.plugins.pmd.PmdTemplateTest
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.887 s - in org.sonar.plugins.pmd.PmdTemplateTest
-[INFO] Running org.sonar.plugins.pmd.PmdConstantsTest
-[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in org.sonar.plugins.pmd.PmdConstantsTest
-[ERROR] checkDefinedKeys  Time elapsed: 0.023 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-
-Expecting:
- <"1.5">
-to be equal to:
- <"1.6">
-but was not.
-	at org.sonar.plugins.pmd.PmdConstantsTest.checkDefinedKeys(PmdConstantsTest.java:40)
-
-[INFO] Running org.sonar.plugins.pmd.PmdUnitTestsRulesDefinitionTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in org.sonar.plugins.pmd.PmdUnitTestsRulesDefinitionTest
-[INFO] Running org.sonar.plugins.pmd.PmdRulesDefinitionTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 s - in org.sonar.plugins.pmd.PmdRulesDefinitionTest
-[INFO] Running org.sonar.plugins.pmd.xml.PmdRuleSetsTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.sonar.plugins.pmd.xml.PmdRuleSetsTest
-[INFO] Running org.sonar.plugins.pmd.PmdExecutorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 s - in org.sonar.plugins.pmd.PmdExecutorTest
-[INFO] Running org.sonar.plugins.pmd.PmdViolationRecorderTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 s - in org.sonar.plugins.pmd.PmdViolationRecorderTest
 [INFO] Running org.sonar.plugins.pmd.profile.PmdProfileExporterTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 s - in org.sonar.plugins.pmd.profile.PmdProfileExporterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.077 s - in org.sonar.plugins.pmd.profile.PmdProfileExporterTest
+[INFO] Running org.sonar.plugins.pmd.xml.PmdRuleSetsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.sonar.plugins.pmd.xml.PmdRuleSetsTest
+[INFO] Running org.sonar.plugins.pmd.PmdPluginTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.sonar.plugins.pmd.PmdPluginTest
+[INFO] Running org.sonar.plugins.pmd.PmdConfigurationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.sonar.plugins.pmd.PmdConfigurationTest
+[INFO] Running org.sonar.plugins.pmd.PmdTemplateTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 s - in org.sonar.plugins.pmd.PmdTemplateTest
+[INFO] Running org.sonar.plugins.pmd.PmdRulesDefinitionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 s - in org.sonar.plugins.pmd.PmdRulesDefinitionTest
+[INFO] Running org.sonar.plugins.pmd.PmdUnitTestsRulesDefinitionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.sonar.plugins.pmd.PmdUnitTestsRulesDefinitionTest
+[INFO] Running org.sonar.plugins.pmd.PmdConstantsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.plugins.pmd.PmdConstantsTest
+[INFO] Running org.sonar.plugins.pmd.rule.ExternalDescriptionLoaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.sonar.plugins.pmd.rule.ExternalDescriptionLoaderTest
 [INFO] Running org.sonar.plugins.pmd.PmdSensorTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.453 s - in org.sonar.plugins.pmd.PmdSensorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 s - in org.sonar.plugins.pmd.PmdSensorTest
+[INFO] Running org.sonar.plugins.pmd.PmdExecutorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.772 s - in org.sonar.plugins.pmd.PmdExecutorTest
+[INFO] Running org.sonar.plugins.pmd.PmdLevelUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.plugins.pmd.PmdLevelUtilsTest
+[INFO] Running org.sonar.plugins.pmd.profile.PmdProfileImporterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.sonar.plugins.pmd.profile.PmdProfileImporterTest
+[INFO] Running org.sonar.plugins.pmd.PmdViolationRecorderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 s - in org.sonar.plugins.pmd.PmdViolationRecorderTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   PmdConstantsTest.checkDefinedKeys:40 
-Expecting:
- <"1.5">
-to be equal to:
- <"1.6">
-but was not.
-[INFO] 
-[ERROR] Tests run: 73, Failures: 1, Errors: 0, Skipped: 0
+[INFO] Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.877 s
-[INFO] Finished at: 2018-11-04T00:55:42+01:00
-[INFO] Final Memory: 27M/493M
+[INFO] Total time: 12.241 s
+[INFO] Finished at: 2018-11-04T00:56:29+01:00
+[INFO] Final Memory: 26M/482M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project sonar-pmd-plugin: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/jensgerdes/sonar-pmd/448552914/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
