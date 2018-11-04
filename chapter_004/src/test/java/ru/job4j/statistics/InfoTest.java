@@ -24,7 +24,6 @@ public class InfoTest {
     User u3 = new User(3, "Oleg2");
     User u4 = new User(4, "Sergey");
 
-
     @Before
     public void init() {
         previous.add(u1);
@@ -33,21 +32,31 @@ public class InfoTest {
     }
 
     @Test
+    public void whenListsAreEqualThenNoChanges() {
+        info.compare(previous, current);
+        assertThat(info.getAdded(), is(0));
+        assertThat(info.getChanged(), is(0));
+        assertThat(info.getDeleted(), is(0));
+    }
+
+    @Test
     public void whenAddElementThenOneAddedElement() {
         current.add(u4);
-        assertThat(info.getAddedElements(previous, current), is(1));
+        info.compare(previous, current);
+        assertThat(info.getAdded(), is(1));
     }
 
     @Test
     public void whenChangeElementThenOneChangedElement() {
-        current.remove(u2);
-        current.add(u3);
-        assertThat(info.getChangedElements(previous, current), is(1));
+        current.set(1, u3);
+        info.compare(previous, current);
+        assertThat(info.getChanged(), is(1));
     }
 
     @Test
     public void whenDeleteOneElementThenOneDeletedElement() {
         current.remove(u1);
-        assertThat(info.getDeletedElements(previous, current), is(1));
+        info.compare(previous, current);
+        assertThat(info.getDeleted(), is(1));
     }
 }
