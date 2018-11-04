@@ -1,0 +1,23 @@
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>${env.OSSRH_USERNAME}</username>
+      <password>${env.OSSRH_PASSWORD}</password>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <id>ossrh</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.passphrase>${env.GPG_KEYRING_PASSPHRASE}</gpg.passphrase>
+        <gpg.defaultKeyring>false</gpg.defaultKeyring>
+        <gpg.publicKeyring>${env.TRAVIS_BUILD_DIR}/public.gpg</gpg.publicKeyring>
+        <gpg.secretKeyring>${env.TRAVIS_BUILD_DIR}/secret.gpg</gpg.secretKeyring>
+      </properties>
+    </profile>
+  </profiles>
+</settings>

@@ -1,0 +1,9 @@
+# Vim temporal files
+*.swp
+
+# Maven target directory
+target
+
+# Vagrant files
+.vagrant
+*.log
