@@ -1,0 +1,166 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "pdacostaporto/representations",
+    "githubId": 105412227,
+    "url": "https://github.com/pdacostaporto/representations",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 449146500,
+      "url": "http://travis-ci.org/pdacostaporto/representations/builds/449146500",
+      "date": "Nov 1, 2018 2:27:54 AM"
+    },
+    "fixerBuild": {
+      "id": 450348566,
+      "url": "http://travis-ci.org/pdacostaporto/representations/builds/450348566",
+      "date": "Nov 4, 2018 12:20:17 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 4, 2018 2:53:24 AM",
+    "reproductionDateEnd": "Nov 4, 2018 2:56:30 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 325629000,
+      "totalMemory": 384303104
+    },
+    "totalDuration": 180,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 93,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          93
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/pdacostaporto/representations/449146500/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 20,
+      "numberDeleted": 20
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/pdacostaporto/representations/449146500",
+    "overallMetrics": {
+      "numberRunning": 154,
+      "numberPassing": 152,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "uy.kerri.representations.format.JsonObjectOutputTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "uy.kerri.representations.format.JsonArrayOutputTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "uy.kerri.representations.format.JsonObjectOutputTest",
+        "testMethod": "canBeReused",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "read/readObject/readArray/close method is already called",
+        "isError": true
+      },
+      {
+        "testClass": "uy.kerri.representations.format.JsonArrayOutputTest",
+        "testMethod": "canBeReused",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "read/readObject/readArray/close method is already called",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 88,
+    "numberTestFiles": 45,
+    "numberLibrariesFailingModule": 15,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "pdacostaporto/representations",
+      "branchName": "master",
+      "sha": "3c410a8fd28a76aeed9bf274240c73463d9464da",
+      "url": "http://github.com/pdacostaporto/representations/commit/3c410a8fd28a76aeed9bf274240c73463d9464da",
+      "date": "Nov 1, 2018 2:25:15 AM"
+    },
+    "fixerBuild": {
+      "repoName": "pdacostaporto/representations",
+      "branchName": "master",
+      "sha": "26351600d846b35830de3071e79a2a2a9262bdf2",
+      "url": "http://github.com/pdacostaporto/representations/commit/26351600d846b35830de3071e79a2a2a9262bdf2",
+      "date": "Nov 4, 2018 12:17:50 AM"
+    }
+  },
+  "type": "passing_passing"
+}
