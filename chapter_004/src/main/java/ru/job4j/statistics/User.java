@@ -19,27 +19,17 @@ public class User {
     }
 
     /**
+     * Getter.
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
      * Constructor.
      */
     User(int id, String name) {
         this.id = id;
         this.name = name;
-    }
-
-    @Override
-    public int hashCode() {
-        return name.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        User user = (User) o;
-        return Objects.equals(name, user.name);
     }
 }

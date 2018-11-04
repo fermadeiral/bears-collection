@@ -48,46 +48,40 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ chapter_001 ---
 [INFO] Surefire report directory: /root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_001/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 63.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 581.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running ru.job4j.CalculateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
 Running ru.job4j.calculator.CalculatorTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running ru.job4j.loop.PaintTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running ru.job4j.loop.BoardTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running ru.job4j.loop.CounterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running ru.job4j.loop.FactorialTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running ru.job4j.condition.PointTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running ru.job4j.condition.TriangleTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running ru.job4j.max.MaxTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running ru.job4j.array.RotateArrayTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running ru.job4j.array.ArraysMergeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running ru.job4j.array.TurnTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running ru.job4j.array.SubstringContainsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
-Running ru.job4j.array.BubbleSortTest
+Running ru.job4j.loop.FactorialTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running ru.job4j.condition.PointTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running ru.job4j.condition.TriangleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running ru.job4j.max.MaxTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running ru.job4j.array.RotateArrayTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running ru.job4j.array.ArraysMergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running ru.job4j.array.TurnTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running ru.job4j.array.SubstringContainsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running ru.job4j.array.BubbleSortTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running ru.job4j.array.ArrayDuplicateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 
 Results :
 
@@ -130,25 +124,25 @@ Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running ru.job4j.chess.BishopTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec
 Running ru.job4j.chess.BoardTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running ru.job4j.strategy.PaintTest
 Execute before method
 Execute after method
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running ru.job4j.strategy.SquareTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running ru.job4j.strategy.TriangleTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running ru.job4j.tracker.StartUITest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
 Running ru.job4j.tracker.TrackerTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running ru.job4j.tracker.ValidateInputTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running ru.job4j.oop.CoffeeMachineTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 
 Results :
 
@@ -189,15 +183,15 @@ Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running ru.job4j.collections.ConvertListTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
 Running ru.job4j.collections.UserConvertTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running ru.job4j.collections.banktransfers.BankTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
 Running ru.job4j.collections.comparable.ListCompareTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
 Running ru.job4j.collections.comparable.SortUserTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 
 Results :
 
@@ -244,159 +238,98 @@ Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running ru.job4j.map.OwnHashMapTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec
 Running ru.job4j.map.UserTest
 {ru.job4j.map.User@43bd4c8=Ivan}
 Object equals - true
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running ru.job4j.list.OwnStackTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running ru.job4j.list.SimpleArrayListTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running ru.job4j.list.OwnQueueTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running ru.job4j.list.DynamicLinkedListTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
-Running ru.job4j.list.DynamicListTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
-Running ru.job4j.list.CyclicLinkedListTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running ru.job4j.list.DynamicListTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running ru.job4j.list.CyclicLinkedListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running ru.job4j.iterator.PrimeIteratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running ru.job4j.iterator.JaggedArrayIteratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running ru.job4j.iterator.EvenIteratorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running ru.job4j.iterator.IteratorOfIteratorsTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running ru.job4j.iterator.MatrixIteratorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running ru.job4j.tree.OwnTreeTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running ru.job4j.generics.UserStoreTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running ru.job4j.generics.SimpleArrayTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running ru.job4j.generics.RoleStoreTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running ru.job4j.statistics.InfoTest
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec <<< FAILURE!
-whenDeleteOneElementThenOneDeletedElement(ru.job4j.statistics.InfoTest)  Time elapsed: 0.019 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: is <1>
-     but: was <0>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:956)
-	at org.junit.Assert.assertThat(Assert.java:923)
-	at ru.job4j.statistics.InfoTest.whenDeleteOneElementThenOneDeletedElement(InfoTest.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-whenChangeElementThenOneChangedElement(ru.job4j.statistics.InfoTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: is <1>
-     but: was <0>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:956)
-	at org.junit.Assert.assertThat(Assert.java:923)
-	at ru.job4j.statistics.InfoTest.whenChangeElementThenOneChangedElement(InfoTest.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running ru.job4j.set.SimpleLinkedListSetTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running ru.job4j.set.SimpleSetTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 
 Results :
 
-Failed tests:   whenDeleteOneElementThenOneDeletedElement(ru.job4j.statistics.InfoTest): (..)
-  whenChangeElementThenOneChangedElement(ru.job4j.statistics.InfoTest): (..)
+Tests run: 69, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 69, Failures: 2, Errors: 0, Skipped: 0
-
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ chapter_004 ---
+[INFO] Loading execution data file /root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_004/target/jacoco.exec
+[INFO] Analyzed bundle 'chapter_004' with 36 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chapter_008 2.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ chapter_008 ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default) @ chapter_008 ---
+[INFO] argLine set to -javaagent:/root/./workspace/AlekseySidorenko/aleksey_sidorenko/446742093/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_008/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chapter_008 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_008/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ chapter_008 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chapter_008 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_008/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ chapter_008 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ chapter_008 ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ chapter_008 ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] junior ............................................. SUCCESS [  2.384 s]
-[INFO] chapter_001 ........................................ SUCCESS [  4.196 s]
-[INFO] chapter_002 ........................................ SUCCESS [  2.137 s]
-[INFO] chapter_003 ........................................ SUCCESS [  1.450 s]
-[INFO] chapter_004 ........................................ FAILURE [  2.769 s]
-[INFO] chapter_008 ........................................ SKIPPED
+[INFO] junior ............................................. SUCCESS [  2.058 s]
+[INFO] chapter_001 ........................................ SUCCESS [  3.832 s]
+[INFO] chapter_002 ........................................ SUCCESS [  2.222 s]
+[INFO] chapter_003 ........................................ SUCCESS [  1.336 s]
+[INFO] chapter_004 ........................................ SUCCESS [  3.022 s]
+[INFO] chapter_008 ........................................ SUCCESS [  0.025 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.238 s
-[INFO] Finished at: 2018-11-04T07:49:09+01:00
-[INFO] Final Memory: 30M/603M
+[INFO] Total time: 12.785 s
+[INFO] Finished at: 2018-11-04T07:49:49+01:00
+[INFO] Final Memory: 27M/606M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project chapter_004: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_004/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :chapter_004
