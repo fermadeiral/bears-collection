@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "AlekseySidorenko/aleksey_sidorenko",
+    "githubId": 106691911,
+    "url": "https://github.com/AlekseySidorenko/aleksey_sidorenko",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446742093,
+      "url": "http://travis-ci.org/AlekseySidorenko/aleksey_sidorenko/builds/446742093",
+      "date": "Oct 26, 2018 5:15:34 PM"
+    },
+    "fixerBuild": {
+      "id": 450406764,
+      "url": "http://travis-ci.org/AlekseySidorenko/aleksey_sidorenko/builds/450406764",
+      "date": "Nov 4, 2018 7:47:58 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 4, 2018 7:48:14 AM",
+    "reproductionDateEnd": "Nov 4, 2018 7:49:51 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 342157352,
+      "totalMemory": 399507456
+    },
+    "totalDuration": 91,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 35,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          35
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/AlekseySidorenko/aleksey_sidorenko/446742093/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 69,
+      "numberDeleted": 54
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/AlekseySidorenko/aleksey_sidorenko/446742093/chapter_004",
+    "overallMetrics": {
+      "numberRunning": 142,
+      "numberPassing": 140,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.job4j.statistics.InfoTest",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.job4j.statistics.InfoTest",
+        "testMethod": "whenDeleteOneElementThenOneDeletedElement",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c1\u003e      but: was \u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "ru.job4j.statistics.InfoTest",
+        "testMethod": "whenChangeElementThenOneChangedElement",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c1\u003e      but: was \u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 92,
+    "numberTestFiles": 58,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "AlekseySidorenko/aleksey_sidorenko",
+      "branchName": "master",
+      "sha": "85afe3016bcf50a651e8b843ff2b2f26d1ea5d25",
+      "url": "http://github.com/AlekseySidorenko/aleksey_sidorenko/commit/85afe3016bcf50a651e8b843ff2b2f26d1ea5d25",
+      "date": "Oct 26, 2018 5:12:54 PM"
+    },
+    "fixerBuild": {
+      "repoName": "AlekseySidorenko/aleksey_sidorenko",
+      "branchName": "master",
+      "sha": "f228ea53d98627e92418afd5e8cca6227195d924",
+      "url": "http://github.com/AlekseySidorenko/aleksey_sidorenko/commit/f228ea53d98627e92418afd5e8cca6227195d924",
+      "date": "Nov 4, 2018 7:46:55 AM"
+    }
+  },
+  "type": "passing_passing"
+}
