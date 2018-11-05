@@ -1,0 +1,178 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "PayneWheat/risk",
+    "githubId": 146810867,
+    "url": "https://github.com/PayneWheat/risk",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 82
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450656593,
+      "url": "http://travis-ci.org/PayneWheat/risk/builds/450656593",
+      "date": "Nov 5, 2018 2:16:25 AM"
+    },
+    "fixerBuild": {
+      "id": 450665333,
+      "url": "http://travis-ci.org/PayneWheat/risk/builds/450665333",
+      "date": "Nov 5, 2018 3:00:41 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 5, 2018 3:00:58 AM",
+    "reproductionDateEnd": "Nov 5, 2018 3:02:50 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 361783504,
+      "totalMemory": 406323200
+    },
+    "totalDuration": 107,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 45,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          1,
+          0,
+          3,
+          38
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/PayneWheat/risk/450656593/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 24,
+      "numberDeleted": 35
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/PayneWheat/risk/450656593",
+    "overallMetrics": {
+      "numberRunning": 26,
+      "numberPassing": 25,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "test.java.TerritoryTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "test.java.TerritoryTest",
+        "testMethod": "testGetMethods",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 11,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 203,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "master",
+      "sha": "c97590e78201f35133b1a8de05b983081c682634",
+      "url": "http://github.com/PayneWheat/risk/commit/c97590e78201f35133b1a8de05b983081c682634",
+      "date": "Nov 5, 2018 2:14:32 AM"
+    },
+    "fixerBuild": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "master",
+      "sha": "a0db2ad56e6ecf9f65d1e953f4c8cdd8dd597ccf",
+      "url": "http://github.com/PayneWheat/risk/commit/a0db2ad56e6ecf9f65d1e953f4c8cdd8dd597ccf",
+      "date": "Nov 5, 2018 2:58:20 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "Timer2",
+      "sha": "32154442fa7547d14c465c45d4843d4588869f56",
+      "url": "https://github.com/PayneWheat/risk/commit/32154442fa7547d14c465c45d4843d4588869f56",
+      "date": "Nov 5, 2018 2:58:20 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "master",
+      "sha": "4c491cbd70e6bd5a5b0572a14c0a7cd818b30d2f",
+      "url": "https://github.com/PayneWheat/risk/commit/4c491cbd70e6bd5a5b0572a14c0a7cd818b30d2f",
+      "date": "Nov 3, 2018 9:23:23 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "Timer2",
+      "sha": "32154442fa7547d14c465c45d4843d4588869f56",
+      "url": "https://github.com/PayneWheat/risk/commit/32154442fa7547d14c465c45d4843d4588869f56",
+      "date": "Nov 5, 2018 2:58:20 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "PayneWheat/risk",
+      "branchName": "master",
+      "sha": "4c491cbd70e6bd5a5b0572a14c0a7cd818b30d2f",
+      "url": "https://github.com/PayneWheat/risk/commit/4c491cbd70e6bd5a5b0572a14c0a7cd818b30d2f",
+      "date": "Nov 3, 2018 9:23:23 PM"
+    }
+  },
+  "type": "passing_passing"
+}
