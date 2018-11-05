@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Contargo/iris",
+    "githubId": 34805572,
+    "url": "https://github.com/Contargo/iris",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450824435,
+      "url": "http://travis-ci.org/Contargo/iris/builds/450824435",
+      "date": "Nov 5, 2018 1:07:23 PM"
+    },
+    "fixerBuild": {
+      "id": 450862590,
+      "url": "http://travis-ci.org/Contargo/iris/builds/450862590",
+      "date": "Nov 5, 2018 2:39:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 5, 2018 2:39:31 PM",
+    "reproductionDateEnd": "Nov 5, 2018 3:29:55 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 332454520,
+      "totalMemory": 395313152
+    },
+    "totalDuration": 3017,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 2879,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          2879
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 33,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          33
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Contargo/iris/450824435/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Contargo/iris/450824435",
+    "overallMetrics": {
+      "numberRunning": 663,
+      "numberPassing": 662,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.contargo.iris.address.api.AddressApiControllerMvcUnitTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.contargo.iris.address.api.AddressApiControllerMvcUnitTest",
+        "testMethod": "testAddressByGeolocation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reverseGeocodeResponse.links[0].href\"\nExpected: is \"http://localhost/reversegeocode/1:1\"\n     but: was \"http://localhost/reversegeocode/1:1/.\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 316,
+    "numberTestFiles": 199,
+    "numberLibrariesFailingModule": 134,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Contargo/iris",
+      "branchName": "transport-for-addresses-only",
+      "sha": "d0abda6f1bbb21bb149a4d04671d34659e71ebf2",
+      "url": "http://github.com/Contargo/iris/commit/d0abda6f1bbb21bb149a4d04671d34659e71ebf2",
+      "date": "Nov 5, 2018 1:03:01 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Contargo/iris",
+      "branchName": "transport-for-addresses-only",
+      "sha": "08159b1b6e1c69e84c3a75e3cb8c02954a16d8c4",
+      "url": "http://github.com/Contargo/iris/commit/08159b1b6e1c69e84c3a75e3cb8c02954a16d8c4",
+      "date": "Nov 5, 2018 2:34:57 PM"
+    }
+  }
+}
