@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sqlline 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- docbkx-maven-plugin:2.0.17:generate-html (default) @ sqlline ---
+[INFO] /root/workspace/snuyanzin/sqlline/450709453/target/docbkx/html/manual.html is up to date.
+[INFO] 
+[INFO] --- docbkx-maven-plugin:2.0.17:generate-xhtml (default) @ sqlline ---
+[INFO] /root/workspace/snuyanzin/sqlline/450709453/target/docbkx/xhtml/manual.xhtml is up to date.
+[INFO] 
+[INFO] --- docbkx-maven-plugin:2.0.17:generate-xhtml5 (default) @ sqlline ---
+[INFO] /root/workspace/snuyanzin/sqlline/450709453/target/docbkx/xhtml5/manual.xhtml is up to date.
+[INFO] 
+[INFO] --- docbkx-maven-plugin:2.0.17:generate-manpages (default) @ sqlline ---
+[INFO] Processing input file: manual.xml
+[INFO] Applying customization parameters after docbkx parameters
+[INFO] See /root/workspace/snuyanzin/sqlline/450709453/target/docbkx/manpages for generated file(s)
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.12.1:check (validate) @ sqlline ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ sqlline ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:properties (getClasspathFilenames) @ sqlline ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sqlline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 62 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ sqlline ---
+[INFO] Compiling 1 source file to /root/workspace/snuyanzin/sqlline/450709453/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sqlline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/snuyanzin/sqlline/450709453/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ sqlline ---
+[INFO] Compiling 2 source files to /root/workspace/snuyanzin/sqlline/450709453/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ sqlline ---
+[INFO] Surefire report directory: /root/workspace/snuyanzin/sqlline/450709453/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 8.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 56.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 910.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running sqlline.SqlLineTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec - in sqlline.SqlLineTest
+Running sqlline.SqlLineParserTest
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.101 sec <<< FAILURE! - in sqlline.SqlLineParserTest
+testSqlLineParserForOkLines(sqlline.SqlLineParserTest)  Time elapsed: 0.059 sec  <<< ERROR!
+org.jline.reader.EOFError: Missing semicolon at the end
+	at sqlline.SqlLineParser.parse(SqlLineParser.java:235)
+	at sqlline.SqlLineParserTest.testSqlLineParserForOkLines(SqlLineParserTest.java:92)
+
+testSqlLineParserForWrongLines(sqlline.SqlLineParserTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: Missing closing quote or semicolon for line select '1';-comment
+	at sqlline.SqlLineParserTest.testSqlLineParserForWrongLines(SqlLineParserTest.java:155)
+
+Running sqlline.SqlLineArgsTest
+[?2004hsqlline> [?2004hsqlline> [?2004hsqlline> [?2004hsqlline> [?2004hsqlline> Tests run: 76, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.905 sec - in sqlline.SqlLineArgsTest
+Running sqlline.RowsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in sqlline.RowsTest
+
+Results :
+
+Failed tests: 
+  SqlLineParserTest.testSqlLineParserForWrongLines:155 Missing closing quote or semicolon for line select '1';-comment
+
+Tests in error: 
+  SqlLineParserTest.testSqlLineParserForOkLines:92 » EOF Missing semicolon at th...
+
+Tests run: 83, Failures: 1, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.852 s
+[INFO] Finished at: 2018-11-05T13:47:22+01:00
+[INFO] Final Memory: 45M/887M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project sqlline: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/snuyanzin/sqlline/450709453/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
