@@ -1,0 +1,17 @@
+FROM rbudde/openroberta_base:1
+
+RUN mkdir --parent /opt/openRoberta/lib /opt/db
+WORKDIR /opt/openRoberta
+
+EXPOSE 9001
+
+COPY ["startDbServer.sh","./"]
+RUN chmod +x ./startDbServer.sh
+
+ARG version
+
+COPY ["lib/","./lib/"]
+COPY ["db-${version}/","/opt/db/db-${version}/"]
+
+ENV VERSION=${version}
+ENTRYPOINT ["/opt/openRoberta/startDbServer.sh"]

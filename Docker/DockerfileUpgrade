@@ -1,0 +1,11 @@
+FROM openjdk:8u151-jdk
+ 
+RUN mkdir --parent /opt/openRoberta/lib /opt/openRoberta/OpenRobertaParent
+WORKDIR /opt/openRoberta
+
+VOLUME /opt/db
+ 
+COPY ["lib/","./lib/"]
+COPY ["OpenRobertaParent/","./OpenRobertaParent/"]
+
+ENTRYPOINT ["java", "-cp", "lib/*", "de.fhg.iais.roberta.main.Administration", "upgrade", "/opt/db"]

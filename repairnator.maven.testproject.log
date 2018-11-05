@@ -1,0 +1,1003 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RobertaParent
+[INFO] OpenRobertaRobot
+[INFO] RobotEV3
+[INFO] RobotNXT
+[INFO] RobotArdu
+[INFO] RobotNAO
+[INFO] RobotMbed
+[INFO] RobotVorwerk
+[INFO] RobotWeDo
+[INFO] OpenRobertaServer
+[INFO] WedoInterpreter
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RobertaParent 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ OpenRobertaParent ---
+[INFO] argLine set to -javaagent:/root/./workspace/OpenRoberta/robertalab/450790586/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/target/jacoco.exec
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ OpenRobertaParent ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OpenRobertaRobot 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ OpenRobertaRobot ---
+[INFO] argLine set to -javaagent:/root/./workspace/OpenRoberta/robertalab/450790586/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/OpenRobertaRobot/target/jacoco.exec
+[INFO] 
+[INFO] --- jaxb2-maven-plugin:1.5:xjc (xjc) @ OpenRobertaRobot ---
+[INFO] No changes detected in schema or binding files - skipping source generation.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ OpenRobertaRobot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ OpenRobertaRobot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ OpenRobertaRobot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 228 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ OpenRobertaRobot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ OpenRobertaRobot ---
+[INFO] Surefire report directory: /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/OpenRobertaRobot/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: http://maven.iais.fraunhofer.de/artifactory/nm-public-release/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.pom (5 KB at 12.9 KB/sec)
+[INFO] Downloading: http://maven.iais.fraunhofer.de/artifactory/nm-public-release/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.jar (117 KB at 1334.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.fhg.iais.roberta.testutil.XsdTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.089 sec - in de.fhg.iais.roberta.testutil.XsdTest
+Running de.fhg.iais.roberta.testutil.test.JavaBeanTesterTest
+12:48:03.318 [main] INFO d.f.i.r.util.test.JavaBeanTester - CLASS UNDER TEST (SUT) de.fhg.iais.roberta.testutil.test.BeanTesterFail1
+12:48:03.341 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : i
+12:48:03.342 [main] ERROR d.f.i.r.util.test.JavaBeanTester - Expected value [1] and actual value [2] differ for de.fhg.iais.roberta.testutil.test.BeanTesterFail1#i
+12:48:03.342 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : s
+12:48:03.342 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : t
+12:48:03.343 [main] INFO d.f.i.r.util.test.JavaBeanTester - CLASS UNDER TEST (SUT) de.fhg.iais.roberta.testutil.test.BeanTesterFail2
+12:48:03.347 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : i
+12:48:03.348 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : s
+12:48:03.348 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : t
+12:48:03.348 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setS
+12:48:03.349 [main] ERROR d.f.i.r.util.test.JavaBeanTester - a setter of an immmutable object succeeded for the setter de.fhg.iais.roberta.testutil.test.BeanTesterFail2#setS
+12:48:03.349 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setT
+12:48:03.349 [main] ERROR d.f.i.r.util.test.JavaBeanTester - a setter of an immmutable object succeeded for the setter de.fhg.iais.roberta.testutil.test.BeanTesterFail2#setT
+12:48:03.349 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setI
+12:48:03.349 [main] ERROR d.f.i.r.util.test.JavaBeanTester - a setter of an immmutable object succeeded for the setter de.fhg.iais.roberta.testutil.test.BeanTesterFail2#setI
+12:48:03.349 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property IGNORED for immutable check: setReadOnly
+12:48:03.350 [main] INFO d.f.i.r.util.test.JavaBeanTester - CLASS UNDER TEST (SUT) de.fhg.iais.roberta.testutil.test.BeanTesterSuccess
+12:48:03.353 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : i
+12:48:03.356 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : s
+12:48:03.356 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property : t
+12:48:03.357 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setS
+12:48:03.357 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setT
+12:48:03.358 [main] INFO d.f.i.r.util.test.JavaBeanTester -   immutable check for: setI
+12:48:03.358 [main] INFO d.f.i.r.util.test.JavaBeanTester -   property IGNORED for immutable check: setReadOnly
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in de.fhg.iais.roberta.testutil.test.JavaBeanTesterTest
+Running de.fhg.iais.roberta.robotCommunication.generic.RobotCommunicatorTest
+12:48:03.474 [main] INFO d.f.i.r.r.RobotCommunicator - timer thread created
+12:48:03.478 [main] INFO d.f.i.r.r.RobotCommunicator - timer thread created
+12:48:03.479 [main] ERROR d.f.i.r.r.RobotCommunicator - Token approval request for robot [00:11:22:33:44:55], but an old request is pending. Old request aborted.
+12:48:03.480 [main] INFO d.f.i.r.r.RobotCommunicator - timer thread created
+12:48:03.480 [main] INFO d.f.i.r.r.RobotCommunicator - token already used. New token required
+12:48:03.481 [main] INFO d.f.i.r.r.RobotCommunicator - timer thread created
+12:48:03.489 [main] INFO d.f.i.roberta.util.ServerProperties - As resource directory /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/OpenRobertaRobot/OpenRobertaParent/ will be used
+12:48:03.490 [main] INFO d.f.i.roberta.util.ServerProperties - As temporary directory /tmp/ will be used
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in de.fhg.iais.roberta.robotCommunication.generic.RobotCommunicatorTest
+Running de.fhg.iais.roberta.util.UtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.fhg.iais.roberta.util.UtilTest
+Running de.fhg.iais.roberta.util.DropDownTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in de.fhg.iais.roberta.util.DropDownTest
+Running de.fhg.iais.roberta.util.EncryptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in de.fhg.iais.roberta.util.EncryptionTest
+Running de.fhg.iais.roberta.util.Prop2MapTest
+12:48:03.574 [main] INFO d.fhg.iais.roberta.util.Prop2MapTest - running Prop2MapTest
+12:48:03.578 [main] INFO de.fhg.iais.roberta.util.Prop2Map - Prop2Map found 3 entries in resource /prop2map/ok.txt
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in de.fhg.iais.roberta.util.Prop2MapTest
+Running de.fhg.iais.roberta.util.ClockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.359 sec - in de.fhg.iais.roberta.util.ClockTest
+Running de.fhg.iais.roberta.sound.SayTextActionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.625 sec - in de.fhg.iais.roberta.sound.SayTextActionTest
+Running de.fhg.iais.roberta.sound.SetLanguageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in de.fhg.iais.roberta.sound.SetLanguageTest
+Running de.fhg.iais.roberta.sound.PlayNoteActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in de.fhg.iais.roberta.sound.PlayNoteActionTest
+Running de.fhg.iais.roberta.syntax.codegen.PythonVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.syntax.codegen.PythonVisitorTest
+Running de.fhg.iais.roberta.syntax.check.CheckVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in de.fhg.iais.roberta.syntax.check.CheckVisitorTest
+Running de.fhg.iais.roberta.syntax.check.LoopCounterVisitorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 sec - in de.fhg.iais.roberta.syntax.check.LoopCounterVisitorTest
+Running de.fhg.iais.roberta.ast.BluetoothTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 sec - in de.fhg.iais.roberta.ast.BluetoothTest
+Running de.fhg.iais.roberta.ast.MathTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.51 sec - in de.fhg.iais.roberta.ast.MathTest
+Running de.fhg.iais.roberta.ast.stmt.ActionStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.stmt.ActionStmtTest
+Running de.fhg.iais.roberta.ast.stmt.WaitTimeStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in de.fhg.iais.roberta.ast.stmt.WaitTimeStmtTest
+Running de.fhg.iais.roberta.ast.stmt.AssignmentStmtTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.fhg.iais.roberta.ast.stmt.AssignmentStmtTest
+Running de.fhg.iais.roberta.ast.stmt.ExprStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.stmt.ExprStmtTest
+Running de.fhg.iais.roberta.ast.stmt.StmtTextCommentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in de.fhg.iais.roberta.ast.stmt.StmtTextCommentTest
+Running de.fhg.iais.roberta.ast.stmt.StmtFlowContrTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.ast.stmt.StmtFlowContrTest
+Running de.fhg.iais.roberta.ast.stmt.RepeatStmtTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.669 sec - in de.fhg.iais.roberta.ast.stmt.RepeatStmtTest
+Running de.fhg.iais.roberta.ast.ListsTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.668 sec - in de.fhg.iais.roberta.ast.ListsTest
+Running de.fhg.iais.roberta.ast.LogicTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in de.fhg.iais.roberta.ast.LogicTest
+Running de.fhg.iais.roberta.ast.expr.UnaryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.fhg.iais.roberta.ast.expr.UnaryTest
+Running de.fhg.iais.roberta.ast.expr.ActionExprTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.ast.expr.ActionExprTest
+Running de.fhg.iais.roberta.ast.expr.VariableTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec - in de.fhg.iais.roberta.ast.expr.VariableTest
+Running de.fhg.iais.roberta.ast.expr.BinaryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in de.fhg.iais.roberta.ast.expr.BinaryTest
+Running de.fhg.iais.roberta.ast.expr.EmptyExprTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.ast.expr.EmptyExprTest
+Running de.fhg.iais.roberta.ast.expr.MathConstTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in de.fhg.iais.roberta.ast.expr.MathConstTest
+Running de.fhg.iais.roberta.ast.expr.ExprListTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.expr.ExprListTest
+Running de.fhg.iais.roberta.ast.expr.NumConstTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in de.fhg.iais.roberta.ast.expr.NumConstTest
+Running de.fhg.iais.roberta.ast.expr.ColorConstTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in de.fhg.iais.roberta.ast.expr.ColorConstTest
+Running de.fhg.iais.roberta.ast.expr.NullConstTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in de.fhg.iais.roberta.ast.expr.NullConstTest
+Running de.fhg.iais.roberta.ast.expr.StringConstTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in de.fhg.iais.roberta.ast.expr.StringConstTest
+Running de.fhg.iais.roberta.ast.expr.BoolConstTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in de.fhg.iais.roberta.ast.expr.BoolConstTest
+Running de.fhg.iais.roberta.ast.TextTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in de.fhg.iais.roberta.ast.TextTest
+Running de.fhg.iais.roberta.ast.ExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.ExceptionTest
+Running de.fhg.iais.roberta.ast.TaskTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in de.fhg.iais.roberta.ast.TaskTest
+Running de.fhg.iais.roberta.ast.syntax.functions.TextFunctions
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.ast.syntax.functions.TextFunctions
+
+Results :
+
+Tests run: 287, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ OpenRobertaRobot ---
+[INFO] Analyzed bundle 'OpenRobertaRobot' with 269 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RobotEV3 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for de.fhg.iais.openroberta.ev3.v0:EV3Runtime:jar:2.6.2 is missing, no dependency information available
+[WARNING] The POM for de.fhg.iais.openroberta.ev3.v1:EV3Runtime:jar:2.8.0 is missing, no dependency information available
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ RobotEV3 ---
+[INFO] argLine set to -javaagent:/root/./workspace/OpenRoberta/robertalab/450790586/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotEV3/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ RobotEV3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ RobotEV3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ RobotEV3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 433 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ RobotEV3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ RobotEV3 ---
+[INFO] Surefire report directory: /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotEV3/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.fhg.iais.roberta.factory.generic.RobotModeFactoryTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in de.fhg.iais.roberta.factory.generic.RobotModeFactoryTest
+Running de.fhg.iais.roberta.factory.generic.IndexLocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.fhg.iais.roberta.factory.generic.IndexLocationTest
+Running de.fhg.iais.roberta.components.CompileSourceInMemoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec - in de.fhg.iais.roberta.components.CompileSourceInMemoryTest
+Running de.fhg.iais.roberta.syntax.codegen.ev3.Ast2Ev3SimVisitorTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.152 sec - in de.fhg.iais.roberta.syntax.codegen.ev3.Ast2Ev3SimVisitorTest
+Running de.fhg.iais.roberta.syntax.codegen.ev3.AstToEv3PythonVisitorTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.835 sec - in de.fhg.iais.roberta.syntax.codegen.ev3.AstToEv3PythonVisitorTest
+Running de.fhg.iais.roberta.syntax.codegen.ev3.AstToLejosJavaVisitorTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 sec - in de.fhg.iais.roberta.syntax.codegen.ev3.AstToLejosJavaVisitorTest
+Running de.fhg.iais.roberta.syntax.stmt.ForStmtTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 sec - in de.fhg.iais.roberta.syntax.stmt.ForStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.ForEachStmtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.syntax.stmt.ForEachStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.FlowControlStmtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.stmt.FlowControlStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.WaitStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.fhg.iais.roberta.syntax.stmt.WaitStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.WhileUntilStmtTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in de.fhg.iais.roberta.syntax.stmt.WhileUntilStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.ForCountStmtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.stmt.ForCountStmtTest
+Running de.fhg.iais.roberta.syntax.stmt.IfStmtTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec - in de.fhg.iais.roberta.syntax.stmt.IfStmtTest
+Running de.fhg.iais.roberta.syntax.sensors.UltrasonicSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.sensors.UltrasonicSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.MotorTachoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.sensors.MotorTachoTest
+Running de.fhg.iais.roberta.syntax.sensors.GyroSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.sensors.GyroSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.ColorSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.sensors.ColorSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.SoundSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.sensors.SoundSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.BrickSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.sensors.BrickSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.CompassSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.fhg.iais.roberta.syntax.sensors.CompassSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.IRSeekerSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.sensors.IRSeekerSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.InfraredSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.syntax.sensors.InfraredSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.TouchSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.syntax.sensors.TouchSensorTest
+Running de.fhg.iais.roberta.syntax.sensors.TimerSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.sensors.TimerSensorTest
+Running de.fhg.iais.roberta.syntax.programcheck.ev3.PythonGlobalVariableCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in de.fhg.iais.roberta.syntax.programcheck.ev3.PythonGlobalVariableCheckTest
+Running de.fhg.iais.roberta.syntax.programcheck.ev3.Ev3RobProgramCheckVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.fhg.iais.roberta.syntax.programcheck.ev3.Ev3RobProgramCheckVisitorTest
+Running de.fhg.iais.roberta.syntax.expr.MathConstantTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.syntax.expr.MathConstantTest
+Running de.fhg.iais.roberta.syntax.expr.MathModuloTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.MathModuloTest
+Running de.fhg.iais.roberta.syntax.expr.MathRandomIntTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.expr.MathRandomIntTest
+Running de.fhg.iais.roberta.syntax.expr.MathRoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.syntax.expr.MathRoundTest
+Running de.fhg.iais.roberta.syntax.expr.MathTrigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.syntax.expr.MathTrigTest
+Running de.fhg.iais.roberta.syntax.expr.ListsIsEmptyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.syntax.expr.ListsIsEmptyTest
+Running de.fhg.iais.roberta.syntax.expr.ListsOccurrenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.ListsOccurrenceTest
+Running de.fhg.iais.roberta.syntax.expr.ListsCreateWithTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in de.fhg.iais.roberta.syntax.expr.ListsCreateWithTest
+Running de.fhg.iais.roberta.syntax.expr.TextAppendTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.TextAppendTest
+Running de.fhg.iais.roberta.syntax.expr.MathSingleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.expr.MathSingleTest
+Running de.fhg.iais.roberta.syntax.expr.ListsSubListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.expr.ListsSubListTest
+Running de.fhg.iais.roberta.syntax.expr.ListsEmptyListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.expr.ListsEmptyListTest
+Running de.fhg.iais.roberta.syntax.expr.ListsCreateWithItemTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.ListsCreateWithItemTest
+Running de.fhg.iais.roberta.syntax.expr.MathConstrainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.syntax.expr.MathConstrainTest
+Running de.fhg.iais.roberta.syntax.expr.MathNumberPropertyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.fhg.iais.roberta.syntax.expr.MathNumberPropertyTest
+Running de.fhg.iais.roberta.syntax.expr.ListsLengthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.ListsLengthTest
+Running de.fhg.iais.roberta.syntax.expr.ListsGetIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.expr.ListsGetIndexTest
+Running de.fhg.iais.roberta.syntax.expr.ListsSetIndexTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.fhg.iais.roberta.syntax.expr.ListsSetIndexTest
+Running de.fhg.iais.roberta.syntax.expr.LogicExprTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in de.fhg.iais.roberta.syntax.expr.LogicExprTest
+Running de.fhg.iais.roberta.syntax.expr.TextJoinTextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.expr.TextJoinTextTest
+Running de.fhg.iais.roberta.syntax.expr.MathOnListsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in de.fhg.iais.roberta.syntax.expr.MathOnListsTest
+Running de.fhg.iais.roberta.syntax.expr.ExprTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.fhg.iais.roberta.syntax.expr.ExprTest
+Running de.fhg.iais.roberta.syntax.actors.VolumeActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.syntax.actors.VolumeActionTest
+Running de.fhg.iais.roberta.syntax.actors.SayTextActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.actors.SayTextActionTest
+Running de.fhg.iais.roberta.syntax.actors.ShowTextActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.ShowTextActionTest
+Running de.fhg.iais.roberta.syntax.actors.DriveActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.actors.DriveActionTest
+Running de.fhg.iais.roberta.syntax.actors.GetPowerActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.actors.GetPowerActionTest
+Running de.fhg.iais.roberta.syntax.actors.communication.BluetoothTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.fhg.iais.roberta.syntax.actors.communication.BluetoothTest
+Running de.fhg.iais.roberta.syntax.actors.MotorOnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.actors.MotorOnActionTest
+Running de.fhg.iais.roberta.syntax.actors.SetMotorSpeedActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.actors.SetMotorSpeedActionTest
+Running de.fhg.iais.roberta.syntax.actors.LightActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.LightActionTest
+Running de.fhg.iais.roberta.syntax.actors.TurnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.syntax.actors.TurnActionTest
+Running de.fhg.iais.roberta.syntax.actors.MotorCurveActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.actors.MotorCurveActionTest
+Running de.fhg.iais.roberta.syntax.actors.MotorStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.MotorStopActionTest
+Running de.fhg.iais.roberta.syntax.actors.MotorDriveStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.MotorDriveStopActionTest
+Running de.fhg.iais.roberta.syntax.actors.PlayFileActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.PlayFileActionTest
+Running de.fhg.iais.roberta.syntax.actors.LightActionStatusTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.syntax.actors.LightActionStatusTest
+Running de.fhg.iais.roberta.syntax.actors.SetLanguageActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.SetLanguageActionTest
+Running de.fhg.iais.roberta.syntax.actors.ToneActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.ToneActionTest
+Running de.fhg.iais.roberta.syntax.actors.ClearDisplayActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.syntax.actors.ClearDisplayActionTest
+Running de.fhg.iais.roberta.syntax.actors.ShowPictureActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.syntax.actors.ShowPictureActionTest
+Running de.fhg.iais.roberta.ast.typecheck.TypecheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in de.fhg.iais.roberta.ast.typecheck.TypecheckTest
+Running de.fhg.iais.roberta.ast.action.VolumeActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in de.fhg.iais.roberta.ast.action.VolumeActionTest
+Running de.fhg.iais.roberta.ast.action.MotionParamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.action.MotionParamTest
+Running de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Running de.fhg.iais.roberta.ast.action.DriveActionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in de.fhg.iais.roberta.ast.action.DriveActionTest
+Running de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.LightStatusActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in de.fhg.iais.roberta.ast.action.LightStatusActionTest
+Running de.fhg.iais.roberta.ast.action.ActionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in de.fhg.iais.roberta.ast.action.ActionTest
+Running de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec - in de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Running de.fhg.iais.roberta.ast.action.LightActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec - in de.fhg.iais.roberta.ast.action.LightActionTest
+Running de.fhg.iais.roberta.ast.action.TurnActionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec - in de.fhg.iais.roberta.ast.action.TurnActionTest
+Running de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Running de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Running de.fhg.iais.roberta.ast.action.ToneActionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in de.fhg.iais.roberta.ast.action.ToneActionTest
+Running de.fhg.iais.roberta.ast.action.ShowPictureActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in de.fhg.iais.roberta.ast.action.ShowPictureActionTest
+Running de.fhg.iais.roberta.ast.action.MotorDurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.action.MotorDurationTest
+Running de.fhg.iais.roberta.ast.sensor.GyroSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in de.fhg.iais.roberta.ast.sensor.GyroSensorTest
+Running de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SampleSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.sensor.SampleSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SoundSensorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in de.fhg.iais.roberta.ast.sensor.SoundSensorTest
+Running de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Running de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Running de.fhg.iais.roberta.ast.sensor.CompassSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in de.fhg.iais.roberta.ast.sensor.CompassSensorTest
+Running de.fhg.iais.roberta.ast.sensor.IRSeekerSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in de.fhg.iais.roberta.ast.sensor.IRSeekerSensorTest
+Running de.fhg.iais.roberta.ast.sensor.InfraredSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in de.fhg.iais.roberta.ast.sensor.InfraredSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.fhg.iais.roberta.ast.sensor.SensorTest
+Running de.fhg.iais.roberta.ast.sensor.EncoderSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in de.fhg.iais.roberta.ast.sensor.EncoderSensorTest
+Running de.fhg.iais.roberta.ast.stmt.SensorStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.stmt.SensorStmtTest
+Running de.fhg.iais.roberta.ast.stmt.IfStmtTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec - in de.fhg.iais.roberta.ast.stmt.IfStmtTest
+Running de.fhg.iais.roberta.ast.stmt.ControlTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in de.fhg.iais.roberta.ast.stmt.ControlTest
+Running de.fhg.iais.roberta.ast.usedhardwarecheck.ProgramConfigurationCompatabilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.fhg.iais.roberta.ast.usedhardwarecheck.ProgramConfigurationCompatabilityTest
+Running de.fhg.iais.roberta.ast.usedhardwarecheck.EV3ProgramUsedHardwareCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in de.fhg.iais.roberta.ast.usedhardwarecheck.EV3ProgramUsedHardwareCheckTest
+Running de.fhg.iais.roberta.ast.expr.SensorExprTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.expr.SensorExprTest
+Running de.fhg.iais.roberta.ast.methods.MethodCallTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in de.fhg.iais.roberta.ast.methods.MethodCallTest
+Running de.fhg.iais.roberta.ast.methods.MethodIfReturnTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in de.fhg.iais.roberta.ast.methods.MethodIfReturnTest
+Running de.fhg.iais.roberta.ast.methods.MethodVoidTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in de.fhg.iais.roberta.ast.methods.MethodVoidTest
+Running de.fhg.iais.roberta.ast.methods.MethodReturnTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in de.fhg.iais.roberta.ast.methods.MethodReturnTest
+Running de.fhg.iais.roberta.ast.syntax.functions.TextFunctions
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.ast.syntax.functions.TextFunctions
+
+Results :
+
+Tests run: 545, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ RobotEV3 ---
+[INFO] Analyzed bundle 'RobotEV3' with 30 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RobotNXT 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ RobotNXT ---
+[INFO] argLine set to -javaagent:/root/./workspace/OpenRoberta/robertalab/450790586/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotNXT/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ RobotNXT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ RobotNXT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ RobotNXT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 345 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ RobotNXT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ RobotNXT ---
+[INFO] Surefire report directory: /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotNXT/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.fhg.iais.roberta.syntax.codegen.nxt.SimulationVisitorTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.346 sec - in de.fhg.iais.roberta.syntax.codegen.nxt.SimulationVisitorTest
+Running de.fhg.iais.roberta.syntax.codegen.nxt.NxcVisitorTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec - in de.fhg.iais.roberta.syntax.codegen.nxt.NxcVisitorTest
+Running de.fhg.iais.roberta.ast.action.VolumeActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 sec - in de.fhg.iais.roberta.ast.action.VolumeActionTest
+Running de.fhg.iais.roberta.ast.action.MotionParamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.action.MotionParamTest
+Running de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 sec - in de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Running de.fhg.iais.roberta.ast.action.DriveActionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 sec - in de.fhg.iais.roberta.ast.action.DriveActionTest
+Running de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec - in de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.ActionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec - in de.fhg.iais.roberta.ast.action.ActionTest
+Running de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec - in de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Running de.fhg.iais.roberta.ast.action.LightActionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in de.fhg.iais.roberta.ast.action.LightActionTest
+Running de.fhg.iais.roberta.ast.action.TurnActionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.26 sec - in de.fhg.iais.roberta.ast.action.TurnActionTest
+Running de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Running de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Running de.fhg.iais.roberta.ast.action.ToneActionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 sec - in de.fhg.iais.roberta.ast.action.ToneActionTest
+Running de.fhg.iais.roberta.ast.action.MotorDurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.action.MotorDurationTest
+Running de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Running de.fhg.iais.roberta.ast.sensor.LightSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in de.fhg.iais.roberta.ast.sensor.LightSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SampleSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.fhg.iais.roberta.ast.sensor.SampleSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SoundSensorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in de.fhg.iais.roberta.ast.sensor.SoundSensorTest
+Running de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Running de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.fhg.iais.roberta.ast.sensor.SensorTest
+Running de.fhg.iais.roberta.ast.sensor.EncoderSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in de.fhg.iais.roberta.ast.sensor.EncoderSensorTest
+Running de.fhg.iais.roberta.ast.syntax.stmt.ForStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in de.fhg.iais.roberta.ast.syntax.stmt.ForStmtTest
+Running de.fhg.iais.roberta.ast.syntax.stmt.ForEachStmtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.ast.syntax.stmt.ForEachStmtTest
+Running de.fhg.iais.roberta.ast.syntax.stmt.WaitStmtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.syntax.stmt.WaitStmtTest
+Running de.fhg.iais.roberta.ast.syntax.stmt.WhileUntilStmtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in de.fhg.iais.roberta.ast.syntax.stmt.WhileUntilStmtTest
+Running de.fhg.iais.roberta.ast.syntax.stmt.IfStmtTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 sec - in de.fhg.iais.roberta.ast.syntax.stmt.IfStmtTest
+Running de.fhg.iais.roberta.ast.syntax.sensors.UltrasonicSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.sensors.UltrasonicSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensors.MotorTachoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.fhg.iais.roberta.ast.syntax.sensors.MotorTachoTest
+Running de.fhg.iais.roberta.ast.syntax.sensors.ColorSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.sensors.ColorSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensors.BrickSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.sensors.BrickSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensors.TimerSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.fhg.iais.roberta.ast.syntax.sensors.TimerSensorTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathConstantTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathConstantTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathModuloTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathModuloTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathRandomIntTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathRandomIntTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathRoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathRoundTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathTrigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathTrigTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsIsEmptyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsIsEmptyTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsCreateWithTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsCreateWithTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathSingleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathSingleTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsEmptyListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsEmptyListTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathConstrainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathConstrainTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathNumberPropertyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathNumberPropertyTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsLengthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsLengthTest
+Running de.fhg.iais.roberta.ast.syntax.expr.LogicExprTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in de.fhg.iais.roberta.ast.syntax.expr.LogicExprTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathOnListsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathOnListsTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ExprTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in de.fhg.iais.roberta.ast.syntax.expr.ExprTest
+Running de.fhg.iais.roberta.ast.syntax.actors.VolumeActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.fhg.iais.roberta.ast.syntax.actors.VolumeActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ShowTextActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.fhg.iais.roberta.ast.syntax.actors.ShowTextActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.GetPowerActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.actors.GetPowerActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ToneActionFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.actors.ToneActionFunctionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorOnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorOnActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.SetMotorSpeedActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.ast.syntax.actors.SetMotorSpeedActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.TurnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.fhg.iais.roberta.ast.syntax.actors.TurnActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorStopActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorDriveStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorDriveStopActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.PlayFileActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.actors.PlayFileActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ToneActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.syntax.actors.ToneActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ClearDisplayActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.syntax.actors.ClearDisplayActionTest
+Running de.fhg.iais.roberta.ast.NxtConfigurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.031 sec - in de.fhg.iais.roberta.ast.NxtConfigurationTest
+
+Results :
+
+Tests run: 278, Failures: 0, Errors: 0, Skipped: 4
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (report) @ RobotNXT ---
+[INFO] Analyzed bundle 'RobotNXT' with 15 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RobotArdu 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ RobotArdu ---
+[INFO] argLine set to -javaagent:/root/./workspace/OpenRoberta/robertalab/450790586/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotArdu/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ RobotArdu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ RobotArdu ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ RobotArdu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 341 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ RobotArdu ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ RobotArdu ---
+[INFO] Surefire report directory: /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotArdu/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest
+Tests run: 24, Failures: 23, Errors: 0, Skipped: 1, Time elapsed: 1.626 sec <<< FAILURE! - in de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest
+visitMotionSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 1.24 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitMotionSensorTest(CppVisitorTest.java:411)
+
+visitMotorOnActionStepTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitMotorOnActionStepTest(CppVisitorTest.java:221)
+
+visitMoistureSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.025 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitMoistureSensorTest(CppVisitorTest.java:301)
+
+visitInfraredSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.03 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitInfraredSensorTest(CppVisitorTest.java:344)
+
+visitPulseSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.02 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitPulseSensorTest(CppVisitorTest.java:427)
+
+visitTimeSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.018 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitTimeSensorTest(CppVisitorTest.java:260)
+
+visitLightActionLedTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitLightActionLedTest(CppVisitorTest.java:150)
+
+visitClearDisplayActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitClearDisplayActionTest(CppVisitorTest.java:132)
+
+visitShowTextActionI2CTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.038 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitShowTextActionI2CTest(CppVisitorTest.java:117)
+
+visitVoltageSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitVoltageSensorTest(CppVisitorTest.java:317)
+
+visitUltrasonicSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitUltrasonicSensorTest(CppVisitorTest.java:237)
+
+visitHumiditySensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitHumiditySensorTest(CppVisitorTest.java:395)
+
+visitSerialWriteActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitSerialWriteActionTest(CppVisitorTest.java:493)
+
+visitMotorOnActionServoTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitMotorOnActionServoTest(CppVisitorTest.java:205)
+
+visitBrickSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitBrickSensorTest(CppVisitorTest.java:476)
+
+visitToneActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitToneActionTest(CppVisitorTest.java:166)
+
+visitRelayActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitRelayActionTest(CppVisitorTest.java:361)
+
+visitDropSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitDropSensorTest(CppVisitorTest.java:444)
+
+visitRfidSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitRfidSensorTest(CppVisitorTest.java:460)
+
+visitTemperatureSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitTemperatureSensorTest(CppVisitorTest.java:377)
+
+visitLightSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.029 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitLightSensorTest(CppVisitorTest.java:285)
+
+visitShowTextActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitShowTextActionTest(CppVisitorTest.java:102)
+
+visitLightActionTest(de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.arduino.CppVisitorTest.visitLightActionTest(CppVisitorTest.java:188)
+
+Running de.fhg.iais.roberta.syntax.codegen.arduino.botnroll.CppVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.syntax.codegen.arduino.botnroll.CppVisitorTest
+Running de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec <<< FAILURE! - in de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest
+visitTimerTest(de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...{Serial.begin(9600);[item=0;]}voidloop(){if((int)...> but was:<...{Serial.begin(9600);[]}voidloop(){if((int)...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest.visitTimerTest(CppVisitorTest.java:262)
+
+visitSoundSensorTest(de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...{Serial.begin(9600);[item=0;]}voidloop(){if(mySou...> but was:<...{Serial.begin(9600);[]}voidloop(){if(mySou...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.fhg.iais.roberta.util.test.AbstractHelperForXmlTest.assertCodeIsOk(AbstractHelperForXmlTest.java:220)
+	at de.fhg.iais.roberta.syntax.codegen.arduino.mbot.CppVisitorTest.visitSoundSensorTest(CppVisitorTest.java:223)
+
+Running de.fhg.iais.roberta.ast.action.CurveActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec - in de.fhg.iais.roberta.ast.action.CurveActionTest
+Running de.fhg.iais.roberta.ast.action.MotionParamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.action.MotionParamTest
+Running de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in de.fhg.iais.roberta.ast.action.ShowTextActionTest
+Running de.fhg.iais.roberta.ast.action.DriveActionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.488 sec - in de.fhg.iais.roberta.ast.action.DriveActionTest
+Running de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in de.fhg.iais.roberta.ast.action.MotorSetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.ActionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in de.fhg.iais.roberta.ast.action.ActionTest
+Running de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in de.fhg.iais.roberta.ast.action.MotorOnActionTest
+Running de.fhg.iais.roberta.ast.action.TurnActionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec - in de.fhg.iais.roberta.ast.action.TurnActionTest
+Running de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in de.fhg.iais.roberta.ast.action.MotorGetPowerActionTest
+Running de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in de.fhg.iais.roberta.ast.action.MotorStopActionTest
+Running de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in de.fhg.iais.roberta.ast.action.PlayFileActionTest
+Running de.fhg.iais.roberta.ast.action.ToneActionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in de.fhg.iais.roberta.ast.action.ToneActionTest
+Running de.fhg.iais.roberta.ast.action.MotorDurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.fhg.iais.roberta.ast.action.MotorDurationTest
+Running de.fhg.iais.roberta.ast.BotnrollConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.018 sec - in de.fhg.iais.roberta.ast.BotnrollConfigurationTest
+Running de.fhg.iais.roberta.ast.sensor.VoltageSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in de.fhg.iais.roberta.ast.sensor.VoltageSensorTest
+Running de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in de.fhg.iais.roberta.ast.sensor.ColorSensorTest
+Running de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in de.fhg.iais.roberta.ast.sensor.BrickSensorTest
+Running de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in de.fhg.iais.roberta.ast.sensor.UltraSonicSensorTest
+Running de.fhg.iais.roberta.ast.sensor.CompassSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in de.fhg.iais.roberta.ast.sensor.CompassSensorTest
+Running de.fhg.iais.roberta.ast.sensor.InfraredSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in de.fhg.iais.roberta.ast.sensor.InfraredSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in de.fhg.iais.roberta.ast.sensor.TouchSensorTest
+Running de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in de.fhg.iais.roberta.ast.sensor.TimerSensorTest
+Running de.fhg.iais.roberta.ast.sensor.SensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in de.fhg.iais.roberta.ast.sensor.SensorTest
+Running de.fhg.iais.roberta.ast.methods.MethodCallTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in de.fhg.iais.roberta.ast.methods.MethodCallTest
+Running de.fhg.iais.roberta.ast.methods.MethodIfReturnTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in de.fhg.iais.roberta.ast.methods.MethodIfReturnTest
+Running de.fhg.iais.roberta.ast.methods.MethodVoidTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in de.fhg.iais.roberta.ast.methods.MethodVoidTest
+Running de.fhg.iais.roberta.ast.methods.MethodReturnTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in de.fhg.iais.roberta.ast.methods.MethodReturnTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.UltrasonicSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in de.fhg.iais.roberta.ast.syntax.sensor.UltrasonicSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.ColorSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.sensor.ColorSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.BrickSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.sensor.BrickSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.TimerSensorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in de.fhg.iais.roberta.ast.syntax.sensor.TimerSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3TemperatureSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3TemperatureSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.bob3.LightSensorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.sensor.bob3.LightSensorTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3CodePadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3CodePadTest
+Running de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3ArmsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.fhg.iais.roberta.ast.syntax.sensor.bob3.Bob3ArmsTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathConstantTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathConstantTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathModuloTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathModuloTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathRandomIntTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathRandomIntTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathRoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathRoundTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathTrigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathTrigTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsIsEmptyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsIsEmptyTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsCreateWithTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsCreateWithTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathSingleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathSingleTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsEmptyListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsEmptyListTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathConstrainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathConstrainTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathNumberPropertyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathNumberPropertyTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ListsLengthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.fhg.iais.roberta.ast.syntax.expr.ListsLengthTest
+Running de.fhg.iais.roberta.ast.syntax.expr.LogicExprTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in de.fhg.iais.roberta.ast.syntax.expr.LogicExprTest
+Running de.fhg.iais.roberta.ast.syntax.expr.MathOnListsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in de.fhg.iais.roberta.ast.syntax.expr.MathOnListsTest
+Running de.fhg.iais.roberta.ast.syntax.expr.ExprTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.fhg.iais.roberta.ast.syntax.expr.ExprTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ShowTextActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.syntax.actors.ShowTextActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.DriveActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.syntax.actors.DriveActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.communication.BluetoothTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.syntax.actors.communication.BluetoothTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorOnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorOnActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.TurnActionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.fhg.iais.roberta.ast.syntax.actors.TurnActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorStopActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.MotorDriveStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.fhg.iais.roberta.ast.syntax.actors.MotorDriveStopActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ToneActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.fhg.iais.roberta.ast.syntax.actors.ToneActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.bob3.Bob3BodyLEDActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.syntax.actors.bob3.Bob3BodyLEDActionTest
+Running de.fhg.iais.roberta.ast.syntax.actors.ClearDisplayActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in de.fhg.iais.roberta.ast.syntax.actors.ClearDisplayActionTest
+
+Results :
+
+Failed tests: 
+  CppVisitorTest.visitMotionSensorTest:411 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitMotorOnActionStepTest:221 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitMoistureSensorTest:301 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitInfraredSensorTest:344 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitPulseSensorTest:427 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitTimeSensorTest:260 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitLightActionLedTest:150 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitClearDisplayActionTest:132 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitShowTextActionI2CTest:117 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitVoltageSensorTest:317 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitUltrasonicSensorTest:237 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitHumiditySensorTest:395 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitSerialWriteActionTest:493 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitMotorOnActionServoTest:205 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitBrickSensorTest:476 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitToneActionTest:166 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitRelayActionTest:361 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitDropSensorTest:444 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitRfidSensorTest:460 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitTemperatureSensorTest:377 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitLightSensorTest:285 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitShowTextActionTest:102 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitLightActionTest:188 expected:<...//OpenRobertalibrary[#include<NEPODefs.h>]RobertaFunctionsrob;...> but was:<...//OpenRobertalibrary[]RobertaFunctionsrob;...>
+  CppVisitorTest.visitTimerTest:262 expected:<...{Serial.begin(9600);[item=0;]}voidloop(){if((int)...> but was:<...{Serial.begin(9600);[]}voidloop(){if((int)...>
+  CppVisitorTest.visitSoundSensorTest:223 expected:<...{Serial.begin(9600);[item=0;]}voidloop(){if(mySou...> but was:<...{Serial.begin(9600);[]}voidloop(){if(mySou...>
+
+Tests run: 252, Failures: 25, Errors: 0, Skipped: 8
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RobertaParent ...................................... SUCCESS [  1.680 s]
+[INFO] OpenRobertaRobot ................................... SUCCESS [ 16.643 s]
+[INFO] RobotEV3 ........................................... SUCCESS [ 14.351 s]
+[INFO] RobotNXT ........................................... SUCCESS [  9.102 s]
+[INFO] RobotArdu .......................................... FAILURE [ 10.248 s]
+[INFO] RobotNAO ........................................... SKIPPED
+[INFO] RobotMbed .......................................... SKIPPED
+[INFO] RobotVorwerk ....................................... SKIPPED
+[INFO] RobotWeDo .......................................... SKIPPED
+[INFO] OpenRobertaServer .................................. SKIPPED
+[INFO] WedoInterpreter .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.637 s
+[INFO] Finished at: 2018-11-05T12:48:47+01:00
+[INFO] Final Memory: 30M/873M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project RobotArdu: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/OpenRoberta/robertalab/450790586/OpenRobertaParent/RobotArdu/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :RobotArdu
