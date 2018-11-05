@@ -1,0 +1,163 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "snuyanzin/sqlline",
+    "githubId": 142073154,
+    "url": "https://github.com/snuyanzin/sqlline",
+    "isFork": true,
+    "original": {
+      "name": "julianhyde/sqlline",
+      "githubId": 8804093,
+      "url": "https://github.com/julianhyde/sqlline"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450709453,
+      "url": "http://travis-ci.org/snuyanzin/sqlline/builds/450709453",
+      "date": "Nov 5, 2018 7:07:26 AM"
+    },
+    "fixerBuild": {
+      "id": 450840228,
+      "url": "http://travis-ci.org/snuyanzin/sqlline/builds/450840228",
+      "date": "Nov 5, 2018 1:45:32 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 5, 2018 1:45:49 PM",
+    "reproductionDateEnd": "Nov 5, 2018 1:48:21 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 321285984,
+      "totalMemory": 403701760
+    },
+    "totalDuration": 146,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 67,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          67
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          22
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/snuyanzin/sqlline/450709453/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 46,
+      "numberDeleted": 21
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/snuyanzin/sqlline/450709453",
+    "overallMetrics": {
+      "numberRunning": 83,
+      "numberPassing": 81,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.jline.reader.EOFError",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "sqlline.SqlLineParserTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "sqlline.SqlLineParserTest",
+        "testMethod": "testSqlLineParserForWrongLines",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Missing closing quote or semicolon for line select \u00271\u0027;-comment",
+        "isError": false
+      },
+      {
+        "testClass": "sqlline.SqlLineParserTest",
+        "testMethod": "testSqlLineParserForOkLines",
+        "failureName": "org.jline.reader.EOFError",
+        "detail": "Missing semicolon at the end",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 38,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "snuyanzin/sqlline",
+      "branchName": "master",
+      "sha": "c62ddb19508119057bd7cf6f6a25e0ef571e6323",
+      "url": "http://github.com/snuyanzin/sqlline/commit/c62ddb19508119057bd7cf6f6a25e0ef571e6323",
+      "date": "Nov 4, 2018 11:31:26 PM"
+    },
+    "fixerBuild": {
+      "repoName": "snuyanzin/sqlline",
+      "branchName": "master",
+      "sha": "dc4372ed560f9467d2b73ed9e7939e0af8ae4918",
+      "url": "http://github.com/snuyanzin/sqlline/commit/dc4372ed560f9467d2b73ed9e7939e0af8ae4918",
+      "date": "Nov 5, 2018 6:42:25 AM"
+    }
+  },
+  "type": "passing_passing"
+}
