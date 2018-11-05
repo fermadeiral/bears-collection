@@ -1,0 +1,600 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building risk 0.4
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ risk ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/PayneWheat/risk/450656593/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5:compile (default-compile) @ risk ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to /root/workspace/PayneWheat/risk/450656593/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ risk ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/PayneWheat/risk/450656593/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5:testCompile (default-testCompile) @ risk ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 13 source files to /root/workspace/PayneWheat/risk/450656593/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ risk ---
+[INFO] Surefire report directory: /root/workspace/PayneWheat/risk/450656593/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 63.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 515.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.java.DiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+Running test.java.CardDeckTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running test.java.UnoccupiedTerritoriesTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running test.java.TerritoryTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE!
+testGetMethods(test.java.TerritoryTest)  Time elapsed: 0.014 sec  <<< ERROR!
+java.lang.NullPointerException
+	at main.java.game.Territory.getAdjacentTerritories(Territory.java:52)
+	at test.java.TerritoryTest.testGetMethods(TerritoryTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running test.java.BoardTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Moving 3 armies from Alaska to Alberta (Western Canada)
+3
+2
+1
+CURRENT TERRITORY COUNT: 0
+Test1 has 4 territories which yields 3 armies.
+Test1 has control of 0 continents for an additional 0 armies.
+Test1 receives 3 armies.
+Test1 has 15 territories which yields 5 armies.
+Test1 has control of 0 continents for an additional 0 armies.
+Test1 receives 5 armies.
+Test1 has 16 territories which yields 5 armies.
+Test1 has control of 1 continents for an additional 3 armies.
+Test1 receives 8 armies.
+Available territories:
+[0]Alaska, [1]Alberta (Western Canada), [2]Central America, [3]Eastern United States, [4]Greenland, [5]Northwest Territory, [6]Ontario (Central Canada), [7]Quebec (Eastern Canada), [8]Western United States, [9]Argentina, [10]Brazil, [11]Peru, [12]Venezuela, [13]Great Britain, [14]Iceland, [15]Northern Europe, [16]Scandinavia, [17]Southern Europe, [18]Ukraine, [19]Western Europe, [20]Congo, [21]East Africa, [22]Egypt, [23]Madagascar, [24]North Africa, [25]South Africa, [26]Afghanistan, [27]China, [28]India, [29]Irkutsk, [30]Japan, [31]Kamchatka, [32]Middle East, [33]Mongolia, [34]Siam, [35]Siberia, [36]Ural, [37]Yakutsk, [38]Eastern Australia, [39]Indonesia, [40]New Guinea, [41]Western Australia, 
+[0]North America, Alaska(UNOCCUPIED, 0 armies)
+[1]North America, Alberta (Western Canada)(UNOCCUPIED, 0 armies)
+[2]North America, Central America(UNOCCUPIED, 0 armies)
+[3]North America, Eastern United States(UNOCCUPIED, 0 armies)
+[4]North America, Greenland(UNOCCUPIED, 0 armies)
+[5]North America, Northwest Territory(UNOCCUPIED, 0 armies)
+[6]North America, Ontario (Central Canada)(UNOCCUPIED, 0 armies)
+[7]North America, Quebec (Eastern Canada)(UNOCCUPIED, 0 armies)
+[8]North America, Western United States(UNOCCUPIED, 0 armies)
+[9]South America, Argentina(UNOCCUPIED, 0 armies)
+[10]South America, Brazil(UNOCCUPIED, 0 armies)
+[11]South America, Peru(UNOCCUPIED, 0 armies)
+[12]South America, Venezuela(UNOCCUPIED, 0 armies)
+[13]Europe, Great Britain(UNOCCUPIED, 0 armies)
+[14]Europe, Iceland(UNOCCUPIED, 0 armies)
+[15]Europe, Northern Europe(UNOCCUPIED, 0 armies)
+[16]Europe, Scandinavia(UNOCCUPIED, 0 armies)
+[17]Europe, Southern Europe(UNOCCUPIED, 0 armies)
+[18]Europe, Ukraine(UNOCCUPIED, 0 armies)
+[19]Europe, Western Europe(UNOCCUPIED, 0 armies)
+[20]Africa, Congo(UNOCCUPIED, 0 armies)
+[21]Africa, East Africa(UNOCCUPIED, 0 armies)
+[22]Africa, Egypt(UNOCCUPIED, 0 armies)
+[23]Africa, Madagascar(UNOCCUPIED, 0 armies)
+[24]Africa, North Africa(UNOCCUPIED, 0 armies)
+[25]Africa, South Africa(UNOCCUPIED, 0 armies)
+[26]Asia, Afghanistan(UNOCCUPIED, 0 armies)
+[27]Asia, China(UNOCCUPIED, 0 armies)
+[28]Asia, India(UNOCCUPIED, 0 armies)
+[29]Asia, Irkutsk(UNOCCUPIED, 0 armies)
+[30]Asia, Japan(UNOCCUPIED, 0 armies)
+[31]Asia, Kamchatka(UNOCCUPIED, 0 armies)
+[32]Asia, Middle East(UNOCCUPIED, 0 armies)
+[33]Asia, Mongolia(UNOCCUPIED, 0 armies)
+[34]Asia, Siam(UNOCCUPIED, 0 armies)
+[35]Asia, Siberia(UNOCCUPIED, 0 armies)
+[36]Asia, Ural(UNOCCUPIED, 0 armies)
+[37]Asia, Yakutsk(UNOCCUPIED, 0 armies)
+[38]Australia, Eastern Australia(UNOCCUPIED, 0 armies)
+[39]Australia, Indonesia(UNOCCUPIED, 0 armies)
+[40]Australia, New Guinea(UNOCCUPIED, 0 armies)
+[41]Australia, Western Australia(UNOCCUPIED, 0 armies)
+[0]North America, Alaska(Test1, 1 armies)->{ Alberta (Western Canada), Northwest Territory, Kamchatka, }
+[1]North America, Alberta (Western Canada)(UNOCCUPIED, 0 armies)->{ Alaska, Northwest Territory, Ontario (Central Canada), Western United States, }
+[2]North America, Central America(UNOCCUPIED, 0 armies)->{ Eastern United States, Western United States, Venezuela, }
+[3]North America, Eastern United States(UNOCCUPIED, 0 armies)->{ Ontario (Central Canada), Quebec (Eastern Canada), Western United States, Central America, }
+[4]North America, Greenland(UNOCCUPIED, 0 armies)->{ Quebec (Eastern Canada), Iceland, }
+[5]North America, Northwest Territory(UNOCCUPIED, 0 armies)->{ Alaska, Alberta (Western Canada), Ontario (Central Canada), }
+[6]North America, Ontario (Central Canada)(UNOCCUPIED, 0 armies)->{ Northwest Territory, Alberta (Western Canada), Quebec (Eastern Canada), Western United States, Eastern United States, }
+[7]North America, Quebec (Eastern Canada)(UNOCCUPIED, 0 armies)->{ Greenland, Ontario (Central Canada), Eastern United States, }
+[8]North America, Western United States(UNOCCUPIED, 0 armies)->{ Alberta (Western Canada), Ontario (Central Canada), Eastern United States, Central America, }
+[9]South America, Argentina(UNOCCUPIED, 0 armies)->{ Peru, Brazil, }
+[10]South America, Brazil(UNOCCUPIED, 0 armies)->{ Argentina, Peru, Venezuela, North Africa, }
+[11]South America, Peru(UNOCCUPIED, 0 armies)->{ Argentina, Brazil, Venezuela, }
+[12]South America, Venezuela(UNOCCUPIED, 0 armies)->{ Brazil, Peru, Central America, }
+[13]Europe, Great Britain(UNOCCUPIED, 0 armies)->{ Iceland, Scandinavia, Northern Europe, Western Europe, }
+[14]Europe, Iceland(UNOCCUPIED, 0 armies)->{ Great Britain, Scandinavia, Greenland, }
+[15]Europe, Northern Europe(UNOCCUPIED, 0 armies)->{ Great Britain, Scandinavia, Ukraine, Southern Europe, Western Europe, }
+[16]Europe, Scandinavia(UNOCCUPIED, 0 armies)->{ Iceland, Great Britain, Northern Europe, Ukraine, }
+[17]Europe, Southern Europe(UNOCCUPIED, 0 armies)->{ Western Europe, Northern Europe, Ukraine, North Africa, Egypt, Middle East, }
+[18]Europe, Ukraine(UNOCCUPIED, 0 armies)->{ Scandinavia, Northern Europe, Middle East, Southern Europe, Afghanistan, Ural, }
+[19]Europe, Western Europe(UNOCCUPIED, 0 armies)->{ Great Britain, Northern Europe, Southern Europe, North Africa, }
+[20]Africa, Congo(UNOCCUPIED, 0 armies)->{ East Africa, North Africa, South Africa, }
+[21]Africa, East Africa(UNOCCUPIED, 0 armies)->{ Congo, Egypt, Madagascar, South Africa, North Africa, Middle East, }
+[22]Africa, Egypt(UNOCCUPIED, 0 armies)->{ North Africa, East Africa, Southern Europe, Middle East, }
+[23]Africa, Madagascar(UNOCCUPIED, 0 armies)->{ East Africa, South Africa, }
+[24]Africa, North Africa(UNOCCUPIED, 0 armies)->{ Brazil, Southern Europe, Western Europe, Egypt, East Africa, Congo, }
+[25]Africa, South Africa(UNOCCUPIED, 0 armies)->{ Congo, East Africa, Madagascar, }
+[26]Asia, Afghanistan(UNOCCUPIED, 0 armies)->{ Ukraine, China, India, Middle East, Ural, }
+[27]Asia, China(UNOCCUPIED, 0 armies)->{ Afghanistan, India, Siam, Mongolia, Siberia, Ural, }
+[28]Asia, India(UNOCCUPIED, 0 armies)->{ Middle East, Afghanistan, China, Siam, }
+[29]Asia, Irkutsk(UNOCCUPIED, 0 armies)->{ Mongolia, Siberia, Kamchatka, Yakutsk, }
+[30]Asia, Japan(UNOCCUPIED, 0 armies)->{ Kamchatka, Mongolia, }
+[31]Asia, Kamchatka(UNOCCUPIED, 0 armies)->{ Japan, Mongolia, Irkutsk, Yakutsk, Alaska, }
+[32]Asia, Middle East(UNOCCUPIED, 0 armies)->{ Afghanistan, India, Egypt, East Africa, Southern Europe, Ukraine, }
+[33]Asia, Mongolia(UNOCCUPIED, 0 armies)->{ China, Japan, Irkutsk, Siberia, Kamchatka, }
+[34]Asia, Siam(UNOCCUPIED, 0 armies)->{ India, China, Indonesia, }
+[35]Asia, Siberia(UNOCCUPIED, 0 armies)->{ Ural, China, Mongolia, Irkutsk, Yakutsk, }
+[36]Asia, Ural(UNOCCUPIED, 0 armies)->{ Ukraine, Afghanistan, China, Siberia, }
+[37]Asia, Yakutsk(UNOCCUPIED, 0 armies)->{ Siberia, Irkutsk, Kamchatka, }
+[38]Australia, Eastern Australia(UNOCCUPIED, 0 armies)->{ New Guinea, Western Australia, }
+[39]Australia, Indonesia(UNOCCUPIED, 0 armies)->{ Siam, New Guinea, Western Australia, }
+[40]Australia, New Guinea(UNOCCUPIED, 0 armies)->{ Indonesia, Eastern Australia, Western Australia, }
+[41]Australia, Western Australia(UNOCCUPIED, 0 armies)->{ Indonesia, New Guinea, Eastern Australia, }
+Test1 has 5 armies on Test1, rolls 3 die/dice.
+Test2 has 5 armies on Test2, rolls 2 die/dice.
+Test1 rolled 1 6 3 
+Test2 rolled 6 1 
+6 3 1 
+6 1 
+Test1 has 3 armies on Test1, rolls 2 die/dice.
+Test2 has 3 armies on Test2, rolls 2 die/dice.
+Test1 rolled 6 4 
+Test2 rolled 5 5 
+6 4 
+5 5 
+Test1 has 2 armies on Test1, rolls 1 die/dice.
+Test2 has 2 armies on Test2, rolls 2 die/dice.
+Test1 rolled 5 
+Test2 rolled 1 1 
+5 
+1 1 
+Test1 has 2 armies on Test1, rolls 1 die/dice.
+Test2 has 1 armies on Test2, rolls 1 die/dice.
+Test1 rolled 4 
+Test2 rolled 4 
+4 
+4 
+Test2 loses 1 army from Test2
+Test2 loses 1 army from Test2
+------STARTING TESTINITIALARMYPLACEMENT------
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Number of players: 2
+Test1 rolled a 6
+Test2 rolled a 5
+Test1 goes first.
+ The order of players to play is Test1
+ The order of players to play is Test2
+Test1 increased 40 armies.
+Test2 increased 40 armies.
+Available territories:
+[0]Alaska, [1]Alberta (Western Canada), [2]Central America, [3]Eastern United States, [4]Greenland, [5]Northwest Territory, [6]Ontario (Central Canada), [7]Quebec (Eastern Canada), [8]Western United States, [9]Argentina, [10]Brazil, [11]Peru, [12]Venezuela, [13]Great Britain, [14]Iceland, [15]Northern Europe, [16]Scandinavia, [17]Southern Europe, [18]Ukraine, [19]Western Europe, [20]Congo, [21]East Africa, [22]Egypt, [23]Madagascar, [24]North Africa, [25]South Africa, [26]Afghanistan, [27]China, [28]India, [29]Irkutsk, [30]Japan, [31]Kamchatka, [32]Middle East, [33]Mongolia, [34]Siam, [35]Siberia, [36]Ural, [37]Yakutsk, [38]Eastern Australia, [39]Indonesia, [40]New Guinea, [41]Western Australia, 
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Test1 lost 1 armies.
+Test2 lost 1 armies.
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec
+Running test.java.InitialTroopsTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.java.PlayerTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Test1 increased 5 armies.
+Test1 lost 5 armies.
+Error: java.lang.IllegalArgumentException: Must be a positive number.
+Try again
+Could not parse number. Try again
+
+Choose one of your territories to attack from:
+Note: This list only contains territories you occupy with at least 2 armies
+[0]Alaska: 4 armies; -> { Kamchatka (Test2): 2; }
+[2]Central America: 4 armies; -> { Venezuela (Test2): 2; }
+[4]Greenland: 4 armies; -> { Iceland (Test2): 2; }
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running test.java.CurrentPlayerIndexTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+Number of players: 4
+TestPlayer1 rolled a 6
+TestPlayer2 rolled a 1
+TestPlayer3 rolled a 2
+TestPlayer4 rolled a 2
+TestPlayer1 goes first.
+ The order of players to play is TestPlayer1
+ The order of players to play is TestPlayer2
+ The order of players to play is TestPlayer3
+ The order of players to play is TestPlayer4
+TestPlayer1 has 0 territories which yields 3 armies.
+TestPlayer1 has control of 0 continents for an additional 0 armies.
+TestPlayer1 receives 3 armies.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running test.java.ObserverPatternTest
+Territories in North America: 
+Alaska, Alberta (Western Canada), Central America, Eastern United States, Greenland, Northwest Territory, Ontario (Central Canada), Quebec (Eastern Canada), Western United States, 
+Territories in South America: 
+Argentina, Brazil, Peru, Venezuela, 
+Territories in Europe: 
+Great Britain, Iceland, Northern Europe, Scandinavia, Southern Europe, Ukraine, Western Europe, 
+Territories in Africa: 
+Congo, East Africa, Egypt, Madagascar, North Africa, South Africa, 
+Territories in Asia: 
+Afghanistan, China, India, Irkutsk, Japan, Kamchatka, Middle East, Mongolia, Siam, Siberia, Ural, Yakutsk, 
+Territories in Australia: 
+Eastern Australia, Indonesia, New Guinea, Western Australia, 
+You have been attacked!
+You have been attacked!
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running test.java.ContinentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.java.AttackTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.java.ActivitiesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec
+Running test.java.CardTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests in error: 
+  testGetMethods(test.java.TerritoryTest)
+
+Tests run: 26, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.415 s
+[INFO] Finished at: 2018-11-05T03:02:01+01:00
+[INFO] Final Memory: 42M/619M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project risk: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/PayneWheat/risk/450656593/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
