@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "runelite/runelite",
+    "githubId": 57461213,
+    "url": "https://github.com/runelite/runelite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 6328
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450272307,
+      "url": "http://travis-ci.org/runelite/runelite/builds/450272307",
+      "date": "Nov 3, 2018 6:46:17 PM"
+    },
+    "fixerBuild": {
+      "id": 451174675,
+      "url": "http://travis-ci.org/runelite/runelite/builds/451174675",
+      "date": "Nov 6, 2018 3:07:06 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 6, 2018 3:07:31 AM",
+    "reproductionDateEnd": "Nov 6, 2018 3:14:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 289485752,
+      "totalMemory": 552599552
+    },
+    "totalDuration": 411,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          2,
+          0,
+          4,
+          114
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 81,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          81
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/runelite/runelite/450272307/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 23,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 498,
+      "numberDeleted": 219
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/runelite/runelite/450272307/runelite-client",
+    "overallMetrics": {
+      "numberRunning": 155,
+      "numberPassing": 154,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.runelite.client.game.ItemVariationMappingTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.runelite.client.game.ItemVariationMappingTest",
+        "testMethod": "testMappedNames",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5942\u003e but was:\u003c5951\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1442,
+    "numberTestFiles": 90,
+    "numberLibrariesFailingModule": 36,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "runelite/runelite",
+      "branchName": "master",
+      "sha": "4b4c38f7203df0fdbdc37ac4c0fe3d2ff83123a1",
+      "url": "http://github.com/runelite/runelite/commit/4b4c38f7203df0fdbdc37ac4c0fe3d2ff83123a1",
+      "date": "Nov 3, 2018 6:38:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "runelite/runelite",
+      "branchName": "master",
+      "sha": "a84f5cdfe3f50bd1c71f35ad4e566594293cb3ab",
+      "url": "http://github.com/runelite/runelite/commit/a84f5cdfe3f50bd1c71f35ad4e566594293cb3ab",
+      "date": "Nov 6, 2018 3:01:21 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Dgc2002/runelite",
+      "branchName": "slayer-bracelet-notification",
+      "sha": "15ecfaa68b213511468154d6119258440aa089dd",
+      "url": "https://github.com/Dgc2002/runelite/commit/15ecfaa68b213511468154d6119258440aa089dd",
+      "date": "Nov 6, 2018 3:01:21 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "runelite/runelite",
+      "branchName": "master",
+      "sha": "1983abd5c4d52166b2689698f3d6c13d76f0e0a3",
+      "url": "https://github.com/runelite/runelite/commit/1983abd5c4d52166b2689698f3d6c13d76f0e0a3",
+      "date": "Nov 3, 2018 3:02:32 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Dgc2002/runelite",
+      "branchName": "slayer-bracelet-notification",
+      "sha": "15ecfaa68b213511468154d6119258440aa089dd",
+      "url": "https://github.com/Dgc2002/runelite/commit/15ecfaa68b213511468154d6119258440aa089dd",
+      "date": "Nov 6, 2018 3:01:21 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "runelite/runelite",
+      "branchName": "master",
+      "sha": "1983abd5c4d52166b2689698f3d6c13d76f0e0a3",
+      "url": "https://github.com/runelite/runelite/commit/1983abd5c4d52166b2689698f3d6c13d76f0e0a3",
+      "date": "Nov 3, 2018 3:02:32 PM"
+    }
+  },
+  "type": "passing_passing"
+}
