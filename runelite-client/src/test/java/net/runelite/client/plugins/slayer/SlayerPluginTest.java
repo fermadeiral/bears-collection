@@ -461,4 +461,28 @@ public class SlayerPluginTest
 		slayerPlugin.killedOne();
 		assertEquals(30, slayerPlugin.getAmount());
 	}
+
+	@Test
+	public void testBraceletBreakNotification()
+	{
+		ChatMessage chatMessageEvent = new ChatMessage(SERVER, "", BRACLET_EXPEDITIOUS_V3, null);
+
+		when(slayerConfig.showExpeditiousBreakNotification()).thenReturn(true);
+		slayerPlugin.onChatMessage(chatMessageEvent);
+		verify(notifier).notify(BRACELET_EXPEDITIOUS_CRUMBLE_NOTIFY);
+
+		when(slayerConfig.showExpeditiousBreakNotification()).thenReturn(false);
+		slayerPlugin.onChatMessage(chatMessageEvent);
+		verifyNoMoreInteractions(notifier);
+
+		chatMessageEvent = new ChatMessage(SERVER, "", BRACLET_SLAUGHTER_V3, null);
+
+		when(slayerConfig.showSlaughterBreakNotification()).thenReturn(true);
+		slayerPlugin.onChatMessage(chatMessageEvent);
+		verify(notifier).notify(BRACELET_SLAUGHTER_CRUMBLE_NOTIFY);
+
+		when(slayerConfig.showSlaughterBreakNotification()).thenReturn(false);
+		slayerPlugin.onChatMessage(chatMessageEvent);
+		verifyNoMoreInteractions(notifier);
+	}
 }
