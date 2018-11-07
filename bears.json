@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "NaluKit/nalu",
+    "githubId": 143152220,
+    "url": "https://github.com/NaluKit/nalu",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451612314,
+      "url": "http://travis-ci.org/NaluKit/nalu/builds/451612314",
+      "date": "Nov 6, 2018 11:28:21 PM"
+    },
+    "fixerBuild": {
+      "id": 452095721,
+      "url": "http://travis-ci.org/NaluKit/nalu/builds/452095721",
+      "date": "Nov 7, 2018 10:16:05 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 7, 2018 10:16:25 PM",
+    "reproductionDateEnd": "Nov 7, 2018 10:17:59 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 259716968,
+      "totalMemory": 402128896
+    },
+    "totalDuration": 87,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 33,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          32
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/NaluKit/nalu/451612314/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/NaluKit/nalu/451612314/nalu",
+    "overallMetrics": {
+      "numberRunning": 21,
+      "numberPassing": 20,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.nalukit.nalu.client.RouterTest",
+        "numberRunning": 17,
+        "numberPassing": 16,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.nalukit.nalu.client.RouterTest",
+        "testMethod": "testParseHash11",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \"hash \u003e\u003e/MockShell/testRoute03/testRoute04/testRoute05/testParameter01\u003c\u003c --\u003e found routing \u003e\u003e/MockShell/testRoute03/testRoute04/testRoute05\u003c\u003c -\u003e too much parameters! Expected \u003e\u003e0\u003c\u003c - found \u003e\u003e1\u003c\u003c\"      but: was \"hash \u003e\u003e/MockShell/testRoute03/testRoute04/testRoute05/testParameter01\u003c\u003c --\u003e found routing \u003e\u003e/MockShell/testRoute03/testRoute04/testRoute05\u003c\u003c -\u003e too much parameters! Expeted \u003e\u003e0\u003c\u003c - found \u003e\u003e1\u003c\u003c\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 119,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "NaluKit/nalu",
+      "branchName": "master",
+      "sha": "cdfc81f7752fd14c59708f0ff78654921deb753f",
+      "url": "http://github.com/NaluKit/nalu/commit/cdfc81f7752fd14c59708f0ff78654921deb753f",
+      "date": "Nov 6, 2018 11:27:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "NaluKit/nalu",
+      "branchName": "master",
+      "sha": "5a692bad65cefbaabb53b7b5ef5a832b51eb6651",
+      "url": "http://github.com/NaluKit/nalu/commit/5a692bad65cefbaabb53b7b5ef5a832b51eb6651",
+      "date": "Nov 7, 2018 10:14:57 PM"
+    }
+  },
+  "type": "passing_passing"
+}
