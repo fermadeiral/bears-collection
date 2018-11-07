@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "acouvreur/software-architecture-project",
+    "githubId": 149787110,
+    "url": "https://github.com/acouvreur/software-architecture-project",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451918773,
+      "url": "http://travis-ci.org/acouvreur/software-architecture-project/builds/451918773",
+      "date": "Nov 7, 2018 3:43:28 PM"
+    },
+    "fixerBuild": {
+      "id": 451944911,
+      "url": "http://travis-ci.org/acouvreur/software-architecture-project/builds/451944911",
+      "date": "Nov 7, 2018 4:38:25 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 7, 2018 7:54:32 PM",
+    "reproductionDateEnd": "Nov 7, 2018 7:57:15 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 266851296,
+      "totalMemory": 432537600
+    },
+    "totalDuration": 157,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 43,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          40
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          35
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/acouvreur/software-architecture-project/451918773/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 15,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/acouvreur/software-architecture-project/451918773/services/course",
+    "overallMetrics": {
+      "numberRunning": 7,
+      "numberPassing": 6,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.unice.polytech.al.controller.CourseControllerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.unice.polytech.al.controller.CourseControllerTest",
+        "testMethod": "create",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No value at JSON path \"$.statusCourse\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 29,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 102,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "acouvreur/software-architecture-project",
+      "branchName": "master",
+      "sha": "058cca1f80f85caf82b594a9f7f8ba6b7edccdb5",
+      "url": "http://github.com/acouvreur/software-architecture-project/commit/058cca1f80f85caf82b594a9f7f8ba6b7edccdb5",
+      "date": "Nov 7, 2018 3:41:37 PM"
+    },
+    "fixerBuild": {
+      "repoName": "acouvreur/software-architecture-project",
+      "branchName": "master",
+      "sha": "ffc0b59103e2b089d7ab0aaee9aec02ecbae4ca3",
+      "url": "http://github.com/acouvreur/software-architecture-project/commit/ffc0b59103e2b089d7ab0aaee9aec02ecbae4ca3",
+      "date": "Nov 7, 2018 4:36:15 PM"
+    }
+  }
+}
