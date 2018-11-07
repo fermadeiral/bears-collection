@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "AxonFramework/AxonFramework",
+    "githubId": 2899580,
+    "url": "https://github.com/AxonFramework/AxonFramework",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451926440,
+      "url": "http://travis-ci.org/AxonFramework/AxonFramework/builds/451926440",
+      "date": "Nov 7, 2018 4:04:47 PM"
+    },
+    "fixerBuild": {
+      "id": 451937647,
+      "url": "http://travis-ci.org/AxonFramework/AxonFramework/builds/451937647",
+      "date": "Nov 7, 2018 4:28:40 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 7, 2018 5:54:46 PM",
+    "reproductionDateEnd": "Nov 7, 2018 6:06:16 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 245570384,
+      "totalMemory": 482344960
+    },
+    "totalDuration": 683,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 189,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          3,
+          0,
+          0,
+          185
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 156,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          156
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/AxonFramework/AxonFramework/451926440/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/AxonFramework/AxonFramework/451926440/axon-server-connector",
+    "overallMetrics": {
+      "numberRunning": 1344,
+      "numberPassing": 1343,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.axonframework.axonserver.connector.event.axon.ErrorCodeTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.axonframework.axonserver.connector.event.axon.ErrorCodeTest",
+        "testMethod": "testConvertWithoutSource",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 778,
+    "numberTestFiles": 429,
+    "numberLibrariesFailingModule": 100,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "AxonFramework/AxonFramework",
+      "branchName": "axon-4.0.x",
+      "sha": "ecc0087c6e10e8fd8903edf18af612d9ccb70a0d",
+      "url": "http://github.com/AxonFramework/AxonFramework/commit/ecc0087c6e10e8fd8903edf18af612d9ccb70a0d",
+      "date": "Nov 7, 2018 3:49:07 PM"
+    },
+    "fixerBuild": {
+      "repoName": "AxonFramework/AxonFramework",
+      "branchName": "axon-4.0.x",
+      "sha": "b11e59f00b804128759940a7d8b49c04ed30944e",
+      "url": "http://github.com/AxonFramework/AxonFramework/commit/b11e59f00b804128759940a7d8b49c04ed30944e",
+      "date": "Nov 7, 2018 4:20:50 PM"
+    }
+  },
+  "type": "passing_passing"
+}
