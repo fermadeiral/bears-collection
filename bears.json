@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "org-tigris-jsapar/jsapar",
+    "githubId": 102112317,
+    "url": "https://github.com/org-tigris-jsapar/jsapar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451004011,
+      "url": "http://travis-ci.org/org-tigris-jsapar/jsapar/builds/451004011",
+      "date": "Nov 5, 2018 7:31:17 PM"
+    },
+    "fixerBuild": {
+      "id": 451741055,
+      "url": "http://travis-ci.org/org-tigris-jsapar/jsapar/builds/451741055",
+      "date": "Nov 7, 2018 7:38:48 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 7, 2018 7:38:57 AM",
+    "reproductionDateEnd": "Nov 7, 2018 7:40:39 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 214654096,
+      "totalMemory": 396886016
+    },
+    "totalDuration": 98,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 43,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          43
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/org-tigris-jsapar/jsapar/451004011/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/org-tigris-jsapar/jsapar/451004011",
+    "overallMetrics": {
+      "numberRunning": 382,
+      "numberPassing": 381,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jsapar.parse.bean.Bean2CellTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jsapar.parse.bean.Bean2CellTest",
+        "testMethod": "assign_empty",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[Nobody]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 196,
+    "numberTestFiles": 82,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "org-tigris-jsapar/jsapar",
+      "branchName": "master",
+      "sha": "906fc12328517e7dbf8070768f83db893f258674",
+      "url": "http://github.com/org-tigris-jsapar/jsapar/commit/906fc12328517e7dbf8070768f83db893f258674",
+      "date": "Nov 5, 2018 7:27:07 PM"
+    },
+    "fixerBuild": {
+      "repoName": "org-tigris-jsapar/jsapar",
+      "branchName": "master",
+      "sha": "97bde7f2f5051e8a408133c75e38691e96ea7a97",
+      "url": "http://github.com/org-tigris-jsapar/jsapar/commit/97bde7f2f5051e8a408133c75e38691e96ea7a97",
+      "date": "Nov 7, 2018 7:37:00 AM"
+    }
+  },
+  "type": "passing_passing"
+}
