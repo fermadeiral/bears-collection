@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "openmrs/openmrs-module-htmlformentry",
+    "githubId": 2680621,
+    "url": "https://github.com/openmrs/openmrs-module-htmlformentry",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 452596787,
+      "url": "http://travis-ci.org/openmrs/openmrs-module-htmlformentry/builds/452596787",
+      "date": "Nov 8, 2018 10:29:32 PM"
+    },
+    "fixerBuild": {
+      "id": 452623087,
+      "url": "http://travis-ci.org/openmrs/openmrs-module-htmlformentry/builds/452623087",
+      "date": "Nov 8, 2018 11:36:37 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 8, 2018 11:36:57 PM",
+    "reproductionDateEnd": "Nov 8, 2018 11:56:35 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 366771616,
+      "totalMemory": 465567744
+    },
+    "totalDuration": 1172,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 389,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          389
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 359,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          359
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openmrs/openmrs-module-htmlformentry/452596787/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 14,
+      "numberDeleted": 14
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openmrs/openmrs-module-htmlformentry/452596787/api-tests",
+    "overallMetrics": {
+      "numberRunning": 535,
+      "numberPassing": 533,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest",
+        "numberRunning": 61,
+        "numberPassing": 59,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest",
+        "testMethod": "testEditShouldNotClearTimeComponentForm",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cThu Nov 08 23:49:11 CET 2018\u003e but was:\u003cThu Nov 08 00:00:00 CET 2018\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest",
+        "testMethod": "testEditShouldEditDate",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cThu Nov 08 23:48:50 CET 2018\u003e but was:\u003cThu Nov 08 00:00:00 CET 2018\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 197,
+    "numberTestFiles": 69,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openmrs/openmrs-module-htmlformentry",
+      "branchName": "master",
+      "sha": "fe7d4eb6c8ad124f33d96b4aec9b92e7fb01379f",
+      "url": "http://github.com/openmrs/openmrs-module-htmlformentry/commit/fe7d4eb6c8ad124f33d96b4aec9b92e7fb01379f",
+      "date": "Nov 8, 2018 10:21:16 PM"
+    },
+    "fixerBuild": {
+      "repoName": "openmrs/openmrs-module-htmlformentry",
+      "branchName": "master",
+      "sha": "32a82bcb8a331185018ed8cf9efbad31336952bd",
+      "url": "http://github.com/openmrs/openmrs-module-htmlformentry/commit/32a82bcb8a331185018ed8cf9efbad31336952bd",
+      "date": "Nov 8, 2018 11:28:31 PM"
+    }
+  }
+}
