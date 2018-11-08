@@ -1,0 +1,21 @@
+language: java
+
+sudo: false
+
+# http://docs.travis-ci.com/user/caching/#Arbitrary-directories
+cache:
+  directories:
+  - $HOME/.m2
+
+jdk:
+  - oraclejdk11
+  - oraclejdk8
+
+before_script:
+  - cd location-server && ./start-location.sh && cd ..
+
+script:
+  - mvn test -B -Dtestng.runHttpRemoteTests=1 -Dtestng.runS3RemoteTests=1
+
+matrix:
+  fast_finish: true
