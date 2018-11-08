@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "ome/ome-common-java",
+    "githubId": 46136235,
+    "url": "https://github.com/ome/ome-common-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 33
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 452005186,
+      "url": "http://travis-ci.org/ome/ome-common-java/builds/452005186",
+      "date": "Nov 7, 2018 6:36:02 PM"
+    },
+    "fixerBuild": {
+      "id": 452345176,
+      "url": "http://travis-ci.org/ome/ome-common-java/builds/452345176",
+      "date": "Nov 8, 2018 12:51:59 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 8, 2018 1:25:50 PM",
+    "reproductionDateEnd": "Nov 8, 2018 1:28:04 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 266808576,
+      "totalMemory": 401080320
+    },
+    "totalDuration": 129,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 49,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          5,
+          41
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          22
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/ome/ome-common-java/452005186/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 9,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 38,
+      "numberDeleted": 53
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "ome/ome-common-java",
+      "branchName": "master",
+      "sha": "85a4dd311ee16794e7a009b84272ef3b5e4adc55",
+      "url": "http://github.com/ome/ome-common-java/commit/85a4dd311ee16794e7a009b84272ef3b5e4adc55",
+      "date": "Nov 7, 2018 6:34:01 PM"
+    },
+    "fixerBuild": {
+      "repoName": "ome/ome-common-java",
+      "branchName": "master",
+      "sha": "f40fee1e0c74e2b8e59f112974c4c078364bfe9d",
+      "url": "http://github.com/ome/ome-common-java/commit/f40fee1e0c74e2b8e59f112974c4c078364bfe9d",
+      "date": "Nov 8, 2018 12:49:50 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "manics/ome-common-java",
+      "branchName": "s3",
+      "sha": "740a88b6c5030e9e9e46ac2a97d9dd79c25f6fac",
+      "url": "https://github.com/manics/ome-common-java/commit/740a88b6c5030e9e9e46ac2a97d9dd79c25f6fac",
+      "date": "Nov 8, 2018 12:49:50 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "ome/ome-common-java",
+      "branchName": "master",
+      "sha": "94fe420a95f7859839e09e84185bc31107ba0b72",
+      "url": "https://github.com/ome/ome-common-java/commit/94fe420a95f7859839e09e84185bc31107ba0b72",
+      "date": "Oct 29, 2018 9:50:39 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "manics/ome-common-java",
+      "branchName": "s3",
+      "sha": "740a88b6c5030e9e9e46ac2a97d9dd79c25f6fac",
+      "url": "https://github.com/manics/ome-common-java/commit/740a88b6c5030e9e9e46ac2a97d9dd79c25f6fac",
+      "date": "Nov 8, 2018 12:49:50 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "ome/ome-common-java",
+      "branchName": "master",
+      "sha": "94fe420a95f7859839e09e84185bc31107ba0b72",
+      "url": "https://github.com/ome/ome-common-java/commit/94fe420a95f7859839e09e84185bc31107ba0b72",
+      "date": "Oct 29, 2018 9:50:39 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/ome/ome-common-java/452005186",
+    "overallMetrics": {
+      "numberRunning": 2092,
+      "numberPassing": 2091,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
+      "failures": [
+        {
+          "failureName": "java.io.IOException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "loci.common.utests.URLHandleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "loci.common.utests.URLHandleTest",
+        "testMethod": "testSeekBackReadByte",
+        "failureName": "java.io.IOException",
+        "detail": "Resetting to invalid mark",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 50,
+    "numberTestFiles": 53,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
