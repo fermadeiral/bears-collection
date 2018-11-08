@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.user.property;
@@ -59,11 +69,11 @@ public class ContextChange
                 return Response.ok(gson.toJson(json), MediaType.APPLICATION_JSON).build();
 
             Set<Property> all = key.getProperties();
-            Collection<Level> context = ContextParser.parseAndCreate(propertyContext, repository, store, user, null);
+            Collection<CtxLevel> context = ContextParser.parseAndCreate( propertyContext, repository, store, user, null);
             SecurityProfile ep = null;
 
             int score = 0;
-            for (Level l : context)
+            for ( CtxLevel l : context)
                 score += l.getContextScore();
 
             for (Property prop : all)
@@ -125,7 +135,7 @@ public class ContextChange
 
             json.addProperty("success", true);
 
-            Collection<Level> context = ContextParser.parseAndCreate(propertyContext, repository, store, user, null);
+            Collection<CtxLevel> context = ContextParser.parseAndCreate( propertyContext, repository, store, user, null);
 
             String cleanPath = !Utils.isBlank(path) && path.startsWith("/") ? path.substring(1) : path;
             String absPath = Utils.isBlank(cleanPath) ? fileName : cleanPath + "/" + fileName;
@@ -134,7 +144,7 @@ public class ContextChange
             if (null != absoluteFilePath)
             {
                 int score = 0;
-                for (Level l : context)
+                for ( CtxLevel l : context)
                     score += l.getContextScore();
 
                 Set<RepoFile> files = absoluteFilePath.getFiles();

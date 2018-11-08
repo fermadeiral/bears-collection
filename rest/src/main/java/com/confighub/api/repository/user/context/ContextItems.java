@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.user.context;
@@ -10,7 +20,7 @@ package com.confighub.api.repository.user.context;
 import com.confighub.api.repository.user.AUserAccessValidation;
 import com.confighub.core.error.ConfigException;
 import com.confighub.core.repository.Depth;
-import com.confighub.core.repository.Level;
+import com.confighub.core.repository.CtxLevel;
 import com.confighub.core.store.Store;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -47,17 +57,17 @@ public class ContextItems
 
             JsonObject depthData = new JsonObject();
 
-            Map<Depth, Collection<Level>> levels = store.getLevelsByDepth(repository);
+            Map<Depth, Collection<CtxLevel>> levels = store.getLevelsByDepth( repository);
             for (Depth depth : levels.keySet())
             {
                 JsonArray jsonLevels = new JsonArray();
-                for (Level level : levels.get(depth))
+                for ( CtxLevel ctxLevel : levels.get( depth))
                 {
                     JsonObject o = new JsonObject();
-                    o.addProperty("id", level.getId());
-                    o.addProperty("name", level.getName());
-                    if (!Level.LevelType.Standalone.equals(level.getType()))
-                        o.addProperty("type", level.getType().name());
+                    o.addProperty( "id", ctxLevel.getId());
+                    o.addProperty( "name", ctxLevel.getName());
+                    if (!CtxLevel.LevelType.Standalone.equals( ctxLevel.getType()))
+                        o.addProperty( "type", ctxLevel.getType().name());
 
                     jsonLevels.add(o);
                 }

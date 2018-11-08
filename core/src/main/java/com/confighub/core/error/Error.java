@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.core.error;
@@ -140,6 +150,9 @@ public abstract class Error
         TOKEN_FREE_PULL_ACCESS_DENIED("This repository does not allow API Pull without specifying a token"),
         TOKEN_FREE_PUSH_ACCESS_DENIED("This repository does not allow API Push without specifying a token"),
         TAG_NOT_FOUND("Specified repository tag not found."),
+
+        // LDAP
+        LOCAL_ACCOUNTS_DISABLED("Local account creation is disabled.  User access is managed via LDAP/Active directory."),
 
         // Enterprise
         EXPIRED("ConfigHub Licence has either expired, or you have reached the license allowed property limit.  " +

@@ -1,14 +1,24 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.core.store.diff;
 
 import com.confighub.core.repository.Depth;
-import com.confighub.core.repository.Level;
+import com.confighub.core.repository.CtxLevel;
 import com.confighub.core.store.APersisted;
 import com.confighub.core.utils.Utils;
 import com.google.gson.JsonArray;
@@ -43,28 +53,28 @@ public class LevelDiffTracker
     @PostLoad
     public void loadOldData(APersisted obj)
     {
-        if (!isTracked() || !(obj instanceof Level))
+        if (!isTracked() || !(obj instanceof CtxLevel ))
             return;
 
         OriginalLevel o = new OriginalLevel();
-        Level level = (Level) obj;
+        CtxLevel ctxLevel = (CtxLevel) obj;
 
-        o.name = level.getName();
-        o.levelType = level.getType();
-        o.depth = level.getDepth();
+        o.name = ctxLevel.getName();
+        o.levelType = ctxLevel.getType();
+        o.depth = ctxLevel.getDepth();
 
-        if (level.isGroup())
+        if ( ctxLevel.isGroup())
         {
-            Set<Level> kids = level.getMembers();
+            Set<CtxLevel> kids = ctxLevel.getMembers();
             if (null != kids && kids.size() > 0)
             {
                 o.assigned = new HashSet<>();
                 kids.forEach(k -> o.assigned.add(k.getName()));
             }
         }
-        else if (level.isMember())
+        else if ( ctxLevel.isMember())
         {
-            Set<Level> parents = level.getGroups();
+            Set<CtxLevel> parents = ctxLevel.getGroups();
             if (null != parents && parents.size() > 0)
             {
                 o.assigned = new HashSet<>();
@@ -80,26 +90,26 @@ public class LevelDiffTracker
     public void preUpdate(APersisted obj)
     {
         OriginalLevel o = (OriginalLevel)getIfRecorded(obj);
-        if (null == o || !(obj instanceof Level))
+        if (null == o || !(obj instanceof CtxLevel ))
             return;
 
-        Level level = (Level) obj;
+        CtxLevel ctxLevel = (CtxLevel) obj;
 
         JsonObject json = new JsonObject();
 
-        if (!Utils.equal(level.getName(), o.name))
+        if (!Utils.equal( ctxLevel.getName(), o.name))
             json.addProperty("name", o.name);
 
-        if (level.getDepth() != o.depth)
+        if ( ctxLevel.getDepth() != o.depth)
             json.addProperty("o.depth", o.depth.getPlacement());
 
-        if (level.getType() != o.levelType)
+        if ( ctxLevel.getType() != o.levelType)
         {
             json.addProperty("type", o.levelType.name());
         }
 
         boolean hadAssignments = null != o.assigned && o.assigned.size() > 0;
-        boolean hasAssignments = null != level.getMembers() && level.getMembers().size() > 0;
+        boolean hasAssignments = null != ctxLevel.getMembers() && ctxLevel.getMembers().size() > 0;
 
         // did not have assignments, and still does not
         // ---> do nothing
@@ -125,7 +135,7 @@ public class LevelDiffTracker
         else
         {
             Set<String> current = new HashSet<>();
-            level.getMembers().forEach(k -> current.add(k.getName()));
+            ctxLevel.getMembers().forEach( k -> current.add( k.getName()));
             current.removeAll(o.assigned);
 
             // different assignments
@@ -142,7 +152,7 @@ public class LevelDiffTracker
                 o.assigned.forEach(ln -> clone.add(new String(ln)));
 
                 current.clear();
-                level.getMembers().forEach(k -> current.add(k.getName()));
+                ctxLevel.getMembers().forEach( k -> current.add( k.getName()));
 
                 clone.removeAll(current);
                 if (clone.size() > 0) {
@@ -156,14 +166,14 @@ public class LevelDiffTracker
             }
         }
 
-        level.diffJson = json.toString();
+        ctxLevel.diffJson = json.toString();
     }
 
     private static class OriginalLevel
             extends OriginalAPersistent
     {
         String name;
-        Level.LevelType levelType;
+        CtxLevel.LevelType levelType;
         Depth depth;
         Set<String> assigned;
 

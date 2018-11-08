@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.user.editor;
@@ -86,23 +96,23 @@ public class CompareResolver
             if (null != bDateObj)
                 bRepo = store.getRepository(repository.getId(), bDateObj);
 
-            Collection<Level> aContextLevels = ContextParser.parseAndCreate(aContextString,
-                                                                            aRepo,
-                                                                            store,
-                                                                            user,
-                                                                            aDateObj,
-                                                                            true);
-            Collection<Level> bContextLevels = ContextParser.parseAndCreate(bContextString,
-                                                                            bRepo,
-                                                                            store,
-                                                                            user,
-                                                                            bDateObj,
-                                                                            true);
+            Collection<CtxLevel> aContextCtxLevels = ContextParser.parseAndCreate( aContextString,
+                                                                                   aRepo,
+                                                                                   store,
+                                                                                   user,
+                                                                                   aDateObj,
+                                                                                   true);
+            Collection<CtxLevel> bContextCtxLevels = ContextParser.parseAndCreate( bContextString,
+                                                                                   bRepo,
+                                                                                   store,
+                                                                                   user,
+                                                                                   bDateObj,
+                                                                                   true);
 
             AccessRuleWrapper accessRuleWrapper = repository.getRulesWrapper(user);
 
-            Context aContext = new Context(store, aRepo, aContextLevels, aDateObj, allKeys);
-            Context bContext = new Context(store, bRepo, bContextLevels, bDateObj, allKeys);
+            Context aContext = new Context( store, aRepo, aContextCtxLevels, aDateObj, allKeys);
+            Context bContext = new Context( store, bRepo, bContextCtxLevels, bDateObj, allKeys);
 
             Map<PropertyKey, Collection<Property>> aResolved;
             Map<PropertyKey, Collection<Property>> bResolved;

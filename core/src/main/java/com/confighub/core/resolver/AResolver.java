@@ -1,14 +1,24 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.core.resolver;
 
 import com.confighub.core.repository.Depth;
-import com.confighub.core.repository.Level;
+import com.confighub.core.repository.CtxLevel;
 import com.confighub.core.repository.LevelCtx;
 import com.confighub.core.store.Store;
 import org.apache.logging.log4j.LogManager;
@@ -29,7 +39,7 @@ public abstract class AResolver
     private static final Logger log = LogManager.getLogger(AResolver.class);
 
     public static boolean containsAny(final Map<String, LevelCtx> propertyContext,
-                                      final Map<Depth, Collection<Level>> requestContext)
+                                      final Map<Depth, Collection<CtxLevel>> requestContext)
     {
         if (null == propertyContext || null == requestContext)
             return false;
@@ -39,7 +49,7 @@ public abstract class AResolver
             LevelCtx lc = propertyContext.get(String.valueOf(depth.getPlacement()));
             if (null == lc) continue;
 
-            for (Level l : requestContext.get(depth))
+            for ( CtxLevel l : requestContext.get( depth))
                 if (l.getName().equalsIgnoreCase(lc.name))
                     return true;
         }
@@ -48,7 +58,7 @@ public abstract class AResolver
     }
 
     public static boolean containsAll(final Map<String, LevelCtx> propertyContext,
-                                      final Map<Depth, Collection<Level>> requestContext)
+                                      final Map<Depth, Collection<CtxLevel>> requestContext)
     {
         if (null == propertyContext && null == requestContext)
             return true;
@@ -62,7 +72,7 @@ public abstract class AResolver
             if (null == lc)
                 return false;
 
-            for (Level l : requestContext.get(depth))
+            for ( CtxLevel l : requestContext.get( depth))
                 if (!l.getName().equalsIgnoreCase(lc.name))
                     return false;
         }
@@ -75,7 +85,7 @@ public abstract class AResolver
      * Use by AccessRule
      */
     public static boolean isContextualMatch(final Map<String, LevelCtx> propertyContext,
-                                            final Map<Depth, Collection<Level>> requestContext)
+                                            final Map<Depth, Collection<CtxLevel>> requestContext)
     {
         if (null == propertyContext || null == requestContext)
             return true;
@@ -94,15 +104,15 @@ public abstract class AResolver
         return true;
     }
 
-    private static boolean containsLevelAtDepth(final Map<Depth, Collection<Level>> requestContext,
+    private static boolean containsLevelAtDepth(final Map<Depth, Collection<CtxLevel>> requestContext,
                                                 Depth d,
                                                 String levelName)
     {
-        Collection<Level> dls = requestContext.get(d);
+        Collection<CtxLevel> dls = requestContext.get( d);
         if (null == dls || dls.size() == 0)
             return false;
 
-        for (Level l : dls)
+        for ( CtxLevel l : dls)
             if (l.getName().equalsIgnoreCase(levelName))
                 return true;
 

@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.client.v1;
@@ -146,6 +156,13 @@ public class APIInfo
         }
     }
 
+    /**
+     * Get information on all repositories.
+     *
+     * @param version
+     * @param pretty
+     * @return
+     */
     @GET
     @Path("/all")
     public Response get(@HeaderParam("Client-Version") String version,
@@ -210,7 +227,13 @@ public class APIInfo
         }
     }
 
-
+    /**
+     * Get currently running version information.
+     *
+     * @param version
+     * @param pretty
+     * @return
+     */
     @GET
     @Path("/system")
     public Response getSystemInfo(@HeaderParam("Client-Version") String version,
@@ -272,7 +295,7 @@ public class APIInfo
 
         if (includeCIs || !Utils.isBlank(contextLabels))
         {
-            Map<Depth, Collection<Level>> levels;
+            Map<Depth, Collection<CtxLevel>> levels;
 
             if (null == this.date)
                 levels = store.getLevelsByDepth(repository);
@@ -297,8 +320,8 @@ public class APIInfo
             {
                 JsonArray jsonDepthLevels = new JsonArray();
 
-                for (Level level : levels.get(depth))
-                    jsonDepthLevels.add(level.getName());
+                for ( CtxLevel ctxLevel : levels.get( depth))
+                    jsonDepthLevels.add( ctxLevel.getName());
 
                 jsonDepth.add(repository.getLabel(depth), jsonDepthLevels);
             }

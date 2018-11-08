@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.user.context;
@@ -11,7 +21,7 @@ import com.confighub.api.repository.user.AUserAccessValidation;
 import com.confighub.core.error.ConfigException;
 import com.confighub.core.error.Error;
 import com.confighub.core.repository.Depth;
-import com.confighub.core.repository.Level;
+import com.confighub.core.repository.CtxLevel;
 import com.confighub.core.store.Store;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -49,7 +59,7 @@ public class GetContextItem
             if (null == depth)
                 throw new ConfigException(Error.Code.MISSING_PARAMS);
 
-            Level ci = store.getLevel(contextItemName, depth, repository, null);
+            CtxLevel ci = store.getLevel( contextItemName, depth, repository, null);
             if (null == ci)
             {
                 json.addProperty("message", "Specified context item cannot be found.  Please try again.");
@@ -77,23 +87,23 @@ public class GetContextItem
         }
     }
 
-    public static JsonObject ciToJson(Level level, String label, boolean isContextClustersEnabled)
+    public static JsonObject ciToJson( CtxLevel ctxLevel, String label, boolean isContextClustersEnabled)
     {
         JsonObject jsonCi = new JsonObject();
 
         jsonCi.addProperty("contextClustersEnabled", isContextClustersEnabled);
-        jsonCi.addProperty("id", level.getId());
-        jsonCi.addProperty("count", null == level.getProperties() ? 0 : level.getProperties().size());
-        jsonCi.addProperty("name", level.getName());
-        jsonCi.addProperty("placement", level.getContextPlacement());
+        jsonCi.addProperty( "id", ctxLevel.getId());
+        jsonCi.addProperty("count", null == ctxLevel.getProperties() ? 0 : ctxLevel.getProperties().size());
+        jsonCi.addProperty( "name", ctxLevel.getName());
+        jsonCi.addProperty( "placement", ctxLevel.getContextPlacement());
         jsonCi.addProperty("depthLabel", label);
 
-        jsonCi.addProperty("type", level.getType().name());
+        jsonCi.addProperty( "type", ctxLevel.getType().name());
 
         JsonArray assignments = new JsonArray();
-        if (null != level.getGroups())
+        if ( null != ctxLevel.getGroups())
         {
-            level.getGroups().forEach(p -> {
+            ctxLevel.getGroups().forEach( p -> {
                 JsonObject parent = new JsonObject();
 
                 parent.addProperty("id", p.getId());
@@ -105,9 +115,9 @@ public class GetContextItem
             });
         }
 
-        if (null != level.getMembers())
+        if ( null != ctxLevel.getMembers())
         {
-            level.getMembers().forEach(c -> {
+            ctxLevel.getMembers().forEach( c -> {
                 JsonObject child = new JsonObject();
 
                 child.addProperty("id", c.getId());

@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.repository.admin;
@@ -19,41 +29,50 @@ import org.apache.logging.log4j.Logger;
 
 import javax.ws.rs.core.Response;
 
+
 public abstract class AAdminAccessValidation
 {
-    private static final Logger log = LogManager.getLogger(AAdminAccessValidation.class);
+    private static final Logger log = LogManager.getLogger( AAdminAccessValidation.class );
+
     protected UserAccount user;
+
     protected Repository repository;
 
-    protected int validate(String account,
-                           String repositoryName,
-                           String token,
-                           Store store)
+
+    protected int validate( final String account,
+                            final String repositoryName,
+                            final String token,
+                            final Store store )
     {
-        return validate(account, repositoryName, token, store, false);
+        return validate( account, repositoryName, token, store, false );
     }
 
-    protected int validateWrite(String account,
-                                String repositoryName,
-                                String token,
-                                Store store,
-                                boolean enableTracking)
+
+    protected int validateWrite( final String account,
+                                 final String repositoryName,
+                                 final String token,
+                                 final Store store,
+                                 final boolean enableTracking )
     {
-        // ToDo - should this be in write
-        if (enableTracking) ADiffTracker.track();
+        if ( enableTracking )
+        {
+            ADiffTracker.track();
+        }
 
-        int status = validate(account, repositoryName, token, store, enableTracking);
+        int status = validate( account, repositoryName, token, store, enableTracking );
 
-        if (0 != status)
+        if ( 0 != status )
+        {
             return status;
+        }
 
-        if (null == this.user)
+        if ( null == this.user )
         {
             // Not authorized - 401
             return Response.Status.UNAUTHORIZED.getStatusCode();
         }
 
-        if (!this.repository.hasWriteAccess(this.user) || !this.repository.isAdminOrOwner(this.user))
+        if ( !this.repository.hasWriteAccess( this.user ) || !this.repository.isAdminOrOwner( this.user ) )
         {
             // Forbidden - 403
             return Response.Status.FORBIDDEN.getStatusCode();
@@ -62,13 +81,14 @@ public abstract class AAdminAccessValidation
         return 0;
     }
 
-    protected int validate(String account,
-                           String repositoryName,
-                           String token,
-                           Store store,
-                           boolean enableTracking)
+
+    protected int validate( final String account,
+                            final String repositoryName,
+                            final String token,
+                            final Store store,
+                            final boolean enableTracking )
     {
-        if (Utils.anyBlank(account, repositoryName))
+        if ( Utils.anyBlank( account, repositoryName ) )
         {
             // Bad request - 400
             return Response.Status.BAD_REQUEST.getStatusCode();
@@ -76,36 +96,35 @@ public abstract class AAdminAccessValidation
 
         try
         {
-            this.repository = store.getRepository(account, repositoryName);
-            if (null == this.repository)
+            this.repository = store.getRepository( account, repositoryName );
+            if ( null == this.repository )
             {
                 return Response.Status.NOT_FOUND.getStatusCode();
             }
 
-            this.user = TokenState.getUser(token, store);
+            this.user = TokenState.getUser( token, store );
 
-            if (!repository.isDemo())
+            if ( !repository.isDemo() )
             {
 
-                if (null == this.user)
+                if ( null == this.user )
                 {
                     // Not authorized - 401
                     return Response.Status.UNAUTHORIZED.getStatusCode();
                 }
 
-                if (!this.repository.isAdminOrOwner(this.user))
+                if ( !this.repository.isAdminOrOwner( this.user ) )
                 {
                     // Forbidden - 403
                     return Response.Status.FORBIDDEN.getStatusCode();
                 }
             }
         }
-        catch (ConfigException e)
+        catch ( final ConfigException e )
         {
-            log.error(e.getMessage());
+            log.error( e.getMessage() );
             e.printStackTrace();
 
-            // Server error - 500
             return Response.Status.INTERNAL_SERVER_ERROR.getStatusCode();
         }
 

@@ -1,8 +1,18 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.core.utils;
@@ -10,7 +20,7 @@ package com.confighub.core.utils;
 import com.confighub.core.error.ConfigException;
 import com.confighub.core.error.Error;
 import com.confighub.core.repository.Depth;
-import com.confighub.core.repository.Level;
+import com.confighub.core.repository.CtxLevel;
 import com.confighub.core.repository.Repository;
 import com.confighub.core.store.Store;
 import com.confighub.core.user.UserAccount;
@@ -26,14 +36,14 @@ public class ContextParser
 {
     private static final Logger log = LogManager.getLogger(ContextParser.class);
 
-    public static Set<Level> parseAndCreateViaApi(String ctx,
-                                                  final Repository repository,
-                                                  final Store store,
-                                                  final String appIdentifier,
-                                                  final String changeComment)
+    public static Set<CtxLevel> parseAndCreateViaApi( String ctx,
+                                                      final Repository repository,
+                                                      final Store store,
+                                                      final String appIdentifier,
+                                                      final String changeComment)
             throws ConfigException
     {
-        Set<Level> context = new HashSet<>();
+        Set<CtxLevel> context = new HashSet<>();
 
         if (Utils.anyNull(ctx, repository, store) || Utils.isBlank(ctx))
             return context;
@@ -62,11 +72,11 @@ public class ContextParser
                 ci = ci.trim();
                 if ("*".equals(ci)) continue;
 
-                Level level = store.getLevel(ci, depth, repository, null);
-                if (null == level)
-                    level = store.createLevelViaApi(ci, depth, repository, appIdentifier, changeComment);
+                CtxLevel ctxLevel = store.getLevel( ci, depth, repository, null);
+                if ( null == ctxLevel )
+                    ctxLevel = store.createLevelViaApi( ci, depth, repository, appIdentifier, changeComment);
 
-                context.add(level);
+                context.add( ctxLevel );
             }
         }
         catch (ConfigException e)
@@ -82,7 +92,7 @@ public class ContextParser
     }
 
     public static String getContextForExport(final EnumSet<Depth> depths,
-                                             final Map<Depth, Level> contextMap)
+                                             final Map<Depth, CtxLevel> contextMap)
         throws ConfigException
     {
         try
@@ -90,7 +100,7 @@ public class ContextParser
             List<String> labels = new ArrayList<>();
             for (Depth depth : depths)
             {
-                Level l = contextMap.get(depth);
+                CtxLevel l = contextMap.get( depth);
                 labels.add(null == l ? "*" : l.getName());
             }
 
@@ -106,24 +116,24 @@ public class ContextParser
         }
     }
 
-    public static Collection<Level> parseAndCreate(String ctx,
-                                                   final Repository repository,
-                                                   final Store store,
-                                                   final UserAccount user,
-                                                   final Date date)
+    public static Collection<CtxLevel> parseAndCreate( String ctx,
+                                                       final Repository repository,
+                                                       final Store store,
+                                                       final UserAccount user,
+                                                       final Date date)
     {
         return parseAndCreate(ctx, repository, store, user, date, false);
     }
 
-    public static Collection<Level> parseAndCreate(String ctx,
-                                                   final Repository repository,
-                                                   final Store store,
-                                                   final UserAccount user,
-                                                   final Date date,
-                                                   final boolean ignoreNonExisting)
+    public static Collection<CtxLevel> parseAndCreate( String ctx,
+                                                       final Repository repository,
+                                                       final Store store,
+                                                       final UserAccount user,
+                                                       final Date date,
+                                                       final boolean ignoreNonExisting)
             throws ConfigException
     {
-        Collection<Level> context = new HashSet<>();
+        Collection<CtxLevel> context = new HashSet<>();
 
         if (Utils.anyNull(ctx, repository, store) || Utils.isBlank(ctx))
             return context;
@@ -142,12 +152,12 @@ public class ContextParser
                 String lNames[] = pair[1].split(",");
                 for (String lName : lNames)
                 {
-                    Level level = store.getLevel(lName.trim(), depth, repository, date);
-                    if (null == level && !ignoreNonExisting)
-                        level = store.createLevel(lName.trim(), depth, user, repository);
+                    CtxLevel ctxLevel = store.getLevel( lName.trim(), depth, repository, date);
+                    if ( null == ctxLevel && !ignoreNonExisting)
+                        ctxLevel = store.createLevel( lName.trim(), depth, user, repository);
 
-                    if (null != level)
-                        context.add(level);
+                    if ( null != ctxLevel )
+                        context.add( ctxLevel );
                 }
             }
         }
@@ -163,13 +173,13 @@ public class ContextParser
         return context;
     }
 
-    public static Collection<Level> contextFromApi(String ctx,
-                                                   final Repository repository,
-                                                   final Store store,
-                                                   final Date date)
+    public static Collection<CtxLevel> contextFromApi( String ctx,
+                                                       final Repository repository,
+                                                       final Store store,
+                                                       final Date date)
             throws ConfigException
     {
-        Collection<Level> context = new HashSet<>();
+        Collection<CtxLevel> context = new HashSet<>();
 
         if (Utils.anyNull(repository, store))
             return context;
@@ -187,11 +197,11 @@ public class ContextParser
             int i = 0;
             for (Depth depth : depths)
             {
-                Level level = store.getLevel(ciNames[i].trim(), depth, repository, date);
-                if (null == level)
-                    level = store.createNonPersistedLevel(ciNames[i].trim(), depth, repository);
+                CtxLevel ctxLevel = store.getLevel( ciNames[i].trim(), depth, repository, date);
+                if ( null == ctxLevel )
+                    ctxLevel = store.createNonPersistedLevel( ciNames[i].trim(), depth, repository);
 
-                context.add(level);
+                context.add( ctxLevel );
                 i++;
             }
         }

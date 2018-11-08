@@ -1,14 +1,27 @@
 /*
- * Copyright (c) 2016 ConfigHub, LLC to present - All rights reserved.
+ * This file is part of ConfigHub.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
+ * ConfigHub is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ConfigHub is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ConfigHub.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package com.confighub.api.server;
 
 import com.confighub.api.util.ServiceConfiguration;
+import com.confighub.core.auth.Auth;
 import com.confighub.core.store.Store;
+import com.confighub.core.system.SystemConfig;
+import com.confighub.core.system.conf.LdapConfig;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.apache.logging.log4j.LogManager;
@@ -42,6 +55,22 @@ public class Maintenance
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent)
     {
+        // Initialize LDAP
+        {
+            Store store = new Store();
+            try {
+                final LdapConfig ldap = LdapConfig.build(store.getSystemConfig(SystemConfig.ConfigGroup.LDAP));
+
+                if (ldap.isLdapEnabled())
+                    Auth.updateLdap(ldap);
+            }
+            finally
+            {
+                store.close();
+            }
+        }
+
+
         // Database connection keep-alive.
         maintenanceTimer.schedule(new TimerTask()
         {
