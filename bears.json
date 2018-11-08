@@ -1,0 +1,276 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "ConfigHubPub/ConfigHubPlatform",
+    "githubId": 78246519,
+    "url": "https://github.com/ConfigHubPub/ConfigHubPlatform",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 378512558,
+      "url": "http://travis-ci.org/ConfigHubPub/ConfigHubPlatform/builds/378512558",
+      "date": "May 14, 2018 2:16:55 AM"
+    },
+    "fixerBuild": {
+      "id": 452211991,
+      "url": "http://travis-ci.org/ConfigHubPub/ConfigHubPlatform/builds/452211991",
+      "date": "Nov 8, 2018 4:53:47 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 8, 2018 4:53:57 AM",
+    "reproductionDateEnd": "Nov 8, 2018 4:56:32 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 334185216,
+      "totalMemory": 411566080
+    },
+    "totalDuration": 149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 52,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          52
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/ConfigHubPub/ConfigHubPlatform/378512558/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 204,
+      "numberDeleted": 16
+    },
+    "lines": {
+      "numberAdded": 9791,
+      "numberDeleted": 7979
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/ConfigHubPub/ConfigHubPlatform/378512558/rest",
+    "overallMetrics": {
+      "numberRunning": 14,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 14,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "isError": true,
+          "occurrences": 13
+        },
+        {
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.confighub.api.repository.RepositorySetupTest",
+        "numberRunning": 4,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.confighub.api.properties.KVOpsTest",
+        "numberRunning": 4,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.confighub.api.tokens.TokenTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.confighub.api.audit.AuditPullTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.confighub.api.files.FileManagementTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.confighub.api.repository.RepositorySetupTest",
+        "testMethod": "duplicateRepoName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.files.FileManagementTest",
+        "testMethod": "sunnyDay",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.repository.RepositorySetupTest",
+        "testMethod": "duplicateRepoName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.repository.RepositorySetupTest",
+        "testMethod": "privateRepoDefaultSettings",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.properties.KVOpsTest",
+        "testMethod": "vdtSecureTest",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.properties.KVOpsTest",
+        "testMethod": "vdtNonSecureTest",
+        "failureName": "java.lang.ExceptionInInitializerError",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.audit.AuditPullTest",
+        "testMethod": "pullByTagTest",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.properties.KVOpsTest",
+        "testMethod": "vdtSecureTest",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.audit.AuditPullTest",
+        "testMethod": "pullByTagTest",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.tokens.TokenTest",
+        "testMethod": "userTokenSetup",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.properties.KVOpsTest",
+        "testMethod": "vdtNonSecureTest",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.repository.RepositorySetupTest",
+        "testMethod": "privateRepoDefaultSettings",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.tokens.TokenTest",
+        "testMethod": "userTokenSetup",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      },
+      {
+        "testClass": "com.confighub.api.files.FileManagementTest",
+        "testMethod": "sunnyDay",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.confighub.core.store.Store",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 220,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "ConfigHubPub/ConfigHubPlatform",
+      "branchName": "v1.8",
+      "sha": "43f45d0163e6cb42b479b3a70f08347213d96df6",
+      "url": "http://github.com/ConfigHubPub/ConfigHubPlatform/commit/43f45d0163e6cb42b479b3a70f08347213d96df6"
+    },
+    "fixerBuild": {
+      "repoName": "ConfigHubPub/ConfigHubPlatform",
+      "branchName": "v1.8",
+      "sha": "fb7763c1fa67e86f4bef0094c53acf02f30703ef",
+      "url": "http://github.com/ConfigHubPub/ConfigHubPlatform/commit/fb7763c1fa67e86f4bef0094c53acf02f30703ef"
+    }
+  }
+}
