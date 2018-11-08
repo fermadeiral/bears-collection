@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "awslabs/amazon-kinesis-client",
+    "githubId": 14212940,
+    "url": "https://github.com/awslabs/amazon-kinesis-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446289265,
+      "url": "http://travis-ci.org/awslabs/amazon-kinesis-client/builds/446289265",
+      "date": "Oct 25, 2018 8:39:04 PM"
+    },
+    "fixerBuild": {
+      "id": 452166805,
+      "url": "http://travis-ci.org/awslabs/amazon-kinesis-client/builds/452166805",
+      "date": "Nov 8, 2018 1:45:40 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 8, 2018 1:46:01 AM",
+    "reproductionDateEnd": "Nov 8, 2018 1:48:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 305571032,
+      "totalMemory": 401080320
+    },
+    "totalDuration": 159,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 60,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          60
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          24
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/awslabs/amazon-kinesis-client/446289265/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/awslabs/amazon-kinesis-client/446289265/amazon-kinesis-client",
+    "overallMetrics": {
+      "numberRunning": 229,
+      "numberPassing": 228,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "software.amazon.kinesis.retrieval.polling.PrefetchRecordsPublisherTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 2
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "software.amazon.kinesis.retrieval.polling.PrefetchRecordsPublisherTest",
+        "testMethod": "testNoDeadlockOnFullQueue",
+        "failureName": "java.lang.Exception",
+        "detail": "test timed out after 1000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 186,
+    "numberTestFiles": 68,
+    "numberLibrariesFailingModule": 54,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "awslabs/amazon-kinesis-client",
+      "branchName": "master",
+      "sha": "b83a32b49257060db9d549cc46d3b410152f2715",
+      "url": "http://github.com/awslabs/amazon-kinesis-client/commit/b83a32b49257060db9d549cc46d3b410152f2715",
+      "date": "Oct 25, 2018 7:40:35 PM"
+    },
+    "fixerBuild": {
+      "repoName": "awslabs/amazon-kinesis-client",
+      "branchName": "master",
+      "sha": "f52f2559edd2ccd86f819be45ad650dbeb246540",
+      "url": "http://github.com/awslabs/amazon-kinesis-client/commit/f52f2559edd2ccd86f819be45ad650dbeb246540",
+      "date": "Nov 8, 2018 1:33:49 AM"
+    }
+  }
+}
