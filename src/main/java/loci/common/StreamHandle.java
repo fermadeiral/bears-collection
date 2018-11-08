@@ -185,8 +185,10 @@ public abstract class StreamHandle implements IRandomAccess {
     fp = pos;
 
     if (diff < 0) {
+      // resetStream sets the fp to 0
       resetStream();
-      diff = fp;
+      diff = pos;
+      fp = pos;
     }
     int skipped = stream.skipBytes((int) diff);
     while (skipped < diff) {
@@ -194,6 +196,7 @@ public abstract class StreamHandle implements IRandomAccess {
       if (n == 0) break;
       skipped += n;
     }
+    markManager();
   }
 
   /* @see IRandomAccess.write(ByteBuffer) */
@@ -337,9 +340,15 @@ public abstract class StreamHandle implements IRandomAccess {
   /* @see java.io.DataInput#skipBytes(int) */
   @Override
   public int skipBytes(int n) throws IOException {
-    int skipped = 0;
+    return (int) skipBytes((long) n);
+  }
+
+  /* @see #skipBytes(int) */
+  @Override
+  public long skipBytes(long n) throws IOException {
+    long skipped = 0;
     try {
-      for (int i=0; i<n; i++) {
+      for (long i=0; i<n; i++) {
         if (readUnsignedByte() != -1) skipped++;
         markManager();
       }
