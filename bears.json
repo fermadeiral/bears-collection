@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "koldovsky/orlp-server",
+    "githubId": 95656750,
+    "url": "https://github.com/koldovsky/orlp-server",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450474623,
+      "url": "http://travis-ci.org/koldovsky/orlp-server/builds/450474623",
+      "date": "Nov 4, 2018 2:11:48 PM"
+    },
+    "fixerBuild": {
+      "id": 452795825,
+      "url": "http://travis-ci.org/koldovsky/orlp-server/builds/452795825",
+      "date": "Nov 9, 2018 11:00:37 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 9, 2018 11:00:50 AM",
+    "reproductionDateEnd": "Nov 9, 2018 11:06:34 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 307808040,
+      "totalMemory": 423624704
+    },
+    "totalDuration": 339,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 158,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          156
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 55,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          55
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/koldovsky/orlp-server/450474623/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 30,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/koldovsky/orlp-server/450474623",
+    "overallMetrics": {
+      "numberRunning": 343,
+      "numberPassing": 342,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.softserve.academy.spaced.repetition.controller.SearchControllerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.softserve.academy.spaced.repetition.controller.SearchControllerTest",
+        "testMethod": "getResultsFromSearch",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No value at JSON path \"$.category.[0].name\", exception: Expected to find an object with property [\u0027category\u0027] in path $ but found \u0027net.minidev.json.JSONArray\u0027. This is not a json object according to the JsonProvider: \u0027com.jayway.jsonpath.spi.json.JsonSmartJsonProvider\u0027.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 221,
+    "numberTestFiles": 49,
+    "numberLibrariesFailingModule": 123,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "koldovsky/orlp-server",
+      "branchName": "develop",
+      "sha": "46238d44fd7cfc83127d4a820ff3e408fc602739",
+      "url": "http://github.com/koldovsky/orlp-server/commit/46238d44fd7cfc83127d4a820ff3e408fc602739",
+      "date": "Nov 4, 2018 2:07:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "koldovsky/orlp-server",
+      "branchName": "develop",
+      "sha": "4dc6de3df09cb97e3f94a27b53e63fb89a1f2f01",
+      "url": "http://github.com/koldovsky/orlp-server/commit/4dc6de3df09cb97e3f94a27b53e63fb89a1f2f01",
+      "date": "Nov 9, 2018 10:56:10 AM"
+    }
+  },
+  "type": "passing_passing"
+}
