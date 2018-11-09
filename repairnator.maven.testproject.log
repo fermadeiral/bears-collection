@@ -23,7 +23,7 @@
 [INFO] Compiling 221 source files to /root/workspace/koldovsky/orlp-server/450474623/target/classes
 [WARNING] /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/service/impl/UserServiceImpl.java: /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/service/impl/UserServiceImpl.java uses or overrides a deprecated API.
 [WARNING] /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/service/impl/UserServiceImpl.java: Recompile with -Xlint:deprecation for details.
-[WARNING] /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/security/utils/FacebookAuthUtil.java: /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/security/utils/FacebookAuthUtil.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/security/utils/FacebookAuthUtil.java: Some input files use unchecked or unsafe operations.
 [WARNING] /root/workspace/koldovsky/orlp-server/450474623/src/main/java/com/softserve/academy/spaced/repetition/security/utils/FacebookAuthUtil.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Spaced.Repetition ---
@@ -38,101 +38,87 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ Spaced.Repetition ---
 [INFO] Surefire report directory: /root/workspace/koldovsky/orlp-server/450474623/target/surefire-reports
-[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
-[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 4.2 KB/sec)
-[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
-[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 11.6 KB/sec)
-[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
-[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 210.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.softserve.academy.spaced.repetition.controller.MailControllerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.861 sec - in com.softserve.academy.spaced.repetition.controller.MailControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.578 sec - in com.softserve.academy.spaced.repetition.controller.MailControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CourseCommentControllerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.867 sec - in com.softserve.academy.spaced.repetition.controller.CourseCommentControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.454 sec - in com.softserve.academy.spaced.repetition.controller.CourseCommentControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CourseRatingControllerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec - in com.softserve.academy.spaced.repetition.controller.CourseRatingControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.425 sec - in com.softserve.academy.spaced.repetition.controller.CourseRatingControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CardControllerTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 sec - in com.softserve.academy.spaced.repetition.controller.CardControllerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.769 sec - in com.softserve.academy.spaced.repetition.controller.CardControllerTest
 Running com.softserve.academy.spaced.repetition.controller.AuditControllerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in com.softserve.academy.spaced.repetition.controller.AuditControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec - in com.softserve.academy.spaced.repetition.controller.AuditControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CardsFileControllerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in com.softserve.academy.spaced.repetition.controller.CardsFileControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in com.softserve.academy.spaced.repetition.controller.CardsFileControllerTest
 Running com.softserve.academy.spaced.repetition.controller.UserCardQueueControllerTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 sec - in com.softserve.academy.spaced.repetition.controller.UserCardQueueControllerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 sec - in com.softserve.academy.spaced.repetition.controller.UserCardQueueControllerTest
 Running com.softserve.academy.spaced.repetition.controller.ManageUserControllerTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 sec - in com.softserve.academy.spaced.repetition.controller.ManageUserControllerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec - in com.softserve.academy.spaced.repetition.controller.ManageUserControllerTest
 Running com.softserve.academy.spaced.repetition.controller.DeckControllerTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.178 sec - in com.softserve.academy.spaced.repetition.controller.DeckControllerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.071 sec - in com.softserve.academy.spaced.repetition.controller.DeckControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CardRatingControllerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in com.softserve.academy.spaced.repetition.controller.CardRatingControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.softserve.academy.spaced.repetition.controller.CardRatingControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CategoryControllerTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec - in com.softserve.academy.spaced.repetition.controller.CategoryControllerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec - in com.softserve.academy.spaced.repetition.controller.CategoryControllerTest
 Running com.softserve.academy.spaced.repetition.controller.UserControllerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in com.softserve.academy.spaced.repetition.controller.UserControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in com.softserve.academy.spaced.repetition.controller.UserControllerTest
 Running com.softserve.academy.spaced.repetition.controller.UserProfileControllerTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec - in com.softserve.academy.spaced.repetition.controller.UserProfileControllerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 sec - in com.softserve.academy.spaced.repetition.controller.UserProfileControllerTest
 Running com.softserve.academy.spaced.repetition.controller.DeckRatingControllerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in com.softserve.academy.spaced.repetition.controller.DeckRatingControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in com.softserve.academy.spaced.repetition.controller.DeckRatingControllerTest
 Running com.softserve.academy.spaced.repetition.controller.ImageControllerTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.softserve.academy.spaced.repetition.controller.ImageControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in com.softserve.academy.spaced.repetition.controller.ImageControllerTest
 Running com.softserve.academy.spaced.repetition.controller.RegistrationControllerTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in com.softserve.academy.spaced.repetition.controller.RegistrationControllerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in com.softserve.academy.spaced.repetition.controller.RegistrationControllerTest
 Running com.softserve.academy.spaced.repetition.controller.DeckCommentControllerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in com.softserve.academy.spaced.repetition.controller.DeckCommentControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec - in com.softserve.academy.spaced.repetition.controller.DeckCommentControllerTest
 Running com.softserve.academy.spaced.repetition.controller.CourseControllerTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec - in com.softserve.academy.spaced.repetition.controller.CourseControllerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.813 sec - in com.softserve.academy.spaced.repetition.controller.CourseControllerTest
 Running com.softserve.academy.spaced.repetition.controller.FolderControllerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.softserve.academy.spaced.repetition.controller.FolderControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.softserve.academy.spaced.repetition.controller.FolderControllerTest
 Running com.softserve.academy.spaced.repetition.controller.UserProfileLearningConrollerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.softserve.academy.spaced.repetition.controller.UserProfileLearningConrollerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in com.softserve.academy.spaced.repetition.controller.UserProfileLearningConrollerTest
 Running com.softserve.academy.spaced.repetition.controller.CardImageControllerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.softserve.academy.spaced.repetition.controller.CardImageControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.softserve.academy.spaced.repetition.controller.CardImageControllerTest
 Running com.softserve.academy.spaced.repetition.controller.SearchControllerTest
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec <<< FAILURE! - in com.softserve.academy.spaced.repetition.controller.SearchControllerTest
-getResultsFromSearch(com.softserve.academy.spaced.repetition.controller.SearchControllerTest)  Time elapsed: 0.041 sec  <<< FAILURE!
-java.lang.AssertionError: No value at JSON path "$.category.[0].name", exception: Expected to find an object with property ['category'] in path $ but found 'net.minidev.json.JSONArray'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
-	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:245)
-	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:73)
-	at org.springframework.test.web.servlet.result.JsonPathResultMatchers$1.match(JsonPathResultMatchers.java:86)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
-	at com.softserve.academy.spaced.repetition.controller.SearchControllerTest.getResultsFromSearch(SearchControllerTest.java:114)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in com.softserve.academy.spaced.repetition.controller.SearchControllerTest
 Running com.softserve.academy.spaced.repetition.security.JwtTokenUtilTest
-eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImF1ZGllbmNlIjoibW9iaWxlIiwiY3JlYXRlZCI6MTU0MTc1Nzg0NjgwMiwiZXhwIjoxNTQxNzU4ODQxfQ.M3mopPjpRprbTI_LIqIVFM8h5k3c5m1CLZEd3dD-s5goTZL3yGixpo4uPTFOzUk6TP4_OR9zPIfKMABHBcJyzw
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 sec - in com.softserve.academy.spaced.repetition.security.JwtTokenUtilTest
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImF1ZGllbmNlIjoibW9iaWxlIiwiY3JlYXRlZCI6MTU0MTc1Nzk2ODkwMiwiZXhwIjoxNTQxNzU4OTYzfQ.xwuOIHUCPwRw0XT6D9UzNG69GE0jXqR9Kpf62AUQDbSpYWYAWGLG3J6i3SLhgOFilY-FUdtK4TaD1uD0vcQXQw
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 sec - in com.softserve.academy.spaced.repetition.security.JwtTokenUtilTest
 Running com.softserve.academy.spaced.repetition.security.service.AuthenticationRestServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in com.softserve.academy.spaced.repetition.security.service.AuthenticationRestServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.softserve.academy.spaced.repetition.security.service.AuthenticationRestServiceTest
 Running com.softserve.academy.spaced.repetition.service.CategoryServiceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.softserve.academy.spaced.repetition.service.CategoryServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.softserve.academy.spaced.repetition.service.CategoryServiceTest
 Running com.softserve.academy.spaced.repetition.service.DeckCommentServiceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.softserve.academy.spaced.repetition.service.DeckCommentServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.softserve.academy.spaced.repetition.service.DeckCommentServiceTest
 Running com.softserve.academy.spaced.repetition.service.CourseCommentServiceTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.softserve.academy.spaced.repetition.service.CourseCommentServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.softserve.academy.spaced.repetition.service.CourseCommentServiceTest
 Running com.softserve.academy.spaced.repetition.service.CourseRatingServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.softserve.academy.spaced.repetition.service.CourseRatingServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.softserve.academy.spaced.repetition.service.CourseRatingServiceTest
 Running com.softserve.academy.spaced.repetition.service.FolderServiceTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.softserve.academy.spaced.repetition.service.FolderServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.softserve.academy.spaced.repetition.service.FolderServiceTest
 Running com.softserve.academy.spaced.repetition.service.AccountVerificationByEmailServiceTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.softserve.academy.spaced.repetition.service.AccountVerificationByEmailServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.softserve.academy.spaced.repetition.service.AccountVerificationByEmailServiceTest
 Running com.softserve.academy.spaced.repetition.service.CardServiceTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 sec - in com.softserve.academy.spaced.repetition.service.CardServiceTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in com.softserve.academy.spaced.repetition.service.CardServiceTest
 Running com.softserve.academy.spaced.repetition.service.CardImageServiceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.softserve.academy.spaced.repetition.service.CardImageServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.softserve.academy.spaced.repetition.service.CardImageServiceTest
 Running com.softserve.academy.spaced.repetition.service.AccountServiceTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.softserve.academy.spaced.repetition.service.AccountServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.softserve.academy.spaced.repetition.service.AccountServiceTest
 Running com.softserve.academy.spaced.repetition.service.UserCardQueueServiceTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in com.softserve.academy.spaced.repetition.service.UserCardQueueServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.softserve.academy.spaced.repetition.service.UserCardQueueServiceTest
 Running com.softserve.academy.spaced.repetition.service.UserServiceTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in com.softserve.academy.spaced.repetition.service.UserServiceTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.softserve.academy.spaced.repetition.service.UserServiceTest
 Running com.softserve.academy.spaced.repetition.service.AuditServiceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.softserve.academy.spaced.repetition.service.AuditServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.softserve.academy.spaced.repetition.service.AuditServiceTest
 Running com.softserve.academy.spaced.repetition.service.ImageServiceTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in com.softserve.academy.spaced.repetition.service.ImageServiceTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.softserve.academy.spaced.repetition.service.ImageServiceTest
 Running com.softserve.academy.spaced.repetition.service.AccessToUrlServiceTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.softserve.academy.spaced.repetition.service.AccessToUrlServiceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.softserve.academy.spaced.repetition.service.AccessToUrlServiceTest
 Running com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
  .----------------.  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. || .--------------. |
@@ -145,62 +131,49 @@ Running com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
 | |              | || |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------'
-2018-11-09 11:04:03.261  INFO 294 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Starting ValidatorsTest on spirals-bears with PID 294 (started by root in /root/workspace/koldovsky/orlp-server/450474623)
-2018-11-09 11:04:03.266  INFO 294 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : The following profiles are active: testdatabase
-2018-11-09 11:04:09.345  INFO 294 --- [           main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.3 by Boxfuse
-2018-11-09 11:04:09.361  INFO 294 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:mem:testdb (H2 1.4)
-2018-11-09 11:04:09.556  INFO 294 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.091s)
-2018-11-09 11:04:09.584  INFO 294 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history"
-2018-11-09 11:04:09.626  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
-2018-11-09 11:04:09.645  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.0 - Create initial schema
-2018-11-09 11:04:10.007  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.1 - Fill tables
-2018-11-09 11:04:10.791  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.2 - Rename tables
-2018-11-09 11:04:10.803  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.3 - Add CardImage table
-2018-11-09 11:04:10.812  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.4 - Add Index
-2018-11-09 11:04:10.820  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.5 - Add new role and createdBy fields
-2018-11-09 11:04:10.894  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.6 - Add hidden and update created by
-2018-11-09 11:04:10.918  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.7 - Add Java8features deck
-2018-11-09 11:04:10.932  INFO 294 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 8 migrations to schema "PUBLIC" (execution time 00:01.353s)
-2018-11-09 11:04:27.199  INFO 294 --- [           main] c.s.a.s.r.s.c.CacheScheduler             : Started adding categories to cache...
-2018-11-09 11:04:27.282  INFO 294 --- [           main] c.s.a.s.r.s.c.CacheScheduler             : Finished adding categories to cache
-2018-11-09 11:04:27.284  INFO 294 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Started ValidatorsTest in 24.435 seconds (JVM running for 38.075)
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.727 sec - in com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
+2018-11-09 11:06:04.932  INFO 613 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Starting ValidatorsTest on spirals-bears with PID 613 (started by root in /root/workspace/koldovsky/orlp-server/450474623)
+2018-11-09 11:06:04.937  INFO 613 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : The following profiles are active: testdatabase
+2018-11-09 11:06:10.916  INFO 613 --- [           main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.3 by Boxfuse
+2018-11-09 11:06:10.927  INFO 613 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:mem:testdb (H2 1.4)
+2018-11-09 11:06:11.062  INFO 613 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.065s)
+2018-11-09 11:06:11.094  INFO 613 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2018-11-09 11:06:11.164  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2018-11-09 11:06:11.194  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.0 - Create initial schema
+2018-11-09 11:06:12.191  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.1 - Fill tables
+2018-11-09 11:06:12.613  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.2 - Rename tables
+2018-11-09 11:06:12.629  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.3 - Add CardImage table
+2018-11-09 11:06:12.640  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.4 - Add Index
+2018-11-09 11:06:12.649  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.5 - Add new role and createdBy fields
+2018-11-09 11:06:12.761  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.6 - Add hidden and update created by
+2018-11-09 11:06:12.797  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.7 - Add Java8features deck
+2018-11-09 11:06:12.815  INFO 613 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 8 migrations to schema "PUBLIC" (execution time 00:01.737s)
+2018-11-09 11:06:30.245  INFO 613 --- [           main] c.s.a.s.r.s.c.CacheScheduler             : Started adding categories to cache...
+2018-11-09 11:06:30.327  INFO 613 --- [           main] c.s.a.s.r.s.c.CacheScheduler             : Finished adding categories to cache
+2018-11-09 11:06:30.329  INFO 613 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Started ValidatorsTest in 25.769 seconds (JVM running for 39.423)
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.333 sec - in com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
 Running com.softserve.academy.spaced.repetition.service.UserProfileServiceTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.softserve.academy.spaced.repetition.service.UserProfileServiceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.softserve.academy.spaced.repetition.service.UserProfileServiceTest
 Running com.softserve.academy.spaced.repetition.service.CardRatingServiceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.softserve.academy.spaced.repetition.service.CardRatingServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.softserve.academy.spaced.repetition.service.CardRatingServiceTest
 Running com.softserve.academy.spaced.repetition.service.CourseServiceTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.softserve.academy.spaced.repetition.service.CourseServiceTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.softserve.academy.spaced.repetition.service.CourseServiceTest
 Running com.softserve.academy.spaced.repetition.service.DeckServiceTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.softserve.academy.spaced.repetition.service.DeckServiceTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.softserve.academy.spaced.repetition.service.DeckServiceTest
 Running com.softserve.academy.spaced.repetition.service.DeckRatingServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.softserve.academy.spaced.repetition.service.DeckRatingServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.softserve.academy.spaced.repetition.service.DeckRatingServiceTest
 Running com.softserve.academy.spaced.repetition.service.RegistrationServiceTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.softserve.academy.spaced.repetition.service.RegistrationServiceTest
 Running com.softserve.academy.spaced.repetition.service.MailServiceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.softserve.academy.spaced.repetition.service.MailServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.softserve.academy.spaced.repetition.service.MailServiceTest
 
 Results :
 
-Failed tests: 
-  SearchControllerTest.getResultsFromSearch:114 No value at JSON path "$.category.[0].name", exception: Expected to find an object with property ['category'] in path $ but found 'net.minidev.json.JSONArray'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
-
-Tests run: 343, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 343, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 51.393 s
-[INFO] Finished at: 2018-11-09T11:04:29+01:00
-[INFO] Final Memory: 43M/598M
+[INFO] Total time: 50.704 s
+[INFO] Finished at: 2018-11-09T11:06:32+01:00
+[INFO] Final Memory: 40M/608M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project Spaced.Repetition: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/koldovsky/orlp-server/450474623/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
