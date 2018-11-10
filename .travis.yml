@@ -1,0 +1,23 @@
+sudo: false
+
+language: java
+
+jdk:
+  
+  - oraclejdk9
+  - oraclejdk8
+  - openjdk11
+  - openjdk10
+  - openjdk9
+  - openjdk8
+
+before_install: cd wffweb
+
+install: mvn -B install -U -DskipTests=true
+
+script: mvn -B verify -U -Dmaven.javadoc.skip=true
+
+branches:
+  only:
+    - master
+    - develop
