@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "webfirmframework/wff",
+    "githubId": 46187719,
+    "url": "https://github.com/webfirmframework/wff",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453188520,
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/453188520",
+      "date": "Nov 10, 2018 7:09:08 AM"
+    },
+    "fixerBuild": {
+      "id": 453188718,
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/453188718",
+      "date": "Nov 10, 2018 7:11:39 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 10, 2018 7:11:52 AM",
+    "reproductionDateEnd": "Nov 10, 2018 7:13:43 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 438912656,
+      "totalMemory": 483393536
+    },
+    "totalDuration": 106,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 27,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          27
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          21
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/webfirmframework/wff/453188520/wffweb/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/webfirmframework/wff/453188520/wffweb",
+    "overallMetrics": {
+      "numberRunning": 1924,
+      "numberPassing": 1922,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest",
+        "numberRunning": 36,
+        "numberPassing": 34,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest",
+        "testMethod": "testToOutputStream2",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\u003cdiv id\u003d\"one\"\u003e\u003cspan [id\u003d\"5\" class\u003d\"cls-five]\"\u003eTitle changed\u003c/spa...\u003e but was:\u003c\u003cdiv id\u003d\"one\"\u003e\u003cspan [class\u003d\"cls-five\" id\u003d\"5]\"\u003eTitle changed\u003c/spa...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest",
+        "testMethod": "testToString2",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\u003cdiv id\u003d\"one\"\u003e\u003cspan [id\u003d\"5\" class\u003d\"cls-five]\"\u003eTitle changed\u003c/spa...\u003e but was:\u003c\u003cdiv id\u003d\"one\"\u003e\u003cspan [class\u003d\"cls-five\" id\u003d\"5]\"\u003eTitle changed\u003c/spa...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 775,
+    "numberTestFiles": 151,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "webfirmframework/wff",
+      "branchName": "develop",
+      "sha": "34c9f8a312131bd56d934f44d10c0630238f94e8",
+      "url": "http://github.com/webfirmframework/wff/commit/34c9f8a312131bd56d934f44d10c0630238f94e8",
+      "date": "Nov 10, 2018 7:07:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "webfirmframework/wff",
+      "branchName": "develop",
+      "sha": "75520f56bba7a0561a037cb728812c15d8b498ea",
+      "url": "http://github.com/webfirmframework/wff/commit/75520f56bba7a0561a037cb728812c15d8b498ea",
+      "date": "Nov 10, 2018 7:09:06 AM"
+    }
+  },
+  "type": "failing_passing"
+}
