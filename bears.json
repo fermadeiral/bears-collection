@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "assembleia-virtual/back",
+    "githubId": 156937832,
+    "url": "https://github.com/assembleia-virtual/back",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453167859,
+      "url": "http://travis-ci.org/assembleia-virtual/back/builds/453167859",
+      "date": "Nov 10, 2018 4:33:06 AM"
+    },
+    "fixerBuild": {
+      "id": 453176751,
+      "url": "http://travis-ci.org/assembleia-virtual/back/builds/453176751",
+      "date": "Nov 10, 2018 5:36:44 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 10, 2018 5:36:55 AM",
+    "reproductionDateEnd": "Nov 10, 2018 5:38:32 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 263252624,
+      "totalMemory": 382730240
+    },
+    "totalDuration": 92,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 33,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          33
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/assembleia-virtual/back/453167859/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/assembleia-virtual/back/453167859",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "assembleiavirtual.login.LoginControllerTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "assembleiavirtual.login.LoginControllerTest",
+        "testMethod": "testWithouBody",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c400\u003e but was:\u003c401\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "assembleia-virtual/back",
+      "branchName": "master",
+      "sha": "089f02663232e85702d941b102f43b97062869db",
+      "url": "http://github.com/assembleia-virtual/back/commit/089f02663232e85702d941b102f43b97062869db",
+      "date": "Nov 10, 2018 4:30:39 AM"
+    },
+    "fixerBuild": {
+      "repoName": "assembleia-virtual/back",
+      "branchName": "master",
+      "sha": "e213af0d396e8269517dfebde41efd3569e92176",
+      "url": "http://github.com/assembleia-virtual/back/commit/e213af0d396e8269517dfebde41efd3569e92176",
+      "date": "Nov 10, 2018 5:34:23 AM"
+    }
+  },
+  "type": "passing_passing"
+}
