@@ -1,0 +1,3 @@
+docker run -p 5432:5432 --name postgres postgres:9.6.5-alpine
+
+docker exec -it postgres psql -U postgres
