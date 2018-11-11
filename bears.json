@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "lperrod/web",
+    "githubId": 86583136,
+    "url": "https://github.com/lperrod/web",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453331430,
+      "url": "http://travis-ci.org/lperrod/web/builds/453331430",
+      "date": "Nov 10, 2018 6:47:44 PM"
+    },
+    "fixerBuild": {
+      "id": 453668186,
+      "url": "http://travis-ci.org/lperrod/web/builds/453668186",
+      "date": "Nov 11, 2018 8:55:27 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 11, 2018 8:55:46 PM",
+    "reproductionDateEnd": "Nov 11, 2018 9:00:53 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 281193096,
+      "totalMemory": 527433728
+    },
+    "totalDuration": 301,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 137,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          1,
+          0,
+          132
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/lperrod/web/453331430/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 371,
+      "numberDeleted": 201
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/lperrod/web/453331430/modules/facebook",
+    "overallMetrics": {
+      "numberRunning": 145,
+      "numberPassing": 144,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.TooManyActualInvocations",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cmpl.web.facebook.DefaultFacebookServiceTest",
+        "numberRunning": 27,
+        "numberPassing": 26,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cmpl.web.facebook.DefaultFacebookServiceTest",
+        "testMethod": "testComputeImportablePost",
+        "failureName": "org.mockito.exceptions.verification.TooManyActualInvocations",
+        "detail": " facebookService.computeId(     Mock for Post, hashCode: 524323510 ); Wanted 1 time: -\u003e at com.cmpl.web.facebook.DefaultFacebookServiceTest.testComputeImportablePost(DefaultFacebookServiceTest.java:301) But was 2 times. Undesired invocation: -\u003e at com.cmpl.web.facebook.DefaultFacebookService.computeOnclick(DefaultFacebookService.java:139) ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 34,
+    "numberSourceFiles": 703,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 138,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "lperrod/web",
+      "branchName": "master",
+      "sha": "07bdb1af3f2f7793b05157581601476adcdd86b1",
+      "url": "http://github.com/lperrod/web/commit/07bdb1af3f2f7793b05157581601476adcdd86b1",
+      "date": "Nov 10, 2018 6:43:01 PM"
+    },
+    "fixerBuild": {
+      "repoName": "lperrod/web",
+      "branchName": "master",
+      "sha": "de347aa6cef7711b724bd10237fe3a3426a80ec7",
+      "url": "http://github.com/lperrod/web/commit/de347aa6cef7711b724bd10237fe3a3426a80ec7",
+      "date": "Nov 11, 2018 8:51:14 PM"
+    }
+  },
+  "type": "passing_passing"
+}
