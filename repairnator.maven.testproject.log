@@ -167,24 +167,18 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-page ---
 [INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/core/page/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 55.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 480.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.page.DefaultPageServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.732 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.128 sec
 Running com.cmpl.web.core.page.DefaultPageTranslatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
 Running com.cmpl.web.core.page.PageMapperTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running com.cmpl.web.core.page.DefaultPageDispatcherTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec
 
 Results :
 
@@ -243,9 +237,9 @@ Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.media.MediaMapperTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.84 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.314 sec
 Running com.cmpl.web.core.media.DefaultMediaServiceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.789 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.879 sec
 
 Results :
 
@@ -280,13 +274,13 @@ Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.carousel.DefaultCarouselTranslatorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.925 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.939 sec
 Running com.cmpl.web.core.carousel.DefaultCarouselDispatcherTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec
 Running com.cmpl.web.core.carousel.item.DefaultCarouselItemServiceTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 sec
 Running com.cmpl.web.core.carousel.item.CarouselItemMapperTest
-20:58:36.095 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.carousel.item.CarouselItemDTO@4652c74d avec l'origine com.cmpl.web.core.models.CarouselItem@4cc12db2
+20:59:55.909 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.carousel.item.CarouselItemDTO@4652c74d avec l'origine com.cmpl.web.core.models.CarouselItem@4cc12db2
 java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -295,8 +289,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.fillObject$accessor$BlLWhX9O(Unknown Source)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845$auxiliary$wccPl0R6.call(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.fillObject$accessor$8qpg7v4Q(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971$auxiliary$YvGmijZx.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -308,10 +302,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.fillObject(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.fillObject(Unknown Source)
 	at com.cmpl.web.core.carousel.item.CarouselItemMapper.toEntity(CarouselItemMapper.java:34)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.toEntity$accessor$BlLWhX9O(Unknown Source)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845$auxiliary$ARLfeCmf.call(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.toEntity$accessor$8qpg7v4Q(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971$auxiliary$g5fGfKgo.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -323,7 +317,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.toEntity(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.toEntity(Unknown Source)
 	at com.cmpl.web.core.carousel.item.CarouselItemMapperTest.testToEntity(CarouselItemMapperTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -358,7 +352,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-20:58:36.110 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.carousel.item.CarouselItemDTO@4652c74d avec l'origine com.cmpl.web.core.models.CarouselItem@4cc12db2
+20:59:55.923 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.carousel.item.CarouselItemDTO@4652c74d avec l'origine com.cmpl.web.core.models.CarouselItem@4cc12db2
 java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -367,8 +361,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.fillObject$accessor$BlLWhX9O(Unknown Source)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845$auxiliary$wccPl0R6.call(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.fillObject$accessor$8qpg7v4Q(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971$auxiliary$YvGmijZx.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -380,10 +374,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.fillObject(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.fillObject(Unknown Source)
 	at com.cmpl.web.core.carousel.item.CarouselItemMapper.toEntity(CarouselItemMapper.java:34)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.toEntity$accessor$BlLWhX9O(Unknown Source)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845$auxiliary$ARLfeCmf.call(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.toEntity$accessor$8qpg7v4Q(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971$auxiliary$g5fGfKgo.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -395,7 +389,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$1387820845.toEntity(Unknown Source)
+	at com.cmpl.web.core.carousel.item.CarouselItemMapper$MockitoMock$122292971.toEntity(Unknown Source)
 	at com.cmpl.web.core.carousel.item.CarouselItemMapperTest.testToEntity(CarouselItemMapperTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -430,9 +424,9 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.carousel.item.CarouselItemDTO
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.411 sec
 Running com.cmpl.web.core.carousel.CarouselMapperTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
 
 Results :
 
@@ -467,11 +461,11 @@ Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.news.image.NewsImageMapperTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.009 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.374 sec
 Running com.cmpl.web.core.news.content.DefaultNewsContentServiceTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 sec
 Running com.cmpl.web.core.news.content.NewsContentMapperTest
-20:58:40.390 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsContent@6cdee57 avec l'origine com.cmpl.web.core.news.content.NewsContentDTO@482f7af0
+21:00:00.865 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsContent@d25e878 avec l'origine com.cmpl.web.core.news.content.NewsContentDTO@47187f50
 java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -480,8 +474,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205.fillObject$accessor$QUffcvx9(Unknown Source)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205$auxiliary$Ao9Qe972.call(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712.fillObject$accessor$S6FqpkGL(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712$auxiliary$BKEADiEw.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -493,7 +487,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.content.NewsContentMapperTest.testFillObject(NewsContentMapperTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -528,7 +522,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-20:58:40.398 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsContent@6cdee57 avec l'origine com.cmpl.web.core.news.content.NewsContentDTO@482f7af0
+21:00:00.878 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsContent@d25e878 avec l'origine com.cmpl.web.core.news.content.NewsContentDTO@47187f50
 java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -537,8 +531,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205.fillObject$accessor$QUffcvx9(Unknown Source)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205$auxiliary$Ao9Qe972.call(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712.fillObject$accessor$S6FqpkGL(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712$auxiliary$BKEADiEw.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -550,7 +544,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$508075205.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.content.NewsContentMapper$MockitoMock$1666485712.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.content.NewsContentMapperTest.testFillObject(NewsContentMapperTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -585,25 +579,25 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsContent.set([Z)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec
 Running com.cmpl.web.core.news.entry.DefaultNewsEntryDispatcherTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec
 Running com.cmpl.web.core.news.entry.DefaultNewsEntryTranslatorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
 Running com.cmpl.web.core.news.entry.DefaultNewsEntryServiceTest
-20:58:41.224 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de toutes les entrées de blog
-20:58:41.235 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
-20:58:41.248 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
-20:58:41.259 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
-20:58:41.265 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
-20:58:41.275 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
-20:58:41.286 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
-20:58:41.304 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de toutes les entrées de blog
-20:58:41.310 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
-20:58:41.315 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de l'entrée de blog d'id 1
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec
+21:00:01.545 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de toutes les entrées de blog
+21:00:01.553 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
+21:00:01.561 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
+21:00:01.567 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
+21:00:01.570 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Mise à jour d'une entrée de blog d'id 1
+21:00:01.575 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
+21:00:01.584 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
+21:00:01.595 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de toutes les entrées de blog
+21:00:01.599 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Creation d'une nouvelle entrée de blog
+21:00:01.601 [main] INFO com.cmpl.web.core.news.entry.DefaultNewsEntryService - Récupération de l'entrée de blog d'id 1
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec
 Running com.cmpl.web.core.news.entry.NewsEntryMapperTest
-20:58:41.339 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsEntry@6dded900 avec l'origine com.cmpl.web.core.news.entry.NewsEntryDTO@d504137
+21:00:01.615 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsEntry@6dded900 avec l'origine com.cmpl.web.core.news.entry.NewsEntryDTO@d504137
 java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -612,8 +606,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$4QCIvl2i.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$8287z8RV.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -625,10 +619,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapper.toEntity(NewsEntryMapper.java:42)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toEntity$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$r4Pzp2Mm.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toEntity$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$dQp7OpRC.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -640,7 +634,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toEntity(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toEntity(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapperTest.testToEntity(NewsEntryMapperTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -675,7 +669,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-20:58:41.342 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsEntry@6dded900 avec l'origine com.cmpl.web.core.news.entry.NewsEntryDTO@d504137
+21:00:01.618 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.models.NewsEntry@6dded900 avec l'origine com.cmpl.web.core.news.entry.NewsEntryDTO@d504137
 java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -684,8 +678,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$4QCIvl2i.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$8287z8RV.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -697,10 +691,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapper.toEntity(NewsEntryMapper.java:42)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toEntity$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$r4Pzp2Mm.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toEntity$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$dQp7OpRC.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -712,7 +706,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toEntity(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toEntity(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapperTest.testToEntity(NewsEntryMapperTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -747,7 +741,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.models.NewsEntry.set([Z)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-20:58:41.350 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.news.entry.NewsEntryDTO@6a6d1ff3 avec l'origine com.cmpl.web.core.models.NewsEntry@64b73e0a
+21:00:01.622 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.news.entry.NewsEntryDTO@6a6d1ff3 avec l'origine com.cmpl.web.core.models.NewsEntry@64b73e0a
 java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -756,8 +750,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$4QCIvl2i.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$8287z8RV.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -769,10 +763,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapper.toDTO(NewsEntryMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toDTO$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$QQRyEyby.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toDTO$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$iUSMlEz0.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -784,7 +778,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toDTO(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toDTO(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapperTest.testToDTO(NewsEntryMapperTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -819,7 +813,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-20:58:41.353 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.news.entry.NewsEntryDTO@6a6d1ff3 avec l'origine com.cmpl.web.core.models.NewsEntry@64b73e0a
+21:00:01.624 [main] ERROR com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller - Impossible de remplir l'objet com.cmpl.web.core.news.entry.NewsEntryDTO@6a6d1ff3 avec l'origine com.cmpl.web.core.models.NewsEntry@64b73e0a
 java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([Z)
 	at java.lang.Class.getMethod(Class.java:1786)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.computeSetterDestination(DefaultObjectReflexiveFiller.java:63)
@@ -828,8 +822,8 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.invokeDestinationFieldsSetters(DefaultObjectReflexiveFiller.java:47)
 	at com.cmpl.web.core.common.filler.DefaultObjectReflexiveFiller.fillDestination(DefaultObjectReflexiveFiller.java:42)
 	at com.cmpl.web.core.common.mapper.BaseMapper.fillObject(BaseMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$4QCIvl2i.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$8287z8RV.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -841,10 +835,10 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.fillObject(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.fillObject(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapper.toDTO(NewsEntryMapper.java:23)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toDTO$accessor$KsyuoGtT(Unknown Source)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965$auxiliary$QQRyEyby.call(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toDTO$accessor$vbT9wEhA(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461$auxiliary$iUSMlEz0.call(Unknown Source)
 	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
 	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
@@ -856,7 +850,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
-	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$1433543965.toDTO(Unknown Source)
+	at com.cmpl.web.core.news.entry.NewsEntryMapper$MockitoMock$771130461.toDTO(Unknown Source)
 	at com.cmpl.web.core.news.entry.NewsEntryMapperTest.testToDTO(NewsEntryMapperTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -891,7 +885,7 @@ java.lang.NoSuchMethodException: com.cmpl.web.core.news.entry.NewsEntryDTO.set([
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 
 Results :
 
@@ -926,13 +920,13 @@ Tests run: 48, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.style.StyleMapperTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.944 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.646 sec
 Running com.cmpl.web.core.style.DefaultStyleDispatcherTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec
 Running com.cmpl.web.core.style.DefaultStyleServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
 Running com.cmpl.web.core.style.DefaultStyleTranslatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
 
 Results :
 
@@ -991,7 +985,7 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.core.sitemap.rendering.DefaultRenderingSitemapServiceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.05 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.791 sec
 
 Results :
 
@@ -1057,24 +1051,410 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running com.cmpl.web.facebook.DefaultFacebookImportTranslatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.925 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.763 sec
 Running com.cmpl.web.facebook.DefaultFacebookImportServiceTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.018 sec
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 sec
 Running com.cmpl.web.facebook.DefaultFacebookDispatcherTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
 Running com.cmpl.web.facebook.DefaultFacebookServiceTest
-Tests run: 27, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.21 sec <<< FAILURE!
-testComputeImportablePost(com.cmpl.web.facebook.DefaultFacebookServiceTest)  Time elapsed: 0.083 sec  <<< FAILURE!
-org.mockito.exceptions.verification.TooManyActualInvocations: 
-facebookService.computeId(
-    Mock for Post, hashCode: 524323510
-);
-Wanted 1 time:
--> at com.cmpl.web.facebook.DefaultFacebookServiceTest.testComputeImportablePost(DefaultFacebookServiceTest.java:301)
-But was 2 times. Undesired invocation:
--> at com.cmpl.web.facebook.DefaultFacebookService.computeOnclick(DefaultFacebookService.java:139)
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.892 sec
 
-	at com.cmpl.web.facebook.DefaultFacebookServiceTest.testComputeImportablePost(DefaultFacebookServiceTest.java:301)
+Results :
+
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-widget 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-widget ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/widget/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-widget ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/widget/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-widget ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-widget ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/widget/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-widget ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-widget ---
+[INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/core/widget/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cmpl.web.core.widget.DefaultWidgetServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.995 sec
+Running com.cmpl.web.core.widget.DefaultWidgetTranslatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running com.cmpl.web.core.widget.WidgetMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-user 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-user ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/user/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-user ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/user/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-user ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-user ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/user/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-user ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-user ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-role 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-role ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/role/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-role ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/role/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-role ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-role ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/role/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-role ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-role ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-responsibility 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-responsibility ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/responsibility/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-responsibility ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/responsibility/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-responsibility ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-responsibility ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/responsibility/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-responsibility ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-responsibility ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-group 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-group ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/group/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-group ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/group/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-group ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-group ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/group/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-group ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-group ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-membership 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-membership ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/membership/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-membership ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/membership/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-membership ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-membership ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/membership/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-membership ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-membership ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-designs 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-designs ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/design/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-designs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/design/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-designs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-designs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/design/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-designs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-designs ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-factory 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-factory ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/factory/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-factory ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/factory/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-factory ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-factory ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/factory/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-factory ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-factory ---
+[INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/core/factory/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cmpl.web.modules.facebook.factory.DefaultFacebookDisplayFactoryTest
+21:00:26.867 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:26.884 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:26.886 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:26.886 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:26.886 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:26.887 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Redirection vers l'acces car connexion en timeout
+21:00:26.887 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:26.887 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:26.888 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:26.888 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:26.888 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:26.919 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:26.920 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:26.920 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:26.920 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:26.920 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:26.930 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:26.930 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:26.930 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:26.930 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:26.930 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:26.936 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Redirection vers l'import car déjà connecté
+21:00:26.936 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:26.937 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:26.937 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:26.937 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:26.937 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.418 sec
+Running com.cmpl.web.core.factory.page.DefaultPageManagerDisplayFactoryTest
+21:00:27.592 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:27.592 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:27.593 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:27.593 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:27.593 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:27.594 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du formulaire de creation des pages 
+21:00:27.655 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:27.655 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:27.655 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:27.656 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:27.656 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:27.665 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:27.665 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:27.665 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:27.666 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:27.667 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:27.668 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des pages pour la page test
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 sec
+Running com.cmpl.web.core.factory.DefaultDisplayFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 sec
+Running com.cmpl.web.core.factory.news.DefaultNewsManagerDisplayFactoryTest
+21:00:28.765 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:28.765 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:28.766 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:28.766 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:28.766 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:28.768 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du formulaire d'entrées de blog pour la page test
+21:00:28.777 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:28.778 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:28.778 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:28.778 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:28.778 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:28.788 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:28.789 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:28.789 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:28.789 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:28.790 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec
+Running com.cmpl.web.core.factory.menu.DefaultMenuFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Running com.cmpl.web.core.factory.DefaultBackDisplayFactoryTest
+21:00:28.981 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back null
+21:00:28.982 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page null
+21:00:28.982 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page null
+21:00:28.982 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page null
+21:00:28.983 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back null prête
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+Running com.cmpl.web.core.factory.DefaultBaseFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running com.cmpl.web.core.factory.media.DefaultMediaManagerDisplayFactoryTest
+21:00:29.218 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:29.219 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:29.220 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:29.220 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:29.220 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:29.221 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du formulaire d'upload de media 
+21:00:29.224 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:29.225 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:29.225 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:29.225 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:29.226 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:29.226 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des medias pour la page test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec
+Running com.cmpl.web.core.factory.carousel.DefaultCarouselManagerDisplayFactoryTest
+21:00:29.596 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:29.597 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:29.598 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:29.598 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:29.598 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:29.600 [main] INFO com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des carousels pour la page test
+21:00:29.633 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:29.634 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:29.634 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:29.635 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:29.635 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+21:00:29.640 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction de la page du back test
+21:00:29.641 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du menu pour la page test
+21:00:29.641 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction des locales pour la page test
+21:00:29.641 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Construction du fil d'ariane pour la page test
+21:00:29.642 [main] DEBUG com.cmpl.web.core.factory.DefaultBackDisplayFactory - Page du back test prête
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 sec
+
+Results :
+
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-core-events-listeners 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-core-events-listeners ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/core/eventsListeners/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-core-events-listeners ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/eventsListeners/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-core-events-listeners ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-core-events-listeners ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/core/eventsListeners/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-core-events-listeners ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-core-events-listeners ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-manager 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-manager ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/manager/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-manager-ui 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-manager-ui ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/manager/ui/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-manager-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 126 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-manager-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-manager-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/manager/ui/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-manager-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-manager-ui ---
+[INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/manager/ui/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cmpl.web.manager.ui.modules.facebook.FacebookControllerTest
+21:00:34.180 [main] INFO com.cmpl.web.manager.ui.modules.facebook.FacebookController - Tentative de création d'entrées de blog venant de facebook
+21:00:34.215 [main] INFO com.cmpl.web.manager.ui.modules.facebook.FacebookController - Echec de l'import des posts facebook
+com.cmpl.web.core.common.exception.BaseException: null
+	at com.cmpl.web.manager.ui.modules.facebook.FacebookController.createNewsEntry(FacebookController.java:90)
+	at com.cmpl.web.manager.ui.modules.facebook.FacebookControllerTest.testCreateNewsEntry_Ko(FacebookControllerTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1083,8 +1463,6 @@ But was 2 times. Undesired invocation:
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -1110,69 +1488,352 @@ But was 2 times. Undesired invocation:
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+21:00:34.416 [main] INFO com.cmpl.web.manager.ui.modules.facebook.FacebookController - Tentative de création d'entrées de blog venant de facebook
+21:00:34.417 [main] INFO com.cmpl.web.manager.ui.modules.facebook.FacebookController - Entrées crées
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.847 sec
+Running com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerControllerTest
+21:00:34.935 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Tentative de création d'une entrée de blog
+21:00:34.936 [main] ERROR com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Echec de la creation de l'entrée
+com.cmpl.web.core.common.exception.BaseException: 
+	at com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController.createNewsEntry(NewsManagerController.java:126)
+	at com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerControllerTest.testCreateNewsEntry_Ko(NewsManagerControllerTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+21:00:34.944 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Tentative de création d'une entrée de blog
+21:00:34.945 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Entrée crée, id 1
+21:00:34.950 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Tentative de mise à jour d'une entrée de blog d'id 666
+21:00:34.951 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Entrée modifiée, id 666
+21:00:34.959 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Tentative de suppression d'une entrée d'id 666
+21:00:34.960 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - NewsEntry 666 supprimée
+21:00:34.964 [main] INFO com.cmpl.web.manager.ui.core.webmastering.news.NewsManagerController - Récupération de l'entrée d'id 666
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 sec
+Running com.cmpl.web.manager.ui.core.login.LoginControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 sec
 
 Results :
 
-Failed tests:   testComputeImportablePost(com.cmpl.web.facebook.DefaultFacebookServiceTest): (..)
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 54, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-front 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-front ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/front/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-front ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-front ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-front ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/front/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-front ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-front ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-modules-google 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-modules-google ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/modules/google/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-modules-google ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/google/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-modules-google ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-modules-google ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/google/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-modules-google ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-modules-google ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-modules-backup 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-modules-backup ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/modules/backup/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-modules-backup ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/backup/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-modules-backup ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-modules-backup ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/backup/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-modules-backup ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-modules-backup ---
+[INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/modules/backup/target/surefire-reports
 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cmpl.web.backup.reader.CommonParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.139 sec
+Running com.cmpl.web.backup.writer.CarouselCSVWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec
+Running com.cmpl.web.backup.writer.CommonWriterTest
+21:00:39.744 [main] ERROR com.cmpl.web.backup.writer.CommonWriter - Impossible de parser le field : someLong pour l'objet : class com.cmpl.web.backup.writer.EntityTest
+java.lang.Exception: null
+	at com.cmpl.web.backup.writer.CommonWriter.parseObjectValueToString(CommonWriter.java:109)
+	at com.cmpl.web.backup.writer.CommonWriterTest.testParseObjectValueToString_Exception(CommonWriterTest.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 sec
+
+Results :
+
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-social-configuration 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-social-configuration ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/modules/socialConfiguration/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-social-configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/socialConfiguration/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-social-configuration ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-social-configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/modules/socialConfiguration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-social-configuration ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-social-configuration ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-autoconfigure 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-autoconfigure ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/autoconfigure/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-autoconfigure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-autoconfigure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-autoconfigure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/autoconfigure/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-autoconfigure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-autoconfigure ---
+[INFO] Surefire report directory: /root/workspace/lperrod/web/453331430/autoconfigure/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cmpl.web.configuration.modules.google.GoogleConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.745 sec
+Running com.cmpl.web.configuration.modules.facebook.FacebookConfigurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.952 sec
+Running com.cmpl.web.configuration.core.common.ResourceConfigurationTest
+21:00:46.595 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n]
+21:00:46.608 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n] for files matching pattern [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/*.properties]
+21:00:46.620 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [i18n/*.properties] to resources [file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/back_en.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/back_fr.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/error_en.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/error_fr.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/form_en.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/form_fr.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/keys_en.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/keys_fr.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/mails_en.properties], file [/root/workspace/lperrod/web/453331430/manager/ui/target/classes/i18n/mails_fr.properties]]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 sec
+Running com.cmpl.web.configuration.core.common.ContextConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Running com.cmpl.web.configuration.core.common.LocaleConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec
+Running com.cmpl.web.configuration.core.file.FileConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-starter 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-starter ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/starter/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/starter/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-starter ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/starter/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-starter ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-starter ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmpl-web-launcher 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ cmpl-web-launcher ---
+[INFO] argLine set to -javaagent:/root/./workspace/lperrod/web/453331430/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/lperrod/web/453331430/launcher/target/jacoco.exec
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.6.RELEASE:build-info (default) @ cmpl-web-launcher ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmpl-web-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cmpl-web-launcher ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmpl-web-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/lperrod/web/453331430/launcher/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cmpl-web-launcher ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cmpl-web-launcher ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] cmpl-web ........................................... SUCCESS [  0.769 s]
-[INFO] cmpl-web-parent .................................... SUCCESS [  0.031 s]
-[INFO] cmpl-web-core ...................................... SUCCESS [  0.014 s]
-[INFO] cmpl-web-core-models ............................... SUCCESS [  4.448 s]
-[INFO] cmpl-web-core-common ............................... SUCCESS [  0.357 s]
-[INFO] cmpl-web-core-file ................................. SUCCESS [  0.111 s]
-[INFO] cmpl-web-core-page ................................. SUCCESS [  5.665 s]
-[INFO] cmpl-web-core-menu ................................. SUCCESS [  0.067 s]
-[INFO] cmpl-web-core-media ................................ SUCCESS [  4.223 s]
-[INFO] cmpl-web-core-carousel ............................. SUCCESS [  4.984 s]
-[INFO] cmpl-web-core-news ................................. SUCCESS [  5.181 s]
-[INFO] cmpl-web-core-style ................................ SUCCESS [  3.741 s]
-[INFO] cmpl-web-core-website .............................. SUCCESS [  0.050 s]
-[INFO] cmpl-web-core-sitemap .............................. SUCCESS [  4.491 s]
-[INFO] cmpl-web-core-breadcrumb ........................... SUCCESS [  0.086 s]
-[INFO] cmpl-web-modules ................................... SUCCESS [  0.009 s]
-[INFO] cmpl-web-modules-facebook .......................... FAILURE [  6.065 s]
-[INFO] cmpl-web-core-widget ............................... SKIPPED
-[INFO] cmpl-web-core-user ................................. SKIPPED
-[INFO] cmpl-web-core-role ................................. SKIPPED
-[INFO] cmpl-web-core-responsibility ....................... SKIPPED
-[INFO] cmpl-web-core-group ................................ SKIPPED
-[INFO] cmpl-web-core-membership ........................... SKIPPED
-[INFO] cmpl-web-core-designs .............................. SKIPPED
-[INFO] cmpl-web-core-factory .............................. SKIPPED
-[INFO] cmpl-web-core-events-listeners ..................... SKIPPED
-[INFO] cmpl-web-manager ................................... SKIPPED
-[INFO] cmpl-web-manager-ui ................................ SKIPPED
-[INFO] cmpl-web-front ..................................... SKIPPED
-[INFO] cmpl-web-modules-google ............................ SKIPPED
-[INFO] cmpl-web-modules-backup ............................ SKIPPED
-[INFO] cmpl-web-social-configuration ...................... SKIPPED
-[INFO] cmpl-web-autoconfigure ............................. SKIPPED
-[INFO] cmpl-web-starter ................................... SKIPPED
-[INFO] cmpl-web-launcher .................................. SKIPPED
+[INFO] cmpl-web ........................................... SUCCESS [  1.001 s]
+[INFO] cmpl-web-parent .................................... SUCCESS [  0.113 s]
+[INFO] cmpl-web-core ...................................... SUCCESS [  0.018 s]
+[INFO] cmpl-web-core-models ............................... SUCCESS [  3.414 s]
+[INFO] cmpl-web-core-common ............................... SUCCESS [  0.291 s]
+[INFO] cmpl-web-core-file ................................. SUCCESS [  0.094 s]
+[INFO] cmpl-web-core-page ................................. SUCCESS [  5.016 s]
+[INFO] cmpl-web-core-menu ................................. SUCCESS [  0.072 s]
+[INFO] cmpl-web-core-media ................................ SUCCESS [  4.597 s]
+[INFO] cmpl-web-core-carousel ............................. SUCCESS [  5.086 s]
+[INFO] cmpl-web-core-news ................................. SUCCESS [  5.518 s]
+[INFO] cmpl-web-core-style ................................ SUCCESS [  4.553 s]
+[INFO] cmpl-web-core-website .............................. SUCCESS [  0.088 s]
+[INFO] cmpl-web-core-sitemap .............................. SUCCESS [  4.659 s]
+[INFO] cmpl-web-core-breadcrumb ........................... SUCCESS [  0.065 s]
+[INFO] cmpl-web-modules ................................... SUCCESS [  0.006 s]
+[INFO] cmpl-web-modules-facebook .......................... SUCCESS [  5.634 s]
+[INFO] cmpl-web-core-widget ............................... SUCCESS [  4.724 s]
+[INFO] cmpl-web-core-user ................................. SUCCESS [  0.047 s]
+[INFO] cmpl-web-core-role ................................. SUCCESS [  0.057 s]
+[INFO] cmpl-web-core-responsibility ....................... SUCCESS [  0.033 s]
+[INFO] cmpl-web-core-group ................................ SUCCESS [  0.034 s]
+[INFO] cmpl-web-core-membership ........................... SUCCESS [  0.034 s]
+[INFO] cmpl-web-core-designs .............................. SUCCESS [  0.047 s]
+[INFO] cmpl-web-core-factory .............................. SUCCESS [  8.044 s]
+[INFO] cmpl-web-core-events-listeners ..................... SUCCESS [  0.093 s]
+[INFO] cmpl-web-manager ................................... SUCCESS [  0.006 s]
+[INFO] cmpl-web-manager-ui ................................ SUCCESS [  5.764 s]
+[INFO] cmpl-web-front ..................................... SUCCESS [  0.053 s]
+[INFO] cmpl-web-modules-google ............................ SUCCESS [  0.025 s]
+[INFO] cmpl-web-modules-backup ............................ SUCCESS [  4.141 s]
+[INFO] cmpl-web-social-configuration ...................... SUCCESS [  0.026 s]
+[INFO] cmpl-web-autoconfigure ............................. SUCCESS [  7.478 s]
+[INFO] cmpl-web-starter ................................... SUCCESS [  0.093 s]
+[INFO] cmpl-web-launcher .................................. SUCCESS [  0.636 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 42.266 s
-[INFO] Finished at: 2018-11-11T20:58:55+01:00
-[INFO] Final Memory: 90M/1071M
+[INFO] Total time: 01:14 min
+[INFO] Finished at: 2018-11-11T21:00:48+01:00
+[INFO] Final Memory: 102M/1108M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project cmpl-web-modules-facebook: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/lperrod/web/453331430/modules/facebook/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :cmpl-web-modules-facebook
