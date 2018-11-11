@@ -1,0 +1,117 @@
+<label th:text="#{website.pages.to.link}"/>
+<form id="pageAssociationForm" th:object="${createForm}" class="row">
+  <div class="mb-3 col-12">
+    <input type="hidden" th:field="*{websiteId}"/>
+    <div id="linkablePages">
+    </div>
+  </div>
+</form>
+<hr>
+<label th:text="#{website.pages.linked}"/>
+<div id="linkedPages">
+</div>
+<script th:inline="javascript">
+  $(document).ready(function () {
+    var urlLinkedPages = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linked_pages?q=";
+    var urlLinkablePages = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linkable_pages?q=";
+    $.get(urlLinkedPages, function (data) {
+      $("#linkedPages").html(data);
+    });
+    $.get(urlLinkablePages, function (data) {
+      $("#linkablePages").html(data);
+    });
+
+    $(".card-loader").hide();
+    $(".loader").hide();
+  });
+  var deleteSitemap = function (idSitemap) {
+
+    $("#pageAssociationForm").hide();
+    $("#linkedPages").hide();
+    $(".loader").show();
+
+    var inputWebsiteId = $("#websiteId");
+    var websiteId = inputWebsiteId.val();
+    var url = "/manager/sitemaps/" + websiteId + "/" + idSitemap;
+    $.ajax({
+      url: url,
+      type: "DELETE",
+      success: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToSitemapTab();
+      },
+      error: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToSitemapTab();
+
+      }
+
+    });
+  }
+
+  var postCreateSitemapForm = function (linkablePageId) {
+    $("#pageAssociationForm").hide();
+    $("#linkedPages").hide();
+    $(".loader").show();
+    var url = "/manager/sitemaps";
+
+    var designForm = {};
+    var inputWebsiteId = $("#websiteId");
+
+    designForm.websiteId = inputWebsiteId.val();
+    designForm.pageId = linkablePageId;
+
+    var data = JSON.stringify(designForm);
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: data,
+      contentType: "application/json; charset=utf-8",
+      crossDomain: true,
+      dataType: "json",
+      success: function (data) {
+        currentTab = "";
+        goToSitemapTab();
+        $(".loader").hide();
+      },
+      error: function () {
+        currentTab = "";
+        goToSitemapTab();
+        $(".loader").hide();
+      }
+    });
+  }
+
+  var searchLinkablePages = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkablePages = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linkable_pages?q=" + queryInput.val();
+
+    searchPages($("#linkablePages"), urlLinkablePages);
+  }
+
+  var searchLinkedPages = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkedPages = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linked_pages?q=" + queryInput.val();
+
+    searchPages($("#linkedPages"), urlLinkedPages);
+  }
+
+  var searchPages = function (table, url) {
+    table.hide();
+    $(".card-loader").show();
+    $(".loader").show();
+
+    $.get(url, function (data) {
+      table.html(data);
+      table.show();
+      $(".card-loader").hide();
+      $(".loader").hide();
+    });
+  }
+</script>

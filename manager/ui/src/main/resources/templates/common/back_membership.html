@@ -1,0 +1,119 @@
+<label th:text="#{entity.groups.to.link}"/>
+<form id="membershipAssociationForm" th:object="${createForm}" class="row">
+  <input type="hidden" th:field="*{entityId}"/>
+  <div class="mb-3 col-12">
+    <input type="hidden" th:field="*{entityId}"/>
+    <div id="linkableGroups">
+    </div>
+  </div>
+</form>
+<hr>
+<label th:text="#{entity.groups.linked}"/>
+<div id="linkedGroups">
+</div>
+<script th:inline="javascript">
+  $(document).ready(function () {
+        var urlLinkedGroups = "/manager/memberships/" + [['' + ${createForm.entityId} +'']]
+            + "/_linked_groups?q=";
+        var urlLinkableGroups = "/manager/memberships/" + [['' + ${createForm.entityId} +'']]
+            + "/_linkable_groups?q=";
+        $.get(urlLinkedGroups, function (data) {
+          $("#linkedGroups").html(data);
+        });
+        $.get(urlLinkableGroups, function (data) {
+          $("#linkableGroups").html(data);
+        });
+        $(".card-loader").hide();
+        $(".loader").hide();
+      }
+  );
+  var deleteMembership = function (idAssociatedGroup) {
+
+    $("#membershipAssociationForm").hide();
+    $("#memberships").hide();
+    $(".loader").show();
+
+    var inputEntity = $("#entityId");
+    var entityId = inputEntity.val();
+    var url = "/manager/memberships/" + entityId + "/" + idAssociatedGroup;
+    $.ajax({
+      url: url,
+      type: "DELETE",
+      success: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToMembershipTab();
+      },
+      error: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToMembershipTab();
+
+      }
+
+    });
+  }
+
+  var postCreateMembershipForm = function (linkableGroupId) {
+    $("#membershipAssociationForm").hide();
+    $("#memberships").hide();
+    $(".loader").show();
+    var url = "/manager/memberships";
+
+    var membershipForm = {};
+    var inputEntityId = $("#entityId");
+
+    membershipForm.entityId = inputEntityId.val();
+    membershipForm.groupId = linkableGroupId
+
+    var data = JSON.stringify(membershipForm);
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: data,
+      contentType: "application/json; charset=utf-8",
+      crossDomain: true,
+      dataType: "json",
+      success: function (data) {
+        currentTab = "";
+        goToMembershipTab();
+        $(".loader").hide();
+      },
+      error: function () {
+        currentTab = "";
+        goToMembershipTab();
+        $(".loader").hide();
+      }
+    });
+  }
+
+  var searchLinkableGroups = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkableGroups = "/manager/memberships/" + [['' + ${createForm.entityId} +'']]
+        + "/_linkable_groups?q=" + queryInput.val();
+
+    searchGroups($("#linkableGroups"), urlLinkableGroups);
+  }
+
+  var searchLinkedGroups = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkedGroups = "/manager/memberships/" + [['' + ${createForm.entityId} +'']]
+        + "/_linked_groups?q=" + queryInput.val();
+
+    searchGroups($("#linkedGroups"), urlLinkedGroups);
+  }
+
+  var searchGroups = function (table, url) {
+    table.hide();
+    $(".card-loader").show();
+    $(".loader").show();
+
+    $.get(url, function (data) {
+      table.html(data);
+      table.show();
+      $(".card-loader").hide();
+      $(".loader").hide();
+    });
+  }
+
+</script>

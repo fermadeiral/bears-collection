@@ -1,0 +1,61 @@
+<script type="text/javascript" th:src="@{../../../js/style.js}"></script>
+<div th:replace="common/back_codemirror">
+</div>
+<form id="styleCreateForm" th:object="${createForm}">
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="form-check form-group mb-3" id="formInputName">
+        <label th:text="#{style.name.label}"/>
+        <input type="text" class="form-control" th:field="*{name}"/>
+        <small class="form-text text-muted" th:text="#{style.name.help}"/>
+      </div>
+      <div class="form-check form-group mb-3" id="formInputContent">
+        <label th:text="#{style.content.label}"/>
+        <textarea rows="3" id="styleContent" class="form-control" th:field="*{content}"/>
+        <small class="form-text text-muted" th:text="#{style.content.help}"/>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="float-right">
+        <a class="btn btn-md btn-danger collapsed fa fa-times fa-white"
+           onclick="cancelCreateStyle()"
+        ></a>
+        <a class="btn btn-md btn-success fa fa-check fa-white" onclick="postCreateStyleForm()"
+           th:if="${currentUser.hasPrivilege('webmastering:style:create')}"></a>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="card card-loader">
+  <div class="loader">
+  </div>
+</div>
+<script type="text/javascript">
+  var codeMirrorStyleContent;
+  $(document).ready(function () {
+    codeMirrorStyleContent = setUpCodeMirror("styleContent");
+    fix_code_mirror_height();
+  });
+
+  var setUpCodeMirror = function (textAreaId) {
+    var codeMirror = CodeMirror.fromTextArea(document.getElementById(textAreaId),
+        {
+          theme: "neo",
+          lineNumbers: true,
+          lineWrapping: true,
+          extraKeys: {
+            "F11": function (cm) {
+              cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+            },
+            "Esc": function (cm) {
+              if (cm.getOption("fullScreen")) {
+                cm.setOption("fullScreen", false);
+              }
+            },
+            "Ctrl-Space": "autocomplete"
+          }
+        });
+    return codeMirror;
+  }
+
+</script>

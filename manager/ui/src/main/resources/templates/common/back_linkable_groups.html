@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col">
+    <div class="input-group mt-3 mb-3">
+      <input type="text" id="linkableQueryInput" class="form-control"
+             th:placeholder="${searchPlaceHolder}"
+             th:aria-label="${searchPlaceHolder}"
+             aria-describedby="addon">
+      <div class="input-group-append">
+        <btn class="btn input-group-text" id="addon" onclick="searchLinkableGroups()">
+          <i class="fa fa-search"></i>
+        </btn>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card card-loader">
+  <div class="loader">
+  </div>
+</div>
+<table class="table table-bordered table-hover">
+  <thead>
+  <tr>
+    <th scope="col" colspan="2">
+      <label th:text="#{group.name.label}"/>
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="bean : ${linkableGroups.content}">
+    <td>
+      <div class="full-width"
+           th:text="${bean.name}"/>
+    </td>
+    <td>
+      <a th:id="${bean.id}" class="btn btn-md btn-success float-right fa fa-plus fa-white"
+         onclick="postCreateMembershipForm(this.id)"
+         th:if="${currentUser.hasPrivilege('administration:memberships:create')}"></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<script th:inline="javascript">
+
+  $(document).ready(function () {
+    $(".card-loader").hide();
+    $(".loader").hide();
+    var queryInput = $("#linkableQueryInput");
+    queryInput.keyup(function () {
+      var value = $(this).val();
+      if (value.length >= 3) {
+        searchLinkableGroups();
+      }
+      if (value.length == 0) {
+        searchLinkableGroups();
+      }
+    });
+
+  });
+
+
+</script>

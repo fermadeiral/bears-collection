@@ -1,0 +1,29 @@
+<title th:text="#{main.back.title}"/>
+
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="_csrf" th:content="${_csrf.token}"/>
+<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<meta th:each="metaItem : ${metaItems}" th:name="${metaItem.name}"
+      th:content="${metaItem.content}"/>
+
+<script type="text/javascript" th:src="@{../../../webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../../../js/common.js}"></script>
+
+<script th:src="@{../../../webjars/sockjs-client/sockjs.min.js}"></script>
+<script th:src="@{../../../webjars/stomp-websocket/stomp.min.js}"></script>
+
+
+<script src="/webjars/select2/js/select2.min.js"></script>
+<link rel="stylesheet" href="/webjars/select2/css/select2.min.css"/>
+<script th:src="${'/webjars/select2/js/i18n/' + currentLocale.language + '.js'}"></script>
+
+
+<div th:replace="common/back_bootstrap"></div>
+<link rel="stylesheet" th:href="@{../../../css/style_back.css}">
+
+
+
+
+

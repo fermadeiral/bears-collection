@@ -1,0 +1,117 @@
+<label th:text="#{website.styles.to.link}"/>
+<form id="designCreateForm" th:object="${createForm}" class="row">
+  <div class="mb-3 col-12">
+    <input type="hidden" th:field="*{websiteId}"/>
+    <div id="linkableStyles">
+    </div>
+  </div>
+</form>
+<hr>
+<label th:text="#{website.styles.linked}"/>
+<div id="linkedStyles">
+</div>
+<script th:inline="javascript">
+  $(document).ready(function () {
+    var urlLinkedStyles = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linked_styles?q=";
+    var urlLinkableStyles = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linkable_styles?q=";
+    $.get(urlLinkedStyles, function (data) {
+      $("#linkedStyles").html(data);
+    });
+    $.get(urlLinkableStyles, function (data) {
+      $("#linkableStyles").html(data);
+    });
+
+    $(".card-loader").hide();
+    $(".loader").hide();
+  });
+  var deleteDesign = function (idDesign) {
+
+    $("#designCreateForm").hide();
+    $("#designs").hide();
+    $(".loader").show();
+
+    var inputWebsiteId = $("#websiteId");
+    var websiteId = inputWebsiteId.val();
+    var url = "/manager/designs/" + websiteId + "/" + idDesign;
+    $.ajax({
+      url: url,
+      type: "DELETE",
+      success: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToDesignTab();
+      },
+      error: function () {
+        currentTab = "";
+        $(".loader").hide();
+        goToDesignTab();
+
+      }
+
+    });
+  }
+
+  var postCreateDesignForm = function (linkableStyleId) {
+    $("#designCreateForm").hide();
+    $("#designs").hide();
+    $(".loader").show();
+    var url = "/manager/designs";
+
+    var designForm = {};
+    var inputWebsiteId = $("#websiteId");
+
+    designForm.websiteId = inputWebsiteId.val();
+    designForm.styleId = linkableStyleId;
+
+    var data = JSON.stringify(designForm);
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: data,
+      contentType: "application/json; charset=utf-8",
+      crossDomain: true,
+      dataType: "json",
+      success: function (data) {
+        currentTab = "";
+        goToDesignTab();
+        $(".loader").hide();
+      },
+      error: function () {
+        currentTab = "";
+        goToDesignTab();
+        $(".loader").hide();
+      }
+    });
+  }
+
+  var searchLinkableStyles = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkableStyles = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linkable_styles?q=" + queryInput.val();
+
+    searchStyles($("#linkableStyles"), urlLinkableStyles);
+  }
+
+  var searchLinkedStyles = function () {
+    var queryInput = $("#linkableQueryInput");
+    var urlLinkedStyles = "/manager/websites/" + [['' + ${createForm.websiteId} +'']]
+        + "/_linked_styles?q=" + queryInput.val();
+
+    searchStyles($("#linkedStyles"), urlLinkedStyles);
+  }
+
+  var searchStyles = function (table, url) {
+    table.hide();
+    $(".card-loader").show();
+    $(".loader").show();
+
+    $.get(url, function (data) {
+      table.html(data);
+      table.show();
+      $(".card-loader").hide();
+      $(".loader").hide();
+    });
+  }
+</script>
