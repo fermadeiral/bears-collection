@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "danfickle/openhtmltopdf",
+    "githubId": 45526710,
+    "url": "https://github.com/danfickle/openhtmltopdf",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450124609,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/450124609",
+      "date": "Nov 3, 2018 5:19:54 AM"
+    },
+    "fixerBuild": {
+      "id": 453465075,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/453465075",
+      "date": "Nov 11, 2018 5:30:04 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 11, 2018 5:30:19 AM",
+    "reproductionDateEnd": "Nov 11, 2018 5:35:24 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 348995744,
+      "totalMemory": 480247808
+    },
+    "totalDuration": 298,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 55,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          55
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/danfickle/openhtmltopdf/450124609/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 18,
+      "numberDeleted": 428
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/danfickle/openhtmltopdf/450124609/openhtmltopdf-examples",
+    "overallMetrics": {
+      "numberRunning": 113,
+      "numberPassing": 110,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.openhtmltopdf.nonvisualregressiontests.NonVisualRegressionTest",
+        "numberRunning": 10,
+        "numberPassing": 7,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.openhtmltopdf.nonvisualregressiontests.NonVisualRegressionTest",
+        "testMethod": "testLinkAfterOverflowTarget",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003corg.apache.pdfbox.pdmodel.PDPage@66366fb3\u003e but was:\u003corg.apache.pdfbox.pdmodel.PDPage@191b7cf2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.openhtmltopdf.nonvisualregressiontests.NonVisualRegressionTest",
+        "testMethod": "testLinkTransformTarget",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003corg.apache.pdfbox.pdmodel.PDPage@79dd358f\u003e but was:\u003corg.apache.pdfbox.pdmodel.PDPage@1f38b41a\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.openhtmltopdf.nonvisualregressiontests.NonVisualRegressionTest",
+        "testMethod": "testLinkOnOverflowTarget",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003corg.apache.pdfbox.pdmodel.PDPage@73361f29\u003e but was:\u003corg.apache.pdfbox.pdmodel.PDPage@eb5010a\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "830eaab30647bddd5774dbad4b6edb94e726ee9c",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/830eaab30647bddd5774dbad4b6edb94e726ee9c",
+      "date": "Nov 3, 2018 5:16:37 AM"
+    },
+    "fixerBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "f826ad8c372986864998b5b9db22c25ab2223182",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/f826ad8c372986864998b5b9db22c25ab2223182",
+      "date": "Nov 11, 2018 5:26:25 AM"
+    }
+  },
+  "type": "passing_passing"
+}
