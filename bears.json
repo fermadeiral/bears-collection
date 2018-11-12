@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "DataBiosphere/consent-ontology",
+    "githubId": 40986488,
+    "url": "https://github.com/DataBiosphere/consent-ontology",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 104
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453433108,
+      "url": "http://travis-ci.org/DataBiosphere/consent-ontology/builds/453433108",
+      "date": "Nov 11, 2018 2:00:57 AM"
+    },
+    "fixerBuild": {
+      "id": 453941362,
+      "url": "http://travis-ci.org/DataBiosphere/consent-ontology/builds/453941362",
+      "date": "Nov 12, 2018 1:40:56 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 12, 2018 3:11:28 PM",
+    "reproductionDateEnd": "Nov 12, 2018 3:29:07 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 364747368,
+      "totalMemory": 394788864
+    },
+    "totalDuration": 1051,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 95,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          4,
+          89
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 450,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          450
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DataBiosphere/consent-ontology/453433108/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DataBiosphere/consent-ontology/453433108",
+    "overallMetrics": {
+      "numberRunning": 222,
+      "numberPassing": 221,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest",
+        "testMethod": "testNotFound",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 61,
+    "numberTestFiles": 40,
+    "numberLibrariesFailingModule": 224,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "develop",
+      "sha": "3b99725a6e6d7be8143496416844689ac61f08c5",
+      "url": "http://github.com/DataBiosphere/consent-ontology/commit/3b99725a6e6d7be8143496416844689ac61f08c5",
+      "date": "Nov 11, 2018 1:41:49 AM"
+    },
+    "fixerBuild": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "develop",
+      "sha": "e4f0f6a319a10b9c477668bf695e7d23cafad959",
+      "url": "http://github.com/DataBiosphere/consent-ontology/commit/e4f0f6a319a10b9c477668bf695e7d23cafad959",
+      "date": "Nov 12, 2018 1:28:48 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "BTRX-102",
+      "sha": "235f40e7b9b338323bc14572e44fec586e1d600f",
+      "url": "https://github.com/DataBiosphere/consent-ontology/commit/235f40e7b9b338323bc14572e44fec586e1d600f",
+      "date": "Nov 12, 2018 2:43:10 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "develop",
+      "sha": "ad529743c8029074d7ab59f2d1b471572b49a2aa",
+      "url": "https://github.com/DataBiosphere/consent-ontology/commit/ad529743c8029074d7ab59f2d1b471572b49a2aa",
+      "date": "Aug 28, 2018 6:19:19 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "BTRX-102",
+      "sha": "235f40e7b9b338323bc14572e44fec586e1d600f",
+      "url": "https://github.com/DataBiosphere/consent-ontology/commit/235f40e7b9b338323bc14572e44fec586e1d600f",
+      "date": "Nov 12, 2018 2:43:10 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "DataBiosphere/consent-ontology",
+      "branchName": "develop",
+      "sha": "ad529743c8029074d7ab59f2d1b471572b49a2aa",
+      "url": "https://github.com/DataBiosphere/consent-ontology/commit/ad529743c8029074d7ab59f2d1b471572b49a2aa",
+      "date": "Aug 28, 2018 6:19:19 PM"
+    }
+  }
+}
