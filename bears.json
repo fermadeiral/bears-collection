@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "PaymentSystem/Application",
+    "githubId": 152229255,
+    "url": "https://github.com/PaymentSystem/Application",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 37
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454037751,
+      "url": "http://travis-ci.org/PaymentSystem/Application/builds/454037751",
+      "date": "Nov 12, 2018 4:57:30 PM"
+    },
+    "fixerBuild": {
+      "id": 454549120,
+      "url": "http://travis-ci.org/PaymentSystem/Application/builds/454549120",
+      "date": "Nov 13, 2018 4:46:34 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 13, 2018 4:46:56 PM",
+    "reproductionDateEnd": "Nov 13, 2018 4:49:13 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 361901376,
+      "totalMemory": 435159040
+    },
+    "totalDuration": 129,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 48,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          7,
+          37
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          25
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/PaymentSystem/Application/454037751/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 45
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/PaymentSystem/Application/454037751",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 32,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.springframework.web.util.NestedServletException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.epam.lab.paymentsystem.controller.CardControllerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.epam.lab.paymentsystem.controller.CardControllerTest",
+        "testMethod": "testCardListPage",
+        "failureName": "org.springframework.web.util.NestedServletException",
+        "detail": "Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: \"card.isActive\" (template: \"account\" - line 35, col 33)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 39,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "dev",
+      "sha": "38b7be127d1d76fed2ee1e86fc333d70d9882283",
+      "url": "http://github.com/PaymentSystem/Application/commit/38b7be127d1d76fed2ee1e86fc333d70d9882283",
+      "date": "Nov 12, 2018 4:57:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "dev",
+      "sha": "e10e5fe222c1c03c8685e80beb37c09c329bfdca",
+      "url": "http://github.com/PaymentSystem/Application/commit/e10e5fe222c1c03c8685e80beb37c09c329bfdca",
+      "date": "Nov 13, 2018 4:42:57 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "embeddedDb",
+      "sha": "6e440bbc82f3784962b8f194d87b543789056b34",
+      "url": "https://github.com/PaymentSystem/Application/commit/6e440bbc82f3784962b8f194d87b543789056b34",
+      "date": "Nov 13, 2018 4:42:57 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "dev",
+      "sha": "fccb562e6647df5fb72ff80d6a779de32dfe39ce",
+      "url": "https://github.com/PaymentSystem/Application/commit/fccb562e6647df5fb72ff80d6a779de32dfe39ce",
+      "date": "Nov 12, 2018 11:22:47 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "embeddedDb",
+      "sha": "6e440bbc82f3784962b8f194d87b543789056b34",
+      "url": "https://github.com/PaymentSystem/Application/commit/6e440bbc82f3784962b8f194d87b543789056b34",
+      "date": "Nov 13, 2018 4:42:57 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "PaymentSystem/Application",
+      "branchName": "dev",
+      "sha": "fccb562e6647df5fb72ff80d6a779de32dfe39ce",
+      "url": "https://github.com/PaymentSystem/Application/commit/fccb562e6647df5fb72ff80d6a779de32dfe39ce",
+      "date": "Nov 12, 2018 11:22:47 AM"
+    }
+  },
+  "type": "passing_passing"
+}
