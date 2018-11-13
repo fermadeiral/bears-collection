@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Contargo/iris",
+    "githubId": 34805572,
+    "url": "https://github.com/Contargo/iris",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434021226,
+      "url": "http://travis-ci.org/Contargo/iris/builds/434021226",
+      "date": "Sep 27, 2018 12:33:52 PM"
+    },
+    "fixerBuild": {
+      "id": 454367420,
+      "url": "http://travis-ci.org/Contargo/iris/builds/454367420",
+      "date": "Nov 13, 2018 9:42:35 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 13, 2018 9:42:54 AM",
+    "reproductionDateEnd": "Nov 13, 2018 9:50:20 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 276646576,
+      "totalMemory": 419954688
+    },
+    "totalDuration": 438,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 300,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          300
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Contargo/iris/434021226/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Contargo/iris/434021226",
+    "overallMetrics": {
+      "numberRunning": 662,
+      "numberPassing": 661,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.contargo.iris.address.api.AddressApiControllerMvcUnitTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.contargo.iris.address.api.AddressApiControllerMvcUnitTest",
+        "testMethod": "testAddressByGeolocation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reverseGeocodeResponse.links[0].href\"\nExpected: is \"http://localhost/reversegeocode/1:1\"\n     but: was \"http://localhost/reversegeocode/1:1/.\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 316,
+    "numberTestFiles": 199,
+    "numberLibrariesFailingModule": 134,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Contargo/iris",
+      "branchName": "master",
+      "sha": "c465662e0b67d6d2adcc5298cd8f44d3263dfe7c",
+      "url": "http://github.com/Contargo/iris/commit/c465662e0b67d6d2adcc5298cd8f44d3263dfe7c",
+      "date": "Sep 27, 2018 12:29:58 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Contargo/iris",
+      "branchName": "master",
+      "sha": "027433037a3253cee3c8ce9602bd1719da6b5139",
+      "url": "http://github.com/Contargo/iris/commit/027433037a3253cee3c8ce9602bd1719da6b5139",
+      "date": "Nov 13, 2018 9:37:47 AM"
+    }
+  },
+  "type": "passing_passing"
+}
