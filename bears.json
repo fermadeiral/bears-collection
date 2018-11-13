@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp",
+    "githubId": 86105877,
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1176
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454113229,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/454113229",
+      "date": "Nov 12, 2018 7:52:38 PM"
+    },
+    "fixerBuild": {
+      "id": 454608207,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/454608207",
+      "date": "Nov 13, 2018 6:49:38 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 13, 2018 6:49:52 PM",
+    "reproductionDateEnd": "Nov 13, 2018 7:15:33 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 412981120,
+      "totalMemory": 594542592
+    },
+    "totalDuration": 1532,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 1090,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          17,
+          9,
+          5,
+          1056
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 78,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          78
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/454113229/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 93,
+      "numberDeleted": 101
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "975be9759936783db15eb86293c4c57d84ad2217",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/975be9759936783db15eb86293c4c57d84ad2217",
+      "date": "Nov 12, 2018 7:44:33 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "e7b40bf6ac41fa9a0f030ab7fad71f5971247dd9",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/e7b40bf6ac41fa9a0f030ab7fad71f5971247dd9",
+      "date": "Nov 13, 2018 6:40:59 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "datastore-spel-query-methods",
+      "sha": "f3f5decfcf7df5c31b452be004716a7597e0082e",
+      "url": "https://github.com/spring-cloud/spring-cloud-gcp/commit/f3f5decfcf7df5c31b452be004716a7597e0082e",
+      "date": "Nov 13, 2018 6:54:16 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "05b4bcb5b04c4bcb847a05a2f87bf5bd017cb97f",
+      "url": "https://github.com/spring-cloud/spring-cloud-gcp/commit/05b4bcb5b04c4bcb847a05a2f87bf5bd017cb97f",
+      "date": "Nov 12, 2018 5:11:26 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "datastore-spel-query-methods",
+      "sha": "f3f5decfcf7df5c31b452be004716a7597e0082e",
+      "url": "https://github.com/spring-cloud/spring-cloud-gcp/commit/f3f5decfcf7df5c31b452be004716a7597e0082e",
+      "date": "Nov 13, 2018 6:54:16 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "05b4bcb5b04c4bcb847a05a2f87bf5bd017cb97f",
+      "url": "https://github.com/spring-cloud/spring-cloud-gcp/commit/05b4bcb5b04c4bcb847a05a2f87bf5bd017cb97f",
+      "date": "Nov 12, 2018 5:11:26 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/454113229/spring-cloud-gcp-autoconfigure",
+    "overallMetrics": {
+      "numberRunning": 490,
+      "numberPassing": 489,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.autoconfigure.security.IapAuthenticationAutoConfigurationTests",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.autoconfigure.security.IapAuthenticationAutoConfigurationTests",
+        "testMethod": "testCustomPropertyOverridesDefault",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cnull\u003e but was:\u003c\"very fake jwt\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 41,
+    "numberSourceFiles": 248,
+    "numberTestFiles": 137,
+    "numberLibrariesFailingModule": 202,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
