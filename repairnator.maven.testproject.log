@@ -23,99 +23,93 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ iris ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 5.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 57.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 927.7 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running net.contargo.iris.routedatarevision.RouteRevisionRequestUnitTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s - in net.contargo.iris.routedatarevision.RouteRevisionRequestUnitTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in net.contargo.iris.routedatarevision.RouteRevisionRequestUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.api.RouteDataRevisionApiControllerMvcUnitTest
-2018-11-13 09:48:26,145 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.api.RestApiException: foo] 
-2018-11-13 09:48:26,268 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.api.RestApiException: foo] 
-2018-11-13 09:48:26,305 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.routedatarevision.service.RevisionDoesNotExistException: foo] 
-2018-11-13 09:48:26,331 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument at index 0 in method: public org.springframework.http.ResponseEntity<net.contargo.iris.routedatarevision.dto.RouteDataRevisionDto> net.contargo.iris.routedatarevision.api.RouteDataRevisionApiController.create(net.contargo.iris.routedatarevision.dto.RouteDataRevisionDto), with 7 error(s): [Field error in object 'routeDataRevisionDto' on field 'tollDistanceOneWayInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.tollDistanceOneWayInKilometer,NotNull.tollDistanceOneWayInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.tollDistanceOneWayInKilometer,tollDistanceOneWayInKilometer]; arguments []; default message [tollDistanceOneWayInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'airlineDistanceInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.airlineDistanceInKilometer,NotNull.airlineDistanceInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.airlineDistanceInKilometer,airlineDistanceInKilometer]; arguments []; default message [airlineDistanceInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'truckDistanceOneWayInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.truckDistanceOneWayInKilometer,NotNull.truckDistanceOneWayInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.truckDistanceOneWayInKilometer,truckDistanceOneWayInKilometer]; arguments []; default message [truckDistanceOneWayInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'validFrom': rejected value [null]; codes [NotNull.routeDataRevisionDto.validFrom,NotNull.validFrom,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.validFrom,validFrom]; arguments []; default message [validFrom]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'radiusInMeter': rejected value [null]; codes [NotNull.routeDataRevisionDto.radiusInMeter,NotNull.radiusInMeter,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.radiusInMeter,radiusInMeter]; arguments []; default message [radiusInMeter]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'latitude': rejected value [null]; codes [NotNull.routeDataRevisionDto.latitude,NotNull.latitude,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.latitude,latitude]; arguments []; default message [latitude]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'longitude': rejected value [null]; codes [NotNull.routeDataRevisionDto.longitude,NotNull.longitude,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.longitude,longitude]; arguments []; default message [longitude]]; default message [may not be null]] ] 
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.409 s - in net.contargo.iris.routedatarevision.api.RouteDataRevisionApiControllerMvcUnitTest
+2018-11-13 09:49:54,307 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.api.RestApiException: foo] 
+2018-11-13 09:49:54,458 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.api.RestApiException: foo] 
+2018-11-13 09:49:54,498 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.routedatarevision.service.RevisionDoesNotExistException: foo] 
+2018-11-13 09:49:54,526 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument at index 0 in method: public org.springframework.http.ResponseEntity<net.contargo.iris.routedatarevision.dto.RouteDataRevisionDto> net.contargo.iris.routedatarevision.api.RouteDataRevisionApiController.create(net.contargo.iris.routedatarevision.dto.RouteDataRevisionDto), with 7 error(s): [Field error in object 'routeDataRevisionDto' on field 'tollDistanceOneWayInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.tollDistanceOneWayInKilometer,NotNull.tollDistanceOneWayInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.tollDistanceOneWayInKilometer,tollDistanceOneWayInKilometer]; arguments []; default message [tollDistanceOneWayInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'airlineDistanceInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.airlineDistanceInKilometer,NotNull.airlineDistanceInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.airlineDistanceInKilometer,airlineDistanceInKilometer]; arguments []; default message [airlineDistanceInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'truckDistanceOneWayInKilometer': rejected value [null]; codes [NotNull.routeDataRevisionDto.truckDistanceOneWayInKilometer,NotNull.truckDistanceOneWayInKilometer,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.truckDistanceOneWayInKilometer,truckDistanceOneWayInKilometer]; arguments []; default message [truckDistanceOneWayInKilometer]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'validFrom': rejected value [null]; codes [NotNull.routeDataRevisionDto.validFrom,NotNull.validFrom,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.validFrom,validFrom]; arguments []; default message [validFrom]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'radiusInMeter': rejected value [null]; codes [NotNull.routeDataRevisionDto.radiusInMeter,NotNull.radiusInMeter,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.radiusInMeter,radiusInMeter]; arguments []; default message [radiusInMeter]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'latitude': rejected value [null]; codes [NotNull.routeDataRevisionDto.latitude,NotNull.latitude,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.latitude,latitude]; arguments []; default message [latitude]]; default message [may not be null]] [Field error in object 'routeDataRevisionDto' on field 'longitude': rejected value [null]; codes [NotNull.routeDataRevisionDto.longitude,NotNull.longitude,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [routeDataRevisionDto.longitude,longitude]; arguments []; default message [longitude]]; default message [may not be null]] ] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.621 s - in net.contargo.iris.routedatarevision.api.RouteDataRevisionApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.web.RouteDataRevisionControllerMvcUnitTest
-2018-11-13 09:48:27,564 |  WARN  | main | org.springframework.validation.DataBinder               | Skipping URI variable 'id' since the request contains a bind value with the same name. 
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.276 s - in net.contargo.iris.routedatarevision.web.RouteDataRevisionControllerMvcUnitTest
+2018-11-13 09:49:55,666 |  WARN  | main | org.springframework.validation.DataBinder               | Skipping URI variable 'id' since the request contains a bind value with the same name. 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.174 s - in net.contargo.iris.routedatarevision.web.RouteDataRevisionControllerMvcUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoServiceImplUnitTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoServiceImplUnitTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.routedatarevision.dto.RouteDataRevisionDtoUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.RouteDataRevisionUnitTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.routedatarevision.RouteDataRevisionUnitTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.routedatarevision.RouteDataRevisionUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCleanupServiceUnitTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCleanupServiceUnitTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCleanupServiceUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCsvServiceUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCsvServiceUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in net.contargo.iris.routedatarevision.service.cleanup.RouteDataRevisionCsvServiceUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.service.RouteDataRevisionServiceImplUnitTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in net.contargo.iris.routedatarevision.service.RouteDataRevisionServiceImplUnitTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in net.contargo.iris.routedatarevision.service.RouteDataRevisionServiceImplUnitTest
 [INFO] Running net.contargo.iris.routedatarevision.service.ValidityRangeUnitTest
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in net.contargo.iris.routedatarevision.service.ValidityRangeUnitTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.routedatarevision.service.ValidityRangeUnitTest
 [INFO] Running net.contargo.iris.route.RouteDataUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.route.RouteDataUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.RouteDataUnitTest
 [INFO] Running net.contargo.iris.route.api.RoutesApiControllerMvcUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in net.contargo.iris.route.api.RoutesApiControllerMvcUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s - in net.contargo.iris.route.api.RoutesApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.route.api.RouteEnricherApiControllerMvcUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in net.contargo.iris.route.api.RouteEnricherApiControllerMvcUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in net.contargo.iris.route.api.RouteEnricherApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.route.RouteDirectionUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.RouteDirectionUnitTest
 [INFO] Running net.contargo.iris.route.DirectTruckRouteBuilderUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in net.contargo.iris.route.DirectTruckRouteBuilderUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in net.contargo.iris.route.DirectTruckRouteBuilderUnitTest
 [INFO] Running net.contargo.iris.route.TruckRoutePartsUnitTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in net.contargo.iris.route.TruckRoutePartsUnitTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in net.contargo.iris.route.TruckRoutePartsUnitTest
 [INFO] Running net.contargo.iris.route.dto.EnricherDtoServiceImplUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in net.contargo.iris.route.dto.EnricherDtoServiceImplUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in net.contargo.iris.route.dto.EnricherDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.route.RouteProductUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.RouteProductUnitTest
 [INFO] Running net.contargo.iris.route.RouteBuilderUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.RouteBuilderUnitTest
 [INFO] Running net.contargo.iris.route.RouteComboUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.route.RouteComboUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.RouteComboUnitTest
 [INFO] Running net.contargo.iris.route.RouteUnitTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in net.contargo.iris.route.RouteUnitTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.RouteUnitTest
 [INFO] Running net.contargo.iris.route.service.GeoLocationPartEnricherUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in net.contargo.iris.route.service.GeoLocationPartEnricherUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.route.service.GeoLocationPartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.RouteDataRevisionEnricherUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.service.RouteDataRevisionEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.AirLineDistancePartEnricherUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in net.contargo.iris.route.service.AirLineDistancePartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.EnricherServiceImplUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.route.service.EnricherServiceImplUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in net.contargo.iris.route.service.EnricherServiceImplUnitTest
 [INFO] Running net.contargo.iris.route.service.TruckingTotalEnricherUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.route.service.TruckingTotalEnricherUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.service.TruckingTotalEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.EnricherContextUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.service.EnricherContextUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.service.EnricherContextUnitTest
 [INFO] Running net.contargo.iris.route.service.RouteUrlSerializationServiceImplUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.route.service.RouteUrlSerializationServiceImplUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.service.RouteUrlSerializationServiceImplUnitTest
 [INFO] Running net.contargo.iris.route.service.Co2TotalEnricherUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in net.contargo.iris.route.service.Co2TotalEnricherUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.service.Co2TotalEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.RouteDataRevisionPartEnricherUnitTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in net.contargo.iris.route.service.RouteDataRevisionPartEnricherUnitTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.route.service.RouteDataRevisionPartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.MainRunPartEnricherUnitTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in net.contargo.iris.route.service.MainRunPartEnricherUnitTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in net.contargo.iris.route.service.MainRunPartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.Co2PartEnricherUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in net.contargo.iris.route.service.Co2PartEnricherUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in net.contargo.iris.route.service.Co2PartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.SwissPartEnricherUnitTest
-2018-11-13 09:48:29,005 |  WARN  | main | net.contargo.iris.route.service.SwissPartEnricher       | Failed to map from nominatim address to static address: Address [displayName=null, osmId=0, placeId=0, shortName=null, address={}] 
-2018-11-13 09:48:29,014 |  WARN  | main | net.contargo.iris.route.service.SwissPartEnricher       | Failed to map from nominatim address to static address: Address [displayName=null, osmId=0, placeId=0, shortName=null, address={}] 
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in net.contargo.iris.route.service.SwissPartEnricherUnitTest
+2018-11-13 09:49:56,774 |  WARN  | main | net.contargo.iris.route.service.SwissPartEnricher       | Failed to map from nominatim address to static address: Address [displayName=null, osmId=0, placeId=0, shortName=null, address={}] 
+2018-11-13 09:49:56,784 |  WARN  | main | net.contargo.iris.route.service.SwissPartEnricher       | Failed to map from nominatim address to static address: Address [displayName=null, osmId=0, placeId=0, shortName=null, address={}] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in net.contargo.iris.route.service.SwissPartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.TruckRoutingPartEnricherUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in net.contargo.iris.route.service.TruckRoutingPartEnricherUnitTest
 [INFO] Running net.contargo.iris.route.service.TotalEnricherUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.route.service.TotalEnricherUnitTest
 [INFO] Running net.contargo.iris.route.RoutePartUnitTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.route.RoutePartUnitTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in net.contargo.iris.route.RoutePartUnitTest
 [INFO] Running net.contargo.iris.seaport.SeaportUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.seaport.SeaportUnitTest
 [INFO] Running net.contargo.iris.seaport.api.SeaportApiControllerMvcUnitTest
-2018-11-13 09:48:29,210 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:49:56,995 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 net.contargo.iris.api.NotFoundException: Cannot find Seaport for UID 314
 	at net.contargo.iris.seaport.api.SeaportApiController.getSeaportById(SeaportApiController.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -173,33 +167,33 @@ net.contargo.iris.api.NotFoundException: Cannot find Seaport for UID 314
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in net.contargo.iris.seaport.api.SeaportApiControllerMvcUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in net.contargo.iris.seaport.api.SeaportApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.seaport.web.SeaportControllerMvcUnitTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in net.contargo.iris.seaport.web.SeaportControllerMvcUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in net.contargo.iris.seaport.web.SeaportControllerMvcUnitTest
 [INFO] Running net.contargo.iris.seaport.dto.SeaportDtoServiceImplUnitTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in net.contargo.iris.seaport.dto.SeaportDtoServiceImplUnitTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in net.contargo.iris.seaport.dto.SeaportDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.seaport.service.SeaportServiceImplUnitTest
-2018-11-13 09:48:29,379 |  WARN  | main | net.contargo.iris.seaport.service.SeaportServiceImpl    | Terminal uniqueId 1 already assigned - trying next uniqueId 
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in net.contargo.iris.seaport.service.SeaportServiceImplUnitTest
+2018-11-13 09:49:57,259 |  WARN  | main | net.contargo.iris.seaport.service.SeaportServiceImpl    | Terminal uniqueId 1 already assigned - trying next uniqueId 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in net.contargo.iris.seaport.service.SeaportServiceImplUnitTest
 [INFO] Running net.contargo.iris.location.GeoLocationServiceImplUnitTest
-2018-11-13 09:48:29,395 |  WARN  | main | net.contargo.iris.location.GeoLocationServiceImpl       | Couldn't resolve address for GeoLocationImpl [latitude=10, longitude=10] 
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.location.GeoLocationServiceImplUnitTest
+2018-11-13 09:49:57,280 |  WARN  | main | net.contargo.iris.location.GeoLocationServiceImpl       | Couldn't resolve address for GeoLocationImpl [latitude=10, longitude=10] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in net.contargo.iris.location.GeoLocationServiceImplUnitTest
 [INFO] Running net.contargo.iris.co2.advice.Co2PartTruckStrategyUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.advice.Co2PartTruckStrategyUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.co2.advice.Co2PartTruckStrategyUnitTest
 [INFO] Running net.contargo.iris.co2.advice.Co2PartRailStrategyUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.advice.Co2PartRailStrategyUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.co2.advice.Co2PartRailStrategyUnitTest
 [INFO] Running net.contargo.iris.co2.advice.Co2PartStrategyAdvisorUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.advice.Co2PartStrategyAdvisorUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.co2.advice.Co2PartStrategyAdvisorUnitTest
 [INFO] Running net.contargo.iris.co2.advice.Co2PartDtruckStrategyUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.advice.Co2PartDtruckStrategyUnitTest
 [INFO] Running net.contargo.iris.co2.advice.Co2PartBargeStrategyUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.advice.Co2PartBargeStrategyUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.co2.advice.Co2PartBargeStrategyUnitTest
 [INFO] Running net.contargo.iris.co2.Co2CalculatorUnitTest
 [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.Co2CalculatorUnitTest
 [INFO] Running net.contargo.iris.co2.service.Co2ServiceImplUnitTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.co2.service.Co2ServiceImplUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.co2.service.Co2ServiceImplUnitTest
 [INFO] Running net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest
-2018-11-13 09:48:29,431 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,335 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 java.lang.RuntimeException: This should never happen
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.resolveRuntimeException(PublicAPIExceptionHandlerUnitTest.java:125)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -230,7 +224,7 @@ java.lang.RuntimeException: This should never happen
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:29,433 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,337 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 org.springframework.web.client.HttpClientErrorException: 503 Nominatim down
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.resolveHttpClientErrorException(PublicAPIExceptionHandlerUnitTest.java:98)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -261,7 +255,7 @@ org.springframework.web.client.HttpClientErrorException: 503 Nominatim down
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:29,447 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,349 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 java.lang.IllegalStateException: Invalid application state
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.exceptionWhileResolvingGetsCaught(PublicAPIExceptionHandlerUnitTest.java:140)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -292,7 +286,7 @@ java.lang.IllegalStateException: Invalid application state
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:29,449 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,350 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 java.lang.IllegalStateException: Invalid application state
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.resolveIllegalStateException(PublicAPIExceptionHandlerUnitTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -323,7 +317,7 @@ java.lang.IllegalStateException: Invalid application state
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:29,453 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,351 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 java.lang.IllegalArgumentException: Invalid ID for terminal
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.resolveIllegalArgumentException(PublicAPIExceptionHandlerUnitTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -354,7 +348,7 @@ java.lang.IllegalArgumentException: Invalid ID for terminal
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:29,454 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
+2018-11-13 09:49:57,353 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by null:  
 java.lang.NullPointerException: This should never happen
 	at net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest.resolveNullPointerException(PublicAPIExceptionHandlerUnitTest.java:113)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -385,19 +379,19 @@ java.lang.NullPointerException: This should never happen
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.api.PublicAPIExceptionHandlerUnitTest
 [INFO] Running net.contargo.iris.api.discover.TestExplainViewUnitTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in net.contargo.iris.api.discover.TestExplainViewUnitTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in net.contargo.iris.api.discover.TestExplainViewUnitTest
 [INFO] Running net.contargo.iris.api.discover.DiscoverPublicApiControllerMvcUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in net.contargo.iris.api.discover.DiscoverPublicApiControllerMvcUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in net.contargo.iris.api.discover.DiscoverPublicApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.mainrun.service.MainRunDurationServiceImplUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.mainrun.service.MainRunDurationServiceImplUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.mainrun.service.MainRunDurationServiceImplUnitTest
 [INFO] Running net.contargo.iris.web.RootControllerMvcUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in net.contargo.iris.web.RootControllerMvcUnitTest
 [INFO] Running net.contargo.iris.terminal.TerminalUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.terminal.TerminalUnitTest
 [INFO] Running net.contargo.iris.terminal.api.TerminalApiControllerMvcUnitTest
-2018-11-13 09:48:29,703 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:49:57,596 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 net.contargo.iris.api.NotFoundException: Cannot find Terminal for UID 314
 	at net.contargo.iris.terminal.api.TerminalApiController.getTerminalByUid(TerminalApiController.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -454,20 +448,20 @@ net.contargo.iris.api.NotFoundException: Cannot find Terminal for UID 314
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in net.contargo.iris.terminal.api.TerminalApiControllerMvcUnitTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in net.contargo.iris.terminal.api.TerminalApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.terminal.web.TerminalControllerMvcUnitTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in net.contargo.iris.terminal.web.TerminalControllerMvcUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in net.contargo.iris.terminal.web.TerminalControllerMvcUnitTest
 [INFO] Running net.contargo.iris.terminal.RegionUnitTest
 [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.terminal.RegionUnitTest
 [INFO] Running net.contargo.iris.terminal.dto.TerminalDtoServiceImplUnitTest
 [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.terminal.dto.TerminalDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.terminal.service.TerminalServiceImplUnitTest
-2018-11-13 09:48:29,858 |  WARN  | main | net.contargo.iris.terminal.service.TerminalServiceImpl  | Terminal uniqueId 1 already assigned - trying next uniqueId 
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in net.contargo.iris.terminal.service.TerminalServiceImplUnitTest
+2018-11-13 09:49:57,746 |  WARN  | main | net.contargo.iris.terminal.service.TerminalServiceImpl  | Terminal uniqueId 1 already assigned - trying next uniqueId 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in net.contargo.iris.terminal.service.TerminalServiceImplUnitTest
 [INFO] Running net.contargo.iris.sequence.UniqueIdSequenceUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.sequence.UniqueIdSequenceUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.sequence.UniqueIdSequenceUnitTest
 [INFO] Running net.contargo.iris.sequence.service.UniqueIdSequenceServiceImplUnitTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.sequence.service.UniqueIdSequenceServiceImplUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.sequence.service.UniqueIdSequenceServiceImplUnitTest
 [INFO] Running net.contargo.iris.normalizer.NormalizerServiceImplUnitTest
 [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.normalizer.NormalizerServiceImplUnitTest
 [INFO] Running net.contargo.iris.distance.service.DistanceServiceImplUnitTest
@@ -475,128 +469,121 @@ net.contargo.iris.api.NotFoundException: Cannot find Terminal for UID 314
 [INFO] Running net.contargo.iris.distance.service.ConnectionDistanceServiceImplUnitTest
 [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.distance.service.ConnectionDistanceServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.api.AddressApiControllerMvcUnitTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! - in net.contargo.iris.address.api.AddressApiControllerMvcUnitTest
-[ERROR] testAddressByGeolocation(net.contargo.iris.address.api.AddressApiControllerMvcUnitTest)  Time elapsed: 0.024 s  <<< FAILURE!
-java.lang.AssertionError: 
-JSON path "$.reverseGeocodeResponse.links[0].href"
-Expected: is "http://localhost/reversegeocode/1:1"
-     but: was "http://localhost/reversegeocode/1:1/."
-	at net.contargo.iris.address.api.AddressApiControllerMvcUnitTest.testAddressByGeolocation(AddressApiControllerMvcUnitTest.java:133)
-
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in net.contargo.iris.address.api.AddressApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.address.api.BestMatchApiControllerMvcUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in net.contargo.iris.address.api.BestMatchApiControllerMvcUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in net.contargo.iris.address.api.BestMatchApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.address.AddressUnitTest
 [INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.address.AddressUnitTest
 [INFO] Running net.contargo.iris.address.dto.AddressDtoServiceImplUnitTest
 [INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.address.dto.AddressDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.StaticAddressUnitTest
 Fail at 1301000001048578
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 s - in net.contargo.iris.address.staticsearch.StaticAddressUnitTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.615 s - in net.contargo.iris.address.staticsearch.StaticAddressUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.api.StaticAddressApiControllerMvcUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in net.contargo.iris.address.staticsearch.api.StaticAddressApiControllerMvcUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in net.contargo.iris.address.staticsearch.api.StaticAddressApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.web.StaticAddressRequestUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.web.StaticAddressRequestUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.web.StaticAddressControllerMvcUnitTest
-2018-11-13 09:48:31,484 | ERROR  | main | n.c.i.address.staticsearch.web.StaticAddressController  | StaticAddress file upload failed 
+2018-11-13 09:49:59,747 | ERROR  | main | n.c.i.address.staticsearch.web.StaticAddressController  | StaticAddress file upload failed 
 net.contargo.iris.address.staticsearch.upload.file.StaticAddressFileStorageException: null
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in net.contargo.iris.address.staticsearch.web.StaticAddressControllerMvcUnitTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in net.contargo.iris.address.staticsearch.web.StaticAddressControllerMvcUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.dto.StaticAddressDtoServiceImplUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.dto.StaticAddressDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.validator.HashKeyValidatorUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.validator.HashKeyValidatorUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.StaticAddressServiceImplUnitTest
-2018-11-13 09:48:31,557 |  WARN  | main | n.c.i.a.staticsearch.service.StaticAddressServiceImpl   | StaticAddress uniqueId 1 already assigned - trying next uniqueId 
-[INFO] Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in net.contargo.iris.address.staticsearch.service.StaticAddressServiceImplUnitTest
+2018-11-13 09:49:59,825 |  WARN  | main | n.c.i.a.staticsearch.service.StaticAddressServiceImpl   | StaticAddress uniqueId 1 already assigned - trying next uniqueId 
+[INFO] Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in net.contargo.iris.address.staticsearch.service.StaticAddressServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.StaticAddressMappingProcessorUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.StaticAddressMappingProcessorUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.PostcodeCityStaticAddressMappingProcessorUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.PostcodeCityStaticAddressMappingProcessorUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.staticsearch.service.PostcodeCityStaticAddressMappingProcessorUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.PostcodeStaticAddressMappingProcessorUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.PostcodeStaticAddressMappingProcessorUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.PostcodeCitySuburbStaticAddressMappingProcessorUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.PostcodeCitySuburbStaticAddressMappingProcessorUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.StaticAddressSelectorImplUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.StaticAddressSelectorImplUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.staticsearch.service.StaticAddressSelectorImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.service.NominatimToStaticAddressMapperImplUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.service.NominatimToStaticAddressMapperImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.StaticAddressImportTaskUnitTest
-2018-11-13 09:48:31,655 | ERROR  | main | n.c.i.a.staticsearch.upload.StaticAddressImportTask     | Something went wrong during static address import 
+2018-11-13 09:49:59,917 | ERROR  | main | n.c.i.a.staticsearch.upload.StaticAddressImportTask     | Something went wrong during static address import 
 net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportException: null
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.staticsearch.upload.StaticAddressImportTaskUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.address.staticsearch.upload.StaticAddressImportTaskUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportServiceImplUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportServiceImplUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportJobServiceImplUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportJobServiceImplUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportJobServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.service.StaticAddressResolverServiceImplUnitTest
 [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in net.contargo.iris.address.staticsearch.upload.service.StaticAddressResolverServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.service.AddressMailServiceUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.staticsearch.upload.service.AddressMailServiceUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.staticsearch.upload.service.AddressMailServiceUnitTest
 [INFO] Running net.contargo.iris.address.staticsearch.upload.csv.StaticAddressCsvServiceUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in net.contargo.iris.address.staticsearch.upload.csv.StaticAddressCsvServiceUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.address.staticsearch.upload.csv.StaticAddressCsvServiceUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.NominatimJsonResponseParserUnitTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in net.contargo.iris.address.nominatim.service.NominatimJsonResponseParserUnitTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in net.contargo.iris.address.nominatim.service.NominatimJsonResponseParserUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.NominatimUrlBuilderUnitTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in net.contargo.iris.address.nominatim.service.NominatimUrlBuilderUnitTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.address.nominatim.service.NominatimUrlBuilderUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.AddressSorterUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.address.nominatim.service.AddressSorterUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.nominatim.service.AddressSorterUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.AddressValidatorUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.nominatim.service.AddressValidatorUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.AddressServiceHelperUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.nominatim.service.AddressServiceHelperUnitTest
 [INFO] Running net.contargo.iris.address.nominatim.service.NominatimAddressServiceUnitTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in net.contargo.iris.address.nominatim.service.NominatimAddressServiceUnitTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in net.contargo.iris.address.nominatim.service.NominatimAddressServiceUnitTest
 [INFO] Running net.contargo.iris.address.service.BestMatchServiceImplUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.service.BestMatchServiceImplUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.service.BestMatchServiceImplUnitTest
 [INFO] Running net.contargo.iris.address.service.AddressListFilterImplUnitTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.address.service.AddressListFilterImplUnitTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.service.AddressListFilterImplUnitTest
 [INFO] Running net.contargo.iris.address.service.AddressServiceWrapperCachingUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in net.contargo.iris.address.service.AddressServiceWrapperCachingUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.address.service.AddressServiceWrapperCachingUnitTest
 [INFO] Running net.contargo.iris.address.service.AddressCacheUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in net.contargo.iris.address.service.AddressCacheUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.service.AddressCacheUnitTest
 [INFO] Running net.contargo.iris.address.service.AddressServiceWrapperUnitTest
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in net.contargo.iris.address.service.AddressServiceWrapperUnitTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.address.service.AddressServiceWrapperUnitTest
 [INFO] Running net.contargo.iris.container.ContainerTypeUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.container.ContainerTypeUnitTest
 [INFO] Running net.contargo.iris.rounding.RoundingServiceImplUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.rounding.RoundingServiceImplUnitTest
 [INFO] Running net.contargo.iris.routing.osrm.RoutingQueryStrategyProviderUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.routing.osrm.RoutingQueryStrategyProviderUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.routing.osrm.RoutingQueryStrategyProviderUnitTest
 [INFO] Running net.contargo.iris.routing.osrm.Osrm5QueryStrategyUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in net.contargo.iris.routing.osrm.Osrm5QueryStrategyUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.routing.osrm.Osrm5QueryStrategyUnitTest
 [INFO] Running net.contargo.iris.routing.osrm.OSRMTruckRouteServiceUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in net.contargo.iris.routing.osrm.OSRMTruckRouteServiceUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.routing.osrm.OSRMTruckRouteServiceUnitTest
 [INFO] Running net.contargo.iris.routing.osrm.Osrm4QueryStrategyUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.routing.osrm.Osrm4QueryStrategyUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.routing.osrm.Osrm4QueryStrategyUnitTest
 [INFO] Running net.contargo.iris.routing.osrm.OSRM4ResponseUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.routing.osrm.OSRM4ResponseUnitTest
 [INFO] Running net.contargo.iris.duration.service.DurationServiceImplUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.duration.service.DurationServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.api.MainRunConnectionApiControllerMvcUnitTest
-2018-11-13 09:48:32,144 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.service.DuplicateMainRunConnectionException: Mainrun connection with given seaport, terminal and route type exists] 
-2018-11-13 09:48:32,198 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.api.ValidationException] 
-2018-11-13 09:48:32,223 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.api.ValidationException] 
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in net.contargo.iris.connection.api.MainRunConnectionApiControllerMvcUnitTest
+2018-11-13 09:50:00,241 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.service.DuplicateMainRunConnectionException: Mainrun connection with given seaport, terminal and route type exists] 
+2018-11-13 09:50:00,268 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.api.ValidationException] 
+2018-11-13 09:50:00,276 |  WARN  | main | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver         | Resolved [net.contargo.iris.connection.api.ValidationException] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in net.contargo.iris.connection.api.MainRunConnectionApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.connection.api.SeaportConnectionApiControllerMvcUnitTest
-2018-11-13 09:48:32,272 |  WARN  | main | o.s.w.s.mvc.support.DefaultHandlerExceptionResolver     | Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'net.contargo.iris.route.RouteCombo'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam net.contargo.iris.route.RouteCombo] for value 'FOO'; nested exception is java.lang.IllegalArgumentException: No enum constant net.contargo.iris.route.RouteCombo.FOO] 
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in net.contargo.iris.connection.api.SeaportConnectionApiControllerMvcUnitTest
+2018-11-13 09:50:00,306 |  WARN  | main | o.s.w.s.mvc.support.DefaultHandlerExceptionResolver     | Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'net.contargo.iris.route.RouteCombo'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam net.contargo.iris.route.RouteCombo] for value 'FOO'; nested exception is java.lang.IllegalArgumentException: No enum constant net.contargo.iris.route.RouteCombo.FOO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in net.contargo.iris.connection.api.SeaportConnectionApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.connection.MainRunConnectionUnitTest
 [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.MainRunConnectionUnitTest
 [INFO] Running net.contargo.iris.connection.web.MainRunConnectionControllerMvcUnitTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in net.contargo.iris.connection.web.MainRunConnectionControllerMvcUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in net.contargo.iris.connection.web.MainRunConnectionControllerMvcUnitTest
 [INFO] Running net.contargo.iris.connection.dto.RoutePartDtoUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.dto.RoutePartDtoUnitTest
 [INFO] Running net.contargo.iris.connection.dto.SeaportConnectionRoutesDtoServiceImplUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.connection.dto.SeaportConnectionRoutesDtoServiceImplUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in net.contargo.iris.connection.dto.SeaportConnectionRoutesDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.dto.MainRunConnectionDtoUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.dto.MainRunConnectionDtoUnitTest
 [INFO] Running net.contargo.iris.connection.dto.MainRunConnectionDtoServiceImplUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.dto.MainRunConnectionDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.dto.GeolocationDtoFactoryUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.dto.GeolocationDtoFactoryUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.connection.dto.GeolocationDtoFactoryUnitTest
 [INFO] Running net.contargo.iris.connection.dto.SeaportTerminalConnectionDtoServiceImplUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.dto.SeaportTerminalConnectionDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.advice.MainRunRoundTripImportStrategyUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.connection.advice.MainRunRoundTripImportStrategyUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.connection.advice.MainRunRoundTripImportStrategyUnitTest
 [INFO] Running net.contargo.iris.connection.advice.MainRunRoundTripExportStrategyUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.advice.MainRunRoundTripExportStrategyUnitTest
 [INFO] Running net.contargo.iris.connection.advice.MainRunOneWayImportStrategyUnitTest
@@ -606,21 +593,21 @@ net.contargo.iris.address.staticsearch.upload.service.StaticAddressImportExcepti
 [INFO] Running net.contargo.iris.connection.advice.MainRunOneWayExportStrategyUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.connection.advice.MainRunOneWayExportStrategyUnitTest
 [INFO] Running net.contargo.iris.connection.service.MainRunConnectionServiceImplUnitTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in net.contargo.iris.connection.service.MainRunConnectionServiceImplUnitTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in net.contargo.iris.connection.service.MainRunConnectionServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.service.SeaportConnectionRoutesServiceImplUnitTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in net.contargo.iris.connection.service.SeaportConnectionRoutesServiceImplUnitTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in net.contargo.iris.connection.service.SeaportConnectionRoutesServiceImplUnitTest
 [INFO] Running net.contargo.iris.connection.service.SeaportTerminalConnectionServiceImplUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.connection.service.SeaportTerminalConnectionServiceImplUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.connection.service.SeaportTerminalConnectionServiceImplUnitTest
 [INFO] Running net.contargo.iris.login.web.LoginControllerMvcUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in net.contargo.iris.login.web.LoginControllerMvcUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in net.contargo.iris.login.web.LoginControllerMvcUnitTest
 [INFO] Running net.contargo.iris.MessageUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in net.contargo.iris.MessageUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.MessageUnitTest
 [INFO] Running net.contargo.iris.security.SpringUserAuthenticationServiceUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in net.contargo.iris.security.SpringUserAuthenticationServiceUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.security.SpringUserAuthenticationServiceUnitTest
 [INFO] Running net.contargo.iris.BoundingBoxUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.BoundingBoxUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.BoundingBoxUnitTest
 [INFO] Running net.contargo.iris.transport.api.TransportApiControllerUnitTest
-2018-11-13 09:48:32,616 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:50:00,526 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 java.lang.IllegalArgumentException: A transport template's terminal UUID must be null, but was: 1300000000000025
 	at net.contargo.iris.transport.api.TransportTemplateDtoValidator.noTerminalSpecified(TransportTemplateDtoValidator.java:30)
 	at net.contargo.iris.transport.api.TransportTemplateDtoValidator.lambda$validate$0(TransportTemplateDtoValidator.java:21)
@@ -681,33 +668,33 @@ java.lang.IllegalArgumentException: A transport template's terminal UUID must be
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in net.contargo.iris.transport.api.TransportApiControllerUnitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in net.contargo.iris.transport.api.TransportApiControllerUnitTest
 [INFO] Running net.contargo.iris.transport.api.TransportTemplateDtoValidatorUnitTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.transport.api.TransportTemplateDtoValidatorUnitTest
 [INFO] Running net.contargo.iris.transport.service.TransportDescriptionMainRunExtenderUnitTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.transport.service.TransportDescriptionMainRunExtenderUnitTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in net.contargo.iris.transport.service.TransportDescriptionMainRunExtenderUnitTest
 [INFO] Running net.contargo.iris.transport.service.TransportDescriptionExtenderUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in net.contargo.iris.transport.service.TransportDescriptionExtenderUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in net.contargo.iris.transport.service.TransportDescriptionExtenderUnitTest
 [INFO] Running net.contargo.iris.transport.service.TransportStopToGeoLocationConverterUnitTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.transport.service.TransportStopToGeoLocationConverterUnitTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in net.contargo.iris.transport.service.TransportStopToGeoLocationConverterUnitTest
 [INFO] Running net.contargo.iris.transport.service.TransportChainGeneratorUnitTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in net.contargo.iris.transport.service.TransportChainGeneratorUnitTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in net.contargo.iris.transport.service.TransportChainGeneratorUnitTest
 [INFO] Running net.contargo.iris.transport.service.TransportDescriptionNebenlaufExtenderUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in net.contargo.iris.transport.service.TransportDescriptionNebenlaufExtenderUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in net.contargo.iris.transport.service.TransportDescriptionNebenlaufExtenderUnitTest
 [INFO] Running net.contargo.iris.transport.service.RouteServiceUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.transport.service.RouteServiceUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in net.contargo.iris.transport.service.RouteServiceUnitTest
 [INFO] Running net.contargo.iris.util.DateUtilUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.util.DateUtilUnitTest
 [INFO] Running net.contargo.iris.countries.api.CountriesApiControllerMvcUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in net.contargo.iris.countries.api.CountriesApiControllerMvcUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in net.contargo.iris.countries.api.CountriesApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.countries.service.CountryCodeCountryServiceUnitTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.countries.service.CountryCodeCountryServiceUnitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.countries.service.CountryCodeCountryServiceUnitTest
 [INFO] Running net.contargo.iris.countries.service.CountryCodeCountryDtoServiceUnitTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in net.contargo.iris.countries.service.CountryCodeCountryDtoServiceUnitTest
 [INFO] Running net.contargo.iris.gis.api.AirlineDistanceResponseUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.gis.api.AirlineDistanceResponseUnitTest
 [INFO] Running net.contargo.iris.gis.api.AirlineDistanceApiControllerMvcUnitTest
-2018-11-13 09:48:32,821 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:50:00,735 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 java.lang.IllegalArgumentException: null
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateLatitude(AirlineDistanceApiController.java:93)
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateGeoCoordinates(AirlineDistanceApiController.java:80)
@@ -766,7 +753,7 @@ java.lang.IllegalArgumentException: null
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:32,827 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:50:00,739 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 java.lang.IllegalArgumentException: null
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateLatitude(AirlineDistanceApiController.java:93)
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateGeoCoordinates(AirlineDistanceApiController.java:82)
@@ -825,7 +812,7 @@ java.lang.IllegalArgumentException: null
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:32,832 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:50:00,741 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 java.lang.IllegalArgumentException: null
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateLongitude(AirlineDistanceApiController.java:104)
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateGeoCoordinates(AirlineDistanceApiController.java:81)
@@ -884,7 +871,7 @@ java.lang.IllegalArgumentException: null
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:32,836 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
+2018-11-13 09:50:00,752 | ERROR  | main | net.contargo.iris.api.PublicAPIExceptionHandler         | REST-API Exception by org.springframework.security.authentication.UsernamePasswordAuthenticationToken@48883642: Principal: org.springframework.security.core.userdetails.User@18cc6: Username: foo; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Not granted any authorities; Credentials: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities:  
 java.lang.IllegalArgumentException: null
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateLongitude(AirlineDistanceApiController.java:104)
 	at net.contargo.iris.gis.api.AirlineDistanceApiController.validateGeoCoordinates(AirlineDistanceApiController.java:83)
@@ -943,39 +930,417 @@ java.lang.IllegalArgumentException: null
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2018-11-13 09:48:32,839 |  WARN  | main | o.s.w.s.mvc.support.DefaultHandlerExceptionResolver     | Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'alat' is not present] 
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in net.contargo.iris.gis.api.AirlineDistanceApiControllerMvcUnitTest
+2018-11-13 09:50:00,755 |  WARN  | main | o.s.w.s.mvc.support.DefaultHandlerExceptionResolver     | Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'alat' is not present] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in net.contargo.iris.gis.api.AirlineDistanceApiControllerMvcUnitTest
 [INFO] Running net.contargo.iris.gis.dto.AirlineDistanceDtoServiceImplUnitTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.contargo.iris.gis.dto.AirlineDistanceDtoServiceImplUnitTest
 [INFO] Running net.contargo.iris.gis.service.GisServiceImplUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in net.contargo.iris.gis.service.GisServiceImplUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in net.contargo.iris.gis.service.GisServiceImplUnitTest
 [INFO] Running net.contargo.iris.startup.IrisStartupWatcherUnitTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in net.contargo.iris.startup.IrisStartupWatcherUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in net.contargo.iris.startup.IrisStartupWatcherUnitTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   AddressApiControllerMvcUnitTest.testAddressByGeolocation:133 JSON path "$.reverseGeocodeResponse.links[0].href"
-Expected: is "http://localhost/reversegeocode/1:1"
-     but: was "http://localhost/reversegeocode/1:1/."
+[INFO] Tests run: 662, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 662, Failures: 1, Errors: 0, Skipped: 0
 [INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (post-unit-test) @ iris ---
+[INFO] Loading execution data file /root/workspace/Contargo/iris/434021226/target/coverage-reports/jacoco-ut.exec
+[INFO] Analyzed bundle 'net.contargo:iris' with 286 classes
+[INFO] 
+[INFO] --- jasmine-maven-plugin:2.2:test (default) @ iris ---
+[INFO] jetty-8.2.0.v20160908
+[INFO] Started SelectChannelConnector@0.0.0.0:43267
+[INFO] Executing Jasmine Specs
+[INFO] 
+-------------------------------------------------------
+ J A S M I N E   S P E C S
+-------------------------------------------------------
+[INFO] 
+Helper test suite
+  formatKM
+    exists
+    returns undefined if the argument is undefined
+    returns 0 min if the argument is 0
+    formats natural numbers correctly
+    formats non-natural numbers correctly
+  formatting duration in detail
+    returns '-' if duration is not defined
+    returns formatted duration for 800 min
+    returns formatted duration for 8000 min
+    returns formatted duration for 70 min
+    returns formatted duration for 5 min
+  closePopups
+    for all popups
+
+SelectableAwareCollection
+  instantiation
+    can be instantiated
+    can be instantiated with params
+  selectable aware functionality
+    deselect all other elements if an element is selected
+    triggers selectedchanged if an element is selected
+    finds selected element
+    sets the element with defaultValue = true as selected
+
+Server
+  can be instantiated
+  has function generateDetailsUrl
+  has function getRouteDetails
+  has function geoCode
+  has function countries
+  has function getActiveSeaports
+  has function terminals
+
+Servers geoCode
+  fails if no request comes in
+  fails if strange request comes in
+  does the request
+  alerts if invalid structure is coming back from server
+  executes the callback
+
+Servers get active seaports
+  does the request
+  alerts if invalid structure is coming back from server
+  executes the callback
+
+Servers terminals
+  does the request
+  alerts if invalid structure is coming back from server
+  executes the callback
+
+Servers seaportConnections
+  fails if no request comes in
+  alerts if invalid structure is coming back from server
+  executes the callback
+
+TemplateManager
+  can be instatiated
+  can be instatiated
+  has method to load a template
+  throws on error
+  loads a template
+  caches a template
+
+ErrorObjectSyntaxChecker test suite
+  instantiation
+    can be instantiated
+  hasAllProperties
+    true
+    without code
+    without message
+  allPropertiesDefined
+    true
+    message not defined
+    code not defined
+  isValid
+    true
+    properties not defined
+    not all properties available
+    properties not defined and not all properties available
+  isValidJSONString
+    true
+    cannot parse
+    is not valid
+
+AddressListList
+  can be instantiated
+  takes elements of type AddressListModel
+  has an no selected element until one is actively selected
+  sets its selectedAddressOfAddressList property when one of its elements is selected
+  changes its selectedAddressOfAddressList property when another element is selected
+  resets the selected flag of its members when a different member is selected
+
+AddressList
+  can be instantiated
+  takes elements of type Address
+
+Address with nothing set
+  can be instantiated
+  has property latitude
+  has property longitude
+  has property displayName
+
+GeoCodeRequest
+  with nothing set is empty
+  can be instantiated
+  has property street
+  has property postalcode
+  has property city
+  has property country
+  has getQueryStringMethod
+  querystring contains city parameter 
+  querystring does not contain street parameter
+  has the default country set as selected if nothing else selected
+
+GeoCodeRequests with mores than city set
+  querystring contains city parameter 
+  querystring contains street parameter 
+  querystring contains concatinations
+  is empty is false
+
+GeoCodeRequests with special characters
+  querystring is encoded
+
+GeoCoding
+  instanciation fails without server in options
+  can be instantiated with server
+  has request
+  has result list
+  has result list
+
+GeoCoding search interaction
+  returns request
+  returns results
+  executes server-request on changes to its request
+  resets adresses on callback
+
+GeoCoding address selection
+  has addresses
+  has no selected one by default
+  has selected when setting one
+  has new when setting anotherone
+  works on double-select
+
+GeoCoding
+
+Seaport
+  can be instantiated
+  has a name
+  has possibleTypes
+  has canAcceptTransport Method
+
+SeaportList
+  can be instantiated
+  has no elements by default
+  has filterByPossibleType function
+  filterByPossibleType returns empty array by default
+
+Terminal test suite
+  can be instatiated
+
+TerminalList test suite
+  can be instantiated
+
+TrianglePoints
+  can be instatiated
+  accepts addresses
+  accepts terminals
+  accepts terminals and addresses at once
+  accepts seaports
+  accepts seaports, terminals and addresses at once
+  has getRoutePairs function
+  returns correct route pairs
+  calls server for route-details on getRoutePairs
+  sets totals and part-details correctly upon getRoutePairs
+  removes item when routepart is destroyed
+  moves items up and down on two
+  moves items up and down
+
+TriangleRoutePart
+  can be instatiated
+  has from and to
+
+TriangleRoutingApp
+  can be instatiated
+
+AddressCategoryView instanciation
+  without model fails
+  works all needed parameters
+
+AddressCategoryView rendering
+  shows no message on initial load
+  shows 'no results found' message on search with no results
+  shows '' message on no search with results (maybe not in real life :-))
+  renders itself to target on load
+  re-renders itself to target on reset
+  re-renders itself to target on add and remove
+  renders child-content
+
+AddressListView instanciation
+  without model fails
+  works all needed parameters
+
+AddressListView rendering
+  renders itself to target on load
+  re-renders itself to target on reset
+  re-renders itself to target on add and remove
+  renders child-content
+
+AddressView
+  cannot be instantiated without options
+  cannot be instantiated without template in options
+  cannot be instantiated with non-existing template in options
+  cannot be instantiated without model in options
+  can be instantiated with template and model in options
+  renders
+
+A AddressListView
+  instantiation
+    cannot be instantiated without a model
+  rendering
+    can be instantiated with a model
+    html contains all important classes
+
+A AddressView
+  instantiation
+    cannot be instantiated without a model
+  rendering
+    can be instantiated with a model
+    displayes displayName correctly
+    swiches selected when calling method selectAddress
+
+A BootstrapDropDownView
+  instantiation
+    cannot be instantiated without a model
+  rendering
+    can be instantiated with a model
+    has Bootstrap button group
+    renders children of Bootstrap button group
+    renders new children if added
+    calls selectedchanged method if an element is clicked
+    triggers change event when element was not selected
+    triggers no change event when element is selected
+
+GeoCodeRequestView instanciation
+  without model fails
+  works all needed parameters
+  calls resetForm method if the reset button was clicked
+  has a country select box in Bootstrap Dropdown Style
+
+GeoCodeRequestView reset
+  triggers reset event
+
+A TerminalView
+  instantiation
+    cannot be instantiated if its template does not exist in the dom
+  rendering
+    can be instantiated if its template is found
+    renders its name
+
+TrianglePointsView instanciation
+  without model fails
+  works all needed parameters
+  renders itself to target on load
+  re-renders itself to target on reset
+  re-renders itself to target on add and remove
+  re-renders itself on repositioning of items
+  clears list on click on trashcan
+
+TriangleRoutePartView
+  without model fails
+  works all needed parameters
+  renders itself to target on load
+  renders name of location
+  renders name of address
+  triggers destoy on trashcan-click
+  triggers up on upclick
+  triggers down on downclick
+
+TriangleRouteTotalView
+  without model fails
+  works all needed parameters
+  renders itself to target on load
+  renders total stops
+  renders distance
+  renders toll distance
+  renders duration
+  renders clear button
+  re-renders itself to target on change
+
+A TriangularTrafficDropDownView
+  instantiation
+    cannot be instantiated without a model
+  rendering
+    can be instantiated with a model
+    renders all options
+    sets default value
+    sets no default value - nothing in the list
+    sets first element to selected without default value
+    ignores invisible elements
+
+ConnectionApp
+  can be instantiated
+  start create
+  start update
+  loadModels
+  loadModels empty seaports
+  loadModels with seaport loading error
+  loadModels empty terminals
+  loadModels with terminal loading error
+  loadModels with types loading error
+  loadModels without connectionId
+  loadModels with connection loading error
+  registers update seaport event
+  registers update terminal event
+  registers update route type event
+  creates new connection
+  creates new connection with error
+  updates connection
+  updates connection with error
+  handles save error
+  handles save error with invalid error object
+
+ConnectionMapper
+  creates connection from json
+  converts connection to json
+
+Connection
+  updates terminal
+  updates seaport
+  updates route type
+
+ConnectionEndpoints
+  sets Selected silent
+  sets Selected
+  sets Selected undefined silent
+  sets undefined Selected
+  gets selected name
+  gets selected element
+  gets element by its unique id
+
+RouteTypes
+  sets Selected silent
+  sets Selected
+  sets Selected undefined silent
+  sets undefined Selected
+  gets selected element
+
+Connection View
+  renders barge connection
+  updates enabled
+  updates connection
+  displays error if an input has a form error
+
+Distances View
+  renders for barge connection
+  renders for barge connection without direct truck
+  renders for rail connection
+  renders for dtruck connection
+  updates barge
+  updates rail diesel
+  updates rail electric
+  updates road
+  updates its model attributes
+
+Route Types View
+  renders
+  updates
+
+Seaports View
+  renders
+  updates
+
+Terminals View
+  renders
+  updates
+
+Results: 256 specs, 0 failures, 0 pending
+
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 27.573 s
-[INFO] Finished at: 2018-11-13T09:48:33+01:00
-[INFO] Final Memory: 29M/577M
+[INFO] Total time: 34.292 s
+[INFO] Finished at: 2018-11-13T09:50:10+01:00
+[INFO] Final Memory: 50M/770M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project iris: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/Contargo/iris/434021226/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
