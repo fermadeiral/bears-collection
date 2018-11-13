@@ -689,15 +689,16 @@ public class Neo4jImporter implements AutoCloseable {
                             "pLocation", skelNode.getLocationAsPoint(),
                             "pRadius", skelNode.getRadius(),
                             "skeletonId", dataset + ":" + associatedBodyId,
-                            "parentSkelNodeId", dataset + ":" + associatedBodyId + ":" + skelNode.getLocationString() + ":" + skelNode.getRowNumber(),
+                            "parentSkelNodeId", skelNode.getSkelNodeId(dataset),
                             "pRowNumber", skelNode.getRowNumber(),
                             "pType", skelNode.getType(),
                             "timeStamp", timeStamp
                     )));
 
-                    for (SkelNode child : skelNode.getChildren()) {
-                        String childNodeId = dataset + ":" + associatedBodyId + ":" + child.getLocationString() + ":" + child.getRowNumber();
-                        batch.addStatement(new Statement(childNodeString, parameters("parentSkelNodeId", dataset + ":" + associatedBodyId + ":" + skelNode.getLocationString() + ":" + skelNode.getRowNumber(),
+                    for (SkelNode childSkelNode : skelNode.getChildren()) {
+                        String childNodeId = childSkelNode.getSkelNodeId(dataset);
+                        batch.addStatement(new Statement(childNodeString, parameters(
+                                "parentSkelNodeId", skelNode.getSkelNodeId(dataset),
                                 "skeletonId", dataset + ":" + associatedBodyId,
                                 "pLocation", skelNode.getLocationAsPoint(),
                                 "pRadius", skelNode.getRadius(),
@@ -705,10 +706,10 @@ public class Neo4jImporter implements AutoCloseable {
                                 "pType", skelNode.getType(),
                                 "timeStamp", timeStamp,
                                 "childNodeId", childNodeId,
-                                "childLocation", child.getLocationAsPoint(),
-                                "childRadius", child.getRadius(),
-                                "childRowNumber", child.getRowNumber(),
-                                "childType", child.getType()
+                                "childLocation", childSkelNode.getLocationAsPoint(),
+                                "childRadius", childSkelNode.getRadius(),
+                                "childRowNumber", childSkelNode.getRowNumber(),
+                                "childType", childSkelNode.getType()
                         )));
                     }
                 }
@@ -868,9 +869,9 @@ public class Neo4jImporter implements AutoCloseable {
     public void addClusterNames(String dataset, float threshold) {
 
         List<Node> neuronNodeList;
-        List<String> roiList;
+        Set<String> roiSet;
         try (Session session = driver.session()) {
-            roiList = session.readTransaction(tx -> getRoisFromMetaNode(tx, dataset));
+            roiSet = session.readTransaction(tx -> getRoisFromMetaNode(tx, dataset)).stream().collect(Collectors.toSet());
             neuronNodeList = session.readTransaction(tx -> getAllNeuronNodes(tx, dataset));
         }
 
@@ -887,7 +888,7 @@ public class Neo4jImporter implements AutoCloseable {
                 long totalPre = (long) neuron.asMap().get("pre");
                 long totalPost = (long) neuron.asMap().get("post");
 
-                String clusterName = generateClusterName(roiInfoMap, totalPre, totalPost, threshold, roiList);
+                String clusterName = generateClusterName(roiInfoMap, totalPre, totalPost, threshold, roiSet);
 
                 batch.addStatement(new Statement(addClusterNameString,
                         parameters("bodyId", neuron.asMap().get("bodyId"),
@@ -1067,7 +1068,7 @@ public class Neo4jImporter implements AutoCloseable {
         return superLevelRois;
     }
 
-    public static String generateClusterName(Map<String, SynapseCounter> roiInfoMap, long totalPre, long totalPost, double threshold, List<String> includedRois) {
+    public static String generateClusterName(Map<String, SynapseCounter> roiInfoMap, long totalPre, long totalPost, double threshold, Set<String> includedRois) {
 
         StringBuilder inputs = new StringBuilder();
         StringBuilder outputs = new StringBuilder();
