@@ -1,0 +1,42 @@
+{
+  "transportChain": [
+    {
+      "from": {
+        "type": "TERMINAL",
+        "uuid": "1300000000000025"
+      },
+      "to": {
+        "type": "ADDRESS",
+        "lat": 49.011260,
+        "lon": 8.394950
+      },
+      "modeOfTransport": "ROAD",
+      "loadingState": "EMPTY"
+    },
+    {
+      "from": {
+        "type": "ADDRESS",
+        "lat": 49.011260,
+        "lon": 8.394950
+      },
+      "to": {
+        "type": "TERMINAL",
+        "uuid": "1300000000000025"
+      },
+      "modeOfTransport": "ROAD",
+      "loadingState": "FULL"
+    },
+    {
+      "from": {
+        "type": "TERMINAL",
+        "uuid": "1300000000000025"
+      },
+      "to": {
+        "type": "SEAPORT",
+        "uuid": "1300000000000006"
+      },
+      "modeOfTransport": "WATER",
+      "loadingState": "FULL"
+    }
+  ]
+}
