@@ -1,0 +1,1448 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] neuprint-root
+[INFO] neuprinter
+[INFO] neuprint-procedures
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building neuprint-root 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building neuprinter 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ neuprinter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ neuprinter ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/target/classes
+[INFO] /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/main/java/org/janelia/flyem/neuprinter/Neo4jImporter.java: /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/main/java/org/janelia/flyem/neuprinter/Neo4jImporter.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/main/java/org/janelia/flyem/neuprinter/Neo4jImporter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ neuprinter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ neuprinter ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/target/test-classes
+[INFO] /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/test/java/org/janelia/flyem/neuprinter/Neo4jImporterTest.java: /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/test/java/org/janelia/flyem/neuprinter/Neo4jImporterTest.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/connectome-neuprint/neuPrint/454697544/connconvert/src/test/java/org/janelia/flyem/neuprinter/Neo4jImporterTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ neuprinter ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 4.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 60.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 897.4 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.janelia.flyem.neuprinter.Neo4jImporterTest
+23:59:57.049 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+23:59:57.988 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:00:02.465 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:02.718 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:02.937 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:03.154 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:03.384 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:03.624 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:03.821 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:04.038 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:04.248 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.061 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.319 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.381 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.448 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.496 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.579 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.654 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.728 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.803 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.843 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:05.909 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:06.240 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:06.249 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:00:06.249 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:00:08.329 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:00:08.331 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:00:08.332 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+00:00:09.218 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 9 statements
+00:00:09.222 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:00:09.223 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+00:00:09.820 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 9 statements
+00:00:09.822 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:00:09.823 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+00:00:10.019 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 6 statements
+00:00:10.021 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:00:10.021 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+00:00:10.244 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 9 statements
+00:00:10.246 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:00:10.247 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectionSets: entry
+00:00:10.686 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:10.717 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:10.719 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectionSets: exit
+00:00:10.719 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+00:00:10.984 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 13 statements
+00:00:10.986 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+00:00:10.986 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: entry
+00:00:11.465 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:11.637 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:11.786 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:11.927 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:11.928 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 101
+00:00:12.055 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.166 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.271 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.273 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 102
+00:00:12.398 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.490 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.593 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.686 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.793 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.885 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:12.976 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.076 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.152 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.252 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.322 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.421 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.507 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.598 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.675 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.759 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.827 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.892 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:13.958 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.029 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.108 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.181 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.240 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.316 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.391 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.474 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.526 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.621 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.675 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.753 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.806 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.872 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:14.931 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.001 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.056 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.104 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.159 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.223 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.288 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.341 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.415 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.481 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.529 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.586 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.631 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.683 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.728 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.781 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.826 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.873 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.918 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:15.976 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.018 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.074 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.134 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.191 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.230 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.280 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.324 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.375 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.421 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.466 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.513 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.557 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.607 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.675 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.713 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.757 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.798 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.845 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.902 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:16.946 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.006 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.054 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.089 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.132 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.173 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.238 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.303 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.359 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.409 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.465 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.504 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.548 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.582 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.628 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.665 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.728 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.774 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.826 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.868 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.917 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.950 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:17.981 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.006 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.057 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.091 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.127 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.156 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.196 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.219 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.247 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.268 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.294 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.329 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.457 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.520 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.571 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.610 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.643 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.672 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.720 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.755 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.783 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.825 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.877 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.900 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.926 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.953 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:18.993 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.030 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.065 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.113 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.149 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.180 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.226 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.257 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.300 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.336 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.422 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.457 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.495 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.528 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.586 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.616 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.659 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.699 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.741 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.773 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.830 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.874 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.909 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.938 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.968 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:19.997 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.035 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.058 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.091 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.122 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.152 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.179 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.209 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.234 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.285 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.329 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.368 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.397 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.435 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.463 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.503 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.573 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.622 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.686 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.724 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.751 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.785 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.815 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.847 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:00:20.848 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 831744
+00:00:20.868 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 13 statements
+00:00:20.869 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: exit
+00:00:20.870 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+00:00:23.084 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:00:23.085 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:00:23.085 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: entry
+00:00:23.660 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:00:23.661 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: exit
+00:00:23.662 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addDvidUuid: enter
+00:00:23.726 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:23.728 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addDvidUuid: exit
+00:00:23.728 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addDvidServer: enter
+00:00:23.769 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:23.770 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addDvidServer: exit
+00:00:23.914 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:00:25.055 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:00:25.056 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:00:25.146 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:00:25.147 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.765 s - in org.janelia.flyem.neuprinter.Neo4jImporterTest
+[INFO] Running org.janelia.flyem.neuprinter.model.ConnectionSetMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.janelia.flyem.neuprinter.model.ConnectionSetMapTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SynapseCounterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.janelia.flyem.neuprinter.model.SynapseCounterTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SynapseCountsPerRoiTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.janelia.flyem.neuprinter.model.SynapseCountsPerRoiTest
+[INFO] Running org.janelia.flyem.neuprinter.model.NeuronTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.janelia.flyem.neuprinter.model.NeuronTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SynapseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.janelia.flyem.neuprinter.model.SynapseTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SkeletonTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.janelia.flyem.neuprinter.model.SkeletonTest
+[INFO] Running org.janelia.flyem.neuprinter.model.ConnectionSetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.janelia.flyem.neuprinter.model.ConnectionSetTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SynapseMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.janelia.flyem.neuprinter.model.SynapseMapperTest
+[INFO] Running org.janelia.flyem.neuprinter.model.BodyWithSynapsesTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.janelia.flyem.neuprinter.model.BodyWithSynapsesTest
+[INFO] Running org.janelia.flyem.neuprinter.model.SkelNodeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.janelia.flyem.neuprinter.model.SkelNodeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building neuprint-procedures 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ neuprint-procedures ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ neuprint-procedures ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ neuprint-procedures ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ neuprint-procedures ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /root/workspace/connectome-neuprint/neuPrint/454697544/neuprint-procedures/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ neuprint-procedures ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.janelia.flyem.neuprintprocedures.functions.RoiInfoNameTest
+00:00:42.586 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:00:43.387 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:00:47.653 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:48.068 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:48.306 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:48.562 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:48.802 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:49.036 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:49.523 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:49.731 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.341 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.565 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.636 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.694 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.762 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.799 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.865 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:50.954 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.050 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.130 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.177 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.229 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.619 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:00:51.622 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:00:51.622 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:00:53.317 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:00:53.319 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:00:53.320 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+2018-11-14T00:00:53.369 Completed time stamping and updating Meta node.
+00:00:54.088 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+00:00:54.089 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:00:54.090 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+2018-11-14T00:00:54.091 Completed time stamping and updating Meta node.
+00:00:54.743 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:00:54.745 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:00:54.746 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+2018-11-14T00:00:54.760 Completed time stamping and updating Meta node.
+00:00:54.968 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+2018-11-14T00:00:54.971 Completed time stamping and updating Meta node.
+00:00:54.970 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:00:54.971 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+2018-11-14T00:00:55.226 Completed time stamping and updating Meta node.
+00:00:55.225 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:00:55.227 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:00:55.228 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+00:00:55.603 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 15 statements
+00:00:55.604 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+00:00:55.605 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+2018-11-14T00:00:55.608 Completed time stamping and updating Meta node.
+2018-11-14T00:00:57.164 Completed time stamping and updating Meta node.
+00:00:57.165 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:00:57.176 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:00:57.179 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: entry
+00:00:57.882 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 4 statements
+00:00:57.883 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: exit
+2018-11-14T00:00:57.889 Completed time stamping and updating Meta node.
+00:00:58.073 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 4 statements
+2018-11-14T00:00:58.074 Completed time stamping and updating Meta node.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.904 s - in org.janelia.flyem.neuprintprocedures.functions.RoiInfoNameTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.functions.GetNeuronCentroidTest
+00:01:01.956 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:01:02.212 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:02.364 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:02.524 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:02.684 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:02.865 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.030 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.216 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.391 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.567 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.740 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.772 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.804 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.850 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.880 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:03.948 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.006 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.081 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.146 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.184 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.231 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.630 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:01:04.631 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:01:04.632 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+2018-11-14T00:01:04.955 Completed time stamping and updating Meta node.
+00:01:04.954 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+00:01:04.955 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:01:04.956 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+00:01:05.363 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:01:05.364 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:01:05.365 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+2018-11-14T00:01:05.369 Completed time stamping and updating Meta node.
+00:01:05.501 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+2018-11-14T00:01:05.502 Completed time stamping and updating Meta node.
+00:01:05.503 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:01:05.504 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+2018-11-14T00:01:05.672 Completed time stamping and updating Meta node.
+00:01:05.675 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:01:05.676 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:01:05.676 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+00:01:05.929 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 15 statements
+00:01:05.930 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+2018-11-14T00:01:05.931 Completed time stamping and updating Meta node.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.791 s - in org.janelia.flyem.neuprintprocedures.functions.GetNeuronCentroidTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.functions.LocationAsPointTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.841 s - in org.janelia.flyem.neuprintprocedures.functions.LocationAsPointTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.triggers.TimeStampTest
+2018-11-14T00:01:11.615 Completed time stamping and updating Meta node.
+2018-11-14T00:01:11.734 Completed time stamping and updating Meta node.
+2018-11-14T00:01:16.833 Completed time stamping and updating Meta node.
+2018-11-14T00:01:21.916 Completed time stamping and updating Meta node.
+2018-11-14T00:01:22.042 Completed time stamping and updating Meta node.
+2018-11-14T00:01:27.212 Completed time stamping and updating Meta node.
+2018-11-14T00:01:27.317 Completed time stamping and updating Meta node.
+2018-11-14T00:01:32.431 Completed time stamping and updating Meta node.
+2018-11-14T00:01:32.487 Completed time stamping and updating Meta node.
+2018-11-14T00:01:32.538 Completed time stamping and updating Meta node.
+2018-11-14T00:01:37.647 Completed time stamping and updating Meta node.
+2018-11-14T00:01:37.726 Completed time stamping and updating Meta node.
+2018-11-14T00:01:42.817 Completed time stamping and updating Meta node.
+2018-11-14T00:01:42.919 Completed time stamping and updating Meta node.
+2018-11-14T00:01:47.991 Completed time stamping and updating Meta node.
+2018-11-14T00:01:53.127 Completed time stamping and updating Meta node.
+2018-11-14T00:01:53.155 Completed time stamping and updating Meta node.
+2018-11-14T00:01:53.238 Completed time stamping and updating Meta node.
+2018-11-14T00:01:58.292 Completed time stamping and updating Meta node.
+2018-11-14T00:01:58.356 Completed time stamping and updating Meta node.
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.315 s - in org.janelia.flyem.neuprintprocedures.triggers.TimeStampTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.triggers.MetaNodeUpdaterTest
+00:02:05.357 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:02:05.402 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:02:05.629 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:05.906 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:06.443 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:06.575 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:06.704 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:06.851 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:06.991 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.179 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.360 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.621 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.653 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.686 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.749 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.778 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.832 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.879 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.931 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:07.984 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:08.025 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:08.056 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:08.447 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:08.448 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:02:08.448 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:02:08.590 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:02:08.592 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:02:08.592 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+2018-11-14T00:02:08.596 Completed time stamping and updating Meta node.
+2018-11-14T00:02:08.793 Completed time stamping and updating Meta node.
+00:02:08.793 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+00:02:08.795 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:02:08.795 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+00:02:09.149 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:02:09.150 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:02:09.151 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+2018-11-14T00:02:09.151 Completed time stamping and updating Meta node.
+00:02:09.276 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+2018-11-14T00:02:09.276 Completed time stamping and updating Meta node.
+00:02:09.277 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:02:09.277 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+2018-11-14T00:02:09.486 Completed time stamping and updating Meta node.
+00:02:09.486 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:02:09.489 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:02:09.489 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+00:02:09.717 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 15 statements
+00:02:09.721 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+00:02:09.721 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+2018-11-14T00:02:09.722 Completed time stamping and updating Meta node.
+2018-11-14T00:02:10.503 Completed time stamping and updating Meta node.
+00:02:10.503 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:02:10.504 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:02:10.505 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+00:02:10.775 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:02:10.777 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+2018-11-14T00:02:10.776 Completed time stamping and updating Meta node.
+2018-11-14T00:02:13.951 Completed time stamping and updating Meta node.
+2018-11-14T00:02:22 Setting roiInfo on Meta node: {"newRoi":{"pre":5,"post":2},"roi\u0027C":{"pre":0,"post":1},"roiA":{"pre":9,"post":8},"roiB":{"pre":0,"post":3}}
+2018-11-14T00:02:22.309 Completed time stamping and updating Meta node.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.841 s - in org.janelia.flyem.neuprintprocedures.triggers.MetaNodeUpdaterTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.analysis.InputAndOutputCountsForRoisTest
+00:02:33.599 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:02:33.652 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:02:33.834 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:33.998 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:34.155 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:34.323 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:34.563 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:34.725 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:34.880 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:35.040 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:35.206 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:35.396 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:35.434 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:35.476 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.022 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.048 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.113 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.167 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.228 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.287 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.320 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.363 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.670 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:02:36.677 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:02:36.678 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:02:36.797 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+2018-11-14T00:02:36.800 Completed time stamping and updating Meta node.
+00:02:36.801 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:02:36.803 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+00:02:36.989 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+2018-11-14T00:02:36.990 Completed time stamping and updating Meta node.
+00:02:36.992 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:02:36.992 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+00:02:37.293 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:02:37.294 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+2018-11-14T00:02:37.294 Completed time stamping and updating Meta node.
+00:02:37.294 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+00:02:37.435 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+2018-11-14T00:02:37.436 Completed time stamping and updating Meta node.
+00:02:37.437 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:02:37.438 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+00:02:37.574 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+2018-11-14T00:02:37.575 Completed time stamping and updating Meta node.
+00:02:37.576 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:02:37.576 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+00:02:37.768 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 15 statements
+00:02:37.769 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+00:02:37.769 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+2018-11-14T00:02:37.769 Completed time stamping and updating Meta node.
+2018-11-14T00:02:38.246 Completed time stamping and updating Meta node.
+00:02:38.246 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:02:38.247 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:02:38.247 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: entry
+00:02:38.590 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 4 statements
+2018-11-14T00:02:38.590 Completed time stamping and updating Meta node.
+00:02:38.591 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: exit
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.419 s - in org.janelia.flyem.neuprintprocedures.analysis.InputAndOutputCountsForRoisTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest
+2018-11-14T00:02:43.991 Completed time stamping and updating Meta node.
+2018-11-14T00:02:44.541 Completed time stamping and updating Meta node.
+2018-11-14T00:02:44.835 Completed time stamping and updating Meta node.
+2018-11-14T00:02:57.299 Completed time stamping and updating Meta node.
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.341 s <<< FAILURE! - in org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest
+[ERROR] shouldAddSkeletonToNeuron(org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest)  Time elapsed: 18.34 s  <<< FAILURE!
+java.lang.AssertionError: expected:<50> but was:<48>
+	at org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest.shouldAddSkeletonToNeuron(AddSkeletonTest.java:125)
+
+[INFO] Running org.janelia.flyem.neuprintprocedures.proofreading.DeleteSkeletonTest
+00:03:02.269 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:03:02.298 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:03:03.318 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:03.453 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:03.569 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:03.689 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:03.829 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:03.925 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.018 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.119 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.218 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.330 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.394 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.422 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.458 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.481 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.502 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.535 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.731 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.964 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:04.986 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:05.007 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:05.270 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:05.270 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:03:05.271 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:03:05.344 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+2018-11-14T00:03:05.345 Completed time stamping and updating Meta node.
+00:03:05.347 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:03:05.347 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+00:03:05.482 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+00:03:05.483 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:03:05.483 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+2018-11-14T00:03:05.484 Completed time stamping and updating Meta node.
+00:03:05.768 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+2018-11-14T00:03:05.771 Completed time stamping and updating Meta node.
+00:03:05.772 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:03:05.772 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+2018-11-14T00:03:05.860 Completed time stamping and updating Meta node.
+00:03:05.861 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+00:03:05.861 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:03:05.862 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: entry
+2018-11-14T00:03:06.186 Completed time stamping and updating Meta node.
+00:03:06.186 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:06.187 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 8426959
+00:03:06.259 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.264 Completed time stamping and updating Meta node.
+2018-11-14T00:03:06.368 Completed time stamping and updating Meta node.
+00:03:06.372 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.476 Completed time stamping and updating Meta node.
+00:03:06.479 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.537 Completed time stamping and updating Meta node.
+00:03:06.539 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.598 Completed time stamping and updating Meta node.
+00:03:06.600 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.652 Completed time stamping and updating Meta node.
+00:03:06.652 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.709 Completed time stamping and updating Meta node.
+00:03:06.710 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:06.790 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.791 Completed time stamping and updating Meta node.
+2018-11-14T00:03:06.850 Completed time stamping and updating Meta node.
+00:03:06.856 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.917 Completed time stamping and updating Meta node.
+00:03:06.918 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:06.964 Completed time stamping and updating Meta node.
+00:03:06.964 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:07.017 Completed time stamping and updating Meta node.
+00:03:07.020 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:07.082 Completed time stamping and updating Meta node.
+00:03:07.084 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:07.139 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:07.142 Completed time stamping and updating Meta node.
+2018-11-14T00:03:08.051 Completed time stamping and updating Meta node.
+00:03:08.052 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.113 Completed time stamping and updating Meta node.
+00:03:08.115 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.175 Completed time stamping and updating Meta node.
+00:03:08.175 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.261 Completed time stamping and updating Meta node.
+00:03:08.261 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.348 Completed time stamping and updating Meta node.
+00:03:08.348 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.392 Completed time stamping and updating Meta node.
+00:03:08.396 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.471 Completed time stamping and updating Meta node.
+00:03:08.473 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.543 Completed time stamping and updating Meta node.
+00:03:08.544 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.592 Completed time stamping and updating Meta node.
+00:03:08.594 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.640 Completed time stamping and updating Meta node.
+00:03:08.641 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.687 Completed time stamping and updating Meta node.
+00:03:08.687 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.737 Completed time stamping and updating Meta node.
+00:03:08.737 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.792 Completed time stamping and updating Meta node.
+00:03:08.792 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.845 Completed time stamping and updating Meta node.
+00:03:08.846 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.891 Completed time stamping and updating Meta node.
+00:03:08.891 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:08.945 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:08.946 Completed time stamping and updating Meta node.
+2018-11-14T00:03:08.989 Completed time stamping and updating Meta node.
+00:03:08.990 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.034 Completed time stamping and updating Meta node.
+00:03:09.034 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.082 Completed time stamping and updating Meta node.
+00:03:09.084 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.143 Completed time stamping and updating Meta node.
+00:03:09.143 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.199 Completed time stamping and updating Meta node.
+00:03:09.202 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.247 Completed time stamping and updating Meta node.
+00:03:09.247 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.309 Completed time stamping and updating Meta node.
+00:03:09.311 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.356 Completed time stamping and updating Meta node.
+00:03:09.362 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.414 Completed time stamping and updating Meta node.
+00:03:09.417 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.457 Completed time stamping and updating Meta node.
+00:03:09.457 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.496 Completed time stamping and updating Meta node.
+00:03:09.497 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.537 Completed time stamping and updating Meta node.
+00:03:09.538 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.575 Completed time stamping and updating Meta node.
+00:03:09.575 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.621 Completed time stamping and updating Meta node.
+00:03:09.622 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.672 Completed time stamping and updating Meta node.
+00:03:09.673 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.711 Completed time stamping and updating Meta node.
+00:03:09.712 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.747 Completed time stamping and updating Meta node.
+00:03:09.749 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.789 Completed time stamping and updating Meta node.
+00:03:09.790 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.827 Completed time stamping and updating Meta node.
+00:03:09.829 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.864 Completed time stamping and updating Meta node.
+00:03:09.864 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.899 Completed time stamping and updating Meta node.
+00:03:09.899 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.939 Completed time stamping and updating Meta node.
+00:03:09.940 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:09.979 Completed time stamping and updating Meta node.
+00:03:09.979 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.008 Completed time stamping and updating Meta node.
+00:03:10.009 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.038 Completed time stamping and updating Meta node.
+00:03:10.039 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.069 Completed time stamping and updating Meta node.
+00:03:10.069 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.093 Completed time stamping and updating Meta node.
+00:03:10.093 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.116 Completed time stamping and updating Meta node.
+00:03:10.116 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.149 Completed time stamping and updating Meta node.
+00:03:10.149 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:10.246 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.247 Completed time stamping and updating Meta node.
+00:03:10.285 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.286 Completed time stamping and updating Meta node.
+2018-11-14T00:03:10.318 Completed time stamping and updating Meta node.
+00:03:10.319 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.368 Completed time stamping and updating Meta node.
+00:03:10.369 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:10.398 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.399 Completed time stamping and updating Meta node.
+2018-11-14T00:03:10.456 Completed time stamping and updating Meta node.
+00:03:10.459 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.508 Completed time stamping and updating Meta node.
+00:03:10.510 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.545 Completed time stamping and updating Meta node.
+00:03:10.546 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.584 Completed time stamping and updating Meta node.
+00:03:10.585 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:10.614 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.614 Completed time stamping and updating Meta node.
+00:03:10.657 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.657 Completed time stamping and updating Meta node.
+2018-11-14T00:03:10.694 Completed time stamping and updating Meta node.
+00:03:10.694 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.743 Completed time stamping and updating Meta node.
+00:03:10.744 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:10.771 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.772 Completed time stamping and updating Meta node.
+2018-11-14T00:03:10.832 Completed time stamping and updating Meta node.
+00:03:10.832 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.879 Completed time stamping and updating Meta node.
+00:03:10.879 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.920 Completed time stamping and updating Meta node.
+00:03:10.920 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:10.955 Completed time stamping and updating Meta node.
+00:03:10.958 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.004 Completed time stamping and updating Meta node.
+00:03:11.004 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.036 Completed time stamping and updating Meta node.
+00:03:11.036 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.070 Completed time stamping and updating Meta node.
+00:03:11.070 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:11.095 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.096 Completed time stamping and updating Meta node.
+2018-11-14T00:03:11.167 Completed time stamping and updating Meta node.
+00:03:11.168 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.194 Completed time stamping and updating Meta node.
+00:03:11.195 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.218 Completed time stamping and updating Meta node.
+00:03:11.218 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.240 Completed time stamping and updating Meta node.
+00:03:11.241 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.266 Completed time stamping and updating Meta node.
+00:03:11.267 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.291 Completed time stamping and updating Meta node.
+00:03:11.292 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.320 Completed time stamping and updating Meta node.
+00:03:11.320 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.347 Completed time stamping and updating Meta node.
+00:03:11.349 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.383 Completed time stamping and updating Meta node.
+00:03:11.384 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.406 Completed time stamping and updating Meta node.
+00:03:11.407 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.433 Completed time stamping and updating Meta node.
+00:03:11.434 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.460 Completed time stamping and updating Meta node.
+00:03:11.462 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.504 Completed time stamping and updating Meta node.
+00:03:11.504 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.535 Completed time stamping and updating Meta node.
+00:03:11.535 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.567 Completed time stamping and updating Meta node.
+00:03:11.567 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.606 Completed time stamping and updating Meta node.
+00:03:11.606 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.627 Completed time stamping and updating Meta node.
+00:03:11.627 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.650 Completed time stamping and updating Meta node.
+00:03:11.652 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.683 Completed time stamping and updating Meta node.
+00:03:11.685 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.707 Completed time stamping and updating Meta node.
+00:03:11.707 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.729 Completed time stamping and updating Meta node.
+00:03:11.730 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.750 Completed time stamping and updating Meta node.
+00:03:11.751 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.770 Completed time stamping and updating Meta node.
+00:03:11.770 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.798 Completed time stamping and updating Meta node.
+00:03:11.798 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.823 Completed time stamping and updating Meta node.
+00:03:11.823 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:11.854 Completed time stamping and updating Meta node.
+00:03:11.855 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.015 Completed time stamping and updating Meta node.
+00:03:12.015 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.265 Completed time stamping and updating Meta node.
+00:03:12.266 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.350 Completed time stamping and updating Meta node.
+00:03:12.351 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.424 Completed time stamping and updating Meta node.
+00:03:12.425 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.481 Completed time stamping and updating Meta node.
+00:03:12.485 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.519 Completed time stamping and updating Meta node.
+00:03:12.520 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:12.555 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.555 Completed time stamping and updating Meta node.
+2018-11-14T00:03:12.592 Completed time stamping and updating Meta node.
+00:03:12.592 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.636 Completed time stamping and updating Meta node.
+00:03:12.637 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.676 Completed time stamping and updating Meta node.
+00:03:12.676 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.725 Completed time stamping and updating Meta node.
+00:03:12.727 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.762 Completed time stamping and updating Meta node.
+00:03:12.765 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.799 Completed time stamping and updating Meta node.
+00:03:12.800 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.836 Completed time stamping and updating Meta node.
+00:03:12.837 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.867 Completed time stamping and updating Meta node.
+00:03:12.868 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.904 Completed time stamping and updating Meta node.
+00:03:12.904 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.941 Completed time stamping and updating Meta node.
+00:03:12.942 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.967 Completed time stamping and updating Meta node.
+00:03:12.967 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:12.995 Completed time stamping and updating Meta node.
+00:03:12.995 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.021 Completed time stamping and updating Meta node.
+00:03:13.022 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.042 Completed time stamping and updating Meta node.
+00:03:13.043 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.062 Completed time stamping and updating Meta node.
+00:03:13.062 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.081 Completed time stamping and updating Meta node.
+00:03:13.083 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.107 Completed time stamping and updating Meta node.
+00:03:13.107 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.136 Completed time stamping and updating Meta node.
+00:03:13.137 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.154 Completed time stamping and updating Meta node.
+00:03:13.155 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.174 Completed time stamping and updating Meta node.
+00:03:13.174 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.191 Completed time stamping and updating Meta node.
+00:03:13.192 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.219 Completed time stamping and updating Meta node.
+00:03:13.219 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.237 Completed time stamping and updating Meta node.
+00:03:13.237 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.254 Completed time stamping and updating Meta node.
+00:03:13.255 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.271 Completed time stamping and updating Meta node.
+00:03:13.272 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.294 Completed time stamping and updating Meta node.
+00:03:13.295 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.312 Completed time stamping and updating Meta node.
+00:03:13.313 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.330 Completed time stamping and updating Meta node.
+00:03:13.331 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.348 Completed time stamping and updating Meta node.
+00:03:13.350 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.367 Completed time stamping and updating Meta node.
+00:03:13.368 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.389 Completed time stamping and updating Meta node.
+00:03:13.390 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.410 Completed time stamping and updating Meta node.
+00:03:13.410 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.431 Completed time stamping and updating Meta node.
+00:03:13.432 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.449 Completed time stamping and updating Meta node.
+00:03:13.451 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.469 Completed time stamping and updating Meta node.
+00:03:13.470 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.486 Completed time stamping and updating Meta node.
+00:03:13.487 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.505 Completed time stamping and updating Meta node.
+00:03:13.506 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.539 Completed time stamping and updating Meta node.
+00:03:13.540 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.556 Completed time stamping and updating Meta node.
+00:03:13.557 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.575 Completed time stamping and updating Meta node.
+00:03:13.576 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.591 Completed time stamping and updating Meta node.
+00:03:13.591 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.606 Completed time stamping and updating Meta node.
+00:03:13.607 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.622 Completed time stamping and updating Meta node.
+00:03:13.622 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.637 Completed time stamping and updating Meta node.
+00:03:13.637 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.654 Completed time stamping and updating Meta node.
+00:03:13.654 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.669 Completed time stamping and updating Meta node.
+00:03:13.670 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.689 Completed time stamping and updating Meta node.
+00:03:13.689 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.705 Completed time stamping and updating Meta node.
+00:03:13.705 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.722 Completed time stamping and updating Meta node.
+00:03:13.722 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:13.738 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.739 Completed time stamping and updating Meta node.
+2018-11-14T00:03:13.754 Completed time stamping and updating Meta node.
+00:03:13.754 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.774 Completed time stamping and updating Meta node.
+00:03:13.774 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.790 Completed time stamping and updating Meta node.
+00:03:13.790 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:13.809 Completed time stamping and updating Meta node.
+00:03:13.809 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:13.809 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 831744
+2018-11-14T00:03:13.820 Completed time stamping and updating Meta node.
+00:03:13.820 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:03:13.822 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: exit
+00:03:13.822 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+2018-11-14T00:03:13.954 Completed time stamping and updating Meta node.
+00:03:13.954 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:03:13.957 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:03:13.957 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: entry
+2018-11-14T00:03:14.153 Completed time stamping and updating Meta node.
+00:03:14.153 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 4 statements
+00:03:14.153 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: exit
+2018-11-14T00:03:14.239 Completed time stamping and updating Meta node.
+2018-11-14T00:03:14.956 Completed time stamping and updating Meta node.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.597 s - in org.janelia.flyem.neuprintprocedures.proofreading.DeleteSkeletonTest
+[INFO] Running org.janelia.flyem.neuprintprocedures.proofreading.UpdateNeuronsTest
+00:03:19.434 [main] INFO  [org.janelia.flyem.neuprinter.NeuPrinterMain] Number of neurons/segments: 8
+00:03:19.463 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: entry
+00:03:19.649 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:19.776 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:19.919 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.043 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.190 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.329 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.465 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.619 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.742 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.870 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.887 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.921 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:20.956 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.125 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.355 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.393 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.427 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.464 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.489 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.510 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.728 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 1 statements
+00:03:21.730 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] prepDatabase: exit
+00:03:21.730 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: entry
+00:03:21.803 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+2018-11-14T00:03:21.805 Completed time stamping and updating Meta node.
+00:03:21.805 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegments: exit
+00:03:21.805 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: entry
+2018-11-14T00:03:21.931 Completed time stamping and updating Meta node.
+00:03:21.933 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 10 statements
+00:03:21.934 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectsTo: exit
+00:03:21.934 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: entry
+00:03:22.190 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+2018-11-14T00:03:22.190 Completed time stamping and updating Meta node.
+00:03:22.191 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapses: exit
+00:03:22.191 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: entry
+2018-11-14T00:03:22.281 Completed time stamping and updating Meta node.
+00:03:22.282 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 7 statements
+00:03:22.283 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapsesTo: exit
+00:03:22.283 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: entry
+2018-11-14T00:03:22.382 Completed time stamping and updating Meta node.
+00:03:22.382 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 11 statements
+00:03:22.383 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSegmentRois: exit
+00:03:22.383 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectionSets: entry
+2018-11-14T00:03:22.601 Completed time stamping and updating Meta node.
+00:03:22.601 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:22.641 Completed time stamping and updating Meta node.
+00:03:22.643 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 5 statements
+00:03:22.644 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addConnectionSets: exit
+00:03:22.644 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: entry
+2018-11-14T00:03:22.729 Completed time stamping and updating Meta node.
+00:03:22.730 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 15 statements
+00:03:22.732 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSynapseSets: exit
+00:03:22.732 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: entry
+00:03:22.886 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:22.886 Completed time stamping and updating Meta node.
+00:03:22.887 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 8426959
+00:03:22.906 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:22.906 Completed time stamping and updating Meta node.
+2018-11-14T00:03:22.923 Completed time stamping and updating Meta node.
+00:03:22.923 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:22.946 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:22.946 Completed time stamping and updating Meta node.
+2018-11-14T00:03:22.964 Completed time stamping and updating Meta node.
+00:03:22.964 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:22.982 Completed time stamping and updating Meta node.
+00:03:22.982 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.003 Completed time stamping and updating Meta node.
+00:03:23.003 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.031 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.031 Completed time stamping and updating Meta node.
+2018-11-14T00:03:23.051 Completed time stamping and updating Meta node.
+00:03:23.051 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.070 Completed time stamping and updating Meta node.
+00:03:23.070 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.087 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.087 Completed time stamping and updating Meta node.
+2018-11-14T00:03:23.105 Completed time stamping and updating Meta node.
+00:03:23.105 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.139 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.139 Completed time stamping and updating Meta node.
+00:03:23.167 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.167 Completed time stamping and updating Meta node.
+2018-11-14T00:03:23.194 Completed time stamping and updating Meta node.
+00:03:23.194 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.220 Completed time stamping and updating Meta node.
+00:03:23.246 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.272 Completed time stamping and updating Meta node.
+00:03:23.278 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.323 Completed time stamping and updating Meta node.
+00:03:23.324 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.348 Completed time stamping and updating Meta node.
+00:03:23.348 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.378 Completed time stamping and updating Meta node.
+00:03:23.378 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.402 Completed time stamping and updating Meta node.
+00:03:23.403 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.430 Completed time stamping and updating Meta node.
+00:03:23.431 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.455 Completed time stamping and updating Meta node.
+00:03:23.455 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.482 Completed time stamping and updating Meta node.
+00:03:23.483 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.518 Completed time stamping and updating Meta node.
+00:03:23.518 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.546 Completed time stamping and updating Meta node.
+00:03:23.546 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.590 Completed time stamping and updating Meta node.
+00:03:23.590 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.611 Completed time stamping and updating Meta node.
+00:03:23.612 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.634 Completed time stamping and updating Meta node.
+00:03:23.635 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.655 Completed time stamping and updating Meta node.
+00:03:23.656 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.678 Completed time stamping and updating Meta node.
+00:03:23.678 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.699 Completed time stamping and updating Meta node.
+00:03:23.699 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.726 Completed time stamping and updating Meta node.
+00:03:23.727 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.755 Completed time stamping and updating Meta node.
+00:03:23.755 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.783 Completed time stamping and updating Meta node.
+00:03:23.784 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.808 Completed time stamping and updating Meta node.
+00:03:23.809 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.832 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.832 Completed time stamping and updating Meta node.
+2018-11-14T00:03:23.854 Completed time stamping and updating Meta node.
+00:03:23.854 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.874 Completed time stamping and updating Meta node.
+00:03:23.876 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.895 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.896 Completed time stamping and updating Meta node.
+2018-11-14T00:03:23.922 Completed time stamping and updating Meta node.
+00:03:23.923 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.946 Completed time stamping and updating Meta node.
+00:03:23.947 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:23.972 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:23.973 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.002 Completed time stamping and updating Meta node.
+00:03:24.002 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.034 Completed time stamping and updating Meta node.
+00:03:24.046 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.083 Completed time stamping and updating Meta node.
+00:03:24.083 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.107 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.107 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.138 Completed time stamping and updating Meta node.
+00:03:24.139 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.162 Completed time stamping and updating Meta node.
+00:03:24.162 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.185 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.185 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.213 Completed time stamping and updating Meta node.
+00:03:24.215 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.238 Completed time stamping and updating Meta node.
+00:03:24.240 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.267 Completed time stamping and updating Meta node.
+00:03:24.269 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.295 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.296 Completed time stamping and updating Meta node.
+00:03:24.329 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.330 Completed time stamping and updating Meta node.
+00:03:24.362 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.364 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.404 Completed time stamping and updating Meta node.
+00:03:24.404 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.447 Completed time stamping and updating Meta node.
+00:03:24.448 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.486 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.487 Completed time stamping and updating Meta node.
+00:03:24.508 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.508 Completed time stamping and updating Meta node.
+00:03:24.533 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.534 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.567 Completed time stamping and updating Meta node.
+00:03:24.567 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.590 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.591 Completed time stamping and updating Meta node.
+00:03:24.623 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.624 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.745 Completed time stamping and updating Meta node.
+00:03:24.746 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.769 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.770 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.787 Completed time stamping and updating Meta node.
+00:03:24.788 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.809 Completed time stamping and updating Meta node.
+00:03:24.809 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.835 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.836 Completed time stamping and updating Meta node.
+00:03:24.855 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.855 Completed time stamping and updating Meta node.
+00:03:24.874 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.874 Completed time stamping and updating Meta node.
+2018-11-14T00:03:24.895 Completed time stamping and updating Meta node.
+00:03:24.895 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:24.921 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.923 Completed time stamping and updating Meta node.
+00:03:24.947 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.948 Completed time stamping and updating Meta node.
+00:03:24.974 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:24.975 Completed time stamping and updating Meta node.
+00:03:25.005 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.006 Completed time stamping and updating Meta node.
+00:03:25.029 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.031 Completed time stamping and updating Meta node.
+2018-11-14T00:03:25.054 Completed time stamping and updating Meta node.
+00:03:25.054 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.078 Completed time stamping and updating Meta node.
+00:03:25.079 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.102 Completed time stamping and updating Meta node.
+00:03:25.102 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.127 Completed time stamping and updating Meta node.
+00:03:25.127 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.152 Completed time stamping and updating Meta node.
+00:03:25.152 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.191 Completed time stamping and updating Meta node.
+00:03:25.191 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.214 Completed time stamping and updating Meta node.
+00:03:25.214 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.237 Completed time stamping and updating Meta node.
+00:03:25.238 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.259 Completed time stamping and updating Meta node.
+00:03:25.259 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.281 Completed time stamping and updating Meta node.
+00:03:25.281 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.306 Completed time stamping and updating Meta node.
+00:03:25.307 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.338 Completed time stamping and updating Meta node.
+00:03:25.338 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.359 Completed time stamping and updating Meta node.
+00:03:25.359 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.386 Completed time stamping and updating Meta node.
+00:03:25.408 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.431 Completed time stamping and updating Meta node.
+00:03:25.431 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.454 Completed time stamping and updating Meta node.
+00:03:25.454 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.479 Completed time stamping and updating Meta node.
+00:03:25.481 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.607 Completed time stamping and updating Meta node.
+00:03:25.607 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:25.631 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.631 Completed time stamping and updating Meta node.
+2018-11-14T00:03:25.684 Completed time stamping and updating Meta node.
+00:03:25.684 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:25.704 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.704 Completed time stamping and updating Meta node.
+2018-11-14T00:03:25.730 Completed time stamping and updating Meta node.
+00:03:25.730 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.755 Completed time stamping and updating Meta node.
+00:03:25.755 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.782 Completed time stamping and updating Meta node.
+00:03:25.782 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.807 Completed time stamping and updating Meta node.
+00:03:25.807 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.846 Completed time stamping and updating Meta node.
+00:03:25.846 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:25.874 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.875 Completed time stamping and updating Meta node.
+00:03:25.897 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.897 Completed time stamping and updating Meta node.
+00:03:25.918 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.918 Completed time stamping and updating Meta node.
+2018-11-14T00:03:25.938 Completed time stamping and updating Meta node.
+00:03:25.938 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.961 Completed time stamping and updating Meta node.
+00:03:25.961 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:25.982 Completed time stamping and updating Meta node.
+00:03:25.982 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.006 Completed time stamping and updating Meta node.
+00:03:26.006 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.035 Completed time stamping and updating Meta node.
+00:03:26.035 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.059 Completed time stamping and updating Meta node.
+00:03:26.059 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.082 Completed time stamping and updating Meta node.
+00:03:26.082 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.103 Completed time stamping and updating Meta node.
+00:03:26.103 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.128 Completed time stamping and updating Meta node.
+00:03:26.128 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.151 Completed time stamping and updating Meta node.
+00:03:26.151 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.179 Completed time stamping and updating Meta node.
+00:03:26.179 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.207 Completed time stamping and updating Meta node.
+00:03:26.207 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.231 Completed time stamping and updating Meta node.
+00:03:26.232 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.257 Completed time stamping and updating Meta node.
+00:03:26.257 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:26.282 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.283 Completed time stamping and updating Meta node.
+00:03:26.331 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.333 Completed time stamping and updating Meta node.
+00:03:26.383 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.385 Completed time stamping and updating Meta node.
+2018-11-14T00:03:26.413 Completed time stamping and updating Meta node.
+00:03:26.413 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.443 Completed time stamping and updating Meta node.
+00:03:26.444 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:26.468 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.468 Completed time stamping and updating Meta node.
+2018-11-14T00:03:26.491 Completed time stamping and updating Meta node.
+00:03:26.491 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.515 Completed time stamping and updating Meta node.
+00:03:26.516 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.539 Completed time stamping and updating Meta node.
+00:03:26.539 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.564 Completed time stamping and updating Meta node.
+00:03:26.564 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.583 Completed time stamping and updating Meta node.
+00:03:26.583 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.606 Completed time stamping and updating Meta node.
+00:03:26.606 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.627 Completed time stamping and updating Meta node.
+00:03:26.627 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.649 Completed time stamping and updating Meta node.
+00:03:26.650 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.673 Completed time stamping and updating Meta node.
+00:03:26.675 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.694 Completed time stamping and updating Meta node.
+00:03:26.695 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.714 Completed time stamping and updating Meta node.
+00:03:26.714 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.733 Completed time stamping and updating Meta node.
+00:03:26.735 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.758 Completed time stamping and updating Meta node.
+00:03:26.758 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.778 Completed time stamping and updating Meta node.
+00:03:26.778 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:26.809 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.810 Completed time stamping and updating Meta node.
+00:03:26.830 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.831 Completed time stamping and updating Meta node.
+2018-11-14T00:03:26.851 Completed time stamping and updating Meta node.
+00:03:26.851 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:26.870 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.871 Completed time stamping and updating Meta node.
+00:03:26.891 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.891 Completed time stamping and updating Meta node.
+00:03:26.920 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.921 Completed time stamping and updating Meta node.
+2018-11-14T00:03:26.941 Completed time stamping and updating Meta node.
+00:03:26.941 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.963 Completed time stamping and updating Meta node.
+00:03:26.963 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:26.986 Completed time stamping and updating Meta node.
+00:03:26.986 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.007 Completed time stamping and updating Meta node.
+00:03:27.007 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.047 Completed time stamping and updating Meta node.
+00:03:27.047 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.070 Completed time stamping and updating Meta node.
+00:03:27.069 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.096 Completed time stamping and updating Meta node.
+00:03:27.096 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.117 Completed time stamping and updating Meta node.
+00:03:27.117 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.170 Completed time stamping and updating Meta node.
+00:03:27.170 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.198 Completed time stamping and updating Meta node.
+00:03:27.198 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:27.244 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.244 Completed time stamping and updating Meta node.
+2018-11-14T00:03:27.270 Completed time stamping and updating Meta node.
+00:03:27.270 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:27.295 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.295 Completed time stamping and updating Meta node.
+2018-11-14T00:03:27.317 Completed time stamping and updating Meta node.
+00:03:27.318 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.333 Completed time stamping and updating Meta node.
+00:03:27.333 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.348 Completed time stamping and updating Meta node.
+00:03:27.348 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.365 Completed time stamping and updating Meta node.
+00:03:27.366 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.381 Completed time stamping and updating Meta node.
+00:03:27.382 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.396 Completed time stamping and updating Meta node.
+00:03:27.397 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.418 Completed time stamping and updating Meta node.
+00:03:27.418 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.444 Completed time stamping and updating Meta node.
+00:03:27.444 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:27.464 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+2018-11-14T00:03:27.468 Completed time stamping and updating Meta node.
+2018-11-14T00:03:27.491 Completed time stamping and updating Meta node.
+00:03:27.491 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 20 statements
+00:03:27.491 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] Added full skeleton for bodyId: 831744
+2018-11-14T00:03:27.624 Completed time stamping and updating Meta node.
+00:03:27.626 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 8 statements
+00:03:27.627 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addSkeletonNodes: exit
+00:03:27.627 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: enter
+2018-11-14T00:03:28.822 Completed time stamping and updating Meta node.
+00:03:28.823 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 2 statements
+00:03:28.823 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] createMetaNodeWithDataModelNode: exit
+00:03:28.824 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: entry
+2018-11-14T00:03:29.041 Completed time stamping and updating Meta node.
+00:03:29.041 [main] INFO  [org.janelia.flyem.neuprinter.db.DbTransactionBatch] writeTransaction: exit, committed 4 statements
+00:03:29.042 [main] INFO  [org.janelia.flyem.neuprinter.Neo4jImporter] addAutoNamesAndNeuronLabels: exit
+2018-11-14T00:03:29.408 Completed time stamping and updating Meta node.
+2018-11-14T00:03:29.456 Completed time stamping and updating Meta node.
+2018-11-14T00:03:36.572 Completed time stamping and updating Meta node.
+2018-11-14T00:03:36.607 Completed time stamping and updating Meta node.
+2018-11-14T00:03:36.659 Completed time stamping and updating Meta node.
+2018-11-14T00:03:36.711 Completed time stamping and updating Meta node.
+2018-11-14T00:03:36.870 Completed time stamping and updating Meta node.
+2018-11-14T00:03:37.144 Completed time stamping and updating Meta node.
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.066 s - in org.janelia.flyem.neuprintprocedures.proofreading.UpdateNeuronsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AddSkeletonTest.shouldAddSkeletonToNeuron:125 expected:<50> but was:<48>
+[INFO] 
+[ERROR] Tests run: 36, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] neuprint-root ...................................... SUCCESS [  0.003 s]
+[INFO] neuprinter ......................................... SUCCESS [ 52.195 s]
+[INFO] neuprint-procedures ................................ FAILURE [03:09 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:02 min
+[INFO] Finished at: 2018-11-14T00:03:41+01:00
+[INFO] Final Memory: 48M/597M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project neuprint-procedures: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/connectome-neuprint/neuPrint/454697544/neuprint-procedures/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :neuprint-procedures
