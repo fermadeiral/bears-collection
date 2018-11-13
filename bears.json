@@ -1,0 +1,208 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "CSU-CS414-WareWolves/cs414-f18-001-WareWolves",
+    "githubId": 149033290,
+    "url": "https://github.com/CSU-CS414-WareWolves/cs414-f18-001-WareWolves",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 452444119,
+      "url": "http://travis-ci.org/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/builds/452444119",
+      "date": "Nov 8, 2018 4:35:01 PM"
+    },
+    "fixerBuild": {
+      "id": 454548119,
+      "url": "http://travis-ci.org/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/builds/454548119",
+      "date": "Nov 13, 2018 4:41:33 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 13, 2018 4:41:48 PM",
+    "reproductionDateEnd": "Nov 13, 2018 4:43:09 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 354126768,
+      "totalMemory": 386400256
+    },
+    "totalDuration": 78,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 21,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          21
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/452444119/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 50
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/452444119",
+    "overallMetrics": {
+      "numberRunning": 202,
+      "numberPassing": 192,
+      "numberFailing": 10,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 10
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "numberRunning": 22,
+        "numberPassing": 12,
+        "numberFailing": 10,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "createUnregisterResponse",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.UnregisterResponseMessage@1f1c7bf6\u003e but was: \u003cclient.presenter.controller.messages.UnregisterResponseMessage@25b485ba\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[1]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@5d740a0f\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@214b199c\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "createViewValidMovesResponse",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.ViewValidMovesResponse@482cd91f\u003e but was: \u003cclient.presenter.controller.messages.ViewValidMovesResponse@123f1134\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[5]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@25a65b77\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@2ed0fbae\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "createRegisterResponse",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.RegisterResponseMessage@64c87930\u003e but was: \u003cclient.presenter.controller.messages.RegisterResponseMessage@400cff1a\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[2]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@20d3d15a\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@2893de87\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[6]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@212bf671\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@14a2f921\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "createLoginResponse",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.LoginResponseMessage@5b0abc94\u003e but was: \u003cclient.presenter.controller.messages.LoginResponseMessage@75c072cb\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[4]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@12d3a4e9\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@240237d2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "client.presenter.controller.util.ViewMessageFactoryTest",
+        "testMethod": "testMenuMessageResponse{MenuMessageTypes}[3]",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cclient.presenter.controller.messages.MenuMessageResponse@55ca8de8\u003e but was: \u003cclient.presenter.controller.messages.MenuMessageResponse@2c34f934\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 54,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "CSU-CS414-WareWolves/cs414-f18-001-WareWolves",
+      "branchName": "MrGeektron-MessageResponse-Factory",
+      "sha": "4a9f4c3da9d75656cecde0c76b12263b48f1d611",
+      "url": "http://github.com/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/commit/4a9f4c3da9d75656cecde0c76b12263b48f1d611",
+      "date": "Nov 8, 2018 4:33:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "CSU-CS414-WareWolves/cs414-f18-001-WareWolves",
+      "branchName": "MrGeektron-MessageResponse-Factory",
+      "sha": "1a22c91709b22e631d57905050123b847fd37a0e",
+      "url": "http://github.com/CSU-CS414-WareWolves/cs414-f18-001-WareWolves/commit/1a22c91709b22e631d57905050123b847fd37a0e",
+      "date": "Nov 13, 2018 4:40:02 PM"
+    }
+  }
+}
