@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "connectome-neuprint/neuPrint",
+    "githubId": 129463208,
+    "url": "https://github.com/connectome-neuprint/neuPrint",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454697544,
+      "url": "http://travis-ci.org/connectome-neuprint/neuPrint/builds/454697544",
+      "date": "Nov 13, 2018 10:21:05 PM"
+    },
+    "fixerBuild": {
+      "id": 454739450,
+      "url": "http://travis-ci.org/connectome-neuprint/neuPrint/builds/454739450",
+      "date": "Nov 13, 2018 11:58:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 13, 2018 11:58:23 PM",
+    "reproductionDateEnd": "Nov 14, 2018 12:08:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 267710072,
+      "totalMemory": 534249472
+    },
+    "totalDuration": 599,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 52,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          1,
+          51
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 246,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          246
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/connectome-neuprint/neuPrint/454697544/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 164,
+      "numberDeleted": 177
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/connectome-neuprint/neuPrint/454697544/neuprint-procedures",
+    "overallMetrics": {
+      "numberRunning": 87,
+      "numberPassing": 86,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.janelia.flyem.neuprintprocedures.proofreading.AddSkeletonTest",
+        "testMethod": "shouldAddSkeletonToNeuron",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c50\u003e but was:\u003c48\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 54,
+    "numberTestFiles": 29,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "connectome-neuprint/neuPrint",
+      "branchName": "master",
+      "sha": "3c34d8e1d09c51fce7936ad6d3b123fd2498de7b",
+      "url": "http://github.com/connectome-neuprint/neuPrint/commit/3c34d8e1d09c51fce7936ad6d3b123fd2498de7b",
+      "date": "Nov 13, 2018 10:15:50 PM"
+    },
+    "fixerBuild": {
+      "repoName": "connectome-neuprint/neuPrint",
+      "branchName": "master",
+      "sha": "8dc4dc195ce9ffcc8249a5e039e33630f63469ec",
+      "url": "http://github.com/connectome-neuprint/neuPrint/commit/8dc4dc195ce9ffcc8249a5e039e33630f63469ec",
+      "date": "Nov 13, 2018 11:53:03 PM"
+    }
+  },
+  "type": "passing_passing"
+}
