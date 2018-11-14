@@ -1,0 +1,445 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 4.9
+[INFO] os.detected.version.major: 4
+[INFO] os.detected.version.minor: 9
+[INFO] os.detected.release: debian
+[INFO] os.detected.release.version: 8
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] sharding-sphere
+[INFO] sharding-sql-test
+[INFO] sharding-core
+[INFO] sharding-jdbc
+[INFO] sharding-jdbc-core
+[INFO] sharding-jdbc-spring
+[INFO] sharding-jdbc-spring-namespace
+[INFO] sharding-jdbc-spring-boot-starter
+[INFO] sharding-orchestration
+[INFO] sharding-orchestration-reg
+[INFO] sharding-orchestration-reg-api
+[INFO] sharding-orchestration-core
+[INFO] sharding-orchestration-reg-zookeeper-curator
+[INFO] sharding-jdbc-orchestration
+[INFO] sharding-jdbc-orchestration-spring
+[INFO] sharding-jdbc-orchestration-spring-namespace
+[INFO] sharding-jdbc-orchestration-spring-boot-starter
+[INFO] sharding-transaction
+[INFO] sharding-transaction-api
+[INFO] sharding-transaction-xa
+[INFO] sharding-opentracing
+[INFO] sharding-proxy
+[INFO] sharding-transaction-base
+[INFO] sharding-orchestration-reg-etcd
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sharding-sphere 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-banned-dependencies) @ sharding-sphere ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ sharding-sphere ---
+[INFO] argLine set to -javaagent:/root/./workspace/sharding-sphere/sharding-sphere/454891778/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/sharding-sphere/sharding-sphere/454891778/target/jacoco.exec
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ sharding-sphere ---
+[INFO] Skipping mojo execution for project with packaging type 'pom'
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ sharding-sphere ---
+[INFO] Skipping mojo execution for project with packaging type 'pom'
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (report) @ sharding-sphere ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sharding-sql-test 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-banned-dependencies) @ sharding-sql-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ sharding-sql-test ---
+[INFO] argLine set to -javaagent:/root/./workspace/sharding-sphere/sharding-sphere/454891778/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-sql-test/target/jacoco.exec
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ sharding-sql-test ---
+[INFO] /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-sql-test/src/main/proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ sharding-sql-test ---
+[INFO] /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-sql-test/src/main/proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ sharding-sql-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 45 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ sharding-sql-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ sharding-sql-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-sql-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ sharding-sql-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sharding-sql-test ---
+[INFO] Surefire report directory: /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-sql-test/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 65.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 324.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Running io.shardingsphere.test.sql.SQLCasesLoaderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 sec
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (report) @ sharding-sql-test ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sharding-core 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-banned-dependencies) @ sharding-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ sharding-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/sharding-sphere/sharding-sphere/454891778/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/target/jacoco.exec
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ sharding-core ---
+[INFO] /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/src/main/proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ sharding-core ---
+[INFO] /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/src/main/proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.7.1:antlr4 (antlr) @ sharding-core ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/src/main/antlr4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ sharding-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ sharding-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ sharding-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 53 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ sharding-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sharding-core ---
+[INFO] Surefire report directory: /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Running io.shardingsphere.spi.transaction.xa.SPIDataSourceMapConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec
+Running io.shardingsphere.spi.NewInstanceServiceLoaderTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE!
+assertNewServiceInstance(io.shardingsphere.spi.NewInstanceServiceLoaderTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is <1>
+     but: was <2>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at io.shardingsphere.spi.NewInstanceServiceLoaderTest.assertNewServiceInstance(NewInstanceServiceLoaderTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running io.shardingsphere.api.algorithm.common.ShardingStrategyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+Running io.shardingsphere.api.algorithm.table.TableShardingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.shardingsphere.api.algorithm.sharding.DatabaseShardingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.api.algorithm.masterslave.RandomMasterSlaveLoadBalanceAlgorithmTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.api.algorithm.masterslave.RoundRobinMasterSlaveLoadBalanceAlgorithmTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.api.HintManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running io.shardingsphere.core.keygen.KeyGeneratorFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running io.shardingsphere.core.keygen.DefaultKeyGeneratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running io.shardingsphere.core.rewrite.SQLRewriteEngineTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.095 sec
+Running io.shardingsphere.core.rewrite.SQLBuilderTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Running io.shardingsphere.core.executor.threadlocal.ExecutorExceptionHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running io.shardingsphere.core.yaml.sharding.YamlShardingConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running io.shardingsphere.core.yaml.sharding.YamlTableRuleConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfigurationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running io.shardingsphere.core.yaml.sharding.YamlShardingRuleConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.yaml.masterslave.YamlMasterSlaveConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running io.shardingsphere.core.yaml.masterslave.YamlMasterSlaveRuleConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.metadata.datasource.ShardingDataSourceMetaDataTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Running io.shardingsphere.core.metadata.datasource.DataSourceMetaDataFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.metadata.datasource.dialect.MySQLDataSourceMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.shardingsphere.core.metadata.datasource.dialect.PostgreSQLDataSourceMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.metadata.datasource.dialect.H2DataSourceMetaDataTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.metadata.datasource.dialect.OracleDataSourceMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running io.shardingsphere.core.metadata.datasource.dialect.SQLServerDataSourceMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.shardingsphere.core.parsing.antlr.ddl.IntegrateDDLParsingCompatTest
+Tests run: 216, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.338 sec
+Running io.shardingsphere.core.parsing.antlr.ddl.IntegrateDDLParsingTest
+Tests run: 1076, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.388 sec
+Running io.shardingsphere.core.parsing.parser.sql.dal.DALStatementTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.parser.sql.ddl.DDLStatementTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.parser.sql.tcl.TCLStatementTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.parser.sql.dml.DMLStatementTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.parser.sql.dql.DQLStatementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.parser.sql.dcl.DCLStatementTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.parser.context.OrderItemTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.parser.context.condition.ConditionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.parser.constant.DerivedColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.lexer.analyzer.CharTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.lexer.analyzer.TokenizerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.lexer.LexerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.shardingsphere.core.parsing.lexer.dialect.mysql.MySQLLexerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.parsing.lexer.dialect.sqlserver.SQLServerLexerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.lexer.dialect.oracle.OracleLexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.shardingsphere.core.parsing.lexer.dialect.postgresql.PostgreSQLLexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.parsing.integrate.engine.IntegrateUnsupportedSQLParsingTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running io.shardingsphere.core.parsing.integrate.engine.IntegrateSupportedSQLParsingTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running io.shardingsphere.core.parsing.integrate.engine.IntegrateSQLParsingExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running io.shardingsphere.core.parsing.SQLJudgeEngineTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running io.shardingsphere.core.routing.router.DatabaseHintSQLRouterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.shardingsphere.core.routing.type.defaultdb.DefaultDatabaseRoutingEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.routing.type.ignore.IgnoreRoutingEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.routing.type.broadcast.TableBroadcastRoutingEngineTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running io.shardingsphere.core.routing.type.broadcast.DatabaseBroadcastRoutingEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.routing.type.standard.StandardRoutingEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec
+Running io.shardingsphere.core.routing.type.hint.DatabaseHintRoutingEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running io.shardingsphere.core.routing.DatabaseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running io.shardingsphere.core.config.DataSourceConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running io.shardingsphere.core.merger.dal.DALMergeEngineTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.188 sec
+Running io.shardingsphere.core.merger.dal.show.ShowOtherMergedResultTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.065 sec
+Running io.shardingsphere.core.merger.dal.show.ShowDatabasesMergedResultTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.shardingsphere.core.merger.dal.show.ShowCreateTableMergedResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec
+Running io.shardingsphere.core.merger.dal.show.ShowTablesMergedResultTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.merger.MergeEngineFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.merger.dql.orderby.CompareUtilTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.shardingsphere.core.merger.dql.orderby.OrderByValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running io.shardingsphere.core.merger.dql.orderby.OrderByStreamMergedResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running io.shardingsphere.core.merger.dql.common.DecoratorMergedResultTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+Running io.shardingsphere.core.merger.dql.common.MemoryQueryResultRowTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running io.shardingsphere.core.merger.dql.common.MemoryMergedResultTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running io.shardingsphere.core.merger.dql.common.StreamMergedResultTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running io.shardingsphere.core.merger.dql.groupby.GroupByRowComparatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running io.shardingsphere.core.merger.dql.groupby.GroupByValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.shardingsphere.core.merger.dql.groupby.GroupByStreamMergedResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running io.shardingsphere.core.merger.dql.groupby.aggregation.AverageAggregationUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.merger.dql.groupby.aggregation.AccumulationAggregationUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.merger.dql.groupby.aggregation.ComparableAggregationUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.merger.dql.groupby.aggregation.AggregationUnitFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.merger.dql.groupby.GroupByMemoryMergedResultTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running io.shardingsphere.core.merger.dql.iterator.IteratorStreamMergedResultTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.merger.dql.pagination.TopAndRowNumberDecoratorMergedResultTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.shardingsphere.core.merger.dql.pagination.LimitDecoratorMergedResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.shardingsphere.core.merger.dql.pagination.RowNumberDecoratorMergedResultTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.shardingsphere.core.merger.dql.DQLMergeEngineTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running io.shardingsphere.core.util.InlineExpressionParserTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.336 sec
+Running io.shardingsphere.core.util.SQLUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.util.StringUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.util.NumberUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.shardingsphere.core.rule.ShardingRuleTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running io.shardingsphere.core.rule.DataNodeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.shardingsphere.core.rule.TableRuleTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running io.shardingsphere.core.rule.ShardingDataSourceNamesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.rule.BindingTableRuleTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running io.shardingsphere.core.rule.MasterSlaveRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.constant.ShardingPropertiesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.shardingsphere.core.constant.DatabaseTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.shardingsphere.core.constant.ShardingPropertiesConstantTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.shardingsphere.core.optimizer.InsertOptimizeEngineTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running io.shardingsphere.core.optimizer.QueryOptimizeEngineTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.shardingsphere.core.hint.HintManagerHolderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+
+Results :
+
+Failed tests:   assertNewServiceInstance(io.shardingsphere.spi.NewInstanceServiceLoaderTest): (..)
+
+Tests run: 2080, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] sharding-sphere .................................... SUCCESS [  1.835 s]
+[INFO] sharding-sql-test .................................. SUCCESS [  2.823 s]
+[INFO] sharding-core ...................................... FAILURE [ 19.940 s]
+[INFO] sharding-jdbc ...................................... SKIPPED
+[INFO] sharding-jdbc-core ................................. SKIPPED
+[INFO] sharding-jdbc-spring ............................... SKIPPED
+[INFO] sharding-jdbc-spring-namespace ..................... SKIPPED
+[INFO] sharding-jdbc-spring-boot-starter .................. SKIPPED
+[INFO] sharding-orchestration ............................. SKIPPED
+[INFO] sharding-orchestration-reg ......................... SKIPPED
+[INFO] sharding-orchestration-reg-api ..................... SKIPPED
+[INFO] sharding-orchestration-core ........................ SKIPPED
+[INFO] sharding-orchestration-reg-zookeeper-curator ....... SKIPPED
+[INFO] sharding-jdbc-orchestration ........................ SKIPPED
+[INFO] sharding-jdbc-orchestration-spring ................. SKIPPED
+[INFO] sharding-jdbc-orchestration-spring-namespace ....... SKIPPED
+[INFO] sharding-jdbc-orchestration-spring-boot-starter .... SKIPPED
+[INFO] sharding-transaction ............................... SKIPPED
+[INFO] sharding-transaction-api ........................... SKIPPED
+[INFO] sharding-transaction-xa ............................ SKIPPED
+[INFO] sharding-opentracing ............................... SKIPPED
+[INFO] sharding-proxy ..................................... SKIPPED
+[INFO] sharding-transaction-base .......................... SKIPPED
+[INFO] sharding-orchestration-reg-etcd .................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.884 s
+[INFO] Finished at: 2018-11-14T18:30:24+01:00
+[INFO] Final Memory: 34M/623M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project sharding-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :sharding-core
