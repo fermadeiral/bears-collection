@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "sharding-sphere/sharding-sphere",
+    "githubId": 49876476,
+    "url": "https://github.com/sharding-sphere/sharding-sphere",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454891778,
+      "url": "http://travis-ci.org/sharding-sphere/sharding-sphere/builds/454891778",
+      "date": "Nov 14, 2018 10:59:34 AM"
+    },
+    "fixerBuild": {
+      "id": 455089890,
+      "url": "http://travis-ci.org/sharding-sphere/sharding-sphere/builds/455089890",
+      "date": "Nov 14, 2018 6:24:42 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 14, 2018 6:25:01 PM",
+    "reproductionDateEnd": "Nov 14, 2018 6:39:47 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 311036616,
+      "totalMemory": 586153984
+    },
+    "totalDuration": 878,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 273,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          273
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/sharding-sphere/sharding-sphere/454891778/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/sharding-sphere/sharding-sphere/454891778/sharding-core",
+    "overallMetrics": {
+      "numberRunning": 2089,
+      "numberPassing": 2088,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.shardingsphere.spi.NewInstanceServiceLoaderTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.shardingsphere.spi.NewInstanceServiceLoaderTest",
+        "testMethod": "assertNewServiceInstance",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003c1\u003e      but: was \u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 23,
+    "numberSourceFiles": 838,
+    "numberTestFiles": 490,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "sharding-sphere/sharding-sphere",
+      "branchName": "dev",
+      "sha": "2c9514ae5687d98cebb85d3af3bcc1a30a81b3c1",
+      "url": "http://github.com/sharding-sphere/sharding-sphere/commit/2c9514ae5687d98cebb85d3af3bcc1a30a81b3c1",
+      "date": "Nov 14, 2018 10:16:52 AM"
+    },
+    "fixerBuild": {
+      "repoName": "sharding-sphere/sharding-sphere",
+      "branchName": "dev",
+      "sha": "32fb545ad807db4a9be55b5bd722233e311e0492",
+      "url": "http://github.com/sharding-sphere/sharding-sphere/commit/32fb545ad807db4a9be55b5bd722233e311e0492",
+      "date": "Nov 14, 2018 6:02:27 PM"
+    }
+  }
+}
