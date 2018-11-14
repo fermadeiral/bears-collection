@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454714895,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/454714895",
+      "date": "Nov 13, 2018 10:59:04 PM"
+    },
+    "fixerBuild": {
+      "id": 455149330,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/455149330",
+      "date": "Nov 14, 2018 8:27:34 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 14, 2018 8:27:59 PM",
+    "reproductionDateEnd": "Nov 14, 2018 8:39:19 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1653564656,
+      "totalMemory": 2124939264
+    },
+    "totalDuration": 675,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 255,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          255
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 146,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0,
+          1,
+          142
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 68,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          68
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/454714895/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 14,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/454714895/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 8607,
+      "numberPassing": 8605,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 24,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.matcher.ElementMatchersTest",
+        "numberRunning": 124,
+        "numberPassing": 122,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.matcher.ElementMatchersTest",
+        "testMethod": "testAnyOf",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"(is(foo) or is(bar))\"\n     but: was \"((false or is(foo)) or is(bar))\"",
+        "isError": false
+      },
+      {
+        "testClass": "net.bytebuddy.matcher.ElementMatchersTest",
+        "testMethod": "testNoneOf",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"(not(is(foo)) and not(is(bar)))\"\n     but: was \"((true and not(is(foo))) and not(is(bar)))\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 311,
+    "numberTestFiles": 725,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "81351c30c70b76952258f2e3b5a6931c3290bff6",
+      "url": "http://github.com/raphw/byte-buddy/commit/81351c30c70b76952258f2e3b5a6931c3290bff6",
+      "date": "Nov 13, 2018 10:54:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "c1d9aec1bc0aee3f568ba47a3132dc20cb6ef010",
+      "url": "http://github.com/raphw/byte-buddy/commit/c1d9aec1bc0aee3f568ba47a3132dc20cb6ef010",
+      "date": "Nov 14, 2018 8:21:21 PM"
+    }
+  }
+}
