@@ -1,0 +1,708 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] flamingo-mc
+[INFO] web-commons
+[INFO] viewer-commons
+[INFO] viewer-config-persistence
+[INFO] solr-commons
+[INFO] viewer
+[INFO] viewer-admin
+[INFO] 
+[INFO] Using the MultiThreadedBuilder implementation with a thread count of 17
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flamingo-mc 5.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ flamingo-mc ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] Building web-commons 5.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-commons 5.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ web-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ web-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ web-commons ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ web-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/453845429/web-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ web-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ web-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/453845429/viewer-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ viewer-commons ---
+[INFO] No tests to run.
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 6.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 63.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 887.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.b3p.mail.MailerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in nl.b3p.mail.MailerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-config-persistence 5.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer-config-persistence ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer-config-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 70 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer-config-persistence ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- hibernate3-maven-plugin:3.0:run (schema-export) @ viewer-config-persistence ---
+[INFO] Executing tasks
+
+main:
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Hibernate Commons Annotations 3.2.0.Final
+[INFO] Hibernate 3.6.10.Final
+[INFO] hibernate.properties not found
+[INFO] Bytecode provider name : javassist
+[INFO] using JDK 1.4 java.sql.Timestamp handling
+[INFO] Hibernate EntityManager 3.6.10.Final
+[INFO] Reading mappings from resource : META-INF/orm-oracle.xml
+[INFO] Binding named native query: getLayerTree => select * from layer start with id = :rootId connect by parent = prior id
+[INFO] Binding named native query: getLevelTree => select * from level_ start with id = :rootId connect by parent = prior id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Hibernate Tools 3.2.4.GA
+[INFO] Using dialect: org.hibernate.dialect.Oracle10gDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/453845429/viewer-config-persistence/target/classes/scripts/oracle-schema-export.sql
+[INFO] schema export complete
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Reading mappings from resource : META-INF/orm-postgresql.xml
+[INFO] Binding named native query: getLayerTree => select * from layer where id in ( with recursive layer_tree(id) as ( select id from layer where id = :rootId union all select l.id from layer_tree, layer l where l.parent = layer_tree.id ) select * from layer_tree)
+[INFO] Binding named native query: getLevelTree => select * from level_ where id in ( with recursive level_tree(id) as ( select id from level_ where id = :rootId union all select l.id from level_tree, level_ l where l.parent = level_tree.id ) select * from level_tree) order by id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/453845429/viewer-config-persistence/target/classes/scripts/postgresql-schema-export.sql
+[INFO] schema export complete
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- hibernate3-maven-plugin:3.0:run (test-schema-export) @ viewer-config-persistence ---
+[INFO] Executing tasks
+
+main:
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Reading mappings from resource : META-INF/orm-hsqldb.xml
+[INFO] Binding named native query: getLayerTree => select * from layer where id in ( with recursive layer_tree(id) as ( select id from layer where id = :rootId union select l.id from layer_tree, layer l where l.parent = layer_tree.id ) select * from layer_tree)
+[INFO] Binding named native query: getLevelTree => select * from level_ where id in ( with recursive level_tree(id) as ( select id from level_ where id = :rootId union select l.id from level_tree, level_ l where l.parent = level_tree.id ) select * from level_tree) order by id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Using dialect: org.hibernate.dialect.HSQLDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/453845429/viewer-config-persistence/target/classes/scripts/hsqldb-schema-export.sql
+[INFO] exporting generated schema to database
+[INFO] Using Hibernate built-in connection pool (not for production use!)
+[INFO] Hibernate connection pool size: 20
+[INFO] autocommit mode: true
+[INFO] using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[INFO] connection properties: {autocommit=true, release_mode=auto}
+[INFO] schema export complete
+[INFO] cleaning up connection pool: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer-config-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer-config-persistence ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ viewer-config-persistence ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.b3p.viewer.config.app.StartLayerTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 11.924 s <<< FAILURE! - in nl.b3p.viewer.config.app.StartLayerTest
+[ERROR] persistLayer(nl.b3p.viewer.config.app.StartLayerTest)  Time elapsed: 10.238 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteLayer(nl.b3p.viewer.config.app.StartLayerTest)  Time elapsed: 0.439 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteApplayer(nl.b3p.viewer.config.app.StartLayerTest)  Time elapsed: 0.443 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteApplication(nl.b3p.viewer.config.app.StartLayerTest)  Time elapsed: 0.496 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.config.app.ConfiguredComponentTest
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.548 s <<< FAILURE! - in nl.b3p.viewer.config.app.ConfiguredComponentTest
+[ERROR] deleteSingleConfiguredComponent(nl.b3p.viewer.config.app.ConfiguredComponentTest)  Time elapsed: 0.527 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteLinkedConfiguredComponent(nl.b3p.viewer.config.app.ConfiguredComponentTest)  Time elapsed: 0.517 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteMotherConfiguredComponent(nl.b3p.viewer.config.app.ConfiguredComponentTest)  Time elapsed: 0.502 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.config.app.ApplicationTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 3.004 s <<< FAILURE! - in nl.b3p.viewer.config.app.ApplicationTest
+[ERROR] testDeleteApplications(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.455 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testMakeMashupOfApplicationWithExistingMashup(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.445 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testMakeMashupDontDuplicateStartLayers(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.401 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testMakeMashupDontDuplicateStartLevels(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.412 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testMakeMashupDontLinkComponents(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.317 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testDeepCopyReaders(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.306 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testDeepCopy(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.301 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testMakeMashupLinkComponents(nl.b3p.viewer.config.app.ApplicationTest)  Time elapsed: 0.366 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.config.app.BookmarkTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.85 s <<< FAILURE! - in nl.b3p.viewer.config.app.BookmarkTest
+[ERROR] testBookmarkPersist(nl.b3p.viewer.config.app.BookmarkTest)  Time elapsed: 0.401 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testBookmarkDelete(nl.b3p.viewer.config.app.BookmarkTest)  Time elapsed: 0.449 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.config.app.StartLevelTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.861 s <<< FAILURE! - in nl.b3p.viewer.config.app.StartLevelTest
+[ERROR] persistLevel(nl.b3p.viewer.config.app.StartLevelTest)  Time elapsed: 0.426 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] deleteStartLevel(nl.b3p.viewer.config.app.StartLevelTest)  Time elapsed: 0.434 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.config.services.TileServiceTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.592 s <<< FAILURE! - in nl.b3p.viewer.config.services.TileServiceTest
+[ERROR] testLoadFromUrl(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.342 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testLoadArcGisWMTSFromURL(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.462 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testLoadBRTWMTSFromURL(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.461 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testParseMultipleTileMatrixSets(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.398 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testLoadTopoWMTSFromURL(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.412 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testParseTileMatrixSet(nl.b3p.viewer.config.services.TileServiceTest)  Time elapsed: 0.505 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[INFO] Running nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest
+[ERROR] Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 3.332 s <<< FAILURE! - in nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest
+[ERROR] convertTestStartLevel(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.72 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] convertTestStartLevel(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.72 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] testUpdateApplicationLayerAttributesOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.354 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testUpdateApplicationLayerAttributesOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.354 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] convertTestStartLayers(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.311 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] convertTestStartLayers(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.311 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] convertTestStartLevels(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.285 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] convertTestStartLevels(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.286 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] applicationDeepCopyAppLayerTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.281 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] applicationDeepCopyAppLayerTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.281 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] testUpdateAttributeOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.442 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testUpdateAttributeOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.442 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] testSelectedContentGeneration(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.447 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testSelectedContentGeneration(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.447 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] applicationDeepCopyLevelTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.489 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] applicationDeepCopyLevelTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)  Time elapsed: 0.489 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[INFO] Running nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.382 s <<< FAILURE! - in nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest
+[ERROR] testConvertSolrConfigReferenceToValues(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.48 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testConvertSolrConfigReferenceToValues(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.481 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] testCodeUpdateWrongMethodname(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.468 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testCodeUpdateWrongMethodname(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.468 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[ERROR] testSQLScriptUpdate(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.432 s  <<< ERROR!
+java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LANG
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LANG
+
+[ERROR] testSQLScriptUpdate(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)  Time elapsed: 0.433 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ApplicationTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   BookmarkTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   BookmarkTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ConfiguredComponentTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ConfiguredComponentTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   ConfiguredComponentTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLayerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLayerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLayerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLayerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLevelTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   StartLevelTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   TileServiceTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.applicationDeepCopyAppLayerTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.applicationDeepCopyLevelTest(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.convertTestStartLayers(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.convertTestStartLevel(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.convertTestStartLevels(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.testSelectedContentGeneration(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.testUpdateApplicationLayerAttributesOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest.testUpdateAttributeOrder(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest)
+[ERROR]   Run 1: DatabaseSynchronizerEMTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerEMTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest.testCodeUpdateWrongMethodname(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)
+[ERROR]   Run 1: DatabaseSynchronizerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest.testConvertSolrConfigReferenceToValues(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)
+[ERROR]   Run 1: DatabaseSynchronizerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[ERROR] nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest.testSQLScriptUpdate(nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest)
+[ERROR]   Run 1: DatabaseSynchronizerTest>TestUtil.setUp:95->TestUtil.loadTestData:136->TestUtil.executeScript:154 » SQLSyntaxError
+[ERROR]   Run 2: DatabaseSynchronizerTest>DatabaseSynchronizerTestInterface.removeUpdates:33->DatabaseSynchronizerTestInterface.revertDBVersion:41 » NoResult
+[INFO] 
+[INFO] 
+[ERROR] Tests run: 36, Failures: 0, Errors: 36, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] flamingo-mc ........................................ SUCCESS [  0.934 s]
+[INFO] web-commons ........................................ SUCCESS [  1.389 s]
+[INFO] viewer-commons ..................................... SUCCESS [  4.204 s]
+[INFO] viewer-config-persistence .......................... FAILURE [ 33.708 s]
+[INFO] solr-commons ....................................... SKIPPED
+[INFO] viewer ............................................. SKIPPED
+[INFO] viewer-admin ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 39.339 s (Wall Clock)
+[INFO] Finished at: 2018-11-15T11:48:29+01:00
+[INFO] Final Memory: 29M/800M
+[INFO] ------------------------------------------------------------------------
+[INFO] cleaning up connection pool: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project viewer-config-persistence: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/flamingo-geocms/flamingo/453845429/viewer-config-persistence/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :viewer-config-persistence
