@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "flamingo-geocms/flamingo",
+    "githubId": 10546179,
+    "url": "https://github.com/flamingo-geocms/flamingo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439185800,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/439185800",
+      "date": "Oct 9, 2018 5:34:01 PM"
+    },
+    "fixerBuild": {
+      "id": 455428522,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/455428522",
+      "date": "Nov 15, 2018 11:53:25 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 11:53:44 AM",
+    "reproductionDateEnd": "Nov 15, 2018 12:06:29 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 182452432,
+      "totalMemory": 598212608
+    },
+    "totalDuration": 757,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          21
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 109,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          107
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 269,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          269
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/flamingo-geocms/flamingo/439185800/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 209,
+      "numberDeleted": 128
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/flamingo-geocms/flamingo/439185800/viewer-admin",
+    "overallMetrics": {
+      "numberRunning": 108,
+      "numberPassing": 107,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest",
+        "testMethod": "deleteOriginalMotherWhenComponentsMustFollowNewlyPublishedApplication",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Error while committing the transaction",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 240,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 231,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "feat/extendDrawingCapabilities",
+      "sha": "224c03cff5c6d0447563ee35e38c31b89cd22cc5",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/224c03cff5c6d0447563ee35e38c31b89cd22cc5",
+      "date": "Oct 9, 2018 5:02:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "feat/extendDrawingCapabilities",
+      "sha": "26ee74000717d38897a8675f958c42ea3ff8601c",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/26ee74000717d38897a8675f958c42ea3ff8601c",
+      "date": "Nov 15, 2018 11:34:42 AM"
+    }
+  }
+}
