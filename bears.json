@@ -1,0 +1,179 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/apache/incubator-pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 3470
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 454486578,
+      "url": "http://travis-ci.org/apache/incubator-pinot/builds/454486578",
+      "date": "Nov 13, 2018 3:06:47 PM"
+    },
+    "fixerBuild": {
+      "id": 455670182,
+      "url": "http://travis-ci.org/apache/incubator-pinot/builds/455670182",
+      "date": "Nov 15, 2018 9:43:25 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 10:04:18 PM",
+    "reproductionDateEnd": "Nov 16, 2018 12:09:28 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 301309848,
+      "totalMemory": 590348288
+    },
+    "totalDuration": 7502,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          37
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 496,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          8,
+          484
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1715,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1715
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-pinot/454486578/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 10,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 69,
+      "numberDeleted": 54
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-pinot/454486578/pinot-controller",
+    "overallMetrics": {
+      "numberRunning": 899,
+      "numberPassing": 898,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.controller.helix.core.relocation.RealtimeSegmentRelocatorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.controller.helix.core.relocation.RealtimeSegmentRelocatorTest",
+        "testMethod": "testRelocationOfConsumingSegments",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberSourceFiles": 1309,
+    "numberTestFiles": 332,
+    "numberLibrariesFailingModule": 164,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "master",
+      "sha": "b0dccc59936687382a19c8c686553e5c49622982",
+      "url": "http://github.com/apache/incubator-pinot/commit/b0dccc59936687382a19c8c686553e5c49622982",
+      "date": "Nov 13, 2018 7:49:53 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "master",
+      "sha": "1df710d1d6477fba94fbedb06407d494d5faf5c0",
+      "url": "http://github.com/apache/incubator-pinot/commit/1df710d1d6477fba94fbedb06407d494d5faf5c0",
+      "date": "Nov 15, 2018 9:10:52 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "planningPhase",
+      "sha": "afd826348840f0be7619494ebb0df5427c4549fc",
+      "url": "https://github.com/apache/incubator-pinot/commit/afd826348840f0be7619494ebb0df5427c4549fc",
+      "date": "Nov 15, 2018 9:10:52 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "master",
+      "sha": "b4496b6867391e820fc18656e45cbdf2b3adceed",
+      "url": "https://github.com/apache/incubator-pinot/commit/b4496b6867391e820fc18656e45cbdf2b3adceed",
+      "date": "Nov 13, 2018 1:12:14 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "planningPhase",
+      "sha": "afd826348840f0be7619494ebb0df5427c4549fc",
+      "url": "https://github.com/apache/incubator-pinot/commit/afd826348840f0be7619494ebb0df5427c4549fc",
+      "date": "Nov 15, 2018 9:10:52 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/incubator-pinot",
+      "branchName": "master",
+      "sha": "b4496b6867391e820fc18656e45cbdf2b3adceed",
+      "url": "https://github.com/apache/incubator-pinot/commit/b4496b6867391e820fc18656e45cbdf2b3adceed",
+      "date": "Nov 13, 2018 1:12:14 AM"
+    }
+  }
+}
