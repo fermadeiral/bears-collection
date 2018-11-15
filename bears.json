@@ -1,0 +1,150 @@
+{
+  "repository": {
+    "name": "powsybl/powsybl-core",
+    "githubId": 105284146,
+    "url": "https://github.com/powsybl/powsybl-core",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 452899260,
+      "url": "http://travis-ci.org/powsybl/powsybl-core/builds/452899260",
+      "date": "Nov 9, 2018 3:35:40 PM"
+    },
+    "fixerBuild": {
+      "id": 455475749,
+      "url": "http://travis-ci.org/powsybl/powsybl-core/builds/455475749",
+      "date": "Nov 15, 2018 1:54:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 1:55:03 PM",
+    "reproductionDateEnd": "Nov 15, 2018 2:06:34 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 249466232,
+      "totalMemory": 468713472
+    },
+    "totalDuration": 685,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 175,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          1,
+          172
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 55,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          55
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/powsybl/powsybl-core/452899260/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 33,
+      "numberDeleted": 115
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-xml-converter",
+    "overallMetrics": {
+      "numberRunning": 486,
+      "numberPassing": 485,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest",
+        "testMethod": "roundTripTest",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 71,
+    "numberSourceFiles": 1187,
+    "numberTestFiles": 408,
+    "numberLibrariesFailingModule": 50,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "powsybl/powsybl-core",
+      "branchName": "test_3w_star_bus",
+      "sha": "ead5bb61891922cd980e274a1581d9c5be175f86",
+      "url": "http://github.com/powsybl/powsybl-core/commit/ead5bb61891922cd980e274a1581d9c5be175f86",
+      "date": "Nov 9, 2018 3:20:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "powsybl/powsybl-core",
+      "branchName": "test_3w_star_bus",
+      "sha": "58354c47e8c70c4cc08f2c68749f87ce7694c725",
+      "url": "http://github.com/powsybl/powsybl-core/commit/58354c47e8c70c4cc08f2c68749f87ce7694c725",
+      "date": "Nov 15, 2018 1:40:19 PM"
+    }
+  },
+  "type": "passing_passing"
+}
