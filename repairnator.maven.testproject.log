@@ -31,12 +31,12 @@ main:
 [INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-rng-parent ---
 [INFO] 
 [INFO] --- maven-jgit-buildnumber-plugin:1.2.10:extract-buildnumber (default) @ commons-rng-parent ---
-[INFO] Git info extracted, revision: '4a8c671', branch: '', tag: '', commitsCount: '566', commitDate: '2018-11-15', buildnumber: 'UNNAMED.566.4a8c671'
+[INFO] Git info extracted, revision: '8c927dc', branch: '', tag: '', commitsCount: '565', commitDate: '2018-11-15', buildnumber: 'UNNAMED.565.8c927dc'
 [INFO] 
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-rng-parent ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/apache/commons-rng/446227583' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/apache/commons-rng/446227583
-[INFO] Storing buildNumber: 4a8c6713eb44371f06da39cdd01fba0406c01e83 at timestamp: 2018-11-15 17:54:10+0100
+[INFO] Storing buildNumber: 8c927dc65dc5d86daa16304a83b033b25c43fd28 at timestamp: 2018-11-15 17:57:39+0100
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -78,7 +78,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-rng-client-api ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/apache/commons-rng/446227583/commons-rng-client-api' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/apache/commons-rng/446227583/commons-rng-client-api
-[INFO] Storing buildNumber: 4a8c6713eb44371f06da39cdd01fba0406c01e83 at timestamp: 2018-11-15 17:54:12+0100
+[INFO] Storing buildNumber: 8c927dc65dc5d86daa16304a83b033b25c43fd28 at timestamp: 2018-11-15 17:57:41+0100
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -138,7 +138,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-rng-core ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/apache/commons-rng/446227583/commons-rng-core' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/apache/commons-rng/446227583/commons-rng-core
-[INFO] Storing buildNumber: 4a8c6713eb44371f06da39cdd01fba0406c01e83 at timestamp: 2018-11-15 17:54:14+0100
+[INFO] Storing buildNumber: 8c927dc65dc5d86daa16304a83b033b25c43fd28 at timestamp: 2018-11-15 17:57:43+0100
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -172,38 +172,32 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] argLine set to -javaagent:/root/./workspace/apache/commons-rng/446227583/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/apache/commons-rng/446227583/commons-rng-core/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ commons-rng-core ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 7.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 55.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 938.2 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.apache.commons.rng.core.ProvidersCommonParametricTest
-[INFO] Tests run: 320, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.951 s - in org.apache.commons.rng.core.ProvidersCommonParametricTest
+[INFO] Tests run: 320, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.325 s - in org.apache.commons.rng.core.ProvidersCommonParametricTest
 [INFO] Running org.apache.commons.rng.core.BaseProviderTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.BaseProviderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.BaseProviderTest
 [INFO] Running org.apache.commons.rng.core.RandomProviderDefaultStateTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.RandomProviderDefaultStateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.RandomProviderDefaultStateTest
 [INFO] Running org.apache.commons.rng.core.source32.ISAACRandomTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.ISAACRandomTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.ISAACRandomTest
 [INFO] Running org.apache.commons.rng.core.source32.MersenneTwisterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.MersenneTwisterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.MersenneTwisterTest
 [INFO] Running org.apache.commons.rng.core.source32.Well1024aTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.Well1024aTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.Well1024aTest
 [INFO] Running org.apache.commons.rng.core.source32.KISSRandomTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.KISSRandomTest
 [INFO] Running org.apache.commons.rng.core.source32.Well44497aTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.Well44497aTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.Well44497aTest
 [INFO] Running org.apache.commons.rng.core.source32.JDKRandomTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.JDKRandomTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.JDKRandomTest
 [INFO] Running org.apache.commons.rng.core.source32.MultiplyWithCarry256Test
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.MultiplyWithCarry256Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.MultiplyWithCarry256Test
 [INFO] Running org.apache.commons.rng.core.source32.Well19937aTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.Well19937aTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source32.Well19937aTest
 [INFO] Running org.apache.commons.rng.core.source32.Well19937cTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.Well19937cTest
 [INFO] Running org.apache.commons.rng.core.source32.Well512aTest
@@ -211,19 +205,19 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] Running org.apache.commons.rng.core.source32.Well44497bTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source32.Well44497bTest
 [INFO] Running org.apache.commons.rng.core.util.NumberFactoryTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.util.NumberFactoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.util.NumberFactoryTest
 [INFO] Running org.apache.commons.rng.core.Providers32ParametricTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.Providers32ParametricTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.Providers32ParametricTest
 [INFO] Running org.apache.commons.rng.core.source64.SplitMix64Test
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source64.SplitMix64Test
 [INFO] Running org.apache.commons.rng.core.source64.XorShift1024StarTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source64.XorShift1024StarTest
 [INFO] Running org.apache.commons.rng.core.source64.TwoCmresTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.rng.core.source64.TwoCmresTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source64.TwoCmresTest
 [INFO] Running org.apache.commons.rng.core.source64.MersenneTwister64Test
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.rng.core.source64.MersenneTwister64Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.source64.MersenneTwister64Test
 [INFO] Running org.apache.commons.rng.core.Providers64ParametricTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.rng.core.Providers64ParametricTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.core.Providers64ParametricTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -255,7 +249,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-rng-simple ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/apache/commons-rng/446227583/commons-rng-simple' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/apache/commons-rng/446227583/commons-rng-simple
-[INFO] Storing buildNumber: 4a8c6713eb44371f06da39cdd01fba0406c01e83 at timestamp: 2018-11-15 17:54:35+0100
+[INFO] Storing buildNumber: 8c927dc65dc5d86daa16304a83b033b25c43fd28 at timestamp: 2018-11-15 17:58:05+0100
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -294,19 +288,19 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.apache.commons.rng.simple.RandomSourceTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 s - in org.apache.commons.rng.simple.RandomSourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in org.apache.commons.rng.simple.RandomSourceTest
 [INFO] Running org.apache.commons.rng.simple.ProvidersCommonParametricTest
-[WARNING] Tests run: 144, Failures: 0, Errors: 0, Skipped: 52, Time elapsed: 9.523 s - in org.apache.commons.rng.simple.ProvidersCommonParametricTest
+[WARNING] Tests run: 144, Failures: 0, Errors: 0, Skipped: 52, Time elapsed: 9.257 s - in org.apache.commons.rng.simple.ProvidersCommonParametricTest
 [INFO] Running org.apache.commons.rng.simple.internal.ByteArray2LongArrayTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.simple.internal.ByteArray2LongArrayTest
 [INFO] Running org.apache.commons.rng.simple.internal.IntArray2LongArrayTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.simple.internal.IntArray2LongArrayTest
 [INFO] Running org.apache.commons.rng.simple.internal.SeedFactoryTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in org.apache.commons.rng.simple.internal.SeedFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.apache.commons.rng.simple.internal.SeedFactoryTest
 [INFO] Running org.apache.commons.rng.simple.internal.ByteArray2IntArrayTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.simple.internal.ByteArray2IntArrayTest
 [INFO] Running org.apache.commons.rng.simple.JDKRandomBridgeTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.rng.simple.JDKRandomBridgeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.rng.simple.JDKRandomBridgeTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -338,7 +332,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-rng-sampling ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/apache/commons-rng/446227583/commons-rng-sampling' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/apache/commons-rng/446227583/commons-rng-sampling
-[INFO] Storing buildNumber: 4a8c6713eb44371f06da39cdd01fba0406c01e83 at timestamp: 2018-11-15 17:54:48+0100
+[INFO] Storing buildNumber: 8c927dc65dc5d86daa16304a83b033b25c43fd28 at timestamp: 2018-11-15 17:58:18+0100
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -387,80 +381,55 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.apache.commons.rng.sampling.CollectionSamplerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in org.apache.commons.rng.sampling.CollectionSamplerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s - in org.apache.commons.rng.sampling.CollectionSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.ListSamplerTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 s - in org.apache.commons.rng.sampling.ListSamplerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s - in org.apache.commons.rng.sampling.ListSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.UnitSphereSamplerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.349 s - in org.apache.commons.rng.sampling.UnitSphereSamplerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.927 s - in org.apache.commons.rng.sampling.UnitSphereSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.DiscreteProbabilityCollectionSamplerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.771 s - in org.apache.commons.rng.sampling.DiscreteProbabilityCollectionSamplerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.625 s - in org.apache.commons.rng.sampling.DiscreteProbabilityCollectionSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.distribution.ZigguratNormalizedGaussianSamplerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.rng.sampling.distribution.ZigguratNormalizedGaussianSamplerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.sampling.distribution.ZigguratNormalizedGaussianSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest
-[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 107.217 s - in org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest
+[ERROR] Tests run: 36, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 105.351 s <<< FAILURE! - in org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest
+[ERROR] testSampling[18: data=org.apache.commons.math3.distribution.GumbelDistribution@9cd25ff (inverse method) [org.apache.commons.rng.core.source32.Well1024a]: deciles=[-4.662585990765498, -4.618533854425234, -4.58283209134007, -4.549247146669737, -4.514918910768455, -4.477377579972669, -4.4331955567214765, -4.375507381628579, -4.283204818740569]](org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest)  Time elapsed: 0.241 s  <<< FAILURE!
+java.lang.AssertionError: org.apache.commons.math3.distribution.GumbelDistribution@9cd25ff (inverse method) [org.apache.commons.rng.core.source32.Well1024a]: Too many failures for sample size = 20000 (3 out of 50 tests failed, chi2=[23.012999999999998, 23.339, 22.15]
+	at org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest.check(ContinuousSamplerParametricTest.java:127)
+	at org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest.testSampling(ContinuousSamplerParametricTest.java:53)
+
 [INFO] Running org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest
-[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest
-[ERROR] testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest)  Time elapsed: 0.011 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
-
-[ERROR] testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.distribution.DiscreteSamplerParametricTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.449 s - in org.apache.commons.rng.sampling.distribution.DiscreteSamplerParametricTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.44 s - in org.apache.commons.rng.sampling.distribution.DiscreteSamplerParametricTest
 [INFO] Running org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest
-[ERROR] Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! - in org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest
-[ERROR] testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
-
-[ERROR] testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
-
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest
 [INFO] Running org.apache.commons.rng.sampling.distribution.PoissonSamplerCacheTest
 [INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.apache.commons.rng.sampling.distribution.PoissonSamplerCacheTest
 [INFO] Running org.apache.commons.rng.sampling.PermutationSamplerTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.rng.sampling.PermutationSamplerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.rng.sampling.PermutationSamplerTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR] org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest)
-[ERROR]   Run 1: LargeMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound Expected exception: java.lang.IllegalArgumentException
-[ERROR]   Run 2: LargeMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound Expected exception: java.lang.IllegalArgumentException
-[INFO] 
-[ERROR] org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound(org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest)
-[ERROR]   Run 1: SmallMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound Expected exception: java.lang.IllegalArgumentException
-[ERROR]   Run 2: SmallMeanPoissonSamplerTest.testConstructorThrowsWithMeanLargerThanUpperBound Expected exception: java.lang.IllegalArgumentException
+[WARNING] Flakes: 
+[WARNING] org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest.testSampling[18: data=org.apache.commons.math3.distribution.GumbelDistribution@9cd25ff (inverse method) [org.apache.commons.rng.core.source32.Well1024a]: deciles=[-4.662585990765498, -4.618533854425234, -4.58283209134007, -4.549247146669737, -4.514918910768455, -4.477377579972669, -4.4331955567214765, -4.375507381628579, -4.283204818740569]](org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest)
+[ERROR]   Run 1: ContinuousSamplerParametricTest.testSampling:53->check:127 org.apache.commons.math3.distribution.GumbelDistribution@9cd25ff (inverse method) [org.apache.commons.rng.core.source32.Well1024a]: Too many failures for sample size = 20000 (3 out of 50 tests failed, chi2=[23.012999999999998, 23.339, 22.15]
+[INFO]   Run 2: PASS
 [INFO] 
 [INFO] 
-[ERROR] Tests run: 115, Failures: 2, Errors: 0, Skipped: 0
+[WARNING] Tests run: 115, Failures: 0, Errors: 0, Skipped: 0, Flakes: 1
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Apache Commons RNG ................................. SUCCESS [  4.758 s]
-[INFO] Apache Commons RNG Client API ...................... SUCCESS [  1.984 s]
-[INFO] Apache Commons RNG Core ............................ SUCCESS [ 21.141 s]
-[INFO] Apache Commons RNG Simple .......................... SUCCESS [ 13.019 s]
-[INFO] Apache Commons RNG Sampling ........................ FAILURE [02:12 min]
+[INFO] Apache Commons RNG ................................. SUCCESS [  4.552 s]
+[INFO] Apache Commons RNG Client API ...................... SUCCESS [  2.741 s]
+[INFO] Apache Commons RNG Core ............................ SUCCESS [ 22.244 s]
+[INFO] Apache Commons RNG Simple .......................... SUCCESS [ 12.390 s]
+[INFO] Apache Commons RNG Sampling ........................ SUCCESS [02:10 min]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 02:53 min
-[INFO] Finished at: 2018-11-15T17:57:00+01:00
-[INFO] Final Memory: 36M/661M
+[INFO] Finished at: 2018-11-15T18:00:29+01:00
+[INFO] Final Memory: 36M/818M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project commons-rng-sampling: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/apache/commons-rng/446227583/commons-rng-sampling/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :commons-rng-sampling
