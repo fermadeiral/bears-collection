@@ -1,0 +1,534 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "flamingo-geocms/flamingo",
+    "githubId": 10546179,
+    "url": "https://github.com/flamingo-geocms/flamingo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453845429,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/453845429",
+      "date": "Nov 12, 2018 9:44:57 AM"
+    },
+    "fixerBuild": {
+      "id": 455428047,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/455428047",
+      "date": "Nov 15, 2018 11:44:59 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 11:45:15 AM",
+    "reproductionDateEnd": "Nov 15, 2018 11:54:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 326315032,
+      "totalMemory": 613941248
+    },
+    "totalDuration": 558,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          24
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 126,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          124
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 43,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          43
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/flamingo-geocms/flamingo/453845429/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 56,
+      "numberDeleted": 6
+    },
+    "lines": {
+      "numberAdded": 368,
+      "numberDeleted": 1043
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/flamingo-geocms/flamingo/453845429/viewer-config-persistence",
+    "overallMetrics": {
+      "numberRunning": 48,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 47,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.sql.SQLSyntaxErrorException",
+          "isError": true,
+          "occurrences": 36
+        },
+        {
+          "failureName": "javax.persistence.NoResultException",
+          "isError": true,
+          "occurrences": 11
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.b3p.viewer.config.app.ConfiguredComponentTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLayerTest",
+        "numberRunning": 4,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.BookmarkTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "numberRunning": 8,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 8,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "numberRunning": 16,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 16,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLevelTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testSQLScriptUpdate",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testSelectedContentGeneration",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLevel",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.BookmarkTest",
+        "testMethod": "testBookmarkPersist",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testUpdateApplicationLayerAttributesOrder",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLayerTest",
+        "testMethod": "deleteApplication",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "applicationDeepCopyLevelTest",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLevelTest",
+        "testMethod": "deleteStartLevel",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLayerTest",
+        "testMethod": "deleteLayer",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLayers",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testMakeMashupDontDuplicateStartLayers",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testDeleteApplications",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testLoadBRTWMTSFromURL",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testParseMultipleTileMatrixSets",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ConfiguredComponentTest",
+        "testMethod": "deleteSingleConfiguredComponent",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testCodeUpdateWrongMethodname",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ConfiguredComponentTest",
+        "testMethod": "deleteLinkedConfiguredComponent",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testLoadFromUrl",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "applicationDeepCopyAppLayerTest",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLayers",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testDeepCopyReaders",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testDeepCopy",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLevels",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testConvertSolrConfigReferenceToValues",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLevels",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testMakeMashupOfApplicationWithExistingMashup",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ConfiguredComponentTest",
+        "testMethod": "deleteMotherConfiguredComponent",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testConvertSolrConfigReferenceToValues",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "applicationDeepCopyAppLayerTest",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testMakeMashupLinkComponents",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLayerTest",
+        "testMethod": "persistLayer",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testMakeMashupDontDuplicateStartLevels",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testLoadTopoWMTSFromURL",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testSQLScriptUpdate",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "applicationDeepCopyLevelTest",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testUpdateAttributeOrder",
+        "failureName": "javax.persistence.NoResultException",
+        "detail": "No entity found for query",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.BookmarkTest",
+        "testMethod": "testBookmarkDelete",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest",
+        "testMethod": "testCodeUpdateWrongMethodname",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testParseTileMatrixSet",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.services.TileServiceTest",
+        "testMethod": "testLoadArcGisWMTSFromURL",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLevelTest",
+        "testMethod": "persistLevel",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testUpdateApplicationLayerAttributesOrder",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.ApplicationTest",
+        "testMethod": "testMakeMashupDontLinkComponents",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testUpdateAttributeOrder",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "testSelectedContentGeneration",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.config.app.StartLayerTest",
+        "testMethod": "deleteApplayer",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      },
+      {
+        "testClass": "nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest",
+        "testMethod": "convertTestStartLevel",
+        "failureName": "java.sql.SQLSyntaxErrorException",
+        "detail": "user lacks privilege or object not found: LANG",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 246,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 180,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "master",
+      "sha": "e297af4fc311fbb56712011c95df393f2ead7552",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/e297af4fc311fbb56712011c95df393f2ead7552",
+      "date": "Nov 12, 2018 9:32:56 AM"
+    },
+    "fixerBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "master",
+      "sha": "a880b4148033b2f78070cc87dada72ec026ee440",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/a880b4148033b2f78070cc87dada72ec026ee440",
+      "date": "Nov 15, 2018 11:33:41 AM"
+    }
+  }
+}
