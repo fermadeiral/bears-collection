@@ -1,0 +1,10 @@
+{
+  "fail-fast": true,
+  "rules": {
+    "illegal-change-types": {
+      "values": [
+        "loadData"
+      ]
+    }
+  }
+}

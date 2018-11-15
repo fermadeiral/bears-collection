@@ -1,0 +1,10 @@
+.idea/*
+**/target/*
+*.iml
+pom.xml.versionsBackup
+.svn/*
+**/.mvm/*
+**/node_modules/*
+databasechangelog.csv
+databasechangelog.csv.new
+website/build
