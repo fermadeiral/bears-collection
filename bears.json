@@ -1,0 +1,166 @@
+{
+  "repository": {
+    "name": "apache/commons-rng",
+    "githubId": 65604083,
+    "url": "https://github.com/apache/commons-rng",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 446227583,
+      "url": "http://travis-ci.org/apache/commons-rng/builds/446227583",
+      "date": "Oct 25, 2018 5:28:13 PM"
+    },
+    "fixerBuild": {
+      "id": 455584348,
+      "url": "http://travis-ci.org/apache/commons-rng/builds/455584348",
+      "date": "Nov 15, 2018 5:52:42 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 5:53:00 PM",
+    "reproductionDateEnd": "Nov 15, 2018 6:00:32 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 317554128,
+      "totalMemory": 398983168
+    },
+    "totalDuration": 446,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 57,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          56
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 178,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          178
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/commons-rng/446227583/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/commons-rng/446227583/commons-rng-sampling",
+    "overallMetrics": {
+      "numberRunning": 590,
+      "numberPassing": 588,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 52,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.LargeMeanPoissonSamplerTest",
+        "testMethod": "testConstructorThrowsWithMeanLargerThanUpperBound",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.lang.IllegalArgumentException",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.SmallMeanPoissonSamplerTest",
+        "testMethod": "testConstructorThrowsWithMeanLargerThanUpperBound",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.lang.IllegalArgumentException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 85,
+    "numberTestFiles": 47,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/commons-rng",
+      "branchName": "master",
+      "sha": "350fb428eaf42a0ece8ebc59714201d590f6ff94",
+      "url": "http://github.com/apache/commons-rng/commit/350fb428eaf42a0ece8ebc59714201d590f6ff94",
+      "date": "Oct 25, 2018 5:20:34 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/commons-rng",
+      "branchName": "master",
+      "sha": "8c927dc65dc5d86daa16304a83b033b25c43fd28",
+      "url": "http://github.com/apache/commons-rng/commit/8c927dc65dc5d86daa16304a83b033b25c43fd28",
+      "date": "Nov 15, 2018 5:33:56 PM"
+    }
+  },
+  "type": "passing_passing"
+}
