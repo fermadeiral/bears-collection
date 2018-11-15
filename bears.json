@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "albfernandez/GDS-PMD-Security-Rules",
+    "githubId": 27188212,
+    "url": "https://github.com/albfernandez/GDS-PMD-Security-Rules",
+    "isFork": true,
+    "original": {
+      "name": "GDSSecurity/GDS-PMD-Security-Rules",
+      "githubId": 4331487,
+      "url": "https://github.com/GDSSecurity/GDS-PMD-Security-Rules"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451155169,
+      "url": "http://travis-ci.org/albfernandez/GDS-PMD-Security-Rules/builds/451155169",
+      "date": "Nov 6, 2018 1:53:32 AM"
+    },
+    "fixerBuild": {
+      "id": 455669767,
+      "url": "http://travis-ci.org/albfernandez/GDS-PMD-Security-Rules/builds/455669767",
+      "date": "Nov 15, 2018 9:12:29 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 9:12:47 PM",
+    "reproductionDateEnd": "Nov 15, 2018 9:14:51 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 319652952,
+      "totalMemory": 378535936
+    },
+    "totalDuration": 119,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 57,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          57
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/albfernandez/GDS-PMD-Security-Rules/451155169/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169",
+    "overallMetrics": {
+      "numberRunning": 58,
+      "numberPassing": 57,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.gdssecurity.pmd.SanitizersTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.gdssecurity.pmd.SanitizersTest",
+        "testMethod": "testSanitizerParseInt",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 13,
+    "numberTestFiles": 88,
+    "numberLibrariesFailingModule": 72,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "albfernandez/GDS-PMD-Security-Rules",
+      "branchName": "master",
+      "sha": "065482ffcb1a1a35a5a2a5e0e54aafc565e1be9a",
+      "url": "http://github.com/albfernandez/GDS-PMD-Security-Rules/commit/065482ffcb1a1a35a5a2a5e0e54aafc565e1be9a",
+      "date": "Nov 6, 2018 1:44:54 AM"
+    },
+    "fixerBuild": {
+      "repoName": "albfernandez/GDS-PMD-Security-Rules",
+      "branchName": "master",
+      "sha": "d08d1b9f55598fca9b5a9b78b89998f81edeed7c",
+      "url": "http://github.com/albfernandez/GDS-PMD-Security-Rules/commit/d08d1b9f55598fca9b5a9b78b89998f81edeed7c",
+      "date": "Nov 15, 2018 9:09:57 PM"
+    }
+  }
+}
