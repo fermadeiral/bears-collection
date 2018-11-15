@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "OpenFeign/feign",
+    "githubId": 10981994,
+    "url": "https://github.com/OpenFeign/feign",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 455672230,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/455672230",
+      "date": "Nov 15, 2018 9:23:47 PM"
+    },
+    "fixerBuild": {
+      "id": 455672663,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/455672663",
+      "date": "Nov 15, 2018 9:27:53 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 15, 2018 10:04:59 PM",
+    "reproductionDateEnd": "Nov 15, 2018 10:09:16 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 356757688,
+      "totalMemory": 406847488
+    },
+    "totalDuration": 250,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 87,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          87
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/OpenFeign/feign/455672230/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 29,
+      "numberDeleted": 45
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/OpenFeign/feign/455672230/core",
+    "overallMetrics": {
+      "numberRunning": 292,
+      "numberPassing": 289,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "feign.template.QueryTemplateTest",
+        "numberRunning": 10,
+        "numberPassing": 7,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "feign.template.QueryTemplateTest",
+        "testMethod": "expandName",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"%7Bname%7D\u003dJames\u0026%7Bname%7D\u003dJason\"\u003e\nto be equal to:\n \u003c\"firsts\u003dJames\u0026firsts\u003dJason\"\u003e\nignoring case considerations",
+        "isError": false
+      },
+      {
+        "testClass": "feign.template.QueryTemplateTest",
+        "testMethod": "expandPureParameter",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"{name}\"\u003e\nto be equal to:\n \u003c\"firsts\"\u003e\nignoring case considerations",
+        "isError": false
+      },
+      {
+        "testClass": "feign.template.QueryTemplateTest",
+        "testMethod": "expandPureParameterWithSlash",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"/path/{name}\"\u003e\nto be equal to:\n \u003c\"/path/firsts\"\u003e\nignoring case considerations",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 20,
+    "numberSourceFiles": 102,
+    "numberTestFiles": 78,
+    "numberLibrariesFailingModule": 19,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "f72db36968d499874e5bd1bdc39289dd62e45ddd",
+      "url": "http://github.com/OpenFeign/feign/commit/f72db36968d499874e5bd1bdc39289dd62e45ddd",
+      "date": "Nov 15, 2018 9:16:33 PM"
+    },
+    "fixerBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "f16553db43ed062d1de878b38ecff0268ad440ba",
+      "url": "http://github.com/OpenFeign/feign/commit/f16553db43ed062d1de878b38ecff0268ad440ba",
+      "date": "Nov 15, 2018 9:17:36 PM"
+    }
+  },
+  "type": "passing_passing"
+}
