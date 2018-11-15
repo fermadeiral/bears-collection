@@ -1,0 +1,1227 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] powsybl
+[INFO] Commons
+[INFO] Time series
+[INFO] Time series API
+[INFO] AFS
+[INFO] AFS storage API
+[INFO] Computation API
+[INFO] Tools
+[INFO] Local computation
+[INFO] AFS MapDB storage implementation
+[INFO] IIDM
+[INFO] IIDM network model
+[INFO] AFS core classes
+[INFO] Math
+[INFO] IIDM testing networks
+[INFO] IIDM network model implementation
+[INFO] Contingency API
+[INFO] Action
+[INFO] Action DSL SPI
+[INFO] IIDM converter API
+[INFO] IIDM XML converter
+[INFO] AFS base extensions
+[INFO] Scripting
+[INFO] Load-flow
+[INFO] Load-flow API
+[INFO] Action utilities
+[INFO] Action, contingency and rule DSL
+[INFO] Security analysis
+[INFO] Security analysis API
+[INFO] Action simulator
+[INFO] AFS local filesystem implementation
+[INFO] AFS MapDB filesystem implementation
+[INFO] AFS WS
+[INFO] AFS WS Utilities
+[INFO] AFS WS client side utilities
+[INFO] Network cache AFS
+[INFO] Network cache AFS client
+[INFO] AFS WS server side utilities
+[INFO] Network cache AFS server
+[INFO] AFS WS storage
+[INFO] AFS WS client
+[INFO] AFS WS Server
+[INFO] AMPL converter implementation
+[INFO] Triple store abstraction
+[INFO] Triple store abstraction API
+[INFO] Blazegraph triple store implementation
+[INFO] Jena triple store implementation
+[INFO] RDF4J triple store implementation
+[INFO] CGMES
+[INFO] CGMES network model
+[INFO] CGMES conformity
+[INFO] CIM1
+[INFO] CIM1 network model
+[INFO] ENTSO-E utilities
+[INFO] Load-flow validation
+[INFO] Loadflow Results Completion
+[INFO] CIM1 converter implementation
+[INFO] CGMES conversion
+[INFO] CGMES model alternatives
+[INFO] CIM anonymizer
+[INFO] MPI computation
+[INFO] IIDM utilities
+[INFO] Security analysis AFS
+[INFO] Security analysis local service
+[INFO] Sensitivity computation API
+[INFO] Time domain simulation API
+[INFO] UCTE
+[INFO] UCTE network model
+[INFO] UCTE converter implementation
+[INFO] iTools packager Maven plugin
+[INFO] Distribution
+[INFO] Triple store implementations test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building powsybl 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-core ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/src/main/groovy added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-core ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/src/test/groovy added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-commons ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-commons ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/commons/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-commons ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/commons/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-commons ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 5.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 62.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 917.3 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.commons.exceptions.UncheckedExceptionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in com.powsybl.commons.exceptions.UncheckedExceptionTest
+[INFO] Running com.powsybl.commons.config.YamlPlatformConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 s - in com.powsybl.commons.config.YamlPlatformConfigTest
+[INFO] Running com.powsybl.commons.config.XmlPlatformConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in com.powsybl.commons.config.XmlPlatformConfigTest
+[INFO] Running com.powsybl.commons.config.ComponentDefaultConfigTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.powsybl.commons.config.ComponentDefaultConfigTest
+[INFO] Running com.powsybl.commons.config.StackedModuleConfigRepositoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.powsybl.commons.config.StackedModuleConfigRepositoryTest
+[INFO] Running com.powsybl.commons.config.PropertiesPlatformConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.powsybl.commons.config.PropertiesPlatformConfigTest
+[INFO] Running com.powsybl.commons.io.FileUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.commons.io.FileUtilTest
+[INFO] Running com.powsybl.commons.io.mmap.MemoryMapFileMockTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.commons.io.mmap.MemoryMapFileMockTest
+[INFO] Running com.powsybl.commons.io.mmap.MemoryMappedFileImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.powsybl.commons.io.mmap.MemoryMappedFileImplTest
+[INFO] Running com.powsybl.commons.io.table.TableFormatterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.powsybl.commons.io.table.TableFormatterTest
+[INFO] Running com.powsybl.commons.io.table.TableFormatterConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.io.table.TableFormatterConfigTest
+[INFO] Running com.powsybl.commons.datasource.MemFileDataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.powsybl.commons.datasource.MemFileDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.DataSourceUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.commons.datasource.DataSourceUtilTest
+[INFO] Running com.powsybl.commons.datasource.FileDataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.powsybl.commons.datasource.FileDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.DataSourceObserverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.datasource.DataSourceObserverTest
+[INFO] Running com.powsybl.commons.datasource.ZipFileDataSourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in com.powsybl.commons.datasource.ZipFileDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.ZipMemDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.powsybl.commons.datasource.ZipMemDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.Bzip2FileDataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.powsybl.commons.datasource.Bzip2FileDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.CompressionFormatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.datasource.CompressionFormatTest
+[INFO] Running com.powsybl.commons.datasource.GzMemDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.datasource.GzMemDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.GzFileDataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.powsybl.commons.datasource.GzFileDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.Bzip2MemDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.datasource.Bzip2MemDataSourceTest
+[INFO] Running com.powsybl.commons.datasource.ReadOnlyMemDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.commons.datasource.ReadOnlyMemDataSourceTest
+[INFO] Running com.powsybl.commons.util.WeakListenerListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.commons.util.WeakListenerListTest
+[INFO] Running com.powsybl.commons.util.StringAnonymizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.powsybl.commons.util.StringAnonymizerTest
+[INFO] Running com.powsybl.commons.util.StringToIntMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.commons.util.StringToIntMapperTest
+[INFO] Running com.powsybl.commons.plugins.PluginInfoTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in com.powsybl.commons.plugins.PluginInfoTest
+[INFO] Running com.powsybl.commons.extensions.ExtensionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 s - in com.powsybl.commons.extensions.ExtensionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Time series 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-time-series ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-time-series ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-time-series ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/time-series/src/main/groovy added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-time-series ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/time-series/src/test/groovy added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Time series API 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-time-series-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-time-series-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-time-series-api ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/time-series/time-series-api/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-time-series-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/time-series/time-series-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-time-series-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-time-series-api ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/time-series/time-series-api/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-time-series-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/time-series/time-series-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-time-series-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-time-series-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.timeseries.CompactStringBufferTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in com.powsybl.timeseries.CompactStringBufferTest
+[INFO] Running com.powsybl.timeseries.TimeSeriesTableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 s - in com.powsybl.timeseries.TimeSeriesTableTest
+[INFO] Running com.powsybl.timeseries.NameTagBugTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in com.powsybl.timeseries.NameTagBugTest
+[INFO] Running com.powsybl.timeseries.RegularTimeSeriesIndexTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in com.powsybl.timeseries.RegularTimeSeriesIndexTest
+[INFO] Running com.powsybl.timeseries.StringPointTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.powsybl.timeseries.StringPointTest
+[INFO] Running com.powsybl.timeseries.StoredDoubleTimeSeriesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 s - in com.powsybl.timeseries.StoredDoubleTimeSeriesTest
+[INFO] Running com.powsybl.timeseries.DoubleArrayChunkTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in com.powsybl.timeseries.DoubleArrayChunkTest
+[INFO] Running com.powsybl.timeseries.StringTimeSeriesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.powsybl.timeseries.StringTimeSeriesTest
+[INFO] Running com.powsybl.timeseries.TimeSeriesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.powsybl.timeseries.TimeSeriesTest
+[INFO] Running com.powsybl.timeseries.DoublePointTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.powsybl.timeseries.DoublePointTest
+[INFO] Running com.powsybl.timeseries.DoubleTimeSeriesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.powsybl.timeseries.DoubleTimeSeriesTest
+[INFO] Running com.powsybl.timeseries.StringArrayChunkTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.powsybl.timeseries.StringArrayChunkTest
+[INFO] Running com.powsybl.timeseries.TimeSeriesMetadataTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in com.powsybl.timeseries.TimeSeriesMetadataTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AFS 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-afs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-afs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-afs ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/src/main/groovy added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-afs ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/src/test/groovy added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AFS storage API 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-afs-storage-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-afs-storage-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-afs-storage-api ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-storage-api/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-afs-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-storage-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-afs-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-afs-storage-api ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-storage-api/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-afs-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-storage-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-afs-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-afs-storage-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.afs.storage.NodeInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.532 s - in com.powsybl.afs.storage.NodeInfoTest
+[INFO] Running com.powsybl.afs.storage.NodeGenericMetadataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in com.powsybl.afs.storage.NodeGenericMetadataTest
+[INFO] Running com.powsybl.afs.storage.DefaultListenableAppStorageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s - in com.powsybl.afs.storage.DefaultListenableAppStorageTest
+[INFO] Running com.powsybl.afs.storage.events.NodeEventTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in com.powsybl.afs.storage.events.NodeEventTest
+[INFO] Running com.powsybl.afs.storage.AppStorageDataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.powsybl.afs.storage.AppStorageDataSourceTest
+[INFO] Running com.powsybl.afs.storage.NodeDependencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.afs.storage.NodeDependencyTest
+[INFO] Running com.powsybl.afs.storage.buffer.StorageChangeBufferTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.powsybl.afs.storage.buffer.StorageChangeBufferTest
+[INFO] Running com.powsybl.afs.storage.buffer.StorageChangeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.powsybl.afs.storage.buffer.StorageChangeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Computation API 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-computation ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-computation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-computation ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/computation/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-computation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/computation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-computation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-computation ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/computation/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-computation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/computation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-computation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-computation ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.computation.CommandExecutionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 s - in com.powsybl.computation.CommandExecutionTest
+[INFO] Running com.powsybl.computation.FunctionFileNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.powsybl.computation.FunctionFileNameTest
+[INFO] Running com.powsybl.computation.InputFileTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.powsybl.computation.InputFileTest
+[INFO] Running com.powsybl.computation.ExecutionEnvironmentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.powsybl.computation.ExecutionEnvironmentTest
+[INFO] Running com.powsybl.computation.ExecutionErrorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.powsybl.computation.ExecutionErrorTest
+[INFO] Running com.powsybl.computation.OutputFileTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.powsybl.computation.OutputFileTest
+[INFO] Running com.powsybl.computation.PartitionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.computation.PartitionTest
+[INFO] Running com.powsybl.computation.DefaultComputationManagerConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in com.powsybl.computation.DefaultComputationManagerConfigTest
+[INFO] Running com.powsybl.computation.GroupCommandTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.powsybl.computation.GroupCommandTest
+[INFO] Running com.powsybl.computation.SimpleCommandTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.powsybl.computation.SimpleCommandTest
+[INFO] Running com.powsybl.computation.StringFileNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.computation.StringFileNameTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tools 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-tools ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ powsybl-tools ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/powsybl/powsybl-core/452899260/tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/powsybl/powsybl-core/452899260/tools
+[INFO] Storing buildNumber: 2e827f9110092982955b6966a68cea6f77f730c1 at timestamp: 1542286710024
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/powsybl/powsybl-core/452899260/tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/powsybl/powsybl-core/452899260/tools
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-tools ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/tools/src/main/groovy added.
+[INFO] 
+[INFO] --- templating-maven-plugin:1.0.0:filter-sources (filter-src) @ powsybl-tools ---
+[INFO] Coping files with filtering to temporary directory.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copied 2 files to output directory: /root/workspace/powsybl/powsybl-core/452899260/tools/target/generated-sources/java-templates
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/tools/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/tools/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-tools ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /root/workspace/powsybl/powsybl-core/452899260/tools/target/classes
+[INFO] /root/workspace/powsybl/powsybl-core/452899260/tools/src/main/java/com/powsybl/tools/PluginsInfoTool.java: /root/workspace/powsybl/powsybl-core/452899260/tools/src/main/java/com/powsybl/tools/PluginsInfoTool.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/powsybl/powsybl-core/452899260/tools/src/main/java/com/powsybl/tools/PluginsInfoTool.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-tools ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/tools/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/tools/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-tools ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-tools ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.tools.CommandLineUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in com.powsybl.tools.CommandLineUtilTest
+[INFO] Running com.powsybl.tools.VersionToolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.855 s - in com.powsybl.tools.VersionToolTest
+[INFO] Running com.powsybl.tools.PluginsInfoToolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.powsybl.tools.PluginsInfoToolTest
+[INFO] Running com.powsybl.tools.CommandLineToolsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.powsybl.tools.CommandLineToolsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Local computation 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-computation-local ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-computation-local ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-computation-local ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/computation-local/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-computation-local ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/computation-local/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-computation-local ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-computation-local ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/computation-local/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-computation-local ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/computation-local/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-computation-local ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-computation-local ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.computation.local.LocalComputationManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.888 s - in com.powsybl.computation.local.LocalComputationManagerTest
+[INFO] Running com.powsybl.computation.local.LocalComputationConfigTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.powsybl.computation.local.LocalComputationConfigTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AFS MapDB storage implementation 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-afs-mapdb-storage ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-afs-mapdb-storage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-afs-mapdb-storage ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-mapdb-storage/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-afs-mapdb-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-mapdb-storage/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-afs-mapdb-storage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-afs-mapdb-storage ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-mapdb-storage/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-afs-mapdb-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-mapdb-storage/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-afs-mapdb-storage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-afs-mapdb-storage ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.afs.mapdb.storage.MapDbAppStorageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.689 s - in com.powsybl.afs.mapdb.storage.MapDbAppStorageTest
+[INFO] Running com.powsybl.afs.mapdb.storage.MapDbAppStorageArchiveTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.784 s - in com.powsybl.afs.mapdb.storage.MapDbAppStorageArchiveTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/src/main/groovy added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/src/test/groovy added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM network model 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:addSources (default) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:addTestSources (default) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm-api ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-api/src/main/groovy added.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:generateStubs (default) @ powsybl-iidm-api ---
+[INFO] Using Groovy 2.4.12 to perform generateStubs.
+[INFO] Generated 1 stub.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-iidm-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-iidm-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:compile (default) @ powsybl-iidm-api ---
+[INFO] Using Groovy 2.4.12 to perform compile.
+[INFO] Compiled 1 file.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:removeStubs (default) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm-api ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-api/src/test/groovy added.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:generateTestStubs (default) @ powsybl-iidm-api ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] Generated 0 stubs.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-iidm-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-iidm-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:compileTests (default) @ powsybl-iidm-api ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.1:removeTestStubs (default) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-iidm-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.iidm.network.CoverageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s - in com.powsybl.iidm.network.CoverageTest
+[INFO] Running com.powsybl.iidm.network.util.BranchDataTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.powsybl.iidm.network.util.BranchDataTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AFS core classes 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-afs-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-afs-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-afs-core ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-afs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-afs-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 45 source files to /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/target/classes
+[INFO] /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/main/java/com/powsybl/afs/AppData.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/main/java/com/powsybl/afs/AppData.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-afs-core ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-afs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/afs/afs-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-afs-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-afs-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.afs.LocalTaskMonitorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.524 s - in com.powsybl.afs.LocalTaskMonitorTest
+[INFO] Running com.powsybl.afs.AppFileSystemToolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in com.powsybl.afs.AppFileSystemToolTest
+[INFO] Running com.powsybl.afs.DependencyCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.powsybl.afs.DependencyCacheTest
+[INFO] Running com.powsybl.afs.AfsBaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in com.powsybl.afs.AfsBaseTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Math 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-math ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-math ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-math ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/math/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/math/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-math ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-math ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/math/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/math/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-math ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-math ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.math.graph.UndirectedGraphImplTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 s - in com.powsybl.math.graph.UndirectedGraphImplTest
+[INFO] Running com.powsybl.math.graph.GraphUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.math.graph.GraphUtilTest
+[INFO] Running com.powsybl.math.matrix.DenseMatrixTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in com.powsybl.math.matrix.DenseMatrixTest
+[INFO] Running com.powsybl.math.matrix.SparseMatrixTest
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.01 s - in com.powsybl.math.matrix.SparseMatrixTest
+[INFO] Running com.powsybl.math.casting.Double2FloatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.math.casting.Double2FloatTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 2
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM testing networks 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm-test ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm-test ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-test/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-iidm-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-iidm-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm-test ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-test/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-iidm-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-iidm-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-iidm-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM network model implementation 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm-impl ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm-impl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm-impl ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-impl/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-iidm-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-iidm-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm-impl ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-impl/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-iidm-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-impl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-iidm-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-iidm-impl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.iidm.network.impl.ThreeWindingsTransformerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 s - in com.powsybl.iidm.network.impl.ThreeWindingsTransformerTest
+[INFO] Running com.powsybl.iidm.network.impl.ExceptionIsThrownWhenRemoveStateAndWorkingStateIsNotSetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in com.powsybl.iidm.network.impl.ExceptionIsThrownWhenRemoveStateAndWorkingStateIsNotSetTest
+[INFO] Running com.powsybl.iidm.network.impl.FictitiousSwitchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in com.powsybl.iidm.network.impl.FictitiousSwitchTest
+[INFO] Running com.powsybl.iidm.network.impl.StaticVarCompensatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in com.powsybl.iidm.network.impl.StaticVarCompensatorTest
+[INFO] Running com.powsybl.iidm.network.impl.LineTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.powsybl.iidm.network.impl.LineTest
+[INFO] Running com.powsybl.iidm.network.impl.HvdcLineTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.powsybl.iidm.network.impl.HvdcLineTest
+[INFO] Running com.powsybl.iidm.network.impl.CalculatedTopologyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.powsybl.iidm.network.impl.CalculatedTopologyTest
+[INFO] Running com.powsybl.iidm.network.impl.TapChangerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.powsybl.iidm.network.impl.TapChangerTest
+[INFO] Running com.powsybl.iidm.network.impl.EmptyCalculatedBusBugTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.iidm.network.impl.EmptyCalculatedBusBugTest
+[INFO] Running com.powsybl.iidm.network.impl.NetworkRemoveTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.powsybl.iidm.network.impl.NetworkRemoveTest
+[INFO] Running com.powsybl.iidm.network.impl.StateManagerImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.powsybl.iidm.network.impl.StateManagerImplTest
+[INFO] Running com.powsybl.iidm.network.impl.TopologyTraverserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.powsybl.iidm.network.impl.TopologyTraverserTest
+[INFO] Running com.powsybl.iidm.network.impl.LccTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.powsybl.iidm.network.impl.LccTest
+[INFO] Running com.powsybl.iidm.network.impl.SwitchSetRetainedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.iidm.network.impl.SwitchSetRetainedTest
+[INFO] Running com.powsybl.iidm.network.impl.MinMaxReactiveLimitsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.powsybl.iidm.network.impl.MinMaxReactiveLimitsTest
+[INFO] Running com.powsybl.iidm.network.impl.BusTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.powsybl.iidm.network.impl.BusTest
+[INFO] Running com.powsybl.iidm.network.impl.MultiStateNetworkTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.powsybl.iidm.network.impl.MultiStateNetworkTest
+[INFO] Running com.powsybl.iidm.network.impl.NetworkTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in com.powsybl.iidm.network.impl.NetworkTest
+[INFO] Running com.powsybl.iidm.network.impl.IdentifiableExtensionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.powsybl.iidm.network.impl.IdentifiableExtensionTest
+[INFO] Running com.powsybl.iidm.network.impl.SubstationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.powsybl.iidm.network.impl.SubstationTest
+[INFO] Running com.powsybl.iidm.network.impl.TwoWindingsTransformerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.powsybl.iidm.network.impl.TwoWindingsTransformerTest
+[INFO] Running com.powsybl.iidm.network.impl.MergeNetworkTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in com.powsybl.iidm.network.impl.MergeNetworkTest
+[INFO] Running com.powsybl.iidm.network.impl.VscTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.iidm.network.impl.VscTest
+[INFO] Running com.powsybl.iidm.network.impl.NodeBreakerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.powsybl.iidm.network.impl.NodeBreakerTest
+[INFO] Running com.powsybl.iidm.network.impl.CurrentLimitsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.iidm.network.impl.CurrentLimitsTest
+[INFO] Running com.powsybl.iidm.network.impl.VoltageLevelTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.powsybl.iidm.network.impl.VoltageLevelTest
+[INFO] Running com.powsybl.iidm.network.impl.util.MultiStateNetworkThreadCleanerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.iidm.network.impl.util.MultiStateNetworkThreadCleanerTest
+[INFO] Running com.powsybl.iidm.network.impl.ConnectedComponentWithTieLineBugTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.iidm.network.impl.ConnectedComponentWithTieLineBugTest
+[INFO] Running com.powsybl.iidm.network.impl.GeneratorTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in com.powsybl.iidm.network.impl.GeneratorTest
+[INFO] Running com.powsybl.iidm.network.impl.SwitchOpenCloseNodeBreakerTopoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.iidm.network.impl.SwitchOpenCloseNodeBreakerTopoTest
+[INFO] Running com.powsybl.iidm.network.impl.ShuntCompensatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.iidm.network.impl.ShuntCompensatorTest
+[INFO] Running com.powsybl.iidm.network.impl.DanglingLineTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.powsybl.iidm.network.impl.DanglingLineTest
+[INFO] Running com.powsybl.iidm.network.impl.ReactiveCapabilityCurveImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.iidm.network.impl.ReactiveCapabilityCurveImplTest
+[INFO] Running com.powsybl.iidm.network.impl.NullPointerWhenRemovingMergedLineBugTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.iidm.network.impl.NullPointerWhenRemovingMergedLineBugTest
+[INFO] Running com.powsybl.iidm.network.impl.LoadTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.powsybl.iidm.network.impl.LoadTest
+[INFO] Running com.powsybl.iidm.network.impl.ReactiveCapabilityCurveTest
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.015 s - in com.powsybl.iidm.network.impl.ReactiveCapabilityCurveTest
+[INFO] Running com.powsybl.iidm.network.impl.ManipulationsOnStatesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.iidm.network.impl.ManipulationsOnStatesTest
+[INFO] Running com.powsybl.iidm.network.impl.NodeBreakerDisconnectionDoublePathBugTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.iidm.network.impl.NodeBreakerDisconnectionDoublePathBugTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 194, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Contingency API 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-contingency-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-contingency-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-contingency-api ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/contingency-api/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-contingency-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-contingency-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-contingency-api ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/contingency-api/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-contingency-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-contingency-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-contingency-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.contingency.ContingencyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s - in com.powsybl.contingency.ContingencyTest
+[INFO] Running com.powsybl.contingency.json.ContingencyJsonTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s - in com.powsybl.contingency.json.ContingencyJsonTest
+[INFO] Running com.powsybl.contingency.EmptyContingencyListProviderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.contingency.EmptyContingencyListProviderTest
+[INFO] Running com.powsybl.contingency.HvdcLineContingencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.contingency.HvdcLineContingencyTest
+[INFO] Running com.powsybl.contingency.BranchContingencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.contingency.BranchContingencyTest
+[INFO] Running com.powsybl.contingency.GeneratorContingencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.contingency.GeneratorContingencyTest
+[INFO] Running com.powsybl.contingency.tasks.BusbarSectionTrippingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in com.powsybl.contingency.tasks.BusbarSectionTrippingTest
+[INFO] Running com.powsybl.contingency.tasks.HvdcLineTrippingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.powsybl.contingency.tasks.HvdcLineTrippingTest
+[INFO] Running com.powsybl.contingency.tasks.BranchTrippingTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.powsybl.contingency.tasks.BranchTrippingTest
+[INFO] Running com.powsybl.contingency.tasks.CompoundModificationTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.powsybl.contingency.tasks.CompoundModificationTaskTest
+[INFO] Running com.powsybl.contingency.tasks.GeneratorTrippingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.contingency.tasks.GeneratorTrippingTest
+[INFO] Running com.powsybl.contingency.afs.ContingencyStoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.506 s - in com.powsybl.contingency.afs.ContingencyStoreTest
+[INFO] Running com.powsybl.contingency.BusbarSectionContingencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.powsybl.contingency.BusbarSectionContingencyTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Action 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-action ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-action ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-action ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/action/src/main/groovy added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-action ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/action/src/test/groovy added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Action DSL SPI 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-action-dsl-spi ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-action-dsl-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-action-dsl-spi ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/action/action-dsl-spi/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-action-dsl-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/action/action-dsl-spi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-action-dsl-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-action-dsl-spi ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/action/action-dsl-spi/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-action-dsl-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/action/action-dsl-spi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-action-dsl-spi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-action-dsl-spi ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM converter API 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm-converter-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm-converter-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm-converter-api ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-converter-api/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-iidm-converter-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-converter-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-iidm-converter-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm-converter-api ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-converter-api/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-iidm-converter-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-iidm-converter-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-iidm-converter-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.iidm.import_.ImportersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 s - in com.powsybl.iidm.import_.ImportersTest
+[INFO] Running com.powsybl.iidm.import_.JavaScriptPostProcessorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 s - in com.powsybl.iidm.import_.JavaScriptPostProcessorTest
+[INFO] Running com.powsybl.iidm.import_.GroovyScriptPostProcessorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.846 s - in com.powsybl.iidm.import_.GroovyScriptPostProcessorTest
+[INFO] Running com.powsybl.iidm.tools.ConversionToolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 s - in com.powsybl.iidm.tools.ConversionToolTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building IIDM XML converter 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ powsybl-iidm-xml-converter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (default) @ powsybl-iidm-xml-converter ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ powsybl-iidm-xml-converter ---
+[INFO] Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-xml-converter/src/main/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ powsybl-iidm-xml-converter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ powsybl-iidm-xml-converter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ powsybl-iidm-xml-converter ---
+[INFO] Test Source directory: /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-xml-converter/src/test/groovy added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ powsybl-iidm-xml-converter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ powsybl-iidm-xml-converter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ powsybl-iidm-xml-converter ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.powsybl.iidm.xml.FictitiousSwitchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.272 s - in com.powsybl.iidm.xml.FictitiousSwitchTest
+[INFO] Running com.powsybl.iidm.xml.TerminalRefTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 s - in com.powsybl.iidm.xml.TerminalRefTest
+[INFO] Running com.powsybl.iidm.xml.StaticVarCompensatorXmlTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in com.powsybl.iidm.xml.StaticVarCompensatorXmlTest
+[INFO] Running com.powsybl.iidm.xml.SimpleAnonymizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in com.powsybl.iidm.xml.SimpleAnonymizerTest
+[INFO] Running com.powsybl.iidm.xml.OptionalLoadTypeBugTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.powsybl.iidm.xml.OptionalLoadTypeBugTest
+[INFO] Running com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest
+[ERROR] roundTripTest(com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest)  Time elapsed: 0.082 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.powsybl.iidm.xml.NodeBreakerInternalConnectionsTest.roundTripTest(NodeBreakerInternalConnectionsTest.java:31)
+
+[INFO] Running com.powsybl.iidm.xml.XMLImporterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in com.powsybl.iidm.xml.XMLImporterTest
+[INFO] Running com.powsybl.iidm.xml.NetworkXmlTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 s - in com.powsybl.iidm.xml.NetworkXmlTest
+[INFO] Running com.powsybl.iidm.xml.PhaseShifterXmlTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in com.powsybl.iidm.xml.PhaseShifterXmlTest
+[INFO] Running com.powsybl.iidm.xml.ThreeWindingsTransformerXmlTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in com.powsybl.iidm.xml.ThreeWindingsTransformerXmlTest
+[INFO] Running com.powsybl.iidm.xml.HvdcXmlTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 s - in com.powsybl.iidm.xml.HvdcXmlTest
+[INFO] Running com.powsybl.iidm.xml.ReactiveLimitsXmlTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in com.powsybl.iidm.xml.ReactiveLimitsXmlTest
+[INFO] Running com.powsybl.iidm.xml.IdentifiableExtensionXmlSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in com.powsybl.iidm.xml.IdentifiableExtensionXmlSerializerTest
+[INFO] Running com.powsybl.iidm.xml.TopologyLevelTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s - in com.powsybl.iidm.xml.TopologyLevelTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   NodeBreakerInternalConnectionsTest.roundTripTest:31->AbstractConverterTest.roundTripXmlTest:77->AbstractConverterTest.roundTripTest:98->AbstractConverterTest.writeTest:92->AbstractConverterTest.compareXml:58
+[INFO] 
+[ERROR] Tests run: 25, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] powsybl ............................................ SUCCESS [  1.354 s]
+[INFO] Commons ............................................ SUCCESS [  4.552 s]
+[INFO] Time series ........................................ SUCCESS [  0.015 s]
+[INFO] Time series API .................................... SUCCESS [  2.365 s]
+[INFO] AFS ................................................ SUCCESS [  0.011 s]
+[INFO] AFS storage API .................................... SUCCESS [  2.147 s]
+[INFO] Computation API .................................... SUCCESS [  1.967 s]
+[INFO] Tools .............................................. SUCCESS [  4.541 s]
+[INFO] Local computation .................................. SUCCESS [  2.201 s]
+[INFO] AFS MapDB storage implementation ................... SUCCESS [  3.644 s]
+[INFO] IIDM ............................................... SUCCESS [  0.010 s]
+[INFO] IIDM network model ................................. SUCCESS [  3.040 s]
+[INFO] AFS core classes ................................... SUCCESS [  5.284 s]
+[INFO] Math ............................................... SUCCESS [  1.568 s]
+[INFO] IIDM testing networks .............................. SUCCESS [  0.050 s]
+[INFO] IIDM network model implementation .................. SUCCESS [  2.461 s]
+[INFO] Contingency API .................................... SUCCESS [  3.911 s]
+[INFO] Action ............................................. SUCCESS [  0.009 s]
+[INFO] Action DSL SPI ..................................... SUCCESS [  0.065 s]
+[INFO] IIDM converter API ................................. SUCCESS [  3.366 s]
+[INFO] IIDM XML converter ................................. FAILURE [  5.926 s]
+[INFO] AFS base extensions ................................ SKIPPED
+[INFO] Scripting .......................................... SKIPPED
+[INFO] Load-flow .......................................... SKIPPED
+[INFO] Load-flow API ...................................... SKIPPED
+[INFO] Action utilities ................................... SKIPPED
+[INFO] Action, contingency and rule DSL ................... SKIPPED
+[INFO] Security analysis .................................. SKIPPED
+[INFO] Security analysis API .............................. SKIPPED
+[INFO] Action simulator ................................... SKIPPED
+[INFO] AFS local filesystem implementation ................ SKIPPED
+[INFO] AFS MapDB filesystem implementation ................ SKIPPED
+[INFO] AFS WS ............................................. SKIPPED
+[INFO] AFS WS Utilities ................................... SKIPPED
+[INFO] AFS WS client side utilities ....................... SKIPPED
+[INFO] Network cache AFS .................................. SKIPPED
+[INFO] Network cache AFS client ........................... SKIPPED
+[INFO] AFS WS server side utilities ....................... SKIPPED
+[INFO] Network cache AFS server ........................... SKIPPED
+[INFO] AFS WS storage ..................................... SKIPPED
+[INFO] AFS WS client ...................................... SKIPPED
+[INFO] AFS WS Server ...................................... SKIPPED
+[INFO] AMPL converter implementation ...................... SKIPPED
+[INFO] Triple store abstraction ........................... SKIPPED
+[INFO] Triple store abstraction API ....................... SKIPPED
+[INFO] Blazegraph triple store implementation ............. SKIPPED
+[INFO] Jena triple store implementation ................... SKIPPED
+[INFO] RDF4J triple store implementation .................. SKIPPED
+[INFO] CGMES .............................................. SKIPPED
+[INFO] CGMES network model ................................ SKIPPED
+[INFO] CGMES conformity ................................... SKIPPED
+[INFO] CIM1 ............................................... SKIPPED
+[INFO] CIM1 network model ................................. SKIPPED
+[INFO] ENTSO-E utilities .................................. SKIPPED
+[INFO] Load-flow validation ............................... SKIPPED
+[INFO] Loadflow Results Completion ........................ SKIPPED
+[INFO] CIM1 converter implementation ...................... SKIPPED
+[INFO] CGMES conversion ................................... SKIPPED
+[INFO] CGMES model alternatives ........................... SKIPPED
+[INFO] CIM anonymizer ..................................... SKIPPED
+[INFO] MPI computation .................................... SKIPPED
+[INFO] IIDM utilities ..................................... SKIPPED
+[INFO] Security analysis AFS .............................. SKIPPED
+[INFO] Security analysis local service .................... SKIPPED
+[INFO] Sensitivity computation API ........................ SKIPPED
+[INFO] Time domain simulation API ......................... SKIPPED
+[INFO] UCTE ............................................... SKIPPED
+[INFO] UCTE network model ................................. SKIPPED
+[INFO] UCTE converter implementation ...................... SKIPPED
+[INFO] iTools packager Maven plugin ....................... SKIPPED
+[INFO] Distribution ....................................... SKIPPED
+[INFO] Triple store implementations test .................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.689 s
+[INFO] Finished at: 2018-11-15T13:59:05+01:00
+[INFO] Final Memory: 68M/988M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project powsybl-iidm-xml-converter: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/powsybl/powsybl-core/452899260/iidm/iidm-xml-converter/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :powsybl-iidm-xml-converter
