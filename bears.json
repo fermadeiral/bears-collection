@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "lettuce-io/lettuce-core",
+    "githubId": 19641638,
+    "url": "https://github.com/lettuce-io/lettuce-core",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 920
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 456063017,
+      "url": "http://travis-ci.org/lettuce-io/lettuce-core/builds/456063017",
+      "date": "Nov 16, 2018 6:13:37 PM"
+    },
+    "fixerBuild": {
+      "id": 456064906,
+      "url": "http://travis-ci.org/lettuce-io/lettuce-core/builds/456064906",
+      "date": "Nov 16, 2018 6:17:50 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 16, 2018 7:57:33 PM",
+    "reproductionDateEnd": "Nov 16, 2018 8:01:26 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 271301328,
+      "totalMemory": 489160704
+    },
+    "totalDuration": 227,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 69,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          4,
+          60
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 58,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          58
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/lettuce-io/lettuce-core/456063017/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "lettuce-io/lettuce-core",
+      "branchName": "master",
+      "sha": "b2e3f6f4076b58b317538b9158ab563407831a4d",
+      "url": "http://github.com/lettuce-io/lettuce-core/commit/b2e3f6f4076b58b317538b9158ab563407831a4d",
+      "date": "Nov 16, 2018 5:46:54 PM"
+    },
+    "fixerBuild": {
+      "repoName": "lettuce-io/lettuce-core",
+      "branchName": "master",
+      "sha": "512cdb31469a3be6643a0f6578e0481e86acb2c2",
+      "url": "http://github.com/lettuce-io/lettuce-core/commit/512cdb31469a3be6643a0f6578e0481e86acb2c2",
+      "date": "Nov 16, 2018 5:48:41 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "worldtiki/lettuce-core",
+      "branchName": "tags_customization",
+      "sha": "6a1b5dcc14779b0cf3d0ae81241045ab26693a84",
+      "url": "https://github.com/worldtiki/lettuce-core/commit/6a1b5dcc14779b0cf3d0ae81241045ab26693a84",
+      "date": "Nov 16, 2018 5:48:41 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "lettuce-io/lettuce-core",
+      "branchName": "master",
+      "sha": "ce632ff44520b3a1b5a7b555c185dd46a991a7c6",
+      "url": "https://github.com/lettuce-io/lettuce-core/commit/ce632ff44520b3a1b5a7b555c185dd46a991a7c6",
+      "date": "Nov 12, 2018 4:29:38 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "worldtiki/lettuce-core",
+      "branchName": "tags_customization",
+      "sha": "6a1b5dcc14779b0cf3d0ae81241045ab26693a84",
+      "url": "https://github.com/worldtiki/lettuce-core/commit/6a1b5dcc14779b0cf3d0ae81241045ab26693a84",
+      "date": "Nov 16, 2018 5:48:41 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "lettuce-io/lettuce-core",
+      "branchName": "master",
+      "sha": "ce632ff44520b3a1b5a7b555c185dd46a991a7c6",
+      "url": "https://github.com/lettuce-io/lettuce-core/commit/ce632ff44520b3a1b5a7b555c185dd46a991a7c6",
+      "date": "Nov 12, 2018 4:29:38 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/lettuce-io/lettuce-core/456063017",
+    "overallMetrics": {
+      "numberRunning": 2025,
+      "numberPassing": 2024,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.net.UnknownHostException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.lettuce.core.resource.DirContextDnsResolverTests",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.lettuce.core.resource.DirContextDnsResolverTests",
+        "testMethod": "shouldResolveWithoutSubdomain",
+        "failureName": "java.net.UnknownHostException",
+        "detail": "Cannot resolve paluch.biz to a hostname because of javax.naming.ServiceUnavailableException: DNS server failure [response code 2]; remaining name \u0027paluch.biz\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 618,
+    "numberTestFiles": 309,
+    "numberLibrariesFailingModule": 72,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
