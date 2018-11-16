@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "shapesecurity/shift-java",
+    "githubId": 27738435,
+    "url": "https://github.com/shapesecurity/shift-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 217
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 455763022,
+      "url": "http://travis-ci.org/shapesecurity/shift-java/builds/455763022",
+      "date": "Nov 16, 2018 1:13:16 AM"
+    },
+    "fixerBuild": {
+      "id": 456154969,
+      "url": "http://travis-ci.org/shapesecurity/shift-java/builds/456154969",
+      "date": "Nov 16, 2018 9:59:15 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 16, 2018 9:59:38 PM",
+    "reproductionDateEnd": "Nov 16, 2018 10:06:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 526944800,
+      "totalMemory": 1060634624
+    },
+    "totalDuration": 417,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 76,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          76
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 92,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          6,
+          0,
+          0,
+          9,
+          77
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/shapesecurity/shift-java/455763022/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/shapesecurity/shift-java/455763022",
+    "overallMetrics": {
+      "numberRunning": 3784,
+      "numberPassing": 3783,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.shapesecurity.shift.es2017.parser.JsError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.shapesecurity.shift.es2017.parser.miscellaneous.AsyncAwaitTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.shapesecurity.shift.es2017.parser.miscellaneous.AsyncAwaitTest",
+        "testMethod": "testAwait",
+        "failureName": "com.shapesecurity.shift.es2017.parser.JsError",
+        "detail": "JavaScript error: Line 1 Column 20 (Index \u003d 20), Unexpected token \"await\".",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 104,
+    "numberTestFiles": 124,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "shapesecurity/shift-java",
+      "branchName": "es2017",
+      "sha": "70bd977c8078a0f1ed049f7697f5f5481dc68956",
+      "url": "http://github.com/shapesecurity/shift-java/commit/70bd977c8078a0f1ed049f7697f5f5481dc68956",
+      "date": "Nov 16, 2018 1:10:37 AM"
+    },
+    "fixerBuild": {
+      "repoName": "shapesecurity/shift-java",
+      "branchName": "es2017",
+      "sha": "38e185a0d6e30a09f6f2e722b134cf48bb1a4d1c",
+      "url": "http://github.com/shapesecurity/shift-java/commit/38e185a0d6e30a09f6f2e722b134cf48bb1a4d1c",
+      "date": "Nov 16, 2018 9:55:50 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Protryon/shift-java",
+      "branchName": "async-await",
+      "sha": "69398d6b3a318b3f768c235a03fba44302dabd8a",
+      "url": "https://github.com/Protryon/shift-java/commit/69398d6b3a318b3f768c235a03fba44302dabd8a",
+      "date": "Nov 16, 2018 9:55:50 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "shapesecurity/shift-java",
+      "branchName": "es2017",
+      "sha": "81e8257c4386d0821faaf2ec1110a8e1f4b2493e",
+      "url": "https://github.com/shapesecurity/shift-java/commit/81e8257c4386d0821faaf2ec1110a8e1f4b2493e",
+      "date": "Nov 14, 2018 3:05:35 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Protryon/shift-java",
+      "branchName": "async-await",
+      "sha": "69398d6b3a318b3f768c235a03fba44302dabd8a",
+      "url": "https://github.com/Protryon/shift-java/commit/69398d6b3a318b3f768c235a03fba44302dabd8a",
+      "date": "Nov 16, 2018 9:55:50 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "shapesecurity/shift-java",
+      "branchName": "es2017",
+      "sha": "81e8257c4386d0821faaf2ec1110a8e1f4b2493e",
+      "url": "https://github.com/shapesecurity/shift-java/commit/81e8257c4386d0821faaf2ec1110a8e1f4b2493e",
+      "date": "Nov 14, 2018 3:05:35 AM"
+    }
+  },
+  "type": "passing_passing"
+}
