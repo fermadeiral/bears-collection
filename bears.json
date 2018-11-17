@@ -1,0 +1,478 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "thulab/tsfile",
+    "githubId": 86714058,
+    "url": "https://github.com/thulab/tsfile",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 455839704,
+      "url": "http://travis-ci.org/thulab/tsfile/builds/455839704",
+      "date": "Nov 16, 2018 7:43:03 AM"
+    },
+    "fixerBuild": {
+      "id": 456259857,
+      "url": "http://travis-ci.org/thulab/tsfile/builds/456259857",
+      "date": "Nov 17, 2018 5:24:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 17, 2018 5:24:53 AM",
+    "reproductionDateEnd": "Nov 17, 2018 5:29:28 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 235224736,
+      "totalMemory": 401080320
+    },
+    "totalDuration": 269,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 36,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          36
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 105,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          105
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/thulab/tsfile/455839704/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 8,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 67,
+      "numberDeleted": 92
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/thulab/tsfile/455839704",
+    "overallMetrics": {
+      "numberRunning": 190,
+      "numberPassing": 151,
+      "numberFailing": 2,
+      "numberErroring": 37,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 9
+        },
+        {
+          "failureName": "java.nio.BufferUnderflowException",
+          "isError": true,
+          "occurrences": 28
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "numberRunning": 9,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 9,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.WriteTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.SeriesChunkLoaderTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.MetadataQuerierByFileImplTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "numberRunning": 9,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 9,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.schema.converter.JsonConverterTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.ReadOnlyTsFileTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderByTimestampTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.schema.converter.SchemaBuilderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.timegenerator.TimestampGeneratorTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryStringTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.timegenerator.TimestampGeneratorTest",
+        "testMethod": "testTimeGenerator",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.timegenerator.TimestampGeneratorTest",
+        "testMethod": "testTimeGenerator",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.ReadOnlyTsFileTest",
+        "testMethod": "queryTest",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.ReadOnlyTsFileTest",
+        "testMethod": "queryTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryTwoMeasurementsWithoutFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryFloatTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.SeriesChunkLoaderTest",
+        "testMethod": "test",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderTest",
+        "testMethod": "readTest",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.MetadataQuerierByFileImplTest",
+        "testMethod": "test",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryStringTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.WriteTest",
+        "testMethod": "writeTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryDoubleTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderByTimestampTest",
+        "testMethod": "readByTimestamp",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryBooleanTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryFloatTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryTwoMeasurementsWithSingleFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryDoubleTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "queryWithoutFilter",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryWithTwoSeriesTimeValueFilterCrossTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.schema.converter.SchemaBuilderTest",
+        "testMethod": "testJsonConverter",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[s4,DOUBLE,RLE,{max_point_number\u003d3},SNAPPY]]\u003e but was:\u003c[[,s4,DOUBLE,RLE,max_point_number:3,SNAPPY,]]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "query1",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderTest",
+        "testMethod": "readTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryWithTwoSeriesTimeValueFilterCrossTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.MetadataQuerierByFileImplTest",
+        "testMethod": "test",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "query1",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryWithCrossSeriesTimeValueFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.write.schema.converter.JsonConverterTest",
+        "testMethod": "testJsonConverter",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[s4,DOUBLE,RLE,{max_error\u003d12},UNCOMPRESSED]]\u003e but was:\u003c[[,s4,DOUBLE,RLE,max_point_number:2,UNCOMPRESSED,]]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryWithCrossSeriesTimeValueFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "queryWithoutFilter",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.controller.SeriesChunkLoaderTest",
+        "testMethod": "test",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryOneMeasurementWithoutFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryTwoMeasurementsWithSingleFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.ReadTest",
+        "testMethod": "queryTwoMeasurementsWithoutFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryBooleanTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.TimePlainEncodeReadTest",
+        "testMethod": "queryOneMeasurementWithoutFilterTest",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.readV1.SeriesReaderByTimestampTest",
+        "testMethod": "readByTimestamp",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "queryWithGlobalTimeFilter",
+        "failureName": "java.nio.BufferUnderflowException",
+        "isError": true
+      },
+      {
+        "testClass": "cn.edu.tsinghua.tsfile.timeseries.read.query.executor.QueryExecutorTest",
+        "testMethod": "queryWithGlobalTimeFilter",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 187,
+    "numberTestFiles": 63,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "thulab/tsfile",
+      "branchName": "add_comment",
+      "sha": "32b3a8667b09cab08a9ab65f0836fa1dcf051fd9",
+      "url": "http://github.com/thulab/tsfile/commit/32b3a8667b09cab08a9ab65f0836fa1dcf051fd9",
+      "date": "Nov 16, 2018 7:36:45 AM"
+    },
+    "fixerBuild": {
+      "repoName": "thulab/tsfile",
+      "branchName": "add_comment",
+      "sha": "e774617dbfd8583991a17be922d8308c5f613132",
+      "url": "http://github.com/thulab/tsfile/commit/e774617dbfd8583991a17be922d8308c5f613132",
+      "date": "Nov 17, 2018 5:18:29 AM"
+    }
+  },
+  "type": "passing_passing"
+}
