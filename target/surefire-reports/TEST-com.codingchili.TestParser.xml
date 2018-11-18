@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="com.codingchili.TestParser" time="1.601" errors="2" skipped="1">
+<testsuite tests="8" failures="0" name="com.codingchili.TestParser" time="1.449" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -71,102 +71,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.codingchili.TestParser" name="testParseOOXML" time="1.303"/>
-  <testcase classname="com.codingchili.TestParser" name="testParseMissingExt" time="0.002"/>
-  <testcase classname="com.codingchili.TestParser" name="testParse2007" time="0.279"/>
-  <testcase classname="com.codingchili.TestParser" name="testParseMissingParser" time="0.001"/>
+  <testcase classname="com.codingchili.TestParser" name="testParseOOXML" time="1.063"/>
+  <testcase classname="com.codingchili.TestParser" name="testParseMissingExt" time="0.003"/>
+  <testcase classname="com.codingchili.TestParser" name="testParse2007" time="0.31"/>
+  <testcase classname="com.codingchili.TestParser" name="testParseMissingParser" time="0.005"/>
   <testcase classname="com.codingchili.TestParser" name="failParseInvalid" time="0.001"/>
-  <testcase classname="com.codingchili.TestParser" name="generateMonsterCSV" time="0.002">
+  <testcase classname="com.codingchili.TestParser" name="generateMonsterCSV" time="0.003">
     <skipped message="Run when you need some testing data."/>
   </testcase>
-  <testcase classname="com.codingchili.TestParser" name="testParseBig" time="0.012">
-    <error message="Encountered values (1) on row 1, expected to match headers (0)." type="com.codingchili.Model.ColumnsHeadersMismatchException">com.codingchili.Model.ColumnsHeadersMismatchException: Encountered values (1) on row 1, expected to match headers (0).
-	at com.codingchili.Model.CSVParser.process(CSVParser.java:143)
-	at com.codingchili.Model.CSVParser.readRow(CSVParser.java:204)
-	at com.codingchili.Model.CSVParser.initialize(CSVParser.java:101)
-	at com.codingchili.TestParser.testParseFile(TestParser.java:124)
-	at com.codingchili.TestParser.testParseBig(TestParser.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeTestMethod(VertxUnitRunner.java:95)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.lambda$invokeExplosively$0(VertxUnitRunner.java:114)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.run(TestContextImpl.java:128)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.access$200(TestContextImpl.java:30)
-	at io.vertx.ext.unit.impl.TestContextImpl.run(TestContextImpl.java:237)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeExplosively(VertxUnitRunner.java:130)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.access$000(VertxUnitRunner.java:39)
-	at io.vertx.ext.unit.junit.VertxUnitRunner$1.evaluate(VertxUnitRunner.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-err>Nov 18, 2018 11:17:23 AM com.codingchili.logging.ApplicationLogger parsingFile
-INFO: Parsing file &apos;/test.csv&apos; using titles from row 0..
-</system-err>
-  </testcase>
-  <testcase classname="com.codingchili.TestParser" name="testParseCSV" time="0.001">
-    <error message="Encountered values (1) on row 1, expected to match headers (0)." type="com.codingchili.Model.ColumnsHeadersMismatchException">com.codingchili.Model.ColumnsHeadersMismatchException: Encountered values (1) on row 1, expected to match headers (0).
-	at com.codingchili.Model.CSVParser.process(CSVParser.java:143)
-	at com.codingchili.Model.CSVParser.readRow(CSVParser.java:204)
-	at com.codingchili.Model.CSVParser.initialize(CSVParser.java:101)
-	at com.codingchili.TestParser.testParseFile(TestParser.java:124)
-	at com.codingchili.TestParser.testParseCSV(TestParser.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeTestMethod(VertxUnitRunner.java:95)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.lambda$invokeExplosively$0(VertxUnitRunner.java:114)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.run(TestContextImpl.java:128)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.access$200(TestContextImpl.java:30)
-	at io.vertx.ext.unit.impl.TestContextImpl.run(TestContextImpl.java:237)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeExplosively(VertxUnitRunner.java:130)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.access$000(VertxUnitRunner.java:39)
-	at io.vertx.ext.unit.junit.VertxUnitRunner$1.evaluate(VertxUnitRunner.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-err>Nov 18, 2018 11:17:23 AM com.codingchili.logging.ApplicationLogger parsingFile
-INFO: Parsing file &apos;/test.csv&apos; using titles from row 0..
-</system-err>
-  </testcase>
+  <testcase classname="com.codingchili.TestParser" name="testParseBig" time="0.052"/>
+  <testcase classname="com.codingchili.TestParser" name="testParseCSV" time="0.012"/>
 </testsuite>

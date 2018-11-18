@@ -20,129 +20,27 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ excelastic ---
 [INFO] Surefire report directory: /root/workspace/codingchili/excelastic/456571597/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 57.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 493.9 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.codingchili.TestConfiguration
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.831 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.851 sec
 Running com.codingchili.TestParser
-Tests run: 8, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 1.603 sec <<< FAILURE!
-testParseBig(com.codingchili.TestParser)  Time elapsed: 0.012 sec  <<< ERROR!
-com.codingchili.Model.ColumnsHeadersMismatchException: Encountered values (1) on row 1, expected to match headers (0).
-	at com.codingchili.Model.CSVParser.process(CSVParser.java:143)
-	at com.codingchili.Model.CSVParser.readRow(CSVParser.java:204)
-	at com.codingchili.Model.CSVParser.initialize(CSVParser.java:101)
-	at com.codingchili.TestParser.testParseFile(TestParser.java:124)
-	at com.codingchili.TestParser.testParseBig(TestParser.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeTestMethod(VertxUnitRunner.java:95)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.lambda$invokeExplosively$0(VertxUnitRunner.java:114)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.run(TestContextImpl.java:128)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.access$200(TestContextImpl.java:30)
-	at io.vertx.ext.unit.impl.TestContextImpl.run(TestContextImpl.java:237)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeExplosively(VertxUnitRunner.java:130)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.access$000(VertxUnitRunner.java:39)
-	at io.vertx.ext.unit.junit.VertxUnitRunner$1.evaluate(VertxUnitRunner.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testParseCSV(com.codingchili.TestParser)  Time elapsed: 0.001 sec  <<< ERROR!
-com.codingchili.Model.ColumnsHeadersMismatchException: Encountered values (1) on row 1, expected to match headers (0).
-	at com.codingchili.Model.CSVParser.process(CSVParser.java:143)
-	at com.codingchili.Model.CSVParser.readRow(CSVParser.java:204)
-	at com.codingchili.Model.CSVParser.initialize(CSVParser.java:101)
-	at com.codingchili.TestParser.testParseFile(TestParser.java:124)
-	at com.codingchili.TestParser.testParseCSV(TestParser.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeTestMethod(VertxUnitRunner.java:95)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.lambda$invokeExplosively$0(VertxUnitRunner.java:114)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.run(TestContextImpl.java:128)
-	at io.vertx.ext.unit.impl.TestContextImpl$Step.access$200(TestContextImpl.java:30)
-	at io.vertx.ext.unit.impl.TestContextImpl.run(TestContextImpl.java:237)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.invokeExplosively(VertxUnitRunner.java:130)
-	at io.vertx.ext.unit.junit.VertxUnitRunner.access$000(VertxUnitRunner.java:39)
-	at io.vertx.ext.unit.junit.VertxUnitRunner$1.evaluate(VertxUnitRunner.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.449 sec
 Running com.codingchili.TestWriter
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.525 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 sec
 Running com.codingchili.TestWebsite
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.931 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.938 sec
 
 Results :
 
-Tests in error: 
-  testParseBig(com.codingchili.TestParser): Encountered values (1) on row 1, expected to match headers (0).
-  testParseCSV(com.codingchili.TestParser): Encountered values (1) on row 1, expected to match headers (0).
-
-Tests run: 12, Failures: 0, Errors: 2, Skipped: 1
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.328 s
-[INFO] Finished at: 2018-11-18T11:17:26+01:00
-[INFO] Final Memory: 17M/483M
+[INFO] Total time: 7.479 s
+[INFO] Finished at: 2018-11-18T11:18:11+01:00
+[INFO] Final Memory: 16M/609M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project excelastic: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/codingchili/excelastic/456571597/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
