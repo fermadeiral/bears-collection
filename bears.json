@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "codingchili/excelastic",
+    "githubId": 60345192,
+    "url": "https://github.com/codingchili/excelastic",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 456571597,
+      "url": "http://travis-ci.org/codingchili/excelastic/builds/456571597",
+      "date": "Nov 18, 2018 11:02:32 AM"
+    },
+    "fixerBuild": {
+      "id": 456573923,
+      "url": "http://travis-ci.org/codingchili/excelastic/builds/456573923",
+      "date": "Nov 18, 2018 11:16:14 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 18, 2018 11:16:31 AM",
+    "reproductionDateEnd": "Nov 18, 2018 11:18:17 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 225304496,
+      "totalMemory": 391118848
+    },
+    "totalDuration": 102,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 38,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          38
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/codingchili/excelastic/456571597/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 18
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/codingchili/excelastic/456571597",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 9,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "com.codingchili.Model.ColumnsHeadersMismatchException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.codingchili.TestParser",
+        "numberRunning": 7,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.codingchili.TestParser",
+        "testMethod": "testParseCSV",
+        "failureName": "com.codingchili.Model.ColumnsHeadersMismatchException",
+        "detail": "Encountered values (1) on row 1, expected to match headers (0).",
+        "isError": true
+      },
+      {
+        "testClass": "com.codingchili.TestParser",
+        "testMethod": "testParseBig",
+        "failureName": "com.codingchili.Model.ColumnsHeadersMismatchException",
+        "detail": "Encountered values (1) on row 1, expected to match headers (0).",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 47,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "codingchili/excelastic",
+      "branchName": "master",
+      "sha": "a904115ebb7a60743ee88743b36e8b43bdd87442",
+      "url": "http://github.com/codingchili/excelastic/commit/a904115ebb7a60743ee88743b36e8b43bdd87442",
+      "date": "Nov 18, 2018 11:01:17 AM"
+    },
+    "fixerBuild": {
+      "repoName": "codingchili/excelastic",
+      "branchName": "master",
+      "sha": "aaed9fcce1cb7c61c499c1261ab53392b7710f55",
+      "url": "http://github.com/codingchili/excelastic/commit/aaed9fcce1cb7c61c499c1261ab53392b7710f55",
+      "date": "Nov 18, 2018 11:14:37 AM"
+    }
+  }
+}
