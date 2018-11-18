@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "benas/random-beans",
+    "githubId": 10144081,
+    "url": "https://github.com/benas/random-beans",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 456706826,
+      "url": "http://travis-ci.org/benas/random-beans/builds/456706826",
+      "date": "Nov 18, 2018 9:21:45 PM"
+    },
+    "fixerBuild": {
+      "id": 456745522,
+      "url": "http://travis-ci.org/benas/random-beans/builds/456745522",
+      "date": "Nov 19, 2018 12:03:37 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 19, 2018 12:03:49 AM",
+    "reproductionDateEnd": "Nov 19, 2018 12:06:21 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 395513880,
+      "totalMemory": 484966400
+    },
+    "totalDuration": 148,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 40,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          39
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 27,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          27
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/benas/random-beans/456706826/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 15,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/benas/random-beans/456706826/random-beans",
+    "overallMetrics": {
+      "numberRunning": 360,
+      "numberPassing": 357,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.github.benas.randombeans.parameters.SeedParameterTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.github.benas.randombeans.randomizers.text.StringRandomizerTest",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.github.benas.randombeans.randomizers.text.StringRandomizerTest",
+        "testMethod": "shouldGenerateTheSameValueForTheSameSeed",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "\nExpecting:\n \u003c\"eOMtThyhVNLWUZNRcBaQKxIy\"\u003e\nto be equal to:\n \u003c\"eOMtThyhVNLWUZNRcBaQKxI\"\u003e\nbut was not.",
+        "isError": false
+      },
+      {
+        "testClass": "io.github.benas.randombeans.randomizers.text.StringRandomizerTest",
+        "testMethod": "theLengthOfTheGeneratedValueShouldBeLowerThanTheSpecifiedMaxLength",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "\nExpecting:\n \u003c\"eOM\"\u003e\nto be equal to:\n \u003c\"eOMtThy\"\u003e\nbut was not.",
+        "isError": false
+      },
+      {
+        "testClass": "io.github.benas.randombeans.parameters.SeedParameterTests",
+        "testMethod": "generatedObjectShouldBeAlwaysTheSameForTheSameSeed",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "\nExpecting:\n \u003c\"eOMtThyhVNLWUZNRcBaQKxIy\"\u003e\nto be equal to:\n \u003c\"eOMtThyhVNLWUZNRcBaQKxI\"\u003e\nbut was not.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 179,
+    "numberTestFiles": 130,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "benas/random-beans",
+      "branchName": "master",
+      "sha": "c2aed89f36a828a0f4417fef9aa2b9796002014c",
+      "url": "http://github.com/benas/random-beans/commit/c2aed89f36a828a0f4417fef9aa2b9796002014c",
+      "date": "Nov 18, 2018 9:18:03 PM"
+    },
+    "fixerBuild": {
+      "repoName": "benas/random-beans",
+      "branchName": "master",
+      "sha": "bc3b1b7161c4f84d3433c09e14b1a72671a741a7",
+      "url": "http://github.com/benas/random-beans/commit/bc3b1b7161c4f84d3433c09e14b1a72671a741a7",
+      "date": "Nov 19, 2018 12:00:14 AM"
+    }
+  },
+  "type": "passing_passing"
+}
