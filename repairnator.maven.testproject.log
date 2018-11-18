@@ -47,207 +47,336 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ random-beans ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom (7 KB at 15.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar (65 KB at 1021.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running io.github.benas.randombeans.ArrayPopulatorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.445 s - in io.github.benas.randombeans.ArrayPopulatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.16 s - in io.github.benas.randombeans.ArrayPopulatorTest
 [INFO] Running io.github.benas.randombeans.visibility.VisibilityTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.github.benas.randombeans.visibility.VisibilityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.visibility.VisibilityTest
 [INFO] Running io.github.benas.randombeans.RandomizerProxyTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.RandomizerProxyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.RandomizerProxyTest
 [INFO] Running io.github.benas.randombeans.FieldExclusionTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.312 s - in io.github.benas.randombeans.FieldExclusionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 s - in io.github.benas.randombeans.FieldExclusionTest
 [INFO] Running io.github.benas.randombeans.CollectionPopulatorTest
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.128 s - in io.github.benas.randombeans.CollectionPopulatorTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.085 s - in io.github.benas.randombeans.CollectionPopulatorTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.ZoneIdRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.github.benas.randombeans.randomizers.time.ZoneIdRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in io.github.benas.randombeans.randomizers.time.ZoneIdRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.TimeZoneRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.time.TimeZoneRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.time.TimeZoneRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.TimeSupportTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in io.github.benas.randombeans.randomizers.time.TimeSupportTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s - in io.github.benas.randombeans.randomizers.time.TimeSupportTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.TimeRandomizersTest
-[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in io.github.benas.randombeans.randomizers.time.TimeRandomizersTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in io.github.benas.randombeans.randomizers.time.TimeRandomizersTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.internal.MinuteRandomizerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.github.benas.randombeans.randomizers.time.internal.MinuteRandomizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.time.internal.MinuteRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.internal.DayRandomizerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.time.internal.DayRandomizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.time.internal.DayRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.internal.HourRandomizerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.time.internal.HourRandomizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.time.internal.HourRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.time.ZonedDateTimeRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.github.benas.randombeans.randomizers.time.ZonedDateTimeRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.github.benas.randombeans.randomizers.time.ZonedDateTimeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.text.StringDelegatingRandomizerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in io.github.benas.randombeans.randomizers.text.StringDelegatingRandomizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in io.github.benas.randombeans.randomizers.text.StringDelegatingRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.text.CharacterRandomizerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in io.github.benas.randombeans.randomizers.text.CharacterRandomizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in io.github.benas.randombeans.randomizers.text.CharacterRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.text.StringRandomizerTest
-[ERROR] Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.166 s <<< FAILURE! - in io.github.benas.randombeans.randomizers.text.StringRandomizerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in io.github.benas.randombeans.randomizers.text.StringRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.BigDecimalRangeRandomizerTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in io.github.benas.randombeans.randomizers.range.BigDecimalRangeRandomizerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.github.benas.randombeans.randomizers.range.BigDecimalRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.LocalTimeRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.github.benas.randombeans.randomizers.range.LocalTimeRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.github.benas.randombeans.randomizers.range.LocalTimeRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.IntegerRangeRandomizerTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in io.github.benas.randombeans.randomizers.range.IntegerRangeRandomizerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in io.github.benas.randombeans.randomizers.range.IntegerRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.FloatRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.github.benas.randombeans.randomizers.range.FloatRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.github.benas.randombeans.randomizers.range.FloatRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.ByteRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.github.benas.randombeans.randomizers.range.ByteRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.github.benas.randombeans.randomizers.range.ByteRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.DoubleRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.github.benas.randombeans.randomizers.range.DoubleRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.range.DoubleRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.LongRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.github.benas.randombeans.randomizers.range.LongRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.range.LongRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.ZonedDateTimeRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in io.github.benas.randombeans.randomizers.range.ZonedDateTimeRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.github.benas.randombeans.randomizers.range.ZonedDateTimeRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.SqlDateRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in io.github.benas.randombeans.randomizers.range.SqlDateRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in io.github.benas.randombeans.randomizers.range.SqlDateRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.BigIntegerRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.github.benas.randombeans.randomizers.range.BigIntegerRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.github.benas.randombeans.randomizers.range.BigIntegerRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.ShortRangeRandomizerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.github.benas.randombeans.randomizers.range.ShortRangeRandomizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.github.benas.randombeans.randomizers.range.ShortRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.LocalDateRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.github.benas.randombeans.randomizers.range.LocalDateRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.github.benas.randombeans.randomizers.range.LocalDateRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.LocalDateTimeRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in io.github.benas.randombeans.randomizers.range.LocalDateTimeRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.range.LocalDateTimeRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.range.DateRangeRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.range.DateRangeRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.range.DateRangeRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.UUIDRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.misc.UUIDRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.misc.UUIDRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.LocaleRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in io.github.benas.randombeans.randomizers.misc.LocaleRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in io.github.benas.randombeans.randomizers.misc.LocaleRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.SkipRandomizerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.misc.SkipRandomizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.misc.SkipRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.ConstantRandomizerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.misc.ConstantRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.EnumRandomizerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.misc.EnumRandomizerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.misc.EnumRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.OptionalRandomizerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.misc.OptionalRandomizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.misc.OptionalRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.BooleanRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.misc.BooleanRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.misc.BooleanRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.misc.NullRandomizerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.misc.NullRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.number.AtomicIntegerRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.github.benas.randombeans.randomizers.number.AtomicIntegerRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.number.AtomicIntegerRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.number.NumberRandomizersTest
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in io.github.benas.randombeans.randomizers.number.NumberRandomizersTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in io.github.benas.randombeans.randomizers.number.NumberRandomizersTest
 [INFO] Running io.github.benas.randombeans.randomizers.number.BigDecimalRandomizerTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.randomizers.number.BigDecimalRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.number.AtomicLongRandomizerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.randomizers.number.AtomicLongRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.number.AtomicLongRandomizerTest
 [INFO] Running io.github.benas.randombeans.randomizers.net.NetRandomizersTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in io.github.benas.randombeans.randomizers.net.NetRandomizersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in io.github.benas.randombeans.randomizers.net.NetRandomizersTest
 [INFO] Running io.github.benas.randombeans.randomizers.collection.CollectionRandomizersTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in io.github.benas.randombeans.randomizers.collection.CollectionRandomizersTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in io.github.benas.randombeans.randomizers.collection.CollectionRandomizersTest
 [INFO] Running io.github.benas.randombeans.randomizers.collection.MapRandomizerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.github.benas.randombeans.randomizers.collection.MapRandomizerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in io.github.benas.randombeans.randomizers.collection.MapRandomizerTest
 [INFO] Running io.github.benas.randombeans.FieldDefinitionBuilderTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.github.benas.randombeans.FieldDefinitionBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.FieldDefinitionBuilderTest
 [INFO] Running io.github.benas.randombeans.FieldPopulatorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in io.github.benas.randombeans.FieldPopulatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in io.github.benas.randombeans.FieldPopulatorTest
 [INFO] Running io.github.benas.randombeans.PriorityComparatorTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.PriorityComparatorTest
 [INFO] Running io.github.benas.randombeans.MapPopulatorTest
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in io.github.benas.randombeans.MapPopulatorTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s - in io.github.benas.randombeans.MapPopulatorTest
 [INFO] Running io.github.benas.randombeans.RandomizerProviderTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in io.github.benas.randombeans.RandomizerProviderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in io.github.benas.randombeans.RandomizerProviderTest
 [INFO] Running io.github.benas.randombeans.FieldExclusionCheckerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.FieldExclusionCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.FieldExclusionCheckerTest
 [INFO] Running io.github.benas.randombeans.parameters.DateTimeRangeParameterTests
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in io.github.benas.randombeans.parameters.DateTimeRangeParameterTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in io.github.benas.randombeans.parameters.DateTimeRangeParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.OverrideDefaultInitializationParameterTests
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in io.github.benas.randombeans.parameters.OverrideDefaultInitializationParameterTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in io.github.benas.randombeans.parameters.OverrideDefaultInitializationParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.RandomizationDepthParameterTests
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in io.github.benas.randombeans.parameters.RandomizationDepthParameterTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in io.github.benas.randombeans.parameters.RandomizationDepthParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.CollectionSizeRangeParameterTests
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in io.github.benas.randombeans.parameters.CollectionSizeRangeParameterTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in io.github.benas.randombeans.parameters.CollectionSizeRangeParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.CharsetParameterTests
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in io.github.benas.randombeans.parameters.CharsetParameterTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in io.github.benas.randombeans.parameters.CharsetParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.SeedParameterTests
-[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! - in io.github.benas.randombeans.parameters.SeedParameterTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in io.github.benas.randombeans.parameters.SeedParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.StringLengthRangeParameterTests
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in io.github.benas.randombeans.parameters.StringLengthRangeParameterTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in io.github.benas.randombeans.parameters.StringLengthRangeParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.ScanClasspathForConcreteTypesParameterTests
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.992 s - in io.github.benas.randombeans.parameters.ScanClasspathForConcreteTypesParameterTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.732 s - in io.github.benas.randombeans.parameters.ScanClasspathForConcreteTypesParameterTests
 [INFO] Running io.github.benas.randombeans.parameters.MaxObjectPoolSizeTests
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in io.github.benas.randombeans.parameters.MaxObjectPoolSizeTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in io.github.benas.randombeans.parameters.MaxObjectPoolSizeTests
 [INFO] Running io.github.benas.randombeans.RandomizerAnnotationTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in io.github.benas.randombeans.RandomizerAnnotationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in io.github.benas.randombeans.RandomizerAnnotationTest
 [INFO] Running io.github.benas.randombeans.EnhancedRandomBuilderTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 s - in io.github.benas.randombeans.EnhancedRandomBuilderTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 s - in io.github.benas.randombeans.EnhancedRandomBuilderTest
 [INFO] Running io.github.benas.randombeans.util.CollectionUtilsTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.util.CollectionUtilsTest
 [INFO] Running io.github.benas.randombeans.util.ReflectionUtilsTest
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.github.benas.randombeans.util.ReflectionUtilsTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in io.github.benas.randombeans.util.ReflectionUtilsTest
 [INFO] Running io.github.benas.randombeans.util.RangeTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.util.RangeTest
 [INFO] Running io.github.benas.randombeans.util.CharacterUtilsTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.github.benas.randombeans.util.CharacterUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.util.CharacterUtilsTest
 [INFO] Running io.github.benas.randombeans.ObjectFactoryTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.ObjectFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.github.benas.randombeans.ObjectFactoryTest
 [INFO] Running io.github.benas.randombeans.RandomizationContextTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in io.github.benas.randombeans.RandomizationContextTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 s - in io.github.benas.randombeans.RandomizationContextTest
 [INFO] Running io.github.benas.randombeans.EnhancedRandomImplTest
-[WARNING] Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.835 s - in io.github.benas.randombeans.EnhancedRandomImplTest
+[WARNING] Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.775 s - in io.github.benas.randombeans.EnhancedRandomImplTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   SeedParameterTests.generatedObjectShouldBeAlwaysTheSameForTheSameSeed:56 
-Expecting:
- <"eOMtThyhVNLWUZNRcBaQKxIy">
-to be equal to:
- <"eOMtThyhVNLWUZNRcBaQKxI">
-but was not.
-[ERROR]   StringRandomizerTest.shouldGenerateTheSameValueForTheSameSeed:56 
-Expecting:
- <"eOMtThyhVNLWUZNRcBaQKxIy">
-to be equal to:
- <"eOMtThyhVNLWUZNRcBaQKxI">
-but was not.
-[ERROR]   StringRandomizerTest.theLengthOfTheGeneratedValueShouldBeLowerThanTheSpecifiedMaxLength:70 
-Expecting:
- <"eOM">
-to be equal to:
- <"eOMtThy">
-but was not.
+[WARNING] Tests run: 361, Failures: 0, Errors: 0, Skipped: 1
 [INFO] 
-[ERROR] Tests run: 361, Failures: 3, Errors: 0, Skipped: 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Random Beans Spring 3.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ random-beans-spring ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ random-beans-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ random-beans-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/benas/random-beans/456706826/random-beans-spring/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ random-beans-spring ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/benas/random-beans/456706826/random-beans-spring/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ random-beans-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ random-beans-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ random-beans-spring ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.benas.randombeans.spring.EnhancedRandomFactoryBeanTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.74 s - in io.github.benas.randombeans.spring.EnhancedRandomFactoryBeanTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Random Beans Randomizers 3.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ random-beans-randomizers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ random-beans-randomizers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ random-beans-randomizers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/benas/random-beans/456706826/random-beans-randomizers/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ random-beans-randomizers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ random-beans-randomizers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/benas/random-beans/456706826/random-beans-randomizers/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ random-beans-randomizers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ random-beans-randomizers ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.benas.randombeans.randomizers.EmailRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.987 s - in io.github.benas.randombeans.randomizers.EmailRandomizerTest
+[INFO] Running io.github.benas.randombeans.randomizers.GenericStringRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in io.github.benas.randombeans.randomizers.GenericStringRandomizerTest
+[INFO] Running io.github.benas.randombeans.randomizers.RandomizersTest
+[INFO] Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.562 s - in io.github.benas.randombeans.randomizers.RandomizersTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 60, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Random Beans Validation 3.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The artifact org.hibernate:hibernate-validator:jar:6.0.8.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.0.8.Final
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ random-beans-validation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ random-beans-validation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ random-beans-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ random-beans-validation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /root/workspace/benas/random-beans/456706826/random-beans-validation/target/classes
+[INFO] /root/workspace/benas/random-beans/456706826/random-beans-validation/src/main/java/io/github/benas/randombeans/validation/MinMaxAnnotationHandler.java: /root/workspace/benas/random-beans/456706826/random-beans-validation/src/main/java/io/github/benas/randombeans/validation/MinMaxAnnotationHandler.java uses or overrides a deprecated API.
+[INFO] /root/workspace/benas/random-beans/456706826/random-beans-validation/src/main/java/io/github/benas/randombeans/validation/MinMaxAnnotationHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ random-beans-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/benas/random-beans/456706826/random-beans-validation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ random-beans-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ random-beans-validation ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.benas.randombeans.validation.BeanValidationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.094 s - in io.github.benas.randombeans.validation.BeanValidationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Random Beans Joda Time 3.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ random-beans-jodatime ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ random-beans-jodatime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ random-beans-jodatime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ random-beans-jodatime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /root/workspace/benas/random-beans/456706826/random-beans-jodatime/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ random-beans-jodatime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/benas/random-beans/456706826/random-beans-jodatime/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ random-beans-jodatime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ random-beans-jodatime ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.benas.randombeans.randomizers.jodatime.JodaTimeSupportTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.774 s - in io.github.benas.randombeans.randomizers.jodatime.JodaTimeSupportTest
+[INFO] Running io.github.benas.randombeans.randomizers.jodatime.JodaTimeRandomizersTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in io.github.benas.randombeans.randomizers.jodatime.JodaTimeRandomizersTest
+[INFO] Running io.github.benas.randombeans.randomizers.jodatime.JodaTimeRangeRandomizersTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in io.github.benas.randombeans.randomizers.jodatime.JodaTimeRangeRandomizersTest
+[INFO] Running io.github.benas.randombeans.randomizers.jodatime.JodaTimeDateTimeRandomizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.github.benas.randombeans.randomizers.jodatime.JodaTimeDateTimeRandomizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Random Beans BOM 3.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ random-beans-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (default) @ random-beans-bom ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Random Beans ....................................... SUCCESS [  1.060 s]
-[INFO] Random Beans Core .................................. FAILURE [ 22.403 s]
-[INFO] Random Beans Spring ................................ SKIPPED
-[INFO] Random Beans Randomizers ........................... SKIPPED
-[INFO] Random Beans Validation ............................ SKIPPED
-[INFO] Random Beans Joda Time ............................. SKIPPED
-[INFO] Random Beans BOM ................................... SKIPPED
+[INFO] Random Beans ....................................... SUCCESS [  1.130 s]
+[INFO] Random Beans Core .................................. SUCCESS [ 21.900 s]
+[INFO] Random Beans Spring ................................ SUCCESS [  3.550 s]
+[INFO] Random Beans Randomizers ........................... SUCCESS [  7.507 s]
+[INFO] Random Beans Validation ............................ SUCCESS [  5.018 s]
+[INFO] Random Beans Joda Time ............................. SUCCESS [  2.833 s]
+[INFO] Random Beans BOM ................................... SUCCESS [  0.004 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 23.885 s
-[INFO] Finished at: 2018-11-19T00:05:01+01:00
-[INFO] Final Memory: 27M/580M
+[INFO] Total time: 42.372 s
+[INFO] Finished at: 2018-11-19T00:06:19+01:00
+[INFO] Final Memory: 23M/477M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project random-beans: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/benas/random-beans/456706826/random-beans/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :random-beans
