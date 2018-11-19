@@ -41,106 +41,103 @@ main:
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-lib ---
 [INFO] Surefire report directory: /root/workspace/cmu-phil/tetrad/457199411/tetrad-lib/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 54.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 375.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running edu.cmu.tetrad.algcomparison.TimeoutComparisonTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.122 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.104 sec
 Running edu.cmu.tetrad.annotation.ScoreAnnotationsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.971 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.679 sec
 Running edu.cmu.tetrad.annotation.AlgorithmAnnotationsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec
 Running edu.cmu.tetrad.annotation.TestOfIndependenceAnnotationsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
 Running edu.cmu.tetrad.test.TestPoint
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestPurify
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestDM
 BIC score = -140645.03273100342
-BIC score = -139908.20550124525
-BIC score = -139862.15379938536
-BIC score = -139816.10209752547
-BIC score = -139770.0503956656
-BIC score = -139723.9986938057
-BIC score = -139677.94699194582
+BIC score = -454059.31681268616
+BIC score = -454013.26511082624
+BIC score = -453967.21340896643
+BIC score = -453921.1617071065
+BIC score = -453875.1100052466
+BIC score = -453829.0583033868
 BIC score = -414063.27898995264
-BIC score = -409681.997687013
-BIC score = -409681.99768701295
-BIC score = -409681.997687013
-BIC score = -409681.997687013
-BIC score = -409681.99768701295
-BIC score = -409681.997687013
+BIC score = -923307.2321555169
+BIC score = -923307.2321555166
+BIC score = -923307.232155517
+BIC score = -923307.2321555169
+BIC score = -923307.2321555166
+BIC score = -923307.2321555169
 BIC score = -734719.9021184476
-BIC score = -723296.24000292
-BIC score = -723388.3434066398
-BIC score = -723480.4468103595
-BIC score = -723572.5502140793
-BIC score = -723664.653617799
-BIC score = -723756.7570215188
+BIC score = -1681457.0656469625
+BIC score = -1681549.169050682
+BIC score = -1681641.2724544017
+BIC score = -1681733.3758581218
+BIC score = -1681825.4792618414
+BIC score = -1681917.582665561
 BIC score = -174188.84726830307
-BIC score = -172286.64284404018
-BIC score = -172344.20747136502
-BIC score = -172401.77209868978
-BIC score = -172459.3367260147
-BIC score = -172516.90135333955
-BIC score = -172574.46598066433
+BIC score = -476391.5966446704
+BIC score = -476449.1612719953
+BIC score = -476506.7258993201
+BIC score = -476564.29052664497
+BIC score = -476621.85515396984
+BIC score = -476679.41978129465
 BIC score = -174303.10825464642
-BIC score = -172806.16658825678
-BIC score = -172806.16658825672
-BIC score = -172806.16658825672
-BIC score = -172806.16658825678
-BIC score = -172806.16658825672
-BIC score = -172806.16658825672
+BIC score = -445604.51032995456
+BIC score = -445604.5103299545
+BIC score = -445604.5103299545
+BIC score = -445604.51032995456
+BIC score = -445604.5103299545
+BIC score = -445604.5103299545
 BIC score = -6158.2784990769005
-BIC score = -4024.5202114830768
-BIC score = -4086.690008993917
-BIC score = -4148.859806504755
-BIC score = -4204.600955786734
-BIC score = -4079.350141919752
-BIC score = -4106.981163035678
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.121 sec
+BIC score = -7835.730668173438
+BIC score = -7897.900465684279
+BIC score = -7960.070263195117
+BIC score = -8015.811412477096
+BIC score = -8104.221905208436
+BIC score = -8131.852926324365
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.101 sec
 Running edu.cmu.tetrad.test.TestCollisions
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running edu.cmu.tetrad.test.TestSessionSupport
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running edu.cmu.tetrad.test.TestStandardizedSem
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.356 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.493 sec
 Running edu.cmu.tetrad.test.TestFdr
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestBayesIm
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
 Running edu.cmu.tetrad.test.TestSemEvidence
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestKernelGaussian
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestDelimiterType
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestKnowledge
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
 Running edu.cmu.tetrad.test.TestDiscretizer
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running edu.cmu.tetrad.test.TestIndependenceFact
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestMbfs
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
 Running edu.cmu.tetrad.test.TestDataReader
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
 Running edu.cmu.tetrad.test.TestGraphConverter
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running edu.cmu.tetrad.test.TestSemProposition
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.cmu.tetrad.test.TestSemProposition
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running edu.cmu.tetrad.test.TestDataLoadersRoundtrip
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running edu.cmu.tetrad.test.TestFges
-BIC score = -12638.051960869527
+BIC score = -12638.051960869525
+BIC score = 8.0
+BIC score = 14.0
+BIC score = 23.0
 BIC score = 154.70094973572367
 1. ABILITY --> GPQ
 2. ABILITY --> PREPROD
@@ -150,29 +147,29 @@ BIC score = 154.70094973572367
 6. SEX --> PUBS
 Simulating dataset #1
 Bound graph done
-Elapsed initializeForwardEdgesFromEmptyGraph = 30 ms
+Elapsed initializeForwardEdgesFromEmptyGraph = 27 ms
 1. INSERT X6 --> X40 [] 944.6069587847238  degree = 1 indegree = 1
-2. INSERT X63 --> X58 [] 898.5587364677799  degree = 1 indegree = 1
+2. INSERT X58 --> X63 [] 898.5587364677799  degree = 1 indegree = 1
 3. INSERT X31 --> X33 [] 849.2008216680747  degree = 1 indegree = 1
 4. INSERT X46 --> X45 [] 740.4382918806918  degree = 1 indegree = 1
-5. INSERT X40 --> X52 [] 719.3947619676017  degree = 2 indegree = 1
+5. INSERT X40 --> X52 [] 719.3947619676017  degree = 2 indegree = 0
 6. INSERT X5 --> X19 [] 706.8721885449592  degree = 2 indegree = 0
-7. INSERT X97 --> X23 [] 685.7888221164962  degree = 2 indegree = 1
-8. INSERT X67 --> X38 [] 648.7728196868502  degree = 2 indegree = 1
-9. INSERT X99 --> X74 [] 646.2173684837337  degree = 2 indegree = 1
+7. INSERT X23 --> X97 [] 685.7888221164962  degree = 2 indegree = 0
+8. INSERT X38 --> X67 [] 648.7728196868502  degree = 2 indegree = 0
+9. INSERT X99 --> X74 [] 646.2173684837337  degree = 2 indegree = 0
 10. INSERT X92 --> X100 [] 640.2189246902026  degree = 2 indegree = 0
-11. INSERT X44 --> X18 [] 635.3383540617542  degree = 2 indegree = 1
-12. INSERT X24 --> X26 [] 605.4744682703636  degree = 2 indegree = 1
-13. INSERT X100 --> X77 [] 584.6097361065981  degree = 2 indegree = 1
-14. INSERT X55 --> X85 [] 569.3564532919984  degree = 2 indegree = 1
-15. INSERT X74 --> X21 [] 552.3673539600683  degree = 2 indegree = 1
-16. INSERT X39 --> X48 [] 551.0668916380931  degree = 2 indegree = 0
+11. INSERT X44 --> X18 [] 635.3383540617542  degree = 2 indegree = 0
+12. INSERT X24 --> X26 [] 605.4744682703636  degree = 2 indegree = 0
+13. INSERT X100 --> X77 [] 584.6097361065981  degree = 2 indegree = 0
+14. INSERT X85 --> X55 [] 569.3564532919984  degree = 2 indegree = 0
+15. INSERT X74 --> X21 [] 552.3673539600683  degree = 2 indegree = 0
+16. INSERT X48 --> X39 [] 551.0668916380931  degree = 2 indegree = 0
 17. INSERT X29 --> X34 [] 527.0319110456189  degree = 2 indegree = 1
 18. INSERT X15 --> X34 [X29] 538.5289015093592  degree = 2 indegree = 1
 --- Directing X29 --> X34
-19. INSERT X82 --> X90 [] 522.6039330267811  degree = 2 indegree = 2
+19. INSERT X90 --> X82 [] 522.6039330267811  degree = 2 indegree = 2
 20. INSERT X40 --> X80 [] 503.4156632047841  degree = 3 indegree = 2
-21. INSERT X8 --> X20 [] 491.60883350155166  degree = 3 indegree = 2
+21. INSERT X20 --> X8 [] 491.60883350155166  degree = 3 indegree = 2
 22. INSERT X63 --> X96 [] 486.9435388010463  degree = 3 indegree = 2
 23. INSERT X48 --> X57 [] 478.0227969785226  degree = 3 indegree = 2
 24. INSERT X29 --> X2 [] 472.7488403203656  degree = 3 indegree = 2
@@ -192,13 +189,13 @@ Elapsed initializeForwardEdgesFromEmptyGraph = 30 ms
 --- Directing X48 --> X57
 35. INSERT X25 --> X57 [] 607.0281715193444  degree = 3 indegree = 3
 36. INSERT X71 --> X42 [] 384.3818655325807  degree = 3 indegree = 3
-37. INSERT X22 --> X62 [] 373.2108378549374  degree = 3 indegree = 3
+37. INSERT X62 --> X22 [] 373.2108378549374  degree = 3 indegree = 3
 38. INSERT X29 --> X62 [X22] 532.4082443835778  degree = 3 indegree = 3
 --- Directing X22 --> X62
 39. INSERT X6 --> X43 [] 366.21470586139435  degree = 3 indegree = 3
 40. INSERT X10 --> X43 [X6] 508.6203503569382  degree = 3 indegree = 3
 --- Directing X6 --> X43
-41. INSERT X83 --> X81 [] 357.65569817080086  degree = 3 indegree = 3
+41. INSERT X81 --> X83 [] 357.65569817080086  degree = 3 indegree = 3
 42. INSERT X62 --> X83 [X81] 377.55288752967476  degree = 3 indegree = 3
 --- Directing X81 --> X83
 43. INSERT X52 --> X83 [] 536.965655869819  degree = 3 indegree = 3
@@ -220,20 +217,20 @@ Elapsed initializeForwardEdgesFromEmptyGraph = 30 ms
 57. INSERT X15 --> X93 [X51] 398.21086853602384  degree = 3 indegree = 3
 --- Directing X51 --> X93
 58. INSERT X4 --> X93 [] 394.55147997509096  degree = 3 indegree = 3
-59. INSERT X53 --> X78 [] 307.6024858162748  degree = 3 indegree = 3
+59. INSERT X78 --> X53 [] 307.6024858162748  degree = 3 indegree = 3
 60. INSERT X87 --> X72 [] 306.2962994016232  degree = 3 indegree = 3
 61. INSERT X17 --> X87 [X72] 465.34249219574804  degree = 3 indegree = 3
 --- Directing X72 --> X87
 62. INSERT X30 --> X58 [] 305.08463951575186  degree = 3 indegree = 3
 63. INSERT X20 --> X28 [] 301.77339051407984  degree = 3 indegree = 3
-64. INSERT X7 --> X79 [] 300.45482356360935  degree = 3 indegree = 3
+64. INSERT X79 --> X7 [] 300.45482356360935  degree = 3 indegree = 3
 65. INSERT X49 --> X12 [] 296.9983987935036  degree = 3 indegree = 3
 66. INSERT X25 --> X75 [X32] 296.19349604612967  degree = 3 indegree = 3
 --- Directing X32 --> X75
 67. INSERT X13 --> X26 [X24] 292.09723846555073  degree = 3 indegree = 3
 --- Directing X24 --> X26
 68. INSERT X31 --> X50 [] 288.22065228301267  degree = 3 indegree = 3
-69. INSERT X64 --> X47 [] 287.3833579017801  degree = 3 indegree = 3
+69. INSERT X47 --> X64 [] 287.3833579017801  degree = 3 indegree = 3
 70. INSERT X55 --> X16 [] 285.39045150560105  degree = 3 indegree = 3
 71. INSERT X15 --> X55 [X16] 336.4228375032472  degree = 3 indegree = 3
 --- Directing X16 --> X55
@@ -360,7 +357,7 @@ Elapsed initializeForwardEdgesFromEmptyGraph = 30 ms
 170. INSERT X66 --> X78 [X53] 1.2300810421359998  degree = 4 indegree = 4
 --- Directing X53 --> X78
 BIC score = -74015.58347017395
-Elapsed 564 ms
+Elapsed 445 ms
 
         ---  o-o  o->  -->  <->  null
    ---    0    0    0    0    0     0
@@ -372,10 +369,12 @@ Elapsed 564 ms
    <->    0    0    0    0    0     0
   null    0    0    0    0    0     *
 
+BIC score = 6.0
+BIC score = 120.0
 degree = 0
 Simulating dataset #1
 Num edges (backwards) = 0
-BIC score = -68908.52259963244
+BIC score = -68030.98515871412
 
 saveLatentVars = false
 numMeasures = 100
@@ -486,501 +485,78 @@ BIC score = -7533.052157739923
 <X3, X10, X4> score = 0.723595091771932
 <X8, X10, X4> score = 0.6174206601451875
 <X5, X6, X2> score = 0.21774559473199018
-Tests run: 18, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 1.977 sec <<< FAILURE!
-testExplore3(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.007 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testExplore3(TestFges.java:210)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testExplore4(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testExplore4(TestFges.java:218)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testExplore5(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testExplore5(TestFges.java:227)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testFromGraphSimpleFges(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.006 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testFromGraphSimpleFges(TestFges.java:256)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testFgesMbFromGraph(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testFgesMbFromGraph(TestFges.java:320)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testFromGraph(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testFromGraph(TestFges.java:722)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testFromGraphSimpleFgesMb(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.testFromGraphSimpleFgesMb(TestFges.java:288)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testSearch1(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.checkSearch(TestFges.java:630)
-	at edu.cmu.tetrad.test.TestFges.testSearch1(TestFges.java:509)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testSearch2(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.checkSearch(TestFges.java:630)
-	at edu.cmu.tetrad.test.TestFges.testSearch2(TestFges.java:519)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testSearch3(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.checkSearch(TestFges.java:630)
-	at edu.cmu.tetrad.test.TestFges.testSearch3(TestFges.java:528)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testSearch4(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.checkWithKnowledge(TestFges.java:665)
-	at edu.cmu.tetrad.test.TestFges.testSearch4(TestFges.java:542)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testSearch5(edu.cmu.tetrad.test.TestFges)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.test.TestFges.checkWithKnowledge(TestFges.java:665)
-	at edu.cmu.tetrad.test.TestFges.testSearch5(TestFges.java:552)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+BIC score = 44.0
+BIC score = 138.0
+BIC score = 160.0
+BIC score = 80.0
+BIC score = 184.0
+BIC score = 94.0
+BIC score = 100.0
+BIC score = 74.0
+BIC score = 84.0
+BIC score = 88.0
+BIC score = 56.0
+BIC score = 150.0
+BIC score = 110.0
+BIC score = 54.0
+BIC score = 104.0
+BIC score = 72.0
+BIC score = 126.0
+BIC score = 76.0
+BIC score = 72.0
+BIC score = 74.0
+BIC score = 6.0
+BIC score = 8.0
+BIC score = 8.0
+BIC score = 15.0
+BIC score = 5.0
+BIC score = 1.0
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.501 sec
 Running edu.cmu.tetrad.test.TestSemVarMeans
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec
 Running edu.cmu.tetrad.test.TestUniformGraphGenerator
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
 Running edu.cmu.tetrad.test.TestDagScorer
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
 Running edu.cmu.tetrad.test.TestCellTable
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running edu.cmu.tetrad.test.TestEndpointMatrixGraph
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.cmu.tetrad.test.TestSemXml
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
 Running edu.cmu.tetrad.test.TestHistogram
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
 Running edu.cmu.tetrad.test.TestCyclicity
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestIndTestFisherGeneralizedInverse
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
 Running edu.cmu.tetrad.test.TestMarkovBlanketSearches
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
 Running edu.cmu.tetrad.test.TestMultiDimIntTable
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestProposition
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestLingamPattern
 BIC score = 979.4936732357332
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec
 Running edu.cmu.tetrad.test.TestFruchtermanReingoldLayout
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running edu.cmu.tetrad.test.TestIndTestWaldLR
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestEdgeListGraph
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestFas
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running edu.cmu.tetrad.test.TestCombinationIterator
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestModelGenerator
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestIndTestTimeSeries
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running edu.cmu.tetrad.test.TestRowSummingUpdater
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
 Running edu.cmu.tetrad.test.TestLexer
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
 Running edu.cmu.tetrad.test.TestDelimiterTokenizer
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestFci
@@ -1135,45 +711,45 @@ Indep: X50 _||_ X4 | [X9, X75]
 Indep: X50 _||_ X37 | []
 Indep: X50 _||_ X37 | [X9]
 Indep: X50 _||_ X37 | [X9, X75]
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec
 Running edu.cmu.tetrad.test.TestDeltaSextadTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 sec
 Running edu.cmu.tetrad.test.TestExpressionParser
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.755 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 sec
 Running edu.cmu.tetrad.test.TestMatrixUtils
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestBoxDataSet
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running edu.cmu.tetrad.test.TestSemUpdater
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running edu.cmu.tetrad.test.TestUpdatedBayesIm
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
 Running edu.cmu.tetrad.test.TestColtDataSet
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestEdgeListGraphSingleConnections
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
 Running edu.cmu.tetrad.test.TestBayesPm
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.cmu.tetrad.test.TestLargeSemSimulator
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running edu.cmu.tetrad.test.TestDag
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestRegression
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running edu.cmu.tetrad.test.TestParser
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running edu.cmu.tetrad.test.TestAndersonDarling
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running edu.cmu.tetrad.test.TestStatUtils
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec
 Running edu.cmu.tetrad.test.TestSession
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestUpdaterJointMarginal
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestTimeLagGraph
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestDataSetCellProbs
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running edu.cmu.tetrad.test.TestMathUtils
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestSerialization
@@ -1193,11 +769,11 @@ Finished serializing exemplars.
 Deserializing files in build/tetrad/serializable/model
 Finished deserializing classes in build/tetrad/serializable/model.
 Deserializing archived instances in archives.
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.06 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.422 sec
 Running edu.cmu.tetrad.test.TestPartialCorrelationPdf
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.cmu.tetrad.test.TestIntegrator
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running edu.cmu.tetrad.test.TestPcStableMax
 <X4, X9, X6> score = 0.992908984110277
 <X8, X10, X3> score = 0.9653588942577125
@@ -1224,17 +800,17 @@ C B
 
 requiredirect
 <A, B, C> score = 1.0
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running edu.cmu.tetrad.test.TestEvidence
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestGeneralizedSem
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestSemGraph
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestMimbuild2
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running edu.cmu.tetrad.test.TestBayesXml
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
 Running edu.cmu.tetrad.test.TestPc
 Graph Nodes:
 ABILITY,GPQ,PREPROD,QFJ,SEX,CITES,PUBS
@@ -1266,9 +842,9 @@ Graph Edges:
 <X8, X10, X4> score = 0.6174206601451875
 <X5, X6, X2> score = 0.21774559473199018
 B --- D because it was forbidden by background knowledge.
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
 Running edu.cmu.tetrad.test.TestSessionEvent
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestGFci
 Zero variance! X1
 Zero variance! X3
@@ -1284,7 +860,18 @@ Zero variance! X11
 Zero variance! X16
 BIC score = NaN
 Elapsed 17 ms
-Elapsed initializeForwardEdgesFromEmptyGraph = 17 ms
+BIC score = 8.0
+BIC score = 56.0
+BIC score = 34.0
+BIC score = 29.0
+BIC score = 22.0
+BIC score = 25.0
+BIC score = 27.0
+BIC score = 47.0
+BIC score = 43.0
+BIC score = 23.0
+BIC score = 31.0
+Elapsed initializeForwardEdgesFromEmptyGraph = 9 ms
 1. INSERT X9 --> X3 [] 37.59201233734697  degree = 1 indegree = 1
 2. INSERT X13 --> X6 [] 14.864150540097853  degree = 1 indegree = 1
 3. INSERT X13 --> X7 [] 9.152236528082113  degree = 2 indegree = 0
@@ -1298,88 +885,12 @@ Elapsed initializeForwardEdgesFromEmptyGraph = 17 ms
 10. INSERT X14 --> X16 [] 1.1206829635914914  degree = 3 indegree = 2
 BIC score = -1788.056472558406
 Epoch
-Elapsed 28 ms
-BIC score = -644.1650823698949
-Elapsed 20 ms
-Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.139 sec <<< FAILURE!
-test2(edu.cmu.tetrad.test.TestGFci)  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.search.GFci.search(GFci.java:111)
-	at edu.cmu.tetrad.test.TestGFci.test2(TestGFci.java:147)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testFromGraph(edu.cmu.tetrad.test.TestGFci)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.UnsupportedOperationException
-	at edu.cmu.tetrad.search.GraphScore.localScore(GraphScore.java:66)
-	at edu.cmu.tetrad.search.Fges.scoreDag(Fges.java:1987)
-	at edu.cmu.tetrad.search.Fges.getScore(Fges.java:325)
-	at edu.cmu.tetrad.search.Fges.search(Fges.java:241)
-	at edu.cmu.tetrad.search.GFci.search(GFci.java:111)
-	at edu.cmu.tetrad.test.TestGFci.testFromGraph(TestGFci.java:179)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Elapsed 21 ms
+BIC score = -1009.4542927263462
+Elapsed 37 ms
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 sec
 Running edu.cmu.tetrad.test.TestCellProbabilities
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.cmu.tetrad.test.TestIndTestFisherZ
 true
 true
@@ -1431,17 +942,17 @@ true
 false
 true
 true
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 sec
 Running edu.cmu.tetrad.test.TestSemEstimator
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
 Running edu.cmu.tetrad.test.TestCombinationGenerator
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running edu.cmu.tetrad.test.TestTetradMatrix
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.cmu.tetrad.test.TestDiscreteProbs
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running edu.cmu.tetrad.test.TestSemIm
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec
 Running edu.cmu.tetrad.test.TestDagInPatternIterator
 Graph Nodes:
 X1,X2,X3,X4,X5,X6,X7,X8,X9,X10
@@ -1458,13 +969,13 @@ Graph Edges:
 9. X6 --> X10
 10. X8 --> X10
 
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running edu.cmu.tetrad.test.TestIndTestGSquare
 Loading src/test/resources/determinationtest.dat
 Loading src/test/resources/determinationtest.dat
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec
 Running edu.cmu.tetrad.test.TestSearchGraph
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running edu.cmu.tetrad.test.TestGeneralResamplingTest
 Truth Graph:
 Graph Nodes:
@@ -1516,11 +1027,19 @@ Resampling on the FGES (Fast Greedy Equivalence Search) using Sem BIC Score
 Running Resamplings in Parallel Mode, numberResampling = 5
 thread started ... 
 knowledge being set ... 
+thread started ... 
+knowledge being set ... 
     Zero variance! 0
+    Zero variance! 1
+    Zero variance! 3
+    Zero variance! 0
+    Zero variance! 4
     Zero variance! 1
     Zero variance! 3
     Zero variance! 4
     Zero variance! 5
+    Zero variance! 5
+    Zero variance! 9
     Zero variance! 9
 thread started ... 
 knowledge being set ... 
@@ -1541,178 +1060,170 @@ knowledge being set ...
 thread started ... 
 knowledge being set ... 
     Zero variance! 0
+Elapsed initializeForwardEdgesFromEmptyGraph = 2 ms
     Zero variance! 1
     Zero variance! 3
     Zero variance! 4
     Zero variance! 5
     Zero variance! 9
-thread started ... 
-knowledge being set ... 
-    Zero variance! 0
-    Zero variance! 1
-    Zero variance! 3
-    Zero variance! 4
-    Zero variance! 5
-    Zero variance! 9
+1. INSERT 18 --> 14 [] 991.8035397258091  degree = 1 indegree = 1
 Elapsed initializeForwardEdgesFromEmptyGraph = 4 ms
 1. INSERT 18 --> 14 [] 996.6421890023137  degree = 1 indegree = 1
-Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
-Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
+2. INSERT 10 --> 8 [] 919.9852789682438  degree = 1 indegree = 1
+Elapsed initializeForwardEdgesFromEmptyGraph = 5 ms
 1. INSERT 18 --> 14 [] 992.0502302890311  degree = 1 indegree = 1
-1. INSERT 18 --> 14 [] 991.8035397258091  degree = 1 indegree = 1
 2. INSERT 10 --> 8 [] 940.2942028283371  degree = 1 indegree = 1
+3. INSERT 14 --> 15 [] 777.0785478802584  degree = 2 indegree = 1
+2. INSERT 10 --> 8 [] 934.5571499782486  degree = 1 indegree = 1
+4. INSERT 16 --> 14 [15] 258.0509793249808  degree = 3 indegree = 1
+--- Directing 15 --> 14
+3. INSERT 14 --> 15 [] 780.2415697894035  degree = 2 indegree = 1
+3. INSERT 14 --> 15 [] 784.958746375416  degree = 2 indegree = 1
+Elapsed initializeForwardEdgesFromEmptyGraph = 4 ms
 Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
 1. INSERT 18 --> 14 [] 987.5773875354125  degree = 1 indegree = 1
-Elapsed initializeForwardEdgesFromEmptyGraph = 2 ms
 1. INSERT 18 --> 14 [] 985.7538414001838  degree = 1 indegree = 1
-2. INSERT 10 --> 8 [] 934.5571499782486  degree = 1 indegree = 1
-3. INSERT 14 --> 15 [] 784.958746375416  degree = 2 indegree = 1
-2. INSERT 10 --> 8 [] 919.9852789682438  degree = 1 indegree = 1
-3. INSERT 14 --> 15 [] 780.2415697894035  degree = 2 indegree = 1
-2. INSERT 10 --> 8 [] 942.2959794151718  degree = 1 indegree = 1
-3. INSERT 14 --> 15 [] 777.0785478802584  degree = 2 indegree = 1
-2. INSERT 10 --> 8 [] 932.9874052083198  degree = 1 indegree = 1
-4. INSERT 16 --> 14 [15] 268.79028723796256  degree = 3 indegree = 1
---- Directing 15 --> 14
 4. INSERT 16 --> 14 [15] 251.3543810672872  degree = 3 indegree = 1
 --- Directing 15 --> 14
-4. INSERT 16 --> 14 [15] 258.0509793249808  degree = 3 indegree = 1
-3. INSERT 14 --> 15 [] 773.9877841870878  degree = 2 indegree = 1
+2. INSERT 10 --> 8 [] 942.2959794151718  degree = 1 indegree = 1
+4. INSERT 16 --> 14 [15] 268.79028723796256  degree = 3 indegree = 1
 --- Directing 15 --> 14
-3. INSERT 14 --> 15 [] 779.9589619692183  degree = 2 indegree = 1
 5. INSERT 8 --> 17 [] 245.20848661114178  degree = 3 indegree = 2
+3. INSERT 14 --> 15 [] 779.9589619692183  degree = 2 indegree = 1
+2. INSERT 10 --> 8 [] 932.9874052083198  degree = 1 indegree = 1
 5. INSERT 8 --> 17 [] 254.89578570300273  degree = 3 indegree = 2
-4. INSERT 16 --> 14 [15] 258.5942885569771  degree = 3 indegree = 1
---- Directing 15 --> 14
-5. INSERT 8 --> 17 [] 234.2299754502701  degree = 3 indegree = 2
-4. INSERT 16 --> 14 [15] 258.776917348408  degree = 3 indegree = 1
---- Directing 15 --> 14
-5. INSERT 8 --> 17 [] 243.88686238310834  degree = 3 indegree = 2
-6. INSERT 17 --> 16 [] 207.86461478719067  degree = 3 indegree = 2
 6. INSERT 17 --> 16 [] 199.85410748744926  degree = 3 indegree = 2
-6. INSERT 17 --> 16 [] 194.25902036337413  degree = 3 indegree = 2
-5. INSERT 8 --> 17 [] 250.2663772462704  degree = 3 indegree = 2
-7. INSERT 10 --> 11 [] 182.59831867818775  degree = 3 indegree = 2
+6. INSERT 17 --> 16 [] 207.86461478719067  degree = 3 indegree = 2
+4. INSERT 16 --> 14 [15] 258.776917348408  degree = 3 indegree = 1
 7. INSERT 10 --> 11 [] 181.73884700769372  degree = 3 indegree = 2
-6. INSERT 17 --> 16 [] 198.84313281155207  degree = 3 indegree = 2
-7. INSERT 15 --> 18 [] 167.54337677292443  degree = 3 indegree = 2
-8. INSERT 19 --> 10 [11] 289.26814998541926  degree = 3 indegree = 2
---- Directing 11 --> 10
+--- Directing 15 --> 14
+7. INSERT 10 --> 11 [] 182.59831867818775  degree = 3 indegree = 2
+3. INSERT 14 --> 15 [] 773.9877841870878  degree = 2 indegree = 1
+5. INSERT 8 --> 17 [] 250.2663772462704  degree = 3 indegree = 2
 8. INSERT 19 --> 10 [11] 323.0596886468325  degree = 3 indegree = 2
 --- Directing 11 --> 10
-7. INSERT 16 --> 18 [] 188.7638930231965  degree = 3 indegree = 2
-8. INSERT 10 --> 11 [] 167.3890744137318  degree = 3 indegree = 2
+4. INSERT 16 --> 14 [15] 258.5942885569771  degree = 3 indegree = 1
+--- Directing 15 --> 14
 6. INSERT 17 --> 16 [] 197.53240053823137  degree = 3 indegree = 2
-8. INSERT 10 --> 11 [] 175.5574441332385  degree = 3 indegree = 2
-9. INSERT 13 --> 10 [] 502.2011056424431  degree = 4 indegree = 3
-9. INSERT 13 --> 10 [] 502.33156353104715  degree = 4 indegree = 3
+8. INSERT 19 --> 10 [11] 289.26814998541926  degree = 3 indegree = 2
+--- Directing 11 --> 10
+5. INSERT 8 --> 17 [] 243.88686238310834  degree = 3 indegree = 2
 7. INSERT 10 --> 11 [] 194.13533979699355  degree = 3 indegree = 2
-9. INSERT 19 --> 10 [11] 320.6608410450462  degree = 3 indegree = 2
-10. INSERT 16 --> 18 [] 177.61434700775945  degree = 4 indegree = 3
+9. INSERT 13 --> 10 [] 502.33156353104715  degree = 4 indegree = 3
+9. INSERT 13 --> 10 [] 502.2011056424431  degree = 4 indegree = 3
 10. INSERT 16 --> 12 [] 179.97597008833077  degree = 4 indegree = 3
-9. INSERT 19 --> 10 [11] 312.74484492117506  degree = 3 indegree = 2
+6. INSERT 17 --> 16 [] 198.84313281155207  degree = 3 indegree = 2
+8. INSERT 19 --> 10 [11] 315.83325211930924  degree = 3 indegree = 2
 --- Directing 11 --> 10
---- Directing 11 --> 10
-11. INSERT 16 --> 2 [] 148.2275474224856  degree = 4 indegree = 2
 11. INSERT 16 --> 2 [] 176.18657766588518  degree = 4 indegree = 1
-10. INSERT 13 --> 10 [] 493.5887692758934  degree = 4 indegree = 3
+10. INSERT 16 --> 18 [] 177.61434700775945  degree = 4 indegree = 3
+9. INSERT 13 --> 10 [] 458.8176589243006  degree = 4 indegree = 3
 12. INSERT 16 --> 18 [] 176.04818284128243  degree = 5 indegree = 2
-12. INSERT 16 --> 12 [] 133.35078581510572  degree = 5 indegree = 2
-11. INSERT 16 --> 2 [] 150.72386458479468  degree = 4 indegree = 2
+7. INSERT 16 --> 18 [] 188.7638930231965  degree = 3 indegree = 2
+11. INSERT 16 --> 2 [] 148.2275474224856  degree = 4 indegree = 2
+5. INSERT 8 --> 17 [] 234.2299754502701  degree = 3 indegree = 2
 13. INSERT 19 --> 18 [] 514.2623702225064  degree = 5 indegree = 3
-13. INSERT 11 --> 15 [] 123.12491843244129  degree = 5 indegree = 2
-12. INSERT 16 --> 12 [] 150.38518536091124  degree = 5 indegree = 2
-10. INSERT 13 --> 10 [] 483.0634326979461  degree = 4 indegree = 3
+8. INSERT 10 --> 11 [] 175.5574441332385  degree = 3 indegree = 2
+10. INSERT 15 --> 18 [] 161.66740434678275  degree = 4 indegree = 3
+12. INSERT 16 --> 12 [] 133.35078581510572  degree = 5 indegree = 2
+9. INSERT 19 --> 10 [11] 312.74484492117506  degree = 3 indegree = 2
 14. INSERT 19 --> 8 [] 171.44396110584427  degree = 5 indegree = 3
+13. INSERT 11 --> 15 [] 123.12491843244129  degree = 5 indegree = 2
+6. INSERT 17 --> 16 [] 194.25902036337413  degree = 3 indegree = 2
+--- Directing 11 --> 10
+11. INSERT 16 --> 12 [] 156.0224382128913  degree = 4 indegree = 3
 14. INSERT 17 --> 14 [] 122.81854396957678  degree = 5 indegree = 2
 15. INSERT 11 --> 15 [] 147.2567511476549  degree = 5 indegree = 3
-13. INSERT 19 --> 8 [] 133.98676836624261  degree = 5 indegree = 2
-16. INSERT 19 --> 6 [] 139.70377693198145  degree = 5 indegree = 0
+7. INSERT 15 --> 18 [] 167.54337677292443  degree = 3 indegree = 2
 15. INSERT 19 --> 8 [] 120.77897625568396  degree = 5 indegree = 2
-11. INSERT 16 --> 12 [] 164.6940995829845  degree = 4 indegree = 3
-14. INSERT 11 --> 15 [] 132.38428953599606  degree = 5 indegree = 2
-17. INSERT 11 --> 16 [] 112.29566896853957  degree = 6 indegree = 0
+12. INSERT 15 --> 11 [] 133.56124786322047  degree = 4 indegree = 3
+8. INSERT 10 --> 11 [] 167.3890744137318  degree = 3 indegree = 2
+10. INSERT 13 --> 10 [] 493.5887692758934  degree = 4 indegree = 3
+16. INSERT 19 --> 6 [] 139.70377693198145  degree = 5 indegree = 0
 16. INSERT 19 --> 6 [] 114.58245808950471  degree = 5 indegree = 0
-15. INSERT 19 --> 6 [] 131.9808315967872  degree = 5 indegree = 0
+9. INSERT 19 --> 10 [11] 320.6608410450462  degree = 3 indegree = 2
+--- Directing 11 --> 10
+11. INSERT 16 --> 2 [] 150.72386458479468  degree = 4 indegree = 2
+13. INSERT 16 --> 2 [] 127.9992226335034  degree = 4 indegree = 2
+17. INSERT 11 --> 16 [] 112.29566896853957  degree = 6 indegree = 0
+10. INSERT 13 --> 10 [] 483.0634326979461  degree = 4 indegree = 3
 18. INSERT 17 --> 14 [] 106.01848012199167  degree = 6 indegree = 0
 17. INSERT 11 --> 16 [] 100.96306774616998  degree = 6 indegree = 0
-19. INSERT 19 --> 13 [] 59.28335891695458  degree = 6 indegree = 0
-16. INSERT 11 --> 16 [] 120.93275614111825  degree = 6 indegree = 0
+12. INSERT 16 --> 12 [] 150.38518536091124  degree = 5 indegree = 2
+11. INSERT 16 --> 12 [] 164.6940995829845  degree = 4 indegree = 3
+14. INSERT 19 --> 8 [] 114.2287864218748  degree = 4 indegree = 2
 12. INSERT 16 --> 2 [] 136.3745912201975  degree = 4 indegree = 2
-8. INSERT 19 --> 10 [11] 315.83325211930924  degree = 3 indegree = 2
-17. INSERT 17 --> 14 [] 117.39318714947797  degree = 6 indegree = 0
-20. INSERT 15 --> 19 [13] 204.4314937990359  degree = 6 indegree = 1
---- Directing 13 --> 19
+15. INSERT 19 --> 6 [] 105.4419031449803  degree = 4 indegree = 0
+13. INSERT 19 --> 8 [] 133.98676836624261  degree = 5 indegree = 2
 18. INSERT 7 --> 10 [] 50.07179641752591  degree = 6 indegree = 0
-18. INSERT 19 --> 13 [] 65.55862688743085  degree = 6 indegree = 0
+13. INSERT 19 --> 8 [] 135.17822833607153  degree = 4 indegree = 2
 19. INSERT 6 --> 13 [] 46.23733981366878  degree = 6 indegree = 0
-21. INSERT 7 --> 10 [] 47.66925572585392  degree = 6 indegree = 2
---- Directing 11 --> 10
-19. INSERT 15 --> 19 [13] 209.694001626618  degree = 6 indegree = 1
---- Directing 13 --> 19
+16. INSERT 17 --> 14 [] 92.90235292423687  degree = 4 indegree = 0
+14. INSERT 11 --> 15 [] 127.1682770894017  degree = 4 indegree = 2
 20. INSERT 11 --> 6 [13] 29.262077043091796  degree = 6 indegree = 0
 --- Directing 13 --> 6
-22. INSERT 11 --> 17 [] 21.73233896075025  degree = 6 indegree = 2
-20. INSERT 7 --> 10 [] 49.198705627897716  degree = 6 indegree = 2
-21. INSERT 7 --> 6 [] 33.47698294005819  degree = 6 indegree = 1
-13. INSERT 19 --> 8 [] 135.17822833607153  degree = 4 indegree = 2
-23. INSERT 15 --> 17 [] 85.76996866925933  degree = 6 indegree = 2
-22. INSERT 7 --> 12 [] 7.614253726786771  degree = 6 indegree = 1
-21. INSERT 11 --> 17 [] 15.054693043407166  degree = 6 indegree = 2
-22. INSERT 15 --> 17 [] 98.32360628735884  degree = 6 indegree = 2
-24. INSERT 7 --> 17 [] 12.018600153499435  degree = 6 indegree = 2
-14. INSERT 11 --> 15 [] 127.1682770894017  degree = 4 indegree = 2
-25. INSERT 7 --> 11 [] 5.308448409590794  degree = 6 indegree = 2
-23. INSERT 7 --> 17 [] 23.906903520426837  degree = 6 indegree = 2
-15. INSERT 19 --> 6 [] 121.2258884311218  degree = 4 indegree = 0
-BIC score = NaN
-processing time of resampling for a thread was: 0.032 sec
-26. INSERT 11 --> 19 [] 3.9789084873412897  degree = 7 indegree = 3
-24. INSERT 7 --> 6 [] 6.675316019965141  degree = 6 indegree = 2
-9. INSERT 13 --> 10 [] 458.8176589243006  degree = 4 indegree = 3
-25. INSERT 7 --> 12 [] 1.6922179240171893  degree = 6 indegree = 2
-10. INSERT 15 --> 18 [] 161.66740434678275  degree = 4 indegree = 3
-26. INSERT 11 --> 19 [] 0.07082681676665104  degree = 6 indegree = 3
-11. INSERT 16 --> 12 [] 156.0224382128913  degree = 4 indegree = 3
-16. INSERT 11 --> 16 [] 114.89693949319373  degree = 5 indegree = 0
-BIC score = NaN
-processing time of resampling for a thread was: 0.04 sec
-BIC score = NaN
-processing time of resampling for a thread was: 0.036 sec
-12. INSERT 15 --> 11 [] 133.56124786322047  degree = 4 indegree = 3
-17. INSERT 17 --> 14 [] 104.89288206893946  degree = 5 indegree = 0
-13. INSERT 16 --> 2 [] 127.9992226335034  degree = 4 indegree = 2
-18. INSERT 7 --> 10 [] 90.68209780266912  degree = 5 indegree = 0
-14. INSERT 19 --> 8 [] 114.2287864218748  degree = 4 indegree = 2
-19. INSERT 19 --> 13 [] 64.3223359305177  degree = 5 indegree = 0
-15. INSERT 19 --> 6 [] 105.4419031449803  degree = 4 indegree = 0
-20. INSERT 15 --> 19 [13] 189.8871685416034  degree = 5 indegree = 1
-16. INSERT 17 --> 14 [] 92.90235292423687  degree = 4 indegree = 0
---- Directing 13 --> 19
 17. INSERT 19 --> 16 [] 80.02213504366716  degree = 5 indegree = 0
-21. INSERT 7 --> 2 [] 28.097983866048853  degree = 5 indegree = 2
+15. INSERT 19 --> 6 [] 121.2258884311218  degree = 4 indegree = 0
+21. INSERT 7 --> 6 [] 33.47698294005819  degree = 6 indegree = 1
+19. INSERT 19 --> 13 [] 59.28335891695458  degree = 6 indegree = 0
+16. INSERT 11 --> 16 [] 114.89693949319373  degree = 5 indegree = 0
 18. INSERT 13 --> 16 [] 603.2291477974899  degree = 6 indegree = 0
-22. INSERT 11 --> 17 [] 27.505541573779706  degree = 5 indegree = 2
+20. INSERT 15 --> 19 [13] 204.4314937990359  degree = 6 indegree = 1
+17. INSERT 17 --> 14 [] 104.89288206893946  degree = 5 indegree = 0
+22. INSERT 7 --> 12 [] 7.614253726786771  degree = 6 indegree = 1
+--- Directing 13 --> 19
+14. INSERT 11 --> 15 [] 132.38428953599606  degree = 5 indegree = 2
+18. INSERT 7 --> 10 [] 90.68209780266912  degree = 5 indegree = 0
 19. INSERT 7 --> 10 [] 72.485900938069  degree = 6 indegree = 0
-23. INSERT 15 --> 17 [] 113.95852176658997  degree = 5 indegree = 2
+21. INSERT 7 --> 10 [] 47.66925572585392  degree = 6 indegree = 2
+19. INSERT 19 --> 13 [] 64.3223359305177  degree = 5 indegree = 0
+BIC score = NaN
+22. INSERT 11 --> 17 [] 21.73233896075025  degree = 6 indegree = 2
+15. INSERT 19 --> 6 [] 131.9808315967872  degree = 5 indegree = 0
+processing time of resampling for a thread was: 0.038 sec
+20. INSERT 15 --> 19 [13] 189.8871685416034  degree = 5 indegree = 1
+--- Directing 13 --> 19
 20. INSERT 13 --> 19 [] 65.3593637597558  degree = 6 indegree = 1
+23. INSERT 15 --> 17 [] 85.76996866925933  degree = 6 indegree = 2
+16. INSERT 11 --> 16 [] 120.93275614111825  degree = 6 indegree = 0
+21. INSERT 7 --> 2 [] 28.097983866048853  degree = 5 indegree = 2
+22. INSERT 11 --> 17 [] 27.505541573779706  degree = 5 indegree = 2
+24. INSERT 7 --> 17 [] 12.018600153499435  degree = 6 indegree = 2
+23. INSERT 15 --> 17 [] 113.95852176658997  degree = 5 indegree = 2
 21. INSERT 15 --> 19 [13] 167.1064427520934  degree = 6 indegree = 1
 --- Directing 13 --> 19
+25. INSERT 7 --> 11 [] 5.308448409590794  degree = 6 indegree = 2
+17. INSERT 17 --> 14 [] 117.39318714947797  degree = 6 indegree = 0
 24. INSERT 11 --> 19 [] 16.722940581064005  degree = 6 indegree = 3
-22. INSERT 11 --> 17 [] 13.087920896872735  degree = 6 indegree = 2
-23. INSERT 15 --> 17 [] 97.28687506611746  degree = 6 indegree = 2
+26. INSERT 11 --> 19 [] 3.9789084873412897  degree = 7 indegree = 3
 25. INSERT 7 --> 6 [] 9.017913323914453  degree = 6 indegree = 3
-24. INSERT 7 --> 17 [] 17.578945699247797  degree = 6 indegree = 2
-25. INSERT 11 --> 19 [] 7.821906072985559  degree = 7 indegree = 3
+18. INSERT 19 --> 13 [] 65.55862688743085  degree = 6 indegree = 0
+22. INSERT 11 --> 17 [] 13.087920896872735  degree = 6 indegree = 2
 BIC score = NaN
-processing time of resampling for a thread was: 0.052 sec
+processing time of resampling for a thread was: 0.056 sec
+19. INSERT 15 --> 19 [13] 209.694001626618  degree = 6 indegree = 1
+BIC score = NaN
+--- Directing 13 --> 19
+processing time of resampling for a thread was: 0.058 sec
+23. INSERT 15 --> 17 [] 97.28687506611746  degree = 6 indegree = 2
+20. INSERT 7 --> 10 [] 49.198705627897716  degree = 6 indegree = 2
+24. INSERT 7 --> 17 [] 17.578945699247797  degree = 6 indegree = 2
+21. INSERT 11 --> 17 [] 15.054693043407166  degree = 6 indegree = 2
+25. INSERT 11 --> 19 [] 7.821906072985559  degree = 7 indegree = 3
+22. INSERT 15 --> 17 [] 98.32360628735884  degree = 6 indegree = 2
 26. INSERT 7 --> 6 [] 7.500909925139929  degree = 7 indegree = 3
 27. INSERT 7 --> 12 [] 2.5620441552574675  degree = 7 indegree = 3
 28. INSERT 7 --> 2 [] 0.14577001129794098  degree = 7 indegree = 3
+23. INSERT 7 --> 17 [] 23.906903520426837  degree = 6 indegree = 2
 BIC score = NaN
-processing time of resampling for a thread was: 0.052 sec
+processing time of resampling for a thread was: 0.057 sec
+24. INSERT 7 --> 6 [] 6.675316019965141  degree = 6 indegree = 2
+25. INSERT 7 --> 12 [] 1.6922179240171893  degree = 6 indegree = 2
+26. INSERT 11 --> 19 [] 0.07082681676665104  degree = 6 indegree = 3
+BIC score = NaN
+processing time of resampling for a thread was: 0.062 sec
 Resampling number is : 5
-Processing time of total resamplings : 1.008 sec
+Processing time of total resamplings : 1.01 sec
 PAGs: 5
 Ensemble: Highest
 
@@ -1761,21 +1272,20 @@ Graph Edges:
 9. 14 --> 18
 10. 15 --> 14
 11. 15 --> 17
-12. 15 --> 19
-13. 16 --> 12
-14. 16 --> 14
-15. 16 --> 18
+12. 15 --> 18
+13. 15 --> 19
+14. 16 --> 12
+15. 16 --> 14
 16. 16 --> 2
 17. 17 --> 14
 18. 17 --> 16
 19. 19 --> 10
-20. 19 --> 18
-21. 19 --> 6
-22. 19 --> 8
-23. 7 --> 10
-24. 7 --- 11
-25. 7 --> 17
-26. 8 --> 17
+20. 19 --> 6
+21. 19 --> 8
+22. 7 --> 10
+23. 7 --> 2
+24. 7 --> 6
+25. 8 --> 17
 
 
 Resampling Search Result (2):
@@ -1802,48 +1312,16 @@ Graph Edges:
 17. 17 --> 14
 18. 17 --> 16
 19. 19 --> 10
-20. 19 --> 6
-21. 19 --> 8
-22. 7 --> 10
-23. 7 --> 12
-24. 7 --> 17
-25. 7 --> 6
+20. 19 --> 18
+21. 19 --> 6
+22. 19 --> 8
+23. 7 --> 10
+24. 7 --- 11
+25. 7 --> 17
 26. 8 --> 17
 
 
 Resampling Search Result (3):
-Graph Nodes:
-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
-
-Graph Edges:
-1. 10 --> 8
-2. 11 --> 10
-3. 11 --- 15
-4. 11 --> 16
-5. 11 --> 17
-6. 11 --> 19
-7. 13 --> 10
-8. 13 --> 19
-9. 14 --> 18
-10. 15 --> 14
-11. 15 --> 17
-12. 15 --> 18
-13. 15 --> 19
-14. 16 --> 12
-15. 16 --> 14
-16. 16 --> 2
-17. 17 --> 14
-18. 17 --> 16
-19. 19 --> 10
-20. 19 --> 6
-21. 19 --> 8
-22. 7 --> 10
-23. 7 --> 2
-24. 7 --> 6
-25. 8 --> 17
-
-
-Resampling Search Result (4):
 Graph Nodes:
 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
 
@@ -1876,6 +1354,39 @@ Graph Edges:
 26. 7 --> 2
 27. 7 --> 6
 28. 8 --> 17
+
+
+Resampling Search Result (4):
+Graph Nodes:
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+
+Graph Edges:
+1. 10 --> 8
+2. 11 --> 10
+3. 11 --- 15
+4. 11 --> 16
+5. 11 --> 17
+6. 11 --> 19
+7. 13 --> 10
+8. 13 --> 19
+9. 14 --> 18
+10. 15 --> 14
+11. 15 --> 17
+12. 15 --> 19
+13. 16 --> 12
+14. 16 --> 14
+15. 16 --> 18
+16. 16 --> 2
+17. 17 --> 14
+18. 17 --> 16
+19. 19 --> 10
+20. 19 --> 6
+21. 19 --> 8
+22. 7 --> 10
+23. 7 --> 12
+24. 7 --> 17
+25. 7 --> 6
+26. 8 --> 17
 
 
 Final result: 11 --> 10 : 1.0
@@ -1970,13 +1481,6 @@ Resampling on the GFCI (Greedy Fast Causal Inference) using Fisher Z test, alpha
 Running Resamplings in Parallel Mode, numberResampling = 5
 thread started ... 
 knowledge being set ... 
-thread started ... 
-knowledge being set ... 
-Zero variance! 0
-Zero variance! 1
-Zero variance! 2
-Zero variance! 4
-Zero variance! 5
 Zero variance! 0
 Zero variance! 1
 Zero variance! 2
@@ -1987,23 +1491,13 @@ knowledge being set ...
     Zero variance! 0
     Zero variance! 1
     Zero variance! 2
-Zero variance! 0
     Zero variance! 4
+    Zero variance! 5
+Zero variance! 0
 Zero variance! 1
 Zero variance! 2
 Zero variance! 4
-    Zero variance! 5
 Zero variance! 5
-    Zero variance! 0
-    Zero variance! 1
-    Zero variance! 2
-    Zero variance! 4
-    Zero variance! 5
-    Zero variance! 0
-    Zero variance! 1
-    Zero variance! 2
-    Zero variance! 4
-    Zero variance! 5
 thread started ... 
 knowledge being set ... 
 Zero variance! 0
@@ -2011,153 +1505,141 @@ Zero variance! 1
 Zero variance! 2
 Zero variance! 4
 Zero variance! 5
+    Zero variance! 0
+    Zero variance! 1
+    Zero variance! 2
+    Zero variance! 4
+    Zero variance! 5
     Zero variance! 0
     Zero variance! 1
     Zero variance! 2
     Zero variance! 4
     Zero variance! 5
 Elapsed initializeForwardEdgesFromEmptyGraph = 1 ms
-Elapsed initializeForwardEdgesFromEmptyGraph = 1 ms
-1. INSERT 18 --> 17 [] 330.7488804823008  degree = 1 indegree = 1
-1. INSERT 19 --> 13 [] 328.67888824392935  degree = 1 indegree = 1
-Elapsed initializeForwardEdgesFromEmptyGraph = 2 ms
 1. INSERT 19 --> 13 [] 343.0537608139746  degree = 1 indegree = 1
-2. INSERT 18 --> 17 [] 321.4283652265799  degree = 1 indegree = 1
-3. INSERT 18 --> 3 [] 247.67931867537072  degree = 2 indegree = 0
+2. INSERT 18 --> 17 [] 338.0352513991943  degree = 1 indegree = 1
+Elapsed initializeForwardEdgesFromEmptyGraph = 1 ms
+3. INSERT 18 --> 19 [] 254.34515607205307  degree = 2 indegree = 1
+1. INSERT 19 --> 13 [] 328.67888824392935  degree = 1 indegree = 1
+thread started ... 
+knowledge being set ... 
 Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
-1. INSERT 19 --> 13 [] 335.33331805295165  degree = 1 indegree = 1
+2. INSERT 18 --> 17 [] 321.4283652265799  degree = 1 indegree = 1
+4. INSERT 17 --> 3 [] 227.8128206629832  degree = 2 indegree = 0
+1. INSERT 18 --> 17 [] 330.7488804823008  degree = 1 indegree = 1
+Zero variance! 0
+Zero variance! 1
+Zero variance! 2
+Zero variance! 4
+Zero variance! 5
+3. INSERT 18 --> 3 [] 247.67931867537072  degree = 2 indegree = 0
+5. INSERT 15 --> 12 [] 223.1322123799041  degree = 2 indegree = 0
+    Zero variance! 0
+    Zero variance! 1
+    Zero variance! 2
+    Zero variance! 4
+    Zero variance! 5
+6. INSERT 12 --> 9 [] 219.84207681933304  degree = 2 indegree = 0
 4. INSERT 18 --> 19 [] 243.3717783168744  degree = 3 indegree = 1
+7. INSERT 13 --> 11 [] 213.79024620934757  degree = 2 indegree = 0
 5. INSERT 15 --> 12 [] 207.65477758229736  degree = 3 indegree = 0
-2. INSERT 18 --> 17 [] 324.64998570819307  degree = 1 indegree = 1
+thread started ... 
 6. INSERT 12 --> 9 [] 202.71197214046197  degree = 3 indegree = 0
+Elapsed initializeForwardEdgesFromEmptyGraph = 1 ms
+1. INSERT 19 --> 13 [] 333.69895986702863  degree = 1 indegree = 1
+knowledge being set ... 
+8. INSERT 15 --> 17 [] 157.1544468803586  degree = 3 indegree = 0
 7. INSERT 15 --> 18 [19] 187.25754061663375  degree = 4 indegree = 0
 --- Directing 19 --> 18
-3. INSERT 18 --> 19 [] 248.12793226034452  degree = 2 indegree = 1
-8. INSERT 13 --> 11 [] 180.95352527900104  degree = 4 indegree = 2
-4. INSERT 15 --> 12 [] 205.38962034627957  degree = 2 indegree = 0
-9. INSERT 12 --> 17 [] 150.31763508548545  degree = 4 indegree = 2
-2. INSERT 18 --> 17 [] 338.0352513991943  degree = 1 indegree = 1
-10. INSERT 18 --> 16 [] 138.8739539647532  degree = 5 indegree = 2
-thread started ... 
-knowledge being set ... 
-3. INSERT 18 --> 19 [] 254.34515607205307  degree = 2 indegree = 1
-11. INSERT 15 --> 19 [] 99.30099893886995  degree = 5 indegree = 1
+2. INSERT 19 --> 13 [] 320.34709537288427  degree = 1 indegree = 1
+2. INSERT 18 --> 17 [] 321.4469936307112  degree = 1 indegree = 1
 Zero variance! 0
 Zero variance! 1
 Zero variance! 2
 Zero variance! 4
-4. INSERT 17 --> 3 [] 227.8128206629832  degree = 2 indegree = 0
 Zero variance! 5
-5. INSERT 15 --> 12 [] 223.1322123799041  degree = 2 indegree = 0
-2. INSERT 19 --> 13 [] 320.34709537288427  degree = 1 indegree = 1
-6. INSERT 12 --> 9 [] 219.84207681933304  degree = 2 indegree = 0
-12. INSERT 10 --> 18 [15] 97.7069908533123  degree = 6 indegree = 0
---- Directing 15 --> 18
+8. INSERT 13 --> 11 [] 180.95352527900104  degree = 4 indegree = 2
+9. INSERT 13 --> 15 [17] 189.37943683396225  degree = 3 indegree = 0
+--- Directing 17 --> 15
+3. INSERT 18 --> 19 [] 240.67657323743762  degree = 2 indegree = 1
     Zero variance! 0
     Zero variance! 1
     Zero variance! 2
     Zero variance! 4
     Zero variance! 5
-7. INSERT 13 --> 11 [] 213.79024620934757  degree = 2 indegree = 0
-13. INSERT 7 --> 13 [] 73.68450137468675  degree = 6 indegree = 2
+9. INSERT 12 --> 17 [] 150.31763508548545  degree = 4 indegree = 2
+10. INSERT 18 --> 16 [] 140.4407593816768  degree = 3 indegree = 0
+4. INSERT 12 --> 9 [] 216.33962622455533  degree = 2 indegree = 0
+10. INSERT 18 --> 16 [] 138.8739539647532  degree = 5 indegree = 2
+11. INSERT 11 --> 10 [] 99.93828839455875  degree = 3 indegree = 0
+5. INSERT 12 --> 15 [] 213.26367488063056  degree = 2 indegree = 0
+11. INSERT 15 --> 19 [] 99.30099893886995  degree = 5 indegree = 1
+12. INSERT 15 --> 10 [11] 102.40743756686487  degree = 4 indegree = 0
+--- Directing 11 --> 10
 3. INSERT 19 --> 18 [] 247.02896452126978  degree = 2 indegree = 0
-14. INSERT 10 --> 11 [] 60.45512214073028  degree = 6 indegree = 2
-8. INSERT 15 --> 17 [] 157.1544468803586  degree = 3 indegree = 0
-15. INSERT 19 --> 11 [] 42.78050176617707  degree = 6 indegree = 2
-Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
-1. INSERT 19 --> 13 [] 333.69895986702863  degree = 1 indegree = 1
-9. INSERT 13 --> 15 [17] 189.37943683396225  degree = 3 indegree = 0
---- Directing 17 --> 15
-16. INSERT 10 --> 8 [] 34.95089952511847  degree = 6 indegree = 2
+6. INSERT 17 --> 3 [] 209.818904028551  degree = 2 indegree = 0
+7. INSERT 13 --> 11 [] 175.90827508664205  degree = 2 indegree = 0
+13. INSERT 7 --> 13 [19] 52.88952619994839  degree = 4 indegree = 0
+--- Directing 19 --> 13
+12. INSERT 10 --> 18 [15] 97.7069908533123  degree = 6 indegree = 0
+--- Directing 15 --> 18
+14. INSERT 17 --> 19 [] 46.296455310470506  degree = 4 indegree = 1
+8. INSERT 12 --> 17 [18] 164.6702674312369  degree = 3 indegree = 0
+--- Directing 18 --> 17
 4. INSERT 18 --> 3 [] 241.44719811520912  degree = 3 indegree = 0
-2. INSERT 18 --> 17 [] 321.4469936307112  degree = 1 indegree = 1
+13. INSERT 7 --> 13 [] 73.68450137468675  degree = 6 indegree = 2
+15. INSERT 8 --> 19 [17] 44.29355314480439  degree = 4 indegree = 1
+--- Directing 17 --> 19
+9. INSERT 15 --> 18 [19] 156.90122225553282  degree = 3 indegree = 0
+--- Directing 19 --> 18
+14. INSERT 10 --> 11 [] 60.45512214073028  degree = 6 indegree = 2
+16. INSERT 12 --> 18 [] 30.15542914844868  degree = 4 indegree = 2
+10. INSERT 18 --> 16 [] 131.375971346309  degree = 4 indegree = 2
+15. INSERT 19 --> 11 [] 42.78050176617707  degree = 6 indegree = 2
+17. INSERT 7 --> 3 [17] 29.10366984552682  degree = 4 indegree = 2
+--- Directing 17 --> 3
+11. INSERT 15 --> 19 [] 105.72203978183909  degree = 4 indegree = 1
+18. INSERT 8 --> 11 [] 27.73731121401622  degree = 4 indegree = 2
+16. INSERT 10 --> 8 [] 34.95089952511847  degree = 6 indegree = 2
+19. INSERT 7 --> 12 [] 24.736289285155127  degree = 4 indegree = 2
+Elapsed initializeForwardEdgesFromEmptyGraph = 3 ms
+1. INSERT 19 --> 13 [] 335.33331805295165  degree = 1 indegree = 1
 17. INSERT 9 --> 10 [8] 55.609705550867844  degree = 6 indegree = 2
 --- Directing 8 --> 10
 5. INSERT 12 --> 9 [] 217.51047388271735  degree = 3 indegree = 0
-18. INSERT 8 --> 9 [12] 34.32759103395912  degree = 6 indegree = 2
---- Directing 12 --> 9
-10. INSERT 18 --> 16 [] 140.4407593816768  degree = 3 indegree = 0
-3. INSERT 18 --> 19 [] 240.67657323743762  degree = 2 indegree = 1
-19. INSERT 7 --> 17 [] 23.287680244382084  degree = 6 indegree = 2
-11. INSERT 11 --> 10 [] 99.93828839455875  degree = 3 indegree = 0
-20. INSERT 7 --> 15 [12] 17.770297247280705  degree = 6 indegree = 2
---- Directing 12 --> 15
-6. INSERT 12 --> 15 [] 215.23921510037985  degree = 3 indegree = 0
-12. INSERT 15 --> 10 [11] 102.40743756686487  degree = 4 indegree = 0
---- Directing 11 --> 10
-5. INSERT 12 --> 9 [] 195.7182535829428  degree = 2 indegree = 0
-21. INSERT 8 --> 15 [] 4.941097932093616  degree = 6 indegree = 2
-4. INSERT 12 --> 9 [] 216.33962622455533  degree = 2 indegree = 0
-6. INSERT 17 --> 3 [] 184.68322795122066  degree = 2 indegree = 0
-7. INSERT 13 --> 11 [] 162.8319728072472  degree = 3 indegree = 0
-13. INSERT 7 --> 13 [19] 52.88952619994839  degree = 4 indegree = 0
---- Directing 19 --> 13
-22. INSERT 7 --> 9 [] 4.648713250588887  degree = 6 indegree = 2
-5. INSERT 12 --> 15 [] 213.26367488063056  degree = 2 indegree = 0
-23. INSERT 7 --> 3 [] 2.625063149514176  degree = 6 indegree = 2
-8. INSERT 15 --> 17 [] 155.44942574593577  degree = 3 indegree = 0
-14. INSERT 17 --> 19 [] 46.296455310470506  degree = 4 indegree = 1
-7. INSERT 13 --> 11 [] 165.72235005737764  degree = 2 indegree = 0
-9. INSERT 13 --> 15 [17] 162.47078281357642  degree = 3 indegree = 0
---- Directing 17 --> 15
-6. INSERT 17 --> 3 [] 209.818904028551  degree = 2 indegree = 0
-8. INSERT 17 --> 15 [] 156.16828803242961  degree = 3 indegree = 0
-15. INSERT 8 --> 19 [17] 44.29355314480439  degree = 4 indegree = 1
---- Directing 17 --> 19
-7. INSERT 13 --> 11 [] 175.90827508664205  degree = 2 indegree = 0
-9. INSERT 13 --> 15 [17] 182.2029864985297  degree = 3 indegree = 0
---- Directing 17 --> 15
-10. INSERT 18 --> 16 [] 126.50712063971878  degree = 4 indegree = 0
-8. INSERT 12 --> 17 [18] 164.6702674312369  degree = 3 indegree = 0
---- Directing 18 --> 17
-16. INSERT 12 --> 18 [] 30.15542914844868  degree = 4 indegree = 2
-17. INSERT 7 --> 3 [17] 29.10366984552682  degree = 4 indegree = 2
---- Directing 17 --> 3
-9. INSERT 15 --> 18 [19] 156.90122225553282  degree = 3 indegree = 0
---- Directing 19 --> 18
-11. INSERT 8 --> 11 [13] 65.84387448088158  degree = 4 indegree = 0
---- Directing 13 --> 11
-10. INSERT 18 --> 16 [] 129.4608961507108  degree = 3 indegree = 0
-18. INSERT 8 --> 11 [] 27.73731121401622  degree = 4 indegree = 2
-BIC score = NaN
-19. INSERT 7 --> 12 [] 24.736289285155127  degree = 4 indegree = 2
-11. INSERT 11 --> 10 [] 73.73688514389949  degree = 3 indegree = 0
 20. INSERT 8 --> 9 [] 9.305482539819128  degree = 4 indegree = 2
-21. INSERT 3 --> 9 [] 9.063813065928453  degree = 4 indegree = 2
-12. INSERT 15 --> 10 [11] 100.70598686348623  degree = 4 indegree = 0
---- Directing 11 --> 10
-12. INSERT 7 --> 19 [13] 59.29659780189468  degree = 4 indegree = 1
---- Directing 13 --> 19
-Orienting edge (Away from collider): 15 --> 18
-Orienting edge (Away from collider): 18 --> 3
-Orienting edge (Away from collider): 18 --> 16
-Orienting edge (Away from collider): 18 --> 17
-13. INSERT 7 --> 13 [19] 66.19260065429467  degree = 4 indegree = 0
---- Directing 19 --> 13
-10. INSERT 18 --> 16 [] 131.375971346309  degree = 4 indegree = 2
-Epoch
-22. INSERT 8 --> 15 [] 0.5305359707567625  degree = 5 indegree = 2
-Epoch
-processing time of resampling for a thread was: 0.044 sec
-13. INSERT 11 --> 10 [] 48.74120536881543  degree = 4 indegree = 2
-14. INSERT 8 --> 17 [18] 49.836408169838165  degree = 4 indegree = 0
---- Directing 18 --> 17
-23. INSERT 8 --> 12 [] 0.09354143483945165  degree = 5 indegree = 2
-11. INSERT 15 --> 19 [] 105.72203978183909  degree = 4 indegree = 1
-14. INSERT 15 --> 10 [] 116.61039283791659  degree = 4 indegree = 2
-15. INSERT 17 --> 19 [] 49.087016759704326  degree = 5 indegree = 1
-22. DELETE 12-->9 H = [] NaYX = [] diff = [] (21.514564024073707) 
-21. DELETE 19-->18 H = [] NaYX = [] diff = [] (16.010782896923924) 
-15. INSERT 19 --> 17 [] 39.29858880231076  degree = 4 indegree = 2
-16. INSERT 7 --> 12 [] 37.17815779010694  degree = 5 indegree = 2
 12. INSERT 10 --> 18 [15] 76.37079730103413  degree = 5 indegree = 0
 --- Directing 15 --> 18
-17. INSERT 7 --> 3 [] 14.247608633454401  degree = 5 indegree = 2
-16. INSERT 8 --> 17 [] 31.951671399338334  degree = 4 indegree = 2
-18. INSERT 8 --> 12 [] 7.8969911445270675  degree = 5 indegree = 2
-BIC score = NaN
+21. INSERT 3 --> 9 [] 9.063813065928453  degree = 4 indegree = 2
+18. INSERT 8 --> 9 [12] 34.32759103395912  degree = 6 indegree = 2
+--- Directing 12 --> 9
+6. INSERT 12 --> 15 [] 215.23921510037985  degree = 3 indegree = 0
+22. INSERT 8 --> 15 [] 0.5305359707567625  degree = 5 indegree = 2
 13. INSERT 7 --> 13 [] 67.31905910815446  degree = 5 indegree = 2
-19. INSERT 8 --> 11 [] 6.382632812431957  degree = 5 indegree = 2
+2. INSERT 18 --> 17 [] 324.64998570819307  degree = 1 indegree = 1
+14. INSERT 10 --> 11 [] 47.30312382341893  degree = 5 indegree = 2
+19. INSERT 7 --> 17 [] 23.287680244382084  degree = 6 indegree = 2
+7. INSERT 13 --> 11 [] 162.8319728072472  degree = 3 indegree = 0
+23. INSERT 8 --> 12 [] 0.09354143483945165  degree = 5 indegree = 2
+15. INSERT 7 --> 12 [15] 32.03152315797527  degree = 5 indegree = 2
+--- Directing 15 --> 12
+20. INSERT 7 --> 15 [12] 17.770297247280705  degree = 6 indegree = 2
+--- Directing 12 --> 15
+22. DELETE 12-->9 H = [] NaYX = [] diff = [] (21.514564024073707) 
+16. INSERT 10 --> 8 [] 18.06339324139242  degree = 5 indegree = 2
+21. INSERT 8 --> 15 [] 4.941097932093616  degree = 6 indegree = 2
+21. DELETE 19-->18 H = [] NaYX = [] diff = [] (16.010782896923924) 
+17. INSERT 9 --> 10 [8] 74.28431164094087  degree = 5 indegree = 2
+--- Directing 8 --> 10
+22. INSERT 7 --> 9 [] 4.648713250588887  degree = 6 indegree = 2
+8. INSERT 15 --> 17 [] 155.44942574593577  degree = 3 indegree = 0
+18. INSERT 7 --> 3 [] 12.294715987333038  degree = 5 indegree = 2
+BIC score = NaN
+19. INSERT 18 --> 11 [] 8.778116611988754  degree = 6 indegree = 2
+23. INSERT 7 --> 3 [] 2.625063149514176  degree = 6 indegree = 2
+20. INSERT 8 --> 12 [] 5.384078209005441  degree = 6 indegree = 2
+9. INSERT 13 --> 15 [17] 162.47078281357642  degree = 3 indegree = 0
+--- Directing 17 --> 15
 Orienting edge (Away from collider): 3 --> 9
 Orienting edge (Away from collider): 11 --> 10
 Orienting edge (Away from collider): 13 --> 11
@@ -2165,50 +1647,68 @@ Orienting edge (Away from collider): 13 --> 15
 Orienting edge (Away from collider): 15 --> 10
 Orienting edge (Away from collider): 18 --> 16
 Orienting edge (Away from collider): 19 --> 13
-14. INSERT 10 --> 11 [] 47.30312382341893  degree = 5 indegree = 2
 Epoch
-20. INSERT 3 --> 11 [] 24.125436772859697  degree = 5 indegree = 2
 Epoch
-processing time of resampling for a thread was: 0.053 sec
-15. INSERT 7 --> 12 [15] 32.03152315797527  degree = 5 indegree = 2
-21. INSERT 8 --> 15 [] 3.8830428705481133  degree = 5 indegree = 2
---- Directing 15 --> 12
-17. INSERT 12 --> 18 [] 30.719260042193216  degree = 5 indegree = 2
-16. INSERT 10 --> 8 [] 18.06339324139242  degree = 5 indegree = 2
-20. DELETE 13-->11 H = [] NaYX = [] diff = [] (16.02332352218611) 
-17. INSERT 9 --> 10 [8] 74.28431164094087  degree = 5 indegree = 2
-18. INSERT 11 --> 15 [] 27.01106778576575  degree = 5 indegree = 2
---- Directing 8 --> 10
-18. INSERT 7 --> 3 [] 12.294715987333038  degree = 5 indegree = 2
-19. INSERT 7 --> 12 [] 16.851974920662702  degree = 5 indegree = 2
-BIC score = NaN
-20. INSERT 7 --> 3 [] 9.851238422799316  degree = 5 indegree = 2
-19. INSERT 18 --> 11 [] 8.778116611988754  degree = 6 indegree = 2
-Orienting edge (Away from collider): 3 --> 11
-Orienting edge (Away from collider): 11 --> 10
-Orienting edge (Away from collider): 13 --> 15
-Orienting edge (Away from collider): 15 --> 10
-Epoch
-20. INSERT 8 --> 12 [] 5.384078209005441  degree = 6 indegree = 2
-Epoch
-21. INSERT 13 --> 17 [] 6.740126237636222  degree = 5 indegree = 2
-processing time of resampling for a thread was: 0.066 sec
+processing time of resampling for a thread was: 0.041 sec
+10. INSERT 18 --> 16 [] 126.50712063971878  degree = 4 indegree = 0
 21. INSERT 8 --> 9 [] 2.0085317907370097  degree = 6 indegree = 2
-22. INSERT 13 --> 18 [] 1.9617657023903448  degree = 6 indegree = 4
+11. INSERT 8 --> 11 [13] 65.84387448088158  degree = 4 indegree = 0
+--- Directing 13 --> 11
+BIC score = NaN
+12. INSERT 7 --> 19 [13] 59.29659780189468  degree = 4 indegree = 1
+--- Directing 13 --> 19
 20. DELETE 13-->11 H = [] NaYX = [] diff = [] (24.950444001051245) 
-23. INSERT 8 --> 9 [] 1.3403263980447058  degree = 6 indegree = 4
-24. INSERT 3 --> 9 [] 17.044050435596066  degree = 6 indegree = 4
-23. DELETE 12-->9 H = [] NaYX = [] diff = [] (17.7869202132229) 
-22. DELETE 19-->18 H = [] NaYX = [] diff = [] (2.491755973754856) 
+13. INSERT 11 --> 10 [] 48.74120536881543  degree = 4 indegree = 2
+14. INSERT 15 --> 10 [] 116.61039283791659  degree = 4 indegree = 2
+3. INSERT 18 --> 19 [] 248.12793226034452  degree = 2 indegree = 1
+15. INSERT 19 --> 17 [] 39.29858880231076  degree = 4 indegree = 2
+4. INSERT 15 --> 12 [] 205.38962034627957  degree = 2 indegree = 0
 BIC score = NaN
-21. DELETE 13-->18 H = [] NaYX = [] diff = [] (8.024686500994843) 
+5. INSERT 12 --> 9 [] 195.7182535829428  degree = 2 indegree = 0
+16. INSERT 8 --> 17 [] 31.951671399338334  degree = 4 indegree = 2
+Orienting edge (Away from collider): 15 --> 18
+6. INSERT 17 --> 3 [] 184.68322795122066  degree = 2 indegree = 0
+17. INSERT 12 --> 18 [] 30.719260042193216  degree = 5 indegree = 2
+Orienting edge (Away from collider): 18 --> 3
+Orienting edge (Away from collider): 18 --> 16
+Orienting edge (Away from collider): 18 --> 17
 Orienting edge (Away from collider): 12 --> 17
-BIC score = NaN
 Orienting edge (Away from collider): 17 --> 3
+7. INSERT 13 --> 11 [] 165.72235005737764  degree = 2 indegree = 0
 Orienting edge (Away from collider): 19 --> 13
 Epoch
 Epoch
-processing time of resampling for a thread was: 0.066 sec
+Epoch
+18. INSERT 11 --> 15 [] 27.01106778576575  degree = 5 indegree = 2
+8. INSERT 17 --> 15 [] 156.16828803242961  degree = 3 indegree = 0
+processing time of resampling for a thread was: 0.043 sec
+Epoch
+processing time of resampling for a thread was: 0.051 sec
+19. INSERT 7 --> 12 [] 16.851974920662702  degree = 5 indegree = 2
+9. INSERT 13 --> 15 [17] 182.2029864985297  degree = 3 indegree = 0
+--- Directing 17 --> 15
+20. INSERT 7 --> 3 [] 9.851238422799316  degree = 5 indegree = 2
+21. INSERT 13 --> 17 [] 6.740126237636222  degree = 5 indegree = 2
+10. INSERT 18 --> 16 [] 129.4608961507108  degree = 3 indegree = 0
+22. INSERT 13 --> 18 [] 1.9617657023903448  degree = 6 indegree = 4
+11. INSERT 11 --> 10 [] 73.73688514389949  degree = 3 indegree = 0
+12. INSERT 15 --> 10 [11] 100.70598686348623  degree = 4 indegree = 0
+--- Directing 11 --> 10
+23. INSERT 8 --> 9 [] 1.3403263980447058  degree = 6 indegree = 4
+24. INSERT 3 --> 9 [] 17.044050435596066  degree = 6 indegree = 4
+13. INSERT 7 --> 13 [19] 66.19260065429467  degree = 4 indegree = 0
+--- Directing 19 --> 13
+14. INSERT 8 --> 17 [18] 49.836408169838165  degree = 4 indegree = 0
+--- Directing 18 --> 17
+23. DELETE 12-->9 H = [] NaYX = [] diff = [] (17.7869202132229) 
+15. INSERT 17 --> 19 [] 49.087016759704326  degree = 5 indegree = 1
+22. DELETE 19-->18 H = [] NaYX = [] diff = [] (2.491755973754856) 
+16. INSERT 7 --> 12 [] 37.17815779010694  degree = 5 indegree = 2
+21. DELETE 13-->18 H = [] NaYX = [] diff = [] (8.024686500994843) 
+17. INSERT 7 --> 3 [] 14.247608633454401  degree = 5 indegree = 2
+18. INSERT 8 --> 12 [] 7.8969911445270675  degree = 5 indegree = 2
+19. INSERT 8 --> 11 [] 6.382632812431957  degree = 5 indegree = 2
+BIC score = NaN
 Orienting edge (Away from collider): 3 --> 9
 Orienting edge (Away from collider): 12 --> 18
 Orienting edge (Away from collider): 17 --> 18
@@ -2216,36 +1716,24 @@ Orienting edge (Away from collider): 18 --> 3
 Orienting edge (Away from collider): 18 --> 16
 Epoch
 Epoch
-processing time of resampling for a thread was: 0.083 sec
+processing time of resampling for a thread was: 0.064 sec
+20. INSERT 3 --> 11 [] 24.125436772859697  degree = 5 indegree = 2
+21. INSERT 8 --> 15 [] 3.8830428705481133  degree = 5 indegree = 2
+20. DELETE 13-->11 H = [] NaYX = [] diff = [] (16.02332352218611) 
+BIC score = NaN
+Orienting edge (Away from collider): 3 --> 11
+Orienting edge (Away from collider): 11 --> 10
+Orienting edge (Away from collider): 13 --> 15
+Orienting edge (Away from collider): 15 --> 10
+Epoch
+Epoch
+processing time of resampling for a thread was: 0.064 sec
 Resampling number is : 5
-Processing time of total resamplings : 1.007 sec
+Processing time of total resamplings : 1.016 sec
 PAGs: 5
 Ensemble: Highest
 
 Resampling Search Result (0):
-Graph Nodes:
-0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
-
-Graph Edges:
-1. 15 --> 18 dd nl
-2. 18 --> 16 dd nl
-3. 18 --> 17 dd nl
-4. 18 --> 3 dd nl
-5. 10 o-> 18
-6. 11 o-o 10
-7. 12 o-> 15
-8. 12 o-> 17
-9. 12 o-> 9
-10. 13 o-o 7
-11. 19 o-> 18
-12. 7 o-> 15
-13. 7 o-> 17
-14. 7 o-> 3
-15. 7 o-> 9
-16. 8 o-> 15
-
-
-Resampling Search Result (1):
 Graph Nodes:
 0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
 
@@ -2270,27 +1758,7 @@ Graph Edges:
 18. 8 o-> 9
 
 
-Resampling Search Result (2):
-Graph Nodes:
-0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
-
-Graph Edges:
-1. 11 --> 10 dd nl
-2. 13 --> 15 dd nl
-3. 15 --> 10 dd nl
-4. 3 --> 11 dd nl
-5. 12 o-o 7
-6. 16 o-o 18
-7. 17 o-> 3
-8. 19 o-> 13
-9. 19 o-o 18
-10. 7 o-> 13
-11. 7 o-> 3
-12. 8 o-> 11
-13. 9 o-o 12
-
-
-Resampling Search Result (3):
+Resampling Search Result (1):
 Graph Nodes:
 0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
 
@@ -2310,7 +1778,30 @@ Graph Edges:
 13. 9 o-o 8
 
 
-Resampling Search Result (4):
+Resampling Search Result (2):
+Graph Nodes:
+0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
+
+Graph Edges:
+1. 15 --> 18 dd nl
+2. 18 --> 16 dd nl
+3. 18 --> 17 dd nl
+4. 18 --> 3 dd nl
+5. 10 o-> 18
+6. 11 o-o 10
+7. 12 o-> 15
+8. 12 o-> 17
+9. 12 o-> 9
+10. 13 o-o 7
+11. 19 o-> 18
+12. 7 o-> 15
+13. 7 o-> 17
+14. 7 o-> 3
+15. 7 o-> 9
+16. 8 o-> 15
+
+
+Resampling Search Result (3):
 Graph Nodes:
 0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
 
@@ -2329,6 +1820,26 @@ Graph Edges:
 12. 7 o-> 3
 13. 8 o-> 17
 14. 8 o-> 9
+
+
+Resampling Search Result (4):
+Graph Nodes:
+0,1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19
+
+Graph Edges:
+1. 11 --> 10 dd nl
+2. 13 --> 15 dd nl
+3. 15 --> 10 dd nl
+4. 3 --> 11 dd nl
+5. 12 o-o 7
+6. 16 o-o 18
+7. 17 o-> 3
+8. 19 o-> 13
+9. 19 o-o 18
+10. 7 o-> 13
+11. 7 o-> 3
+12. 8 o-> 11
+13. 9 o-o 12
 
 
 Final result: 10 o-o 11 : 0.6
@@ -2357,10 +1868,10 @@ Graph Edges:
 8. 7 o-> 12 [12 <-o 7]:0.4000;[12 o-o 7]:0.4000;[no edge]:0.2000;
 9. 8 o-> 11 [11 <-o 8]:0.4000;[11 o-o 8]:0.2000;[no edge]:0.4000;
 10. 8 o-> 9 [8 o-> 9]:0.4000;[8 o-o 9]:0.2000;[no edge]:0.4000;
-11. 17 o-> 18 [17 o-> 18]:0.2000;[17 <-- 18 dd nl]:0.2000;[17 <-o 18]:0.2000;[17 --> 18 dd nl]:0.2000;[no edge]:0.2000;
+11. 17 o-> 18 [17 o-> 18]:0.2000;[17 <-o 18]:0.2000;[17 <-- 18 dd nl]:0.2000;[17 --> 18 dd nl]:0.2000;[no edge]:0.2000;
 
 
-probDistribution finished in 15 ms
+probDistribution finished in 31 ms
 ============================
 Adjacency Confusion Matrix
 ============================
@@ -2389,30 +1900,30 @@ Truth: ---	0	0	0	0	0	0	0	0
 Accuracy: 0.6862745098039216
 Precision: 0.0
 Recall: 0.0
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 2.081 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 2.116 sec
 Running edu.cmu.tetrad.test.TestSessionNode
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.cmu.tetrad.test.TestCpc
 B --- D because it was forbidden by background knowledge.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running edu.cmu.tetrad.test.TestRicf
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
 Running edu.cmu.tetrad.test.TestCovarianceMatrix
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestGraphUtils
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
 Running edu.cmu.tetrad.test.TestTransform
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestDeltaTetradTest
 i = 0
 i = 1
 i = 2
 i = 3
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec
 Running edu.cmu.tetrad.test.TestGraph
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.cmu.tetrad.test.TestCptInvariantUpdater
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running edu.cmu.tetrad.test.TestBayesBicScorer
 lDiff = 1849.688247723083
 nDiff = 5985
@@ -2420,55 +1931,84 @@ bic = -18663.806444431513
 chisq = 3699.376495446166
 dof = 5985.0
 p = 1.0
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
 Running edu.cmu.tetrad.test.TestChoiceGenerator
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
 Running edu.cmu.tetrad.test.TestSem
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 
 Results :
 
-Tests in error: 
-  testExplore3(edu.cmu.tetrad.test.TestFges)
-  testExplore4(edu.cmu.tetrad.test.TestFges)
-  testExplore5(edu.cmu.tetrad.test.TestFges)
-  testFromGraphSimpleFges(edu.cmu.tetrad.test.TestFges)
-  testFgesMbFromGraph(edu.cmu.tetrad.test.TestFges)
-  testFromGraph(edu.cmu.tetrad.test.TestFges)
-  testFromGraphSimpleFgesMb(edu.cmu.tetrad.test.TestFges)
-  testSearch1(edu.cmu.tetrad.test.TestFges)
-  testSearch2(edu.cmu.tetrad.test.TestFges)
-  testSearch3(edu.cmu.tetrad.test.TestFges)
-  testSearch4(edu.cmu.tetrad.test.TestFges)
-  testSearch5(edu.cmu.tetrad.test.TestFges)
-  test2(edu.cmu.tetrad.test.TestGFci)
-  testFromGraph(edu.cmu.tetrad.test.TestGFci)
+Tests run: 332, Failures: 0, Errors: 0, Skipped: 10
 
-Tests run: 332, Failures: 0, Errors: 14, Skipped: 10
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building tetrad-gui 6.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 688 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-gui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-gui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-gui ---
+[INFO] Surefire report directory: /root/workspace/cmu-phil/tetrad/457199411/tetrad-gui/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.cmu.tetradapp.test.TestWatchedProcessDialogs
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Running edu.cmu.tetradapp.test.TestDisplayNode
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec
+Running edu.cmu.tetradapp.test.TestCyclicity
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Running edu.cmu.tetradapp.test.TestIndependenceFacts
+Looking up X4 _||_ X2 | X1, X2 in [X2 _||_ X3, X2 _||_ X4 | X1, X2, X2 _||_ X4 | X1, X3, X5, X2 _||_ X4 | X3, X2 _||_ X4 | X3, X6]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running edu.cmu.tetradapp.test.TestVersion
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running edu.cmu.tetradapp.test.TestLogisticRegression
+Graph Nodes:
+X1,X2,X3,X4,X5
+
+Graph Edges:
+1. X1 --> X4
+2. X2 --> X4
+3. X3 --> X4
+4. X3 --> X5
+
+edu.cmu.tetrad.regression.LogisticRegression@675d3402
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 sec
+Running edu.cmu.tetradapp.test.TestDataWrapper
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec
+Running edu.cmu.tetradapp.test.TestGraphWorkbench
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Tetrad Project ..................................... SUCCESS [  0.004 s]
-[INFO] tetrad-lib ......................................... FAILURE [ 42.741 s]
-[INFO] tetrad-gui ......................................... SKIPPED
+[INFO] Tetrad Project ..................................... SUCCESS [  0.005 s]
+[INFO] tetrad-lib ......................................... SUCCESS [ 49.332 s]
+[INFO] tetrad-gui ......................................... SUCCESS [  2.152 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 43.590 s
-[INFO] Finished at: 2018-11-20T00:17:31+01:00
-[INFO] Final Memory: 34M/852M
+[INFO] Total time: 52.137 s
+[INFO] Finished at: 2018-11-20T00:19:32+01:00
+[INFO] Final Memory: 34M/866M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project tetrad-lib: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/cmu-phil/tetrad/457199411/tetrad-lib/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :tetrad-lib
