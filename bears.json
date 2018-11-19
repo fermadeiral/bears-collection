@@ -1,0 +1,258 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "cmu-phil/tetrad",
+    "githubId": 45061433,
+    "url": "https://github.com/cmu-phil/tetrad",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 938
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 457199411,
+      "url": "http://travis-ci.org/cmu-phil/tetrad/builds/457199411",
+      "date": "Nov 19, 2018 11:32:09 PM"
+    },
+    "fixerBuild": {
+      "id": 457214996,
+      "url": "http://travis-ci.org/cmu-phil/tetrad/builds/457214996",
+      "date": "Nov 20, 2018 12:13:12 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 20, 2018 12:13:37 AM",
+    "reproductionDateEnd": "Nov 20, 2018 12:19:43 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 256046944,
+      "totalMemory": 552075264
+    },
+    "totalDuration": 360,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 167,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          164
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          47
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/cmu-phil/tetrad/457199411/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 12,
+      "numberDeleted": 15
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/cmu-phil/tetrad/457199411/tetrad-lib",
+    "overallMetrics": {
+      "numberRunning": 322,
+      "numberPassing": 308,
+      "numberFailing": 0,
+      "numberErroring": 14,
+      "numberSkipping": 10,
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true,
+          "occurrences": 14
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "numberRunning": 18,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 12,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestGFci",
+        "numberRunning": 5,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testFromGraphSimpleFgesMb",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testSearch3",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestGFci",
+        "testMethod": "test2",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestGFci",
+        "testMethod": "testFromGraph",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testExplore4",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testExplore5",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testExplore3",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testSearch2",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testFromGraphSimpleFges",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testFgesMbFromGraph",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testSearch1",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testSearch4",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testFromGraph",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "edu.cmu.tetrad.test.TestFges",
+        "testMethod": "testSearch5",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 1596,
+    "numberTestFiles": 134,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "development",
+      "sha": "b895d6b9a00615879fdb73c270a7734a5d959294",
+      "url": "http://github.com/cmu-phil/tetrad/commit/b895d6b9a00615879fdb73c270a7734a5d959294",
+      "date": "Nov 19, 2018 11:28:38 PM"
+    },
+    "fixerBuild": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "development",
+      "sha": "51316d0f6b4933813c5d8f8c533bfc1da65afb44",
+      "url": "http://github.com/cmu-phil/tetrad/commit/51316d0f6b4933813c5d8f8c533bfc1da65afb44",
+      "date": "Nov 20, 2018 12:09:10 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "adding.score.to.fges",
+      "sha": "1a86bf72efbeb1a6f9527ab43db5bca563ff22b4",
+      "url": "https://github.com/cmu-phil/tetrad/commit/1a86bf72efbeb1a6f9527ab43db5bca563ff22b4",
+      "date": "Nov 20, 2018 12:09:10 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "development",
+      "sha": "c583ad02444676765300a02736e9b23aa860135f",
+      "url": "https://github.com/cmu-phil/tetrad/commit/c583ad02444676765300a02736e9b23aa860135f",
+      "date": "Nov 12, 2018 4:23:26 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "adding.score.to.fges",
+      "sha": "1a86bf72efbeb1a6f9527ab43db5bca563ff22b4",
+      "url": "https://github.com/cmu-phil/tetrad/commit/1a86bf72efbeb1a6f9527ab43db5bca563ff22b4",
+      "date": "Nov 20, 2018 12:09:10 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "cmu-phil/tetrad",
+      "branchName": "development",
+      "sha": "c583ad02444676765300a02736e9b23aa860135f",
+      "url": "https://github.com/cmu-phil/tetrad/commit/c583ad02444676765300a02736e9b23aa860135f",
+      "date": "Nov 12, 2018 4:23:26 PM"
+    }
+  },
+  "type": "failing_passing"
+}
