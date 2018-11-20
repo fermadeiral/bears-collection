@@ -24,1147 +24,1115 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ iri ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom (0 B at 0.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 52.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 64.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 972.5 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.iota.iri.conf.ConfigTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.511 s - in com.iota.iri.conf.ConfigTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.493 s - in com.iota.iri.conf.ConfigTest
 [INFO] Running com.iota.iri.conf.ConfigFactoryTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in com.iota.iri.conf.ConfigFactoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in com.iota.iri.conf.ConfigFactoryTest
 [INFO] Running com.iota.iri.IXITest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.294 s - in com.iota.iri.IXITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.524 s - in com.iota.iri.IXITest
 [INFO] Running com.iota.iri.BundleValidatorTest
-11/20 14:05:36.636 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:05:36.939 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:05:50.013 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.696 s - in com.iota.iri.BundleValidatorTest
+11/20 14:09:10.817 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:11.143 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:24.425 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.826 s - in com.iota.iri.BundleValidatorTest
 [INFO] Running com.iota.iri.utils.BoundedHashSetTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.iota.iri.utils.BoundedHashSetTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.iota.iri.utils.BoundedHashSetTest
 [INFO] Running com.iota.iri.utils.collections.impl.BoundedSetWrapperTest
 [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.iota.iri.utils.collections.impl.BoundedSetWrapperTest
 [INFO] Running com.iota.iri.utils.TestSerializer
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.iota.iri.utils.TestSerializer
 [INFO] Running com.iota.iri.crypto.KerlTest
-0 iteration: -9746933481265062208101665264807351388976855408321742196468991898852133942749563331931181344287209572424171288845004
-1000 iteration: 1002788499892659365038870616052813533576655319757847217816043175736878516215513746077406699041391573525261418940167
-2000 iteration: -3033103453570520482577030266673495242186068906926808893026167943545690123148804485176881836017254616288335404972929
-3000 iteration: -1311151322900080381419611351483240383567893242841679086999288678110890391889431036861395276864313888484141447773673
-4000 iteration: -3148145006714384003837436447110105408757409824186626156805940978218329834656742086497874739773031074290175725937051
-5000 iteration: 9637810754015140161130238718667802431451789680262469961470938515723086059535000338608177469728146369225149309690479
-6000 iteration: -10049147939404816852346819878663589976366112283157739150224339845137486599587173176303521511744685278889122480484715
-7000 iteration: -7843778539231019304894128387593066152417676924605235654730423326534779489200579843162419545609124405679105860181925
-8000 iteration: -3454476061807024223973626576277689145009156030585788114382032090801082529629743343579477467897367996231421104067929
-9000 iteration: -12332423162189260618310460447380936798573232393077318509980584737400979398617781000750218291614480516215734648928485
-0 iteration: 3435747221691049855041627725122035520889457410556693351151392337720114386415746559578463119026600300367761946583357
-1000 iteration: -6084977172001799024411519875287658514525294607015916006438631352501868647778431781500608552721702383024047342964824
-2000 iteration: -13479430335483213637894311602977419201722700308620801717687244435565465074296847522149223557782969899382130919114277
-3000 iteration: -14725788825780234926180090646987726461600484897142392619244187213668531779966217161102100682921767529811276667476423
-4000 iteration: -6385380102800843348386958366805381174234440595127406134742521776746546551148542868657887646924087305544470933277479
-5000 iteration: 15319597372208082553335312315427872950758481581567677543833630721027106673038040780683852260826811148039119589523072
-6000 iteration: 14487241385878064922931645343966879569523309129355657856136430385239270971678274647119501489734212180042035610972417
-7000 iteration: -4733555896625954162521291690469286393454122996050446431003867556935843176300192968386842999190521681879103497989477
-8000 iteration: 314769983124976018051013603579071924070845127105460543729125210559675931112176640145304818381589362672905717233598
-9000 iteration: -5714496702852332711597808165122047333833588046026430621217545627148670858196189907681731356724883758150685450369849
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.288 s - in com.iota.iri.crypto.KerlTest
+0 iteration: -6829087349752186439345642017925348924285526354335729210858675585175421130454815821323634060963649878116686288868156
+1000 iteration: 11627307490809499929114566199145088134175163498125577548132109738270471951335463495149137287203118262810947235093060
+2000 iteration: 6860810212743085768832973666973464260656547390870988874708556796529807927068166752794583876908372228297702667389529
+3000 iteration: 7024092786580130303650676052618614584202727058271053100329947970940037958400715172256971437286273189301671728211052
+4000 iteration: 8260732658680322610015455383985224496476377035190447007836406621110508085431281216656174479240521737697524789546866
+5000 iteration: -14198786463075892047299885082112810995840993125511471645329574131669362831716507320729049213612138817701191725160620
+6000 iteration: -14387826646570161319969245633810022367886590909125197203448069896409971568829689961695654389371821638520456666396309
+7000 iteration: 12868846685706458273237199718473969985851203625098001395938474575394688481746418393935124761935464665293962650224828
+8000 iteration: 7361680272312075888625520194685766674996887912505617333097965936752638079505179570109581244227585703111195614962061
+9000 iteration: 6469934129552746253979109091102558401760616062537505425723423294937812804290543215967544951444144914694929085336778
+0 iteration: -19286290651556170964451798735731090421923524819255147948714875049020318669932385566566986931856177693601794320055931
+1000 iteration: -10208743533427416655329540772700274587299568090211693132985905716179205838320968289757303540649063246751978221860233
+2000 iteration: 7669395921250748526833913135590129461739576565323796276917490555073396632494672952215191250928873527004214357642082
+3000 iteration: -6219623358576907149370611214025308447985843534836799297314208243516491692945004828805716809813991550311049137509663
+4000 iteration: -13979808936690988812264743298622773451371113683530834160627181348641347966115926478075534953426446367442335974306322
+5000 iteration: -16387135148024731215802686941633761001378351674668555096771801127440705441663720740136319184089510148580359354158692
+6000 iteration: -15175020397300940432189857946357229736321827072760698641162640611999279746516513050908205904668224453316406362471763
+7000 iteration: -11190223092935745749229795133518905828972152455594731741429388870129289395129637390167905589711687986667346920197484
+8000 iteration: -5930645119963397136745011067146797218770933657423787789506831118579052697092593369193430562663572283453079271077291
+9000 iteration: -315054293920040991465989364479946718962856569289104730010399782815385845297710886074288833200343422262510448671278
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.87 s - in com.iota.iri.crypto.KerlTest
 [INFO] Running com.iota.iri.crypto.CurlTest
-610783557
-11009104
-55
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.884 s - in com.iota.iri.crypto.CurlTest
+615356578
+10892791
+56
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.886 s - in com.iota.iri.crypto.CurlTest
 [INFO] Running com.iota.iri.crypto.PearlDiverTest
-[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.155 s - in com.iota.iri.crypto.PearlDiverTest
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.158 s - in com.iota.iri.crypto.PearlDiverTest
 [INFO] Running com.iota.iri.crypto.ISSTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.167 s - in com.iota.iri.crypto.ISSTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.131 s - in com.iota.iri.crypto.ISSTest
 [INFO] Running com.iota.iri.SnapshotTest
-11/20 14:06:06.618 [main] INFO  com.iota.iri.Snapshot - Skipping negative value for address: ESRQPWWIECDGDDZEHGJNMEVJNSVOSMECPPVRPEVRZFVIZYNNXZNTOTJOZNGCZNQVSPXBXTYUJUOXYASLS: -100
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.076 s - in com.iota.iri.SnapshotTest
+11/20 14:09:41.104 [main] INFO  com.iota.iri.Snapshot - Skipping negative value for address: ESRQPWWIECDGDDZEHGJNMEVJNSVOSMECPPVRPEVRZFVIZYNNXZNTOTJOZNGCZNQVSPXBXTYUJUOXYASLS: -100
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.614 s - in com.iota.iri.SnapshotTest
 [INFO] Running com.iota.iri.storage.rocksDB.RocksDBPersistenceProviderTest
-11/20 14:06:06.662 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:06.878 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:06.880 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Deleting: Transaction entries
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s - in com.iota.iri.storage.rocksDB.RocksDBPersistenceProviderTest
+11/20 14:09:41.156 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:41.375 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:41.376 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Deleting: Transaction entries
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 s - in com.iota.iri.storage.rocksDB.RocksDBPersistenceProviderTest
 [INFO] Running com.iota.iri.storage.TangleTest
-11/20 14:06:07.072 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:07.695 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:07.886 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:07.890 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:08.131 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:08.323 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:08.327 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:08.590 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:08.815 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.743 s - in com.iota.iri.storage.TangleTest
+11/20 14:09:41.530 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:41.763 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:41.986 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:41.991 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:42.259 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:42.526 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:42.530 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:43.019 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:43.283 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 s - in com.iota.iri.storage.TangleTest
 [INFO] Running com.iota.iri.network.UDPNeighborTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in com.iota.iri.network.UDPNeighborTest
-[ERROR] differentIpWhenMatchesThenFalse(com.iota.iri.network.UDPNeighborTest)  Time elapsed: 0.052 s  <<< ERROR!
-java.lang.NullPointerException
-	at com.iota.iri.network.UDPNeighborTest.differentIpWhenMatchesThenFalse(UDPNeighborTest.java:27)
-
-[ERROR] sameIpWhenMatchesThenTrue(com.iota.iri.network.UDPNeighborTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected match
-	at com.iota.iri.network.UDPNeighborTest.sameIpWhenMatchesThenTrue(UDPNeighborTest.java:18)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.iota.iri.network.UDPNeighborTest
 [INFO] Running com.iota.iri.controllers.BundleViewModelTest
-11/20 14:06:08.884 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:09.144 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:09.145 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:09.151 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:09.399 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:09.399 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:09.403 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:09.644 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:09.645 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:09.649 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:09.893 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:09.894 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:09.899 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:10.134 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:10.135 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.253 s - in com.iota.iri.controllers.BundleViewModelTest
+11/20 14:09:43.309 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:43.622 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:43.623 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:43.626 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:43.818 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:43.819 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:43.822 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:43.989 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:43.989 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:43.992 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:44.162 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:44.163 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:44.166 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:44.328 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:44.329 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.019 s - in com.iota.iri.controllers.BundleViewModelTest
 [INFO] Running com.iota.iri.controllers.TipsViewModelTest
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 s - in com.iota.iri.controllers.TipsViewModelTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 s - in com.iota.iri.controllers.TipsViewModelTest
 [INFO] Running com.iota.iri.controllers.TransactionRequesterTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.378 s - in com.iota.iri.controllers.TransactionRequesterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.194 s - in com.iota.iri.controllers.TransactionRequesterTest
 [INFO] Running com.iota.iri.controllers.TagViewModelTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.iota.iri.controllers.TagViewModelTest
 [INFO] Running com.iota.iri.controllers.TransactionViewModelTest
-11/20 14:06:13.051 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:13.332 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:14.822 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.776 s - in com.iota.iri.controllers.TransactionViewModelTest
+11/20 14:09:48.033 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:48.188 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:49.451 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.413 s - in com.iota.iri.controllers.TransactionViewModelTest
 [INFO] Running com.iota.iri.controllers.MilestoneViewModelTest
-11/20 14:06:14.830 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:15.058 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:15.061 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:15.064 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:15.285 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:15.287 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:15.290 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:15.518 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:15.519 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:15.523 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:16.114 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:16.116 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:16.120 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:16.389 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:16.390 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:16.394 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:16.651 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:16.654 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:16.659 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:16.891 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:16.892 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:16.896 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:17.152 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:17.154 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:17.157 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:17.395 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:17.396 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:17.400 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:17.639 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:17.640 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:17.645 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:17.880 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:17.881 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:17.885 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:18.106 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:18.107 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:18.111 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:18.341 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:18.342 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:18.345 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:18.601 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:18.602 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:18.605 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:18.857 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:18.859 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:06:18.865 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:19.133 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:19.134 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.302 s - in com.iota.iri.controllers.MilestoneViewModelTest
+11/20 14:09:49.459 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:49.628 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:49.631 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:49.633 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:50.178 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:50.181 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:50.186 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:50.379 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:50.381 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:50.385 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:50.585 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:50.587 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:50.591 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:50.774 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:50.775 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:50.780 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:50.958 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:50.959 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:50.962 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:51.148 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:51.149 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:51.153 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:51.337 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:51.338 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:51.341 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:51.515 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:51.516 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:51.520 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:51.682 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:51.683 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:51.687 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:51.854 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:51.855 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:51.858 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:52.031 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:52.031 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:52.034 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:52.189 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:52.189 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:52.192 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:52.356 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:52.357 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:52.360 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:52.533 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:52.534 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:09:52.540 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:52.714 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:52.716 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.254 s - in com.iota.iri.controllers.MilestoneViewModelTest
 [INFO] Running com.iota.iri.TransactionValidatorTest
-11/20 14:06:19.362 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:19.635 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:20.314 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.172 s - in com.iota.iri.TransactionValidatorTest
+11/20 14:09:52.965 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:53.149 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:53.810 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.085 s - in com.iota.iri.TransactionValidatorTest
 [INFO] Running com.iota.iri.service.tipselection.impl.EntryPointSelectorImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s - in com.iota.iri.service.tipselection.impl.EntryPointSelectorImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in com.iota.iri.service.tipselection.impl.EntryPointSelectorImplTest
 [INFO] Running com.iota.iri.service.tipselection.impl.RatingOneTest
-11/20 14:06:20.928 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:21.183 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:21.191 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 s - in com.iota.iri.service.tipselection.impl.RatingOneTest
+11/20 14:09:54.492 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:54.685 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:09:54.694 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s - in com.iota.iri.service.tipselection.impl.RatingOneTest
 [INFO] Running com.iota.iri.service.tipselection.impl.WalkValidatorImplTest
-11/20 14:06:21.402 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:21.695 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:30.799 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of reaching a tx below the allowed snapshot index 85
-11/20 14:06:30.800 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: KNKVLTHOJBAECFVO9LMWPFNPCFUVCVMRYDBEZWXXCJBFNOHYVVAR9AJCVWZVLUSPPLZAEZXUYVWLLYUB9 is below max depth
-11/20 14:06:30.802 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: K9EUASNEWKIABGHJNLOIWRZUGSFXROPZFNFVD9RBDAGIUVQBFBEBALJYZXXJQNULEAX9SYGCJT9YFNBDB is not solid
-11/20 14:06:30.803 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: XACEZHULEL9SPHKQREUAJBSVXXEHLWCASBODQKUWBFRRHARBANGZVZLRVQOHMWTNHLQMKI9STTBMJBLC9 is missing in db
-11/20 14:06:30.806 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: TAJQHUWGEFRXXINALQX9WHM9JUMPOUCSQNBQQUUQIUSSPLFRASNENCDPXSPFTFPLXNASXBEMZAWAXHWVV not a tail
-11/20 14:06:30.809 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: TUVMLTBVKRVKTFFV9PJXTGMCGPJQHIAHNIXGFBRCPPJSHEDUGJ9SVRIGBSRPXIANTFDALPYX9FTYVUJMQ is not solid
-11/20 14:06:41.029 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of exceeding max threshold of 20000 analyzed transactions
-11/20 14:06:41.029 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: PUGFMMQWHNTGXSJFUGLIFSWBM9TLCHYNMPMPWGXHGTPCXHMDZCQTENZJOU9VQYMVASFHNTWRTBZCOZDR9 is below max depth
-11/20 14:06:41.033 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of reaching a tx below the allowed snapshot index 85
-11/20 14:06:41.034 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: RCBBBZAQMZCLVAHQJFXIPF9LSWMAKYQJWE9PYPNWHLLCE9NJAGKLPZYAT9CMIXCNYAMFNJZPJTTXWKRYP is below max depth
-11/20 14:06:41.036 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: HGOUSJFFP99YHXEUCDSPGGZAUQJCFONLRFOEMLOVSNJIYCPT9IAVTAATPQMTYESKEELKHWM9GKVHHDSKM is not solid
-11/20 14:06:52.101 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of exceeding max threshold of 20000 analyzed transactions
-11/20 14:06:52.101 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: UWTRDTQPOZHRM9DVMXGCLUDIAVDPQFRPFADVQJBVCIFV9Q9OUMYGZSJMPPWJPRSDWHXVDRRZDCCXPDCLZ is below max depth
-11/20 14:06:52.106 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.947 s - in com.iota.iri.service.tipselection.impl.WalkValidatorImplTest
+11/20 14:09:54.940 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:09:55.112 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:04.133 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of reaching a tx below the allowed snapshot index 85
+11/20 14:10:04.134 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: O9IA9DFHHYTGGSOSPLYBKEUXXNOHWJNPHFSAEMBKYVICHEV9QJYIGJGCZURHSWDFBKKGCMDBXDHSURAZE is below max depth
+11/20 14:10:04.135 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: BRNBVNZSCAWZXNEESGLKCSSLR9FSZCABIYJFYLLQCMZHYISYWUJUZPXOTEJHYSEWTLCNJWJUMHLXGEL9F is not solid
+11/20 14:10:04.137 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: LBZZDNV9GTHDBDQAJF9XEFOWLIFDWREGKT9PHHWAWYCAOXOPXUFQTUYPUOITZGIOVLCWALMTXEPD9RFDK is missing in db
+11/20 14:10:04.138 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: SBVDPJRQDG99LAPWCJUWRQKRVIGKQTPAZNZD9X9NGGPQSARXZQWEBXJHOXUDUQMETOKPGCF9RUOFWFHHI not a tail
+11/20 14:10:04.140 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: WRHCGXSTQLSVUBYRMHWFWDKVAVGJJGHBEFCLPHTWZVRKSRLAVYUHLHRAATUZWYOENTYAUIVQXN9ZAQATJ is not solid
+11/20 14:10:14.623 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of exceeding max threshold of 20000 analyzed transactions
+11/20 14:10:14.624 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: TGKGSHOFUXRGEDXAEGLLPMRNPZOCOGFQZULLJRG9VJRXJLIOCO9ZRSUETMFXSHOOFJWMLFSBB9VHR9CNR is below max depth
+11/20 14:10:14.627 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of reaching a tx below the allowed snapshot index 85
+11/20 14:10:14.627 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: VCNQBJGMKFZKBXIMADPU9FHFAFSWCE9QBHVAVFYDSBBOZFRXZKYDMYPYFODSLSCDAEYJYFVUWYNAICMDJ is below max depth
+11/20 14:10:14.629 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: OEZHVEVKLRXFFORKGSGLFIRHL9WSXFFYQKJUBPRFKODVPFUCBEHZYVBKUBAULEVTBOVKVCYRBOYMQZHVX is not solid
+11/20 14:10:26.524 [main] DEBUG c.i.i.s.tipselection.WalkValidator - failed below max depth because of exceeding max threshold of 20000 analyzed transactions
+11/20 14:10:26.524 [main] DEBUG c.i.i.s.tipselection.WalkValidator - Validation failed: AGQMDCFKGGJMVEIPBVK9ANKKFBFBOQRPZBPDIYITMVDHPEUZMWRVJ9PHGHWQC9XS99GLOUNZAE9ZNL9MZ is below max depth
+11/20 14:10:26.528 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.866 s - in com.iota.iri.service.tipselection.impl.WalkValidatorImplTest
 [INFO] Running com.iota.iri.service.tipselection.impl.WalkerAlphaTest
-11/20 14:06:52.294 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:52.654 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:52.668 [main] DEBUG c.i.iri.service.tipselection.Walker - 5 tails traversed to find tip
-11/20 14:06:52.670 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: FQMUHDOAJYCJFNQKCKCKLNWMGQUJBZVWMWXRYANVNADLWJIJCVOXZEPBTWYJMOMOVGFJLJGGDRFFEAWL9
-11/20 14:06:52.673 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.674 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.675 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.676 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.676 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.677 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.678 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.679 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.679 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.680 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.681 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.682 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.682 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.683 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.684 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.685 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.685 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.686 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.687 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.688 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.688 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.689 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.690 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.691 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.691 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.692 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.693 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.693 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.694 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.695 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.699 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.700 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.701 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.702 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.703 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.703 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.703 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.704 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.705 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.705 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.706 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.707 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.709 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.710 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.711 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.712 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.713 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.713 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.714 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.715 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.716 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.717 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.717 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.718 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.719 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.719 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.720 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.720 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.721 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.721 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.722 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.722 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.723 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.723 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.724 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.724 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.725 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.725 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.726 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.727 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.727 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.728 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.728 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.729 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.729 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.730 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.730 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.731 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.731 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.732 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.732 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.733 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.733 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.734 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.734 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.735 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.735 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.736 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.736 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.737 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.750 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.751 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.751 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.751 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.752 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.752 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.752 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.753 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.753 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.753 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.754 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - OK9TPMBFFJHDFNZTKXQZFVXLVLAVIWHNCVWYHUVAGZR9THTJTULZXNNJOYQOYHPTBGCSA9UAVXAJNSYQZ : 9
-11/20 14:06:52.755 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - RTHEJM9NRZX9LGNSTYHOGRE9NFDGSYZJIKEZRIAIBYSOMBJSCBBKPVOVRHWGQEGTZZBALTGOQBGYTLADG : 85
-11/20 14:06:52.755 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - TBBTXNHXPBZZSKBKCB9JRHDRUEVEYKWCOFOK9SCZDNTZUAGWNYXQYFTPXQOOABZDYYTHKAOQQFTGGLFYH : 6
-11/20 14:06:52.758 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.760 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.760 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.760 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.761 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.762 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.763 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.763 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.763 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.764 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.764 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.764 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.765 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.765 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.765 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.766 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.767 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.767 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.767 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.784 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.785 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.785 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.787 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.787 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.787 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.788 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.788 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.788 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.789 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.789 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.789 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.790 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.790 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.790 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.791 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.792 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.793 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.793 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.794 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.795 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.796 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.797 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.797 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.797 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.801 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.801 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.803 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.805 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.805 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.806 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.806 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.806 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.807 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.808 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.808 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.808 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.809 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.809 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.809 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.810 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.810 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.810 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.810 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.812 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.813 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.813 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.813 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.813 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.814 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.814 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.814 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.815 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.815 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.815 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.816 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.816 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.816 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.817 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.817 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.817 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.818 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.818 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.818 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.819 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.819 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.819 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.820 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.820 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.820 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.820 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.821 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.821 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.821 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.822 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.822 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.822 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.823 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.823 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.823 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.823 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.824 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - NTUUJJYHS9PEOXKMHVWCDYWHYQSVFIGJU9T9XSPQD99DXCLWXVNEUXMECSHYCPDFOHAOCZENDYSNQEIST : 35
-11/20 14:06:52.824 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - ZRBVRTLAHABLXKERUK9LWDN9KUOZPCEUDLSKKJSH9DEIFNQMRGSFSIETXSDELVGPTJGXTQFWNAPSC9QRX : 32
-11/20 14:06:52.824 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - NT9KOL9TMT9VNNQTVHWJPDLTYIBL99JTVFHUJVUNKRZDKNQDTSRFACBAM9LWZ9XVZKAGOBVONKZXBCCVA : 33
-11/20 14:06:52.834 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.835 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.836 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.836 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.836 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.836 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.837 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.837 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.837 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.837 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.838 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.839 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.839 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.841 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.841 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.841 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.842 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.842 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.842 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.843 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.843 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.843 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.843 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.844 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.844 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.844 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.845 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.845 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.846 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.846 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.847 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.847 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.848 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.848 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.849 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.850 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.850 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.851 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.851 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.852 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.852 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.853 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.853 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.854 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.854 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.855 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.855 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.856 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.856 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.857 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.857 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.858 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.858 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.859 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.860 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.860 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.861 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.861 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.862 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.862 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.863 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.863 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.864 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.864 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.865 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.865 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.866 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.867 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.867 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.868 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.868 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.869 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.870 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.870 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.871 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.871 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.871 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.872 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.872 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.873 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.873 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.874 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.874 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.875 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.875 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.876 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.876 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.877 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.877 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.878 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.878 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.878 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.879 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.879 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.880 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.880 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.881 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.881 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.882 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.882 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
-11/20 14:06:52.888 [main] DEBUG c.i.iri.service.tipselection.Walker - 3 tails traversed to find tip
-11/20 14:06:52.889 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: GROEOEVWIIAOUUDG9NAPNZRARLFSCHBGPJ9LVWWEKEXGXJIOOIEYHTOYKZZCBASJMAYHIJYPQ9ZXYKOYY
-11/20 14:06:52.893 [main] DEBUG c.i.iri.service.tipselection.Walker - 5 tails traversed to find tip
-11/20 14:06:52.894 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: NKCESUKPIB99DJTTSZQGYYNCILX9KTDPXCWHOTPHWTZRSCJQLPLYTNVP9RMBDLMXRFVBNXKMVFOVGBXUP
-11/20 14:06:52.894 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.746 s - in com.iota.iri.service.tipselection.impl.WalkerAlphaTest
+11/20 14:10:26.747 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:10:27.104 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:27.127 [main] DEBUG c.i.iri.service.tipselection.Walker - 5 tails traversed to find tip
+11/20 14:10:27.131 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: NGLOVK9TUGEYYZNECFBZPSMWUCSMBRGZ9QHAFLDVP9CZTVYZBE9EJPXBTJKVUNJOREPLGFNCRFUWRREHD
+11/20 14:10:27.136 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.137 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.138 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.139 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.140 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.141 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.142 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.143 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.144 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.144 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.145 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.146 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.147 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.148 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.149 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.152 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.153 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.154 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.155 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.156 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.158 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.158 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.159 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.160 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.161 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.162 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.162 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.163 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.164 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.165 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.166 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.167 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.168 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.169 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.170 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.172 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.173 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.173 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.174 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.175 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.176 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.178 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.179 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.180 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.181 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.182 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.183 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.183 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.184 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.185 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.186 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.187 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.188 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.189 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.190 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.191 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.191 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.192 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.193 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.194 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.194 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.195 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.196 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.197 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.197 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.200 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.201 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.201 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.202 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.203 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.204 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.204 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.205 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.206 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.207 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.208 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.209 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.209 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.210 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.211 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.212 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.213 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.213 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.214 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.215 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.216 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.216 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.217 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.218 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.219 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.219 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.220 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.221 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.222 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.222 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.223 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.224 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.224 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.225 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.227 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.227 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - XKEUGKABGQGESMBLAEWFUZGZAZCQMACJDPWNTOUXJ9BVOQBWFGCCRSWMPAFHFVXAIZEIQBBIUROKYQFOM : 9
+11/20 14:10:27.228 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - NLMPLPTZ9JJPGGVKUYCW9FF9MKOUJYJRMXVUKJOAHKQYVMCODPCABGBDXRSUUFPTUXQYCVEBSJID9DUYP : 6
+11/20 14:10:27.228 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - GVBH9DDNUFNX9NIJDXVEGKBLXVX9WMOXIJVAXKOJWO9BNWBSTIXQYLEBMMKIGZG9FAGRHUKXTKXNQEJRL : 85
+11/20 14:10:27.234 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.234 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.235 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.236 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.237 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.237 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.238 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.239 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.240 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.240 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.241 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.242 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.243 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.243 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.244 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.245 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.246 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.247 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.247 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.248 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.249 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.250 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.250 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.251 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.252 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.253 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.255 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.256 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.256 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.257 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.258 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.259 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.259 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.260 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.261 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.262 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.262 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.263 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.264 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.264 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.265 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.266 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.266 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.267 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.268 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.269 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.269 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.270 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.271 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.272 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.273 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.273 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.274 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.275 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.275 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.276 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.277 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.277 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.278 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.279 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.279 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.280 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.281 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.281 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.282 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.283 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.283 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.284 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.285 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.285 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.286 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.287 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.287 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.288 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.289 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.289 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.290 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.291 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.291 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.292 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.293 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.293 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.294 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.295 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.295 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.296 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.297 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.297 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.298 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.299 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.303 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.304 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.305 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.306 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.306 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.307 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.308 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.309 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.309 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.310 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.310 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - EXRMXMBBFBGXHQSKUYKPGLDO9MTIIBVFXZXNRDFEGPUAAYAW9NZBLKWHVMQHSEOJRCZXXREGREV9HGGLI : 32
+11/20 14:10:27.311 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - WVJBC9JEJGWVIJVJLHCDQJDGZPIROBVJNOF9WXBONCVPQQWZMJMFWH9ZPNUNPDRLMLIVAWDSJMBSEKLKJ : 35
+11/20 14:10:27.311 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - PDQGWC9NC9SOEKKHXYHUAZ9YSBLBRKUVYHMGQEZIWR9WLRBTFBCL9DWMNQKANTQYWIDNLUZFNRMCJXWDZ : 33
+11/20 14:10:27.316 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.318 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.319 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.320 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.321 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.321 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.322 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.322 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.323 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.324 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.324 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.325 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.327 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.328 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.328 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.329 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.331 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.334 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.335 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.335 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.336 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.336 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.337 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.338 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.338 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.339 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.339 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.340 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.340 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.341 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.341 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.342 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.342 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.343 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.344 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.344 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.347 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.347 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.348 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.349 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.350 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.350 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.351 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.351 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.352 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.352 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.353 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.354 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.354 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.355 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.355 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.357 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.358 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.358 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.359 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.360 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.360 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.361 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.362 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.362 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.363 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.363 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.364 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.364 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.365 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.366 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.366 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.367 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.367 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.368 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.370 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.371 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.371 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.372 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.372 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.373 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.374 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.374 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.375 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.375 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.376 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.377 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.377 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.378 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.378 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.379 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.379 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.380 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.389 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.389 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.390 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.390 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.391 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.391 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.391 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.392 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.392 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.393 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.393 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.393 [main] DEBUG c.i.iri.service.tipselection.Walker - 2 tails traversed to find tip
+11/20 14:10:27.398 [main] DEBUG c.i.iri.service.tipselection.Walker - 3 tails traversed to find tip
+11/20 14:10:27.398 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: VOJPOHQIGTAJHKRGTBJVBRSCSAJCNPNNHYQB9ETSCEZL9LRXUONHXWOSEFXNV99SARX9DTIWRSJFVWWXX
+11/20 14:10:27.403 [main] DEBUG c.i.iri.service.tipselection.Walker - 5 tails traversed to find tip
+11/20 14:10:27.403 [main] INFO  c.i.i.s.t.impl.WalkerAlphaTest - selected tip: CUCD9FAKHZ9ZXZ9DBDKYAAT9YDEGQAFDMNZCBQCYPILQPBXVWJFTLBZFDKVSPTJ9SGZVMCPRPSLYUAVDY
+11/20 14:10:27.403 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 s - in com.iota.iri.service.tipselection.impl.WalkerAlphaTest
 [INFO] Running com.iota.iri.service.tipselection.impl.CumulativeWeightCalculatorTest
-11/20 14:06:53.248 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:53.514 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:53.520 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transactions in order 
-ZNQNHBCSECGFS9GTHUDTBQRSLHVNNFYBFSBSPXZDZFWSTMKPGKRCIEUYWFBASCYKKONPUEXBLCCZGERWV
-VEDKMGOIJRHEE9NYUYFCQ9ODEMVXGGQRKCZYEOOERFXCOKGKEEEFIQUDZMJFFBQWYCW9KZFZPAUBUYUBC
-HTPPZNZCRESZEMTRWJJ9VLRZPDWHNLRRPDJGIKAEGHMPXNYSKMVZYAWCWFJMXVMQXYCQUGZKQGM9OHDWD
-K9CUQTPCPPOKXVGJJOKLGTNYQPEBWZYWGRGANYADZWIK9LEYMGIPAFZZM9SDSQBTHRXXRHOSXMBRNAFYZ
-transaction UBGJRFJCBTOPWQKTUGWWHSGRAFTCWAGTMNWGJKACMRPWUIOTIYENIHRFEFGRDRDZIQNUFCVGIXVGNGQLF
-transaction SIKUIUCEGCPH9XFHNXXLSRHIHJBPUVMTICPSFLREPGBSLIFKWXSLSWAJVKLNRXBUZAJ9EAKSAXAEZTMDR
-transaction GUAGTLBHCBILLNEUJHTSKXBMZQ9FWIAPDRUGPTHEBSZVQRKVONZOYRHWNWZVWCESTMOXGGNYGUNOIUUWK
-11/20 14:06:53.521 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash ZNQNHBCSECGFS9GTHUDTBQRSLHVNNFYBFSBSPXZDZFWSTMKPGKRCIEUYWFBASCYKKONPUEXBLCCZGERWV
-11/20 14:06:53.572 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YTYF 
- with trunk JYFE 
- and branch JYFE
-11/20 14:06:53.573 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ITFU 
- with trunk JYFE 
- and branch YTYF
-11/20 14:06:53.574 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction X9GV 
- with trunk YTYF 
- and branch YTYF
-11/20 14:06:53.575 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9DVF 
- with trunk YTYF 
- and branch JYFE
-11/20 14:06:53.576 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AQTV 
- with trunk YTYF 
- and branch 9DVF
-11/20 14:06:53.577 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9XLM 
- with trunk ITFU 
- and branch JYFE
-11/20 14:06:53.578 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction THEX 
- with trunk JYFE 
- and branch ITFU
-11/20 14:06:53.579 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SYNS 
- with trunk YTYF 
- and branch 9XLM
-11/20 14:06:53.580 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NXGF 
- with trunk SYNS 
- and branch SYNS
-11/20 14:06:53.581 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VDHN 
- with trunk 9DVF 
- and branch AQTV
-11/20 14:06:53.582 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WXJN 
- with trunk X9GV 
- and branch AQTV
-11/20 14:06:53.583 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CMQ9 
- with trunk ITFU 
- and branch NXGF
-11/20 14:06:53.583 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZPUL 
- with trunk AQTV 
- and branch X9GV
-11/20 14:06:53.584 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction DAJE 
- with trunk X9GV 
- and branch AQTV
-11/20 14:06:53.585 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9ILI 
- with trunk SYNS 
- and branch NXGF
-11/20 14:06:53.586 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction MWUF 
- with trunk JYFE 
- and branch CMQ9
-11/20 14:06:53.587 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction MPBE 
- with trunk ITFU 
- and branch DAJE
-11/20 14:06:53.588 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CSTR 
- with trunk MPBE 
- and branch ITFU
-11/20 14:06:53.589 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TFBK 
- with trunk NXGF 
- and branch ZPUL
-11/20 14:06:53.590 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction FGTY 
- with trunk AQTV 
- and branch ITFU
-11/20 14:06:53.591 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KBCC 
- with trunk DAJE 
- and branch 9XLM
-11/20 14:06:53.592 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BFAW 
- with trunk DAJE 
- and branch MPBE
-11/20 14:06:53.593 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LBFD 
- with trunk 9XLM 
- and branch ITFU
-11/20 14:06:53.594 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QOKL 
- with trunk DAJE 
- and branch AQTV
-11/20 14:06:53.596 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SUHM 
- with trunk TFBK 
- and branch JYFE
-11/20 14:06:53.597 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction DLRL 
- with trunk MPBE 
- and branch X9GV
-11/20 14:06:53.598 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction M9PF 
- with trunk FGTY 
- and branch DAJE
-11/20 14:06:53.599 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction IJJU 
- with trunk BFAW 
- and branch LBFD
-11/20 14:06:53.600 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction EZIU 
- with trunk LBFD 
- and branch CMQ9
-11/20 14:06:53.601 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YZIB 
- with trunk MPBE 
- and branch SUHM
-11/20 14:06:53.602 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction IODU 
- with trunk 9DVF 
- and branch SYNS
-11/20 14:06:53.603 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction EEBC 
- with trunk QOKL 
- and branch BFAW
-11/20 14:06:53.604 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ISGE 
- with trunk MWUF 
- and branch EEBC
-11/20 14:06:53.605 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KVBW 
- with trunk ISGE 
- and branch BFAW
-11/20 14:06:53.606 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction Z9CE 
- with trunk CSTR 
- and branch NXGF
-11/20 14:06:53.607 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction OINC 
- with trunk EZIU 
- and branch CSTR
-11/20 14:06:53.614 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CMWY 
- with trunk MWUF 
- and branch IODU
-11/20 14:06:53.615 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QBD9 
- with trunk TFBK 
- and branch M9PF
-11/20 14:06:53.616 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JYAD 
- with trunk AQTV 
- and branch SYNS
-11/20 14:06:53.618 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction HCSE 
- with trunk IODU 
- and branch THEX
-11/20 14:06:53.619 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction K9TP 
- with trunk QBD9 
- and branch JYAD
-11/20 14:06:53.620 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SQDR 
- with trunk DLRL 
- and branch DAJE
-11/20 14:06:53.621 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KWBU 
- with trunk BFAW 
- and branch K9TP
-11/20 14:06:53.622 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QLNI 
- with trunk K9TP 
- and branch IJJU
-11/20 14:06:53.623 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PEMQ 
- with trunk 9ILI 
- and branch YZIB
-11/20 14:06:53.623 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction XIPJ 
- with trunk WXJN 
- and branch M9PF
-11/20 14:06:53.624 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PWHI 
- with trunk MPBE 
- and branch TFBK
-11/20 14:06:53.625 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CUPP 
- with trunk Z9CE 
- and branch HCSE
-11/20 14:06:53.626 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TFLF 
- with trunk BFAW 
- and branch JYFE
-11/20 14:06:53.627 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KBYW 
- with trunk JYAD 
- and branch TFBK
-11/20 14:06:53.628 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ARRV 
- with trunk BFAW 
- and branch JYAD
-11/20 14:06:53.629 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction GYMC 
- with trunk WXJN 
- and branch M9PF
-11/20 14:06:53.630 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KDHC 
- with trunk 9ILI 
- and branch YZIB
-11/20 14:06:53.631 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BTIA 
- with trunk KBYW 
- and branch SUHM
-11/20 14:06:53.632 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction A9HV 
- with trunk WXJN 
- and branch LBFD
-11/20 14:06:53.633 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CFSR 
- with trunk KDHC 
- and branch EEBC
-11/20 14:06:53.634 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction IEBQ 
- with trunk SQDR 
- and branch QOKL
-11/20 14:06:53.635 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction XUXN 
- with trunk CMQ9 
- and branch IJJU
-11/20 14:06:53.635 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction DCIE 
- with trunk YTYF 
- and branch BTIA
-11/20 14:06:53.636 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PTRZ 
- with trunk GYMC 
- and branch A9HV
-11/20 14:06:53.637 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction XW9Q 
- with trunk XIPJ 
- and branch M9PF
-11/20 14:06:53.638 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YPTI 
- with trunk IJJU 
- and branch YTYF
-11/20 14:06:53.639 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ETWU 
- with trunk KVBW 
- and branch YTYF
-11/20 14:06:53.640 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WLUZ 
- with trunk PTRZ 
- and branch 9XLM
-11/20 14:06:53.641 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KRVK 
- with trunk XIPJ 
- and branch ZPUL
-11/20 14:06:53.642 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WBH9 
- with trunk PWHI 
- and branch 9DVF
-11/20 14:06:53.643 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VPGQ 
- with trunk KBCC 
- and branch OINC
-11/20 14:06:53.644 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VBHJ 
- with trunk CSTR 
- and branch SUHM
-11/20 14:06:53.645 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ROKN 
- with trunk YZIB 
- and branch YPTI
-11/20 14:06:53.646 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TNKY 
- with trunk QOKL 
- and branch X9GV
-11/20 14:06:53.647 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction OVCN 
- with trunk KVBW 
- and branch ETWU
-11/20 14:06:53.648 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction D9AX 
- with trunk VBHJ 
- and branch TNKY
-11/20 14:06:53.649 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction OSEH 
- with trunk MPBE 
- and branch TFBK
-11/20 14:06:53.650 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction GSQM 
- with trunk ETWU 
- and branch YPTI
-11/20 14:06:53.651 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PFMV 
- with trunk VBHJ 
- and branch QOKL
-11/20 14:06:53.652 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LUTL 
- with trunk WXJN 
- and branch WBH9
-11/20 14:06:53.653 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZCVQ 
- with trunk BTIA 
- and branch KDHC
-11/20 14:06:53.654 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TNXZ 
- with trunk XIPJ 
- and branch M9PF
-11/20 14:06:53.655 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NDBV 
- with trunk OSEH 
- and branch XUXN
-11/20 14:06:53.655 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction HZI9 
- with trunk Z9CE 
- and branch XUXN
-11/20 14:06:53.656 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction MGVD 
- with trunk YTYF 
- and branch MPBE
-11/20 14:06:53.657 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JWNS 
- with trunk AQTV 
- and branch DLRL
-11/20 14:06:53.658 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction Z9RV 
- with trunk PEMQ 
- and branch CSTR
-11/20 14:06:53.659 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LLFH 
- with trunk OINC 
- and branch KWBU
-11/20 14:06:53.660 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KBUP 
- with trunk OVCN 
- and branch ZCVQ
-11/20 14:06:53.661 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NZLA 
- with trunk QOKL 
- and branch XUXN
-11/20 14:06:53.662 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BFZN 
- with trunk XW9Q 
- and branch ISGE
-11/20 14:06:53.663 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AJNH 
- with trunk HZI9 
- and branch ARRV
-11/20 14:06:53.664 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WNAT 
- with trunk KRVK 
- and branch CMWY
-11/20 14:06:53.665 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9GFZ 
- with trunk LLFH 
- and branch X9GV
-11/20 14:06:53.666 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JFDN 
- with trunk THEX 
- and branch YZIB
-11/20 14:06:53.667 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WDLO 
- with trunk JWNS 
- and branch LUTL
-11/20 14:06:53.668 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PJHA 
- with trunk NXGF 
- and branch BFAW
-11/20 14:06:53.669 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LOSR 
- with trunk XUXN 
- and branch XIPJ
-11/20 14:06:53.670 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WALP 
- with trunk JYAD 
- and branch 9XLM
-11/20 14:06:53.671 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction HFCR 
- with trunk SQDR 
- and branch TNXZ
-11/20 14:06:53.672 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CGZM 
- with trunk KDHC 
- and branch ROKN
-11/20 14:06:53.673 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JZHX 
- with trunk CMQ9 
- and branch XUXN
-11/20 14:06:53.674 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CKLN 
- with trunk VDHN 
- and branch QOKL
-11/20 14:06:53.678 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash JYFEHVTBEQERVSRNQF9SGKJLMRMPFXEZS9Z9IQDQETGQK9BEMTUUGTIZFGGWPB9SNWVVWOGYZDVKEYPFF
-11/20 14:06:53.730 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx K9TP has expected weight of 5
-11/20 14:06:53.731 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9DVF has expected weight of 87
-11/20 14:06:53.731 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx DLRL has expected weight of 6
-11/20 14:06:53.732 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JYAD has expected weight of 14
-11/20 14:06:53.732 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZCVQ has expected weight of 2
-11/20 14:06:53.733 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KWBU has expected weight of 3
-11/20 14:06:53.733 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx MPBE has expected weight of 54
-11/20 14:06:53.733 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WBH9 has expected weight of 3
-11/20 14:06:53.734 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LBFD has expected weight of 22
-11/20 14:06:53.734 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx XUXN has expected weight of 7
-11/20 14:06:53.734 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AQTV has expected weight of 83
-11/20 14:06:53.735 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx DAJE has expected weight of 70
-11/20 14:06:53.735 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VDHN has expected weight of 2
-11/20 14:06:53.735 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9ILI has expected weight of 8
-11/20 14:06:53.736 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WLUZ has expected weight of 1
-11/20 14:06:53.736 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx EZIU has expected weight of 5
-11/20 14:06:53.736 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PTRZ has expected weight of 2
-11/20 14:06:53.737 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LOSR has expected weight of 1
-11/20 14:06:53.737 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CKLN has expected weight of 1
-11/20 14:06:53.737 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CUPP has expected weight of 1
-11/20 14:06:53.738 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PWHI has expected weight of 4
-11/20 14:06:53.738 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx MWUF has expected weight of 10
-11/20 14:06:53.738 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JYFE has expected weight of 100
-11/20 14:06:53.739 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ISGE has expected weight of 7
-11/20 14:06:53.739 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TFBK has expected weight of 30
-11/20 14:06:53.739 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx FGTY has expected weight of 19
-11/20 14:06:53.740 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KBUP has expected weight of 1
-11/20 14:06:53.740 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NXGF has expected weight of 54
-11/20 14:06:53.740 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CFSR has expected weight of 1
-11/20 14:06:53.741 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JZHX has expected weight of 1
-11/20 14:06:53.741 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx HZI9 has expected weight of 2
-11/20 14:06:53.741 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CGZM has expected weight of 1
-11/20 14:06:53.741 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx Z9CE has expected weight of 4
-11/20 14:06:53.742 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WALP has expected weight of 1
-11/20 14:06:53.742 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SYNS has expected weight of 60
-11/20 14:06:53.742 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ETWU has expected weight of 4
-11/20 14:06:53.743 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WNAT has expected weight of 1
-11/20 14:06:53.743 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VPGQ has expected weight of 1
-11/20 14:06:53.743 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx EEBC has expected weight of 9
-11/20 14:06:53.744 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx HCSE has expected weight of 2
-11/20 14:06:53.744 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YPTI has expected weight of 4
-11/20 14:06:53.744 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ITFU has expected weight of 88
-11/20 14:06:53.745 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KBYW has expected weight of 5
-11/20 14:06:53.745 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YTYF has expected weight of 99
-11/20 14:06:53.745 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LLFH has expected weight of 2
-11/20 14:06:53.746 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TNKY has expected weight of 2
-11/20 14:06:53.746 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NZLA has expected weight of 1
-11/20 14:06:53.746 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KBCC has expected weight of 2
-11/20 14:06:53.747 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx OSEH has expected weight of 2
-11/20 14:06:53.747 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QOKL has expected weight of 16
-11/20 14:06:53.747 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx MGVD has expected weight of 1
-11/20 14:06:53.748 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx IODU has expected weight of 5
-11/20 14:06:53.748 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CMQ9 has expected weight of 23
-11/20 14:06:53.748 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx A9HV has expected weight of 3
-11/20 14:06:53.749 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QBD9 has expected weight of 6
-11/20 14:06:53.749 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx HFCR has expected weight of 1
-11/20 14:06:53.749 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JFDN has expected weight of 1
-11/20 14:06:53.750 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KDHC has expected weight of 5
-11/20 14:06:53.753 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PJHA has expected weight of 1
-11/20 14:06:53.758 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BFAW has expected weight of 28
-11/20 14:06:53.759 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PEMQ has expected weight of 2
-11/20 14:06:53.759 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx GYMC has expected weight of 3
-11/20 14:06:53.759 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx X9GV has expected weight of 79
-11/20 14:06:53.760 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx XIPJ has expected weight of 8
-11/20 14:06:53.760 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NDBV has expected weight of 1
-11/20 14:06:53.760 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ARRV has expected weight of 2
-11/20 14:06:53.761 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CSTR has expected weight of 13
-11/20 14:06:53.761 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LUTL has expected weight of 2
-11/20 14:06:53.761 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YZIB has expected weight of 10
-11/20 14:06:53.762 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VBHJ has expected weight of 3
-11/20 14:06:53.762 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WDLO has expected weight of 1
-11/20 14:06:53.762 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx IJJU has expected weight of 13
-11/20 14:06:53.763 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx THEX has expected weight of 4
-11/20 14:06:53.763 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx OINC has expected weight of 4
-11/20 14:06:53.763 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AJNH has expected weight of 1
-11/20 14:06:53.763 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZPUL has expected weight of 33
-11/20 14:06:53.764 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx M9PF has expected weight of 18
-11/20 14:06:53.764 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WXJN has expected weight of 15
-11/20 14:06:53.765 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9XLM has expected weight of 68
-11/20 14:06:53.765 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx IEBQ has expected weight of 1
-11/20 14:06:53.765 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx Z9RV has expected weight of 1
-11/20 14:06:53.766 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx D9AX has expected weight of 1
-11/20 14:06:53.766 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TFLF has expected weight of 1
-11/20 14:06:53.766 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PFMV has expected weight of 1
-11/20 14:06:53.766 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx XW9Q has expected weight of 2
-11/20 14:06:53.767 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx DCIE has expected weight of 1
-11/20 14:06:53.767 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SUHM has expected weight of 16
-11/20 14:06:53.767 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CMWY has expected weight of 2
-11/20 14:06:53.768 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KVBW has expected weight of 5
-11/20 14:06:53.768 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TNXZ has expected weight of 2
-11/20 14:06:53.768 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QLNI has expected weight of 1
-11/20 14:06:53.768 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KRVK has expected weight of 2
-11/20 14:06:53.769 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx OVCN has expected weight of 2
-11/20 14:06:53.769 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9GFZ has expected weight of 1
-11/20 14:06:53.769 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BTIA has expected weight of 4
-11/20 14:06:53.770 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SQDR has expected weight of 3
-11/20 14:06:53.770 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BFZN has expected weight of 1
-11/20 14:06:53.770 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JWNS has expected weight of 2
-11/20 14:06:53.770 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ROKN has expected weight of 2
-11/20 14:06:53.771 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx GSQM has expected weight of 1
-11/20 14:06:53.775 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash ZCCGPTSUCKZDITTBLSEMSGBQNAOJNHQHUVIV9IKURBYQMIVNWPFENMGAXPJPGHCHPQOITN9FUUNBAZERF
-11/20 14:06:53.778 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash LDMOZWVPIUJKOSYFHWREHJQN9VCKZVBYTQRKPUXCPXKGRANFKSDFKBBAFMUVNDNRXJCHWNULST9TKDTFQ
-11/20 14:06:53.782 [main] INFO  c.i.i.s.t.i.CumulativeWeightCalculatorTest - Linear ordered hashes from tip UKKE, ATZH, FHXM, LMZS, YBNG
-11/20 14:06:53.782 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash YBNGADKARCPUPFYODJMNIOSLGYVWJJVUVM9IQJMUSSKQRROUEHBQDQPLHNFTTBFMIMBNSFWISBNYYITB9
-11/20 14:06:53.786 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transaction in diamond shape 
-                      VFPKPDEJFLLFMNDPKUM9MTXIYG9WM9JKOWLLDJAPFMZOTRRLOVQFHJMRTNH9TONYRVPN9JOYXSRSS9A9D 
-USH9SUBDTQLOFOFWFJMEQMMYRIYRTYYLCWJDYP9XQFREBWGEIIPPBKW9LSFWNWXA9TFRDALAMZGWFBSGJ  USH9SUBDTQLOFOFWFJMEQMMYRIYRTYYLCWJDYP9XQFREBWGEIIPPBKW9LSFWNWXA9TFRDALAMB9AI9C9J
-                      GGFUBDPMVFAHCPAJCKVGDNTABXIKHFCTBQWJVPCGXC9ZMOCUGPLXPJRYEDSWRKSYKFNMSTFKASYUEBPAZ
-11/20 14:06:53.787 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash VFPKPDEJFLLFMNDPKUM9MTXIYG9WM9JKOWLLDJAPFMZOTRRLOVQFHJMRTNH9TONYRVPN9JOYXSRSS9A9D
-11/20 14:06:53.791 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transaction in diamond shape 
-                      VJKXAPPPJDPBMPLAUWLSHUQDVGUQOYMOYP9FRPIVQTHABOIJKYDYUHNRRZUKVXZQKLKGPZIRMOVDCNCYH 
-RADYQWWBQMILXRKOF9QIKTLST9P9AJYTJHYSEGZNCYRPGSDNJYCJX9BJNLTOASMCYADOHFZLNVJLEMIYX  VYOK9FKHCRMBNSJKHO9ALQVOKJLUZZOPQESIP9OIIKOWNPNYAKUAALENXQBQNIRUF9HWAS9ERMIIABRVZ
-                      CRDPKAIVAPKTYOVKZDVDXNHYQBRAFABCHVUACVAEEAQLJIX9ACYGWDZGQWPHKAOTYDNBGIBQFWPJXHICP
-11/20 14:06:53.791 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash VJKXAPPPJDPBMPLAUWLSHUQDVGUQOYMOYP9FRPIVQTHABOIJKYDYUHNRRZUKVXZQKLKGPZIRMOVDCNCYH
-11/20 14:06:53.795 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash ZJTAXNGKBKTVQECCVAHPZRTNFOUEE99RUFICBISJPEGLUUFKGDVLBIFXBRPGBOIZGJDN9FYRNZDZVQBVA
-11/20 14:06:53.796 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.897 s - in com.iota.iri.service.tipselection.impl.CumulativeWeightCalculatorTest
+11/20 14:10:27.649 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:10:27.834 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:27.840 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transactions in order 
+CZELF9YHARLQM9BTZKHOGXMUUSDIDYKAOZBMATDTBLDOTX9XJIDUPBIDUPXINSURJEWKROXCGWPCQUT9M
+OXVQNYMNNJMEEWU9WVTAYOZCNOBPQVZMNPYPMRYDEWMADZGUAHZL9ZJZVMSZMUSMVHNTQYDKAWKFXOZZH
+PKZVGRYJXEGBQBJNYZMHS9RGUBJUCZCYSGGDWYYPKVMKLCEYMPQCFCJLIWOTSWJHK9MWWMCEUURTECHCN
+XDPHDH99YNTXJOZIWTMVNIUMGIJERQINEPYOSCGTERTZHQGMYKTBBPLRJBIXNMJBKOHOGQULKXUMFFMFB
+transaction GRKHMNRTJXTC9DGSMEOSJUMOOZEQUTRVTJKKQHDSUY9L9UJBKAMDQQVZRYBYNQDDIUOZLNXNLSDJTW9HA
+transaction DGROZYUHDFKXILPEGATAUJBPILJAHAVWJIHLFLCSUPHLZAGYVWXMTKKYCWSCYVZFQUIFQBHGLUHAYXSIA
+transaction SGUYZAW9LCARLQOKTFRQLVLCDOLSMNXFRMIUUAERSCXCSLZUUEQKCKDOZPCAGYBMLFKZANDXHDECUXOBL
+11/20 14:10:27.841 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash CZELF9YHARLQM9BTZKHOGXMUUSDIDYKAOZBMATDTBLDOTX9XJIDUPBIDUPXINSURJEWKROXCGWPCQUT9M
+11/20 14:10:27.869 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LCIT 
+ with trunk DVIU 
+ and branch DVIU
+11/20 14:10:27.870 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YAFP 
+ with trunk DVIU 
+ and branch LCIT
+11/20 14:10:27.872 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WKPJ 
+ with trunk LCIT 
+ and branch LCIT
+11/20 14:10:27.873 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JZBI 
+ with trunk LCIT 
+ and branch DVIU
+11/20 14:10:27.874 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QXTY 
+ with trunk LCIT 
+ and branch JZBI
+11/20 14:10:27.875 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction OLCR 
+ with trunk YAFP 
+ and branch DVIU
+11/20 14:10:27.876 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ACVW 
+ with trunk DVIU 
+ and branch YAFP
+11/20 14:10:27.877 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction MKDT 
+ with trunk LCIT 
+ and branch OLCR
+11/20 14:10:27.877 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SJAJ 
+ with trunk MKDT 
+ and branch MKDT
+11/20 14:10:27.878 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ALGW 
+ with trunk JZBI 
+ and branch QXTY
+11/20 14:10:27.880 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AEGJ 
+ with trunk WKPJ 
+ and branch QXTY
+11/20 14:10:27.881 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ERCN 
+ with trunk YAFP 
+ and branch SJAJ
+11/20 14:10:27.882 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction GPWG 
+ with trunk QXTY 
+ and branch WKPJ
+11/20 14:10:27.883 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VOYH 
+ with trunk WKPJ 
+ and branch QXTY
+11/20 14:10:27.884 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9DHF 
+ with trunk MKDT 
+ and branch SJAJ
+11/20 14:10:27.885 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9CZ9 
+ with trunk DVIU 
+ and branch ERCN
+11/20 14:10:27.886 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CYNC 
+ with trunk YAFP 
+ and branch VOYH
+11/20 14:10:27.887 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AUNT 
+ with trunk CYNC 
+ and branch YAFP
+11/20 14:10:27.888 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction FGLC 
+ with trunk SJAJ 
+ and branch GPWG
+11/20 14:10:27.889 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LRMB 
+ with trunk QXTY 
+ and branch YAFP
+11/20 14:10:27.890 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CMZZ 
+ with trunk VOYH 
+ and branch OLCR
+11/20 14:10:27.891 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PV9X 
+ with trunk VOYH 
+ and branch CYNC
+11/20 14:10:27.892 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UIAF 
+ with trunk OLCR 
+ and branch YAFP
+11/20 14:10:27.893 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VLFU 
+ with trunk VOYH 
+ and branch QXTY
+11/20 14:10:27.894 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ETKO 
+ with trunk FGLC 
+ and branch DVIU
+11/20 14:10:27.895 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CACO 
+ with trunk CYNC 
+ and branch WKPJ
+11/20 14:10:27.896 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QOFA 
+ with trunk LRMB 
+ and branch VOYH
+11/20 14:10:27.897 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NSCC 
+ with trunk PV9X 
+ and branch UIAF
+11/20 14:10:27.898 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KKPH 
+ with trunk UIAF 
+ and branch ERCN
+11/20 14:10:27.899 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VEHY 
+ with trunk CYNC 
+ and branch ETKO
+11/20 14:10:27.900 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BVDG 
+ with trunk JZBI 
+ and branch MKDT
+11/20 14:10:27.901 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WUSL 
+ with trunk VLFU 
+ and branch PV9X
+11/20 14:10:27.902 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NILE 
+ with trunk 9CZ9 
+ and branch WUSL
+11/20 14:10:27.903 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LLY9 
+ with trunk NILE 
+ and branch PV9X
+11/20 14:10:27.904 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AADV 
+ with trunk AUNT 
+ and branch SJAJ
+11/20 14:10:27.905 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction GADD 
+ with trunk KKPH 
+ and branch AUNT
+11/20 14:10:27.906 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LPZV 
+ with trunk 9CZ9 
+ and branch BVDG
+11/20 14:10:27.906 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KEWR 
+ with trunk FGLC 
+ and branch QOFA
+11/20 14:10:27.907 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AMQD 
+ with trunk QXTY 
+ and branch MKDT
+11/20 14:10:27.908 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction FLEF 
+ with trunk BVDG 
+ and branch ACVW
+11/20 14:10:27.909 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZZJG 
+ with trunk KEWR 
+ and branch AMQD
+11/20 14:10:27.910 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TOOD 
+ with trunk CACO 
+ and branch VOYH
+11/20 14:10:27.911 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UWSV 
+ with trunk PV9X 
+ and branch ZZJG
+11/20 14:10:27.912 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QGPS 
+ with trunk ZZJG 
+ and branch NSCC
+11/20 14:10:27.913 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction H9KC 
+ with trunk 9DHF 
+ and branch VEHY
+11/20 14:10:27.913 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SRYL 
+ with trunk AEGJ 
+ and branch QOFA
+11/20 14:10:27.914 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CEVJ 
+ with trunk CYNC 
+ and branch FGLC
+11/20 14:10:27.915 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction 9ECI 
+ with trunk AADV 
+ and branch FLEF
+11/20 14:10:27.916 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UZIY 
+ with trunk PV9X 
+ and branch DVIU
+11/20 14:10:27.917 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JQOF 
+ with trunk AMQD 
+ and branch FGLC
+11/20 14:10:27.918 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AVMF 
+ with trunk PV9X 
+ and branch AMQD
+11/20 14:10:27.919 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction RHJH 
+ with trunk AEGJ 
+ and branch QOFA
+11/20 14:10:27.920 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZCOV 
+ with trunk 9DHF 
+ and branch VEHY
+11/20 14:10:27.921 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JTFX 
+ with trunk JQOF 
+ and branch ETKO
+11/20 14:10:27.922 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction FVYA 
+ with trunk AEGJ 
+ and branch UIAF
+11/20 14:10:27.923 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YWFO 
+ with trunk ZCOV 
+ and branch WUSL
+11/20 14:10:27.923 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UHVX 
+ with trunk TOOD 
+ and branch VLFU
+11/20 14:10:27.924 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction RHZM 
+ with trunk ERCN 
+ and branch NSCC
+11/20 14:10:27.925 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UAMQ 
+ with trunk LCIT 
+ and branch JTFX
+11/20 14:10:27.926 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UKJD 
+ with trunk RHJH 
+ and branch FVYA
+11/20 14:10:27.927 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction EO9X 
+ with trunk SRYL 
+ and branch QOFA
+11/20 14:10:27.928 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CLHD 
+ with trunk NSCC 
+ and branch LCIT
+11/20 14:10:27.929 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction SAJH 
+ with trunk LLY9 
+ and branch LCIT
+11/20 14:10:27.930 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BBCW 
+ with trunk UKJD 
+ and branch OLCR
+11/20 14:10:27.931 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction R9WV 
+ with trunk SRYL 
+ and branch GPWG
+11/20 14:10:27.932 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UEUZ 
+ with trunk CEVJ 
+ and branch JZBI
+11/20 14:10:27.933 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VAVP 
+ with trunk CMZZ 
+ and branch GADD
+11/20 14:10:27.934 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction RNOA 
+ with trunk AUNT 
+ and branch ETKO
+11/20 14:10:27.935 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QBDY 
+ with trunk VEHY 
+ and branch CLHD
+11/20 14:10:27.935 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction IMGM 
+ with trunk VLFU 
+ and branch WKPJ
+11/20 14:10:27.936 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction EPAC 
+ with trunk LLY9 
+ and branch SAJH
+11/20 14:10:27.937 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction AMJJ 
+ with trunk RNOA 
+ and branch IMGM
+11/20 14:10:27.938 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction QLQJ 
+ with trunk CYNC 
+ and branch FGLC
+11/20 14:10:27.939 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TUEI 
+ with trunk SAJH 
+ and branch CLHD
+11/20 14:10:27.941 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PQGT 
+ with trunk RNOA 
+ and branch VLFU
+11/20 14:10:27.942 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction XPHW 
+ with trunk AEGJ 
+ and branch UEUZ
+11/20 14:10:27.943 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction TWKZ 
+ with trunk JTFX 
+ and branch ZCOV
+11/20 14:10:27.944 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction JDVP 
+ with trunk SRYL 
+ and branch QOFA
+11/20 14:10:27.945 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LZJT 
+ with trunk QLQJ 
+ and branch RHZM
+11/20 14:10:27.946 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction HQWY 
+ with trunk AADV 
+ and branch RHZM
+11/20 14:10:27.947 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZBQK 
+ with trunk LCIT 
+ and branch CYNC
+11/20 14:10:27.947 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction J9RO 
+ with trunk QXTY 
+ and branch CACO
+11/20 14:10:27.948 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction PVZC 
+ with trunk H9KC 
+ and branch AUNT
+11/20 14:10:27.949 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction XOUR 
+ with trunk GADD 
+ and branch UWSV
+11/20 14:10:27.950 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YITS 
+ with trunk EPAC 
+ and branch TWKZ
+11/20 14:10:27.951 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction VN9Y 
+ with trunk VLFU 
+ and branch RHZM
+11/20 14:10:27.952 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction EAWI 
+ with trunk EO9X 
+ and branch NILE
+11/20 14:10:27.952 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction ZFXX 
+ with trunk HQWY 
+ and branch AVMF
+11/20 14:10:27.953 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UE99 
+ with trunk R9WV 
+ and branch LPZV
+11/20 14:10:27.954 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction KZBS 
+ with trunk XOUR 
+ and branch WKPJ
+11/20 14:10:27.955 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction UD9F 
+ with trunk ACVW 
+ and branch VEHY
+11/20 14:10:27.956 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction RIEH 
+ with trunk J9RO 
+ and branch XPHW
+11/20 14:10:27.957 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction CE9Z 
+ with trunk SJAJ 
+ and branch PV9X
+11/20 14:10:27.958 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction LCEA 
+ with trunk RHZM 
+ and branch SRYL
+11/20 14:10:27.959 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NEEE 
+ with trunk AMQD 
+ and branch OLCR
+11/20 14:10:27.960 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction YJRU 
+ with trunk TOOD 
+ and branch JDVP
+11/20 14:10:27.961 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction BPWM 
+ with trunk ZCOV 
+ and branch QBDY
+11/20 14:10:27.962 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction WNWZ 
+ with trunk ERCN 
+ and branch RHZM
+11/20 14:10:27.962 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - current transaction NOKG 
+ with trunk ALGW 
+ and branch VLFU
+11/20 14:10:27.966 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash DVIUEWOZLVDUKRLJ9BMPPGLMIPBAJSMYAUDTPOONXMTYMRXBODWLXGHSIQMPYGXWKANVVG9GHBKNTIXRV
+11/20 14:10:28.017 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx FVYA has expected weight of 3
+11/20 14:10:28.017 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SAJH has expected weight of 4
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UKJD has expected weight of 2
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VLFU has expected weight of 16
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx RIEH has expected weight of 1
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LCEA has expected weight of 1
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CE9Z has expected weight of 1
+11/20 14:10:28.018 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AUNT has expected weight of 13
+11/20 14:10:28.019 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TUEI has expected weight of 1
+11/20 14:10:28.019 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AADV has expected weight of 4
+11/20 14:10:28.019 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QXTY has expected weight of 83
+11/20 14:10:28.020 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KKPH has expected weight of 5
+11/20 14:10:28.020 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx FGLC has expected weight of 30
+11/20 14:10:28.020 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BVDG has expected weight of 5
+11/20 14:10:28.020 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UWSV has expected weight of 3
+11/20 14:10:28.021 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KZBS has expected weight of 1
+11/20 14:10:28.021 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WKPJ has expected weight of 79
+11/20 14:10:28.021 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QLQJ has expected weight of 2
+11/20 14:10:28.022 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx R9WV has expected weight of 2
+11/20 14:10:28.022 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VN9Y has expected weight of 1
+11/20 14:10:28.022 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ACVW has expected weight of 4
+11/20 14:10:28.022 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LCIT has expected weight of 99
+11/20 14:10:28.023 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VOYH has expected weight of 70
+11/20 14:10:28.023 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ETKO has expected weight of 16
+11/20 14:10:28.023 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VEHY has expected weight of 10
+11/20 14:10:28.024 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TWKZ has expected weight of 2
+11/20 14:10:28.024 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YJRU has expected weight of 1
+11/20 14:10:28.024 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CMZZ has expected weight of 2
+11/20 14:10:28.024 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx XOUR has expected weight of 2
+11/20 14:10:28.025 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LPZV has expected weight of 2
+11/20 14:10:28.025 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx RHJH has expected weight of 3
+11/20 14:10:28.025 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UIAF has expected weight of 22
+11/20 14:10:28.025 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SRYL has expected weight of 8
+11/20 14:10:28.026 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AVMF has expected weight of 2
+11/20 14:10:28.026 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZFXX has expected weight of 1
+11/20 14:10:28.026 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QOFA has expected weight of 18
+11/20 14:10:28.027 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx XPHW has expected weight of 2
+11/20 14:10:28.027 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx GPWG has expected weight of 33
+11/20 14:10:28.027 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LZJT has expected weight of 1
+11/20 14:10:28.027 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx VAVP has expected weight of 1
+11/20 14:10:28.028 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NOKG has expected weight of 1
+11/20 14:10:28.028 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AMJJ has expected weight of 1
+11/20 14:10:28.028 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JZBI has expected weight of 87
+11/20 14:10:28.028 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BBCW has expected weight of 1
+11/20 14:10:28.029 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WUSL has expected weight of 9
+11/20 14:10:28.029 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UE99 has expected weight of 1
+11/20 14:10:28.029 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CLHD has expected weight of 4
+11/20 14:10:28.030 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LLY9 has expected weight of 5
+11/20 14:10:28.030 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ALGW has expected weight of 2
+11/20 14:10:28.030 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx RHZM has expected weight of 7
+11/20 14:10:28.030 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ERCN has expected weight of 23
+11/20 14:10:28.031 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CEVJ has expected weight of 4
+11/20 14:10:28.031 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UEUZ has expected weight of 3
+11/20 14:10:28.031 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9ECI has expected weight of 1
+11/20 14:10:28.032 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UAMQ has expected weight of 1
+11/20 14:10:28.032 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx LRMB has expected weight of 19
+11/20 14:10:28.032 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx SJAJ has expected weight of 54
+11/20 14:10:28.032 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AEGJ has expected weight of 15
+11/20 14:10:28.033 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx GADD has expected weight of 4
+11/20 14:10:28.033 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx EO9X has expected weight of 2
+11/20 14:10:28.033 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JQOF has expected weight of 5
+11/20 14:10:28.034 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NEEE has expected weight of 1
+11/20 14:10:28.034 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx J9RO has expected weight of 2
+11/20 14:10:28.034 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx FLEF has expected weight of 2
+11/20 14:10:28.034 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CACO has expected weight of 6
+11/20 14:10:28.035 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QBDY has expected weight of 2
+11/20 14:10:28.035 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZCOV has expected weight of 5
+11/20 14:10:28.035 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YAFP has expected weight of 88
+11/20 14:10:28.036 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx WNWZ has expected weight of 1
+11/20 14:10:28.036 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UZIY has expected weight of 1
+11/20 14:10:28.036 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx KEWR has expected weight of 6
+11/20 14:10:28.036 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UHVX has expected weight of 1
+11/20 14:10:28.037 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9CZ9 has expected weight of 10
+11/20 14:10:28.037 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx CYNC has expected weight of 54
+11/20 14:10:28.037 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx QGPS has expected weight of 1
+11/20 14:10:28.038 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PQGT has expected weight of 1
+11/20 14:10:28.038 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JTFX has expected weight of 4
+11/20 14:10:28.038 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZBQK has expected weight of 1
+11/20 14:10:28.038 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx TOOD has expected weight of 3
+11/20 14:10:28.039 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx JDVP has expected weight of 2
+11/20 14:10:28.039 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NILE has expected weight of 7
+11/20 14:10:28.039 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx RNOA has expected weight of 3
+11/20 14:10:28.040 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx 9DHF has expected weight of 8
+11/20 14:10:28.040 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx EPAC has expected weight of 2
+11/20 14:10:28.040 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PV9X has expected weight of 28
+11/20 14:10:28.040 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx PVZC has expected weight of 1
+11/20 14:10:28.041 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx EAWI has expected weight of 1
+11/20 14:10:28.041 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YWFO has expected weight of 1
+11/20 14:10:28.041 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx YITS has expected weight of 1
+11/20 14:10:28.042 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx ZZJG has expected weight of 5
+11/20 14:10:28.042 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx HQWY has expected weight of 2
+11/20 14:10:28.042 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx BPWM has expected weight of 1
+11/20 14:10:28.042 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx AMQD has expected weight of 14
+11/20 14:10:28.043 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx OLCR has expected weight of 68
+11/20 14:10:28.043 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx H9KC has expected weight of 2
+11/20 14:10:28.043 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx IMGM has expected weight of 2
+11/20 14:10:28.044 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx UD9F has expected weight of 1
+11/20 14:10:28.044 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx NSCC has expected weight of 13
+11/20 14:10:28.044 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx MKDT has expected weight of 60
+11/20 14:10:28.044 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - tx DVIU has expected weight of 100
+11/20 14:10:28.048 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash FFOZHLQPHHJSVTJIIGHMVPNAT9NFMCEKIJIX9ONUAVLYAGWLEAATBGQOTJYDKPJPYLOLPTJVIIRIZBLSH
+11/20 14:10:28.051 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash PAQMDGQ9PQTJZKRWKDDRPWKFFUHTTVIKRDSADYFMPGZXHVCBMJOMUG9OPNQOAOA99J9VSYJTKCQPWXUIY
+11/20 14:10:28.055 [main] INFO  c.i.i.s.t.i.CumulativeWeightCalculatorTest - Linear ordered hashes from tip QEPO, KYYK, AIPX, LWNP, ELMB
+11/20 14:10:28.055 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash ELMBAOCVNCQLZFPAQ9FIDQPXSXHIBOSDYIBCSCODRUJLFJEAMKTPMBMVKW9NUDMZZXWSHLTIQEKGXHODK
+11/20 14:10:28.059 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transaction in diamond shape 
+                      RJG9FDHSMRJBOTLRRDAYLSBEESH9JTNCQXVYODSFMWAYGTZROHXBNBJSNHIXHGFBNPOBUTLDAYQMLUOUH 
+JFWROAHQJR9SQGBIWNZNDDKQOKHCNSFWIMJUELBLSYIDGZQCEUIUQRPRMBSJMLWO9NAMECCZIPDZVSONG  JFWROAHQJR9SQGBIWNZNDDKQOKHCNSFWIMJUELBLSYIDGZQCEUIUQRPRMBSJMLWO9NAMECCZID9AI9C9G
+                      Y9JDQLNJHMME9AFKXVJGHJ9JYDCPVURGTEGI9JQD9EXUPMUCQFDHCMQNMCLIXFYJFQKVHUEZNRETPFSBL
+11/20 14:10:28.060 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash RJG9FDHSMRJBOTLRRDAYLSBEESH9JTNCQXVYODSFMWAYGTZROHXBNBJSNHIXHGFBNPOBUTLDAYQMLUOUH
+11/20 14:10:28.064 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculatorTest - printing transaction in diamond shape 
+                      SGINNC9DK9RTBBXQGWZSBAUOAKWLEGBLWFDAEHUADNAWEOQQEUZPT9FMZWGULELGS9QNETIHRMOWHMUNW 
+GEAYABCXRLETIQDYHRAEI9TTVKIJQRPOPFVV9FKEXWEYYVBQBCAJRIEIFBOWDSHHXPSH9JGFSGXUATXFO  QNSSKMDCAYVZOFACHCBFFJFDMCORQTCAAXDJAGMTAHTRUZQKKGJXSK9GZVSMKXGW9TNEUPGARGCRPVBNY
+                      TBKFXGJLIHFLAVGWOAYJXBP9UAYSWSTTBGPVAMBDBCEIJDUOOKHDELRZHOINFIMZPVUSTHXCCNAQBLKZN
+11/20 14:10:28.064 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash SGINNC9DK9RTBBXQGWZSBAUOAKWLEGBLWFDAEHUADNAWEOQQEUZPT9FMZWGULELGS9QNETIHRMOWHMUNW
+11/20 14:10:28.068 [main] DEBUG c.i.i.s.t.i.CumulativeWeightCalculator - Start calculating cw starting with tx hash ECCCCBRHHPNBIYSIKIUGASO9BYNDSFUYCVVBQMQROO9UDJPLYROSY9OKOJQPRQBA9GVTIOCPMG9IXOJQQ
+11/20 14:10:28.069 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.659 s - in com.iota.iri.service.tipselection.impl.CumulativeWeightCalculatorTest
 [INFO] Running com.iota.iri.service.tipselection.impl.TailFinderImplTest
-11/20 14:06:54.007 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:54.250 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:54.259 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s - in com.iota.iri.service.tipselection.impl.TailFinderImplTest
+11/20 14:10:28.312 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:10:28.890 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:28.899 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.824 s - in com.iota.iri.service.tipselection.impl.TailFinderImplTest
 [INFO] Running com.iota.iri.service.APIIntegrationTests
-11/20 14:06:55.844 [main] INFO  c.i.iri.service.APIIntegrationTests - IRI integration tests - initializing node.
-11/20 14:06:56.157 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Latest milestone has changed from #0 to #774805
-11/20 14:06:56.233 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:06:56.534 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:06:56.536 [Tip Solidity Rescan] DEBUG com.iota.iri.service.TipsSolidifier - #Solid/NonSolid: 0/0
-11/20 14:06:56.540 [main] INFO  com.iota.iri.network.UDPReceiver - UDP replicator is accepting connections on udp port 14600
-11/20 14:06:56.541 [UDP receiving thread] INFO  com.iota.iri.network.UDPReceiver - Spawning Receiver Thread
-11/20 14:06:56.542 [main] INFO  c.i.i.network.replicator.Replicator - Started ReplicatorSourcePool
-11/20 14:06:56.546 [Thread-17] INFO  c.i.i.n.r.ReplicatorSourcePool - TCP replicator is accepting connections on tcp port 15600
-11/20 14:06:56.549 [pool-11-thread-1] INFO  com.iota.iri.network.Node - Spawning Broadcaster Thread
-11/20 14:06:56.550 [pool-11-thread-2] INFO  com.iota.iri.network.Node - Spawning Tips Requester Thread
-11/20 14:06:56.551 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Spawning Neighbor DNS Refresher Thread
-11/20 14:06:56.551 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Checking Neighbors' Ip...
-11/20 14:06:56.552 [pool-11-thread-4] INFO  com.iota.iri.network.Node - Spawning Process Received Data Thread
-11/20 14:06:56.553 [pool-11-thread-5] INFO  com.iota.iri.network.Node - Spawning Reply To Request Thread
-11/20 14:06:56.555 [pool-11-thread-2] INFO  com.iota.iri.network.Node - toProcess = 0 , toBroadcast = 0 , toRequest = 0 , toReply = 0 / totalTransactions = 0
-11/20 14:06:56.560 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Starting [Latest Milestone Tracker] (starts in 0ms / runs every 1000ms) ...
-11/20 14:06:56.561 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - [Latest Milestone Tracker] Started (execution #1) ...
-11/20 14:06:56.562 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - Starting [Latest Solid Milestone Tracker] (starts in 0ms / runs every 5000ms) ...
-11/20 14:06:56.563 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - [Latest Solid Milestone Tracker] Started (execution #1) ...
-11/20 14:06:56.564 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Starting [Seen Milestones Retriever] (starts in 0ms / runs every 1000ms) ...
-11/20 14:06:56.564 [Latest Milestone Tracker] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Processing milestone candidates ... [DONE]
-11/20 14:06:56.565 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - [Seen Milestones Retriever] Started (execution #1) ...
-11/20 14:06:56.565 [main] INFO  c.i.i.s.m.MilestoneSolidifier - Starting [Milestone Solidifier] (starts in 0ms / runs every 100ms) ...
-11/20 14:06:56.566 [main] INFO  c.i.i.s.m.MilestoneSolidifier - [Milestone Solidifier] Started (execution #1) ...
-11/20 14:06:56.566 [Seen Milestones Retriever] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Requesting seen milestones ... [DONE]
-11/20 14:06:56.567 [Seen Milestones Retriever] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Stopping [Seen Milestones Retriever] ...
-11/20 14:06:56.567 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - [Seen Milestones Retriever] Stopped (after #1 executions) ...
-11/20 14:06:56.568 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Local Snapshots Monitor ...
-11/20 14:06:56.569 [Local Snapshots Monitor] INFO  c.iota.iri.utils.thread.ThreadUtils - Local Snapshots Monitor [STARTED]
-11/20 14:06:56.570 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Transaction Pruner ...
-11/20 14:06:56.570 [Transaction Pruner] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner [STARTED]
-11/20 14:06:56.571 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Transaction Pruner Persister ...
-11/20 14:06:56.571 [main] DEBUG com.iota.iri.service.API - Binding JSON-REST API Undertow server on localhost:14266
-11/20 14:06:56.571 [Transaction Pruner Persister] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner Persister [STARTED]
-11/20 14:06:56.634 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
-11/20 14:06:56.637 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@efba38a
-11/20 14:06:56.656 [main] INFO  org.xnio - XNIO version 3.3.8.Final
-11/20 14:06:56.689 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
-11/20 14:06:56.808 [XNIO-1 I/O-1] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@1aa36f4b
-11/20 14:06:56.808 [XNIO-1 I/O-2] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.EPollSelectorImpl@72d1559c
-11/20 14:06:56.809 [XNIO-1 I/O-5] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-5', selector sun.nio.ch.EPollSelectorImpl@388c594c
-11/20 14:06:56.809 [XNIO-1 I/O-3] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.EPollSelectorImpl@3cdc9972
-11/20 14:06:56.819 [XNIO-1 I/O-8] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-8', selector sun.nio.ch.EPollSelectorImpl@3bad0b7f
-11/20 14:06:56.819 [XNIO-1 I/O-7] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-7', selector sun.nio.ch.EPollSelectorImpl@7196b61c
-11/20 14:06:56.819 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.EPollSelectorImpl@7ce0527f
-11/20 14:06:56.819 [XNIO-1 I/O-6] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-6', selector sun.nio.ch.EPollSelectorImpl@20832b0b
-11/20 14:06:56.820 [XNIO-1 I/O-10] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-10', selector sun.nio.ch.EPollSelectorImpl@23d0a34c
-11/20 14:06:56.820 [XNIO-1 I/O-11] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-11', selector sun.nio.ch.EPollSelectorImpl@16b104ac
-11/20 14:06:56.819 [XNIO-1 I/O-9] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-9', selector sun.nio.ch.EPollSelectorImpl@1f0ee733
-11/20 14:06:56.821 [XNIO-1 I/O-12] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-12', selector sun.nio.ch.EPollSelectorImpl@2d20dfeb
-11/20 14:06:56.822 [XNIO-1 I/O-15] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-15', selector sun.nio.ch.EPollSelectorImpl@4a9e2084
-11/20 14:06:56.822 [XNIO-1 I/O-16] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-16', selector sun.nio.ch.EPollSelectorImpl@1d495b05
-11/20 14:06:56.822 [XNIO-1 Accept] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.EPollSelectorImpl@28c40284
-11/20 14:06:56.825 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface localhost and port 14266
-11/20 14:06:56.827 [XNIO-1 I/O-14] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-14', selector sun.nio.ch.EPollSelectorImpl@304672d5
-11/20 14:06:56.827 [XNIO-1 I/O-13] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-13', selector sun.nio.ch.EPollSelectorImpl@51c4c5f8
-11/20 14:06:56.940 [main] INFO  c.i.iri.service.APIIntegrationTests - IOTA Node initialised correctly.
-11/20 14:06:58.630 [XNIO-1 I/O-1] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:06:58.696 [XNIO-1 task-1] DEBUG com.iota.iri.service.API - # 1 -> Requesting command 'broadcastTransactions'
+11/20 14:10:30.592 [main] INFO  c.i.iri.service.APIIntegrationTests - IRI integration tests - initializing node.
+11/20 14:10:30.922 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Latest milestone has changed from #0 to #774805
+11/20 14:10:30.973 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:10:31.163 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:31.166 [Tip Solidity Rescan] DEBUG com.iota.iri.service.TipsSolidifier - #Solid/NonSolid: 0/0
+11/20 14:10:31.171 [main] INFO  com.iota.iri.network.UDPReceiver - UDP replicator is accepting connections on udp port 14600
+11/20 14:10:31.172 [UDP receiving thread] INFO  com.iota.iri.network.UDPReceiver - Spawning Receiver Thread
+11/20 14:10:31.175 [main] INFO  c.i.i.network.replicator.Replicator - Started ReplicatorSourcePool
+11/20 14:10:31.180 [Thread-17] INFO  c.i.i.n.r.ReplicatorSourcePool - TCP replicator is accepting connections on tcp port 15600
+11/20 14:10:31.185 [pool-11-thread-1] INFO  com.iota.iri.network.Node - Spawning Broadcaster Thread
+11/20 14:10:31.185 [pool-11-thread-2] INFO  com.iota.iri.network.Node - Spawning Tips Requester Thread
+11/20 14:10:31.187 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Spawning Neighbor DNS Refresher Thread
+11/20 14:10:31.187 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Checking Neighbors' Ip...
+11/20 14:10:31.188 [pool-11-thread-2] INFO  com.iota.iri.network.Node - toProcess = 0 , toBroadcast = 0 , toRequest = 0 , toReply = 0 / totalTransactions = 0
+11/20 14:10:31.188 [pool-11-thread-4] INFO  com.iota.iri.network.Node - Spawning Process Received Data Thread
+11/20 14:10:31.188 [pool-11-thread-5] INFO  com.iota.iri.network.Node - Spawning Reply To Request Thread
+11/20 14:10:31.197 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Starting [Latest Milestone Tracker] (starts in 0ms / runs every 1000ms) ...
+11/20 14:10:31.199 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - [Latest Milestone Tracker] Started (execution #1) ...
+11/20 14:10:31.199 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - Starting [Latest Solid Milestone Tracker] (starts in 0ms / runs every 5000ms) ...
+11/20 14:10:31.201 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - [Latest Solid Milestone Tracker] Started (execution #1) ...
+11/20 14:10:31.202 [Latest Milestone Tracker] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Processing milestone candidates ... [DONE]
+11/20 14:10:31.202 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Starting [Seen Milestones Retriever] (starts in 0ms / runs every 1000ms) ...
+11/20 14:10:31.203 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - [Seen Milestones Retriever] Started (execution #1) ...
+11/20 14:10:31.204 [main] INFO  c.i.i.s.m.MilestoneSolidifier - Starting [Milestone Solidifier] (starts in 0ms / runs every 100ms) ...
+11/20 14:10:31.205 [main] INFO  c.i.i.s.m.MilestoneSolidifier - [Milestone Solidifier] Started (execution #1) ...
+11/20 14:10:31.207 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Local Snapshots Monitor ...
+11/20 14:10:31.209 [Local Snapshots Monitor] INFO  c.iota.iri.utils.thread.ThreadUtils - Local Snapshots Monitor [STARTED]
+11/20 14:10:31.209 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Transaction Pruner ...
+11/20 14:10:31.210 [Transaction Pruner] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner [STARTED]
+11/20 14:10:31.211 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Starting Thread: Transaction Pruner Persister ...
+11/20 14:10:31.211 [Seen Milestones Retriever] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Requesting seen milestones ... [DONE]
+11/20 14:10:31.212 [main] DEBUG com.iota.iri.service.API - Binding JSON-REST API Undertow server on localhost:14266
+11/20 14:10:31.212 [Transaction Pruner Persister] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner Persister [STARTED]
+11/20 14:10:31.212 [Seen Milestones Retriever] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - Stopping [Seen Milestones Retriever] ...
+11/20 14:10:31.212 [main] INFO  c.i.i.s.m.i.SeenMilestonesRetrieverImpl - [Seen Milestones Retriever] Stopped (after #1 executions) ...
+11/20 14:10:31.297 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+11/20 14:10:31.302 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@4dbc47b1
+11/20 14:10:31.327 [main] INFO  org.xnio - XNIO version 3.3.8.Final
+11/20 14:10:31.379 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+11/20 14:10:31.558 [XNIO-1 I/O-2] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.EPollSelectorImpl@5752b28f
+11/20 14:10:31.558 [XNIO-1 I/O-1] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@17b2a823
+11/20 14:10:31.559 [XNIO-1 I/O-3] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.EPollSelectorImpl@6c1c023e
+11/20 14:10:31.563 [XNIO-1 I/O-6] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-6', selector sun.nio.ch.EPollSelectorImpl@142debfd
+11/20 14:10:31.563 [XNIO-1 I/O-5] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-5', selector sun.nio.ch.EPollSelectorImpl@5de966a0
+11/20 14:10:31.564 [XNIO-1 I/O-7] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-7', selector sun.nio.ch.EPollSelectorImpl@1d6ca12f
+11/20 14:10:31.564 [XNIO-1 I/O-8] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-8', selector sun.nio.ch.EPollSelectorImpl@30f434c7
+11/20 14:10:31.561 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.EPollSelectorImpl@688a429f
+11/20 14:10:31.564 [XNIO-1 I/O-9] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-9', selector sun.nio.ch.EPollSelectorImpl@ea036ec
+11/20 14:10:31.565 [XNIO-1 I/O-11] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-11', selector sun.nio.ch.EPollSelectorImpl@2028e167
+11/20 14:10:31.565 [XNIO-1 I/O-12] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-12', selector sun.nio.ch.EPollSelectorImpl@445c935b
+11/20 14:10:31.567 [XNIO-1 I/O-13] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-13', selector sun.nio.ch.EPollSelectorImpl@6aedd2d0
+11/20 14:10:31.567 [XNIO-1 I/O-14] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-14', selector sun.nio.ch.EPollSelectorImpl@1b3416fd
+11/20 14:10:31.567 [XNIO-1 I/O-10] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-10', selector sun.nio.ch.EPollSelectorImpl@4b70806e
+11/20 14:10:31.568 [XNIO-1 I/O-16] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-16', selector sun.nio.ch.EPollSelectorImpl@382a8a0
+11/20 14:10:31.568 [XNIO-1 Accept] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.EPollSelectorImpl@7c5239aa
+11/20 14:10:31.568 [XNIO-1 I/O-15] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-15', selector sun.nio.ch.EPollSelectorImpl@3fb2a15d
+11/20 14:10:31.579 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface localhost and port 14266
+11/20 14:10:31.706 [main] INFO  c.i.iri.service.APIIntegrationTests - IOTA Node initialised correctly.
+11/20 14:10:33.589 [XNIO-1 I/O-7] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:33.621 [XNIO-1 task-1] DEBUG com.iota.iri.service.API - # 1 -> Requesting command 'broadcastTransactions'
 HTTP/1.1 200 OK
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Keep-Alive: timeout=500, max=100
 Content-Type: application/json
 Content-Length: 15
-Date: Tue, 20 Nov 2018 13:06:58 GMT
+Date: Tue, 20 Nov 2018 13:10:33 GMT
 
 {
-    "duration": 77
+    "duration": 36
 }
-11/20 14:07:00.569 [XNIO-1 I/O-5] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:00.572 [XNIO-1 task-2] DEBUG com.iota.iri.service.API - # 2 -> Requesting command 'addNeighbors'
-11/20 14:07:00.573 [XNIO-1 task-2] DEBUG com.iota.iri.service.API - Invoking 'addNeighbors' with [udp://8.8.8.8:14266, udp://8.8.8.5:14266]
-11/20 14:07:00.574 [XNIO-1 task-2] INFO  com.iota.iri.service.API - Adding neighbor: udp://8.8.8.8:14266
-11/20 14:07:00.575 [XNIO-1 task-2] INFO  com.iota.iri.service.API - Adding neighbor: udp://8.8.8.5:14266
-11/20 14:07:00.639 [XNIO-1 I/O-7] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:00.640 [XNIO-1 task-3] DEBUG com.iota.iri.service.API - # 3 -> Requesting command 'getNeighbors'
-11/20 14:07:00.715 [XNIO-1 I/O-9] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:00.717 [XNIO-1 task-4] DEBUG com.iota.iri.service.API - # 4 -> Requesting command 'findTransactions'
-11/20 14:07:00.770 [XNIO-1 I/O-11] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:00.772 [XNIO-1 task-5] DEBUG com.iota.iri.service.API - # 5 -> Requesting command 'attachToTangle'
-11/20 14:07:00.889 [XNIO-1 I/O-13] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:00.892 [XNIO-1 task-6] DEBUG com.iota.iri.service.API - # 6 -> Requesting command 'attachToTangle'
-11/20 14:07:02.133 [XNIO-1 I/O-15] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.136 [XNIO-1 task-7] DEBUG com.iota.iri.service.API - # 7 -> Requesting command 'storeTransactions'
+11/20 14:10:35.450 [XNIO-1 I/O-9] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:35.452 [XNIO-1 task-2] DEBUG com.iota.iri.service.API - # 2 -> Requesting command 'addNeighbors'
+11/20 14:10:35.453 [XNIO-1 task-2] DEBUG com.iota.iri.service.API - Invoking 'addNeighbors' with [udp://8.8.8.8:14266, udp://8.8.8.5:14266]
+11/20 14:10:35.453 [XNIO-1 task-2] INFO  com.iota.iri.service.API - Adding neighbor: udp://8.8.8.8:14266
+11/20 14:10:35.455 [XNIO-1 task-2] INFO  com.iota.iri.service.API - Adding neighbor: udp://8.8.8.5:14266
+11/20 14:10:35.520 [XNIO-1 I/O-11] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:35.521 [XNIO-1 task-3] DEBUG com.iota.iri.service.API - # 3 -> Requesting command 'getNeighbors'
+11/20 14:10:35.590 [XNIO-1 I/O-13] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:35.592 [XNIO-1 task-4] DEBUG com.iota.iri.service.API - # 4 -> Requesting command 'findTransactions'
+11/20 14:10:35.644 [XNIO-1 I/O-15] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:35.647 [XNIO-1 task-5] DEBUG com.iota.iri.service.API - # 5 -> Requesting command 'attachToTangle'
+11/20 14:10:35.759 [XNIO-1 I/O-1] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:35.761 [XNIO-1 task-6] DEBUG com.iota.iri.service.API - # 6 -> Requesting command 'attachToTangle'
+11/20 14:10:36.877 [XNIO-1 I/O-3] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:36.879 [XNIO-1 task-7] DEBUG com.iota.iri.service.API - # 7 -> Requesting command 'storeTransactions'
 HTTP/1.1 200 OK
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Keep-Alive: timeout=500, max=100
 Content-Type: application/json
 Content-Length: 15
-Date: Tue, 20 Nov 2018 13:07:02 GMT
+Date: Tue, 20 Nov 2018 13:10:36 GMT
+
+{
+    "duration": 18
+}
+11/20 14:10:36.949 [XNIO-1 I/O-5] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:36.951 [XNIO-1 task-8] DEBUG com.iota.iri.service.API - # 8 -> Requesting command 'findTransactions'
+11/20 14:10:37.006 [XNIO-1 I/O-7] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.007 [XNIO-1 task-9] DEBUG com.iota.iri.service.API - # 9 -> Requesting command 'getTips'
+11/20 14:10:37.046 [XNIO-1 I/O-9] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.047 [XNIO-1 task-10] DEBUG com.iota.iri.service.API - # 10 -> Requesting command 'getTrytes'
+11/20 14:10:37.076 [XNIO-1 I/O-11] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.077 [XNIO-1 task-11] DEBUG com.iota.iri.service.API - # 11 -> Requesting command 'removeNeighbors'
+11/20 14:10:37.082 [XNIO-1 task-11] DEBUG com.iota.iri.service.API - Invoking 'removeNeighbors' with [udp://8.8.8.8:14266, udp://8.8.8.5:14266]
+11/20 14:10:37.082 [XNIO-1 task-11] INFO  com.iota.iri.service.API - Removing neighbor: udp://8.8.8.8:14266
+11/20 14:10:37.082 [XNIO-1 task-11] INFO  com.iota.iri.service.API - Removing neighbor: udp://8.8.8.5:14266
+11/20 14:10:37.115 [XNIO-1 I/O-13] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.116 [XNIO-1 task-12] DEBUG com.iota.iri.service.API - # 12 -> Requesting command 'getNodeInfo'
+11/20 14:10:37.176 [XNIO-1 I/O-15] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.177 [XNIO-1 task-13] DEBUG com.iota.iri.service.API - # 13 -> Requesting command 'storeTransactions'
+HTTP/1.1 200 OK
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Keep-Alive: timeout=500, max=100
+Content-Type: application/json
+Content-Length: 15
+Date: Tue, 20 Nov 2018 13:10:37 GMT
+
+{
+    "duration": 42
+}
+11/20 14:10:37.253 [XNIO-1 I/O-1] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.255 [XNIO-1 task-14] DEBUG com.iota.iri.service.API - # 14 -> Requesting command 'attachToTangle'
+11/20 14:10:37.349 [XNIO-1 I/O-3] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.351 [XNIO-1 task-15] DEBUG com.iota.iri.service.API - # 15 -> Requesting command 'storeTransactions'
+HTTP/1.1 200 OK
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Keep-Alive: timeout=500, max=100
+Content-Type: application/json
+Content-Length: 15
+Date: Tue, 20 Nov 2018 13:10:37 GMT
 
 {
     "duration": 21
 }
-11/20 14:07:02.223 [XNIO-1 I/O-1] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.225 [XNIO-1 task-8] DEBUG com.iota.iri.service.API - # 8 -> Requesting command 'findTransactions'
-11/20 14:07:02.290 [XNIO-1 I/O-3] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.292 [XNIO-1 task-9] DEBUG com.iota.iri.service.API - # 9 -> Requesting command 'getTips'
-11/20 14:07:02.336 [XNIO-1 I/O-5] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.337 [XNIO-1 task-10] DEBUG com.iota.iri.service.API - # 10 -> Requesting command 'getTrytes'
-11/20 14:07:02.374 [XNIO-1 I/O-7] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.376 [XNIO-1 task-11] DEBUG com.iota.iri.service.API - # 11 -> Requesting command 'removeNeighbors'
-11/20 14:07:02.376 [XNIO-1 task-11] DEBUG com.iota.iri.service.API - Invoking 'removeNeighbors' with [udp://8.8.8.8:14266, udp://8.8.8.5:14266]
-11/20 14:07:02.376 [XNIO-1 task-11] INFO  com.iota.iri.service.API - Removing neighbor: udp://8.8.8.8:14266
-11/20 14:07:02.376 [XNIO-1 task-11] INFO  com.iota.iri.service.API - Removing neighbor: udp://8.8.8.5:14266
-11/20 14:07:02.428 [XNIO-1 I/O-9] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.430 [XNIO-1 task-12] DEBUG com.iota.iri.service.API - # 12 -> Requesting command 'getNodeInfo'
-11/20 14:07:02.508 [XNIO-1 I/O-11] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.512 [XNIO-1 task-13] DEBUG com.iota.iri.service.API - # 13 -> Requesting command 'storeTransactions'
-HTTP/1.1 200 OK
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Keep-Alive: timeout=500, max=100
-Content-Type: application/json
-Content-Length: 15
-Date: Tue, 20 Nov 2018 13:07:02 GMT
-
-{
-    "duration": 21
-}
-11/20 14:07:02.563 [XNIO-1 I/O-13] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.565 [XNIO-1 task-14] DEBUG com.iota.iri.service.API - # 14 -> Requesting command 'attachToTangle'
-11/20 14:07:02.673 [XNIO-1 I/O-15] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.675 [XNIO-1 task-15] DEBUG com.iota.iri.service.API - # 15 -> Requesting command 'storeTransactions'
-HTTP/1.1 200 OK
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Keep-Alive: timeout=500, max=100
-Content-Type: application/json
-Content-Length: 15
-Date: Tue, 20 Nov 2018 13:07:02 GMT
-
-{
-    "duration": 30
-}
-11/20 14:07:02.787 [XNIO-1 I/O-1] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.790 [XNIO-1 task-16] DEBUG com.iota.iri.service.API - # 16 -> Requesting command 'findTransactions'
-11/20 14:07:02.854 [XNIO-1 I/O-3] DEBUG io.undertow.request - Matched default handler path /
-11/20 14:07:02.856 [XNIO-1 task-17] DEBUG com.iota.iri.service.API - # 17 -> Requesting command 'findTransactions'
-11/20 14:07:03.171 [main] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@efba38a
-11/20 14:07:03.932 [pool-11-thread-1] INFO  com.iota.iri.network.Node - Shutting down Broadcaster Thread
-11/20 14:07:03.932 [pool-11-thread-4] INFO  com.iota.iri.network.Node - Shutting down Process Received Data Thread
-11/20 14:07:03.933 [pool-11-thread-5] INFO  com.iota.iri.network.Node - Shutting down Reply To Request Thread
-11/20 14:07:04.171 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Shutting down Neighbor DNS Refresher Thread
-11/20 14:07:06.557 [pool-11-thread-2] INFO  com.iota.iri.network.Node - Shutting down Requester Thread
-11/20 14:07:12.678 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-11/20 14:07:12.680 [main] INFO  c.i.i.s.m.MilestoneSolidifier - Stopping [Milestone Solidifier] ...
-11/20 14:07:12.680 [main] INFO  c.i.i.s.m.MilestoneSolidifier - [Milestone Solidifier] Stopped (after #147 executions) ...
-11/20 14:07:12.680 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - Stopping [Latest Solid Milestone Tracker] ...
-11/20 14:07:12.680 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - [Latest Solid Milestone Tracker] Stopped (after #4 executions) ...
-11/20 14:07:12.681 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Stopping [Latest Milestone Tracker] ...
-11/20 14:07:12.681 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - [Latest Milestone Tracker] Stopped (after #16 executions) ...
-11/20 14:07:12.681 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Local Snapshots Monitor ...
-11/20 14:07:12.681 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Transaction Pruner ...
-11/20 14:07:12.682 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Transaction Pruner Persister ...
-11/20 14:07:12.682 [Local Snapshots Monitor] INFO  c.iota.iri.utils.thread.ThreadUtils - Local Snapshots Monitor [STOPPED]
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.417 s - in com.iota.iri.service.APIIntegrationTests
+11/20 14:10:37.449 [XNIO-1 I/O-5] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.451 [XNIO-1 task-16] DEBUG com.iota.iri.service.API - # 16 -> Requesting command 'findTransactions'
+11/20 14:10:37.517 [XNIO-1 I/O-7] DEBUG io.undertow.request - Matched default handler path /
+11/20 14:10:37.520 [XNIO-1 task-17] DEBUG com.iota.iri.service.API - # 17 -> Requesting command 'findTransactions'
+11/20 14:10:38.054 [main] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@4dbc47b1
+11/20 14:10:38.807 [pool-11-thread-5] INFO  com.iota.iri.network.Node - Shutting down Reply To Request Thread
+11/20 14:10:38.808 [pool-11-thread-4] INFO  com.iota.iri.network.Node - Shutting down Process Received Data Thread
+11/20 14:10:38.809 [pool-11-thread-1] INFO  com.iota.iri.network.Node - Shutting down Broadcaster Thread
+11/20 14:10:39.051 [pool-11-thread-3] INFO  com.iota.iri.network.Node - Shutting down Neighbor DNS Refresher Thread
+11/20 14:10:41.189 [pool-11-thread-2] INFO  com.iota.iri.network.Node - Shutting down Requester Thread
+11/20 14:10:47.559 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+11/20 14:10:47.562 [main] INFO  c.i.i.s.m.MilestoneSolidifier - Stopping [Milestone Solidifier] ...
+11/20 14:10:47.563 [main] INFO  c.i.i.s.m.MilestoneSolidifier - [Milestone Solidifier] Stopped (after #150 executions) ...
+11/20 14:10:47.566 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - Stopping [Latest Solid Milestone Tracker] ...
+11/20 14:10:47.568 [main] INFO  c.i.i.s.m.i.LatestSolidMilestoneTrackerImpl - [Latest Solid Milestone Tracker] Stopped (after #4 executions) ...
+11/20 14:10:47.568 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - Stopping [Latest Milestone Tracker] ...
+11/20 14:10:47.569 [main] INFO  c.i.i.s.m.i.LatestMilestoneTrackerImpl - [Latest Milestone Tracker] Stopped (after #16 executions) ...
+11/20 14:10:47.570 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Local Snapshots Monitor ...
+11/20 14:10:47.571 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Transaction Pruner ...
+11/20 14:10:47.571 [Local Snapshots Monitor] INFO  c.iota.iri.utils.thread.ThreadUtils - Local Snapshots Monitor [STOPPED]
+11/20 14:10:47.572 [main] INFO  c.iota.iri.utils.thread.ThreadUtils - Stopping Thread: Transaction Pruner Persister ...
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.667 s - in com.iota.iri.service.APIIntegrationTests
+11/20 14:10:47.572 [Transaction Pruner] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner [STOPPED]
+11/20 14:10:47.572 [Transaction Pruner Persister] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner Persister [STOPPED]
 [INFO] Running com.iota.iri.MilestoneTrackerTest
-11/20 14:07:12.682 [Transaction Pruner] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner [STOPPED]
-11/20 14:07:12.683 [Transaction Pruner Persister] INFO  c.iota.iri.utils.thread.ThreadUtils - Transaction Pruner Persister [STOPPED]
-11/20 14:07:12.890 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
-11/20 14:07:13.138 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
-11/20 14:07:14.350 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.664 s - in com.iota.iri.MilestoneTrackerTest
+11/20 14:10:47.831 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - Initializing Database Backend... 
+11/20 14:10:48.033 [main] INFO  c.i.i.s.r.RocksDBPersistenceProvider - RocksDB persistence provider initialized.
+11/20 14:10:49.181 [main] INFO  com.iota.iri.storage.Tangle - Shutting down Tangle Persistence Providers... 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.606 s - in com.iota.iri.MilestoneTrackerTest
 [INFO] Running com.iota.iri.model.HashTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in com.iota.iri.model.HashTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in com.iota.iri.model.HashTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   UDPNeighborTest.sameIpWhenMatchesThenTrue:18 expected match
-[ERROR] Errors: 
-[ERROR]   UDPNeighborTest.differentIpWhenMatchesThenFalse:27 » NullPointer
-[INFO] 
-[ERROR] Tests run: 215, Failures: 1, Errors: 1, Skipped: 1
+[WARNING] Tests run: 215, Failures: 0, Errors: 0, Skipped: 1
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:50 min
-[INFO] Finished at: 2018-11-20T14:07:15+01:00
-[INFO] Final Memory: 33M/610M
+[INFO] Total time: 01:49 min
+[INFO] Finished at: 2018-11-20T14:10:50+01:00
+[INFO] Final Memory: 22M/602M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project iri: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/iotaledger/iri/457435657/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
