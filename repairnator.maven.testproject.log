@@ -23,12 +23,6 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ jsapar ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 6.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 1115.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
@@ -88,76 +82,76 @@ LINE: Alfred--|--Nilsson--|--true--|--<?xml version="1.0" encoding="UTF-8"?><doc
     </tr>
   </table>
 </page>
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.814 s - in org.jsapar.Text2XmlConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 s - in org.jsapar.Text2XmlConverterTest
 [INFO] Running org.jsapar.Xml2TextConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.jsapar.Xml2TextConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.Xml2TextConverterTest
 [INFO] Running org.jsapar.schema.CSVSchemaLineTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.schema.CSVSchemaLineTest
 [INFO] Running org.jsapar.schema.Schema2XmlExtractorTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.jsapar.schema.Schema2XmlExtractorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.jsapar.schema.Schema2XmlExtractorTest
 [INFO] Running org.jsapar.schema.SchemaCellFormatTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.jsapar.schema.SchemaCellFormatTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.jsapar.schema.SchemaCellFormatTest
 [INFO] Running org.jsapar.schema.FixedWidthSchemaLineTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.schema.FixedWidthSchemaLineTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.jsapar.schema.FixedWidthSchemaLineTest
 [INFO] Running org.jsapar.schema.FixedWidthCellPositionsTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.schema.FixedWidthCellPositionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.schema.FixedWidthCellPositionsTest
 [INFO] Running org.jsapar.schema.Xml2SchemaBuilderTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.jsapar.schema.Xml2SchemaBuilderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in org.jsapar.schema.Xml2SchemaBuilderTest
 [INFO] Running org.jsapar.schema.SchemaCellTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.jsapar.schema.SchemaCellTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jsapar.schema.SchemaCellTest
 [INFO] Running org.jsapar.schema.FixedWidthSchemaTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.schema.FixedWidthSchemaTest
 [INFO] Running org.jsapar.schema.FixedWidthSchemaCellTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.schema.FixedWidthSchemaCellTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.schema.FixedWidthSchemaCellTest
 [INFO] Running org.jsapar.Text2TextConverterTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.jsapar.Text2TextConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.jsapar.Text2TextConverterTest
 [INFO] Running org.jsapar.BeanComposerTest
 The (expected) error: [org.jsapar.compose.ComposeException: Skipped assigning cell - No method called setDoNotExist() found in class org.jsapar.TstPostAddress that fits the cell  while handling cell address.doNotExist=Stigen - Skipped assigning cell - No method called setDoNotExist() found in class org.jsapar.TstPostAddress that fits the cell ]
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.jsapar.BeanComposerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.jsapar.BeanComposerTest
 [INFO] Running org.jsapar.compose.string.StringComposerNullOnEmptyCellTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.compose.string.StringComposerNullOnEmptyCellTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.compose.string.StringComposerNullOnEmptyCellTest
 [INFO] Running org.jsapar.compose.string.StringComposerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jsapar.compose.string.StringComposerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.compose.string.StringComposerTest
 [INFO] Running org.jsapar.compose.fixed.FixedWidthComposerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.compose.fixed.FixedWidthComposerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.fixed.FixedWidthComposerTest
 [INFO] Running org.jsapar.compose.fixed.FixedWidthLineComposerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.compose.fixed.FixedWidthLineComposerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.fixed.FixedWidthLineComposerTest
 [INFO] Running org.jsapar.compose.fixed.FixedWidthCellComposerTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.compose.fixed.FixedWidthCellComposerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.fixed.FixedWidthCellComposerTest
 [INFO] Running org.jsapar.compose.cell.CellComposerTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.compose.cell.CellComposerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.compose.cell.CellComposerTest
 [INFO] Running org.jsapar.compose.bean.BeanComposeConfigTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.bean.BeanComposeConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.bean.BeanComposeConfigTest
 [INFO] Running org.jsapar.compose.bean.BeanEventTest
 [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.bean.BeanEventTest
 [INFO] Running org.jsapar.compose.bean.RecordingBeanEventListenerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.bean.RecordingBeanEventListenerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.bean.RecordingBeanEventListenerTest
 [INFO] Running org.jsapar.compose.bean.BeanFactoryDefaultTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.compose.bean.BeanFactoryDefaultTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.bean.BeanFactoryDefaultTest
 [INFO] Running org.jsapar.compose.csv.CsvLineComposerTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jsapar.compose.csv.CsvLineComposerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.CsvLineComposerTest
 [INFO] Running org.jsapar.compose.csv.CsvComposerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.csv.CsvComposerTest
 [INFO] Running org.jsapar.compose.csv.CsvCellComposerTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.jsapar.compose.csv.CsvCellComposerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.CsvCellComposerTest
 [INFO] Running org.jsapar.compose.csv.quote.NeverQuoteTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.quote.NeverQuoteTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.csv.quote.NeverQuoteTest
 [INFO] Running org.jsapar.compose.csv.quote.AlwaysQuoteTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.csv.quote.AlwaysQuoteTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.quote.AlwaysQuoteTest
 [INFO] Running org.jsapar.compose.csv.quote.QuoteIfNeededTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.quote.QuoteIfNeededTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.csv.quote.QuoteIfNeededTest
 [INFO] Running org.jsapar.compose.csv.quote.NeverQuoteButReplaceTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.compose.csv.quote.NeverQuoteButReplaceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.compose.csv.quote.NeverQuoteButReplaceTest
 [INFO] Running org.jsapar.text.BooleanFormatTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.jsapar.text.BooleanFormatTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.jsapar.text.BooleanFormatTest
 [INFO] Running org.jsapar.error.SplitErrorEventListenerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.error.SplitErrorEventListenerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.error.SplitErrorEventListenerTest
 [INFO] Running org.jsapar.error.BeanExceptionTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.error.BeanExceptionTest
 [INFO] Running org.jsapar.error.RecordingErrorEventListenerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.error.RecordingErrorEventListenerTest
 [INFO] Running org.jsapar.error.ThresholdRecordingErrorEventListenerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.error.ThresholdRecordingErrorEventListenerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.error.ThresholdRecordingErrorEventListenerTest
 [INFO] Running org.jsapar.parse.xml.Text2SAXReaderTest
 <?xml version="1.0" encoding="UTF-8"?><document>
   <line linetype="Person" number="1">
@@ -176,159 +170,131 @@ The (expected) error: [org.jsapar.compose.ComposeException: Skipped assigning ce
     <cell name="Has dog" type="boolean">true</cell>
   </line>
 </document>
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.jsapar.parse.xml.Text2SAXReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jsapar.parse.xml.Text2SAXReaderTest
 [INFO] Running org.jsapar.parse.text.TextLineReaderTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.parse.text.TextLineReaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.text.TextLineReaderTest
 [INFO] Running org.jsapar.parse.text.TextLineReaderAnyCRLFTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.text.TextLineReaderAnyCRLFTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.parse.text.TextLineReaderAnyCRLFTest
 [INFO] Running org.jsapar.parse.fixed.FixedWidthCellParseTaskTest
 org.jsapar.parse.CellParseException: Cell='First name' Value='' Expected: CellType=STRING - Mandatory cell requires a value.
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.jsapar.parse.fixed.FixedWidthCellParseTaskTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.jsapar.parse.fixed.FixedWidthCellParseTaskTest
 [INFO] Running org.jsapar.parse.fixed.FixedWidthControlCellParseTaskTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.jsapar.parse.fixed.FixedWidthControlCellParseTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jsapar.parse.fixed.FixedWidthControlCellParseTaskTest
 [INFO] Running org.jsapar.parse.fixed.FixedWidthParseTaskTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.parse.fixed.FixedWidthParseTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.fixed.FixedWidthParseTaskTest
 [INFO] Running org.jsapar.parse.fixed.FixedWidthLineParseTaskTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.parse.fixed.FixedWidthLineParseTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.parse.fixed.FixedWidthLineParseTaskTest
 [INFO] Running org.jsapar.parse.MulticastLineEventListenerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.parse.MulticastLineEventListenerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.parse.MulticastLineEventListenerTest
 [INFO] Running org.jsapar.parse.XMLDocumentParseTaskTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jsapar.parse.XMLDocumentParseTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jsapar.parse.XMLDocumentParseTaskTest
 [INFO] Running org.jsapar.parse.CellParseExceptionTest
 Line=42 Cell='A' Value='a' Expected: CellType=STRING, Format={Pattern='\d+'} - Some error
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.parse.CellParseExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.CellParseExceptionTest
 [INFO] Running org.jsapar.parse.cell.BooleanCellFactoryTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.cell.BooleanCellFactoryTest
 [INFO] Running org.jsapar.parse.cell.FloatCellFactoryTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.jsapar.parse.cell.FloatCellFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.parse.cell.FloatCellFactoryTest
 [INFO] Running org.jsapar.parse.cell.CellParserTest
-[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.jsapar.parse.cell.CellParserTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.jsapar.parse.cell.CellParserTest
 [INFO] Running org.jsapar.parse.cell.DateCellFactoryTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.cell.DateCellFactoryTest
 [INFO] Running org.jsapar.parse.cell.BigDecimalCellFactoryTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.cell.BigDecimalCellFactoryTest
 [INFO] Running org.jsapar.parse.bean.BeanParseTaskTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.jsapar.parse.bean.BeanParseTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.jsapar.parse.bean.BeanParseTaskTest
 [INFO] Running org.jsapar.parse.bean.Bean2CellTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.jsapar.parse.bean.Bean2CellTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.parse.bean.Bean2CellTest
 [INFO] Running org.jsapar.parse.bean.BeanMarshallerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jsapar.parse.bean.BeanMarshallerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.parse.bean.BeanMarshallerTest
 [INFO] Running org.jsapar.parse.csv.CsvLineReaderTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.parse.csv.CsvLineReaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jsapar.parse.csv.CsvLineReaderTest
 [INFO] Running org.jsapar.parse.csv.CsvParseTaskTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.jsapar.parse.csv.CsvParseTaskTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.jsapar.parse.csv.CsvParseTaskTest
 [INFO] Running org.jsapar.parse.csv.SimpleCellSplitterTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.parse.csv.SimpleCellSplitterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.parse.csv.SimpleCellSplitterTest
 [INFO] Running org.jsapar.parse.csv.CsvLineParseTaskTest
-[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.jsapar.parse.csv.CsvLineParseTaskTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.jsapar.parse.csv.CsvLineParseTaskTest
 [INFO] Running org.jsapar.parse.csv.CsvParserTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.jsapar.parse.csv.CsvParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.parse.csv.CsvParserTest
 [INFO] Running org.jsapar.parse.csv.QuotedCellSplitterTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.parse.csv.QuotedCellSplitterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.parse.csv.QuotedCellSplitterTest
 [INFO] Running org.jsapar.Text2StringConverterTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.Text2StringConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.Text2StringConverterTest
 [INFO] Running org.jsapar.TextParserTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.TextParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.TextParserTest
 [INFO] Running org.jsapar.utils.cache.LimitedSizeCacheTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.utils.cache.LimitedSizeCacheTest
 [INFO] Running org.jsapar.utils.StringUtilsTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.utils.StringUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.utils.StringUtilsTest
 [INFO] Running org.jsapar.convert.Text2TextConverterMainTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.convert.Text2TextConverterMainTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.convert.Text2TextConverterMainTest
 [INFO] Running org.jsapar.concurrent.ConcurrentLineEventListenerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.jsapar.concurrent.ConcurrentLineEventListenerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.jsapar.concurrent.ConcurrentLineEventListenerTest
 [INFO] Running org.jsapar.concurrent.ConcurrentText2TextConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.concurrent.ConcurrentText2TextConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.concurrent.ConcurrentText2TextConverterTest
 [INFO] Running org.jsapar.concurrent.ConcurrentConvertTaskTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.concurrent.ConcurrentConvertTaskTest
 [INFO] Running org.jsapar.concurrent.ConcurrentBeanCollection2TextConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.concurrent.ConcurrentBeanCollection2TextConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jsapar.concurrent.ConcurrentBeanCollection2TextConverterTest
 [INFO] Running org.jsapar.Bean2TextConverterTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.Bean2TextConverterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.Bean2TextConverterTest
 [INFO] Running org.jsapar.BeanCollection2TextConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.BeanCollection2TextConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.BeanCollection2TextConverterTest
 [INFO] Running org.jsapar.Text2BeanConverterTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.Text2BeanConverterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.Text2BeanConverterTest
 [INFO] Running org.jsapar.TextComposerTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.jsapar.TextComposerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jsapar.TextComposerTest
 [INFO] Running org.jsapar.TextParseTaskTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.TextParseTaskTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.TextParseTaskTest
 [INFO] Running org.jsapar.JSaParExamplesTest
 H04_Names.txt   2017-07-07
 BÅsa-NissKnut     Nilsson 
 PArne    91:an    Karlsson
 F      2                  
 Successfully converted file examples/01_Names.csv
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 s - in org.jsapar.JSaParExamplesTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s - in org.jsapar.JSaParExamplesTest
 [INFO] Running org.jsapar.model.LocalTimeCellTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.LocalTimeCellTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jsapar.model.LocalTimeCellTest
 [INFO] Running org.jsapar.model.DateCellTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.DateCellTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jsapar.model.DateCellTest
 [INFO] Running org.jsapar.model.CharacterCellTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.CharacterCellTest
 [INFO] Running org.jsapar.model.LineTest
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.jsapar.model.LineTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jsapar.model.LineTest
 [INFO] Running org.jsapar.model.BigDecimalCellTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.jsapar.model.BigDecimalCellTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.BigDecimalCellTest
 [INFO] Running org.jsapar.model.DocumentTest
 [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.jsapar.model.DocumentTest
 [INFO] Running org.jsapar.model.EmptyCellTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jsapar.model.EmptyCellTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jsapar.model.EmptyCellTest
 [INFO] Running org.jsapar.model.IntegerCellTest
-[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! - in org.jsapar.model.IntegerCellTest
-[ERROR] compareTo(org.jsapar.model.IntegerCellTest)  Time elapsed: 0.013 s  <<< FAILURE!
-java.lang.AssertionError
-	at org.jsapar.model.IntegerCellTest.compareTo(IntegerCellTest.java:15)
-
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.IntegerCellTest
 [INFO] Running org.jsapar.model.LocalDateTimeCellTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.LocalDateTimeCellTest
 [INFO] Running org.jsapar.model.StringCellTest
-[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in org.jsapar.model.StringCellTest
-[ERROR] testCompareTo(org.jsapar.model.StringCellTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError
-	at org.jsapar.model.StringCellTest.testCompareTo(StringCellTest.java:39)
-
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.StringCellTest
 [INFO] Running org.jsapar.model.FloatCellTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in org.jsapar.model.FloatCellTest
-[ERROR] compareTo(org.jsapar.model.FloatCellTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError
-	at org.jsapar.model.FloatCellTest.compareTo(FloatCellTest.java:24)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.model.FloatCellTest
 [INFO] Running org.jsapar.model.NumberCellTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jsapar.model.NumberCellTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.model.NumberCellTest
 [INFO] Running org.jsapar.model.ZonedDateTimeCellTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.model.ZonedDateTimeCellTest
 [INFO] Running org.jsapar.model.LineUtilsTest
-[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.jsapar.model.LineUtilsTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.jsapar.model.LineUtilsTest
 [INFO] Running org.jsapar.model.LocalDateCellTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.LocalDateCellTest
 [INFO] Running org.jsapar.model.BooleanCellTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jsapar.model.BooleanCellTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jsapar.model.BooleanCellTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   FloatCellTest.compareTo:24
-[ERROR]   IntegerCellTest.compareTo:15
-[ERROR]   StringCellTest.testCompareTo:39
-[INFO] 
-[ERROR] Tests run: 439, Failures: 3, Errors: 0, Skipped: 0
+[INFO] Tests run: 439, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.927 s
-[INFO] Finished at: 2018-11-20T08:41:45+01:00
-[INFO] Final Memory: 22M/465M
+[INFO] Total time: 5.728 s
+[INFO] Finished at: 2018-11-20T08:42:30+01:00
+[INFO] Final Memory: 16M/350M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project jsapar: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/org-tigris-jsapar/jsapar/456829849/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
