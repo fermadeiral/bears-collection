@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "FasterXML/jackson-core",
+    "githubId": 3037907,
+    "url": "https://github.com/FasterXML/jackson-core",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450109519,
+      "url": "http://travis-ci.org/FasterXML/jackson-core/builds/450109519",
+      "date": "Nov 3, 2018 3:41:15 AM"
+    },
+    "fixerBuild": {
+      "id": 457802208,
+      "url": "http://travis-ci.org/FasterXML/jackson-core/builds/457802208",
+      "date": "Nov 21, 2018 7:28:35 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 21, 2018 7:28:51 AM",
+    "reproductionDateEnd": "Nov 21, 2018 7:31:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 321815584,
+      "totalMemory": 490209280
+    },
+    "totalDuration": 170,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 58,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          57
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 32,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          32
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-core/450109519/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 60
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-core/450109519",
+    "overallMetrics": {
+      "numberRunning": 863,
+      "numberPassing": 862,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.core.base64.Base64BinaryParsingTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.core.base64.Base64BinaryParsingTest",
+        "testMethod": "testFailDueToMissingPadding",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected an exception with one of substrings ([Unexpected end of base64-encoded String: base64 variant \u0027MIME\u0027 expects padding]): got one with message \"Failed to decode VALUE_STRING as base64 (MIME): Illegal character \u0027\"\u0027 (code 0x22) in base64 content\n at [Source: (ByteArrayInputStream); line: 1, column: 5]\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 111,
+    "numberTestFiles": 143,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-core",
+      "branchName": "master",
+      "sha": "f68b9f49b2e5507426c290435c3905764ab05f04",
+      "url": "http://github.com/FasterXML/jackson-core/commit/f68b9f49b2e5507426c290435c3905764ab05f04",
+      "date": "Nov 3, 2018 3:37:51 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-core",
+      "branchName": "master",
+      "sha": "d1648eb31118bc99cd18b3dc22526e016d62aa3c",
+      "url": "http://github.com/FasterXML/jackson-core/commit/d1648eb31118bc99cd18b3dc22526e016d62aa3c",
+      "date": "Nov 21, 2018 7:24:26 AM"
+    }
+  }
+}
