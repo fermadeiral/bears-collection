@@ -54,263 +54,297 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ moshi ---
 [INFO] Surefire report directory: /root/workspace/square/moshi/457329198/moshi/target/surefire-reports
-[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.0 KB/sec)
-[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 16.3 KB/sec)
-[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 187.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.squareup.moshi.TypesTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.449 sec
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 sec
 Running com.squareup.moshi.JsonWriterPathTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.069 sec
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.056 sec
 Running com.squareup.moshi.AdapterMethodsTest
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
 Running com.squareup.moshi.JsonReaderPathTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.044 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.021 sec
 Running com.squareup.moshi.DeferredAdapterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running com.squareup.moshi.MoshiTest
-Tests run: 59, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.654 sec <<< FAILURE!
-platformTypeThrows(com.squareup.moshi.MoshiTest)  Time elapsed: 0.031 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expecting message:
- <"Platform class java.io.File requires explicit JsonAdapter to be registered">
-but was:
- <"Platform class java.io.File (with no annotations) requires explicit JsonAdapter to be registered">
-	at com.squareup.moshi.MoshiTest.platformTypeThrows(MoshiTest.java:940)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-reentrantFieldErrorMessagesListWrapper(com.squareup.moshi.MoshiTest)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expecting message:
- <"Platform java.util.ArrayList<java.lang.String> requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType
-for java.util.List<com.squareup.moshi.MoshiTest$HasPlatformType> platformTypes
-for class com.squareup.moshi.MoshiTest$HasPlatformType$ListWrapper">
-but was:
- <"Platform java.util.ArrayList<java.lang.String> (with no annotations) requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType
-for java.util.List<com.squareup.moshi.MoshiTest$HasPlatformType> platformTypes
-for class com.squareup.moshi.MoshiTest$HasPlatformType$ListWrapper">
-	at com.squareup.moshi.MoshiTest.reentrantFieldErrorMessagesListWrapper(MoshiTest.java:1014)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-reentrantFieldErrorMessagesWrapper(com.squareup.moshi.MoshiTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expecting message:
- <"Platform java.util.ArrayList<java.lang.String> requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType hasPlatformType
-for class com.squareup.moshi.MoshiTest$HasPlatformType$Wrapper">
-but was:
- <"Platform java.util.ArrayList<java.lang.String> (with no annotations) requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType hasPlatformType
-for class com.squareup.moshi.MoshiTest$HasPlatformType$Wrapper">
-	at com.squareup.moshi.MoshiTest.reentrantFieldErrorMessagesWrapper(MoshiTest.java:996)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-reentrantFieldErrorMessagesTopLevelMap(com.squareup.moshi.MoshiTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expecting message:
- <"Platform java.util.ArrayList<java.lang.String> requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType
-for java.util.Map<java.lang.String, com.squareup.moshi.MoshiTest$HasPlatformType>">
-but was:
- <"Platform java.util.ArrayList<java.lang.String> (with no annotations) requires explicit JsonAdapter to be registered
-for java.util.ArrayList<java.lang.String> strings
-for class com.squareup.moshi.MoshiTest$HasPlatformType
-for java.util.Map<java.lang.String, com.squareup.moshi.MoshiTest$HasPlatformType>">
-	at com.squareup.moshi.MoshiTest.reentrantFieldErrorMessagesTopLevelMap(MoshiTest.java:977)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec
 Running com.squareup.moshi.JsonAdapterTest
-Tests run: 33, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.027 sec
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.035 sec
 Running com.squareup.moshi.JsonValueWriterTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running com.squareup.moshi.LinkedHashTreeMapTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
 Running com.squareup.moshi.JsonReaderTest
-Tests run: 228, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.239 sec
+Tests run: 228, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.212 sec
 Running com.squareup.moshi.FlattenTest
-Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running com.squareup.moshi.JsonQualifiersTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
 Running com.squareup.moshi.MapJsonAdapterTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running com.squareup.moshi.CircularAdaptersTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running com.squareup.moshi.JsonUtf8ReaderTest
-Tests run: 92, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.087 sec
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.071 sec
 Running com.squareup.moshi.ObjectAdapterTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.014 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec
 Running com.squareup.moshi.JsonWriterTest
-Tests run: 138, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.065 sec
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.069 sec
 Running com.squareup.moshi.ClassJsonAdapterTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
 Running com.squareup.moshi.JsonUtf8WriterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running com.squareup.moshi.JsonValueReaderTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running com.squareup.moshi.PromoteNameToValueTest
-Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 
 Results :
 
-Failed tests:   platformTypeThrows(com.squareup.moshi.MoshiTest): (..)
-  reentrantFieldErrorMessagesListWrapper(com.squareup.moshi.MoshiTest): (..)
-  reentrantFieldErrorMessagesWrapper(com.squareup.moshi.MoshiTest): (..)
-  reentrantFieldErrorMessagesTopLevelMap(com.squareup.moshi.MoshiTest): (..)
+Tests run: 881, Failures: 0, Errors: 0, Skipped: 24
 
-Tests run: 881, Failures: 4, Errors: 0, Skipped: 24
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-adapters 1.9.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-adapters ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-adapters ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/adapters/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ moshi-adapters ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-adapters ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/adapters/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ moshi-adapters ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ moshi-adapters ---
+[INFO] Surefire report directory: /root/workspace/square/moshi/457329198/adapters/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.moshi.adapters.Rfc3339DateJsonAdapterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Running com.squareup.moshi.adapters.EnumJsonAdapterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running com.squareup.moshi.adapters.PolymorphicJsonAdapterFactoryTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-examples 1.9.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-examples ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/examples/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ moshi-examples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/examples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ moshi-examples ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ moshi-examples ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-kotlin-codegen 1.9.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-kotlin-codegen ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:kapt (kapt) @ moshi-kotlin-codegen ---
+[WARNING] Source root doesn't exist: /root/workspace/square/moshi/457329198/kotlin/codegen/src/main/kotlin
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-kotlin-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/kotlin/codegen/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ moshi-kotlin-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:compile (compile) @ moshi-kotlin-codegen ---
+[WARNING] Duplicate source root: /root/workspace/square/moshi/457329198/kotlin/codegen/target/generated-sources/kapt/compile
+[WARNING] Duplicate source root: /root/workspace/square/moshi/457329198/kotlin/codegen/target/generated-sources/kaptKotlin/compile
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/codegen/src/main/java/com/squareup/moshi/kotlin/codegen/TargetConstructor.kt: (39, 11) Variable 'constructorJvmSignature' is never used
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (compile) @ moshi-kotlin-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-kotlin-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/kotlin/codegen/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ moshi-kotlin-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:test-compile (test-compile) @ moshi-kotlin-codegen ---
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/codegen/src/test/java/com/squareup/moshi/kotlin/codegen/KotlinCompilerCall.kt: (143, 33) Type mismatch: inferred type is String? but String was expected
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (testCompile) @ moshi-kotlin-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ moshi-kotlin-codegen ---
+[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 6.4 KB/sec)
+[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 24.3 KB/sec)
+[INFO] Downloading: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://jcenter.bintray.com/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 449.2 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.squareup.moshi.kotlin.codegen.JsonClassCodegenProcessorTest
+warning: unable to find kotlin-stdlib.jar in the Kotlin home directory. Pass either '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'
+warning: unable to find kotlin-script-runtime.jar in the Kotlin home directory. Pass either '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'
+warning: unable to find kotlin-reflect.jar in the Kotlin home directory. Pass either '-no-reflect' or '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'
+error: error: JsonQualifier @UpperCase must support FIELD target
+warning: warning: Unclosed files for the types '[ClassWithQualifierJsonAdapter]'; these types will not undergo annotation processing
+
+[WARNING] Tests run: 18, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 20.312 s - in com.squareup.moshi.kotlin.codegen.JsonClassCodegenProcessorTest
+[INFO] Running com.squareup.moshi.kotlin.codegen.TypeResolverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.squareup.moshi.kotlin.codegen.TypeResolverTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 21, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-kotlin 1.9.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-kotlin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-kotlin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ moshi-kotlin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:compile (compile) @ moshi-kotlin ---
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/reflect/src/main/java/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapter.kt: (45, 64) Unchecked cast: Class<*>! to Class<out Annotation>
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/reflect/src/main/java/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapter.kt: (245, 20) Unchecked cast: KProperty1<out Any!, Any?> to KProperty1<Any, Any?>
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (compile) @ moshi-kotlin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-kotlin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/kotlin/reflect/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ moshi-kotlin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:test-compile (test-compile) @ moshi-kotlin ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (testCompile) @ moshi-kotlin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ moshi-kotlin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-kotlin-tests 1.9.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-kotlin-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:kapt (kapt) @ moshi-kotlin-tests ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-kotlin-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/kotlin/tests/src/main/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:compile (compile) @ moshi-kotlin-tests ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (java-compile) @ moshi-kotlin-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:test-kapt (test-kapt) @ moshi-kotlin-tests ---
+[WARNING] Source root doesn't exist: /root/workspace/square/moshi/457329198/kotlin/tests/src/test/java
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-kotlin-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/moshi/457329198/kotlin/tests/src/test/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:test-compile (test-compile) @ moshi-kotlin-tests ---
+[WARNING] Source root doesn't exist: /root/workspace/square/moshi/457329198/kotlin/tests/src/test/java
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (420, 30) Parameter 'string' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (602, 30) Parameter 'string' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (843, 9) Parameter 'value' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (957, 48) Parameter 'unused' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (1040, 42) Parameter 'annotations' is never used, could be renamed to _
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/codgen/GeneratedAdaptersTest.kt: (1040, 55) Parameter 'moshi' is never used, could be renamed to _
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (161, 30) Parameter 'string' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (191, 30) Parameter 'string' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (404, 68) Parameter 'a' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (633, 41) Parameter 'a' is never used
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (921, 42) Parameter 'annotations' is never used, could be renamed to _
+[WARNING] /root/workspace/square/moshi/457329198/kotlin/tests/src/test/kotlin/com/squareup/moshi/kotlin/reflect/KotlinJsonAdapterTest.kt: (921, 55) Parameter 'moshi' is never used, could be renamed to _
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (java-test-compile) @ moshi-kotlin-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ moshi-kotlin-tests ---
+[INFO] Surefire report directory: /root/workspace/square/moshi/457329198/kotlin/tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterTest
+Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.664 sec
+Running com.squareup.moshi.kotlin.codgen.GeneratedAdaptersTest
+Tests run: 51, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.515 sec
+
+Results :
+
+Tests run: 102, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Moshi (Parent) ..................................... SUCCESS [  0.618 s]
-[INFO] Moshi .............................................. FAILURE [  5.919 s]
-[INFO] moshi-adapters ..................................... SKIPPED
-[INFO] moshi-examples ..................................... SKIPPED
-[INFO] moshi-kotlin-codegen ............................... SKIPPED
-[INFO] moshi-kotlin ....................................... SKIPPED
-[INFO] moshi-kotlin-tests ................................. SKIPPED
+[INFO] Moshi (Parent) ..................................... SUCCESS [  0.694 s]
+[INFO] Moshi .............................................. SUCCESS [  4.144 s]
+[INFO] moshi-adapters ..................................... SUCCESS [  0.901 s]
+[INFO] moshi-examples ..................................... SUCCESS [  0.049 s]
+[INFO] moshi-kotlin-codegen ............................... SUCCESS [ 46.858 s]
+[INFO] moshi-kotlin ....................................... SUCCESS [  2.183 s]
+[INFO] moshi-kotlin-tests ................................. SUCCESS [ 22.843 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.902 s
-[INFO] Finished at: 2018-11-21T02:14:01+01:00
-[INFO] Final Memory: 17M/466M
+[INFO] Total time: 01:18 min
+[INFO] Finished at: 2018-11-21T02:17:17+01:00
+[INFO] Final Memory: 105M/1221M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project moshi: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/square/moshi/457329198/moshi/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :moshi
