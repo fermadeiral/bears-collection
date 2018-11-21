@@ -1,0 +1,187 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "kgyrtkirk/calcite",
+    "githubId": 128071558,
+    "url": "https://github.com/kgyrtkirk/calcite",
+    "isFork": true,
+    "original": {
+      "name": "apache/calcite",
+      "githubId": 21193524,
+      "url": "https://github.com/apache/calcite"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 457466098,
+      "url": "http://travis-ci.org/kgyrtkirk/calcite/builds/457466098",
+      "date": "Nov 20, 2018 3:36:12 PM"
+    },
+    "fixerBuild": {
+      "id": 458027961,
+      "url": "http://travis-ci.org/kgyrtkirk/calcite/builds/458027961",
+      "date": "Nov 21, 2018 6:01:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 21, 2018 6:30:51 PM",
+    "reproductionDateEnd": "Nov 21, 2018 6:49:59 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 246155432,
+      "totalMemory": 512229376
+    },
+    "totalDuration": 1141,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          23
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 212,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          209
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 307,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          307
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/kgyrtkirk/calcite/457466098/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 40,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/kgyrtkirk/calcite/457466098/core",
+    "overallMetrics": {
+      "numberRunning": 4902,
+      "numberPassing": 4897,
+      "numberFailing": 5,
+      "numberErroring": 0,
+      "numberSkipping": 117,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 5
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.SqlToRelConverterTest",
+        "numberRunning": 341,
+        "numberPassing": 339,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 4
+      },
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "numberRunning": 304,
+        "numberPassing": 301,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 8
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.SqlToRelConverterTest",
+        "testMethod": "testIsDistinctFrom",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "plan expected:\u003c...icalProject(EXPR$0\u003d[[AND(OR(IS NOT NULL($0), IS NOT NULL($1)), IS NOT TRUE(\u003d($0, ]$1)))])\n  LogicalUni...\u003e but was:\u003c...icalProject(EXPR$0\u003d[[OR(AND(IS NULL($0), IS NOT NULL($1)), AND(IS NULL($1), IS NOT NULL($0)), AND(IS TRUE(\u003c\u003e($0, $1)), IS NOT NULL($0), IS NOT NULL(]$1)))])\n  LogicalUni...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.SqlToRelConverterTest",
+        "testMethod": "testIsNotDistinctFrom",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "plan expected:\u003c...($0), IS NULL($1)), [IS TRUE(\u003d($0, ]$1)))])\n  LogicalUni...\u003e but was:\u003c...($0), IS NULL($1)), [AND(IS NULL($1), IS NULL($0), IS NOT NULL($0)), AND(IS TRUE(\u003d($0, $1)), IS NOT NULL($0), IS NOT NULL(]$1)))])\n  LogicalUni...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "testMethod": "testReduceConstants2",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "planBefore expected:\u003c...icalProject(EXPR$0\u003d[[IS TRUE(null)]])\n  LogicalValues(t...\u003e but was:\u003c...icalProject(EXPR$0\u003d[[false]])\n  LogicalValues(t...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "testMethod": "testFilterRemoveIsNotDistinctFromRule",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "planAfter expected:\u003c...alFilter(condition\u003d[[IS TRUE(\u003d($7, 20]))])\n  LogicalTableS...\u003e but was:\u003c...alFilter(condition\u003d[[AND(IS TRUE(\u003d($7, 20)), IS NOT NULL($7]))])\n  LogicalTableS...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "testMethod": "testReduceConstants3",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "planBefore expected:\u003c...$3), IS NULL($12)), [IS TRUE(\u003d($3, ]$12)))])\n  LogicalFi...\u003e but was:\u003c...$3), IS NULL($12)), [AND(IS NULL($12), IS NULL($3), IS NOT NULL($3)), AND(IS TRUE(\u003d($3, $12)), IS NOT NULL($3), IS NOT NULL(]$12)))])\n  LogicalFi...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1554,
+    "numberTestFiles": 239,
+    "numberLibrariesFailingModule": 56,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "kgyrtkirk/calcite",
+      "branchName": "2687-is-distinct-alwaysNull",
+      "sha": "2b40578efcabee1d6b94f7fd2469935af7772799",
+      "url": "http://github.com/kgyrtkirk/calcite/commit/2b40578efcabee1d6b94f7fd2469935af7772799",
+      "date": "Nov 20, 2018 2:56:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "kgyrtkirk/calcite",
+      "branchName": "2687-is-distinct-alwaysNull",
+      "sha": "f30a9db7e511b33a97605db6d5d399d9b43df8c7",
+      "url": "http://github.com/kgyrtkirk/calcite/commit/f30a9db7e511b33a97605db6d5d399d9b43df8c7",
+      "date": "Nov 21, 2018 5:39:18 PM"
+    }
+  },
+  "type": "passing_passing"
+}
