@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "sanger/eln_pmb_bridge",
+    "githubId": 138880394,
+    "url": "https://github.com/sanger/eln_pmb_bridge",
+    "isFork": true,
+    "original": {
+      "name": "harrietc52/eln_pmb_bridge",
+      "githubId": 85852873,
+      "url": "https://github.com/harrietc52/eln_pmb_bridge"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 457364760,
+      "url": "http://travis-ci.org/sanger/eln_pmb_bridge/builds/457364760",
+      "date": "Nov 20, 2018 10:38:30 AM"
+    },
+    "fixerBuild": {
+      "id": 458025113,
+      "url": "http://travis-ci.org/sanger/eln_pmb_bridge/builds/458025113",
+      "date": "Nov 21, 2018 5:35:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 21, 2018 6:30:33 PM",
+    "reproductionDateEnd": "Nov 21, 2018 6:32:01 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 370185912,
+      "totalMemory": 401080320
+    },
+    "totalDuration": 84,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 31,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          31
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/sanger/eln_pmb_bridge/457364760/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/sanger/eln_pmb_bridge/457364760",
+    "overallMetrics": {
+      "numberRunning": 37,
+      "numberPassing": 36,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.codehaus.jettison.json.JSONException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "uk.ac.sanger.eln_pmb_bridge.PMBClientTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "uk.ac.sanger.eln_pmb_bridge.PMBClientTest",
+        "testMethod": "whenBuildingJson",
+        "failureName": "org.codehaus.jettison.json.JSONException",
+        "detail": "JSONObject[\"label_1\"] not found.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 12,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "sanger/eln_pmb_bridge",
+      "branchName": "devel",
+      "sha": "27437a44795276d0abb6ac68e8fc303205726db0",
+      "url": "http://github.com/sanger/eln_pmb_bridge/commit/27437a44795276d0abb6ac68e8fc303205726db0",
+      "date": "Nov 20, 2018 10:37:21 AM"
+    },
+    "fixerBuild": {
+      "repoName": "sanger/eln_pmb_bridge",
+      "branchName": "devel",
+      "sha": "7ef3337a24b440918d4eb7c4410ace6a9c19b592",
+      "url": "http://github.com/sanger/eln_pmb_bridge/commit/7ef3337a24b440918d4eb7c4410ace6a9c19b592",
+      "date": "Nov 21, 2018 5:33:55 PM"
+    }
+  },
+  "type": "passing_passing"
+}
