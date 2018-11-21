@@ -1,0 +1,83 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building eln_pmb_bridge 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ eln_pmb_bridge ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ eln_pmb_bridge ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ eln_pmb_bridge ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/sanger/eln_pmb_bridge/457364760/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ eln_pmb_bridge ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ eln_pmb_bridge ---
+[INFO] Surefire report directory: /root/workspace/sanger/eln_pmb_bridge/457364760/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.12.4/surefire-testng-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.12.4/surefire-testng-2.12.4.pom (4 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 62.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.12.4/surefire-testng-utils-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.12.4/surefire-testng-utils-2.12.4.pom (3 KB at 65.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.12.4/surefire-grouper-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.12.4/surefire-grouper-2.12.4.pom (3 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom (12 KB at 285.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (3 KB at 56.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom (2 KB at 39.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom (3 KB at 59.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.12.4/surefire-grouper-2.12.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.12.4/surefire-testng-2.12.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.12.4/surefire-testng-utils-2.12.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.12.4/surefire-testng-2.12.4.jar (33 KB at 352.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.12.4/surefire-testng-utils-2.12.4.jar (23 KB at 154.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.12.4/surefire-grouper-2.12.4.jar (37 KB at 233.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar (77 KB at 489.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@39a054a5
+Tests run: 37, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.211 sec <<< FAILURE!
+whenBuildingJson(uk.ac.sanger.eln_pmb_bridge.PMBClientTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+org.codehaus.jettison.json.JSONException: JSONObject["label_1"] not found.
+	at org.codehaus.jettison.json.JSONObject.get(JSONObject.java:360)
+	at org.codehaus.jettison.json.JSONObject.getJSONObject(JSONObject.java:454)
+	at uk.ac.sanger.eln_pmb_bridge.PMBClientTest.whenBuildingJson(PMBClientTest.java:94)
+
+
+Results :
+
+Failed tests:   whenBuildingJson(uk.ac.sanger.eln_pmb_bridge.PMBClientTest): JSONObject["label_1"] not found.
+
+Tests run: 37, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.007 s
+[INFO] Finished at: 2018-11-21T18:31:19+01:00
+[INFO] Final Memory: 16M/467M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project eln_pmb_bridge: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/sanger/eln_pmb_bridge/457364760/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

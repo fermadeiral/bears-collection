@@ -1,0 +1,9 @@
+.idea
+target
+*.iml
+.DS_Store
+poll_folder
+error_folder
+archive_folder
+log.txt
+out

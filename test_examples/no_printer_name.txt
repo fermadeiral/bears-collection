@@ -1,0 +1,4 @@
+%BTW% /AF="Template" /D="%Trigger File Name%" /R=3 /P /PRN="" /C=1
+%END%
+Cell Line| Passage Number | Date | Media type | User
+xume | 3 | 2016-10-17 | Wnt1 | user1@test
