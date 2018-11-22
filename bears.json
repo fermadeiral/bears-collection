@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "geotools/geotools",
+    "githubId": 2752522,
+    "url": "https://github.com/geotools/geotools",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 457543343,
+      "url": "http://travis-ci.org/geotools/geotools/builds/457543343",
+      "date": "Nov 20, 2018 6:15:13 PM"
+    },
+    "fixerBuild": {
+      "id": 458310098,
+      "url": "http://travis-ci.org/geotools/geotools/builds/458310098",
+      "date": "Nov 22, 2018 10:18:06 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 22, 2018 11:00:36 AM",
+    "reproductionDateEnd": "Nov 22, 2018 11:55:18 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 210748984,
+      "totalMemory": 839909376
+    },
+    "totalDuration": 3273,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 68,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          68
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 1489,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          1,
+          4,
+          1481
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 189,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          189
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/geotools/geotools/457543343/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 2
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "geotools/geotools",
+      "branchName": "master",
+      "sha": "25baa02d5e4d60ddb8b3689e954f68bab376ce72",
+      "url": "http://github.com/geotools/geotools/commit/25baa02d5e4d60ddb8b3689e954f68bab376ce72",
+      "date": "Nov 20, 2018 5:51:17 PM"
+    },
+    "fixerBuild": {
+      "repoName": "geotools/geotools",
+      "branchName": "master",
+      "sha": "45f1c40c6566934d010bb89e24b6a5e4abdd6f90",
+      "url": "http://github.com/geotools/geotools/commit/45f1c40c6566934d010bb89e24b6a5e4abdd6f90",
+      "date": "Nov 22, 2018 9:52:21 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/geotools/geotools/457543343/modules/plugin/geotiff",
+    "overallMetrics": {
+      "numberRunning": 3555,
+      "numberPassing": 3554,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.geotools.gce.geotiff.GeoTiffReaderTest",
+        "numberRunning": 21,
+        "numberPassing": 20,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.geotools.gce.geotiff.GeoTiffReaderTest",
+        "testMethod": "testNoData",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: an instance of it.geosolutions.jaiext.range.NoDataContainer\n     but: \u003cjava.lang.Object@5f05c8d6\u003e is a java.lang.Object",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 103,
+    "numberSourceFiles": 7952,
+    "numberTestFiles": 2261,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
