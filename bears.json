@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "openmrs/openmrs-module-webservices.rest",
+    "githubId": 6951233,
+    "url": "https://github.com/openmrs/openmrs-module-webservices.rest",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 455565885,
+      "url": "http://travis-ci.org/openmrs/openmrs-module-webservices.rest/builds/455565885",
+      "date": "Nov 15, 2018 5:12:01 PM"
+    },
+    "fixerBuild": {
+      "id": 458312291,
+      "url": "http://travis-ci.org/openmrs/openmrs-module-webservices.rest/builds/458312291",
+      "date": "Nov 22, 2018 10:11:09 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 22, 2018 10:11:23 AM",
+    "reproductionDateEnd": "Nov 22, 2018 10:38:03 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 295611128,
+      "totalMemory": 413138944
+    },
+    "totalDuration": 1592,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 714,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          714
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 317,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          317
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openmrs/openmrs-module-webservices.rest/455565885/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 5
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openmrs/openmrs-module-webservices.rest",
+      "branchName": "master",
+      "sha": "43f931f784dcf6734eff4cf5a8c79545e5db44c2",
+      "url": "http://github.com/openmrs/openmrs-module-webservices.rest/commit/43f931f784dcf6734eff4cf5a8c79545e5db44c2",
+      "date": "Nov 15, 2018 4:57:32 PM"
+    },
+    "fixerBuild": {
+      "repoName": "openmrs/openmrs-module-webservices.rest",
+      "branchName": "master",
+      "sha": "177e9ae980834bdb312f1e6b84a48faa697fb257",
+      "url": "http://github.com/openmrs/openmrs-module-webservices.rest/commit/177e9ae980834bdb312f1e6b84a48faa697fb257",
+      "date": "Nov 22, 2018 9:59:20 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9",
+    "overallMetrics": {
+      "numberRunning": 1168,
+      "numberPassing": 1167,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "org.openmrs.module.webservices.rest.web.response.ConversionException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test",
+        "testMethod": "getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid",
+        "failureName": "org.openmrs.module.webservices.rest.web.response.ConversionException",
+        "detail": "concept on class org.openmrs.Obs",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberSourceFiles": 300,
+    "numberTestFiles": 276,
+    "numberLibrariesFailingModule": 125,
+    "numberLines": 0
+  }
+}
