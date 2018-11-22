@@ -37,7 +37,12 @@
 [INFO] Copying 2227 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ openapi-generator ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 191 source files to /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/target/classes
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openapi-generator ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -47,18 +52,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ openapi-generator ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 4.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 60.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1045.0 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.openapitools.codegen.java.jaxrs.JavaJAXRSSpecServerCodegenTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in org.openapitools.codegen.java.jaxrs.JavaJAXRSSpecServerCodegenTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in org.openapitools.codegen.java.jaxrs.JavaJAXRSSpecServerCodegenTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -66,92 +65,169 @@
 [INFO] 
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (test-testng) @ openapi-generator ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom (3 KB at 67.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 67.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom (4 KB at 77.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 66.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar (27 KB at 607.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 390.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar (43 KB at 375.9 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 423.7 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[ERROR] Tests run: 477, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 19.498 s <<< FAILURE! - in TestSuite
-[ERROR] exampleRegexParameterValidationOAS3Test(org.openapitools.codegen.ruby.RubyClientCodegenTest)  Time elapsed: 0.067 s  <<< FAILURE!
-java.lang.AssertionError: expected [/^pattern$/] but found [/^pattern$]
-	at org.openapitools.codegen.ruby.RubyClientCodegenTest.exampleRegexParameterValidationOAS3Test(RubyClientCodegenTest.java:323)
-
-[ERROR] exampleStringFromExampleParameterOAS2Test(org.openapitools.codegen.ruby.RubyClientCodegenTest)  Time elapsed: 0.061 s  <<< FAILURE!
-java.lang.AssertionError: expected ['orderid123'] but found [orderid123]
-	at org.openapitools.codegen.ruby.RubyClientCodegenTest.exampleStringFromExampleParameterOAS2Test(RubyClientCodegenTest.java:286)
-
-[ERROR] exampleStringFromXExampleParameterOAS3Test(org.openapitools.codegen.ruby.RubyClientCodegenTest)  Time elapsed: 0.07 s  <<< FAILURE!
-java.lang.AssertionError: expected ['orderid123'] but found [orderid123]
-	at org.openapitools.codegen.ruby.RubyClientCodegenTest.exampleStringFromXExampleParameterOAS3Test(RubyClientCodegenTest.java:301)
-
-[ERROR] mapModelTest(org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest)  Time elapsed: 0.026 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest.mapModelTest(JavaJaxrsResteasyServerCodegenModelTest.java:27)
-
-[ERROR] testGeneratePing(org.openapitools.codegen.java.JavaClientCodegenTest)  Time elapsed: 0.071 s  <<< FAILURE!
-java.util.ServiceConfigurationError: org.openapitools.codegen.CodegenConfig: Provider org.openapitools.codegen.languages.CLibcurlClientCodegen not found
-	at org.openapitools.codegen.java.JavaClientCodegenTest.testGeneratePing(JavaClientCodegenTest.java:250)
-
-[ERROR] generateModel(org.openapitools.codegen.java.JavaModelTest)  Time elapsed: 0.005 s  <<< FAILURE!
-java.util.ServiceConfigurationError: org.openapitools.codegen.CodegenConfig: Provider org.openapitools.codegen.languages.CLibcurlClientCodegen not found
-	at org.openapitools.codegen.java.JavaModelTest.generateModel(JavaModelTest.java:1156)
-
+[INFO] Tests run: 477, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.693 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   JavaClientCodegenTest.testGeneratePing:250 » ServiceConfiguration org.openapit...
-[ERROR]   JavaModelTest.generateModel:1156 » ServiceConfiguration org.openapitools.codeg...
-[ERROR]   JavaJaxrsResteasyServerCodegenModelTest.mapModelTest:27 expected [true] but found [false]
-[ERROR]   RubyClientCodegenTest.exampleRegexParameterValidationOAS3Test:323 expected [/^pattern$/] but found [/^pattern$]
-[ERROR]   RubyClientCodegenTest.exampleStringFromExampleParameterOAS2Test:286 expected ['orderid123'] but found [orderid123]
-[ERROR]   RubyClientCodegenTest.exampleStringFromXExampleParameterOAS3Test:301 expected ['orderid123'] but found [orderid123]
+[INFO] Tests run: 477, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 477, Failures: 6, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building openapi-generator (executable) 3.3.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ openapi-generator-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ openapi-generator-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ openapi-generator-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ openapi-generator-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openapi-generator-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ openapi-generator-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ openapi-generator-cli ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test-testng) @ openapi-generator-cli ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.168 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building openapi-generator (maven-plugin) 3.3.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ openapi-generator-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ openapi-generator-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5.2:helpmojo (help-goal) @ openapi-generator-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ openapi-generator-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ openapi-generator-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-maven-plugin/target/classes
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-maven-plugin/src/main/java/org/openapitools/codegen/plugin/CodeGenMojo.java: /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-maven-plugin/src/main/java/org/openapitools/codegen/plugin/CodeGenMojo.java uses or overrides a deprecated API.
+[INFO] /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-maven-plugin/src/main/java/org/openapitools/codegen/plugin/CodeGenMojo.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5.2:descriptor (default-descriptor) @ openapi-generator-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5.2:descriptor (mojo-descriptor) @ openapi-generator-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openapi-generator-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-maven-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ openapi-generator-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ openapi-generator-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test-testng) @ openapi-generator-maven-plugin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building openapi-generator-gradle-plugin (maven wrapper) 3.3.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ openapi-generator-gradle-plugin-mvn-wrapper ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ openapi-generator-gradle-plugin-mvn-wrapper ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test-testng) @ openapi-generator-gradle-plugin-mvn-wrapper ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building openapi-generator-online 3.3.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ openapi-generator-online ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ openapi-generator-online ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ openapi-generator-online ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ openapi-generator-online ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openapi-generator-online ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator-online/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ openapi-generator-online ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ openapi-generator-online ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test-testng) @ openapi-generator-online ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] openapi-generator-project .......................... SUCCESS [  0.692 s]
-[INFO] openapi-generator (core library) ................... FAILURE [ 26.944 s]
-[INFO] openapi-generator (executable) ..................... SKIPPED
-[INFO] openapi-generator (maven-plugin) ................... SKIPPED
-[INFO] openapi-generator-gradle-plugin (maven wrapper) .... SKIPPED
-[INFO] openapi-generator-online ........................... SKIPPED
+[INFO] openapi-generator-project .......................... SUCCESS [  1.047 s]
+[INFO] openapi-generator (core library) ................... SUCCESS [ 33.834 s]
+[INFO] openapi-generator (executable) ..................... SUCCESS [  5.767 s]
+[INFO] openapi-generator (maven-plugin) ................... SUCCESS [  5.677 s]
+[INFO] openapi-generator-gradle-plugin (maven wrapper) .... SUCCESS [  0.020 s]
+[INFO] openapi-generator-online ........................... SUCCESS [  0.358 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 28.709 s
-[INFO] Finished at: 2018-11-22T12:10:45+01:00
-[INFO] Final Memory: 29M/463M
+[INFO] Total time: 47.740 s
+[INFO] Finished at: 2018-11-22T12:14:10+01:00
+[INFO] Final Memory: 54M/1314M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (test-testng) on project openapi-generator: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :openapi-generator
