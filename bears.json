@@ -1,0 +1,243 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "OpenAPITools/openapi-generator",
+    "githubId": 133134007,
+    "url": "https://github.com/OpenAPITools/openapi-generator",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1338
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453176480,
+      "url": "http://travis-ci.org/OpenAPITools/openapi-generator/builds/453176480",
+      "date": "Nov 10, 2018 6:03:19 AM"
+    },
+    "fixerBuild": {
+      "id": 458321388,
+      "url": "http://travis-ci.org/OpenAPITools/openapi-generator/builds/458321388",
+      "date": "Nov 22, 2018 11:14:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 22, 2018 12:01:38 PM",
+    "reproductionDateEnd": "Nov 22, 2018 12:14:30 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 395425712,
+      "totalMemory": 901775360
+    },
+    "totalDuration": 765,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          47
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 465,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9,
+          3,
+          0,
+          12,
+          441
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 32,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          32
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/OpenAPITools/openapi-generator/453176480/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 37,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 347,
+      "numberDeleted": 2069
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/OpenAPITools/openapi-generator/453176480/modules/openapi-generator",
+    "overallMetrics": {
+      "numberRunning": 482,
+      "numberPassing": 476,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        },
+        {
+          "failureName": "java.util.ServiceConfigurationError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.openapitools.codegen.ruby.RubyClientCodegenTest",
+        "numberRunning": 14,
+        "numberPassing": 11,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.openapitools.codegen.java.JavaClientCodegenTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.openapitools.codegen.java.JavaModelTest",
+        "numberRunning": 51,
+        "numberPassing": 50,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest",
+        "testMethod": "mapModelTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      },
+      {
+        "testClass": "org.openapitools.codegen.java.JavaClientCodegenTest",
+        "testMethod": "testGeneratePing",
+        "failureName": "java.util.ServiceConfigurationError",
+        "detail": "org.openapitools.codegen.CodegenConfig: Provider org.openapitools.codegen.languages.CLibcurlClientCodegen not found",
+        "isError": false
+      },
+      {
+        "testClass": "org.openapitools.codegen.ruby.RubyClientCodegenTest",
+        "testMethod": "exampleStringFromExampleParameterOAS2Test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [\u0027orderid123\u0027] but found [orderid123]",
+        "isError": false
+      },
+      {
+        "testClass": "org.openapitools.codegen.java.JavaModelTest",
+        "testMethod": "generateModel",
+        "failureName": "java.util.ServiceConfigurationError",
+        "detail": "org.openapitools.codegen.CodegenConfig: Provider org.openapitools.codegen.languages.CLibcurlClientCodegen not found",
+        "isError": false
+      },
+      {
+        "testClass": "org.openapitools.codegen.ruby.RubyClientCodegenTest",
+        "testMethod": "exampleRegexParameterValidationOAS3Test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [/^pattern$/] but found [/^pattern$]",
+        "isError": false
+      },
+      {
+        "testClass": "org.openapitools.codegen.ruby.RubyClientCodegenTest",
+        "testMethod": "exampleStringFromXExampleParameterOAS3Test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [\u0027orderid123\u0027] but found [orderid123]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 218,
+    "numberTestFiles": 131,
+    "numberLibrariesFailingModule": 68,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "master",
+      "sha": "98b6487aecf4f9c9013d076b28eaae223dcf12a5",
+      "url": "http://github.com/OpenAPITools/openapi-generator/commit/98b6487aecf4f9c9013d076b28eaae223dcf12a5",
+      "date": "Nov 10, 2018 5:32:34 AM"
+    },
+    "fixerBuild": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "master",
+      "sha": "a6584f24193f4f3feff86b72d55bef3f54c36ce5",
+      "url": "http://github.com/OpenAPITools/openapi-generator/commit/a6584f24193f4f3feff86b72d55bef3f54c36ce5",
+      "date": "Nov 22, 2018 10:25:09 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "model-utils-1",
+      "sha": "eebaa03196fb64530be4663f781d16872d66aabe",
+      "url": "https://github.com/OpenAPITools/openapi-generator/commit/eebaa03196fb64530be4663f781d16872d66aabe",
+      "date": "Nov 22, 2018 10:25:09 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "master",
+      "sha": "7c3a2a5c0730d8aa059bdfa1fb680d27ccece5b8",
+      "url": "https://github.com/OpenAPITools/openapi-generator/commit/7c3a2a5c0730d8aa059bdfa1fb680d27ccece5b8",
+      "date": "Nov 12, 2018 3:07:46 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "model-utils-1",
+      "sha": "eebaa03196fb64530be4663f781d16872d66aabe",
+      "url": "https://github.com/OpenAPITools/openapi-generator/commit/eebaa03196fb64530be4663f781d16872d66aabe",
+      "date": "Nov 22, 2018 10:25:09 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "OpenAPITools/openapi-generator",
+      "branchName": "master",
+      "sha": "7c3a2a5c0730d8aa059bdfa1fb680d27ccece5b8",
+      "url": "https://github.com/OpenAPITools/openapi-generator/commit/7c3a2a5c0730d8aa059bdfa1fb680d27ccece5b8",
+      "date": "Nov 12, 2018 3:07:46 PM"
+    }
+  },
+  "type": "passing_passing"
+}
