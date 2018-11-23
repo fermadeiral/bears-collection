@@ -5,7 +5,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- port-allocator-maven-plugin:1.2:allocate-ports (default) @ sdk ---
-[INFO] Assigning port '41165' to property 'mockServerPort'
+[INFO] Assigning port '39917' to property 'mockServerPort'
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sdk ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -22,75 +22,35 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ sdk ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 3.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 49.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 72.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 85.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 75.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 511.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 363.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 255.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 391.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-02:42:28,333 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-02:42:28,333 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-02:42:28,333 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/root/workspace/hyperwallet/java-sdk/458607780/target/test-classes/logback.xml]
-02:42:28,706 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-02:42:28,711 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [REQUEST] to WARN
-02:42:28,711 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [REQUEST] to false
-02:42:28,712 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [REQUEST_LOG]. Did you define it below instead of above in the configuration file?
-02:42:28,712 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-02:42:28,714 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver] to WARN
-02:42:28,714 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver.proxy] to WARN
-02:42:28,714 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver.mockserver] to WARN
-02:42:28,714 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-02:42:28,716 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6de54b40 - Registering current configuration as safe fallback point
+02:43:46,808 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+02:43:46,808 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+02:43:46,808 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/root/workspace/hyperwallet/java-sdk/458607780/target/test-classes/logback.xml]
+02:43:47,134 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+02:43:47,138 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [REQUEST] to WARN
+02:43:47,138 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [REQUEST] to false
+02:43:47,138 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [REQUEST_LOG]. Did you define it below instead of above in the configuration file?
+02:43:47,138 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+02:43:47,140 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver] to WARN
+02:43:47,140 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver.proxy] to WARN
+02:43:47,140 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mockserver.mockserver] to WARN
+02:43:47,140 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+02:43:47,142 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@21ec5d87 - Registering current configuration as safe fallback point
 
-Tests run: 1271, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 31.383 sec <<< FAILURE! - in TestSuite
-testGetUserClientToken_successful(com.hyperwallet.clientsdk.HyperwalletTest)  Time elapsed: 0.023 sec  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: is <com.hyperwallet.clientsdk.model.HyperwalletClientToken@64bce832>
-     but: was null
-	at com.hyperwallet.clientsdk.HyperwalletTest.testGetUserClientToken_successful(HyperwalletTest.java:371)
-
+Tests run: 1271, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.993 sec - in TestSuite
 
 Results :
 
-Failed tests: 
-  HyperwalletTest.testGetUserClientToken_successful:371 
-Expected: is <com.hyperwallet.clientsdk.model.HyperwalletClientToken@64bce832>
-     but: was null
-
-Tests run: 1271, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 1271, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 36.122 s
-[INFO] Finished at: 2018-11-23T02:42:53+01:00
-[INFO] Final Memory: 18M/395M
+[INFO] Total time: 35.442 s
+[INFO] Finished at: 2018-11-23T02:44:12+01:00
+[INFO] Final Memory: 17M/609M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project sdk: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/hyperwallet/java-sdk/458607780/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
