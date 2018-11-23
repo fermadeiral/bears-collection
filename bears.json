@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "hyperwallet/java-sdk",
+    "githubId": 50518298,
+    "url": "https://github.com/hyperwallet/java-sdk",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 458607780,
+      "url": "http://travis-ci.org/hyperwallet/java-sdk/builds/458607780",
+      "date": "Nov 23, 2018 12:24:41 AM"
+    },
+    "fixerBuild": {
+      "id": 458630497,
+      "url": "http://travis-ci.org/hyperwallet/java-sdk/builds/458630497",
+      "date": "Nov 23, 2018 2:40:40 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 23, 2018 2:40:57 AM",
+    "reproductionDateEnd": "Nov 23, 2018 2:44:14 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 321173176,
+      "totalMemory": 398458880
+    },
+    "totalDuration": 190,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 73,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          73
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          39
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/hyperwallet/java-sdk/458607780/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 15,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/hyperwallet/java-sdk/458607780",
+    "overallMetrics": {
+      "numberRunning": 1271,
+      "numberPassing": 1270,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.hyperwallet.clientsdk.HyperwalletTest",
+        "numberRunning": 300,
+        "numberPassing": 299,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.hyperwallet.clientsdk.HyperwalletTest",
+        "testMethod": "testGetUserClientToken_successful",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ccom.hyperwallet.clientsdk.model.HyperwalletClientToken@64bce832\u003e\n     but: was null",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 33,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 83,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "hyperwallet/java-sdk",
+      "branchName": "feature/HW-45831-Get-Client-Token",
+      "sha": "b85279b70155a9873c847c56741ba5c929c0aaf7",
+      "url": "http://github.com/hyperwallet/java-sdk/commit/b85279b70155a9873c847c56741ba5c929c0aaf7",
+      "date": "Nov 23, 2018 12:21:07 AM"
+    },
+    "fixerBuild": {
+      "repoName": "hyperwallet/java-sdk",
+      "branchName": "feature/HW-45831-Get-Client-Token",
+      "sha": "9a82587101dc5cd54489b739cf4e53d3a5789f5b",
+      "url": "http://github.com/hyperwallet/java-sdk/commit/9a82587101dc5cd54489b739cf4e53d3a5789f5b",
+      "date": "Nov 23, 2018 2:38:02 AM"
+    }
+  },
+  "type": "passing_passing"
+}
