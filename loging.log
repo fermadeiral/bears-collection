@@ -1,0 +1,46 @@
+ INFO | [main] | 2018-11-24 09:44:11,767 | HelloWorldTalkerTest | =====TimeAnalyzerTest.class is running===== 
+ INFO | [main] | 2018-11-24 09:44:11,777 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,777 | timeanalizer.TimeAnalyzer | The part of the day is morning
+ INFO | [main] | 2018-11-24 09:44:11,779 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,779 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,780 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,780 | timeanalizer.TimeAnalyzer | The part of the day is evening
+ INFO | [main] | 2018-11-24 09:44:11,781 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,781 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,790 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,790 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,791 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,791 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,793 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,793 | timeanalizer.TimeAnalyzer | The part of the day is evening
+ INFO | [main] | 2018-11-24 09:44:11,793 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,793 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,795 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,795 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,795 | HelloWorldTalkerTest | =====TimeAnalyzerTest.class is completed===== 
+ INFO | [main] | 2018-11-24 09:44:11,798 | HelloWorldTalkerTest | =====HelloWorldTalkerTest.class is running===== 
+ INFO | [main] | 2018-11-24 09:44:11,806 | talker.HelloWorldTalker | application running
+ INFO | [main] | 2018-11-24 09:44:11,806 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,806 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,806 | talker.HelloWorldTalker | Try to get message by locale. Locale is ru_UA
+ INFO | [main] | 2018-11-24 09:44:11,809 | talker.HelloWorldTalker | message is Доброе ночи, Мир!
+ INFO | [main] | 2018-11-24 09:44:11,810 | talker.HelloWorldTalker | application completed
+ INFO | [main] | 2018-11-24 09:44:11,810 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,810 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,810 | talker.HelloWorldTalker | Try to get message by locale. Locale is ru_UA
+ INFO | [main] | 2018-11-24 09:44:11,811 | talker.HelloWorldTalker | message is Доброе ночи, Мир!
+ INFO | [main] | 2018-11-24 09:44:11,813 | talker.HelloWorldTalker | application running
+ INFO | [main] | 2018-11-24 09:44:11,813 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,814 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,814 | talker.HelloWorldTalker | Try to get message by locale. Locale is en_EN
+ INFO | [main] | 2018-11-24 09:44:11,815 | talker.HelloWorldTalker | message is Good night, World!
+ INFO | [main] | 2018-11-24 09:44:11,815 | talker.HelloWorldTalker | application completed
+ INFO | [main] | 2018-11-24 09:44:11,815 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,816 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,816 | talker.HelloWorldTalker | Try to get message by locale. Locale is en_EN
+ INFO | [main] | 2018-11-24 09:44:11,816 | talker.HelloWorldTalker | message is Good night, World!
+ INFO | [main] | 2018-11-24 09:44:11,819 | timeanalizer.TimeAnalyzer | Get part of the day
+ INFO | [main] | 2018-11-24 09:44:11,819 | timeanalizer.TimeAnalyzer | The part of the day is night
+ INFO | [main] | 2018-11-24 09:44:11,819 | talker.HelloWorldTalker | Try to get message by locale. Locale is fr_EN
+ INFO | [main] | 2018-11-24 09:44:11,820 | talker.HelloWorldTalker | message is Good night, World!
+ INFO | [main] | 2018-11-24 09:44:11,820 | HelloWorldTalkerTest | =====HelloWorldTalkerTest.class is completed===== 
