@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "mishaivchenko/HelloWorld",
+    "githubId": 157967868,
+    "url": "https://github.com/mishaivchenko/HelloWorld",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 456379617,
+      "url": "http://travis-ci.org/mishaivchenko/HelloWorld/builds/456379617",
+      "date": "Nov 17, 2018 4:56:58 PM"
+    },
+    "fixerBuild": {
+      "id": 459063260,
+      "url": "http://travis-ci.org/mishaivchenko/HelloWorld/builds/459063260",
+      "date": "Nov 24, 2018 9:43:28 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 24, 2018 9:43:46 AM",
+    "reproductionDateEnd": "Nov 24, 2018 9:44:42 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 299802896,
+      "totalMemory": 390594560
+    },
+    "totalDuration": 52,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 16,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/mishaivchenko/HelloWorld/456379617/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 19,
+      "numberDeleted": 13
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "mishaivchenko/HelloWorld",
+      "branchName": "master",
+      "sha": "b4afa8418ba76b8bc99770073d6f7d9219feefaf",
+      "url": "http://github.com/mishaivchenko/HelloWorld/commit/b4afa8418ba76b8bc99770073d6f7d9219feefaf",
+      "date": "Nov 17, 2018 4:55:35 PM"
+    },
+    "fixerBuild": {
+      "repoName": "mishaivchenko/HelloWorld",
+      "branchName": "master",
+      "sha": "ef589cec6cdd7460e96e4f11a789b85599b7f12f",
+      "url": "http://github.com/mishaivchenko/HelloWorld/commit/ef589cec6cdd7460e96e4f11a789b85599b7f12f",
+      "date": "Nov 24, 2018 9:41:53 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/mishaivchenko/HelloWorld/456379617",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 9,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "TimeAnalyzerTest",
+        "numberRunning": 9,
+        "numberPassing": 6,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "TimeAnalyzerTest",
+        "testMethod": "boundaryTestMustReturnMorningWhenTimeIsEqualSixHoursAndOneMinute",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[morning]\u003e but was:\u003c[night]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "TimeAnalyzerTest",
+        "testMethod": "boundaryTestMustReturnEveningWhenTimeIsEqualNineteenHoursAndOneMinute",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[evening]\u003e but was:\u003c[night]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "TimeAnalyzerTest",
+        "testMethod": "boundaryTestMustReturnDayWhenTimeIsEqualNineHoursAndOneMinute",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[day]\u003e but was:\u003c[night]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
