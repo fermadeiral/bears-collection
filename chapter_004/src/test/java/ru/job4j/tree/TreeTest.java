@@ -50,13 +50,35 @@ public class TreeTest {
     }
 
     /**
-     * Test for the add method.
+     * First test for the add method.
      */
     @Test
     public void whenAddIntoTreeElementWithNonExistentParentThenMethodReturnsFalse() {
         Tree<Integer> tree = new Tree<>(1);
         assertThat(
                 tree.add(2, 3),
+                is(false)
+        );
+    }
+
+    /**
+     * Second test for the add method.
+     */
+    @Test
+    public void whenAddIntoTreeExistingItemThenMethodReturnsFalse() {
+        Tree<Integer> tree = new Tree<>(1);
+        tree.add(1, 2);
+        tree.add(1, 3);
+        tree.add(1, 4);
+        tree.add(4, 5);
+        tree.add(5, 6);
+
+        assertThat(
+                tree.add(5, 2),
+                is(false)
+        );
+        assertThat(
+                tree.add(1, 3),
                 is(false)
         );
     }
