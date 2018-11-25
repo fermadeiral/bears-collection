@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "IvanBelyaev/ibelyaev",
+    "githubId": 91551842,
+    "url": "https://github.com/IvanBelyaev/ibelyaev",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 453655224,
+      "url": "http://travis-ci.org/IvanBelyaev/ibelyaev/builds/453655224",
+      "date": "Nov 11, 2018 8:08:19 PM"
+    },
+    "fixerBuild": {
+      "id": 459473837,
+      "url": "http://travis-ci.org/IvanBelyaev/ibelyaev/builds/459473837",
+      "date": "Nov 25, 2018 8:18:27 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 25, 2018 8:18:44 PM",
+    "reproductionDateEnd": "Nov 25, 2018 8:20:30 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 343230080,
+      "totalMemory": 398458880
+    },
+    "totalDuration": 100,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 41,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          41
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/IvanBelyaev/ibelyaev/453655224/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 28,
+      "numberDeleted": 15
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/IvanBelyaev/ibelyaev/453655224/chapter_004",
+    "overallMetrics": {
+      "numberRunning": 199,
+      "numberPassing": 198,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.job4j.tree.TreeTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.job4j.tree.TreeTest",
+        "testMethod": "whenAddIntoTreeExistingItemThenMethodReturnsFalse",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003cfalse\u003e      but: was \u003ctrue\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 117,
+    "numberTestFiles": 79,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "IvanBelyaev/ibelyaev",
+      "branchName": "master",
+      "sha": "4919727baa228cc5a7e2950d8ac64604cbcde39f",
+      "url": "http://github.com/IvanBelyaev/ibelyaev/commit/4919727baa228cc5a7e2950d8ac64604cbcde39f",
+      "date": "Nov 11, 2018 8:06:49 PM"
+    },
+    "fixerBuild": {
+      "repoName": "IvanBelyaev/ibelyaev",
+      "branchName": "master",
+      "sha": "475eb7ba44bb6de68e0df9290ef0ba74d466a7d5",
+      "url": "http://github.com/IvanBelyaev/ibelyaev/commit/475eb7ba44bb6de68e0df9290ef0ba74d466a7d5",
+      "date": "Nov 25, 2018 8:16:59 PM"
+    }
+  },
+  "type": "passing_passing"
+}
