@@ -31,11 +31,14 @@ public class Tree<E extends Comparable<E>> implements SimpleTree<E> {
     @Override
     public boolean add(E parent, E child) {
         boolean result = false;
-        Optional<Node<E>> node = findBy(parent);
-        if (node.isPresent()) {
-            node.get().add(new Node<>(child));
-            modCount++;
-            result = true;
+        Optional<Node<E>> newElement = findBy(child);
+        if (!newElement.isPresent()) {
+            Optional<Node<E>> node = findBy(parent);
+            if (node.isPresent()) {
+                node.get().add(new Node<>(child));
+                modCount++;
+                result = true;
+            }
         }
         return result;
     }
@@ -63,27 +66,17 @@ public class Tree<E extends Comparable<E>> implements SimpleTree<E> {
      * @return true if the tree is binary otherwise returns false.
      */
     public boolean isBinary() {
-        return isBinaryTree(root);
-    }
-
-    /**
-     * The method checks if the subtree is binary.
-     * @param treeRoot - subtree root.
-     * @return true if the subtree is binary otherwise returns false.
-     */
-    private boolean isBinaryTree(Node<E> treeRoot) {
         boolean result = true;
-        int leavesSize = treeRoot.leaves().size();
-        if (leavesSize == 0) {
-            result = true;
-        } else if (leavesSize > 2) {
-            result = false;
-        } else {
-            for (int index = 0; index < leavesSize; index++) {
-                if (!isBinaryTree(treeRoot.leaves().get(index))) {
-                    result = false;
-                    break;
-                }
+        Queue<Node<E>> nodes = new LinkedList<>();
+        nodes.offer(root);
+        while (!nodes.isEmpty()) {
+            Node<E> node = nodes.poll();
+            if (node.leaves().size() > 2) {
+                result = false;
+                break;
+            }
+            for (Node<E> childNode : node.leaves()) {
+                nodes.offer(childNode);
             }
         }
         return result;
