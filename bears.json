@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "JavaDogs/cws",
+    "githubId": 70250139,
+    "url": "https://github.com/JavaDogs/cws",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 459533785,
+      "url": "http://travis-ci.org/JavaDogs/cws/builds/459533785",
+      "date": "Nov 26, 2018 12:10:26 AM"
+    },
+    "fixerBuild": {
+      "id": 459654063,
+      "url": "http://travis-ci.org/JavaDogs/cws/builds/459654063",
+      "date": "Nov 26, 2018 10:15:29 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 26, 2018 10:15:49 AM",
+    "reproductionDateEnd": "Nov 26, 2018 10:19:33 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 317318176,
+      "totalMemory": 394788864
+    },
+    "totalDuration": 218,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 48,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          48
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 56,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          56
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/JavaDogs/cws/459533785/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/JavaDogs/cws/459533785/cws-core",
+    "overallMetrics": {
+      "numberRunning": 391,
+      "numberPassing": 390,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.javadog.cws.core.services.ProcessMemberServiceTest",
+        "numberRunning": 29,
+        "numberPassing": 28,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.javadog.cws.core.services.ProcessMemberServiceTest",
+        "testMethod": "testLoginWithSession",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 142,
+    "numberTestFiles": 87,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "JavaDogs/cws",
+      "branchName": "master",
+      "sha": "724e403e6fe9e724ef59c9a17c138b48415ba2f1",
+      "url": "http://github.com/JavaDogs/cws/commit/724e403e6fe9e724ef59c9a17c138b48415ba2f1",
+      "date": "Nov 26, 2018 12:05:50 AM"
+    },
+    "fixerBuild": {
+      "repoName": "JavaDogs/cws",
+      "branchName": "master",
+      "sha": "75377c0a3a799d937997abc92279cacccaf6e991",
+      "url": "http://github.com/JavaDogs/cws/commit/75377c0a3a799d937997abc92279cacccaf6e991",
+      "date": "Nov 26, 2018 10:12:04 AM"
+    }
+  },
+  "type": "passing_passing"
+}
