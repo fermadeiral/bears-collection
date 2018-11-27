@@ -1,0 +1,482 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "firebase/firebase-admin-java",
+    "githubId": 84979119,
+    "url": "https://github.com/firebase/firebase-admin-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 460443979,
+      "url": "http://travis-ci.org/firebase/firebase-admin-java/builds/460443979",
+      "date": "Nov 27, 2018 9:15:14 PM"
+    },
+    "fixerBuild": {
+      "id": 460446439,
+      "url": "http://travis-ci.org/firebase/firebase-admin-java/builds/460446439",
+      "date": "Nov 27, 2018 9:21:01 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 27, 2018 9:21:32 PM",
+    "reproductionDateEnd": "Nov 27, 2018 9:24:07 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 219525664,
+      "totalMemory": 397934592
+    },
+    "totalDuration": 150,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 50,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          50
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 32,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          32
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/firebase/firebase-admin-java/460443979/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 40,
+      "numberDeleted": 39
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/firebase/firebase-admin-java/460443979",
+    "overallMetrics": {
+      "numberRunning": 948,
+      "numberPassing": 904,
+      "numberFailing": 10,
+      "numberErroring": 34,
+      "numberSkipping": 12,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 9
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "isError": true,
+          "occurrences": 33
+        },
+        {
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "numberRunning": 15,
+        "numberPassing": 8,
+        "numberFailing": 7,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "numberRunning": 34,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 34,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "numberRunning": 49,
+        "numberPassing": 46,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createAndroidAppAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendDryRun",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listAndroidApps",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendError",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosApp",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testListUsers",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c999\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listAndroidAppsMultiplePages",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listAndroidAppsAsyncMultiplePages",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "deleteShaCertificate",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "setIosDisplayNameAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listIosAppsMultiplePages",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendErrorWithZeroContentResponse",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidAppAsyncNoDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createShaCertificateAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosAppAsyncNoDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listIosAppsAsyncMultiplePages",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosConfig",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidApp",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getShaCertificates",
+        "failureName": "java.lang.ExceptionInInitializerError",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "setIosDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createIosApp",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createShaCertificate",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listIosApps",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listAndroidAppsAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosAppNoDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createIosAppAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidConfigAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendErrorWithCanonicalCode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosAppAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "setAndroidDisplayNameAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "setAndroidDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getShaCertificatesAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "deleteShaCertificateAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSend",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getIosConfigAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendErrorWithDetails",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "listIosAppsAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidAppAsync",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidAppNoDisplayName",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "createAndroidApp",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "testMethod": "getAndroidConfig",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest",
+        "isError": true
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testListUsersWithPageToken",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c999\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testProjectIdRequired",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No error thrown for missing project ID",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.messaging.FirebaseMessagingTest",
+        "testMethod": "testSendErrorWithFcmError",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[registration-token-not-registered]\u003e but was:\u003c[invalid-argument]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 249,
+    "numberTestFiles": 127,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "firebase/firebase-admin-java",
+      "branchName": "weixifan-project-management",
+      "sha": "2a500523086f96776b31509ce0ff93a0f56f874a",
+      "url": "http://github.com/firebase/firebase-admin-java/commit/2a500523086f96776b31509ce0ff93a0f56f874a",
+      "date": "Nov 26, 2018 9:36:37 PM"
+    },
+    "fixerBuild": {
+      "repoName": "firebase/firebase-admin-java",
+      "branchName": "weixifan-project-management",
+      "sha": "c3bcfa4b8d1033d82a3b749be67b46360aca8833",
+      "url": "http://github.com/firebase/firebase-admin-java/commit/c3bcfa4b8d1033d82a3b749be67b46360aca8833",
+      "date": "Nov 27, 2018 9:18:19 PM"
+    }
+  },
+  "type": "passing_passing"
+}
