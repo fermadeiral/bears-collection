@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "bonitasoft/bonita-engine",
+    "githubId": 11125081,
+    "url": "https://github.com/bonitasoft/bonita-engine",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451635911,
+      "url": "http://travis-ci.org/bonitasoft/bonita-engine/builds/451635911",
+      "date": "Nov 7, 2018 12:35:00 AM"
+    },
+    "fixerBuild": {
+      "id": 460083088,
+      "url": "http://travis-ci.org/bonitasoft/bonita-engine/builds/460083088",
+      "date": "Nov 27, 2018 5:50:27 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 27, 2018 5:50:37 AM",
+    "reproductionDateEnd": "Nov 27, 2018 6:06:39 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 639700704,
+      "totalMemory": 862978048
+    },
+    "totalDuration": 953,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          44
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 129,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          1,
+          127
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 326,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          326
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/bonitasoft/bonita-engine/451635911/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 10,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 69,
+      "numberDeleted": 18
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/bonitasoft/bonita-engine/451635911/bpm/bonita-core/bonita-process-engine",
+    "overallMetrics": {
+      "numberRunning": 4413,
+      "numberPassing": 4412,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.bonitasoft.engine.operation.SEntityActionExecutionException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.bonitasoft.engine.operation.MergeEntityActionTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.bonitasoft.engine.operation.MergeEntityActionTest",
+        "testMethod": "execute_should_return_list_of_merged_entities",
+        "failureName": "org.bonitasoft.engine.operation.SEntityActionExecutionException",
+        "detail": "Unable to insert/update a null business data",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 91,
+    "numberSourceFiles": 3560,
+    "numberTestFiles": 788,
+    "numberLibrariesFailingModule": 119,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "bonitasoft/bonita-engine",
+      "branchName": "master",
+      "sha": "4b7be776be53f0b331a89319a833a152013d1347",
+      "url": "http://github.com/bonitasoft/bonita-engine/commit/4b7be776be53f0b331a89319a833a152013d1347",
+      "date": "Nov 5, 2018 5:58:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "bonitasoft/bonita-engine",
+      "branchName": "master",
+      "sha": "edf8a218d7416c9fcf73f01121a3e933f486afb3",
+      "url": "http://github.com/bonitasoft/bonita-engine/commit/edf8a218d7416c9fcf73f01121a3e933f486afb3",
+      "date": "Nov 26, 2018 8:12:55 PM"
+    }
+  },
+  "type": "passing_passing"
+}
