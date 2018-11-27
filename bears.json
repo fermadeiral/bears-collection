@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "vert-x3/vertx-web",
+    "githubId": 26628954,
+    "url": "https://github.com/vert-x3/vertx-web",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 459797171,
+      "url": "http://travis-ci.org/vert-x3/vertx-web/builds/459797171",
+      "date": "Nov 26, 2018 4:34:21 PM"
+    },
+    "fixerBuild": {
+      "id": 460136219,
+      "url": "http://travis-ci.org/vert-x3/vertx-web/builds/460136219",
+      "date": "Nov 27, 2018 9:44:06 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 27, 2018 9:44:23 AM",
+    "reproductionDateEnd": "Nov 27, 2018 9:55:54 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 397947304,
+      "totalMemory": 495452160
+    },
+    "totalDuration": 684,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 129,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          21,
+          19,
+          0,
+          89
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 284,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          284
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/vert-x3/vertx-web/459797171/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/vert-x3/vertx-web/459797171/vertx-web-client",
+    "overallMetrics": {
+      "numberRunning": 688,
+      "numberPassing": 687,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.vertx.ext.web.client.WebClientTest",
+        "numberRunning": 87,
+        "numberPassing": 86,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.vertx.ext.web.client.WebClientTest",
+        "testMethod": "testInvalidRedirection",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Timed out in waiting for test complete",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 255,
+    "numberTestFiles": 104,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "vert-x3/vertx-web",
+      "branchName": "master",
+      "sha": "9d0f7dc62a5655d6f610b727850b4239f7f4e211",
+      "url": "http://github.com/vert-x3/vertx-web/commit/9d0f7dc62a5655d6f610b727850b4239f7f4e211",
+      "date": "Nov 26, 2018 4:23:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "vert-x3/vertx-web",
+      "branchName": "master",
+      "sha": "356bbb65dcf9515d970921ff75865a298f3c87c6",
+      "url": "http://github.com/vert-x3/vertx-web/commit/356bbb65dcf9515d970921ff75865a298f3c87c6",
+      "date": "Nov 27, 2018 9:31:39 AM"
+    }
+  },
+  "type": "passing_passing"
+}
