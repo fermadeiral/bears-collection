@@ -25,373 +25,161 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ firebase-admin ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 0.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 46.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 846.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.google.firebase.auth.hash.InvalidHashTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in com.google.firebase.auth.hash.InvalidHashTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in com.google.firebase.auth.hash.InvalidHashTest
 Running com.google.firebase.auth.FirebaseUserManagerTest
-Tests run: 49, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.845 sec <<< FAILURE! - in com.google.firebase.auth.FirebaseUserManagerTest
-testListUsersWithPageToken(com.google.firebase.auth.FirebaseUserManagerTest)  Time elapsed: 0.035 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<999> but was:<null>
-	at com.google.firebase.auth.FirebaseUserManagerTest.testListUsersWithPageToken(FirebaseUserManagerTest.java:185)
-
-testProjectIdRequired(com.google.firebase.auth.FirebaseUserManagerTest)  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.AssertionError: No error thrown for missing project ID
-	at com.google.firebase.auth.FirebaseUserManagerTest.testProjectIdRequired(FirebaseUserManagerTest.java:78)
-
-testListUsers(com.google.firebase.auth.FirebaseUserManagerTest)  Time elapsed: 0.011 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<999> but was:<null>
-	at com.google.firebase.auth.FirebaseUserManagerTest.testListUsers(FirebaseUserManagerTest.java:166)
-
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec - in com.google.firebase.auth.FirebaseUserManagerTest
 Running com.google.firebase.auth.UserImportHashTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.auth.UserImportHashTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.auth.UserImportHashTest
 Running com.google.firebase.auth.UserRecordTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.firebase.auth.UserRecordTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.auth.UserRecordTest
 Running com.google.firebase.auth.FirebaseAuthTest
-Tests run: 39, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.77 sec - in com.google.firebase.auth.FirebaseAuthTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.505 sec - in com.google.firebase.auth.FirebaseAuthTest
 Running com.google.firebase.auth.internal.FirebaseTokenVerifierTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.43 sec - in com.google.firebase.auth.internal.FirebaseTokenVerifierTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in com.google.firebase.auth.internal.FirebaseTokenVerifierTest
 Running com.google.firebase.auth.internal.FirebaseTokenFactoryTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in com.google.firebase.auth.internal.FirebaseTokenFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.google.firebase.auth.internal.FirebaseTokenFactoryTest
 Running com.google.firebase.auth.internal.CryptoSignersTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in com.google.firebase.auth.internal.CryptoSignersTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.google.firebase.auth.internal.CryptoSignersTest
 Running com.google.firebase.auth.UserProviderTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.firebase.auth.UserProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.auth.UserProviderTest
 Running com.google.firebase.auth.ImportUserRecordTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.firebase.auth.ImportUserRecordTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.firebase.auth.ImportUserRecordTest
 Running com.google.firebase.auth.UserImportOptionsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.auth.UserImportOptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.auth.UserImportOptionsTest
 Running com.google.firebase.auth.ListUsersPageTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.google.firebase.auth.ListUsersPageTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.firebase.auth.ListUsersPageTest
 Running com.google.firebase.iid.FirebaseInstanceIdTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.firebase.iid.FirebaseInstanceIdTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.iid.FirebaseInstanceIdTest
 Running com.google.firebase.FirebaseAppTest
-Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.754 sec - in com.google.firebase.FirebaseAppTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.627 sec - in com.google.firebase.FirebaseAppTest
 Running com.google.firebase.database.QueryTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 sec - in com.google.firebase.database.QueryTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec - in com.google.firebase.database.QueryTest
 Running com.google.firebase.database.DatabaseErrorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.google.firebase.database.DatabaseErrorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.DatabaseErrorTest
 Running com.google.firebase.database.FirebaseDatabaseTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in com.google.firebase.database.FirebaseDatabaseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in com.google.firebase.database.FirebaseDatabaseTest
 Running com.google.firebase.database.MapperTest
-Tests run: 124, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 sec - in com.google.firebase.database.MapperTest
+Tests run: 124, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in com.google.firebase.database.MapperTest
 Running com.google.firebase.database.UtilitiesTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.UtilitiesTest
 Running com.google.firebase.database.utilities.UtilitiesTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.database.utilities.UtilitiesTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.utilities.UtilitiesTest
 Running com.google.firebase.database.utilities.ValidationTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.firebase.database.utilities.ValidationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.google.firebase.database.utilities.ValidationTest
 Running com.google.firebase.database.utilities.PushIdGeneratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.database.utilities.PushIdGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.google.firebase.database.utilities.PushIdGeneratorTest
 Running com.google.firebase.database.utilities.PairTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.firebase.database.utilities.PairTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.utilities.PairTest
 Running com.google.firebase.database.utilities.NodeSizeEstimatorTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.firebase.database.utilities.NodeSizeEstimatorTest
 Running com.google.firebase.database.utilities.DefaultRunLoopTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.497 sec - in com.google.firebase.database.utilities.DefaultRunLoopTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.511 sec - in com.google.firebase.database.utilities.DefaultRunLoopTest
 Running com.google.firebase.database.MutableDataTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.google.firebase.database.MutableDataTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec - in com.google.firebase.database.MutableDataTest
 Running com.google.firebase.database.DatabaseReferenceTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in com.google.firebase.database.DatabaseReferenceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in com.google.firebase.database.DatabaseReferenceTest
 Running com.google.firebase.database.core.persistence.RandomPersistenceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.882 sec - in com.google.firebase.database.core.persistence.RandomPersistenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.617 sec - in com.google.firebase.database.core.persistence.RandomPersistenceTest
 Running com.google.firebase.database.core.persistence.PruneForestTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.firebase.database.core.persistence.PruneForestTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.database.core.persistence.PruneForestTest
 Running com.google.firebase.database.core.persistence.TrackedQueryManagerTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.google.firebase.database.core.persistence.TrackedQueryManagerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.google.firebase.database.core.persistence.TrackedQueryManagerTest
 Running com.google.firebase.database.core.persistence.DefaultPersistenceManagerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.firebase.database.core.persistence.DefaultPersistenceManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.firebase.database.core.persistence.DefaultPersistenceManagerTest
 Running com.google.firebase.database.core.RepoTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in com.google.firebase.database.core.RepoTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec - in com.google.firebase.database.core.RepoTest
 Running com.google.firebase.database.core.JvmPlatformTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.database.core.JvmPlatformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.firebase.database.core.JvmPlatformTest
 Running com.google.firebase.database.core.JvmAuthTokenProviderTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.google.firebase.database.core.JvmAuthTokenProviderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.google.firebase.database.core.JvmAuthTokenProviderTest
 Running com.google.firebase.database.core.utilities.TreeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.core.utilities.TreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.database.core.utilities.TreeTest
 Running com.google.firebase.database.core.view.QueryParamsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.core.view.QueryParamsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.database.core.view.QueryParamsTest
 Running com.google.firebase.database.core.PathTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.core.PathTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.database.core.PathTest
 Running com.google.firebase.database.core.SyncPointTest
-Tests run: 109, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.071 sec - in com.google.firebase.database.core.SyncPointTest
+Tests run: 109, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.966 sec - in com.google.firebase.database.core.SyncPointTest
 Running com.google.firebase.database.core.RangeMergeTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.google.firebase.database.core.RangeMergeTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in com.google.firebase.database.core.RangeMergeTest
 Running com.google.firebase.database.core.RandomViewProcessorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.google.firebase.database.core.RandomViewProcessorTest
 Running com.google.firebase.database.core.CompoundWriteTest
-Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.core.CompoundWriteTest
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.database.core.CompoundWriteTest
 Running com.google.firebase.database.core.RepoInfoTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.core.RepoInfoTest
 Running com.google.firebase.database.connection.ConnectionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in com.google.firebase.database.connection.ConnectionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in com.google.firebase.database.connection.ConnectionTest
 Running com.google.firebase.database.connection.PersistentConnectionTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.google.firebase.database.connection.PersistentConnectionTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in com.google.firebase.database.connection.PersistentConnectionTest
 Running com.google.firebase.database.connection.ConnectionUtilsTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.connection.ConnectionUtilsTest
 Running com.google.firebase.database.connection.WebsocketConnectionTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.google.firebase.database.connection.WebsocketConnectionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec - in com.google.firebase.database.connection.WebsocketConnectionTest
 Running com.google.firebase.database.OnDisconnectTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.firebase.database.OnDisconnectTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.firebase.database.OnDisconnectTest
 Running com.google.firebase.database.util.JsonMapperTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in com.google.firebase.database.util.JsonMapperTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in com.google.firebase.database.util.JsonMapperTest
 Running com.google.firebase.database.util.GAuthTokenTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.database.util.GAuthTokenTest
 Running com.google.firebase.database.snapshot.CompoundHashTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in com.google.firebase.database.snapshot.CompoundHashTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 sec - in com.google.firebase.database.snapshot.CompoundHashTest
 Running com.google.firebase.database.snapshot.NodeTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.google.firebase.database.snapshot.NodeTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.firebase.database.snapshot.NodeTest
 Running com.google.firebase.database.ObjectMapTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.google.firebase.database.ObjectMapTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.firebase.database.ObjectMapTest
 Running com.google.firebase.database.DataSnapshotTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.google.firebase.database.DataSnapshotTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in com.google.firebase.database.DataSnapshotTest
 Running com.google.firebase.database.collection.ArraySortedMapTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in com.google.firebase.database.collection.ArraySortedMapTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in com.google.firebase.database.collection.ArraySortedMapTest
 Running com.google.firebase.database.collection.ImmutableSortedSetTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.firebase.database.collection.ImmutableSortedSetTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.google.firebase.database.collection.ImmutableSortedSetTest
 Running com.google.firebase.database.collection.RBTreeSortedMapTest
 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.google.firebase.database.collection.RBTreeSortedMapTest
 Running com.google.firebase.projectmanagement.IosAppTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in com.google.firebase.projectmanagement.IosAppTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in com.google.firebase.projectmanagement.IosAppTest
 Running com.google.firebase.projectmanagement.ShaCertificateTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.google.firebase.projectmanagement.ShaCertificateTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.firebase.projectmanagement.ShaCertificateTest
 Running com.google.firebase.projectmanagement.AndroidAppTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in com.google.firebase.projectmanagement.AndroidAppTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in com.google.firebase.projectmanagement.AndroidAppTest
 Running com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-Tests run: 34, Failures: 0, Errors: 34, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE! - in com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-getShaCertificates(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.ExceptionInInitializerError
-	at com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest.<clinit>(FirebaseProjectManagementServiceImplTest.java:73)
-
-listIosApps(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidAppAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getShaCertificatesAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createAndroidApp(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createAndroidAppAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listAndroidAppsAsyncMultiplePages(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-setAndroidDisplayNameAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.004 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosAppAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listAndroidApps(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-deleteShaCertificateAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createShaCertificate(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosConfigAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-deleteShaCertificate(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-setIosDisplayNameAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createShaCertificateAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-setIosDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidAppAsyncNoDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createIosAppAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listIosAppsAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosConfig(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidApp(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listAndroidAppsAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosApp(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosAppAsyncNoDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listIosAppsAsyncMultiplePages(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-createIosApp(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidAppNoDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getIosAppNoDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listIosAppsMultiplePages(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidConfig(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-listAndroidAppsMultiplePages(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-setAndroidDisplayName(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
-getAndroidConfigAsync(com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NoClassDefFoundError: Could not initialize class com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
-
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.167 sec - in com.google.firebase.projectmanagement.FirebaseProjectManagementServiceImplTest
 Running com.google.firebase.projectmanagement.FirebaseProjectManagementTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in com.google.firebase.projectmanagement.FirebaseProjectManagementTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.google.firebase.projectmanagement.FirebaseProjectManagementTest
 Running com.google.firebase.internal.FirebaseAppStoreTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.firebase.internal.FirebaseAppStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.firebase.internal.FirebaseAppStoreTest
 Running com.google.firebase.internal.FirebaseRequestInitializerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.internal.FirebaseRequestInitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.internal.FirebaseRequestInitializerTest
 Running com.google.firebase.internal.CallableOperationTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.firebase.internal.CallableOperationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.firebase.internal.CallableOperationTest
 Running com.google.firebase.internal.FirebaseThreadManagersTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.firebase.internal.FirebaseThreadManagersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.firebase.internal.FirebaseThreadManagersTest
 Running com.google.firebase.messaging.MessageTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.google.firebase.messaging.MessageTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.google.firebase.messaging.MessageTest
 Running com.google.firebase.messaging.FirebaseMessagingTest
-Tests run: 15, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec <<< FAILURE! - in com.google.firebase.messaging.FirebaseMessagingTest
-testSendErrorWithCanonicalCode(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.012 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendErrorWithCanonicalCode(FirebaseMessagingTest.java:276)
-
-testSend(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSend(FirebaseMessagingTest.java:146)
-
-testSendErrorWithFcmError(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.021 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[registration-token-not-registered]> but was:<[invalid-argument]>
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendErrorWithFcmError(FirebaseMessagingTest.java:297)
-
-testSendDryRun(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendDryRun(FirebaseMessagingTest.java:182)
-
-testSendErrorWithDetails(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendErrorWithDetails(FirebaseMessagingTest.java:253)
-
-testSendError(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendError(FirebaseMessagingTest.java:207)
-
-testSendErrorWithZeroContentResponse(com.google.firebase.messaging.FirebaseMessagingTest)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<2> but was:<null>
-	at com.google.firebase.messaging.FirebaseMessagingTest.checkRequestHeader(FirebaseMessagingTest.java:515)
-	at com.google.firebase.messaging.FirebaseMessagingTest.testSendErrorWithZeroContentResponse(FirebaseMessagingTest.java:230)
-
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in com.google.firebase.messaging.FirebaseMessagingTest
 Running com.google.firebase.ThreadManagerTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.firebase.ThreadManagerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.google.firebase.ThreadManagerTest
 Running com.google.firebase.FirebaseOptionsTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in com.google.firebase.FirebaseOptionsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in com.google.firebase.FirebaseOptionsTest
 Running com.google.firebase.cloud.StorageClientTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in com.google.firebase.cloud.StorageClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec - in com.google.firebase.cloud.StorageClientTest
 Running com.google.firebase.cloud.FirestoreClientTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.977 sec - in com.google.firebase.cloud.FirestoreClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.999 sec - in com.google.firebase.cloud.FirestoreClientTest
 
 Results :
 
-Failed tests: 
-  FirebaseUserManagerTest.testListUsers:166 expected:<999> but was:<null>
-  FirebaseUserManagerTest.testListUsersWithPageToken:185 expected:<999> but was:<null>
-  FirebaseUserManagerTest.testProjectIdRequired:78 No error thrown for missing project ID
-  FirebaseMessagingTest.testSend:146->checkRequestHeader:515 expected:<2> but was:<null>
-  FirebaseMessagingTest.testSendDryRun:182->checkRequestHeader:515 expected:<2> but was:<null>
-  FirebaseMessagingTest.testSendError:207->checkRequestHeader:515 expected:<2> but was:<null>
-  FirebaseMessagingTest.testSendErrorWithCanonicalCode:276->checkRequestHeader:515 expected:<2> but was:<null>
-  FirebaseMessagingTest.testSendErrorWithDetails:253->checkRequestHeader:515 expected:<2> but was:<null>
-  FirebaseMessagingTest.testSendErrorWithFcmError:297 expected:<[registration-token-not-registered]> but was:<[invalid-argument]>
-  FirebaseMessagingTest.testSendErrorWithZeroContentResponse:230->checkRequestHeader:515 expected:<2> but was:<null>
-Tests in error: 
-  FirebaseProjectManagementServiceImplTest.createAndroidApp » NoClassDefFound Co...
-  FirebaseProjectManagementServiceImplTest.createAndroidAppAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.createIosApp » NoClassDefFound Could ...
-  FirebaseProjectManagementServiceImplTest.createIosAppAsync » NoClassDefFound C...
-  FirebaseProjectManagementServiceImplTest.createShaCertificate » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.createShaCertificateAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.deleteShaCertificate » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.deleteShaCertificateAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getAndroidApp » NoClassDefFound Could...
-  FirebaseProjectManagementServiceImplTest.getAndroidAppAsync » NoClassDefFound ...
-  FirebaseProjectManagementServiceImplTest.getAndroidAppAsyncNoDisplayName » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getAndroidAppNoDisplayName » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getAndroidConfig » NoClassDefFound Co...
-  FirebaseProjectManagementServiceImplTest.getAndroidConfigAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getIosApp » NoClassDefFound Could not...
-  FirebaseProjectManagementServiceImplTest.getIosAppAsync » NoClassDefFound Coul...
-  FirebaseProjectManagementServiceImplTest.getIosAppAsyncNoDisplayName » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getIosAppNoDisplayName » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.getIosConfig » NoClassDefFound Could ...
-  FirebaseProjectManagementServiceImplTest.getIosConfigAsync » NoClassDefFound C...
-  FirebaseProjectManagementServiceImplTest.getShaCertificates » ExceptionInInitializer
-  FirebaseProjectManagementServiceImplTest.getShaCertificatesAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.listAndroidApps » NoClassDefFound Cou...
-  FirebaseProjectManagementServiceImplTest.listAndroidAppsAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.listAndroidAppsAsyncMultiplePages » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.listAndroidAppsMultiplePages » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.listIosApps » NoClassDefFound Could n...
-  FirebaseProjectManagementServiceImplTest.listIosAppsAsync » NoClassDefFound Co...
-  FirebaseProjectManagementServiceImplTest.listIosAppsAsyncMultiplePages » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.listIosAppsMultiplePages » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.setAndroidDisplayName » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.setAndroidDisplayNameAsync » NoClassDefFound
-  FirebaseProjectManagementServiceImplTest.setIosDisplayName » NoClassDefFound C...
-  FirebaseProjectManagementServiceImplTest.setIosDisplayNameAsync » NoClassDefFound
-
-Tests run: 960, Failures: 10, Errors: 34, Skipped: 12
+Tests run: 960, Failures: 0, Errors: 0, Skipped: 12
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 28.082 s
-[INFO] Finished at: 2018-11-27T21:22:58+01:00
-[INFO] Final Memory: 36M/602M
+[INFO] Total time: 26.720 s
+[INFO] Finished at: 2018-11-27T21:24:04+01:00
+[INFO] Final Memory: 34M/605M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project firebase-admin: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/firebase/firebase-admin-java/460443979/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
