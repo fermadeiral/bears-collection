@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "firebase/firebase-admin-java",
+    "githubId": 84979119,
+    "url": "https://github.com/firebase/firebase-admin-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 459969181,
+      "url": "http://travis-ci.org/firebase/firebase-admin-java/builds/459969181",
+      "date": "Nov 26, 2018 10:52:16 PM"
+    },
+    "fixerBuild": {
+      "id": 460023672,
+      "url": "http://travis-ci.org/firebase/firebase-admin-java/builds/460023672",
+      "date": "Nov 27, 2018 1:30:13 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 27, 2018 1:30:29 AM",
+    "reproductionDateEnd": "Nov 27, 2018 1:33:07 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 231870736,
+      "totalMemory": 400031744
+    },
+    "totalDuration": 153,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 50,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          50
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 33,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          33
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/firebase/firebase-admin-java/459969181/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 29,
+      "numberDeleted": 25
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "firebase/firebase-admin-java",
+      "branchName": "master",
+      "sha": "4f21d1ee4530fe1bf542aa904ce08863d12a548e",
+      "url": "http://github.com/firebase/firebase-admin-java/commit/4f21d1ee4530fe1bf542aa904ce08863d12a548e",
+      "date": "Nov 26, 2018 10:49:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "firebase/firebase-admin-java",
+      "branchName": "master",
+      "sha": "32f05c327fa49ffa9f0ca393adbc4fa3bf788cc6",
+      "url": "http://github.com/firebase/firebase-admin-java/commit/32f05c327fa49ffa9f0ca393adbc4fa3bf788cc6",
+      "date": "Nov 27, 2018 1:27:27 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/firebase/firebase-admin-java/459969181",
+    "overallMetrics": {
+      "numberRunning": 944,
+      "numberPassing": 941,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 12,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "numberRunning": 49,
+        "numberPassing": 46,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testListUsers",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c999\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testProjectIdRequired",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No error thrown for missing project ID",
+        "isError": false
+      },
+      {
+        "testClass": "com.google.firebase.auth.FirebaseUserManagerTest",
+        "testMethod": "testListUsersWithPageToken",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c999\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 249,
+    "numberTestFiles": 127,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
