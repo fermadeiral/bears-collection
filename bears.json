@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "SonarSource/sonar-java",
+    "githubId": 5674787,
+    "url": "https://github.com/SonarSource/sonar-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 2333
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 460337836,
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/460337836",
+      "date": "Nov 27, 2018 5:22:17 PM"
+    },
+    "fixerBuild": {
+      "id": 460351668,
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/460351668",
+      "date": "Nov 27, 2018 5:51:30 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 27, 2018 5:51:44 PM",
+    "reproductionDateEnd": "Nov 27, 2018 6:01:45 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 421871464,
+      "totalMemory": 884998144
+    },
+    "totalDuration": 593,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          44
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 128,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          5,
+          1,
+          0,
+          7,
+          115
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 144,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          144
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SonarSource/sonar-java/460337836/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 64,
+      "numberDeleted": 40
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SonarSource/sonar-java/460337836/java-checks",
+    "overallMetrics": {
+      "numberRunning": 2556,
+      "numberPassing": 2555,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.sonar.java.AnalysisException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.java.checks.RegexPatternsNeedlesslyCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.java.checks.RegexPatternsNeedlesslyCheckTest",
+        "testMethod": "test",
+        "failureName": "org.sonar.java.AnalysisException",
+        "detail": "SonarQube is unable to analyze file : \u0027/root/workspace/SonarSource/sonar-java/460337836/java-checks/src/test/files/checks/RegexPatternsNeedlesslyCheck.java\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1014,
+    "numberTestFiles": 894,
+    "numberLibrariesFailingModule": 64,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "c682702ba690e968e9531087041792734e3fb62e",
+      "url": "http://github.com/SonarSource/sonar-java/commit/c682702ba690e968e9531087041792734e3fb62e",
+      "date": "Nov 27, 2018 5:13:06 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "484ba9b5f51db13f67db8c32abf4be919cfb5f83",
+      "url": "http://github.com/SonarSource/sonar-java/commit/484ba9b5f51db13f67db8c32abf4be919cfb5f83",
+      "date": "Nov 27, 2018 5:42:35 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "SONARJAVA-2964",
+      "sha": "2f752d640648b995b852136e1bc20e823bb0717d",
+      "url": "https://github.com/SonarSource/sonar-java/commit/2f752d640648b995b852136e1bc20e823bb0717d",
+      "date": "Nov 27, 2018 5:54:15 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "6106397ee76c3fb05529d31011e98f9b8517773a",
+      "url": "https://github.com/SonarSource/sonar-java/commit/6106397ee76c3fb05529d31011e98f9b8517773a",
+      "date": "Nov 27, 2018 5:18:01 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "SONARJAVA-2964",
+      "sha": "2f752d640648b995b852136e1bc20e823bb0717d",
+      "url": "https://github.com/SonarSource/sonar-java/commit/2f752d640648b995b852136e1bc20e823bb0717d",
+      "date": "Nov 27, 2018 5:54:15 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "6106397ee76c3fb05529d31011e98f9b8517773a",
+      "url": "https://github.com/SonarSource/sonar-java/commit/6106397ee76c3fb05529d31011e98f9b8517773a",
+      "date": "Nov 27, 2018 5:18:01 PM"
+    }
+  }
+}
