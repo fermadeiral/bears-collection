@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "AAFC-BICoE/seqdb-api",
+    "githubId": 130715998,
+    "url": "https://github.com/AAFC-BICoE/seqdb-api",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 29
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 451551221,
+      "url": "http://travis-ci.org/AAFC-BICoE/seqdb-api/builds/451551221",
+      "date": "Nov 6, 2018 9:07:04 PM"
+    },
+    "fixerBuild": {
+      "id": 460919571,
+      "url": "http://travis-ci.org/AAFC-BICoE/seqdb-api/builds/460919571",
+      "date": "Nov 28, 2018 7:49:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 28, 2018 7:50:13 PM",
+    "reproductionDateEnd": "Nov 28, 2018 7:53:12 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 257866320,
+      "totalMemory": 444071936
+    },
+    "totalDuration": 171,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 107,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          3,
+          0,
+          3,
+          97
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/AAFC-BICoE/seqdb-api/451551221/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 25,
+      "numberDeleted": 72
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/AAFC-BICoE/seqdb-api/451551221",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ca.gc.aafc.seqdb.api.security.trustedservice.TrustedServiceAuthenticationTokenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ca.gc.aafc.seqdb.api.security.trustedservice.TrustedServiceAuthenticationTokenTest",
+        "testMethod": "setAuthenticated_whenTrue_throwIllegalArgumentException",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.lang.IllegalArgumentException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 30,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 133,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "dev",
+      "sha": "f8c3d5e1f72fe5bc09d2d49dbcdb48db0b126168",
+      "url": "http://github.com/AAFC-BICoE/seqdb-api/commit/f8c3d5e1f72fe5bc09d2d49dbcdb48db0b126168",
+      "date": "Nov 6, 2018 9:03:22 PM"
+    },
+    "fixerBuild": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "dev",
+      "sha": "4de95bc37723066cb5d6907bc9009a0e117d740d",
+      "url": "http://github.com/AAFC-BICoE/seqdb-api/commit/4de95bc37723066cb5d6907bc9009a0e117d740d",
+      "date": "Nov 28, 2018 7:43:38 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "Support_13592_Define_service_to_service_authentication",
+      "sha": "68b46ad852fae6a89b7af1a252e9ab21fb88bcdf",
+      "url": "https://github.com/AAFC-BICoE/seqdb-api/commit/68b46ad852fae6a89b7af1a252e9ab21fb88bcdf",
+      "date": "Nov 28, 2018 7:43:38 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "dev",
+      "sha": "3b1ab2ad43d86862e943e6b784655500bc9b0f6a",
+      "url": "https://github.com/AAFC-BICoE/seqdb-api/commit/3b1ab2ad43d86862e943e6b784655500bc9b0f6a",
+      "date": "Oct 4, 2018 7:57:27 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "Support_13592_Define_service_to_service_authentication",
+      "sha": "68b46ad852fae6a89b7af1a252e9ab21fb88bcdf",
+      "url": "https://github.com/AAFC-BICoE/seqdb-api/commit/68b46ad852fae6a89b7af1a252e9ab21fb88bcdf",
+      "date": "Nov 28, 2018 7:43:38 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "AAFC-BICoE/seqdb-api",
+      "branchName": "dev",
+      "sha": "3b1ab2ad43d86862e943e6b784655500bc9b0f6a",
+      "url": "https://github.com/AAFC-BICoE/seqdb-api/commit/3b1ab2ad43d86862e943e6b784655500bc9b0f6a",
+      "date": "Oct 4, 2018 7:57:27 PM"
+    }
+  },
+  "type": "passing_passing"
+}
