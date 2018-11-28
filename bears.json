@@ -1,0 +1,263 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/calcite",
+    "githubId": 21193524,
+    "url": "https://github.com/apache/calcite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 939
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 460564415,
+      "url": "http://travis-ci.org/apache/calcite/builds/460564415",
+      "date": "Nov 28, 2018 3:04:53 AM"
+    },
+    "fixerBuild": {
+      "id": 460595984,
+      "url": "http://travis-ci.org/apache/calcite/builds/460595984",
+      "date": "Nov 28, 2018 5:35:09 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 28, 2018 5:35:25 AM",
+    "reproductionDateEnd": "Nov 28, 2018 5:54:31 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 300984008,
+      "totalMemory": 555220992
+    },
+    "totalDuration": 1136,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          24
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 225,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          5,
+          215
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 346,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          346
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/calcite/460564415/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 32,
+      "numberDeleted": 113
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/calcite/460564415/geode",
+    "overallMetrics": {
+      "numberRunning": 5403,
+      "numberPassing": 5393,
+      "numberFailing": 10,
+      "numberErroring": 0,
+      "numberSkipping": 134,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 9
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest",
+        "numberRunning": 3,
+        "numberPassing": 1,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "numberRunning": 12,
+        "numberPassing": 7,
+        "numberFailing": 5,
+        "numberErroring": 0,
+        "numberSkipping": 2
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest",
+        "numberRunning": 36,
+        "numberPassing": 33,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "testMethod": "testWhereWithOrWithEmptyResult",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...M /zips WHERE state [IN SET(\u0027\u0027, null, true, false, 123, 13.892)]\u003e but was:\u003c...M /zips WHERE state [\u003d \u0027\u0027 OR state \u003d \u0027null\u0027 OR state \u003d \u0027true\u0027 OR state \u003d \u0027false\u0027 OR state \u003d \u0027true\u0027 OR state \u003d \u0027123\u0027 OR state \u003d \u002713892\u0027]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest",
+        "testMethod": "testInSetFilterWithNestedStringField",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...primaryAddress.city [IN SET(\u0027Topeka\u0027, \u0027San Francisco\u0027)]\u003e but was:\u003c...primaryAddress.city [\u003d \u0027Topeka\u0027 OR primaryAddress.city \u003d \u0027San Francisco\u0027]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "testMethod": "testWhereWithOrForStringField",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...M /zips WHERE state [IN SET(\u0027MA\u0027, \u0027RI\u0027)]\u003e but was:\u003c...M /zips WHERE state [\u003d \u0027MA\u0027 OR state \u003d \u0027RI\u0027]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest",
+        "testMethod": "testWhereWithOr",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...er WHERE itemNumber [IN SET(123, 789)]\u003e but was:\u003c...er WHERE itemNumber [\u003d 123 OR itemNumber \u003d 789]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "testMethod": "testWhereWithOrForNumericField",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ROM /zips WHERE pop [IN SET(34035, 40173)]\u003e but was:\u003c...ROM /zips WHERE pop [\u003d 34035 OR pop \u003d 40173]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "testMethod": "testWhereWithOrForLargeValueList",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...M /zips WHERE state [IN SET(\u0027UT\u0027, \u0027DC\u0027, \u0027KY\u0027, \u0027CT\u0027, \u0027KS\u0027, \u0027CO\u0027, \u0027TX\u0027, \u0027LA\u0027, \u0027HI\u0027, \u0027TN\u0027, \u0027PA\u0027, \u0027WY\u0027, \u0027MI\u0027, \u0027OR\u0027, \u0027IA\u0027, \u0027DE\u0027, \u0027MA\u0027, \u0027ID\u0027, \u0027MD\u0027, \u0027ME\u0027, \u0027IN\u0027, \u0027SD\u0027, \u0027IL\u0027, \u0027WV\u0027, \u0027AR\u0027, \u0027MT\u0027, \u0027MS\u0027, \u0027WI\u0027, \u0027AZ\u0027, \u0027MO\u0027, \u0027MN\u0027, \u0027NM\u0027, \u0027WA\u0027, \u0027NJ\u0027, \u0027NH\u0027, \u0027NE\u0027, \u0027NC\u0027, \u0027ND\u0027, \u0027AK\u0027, \u0027SC\u0027, \u0027AL\u0027, \u0027VT\u0027, \u0027NY\u0027, \u0027RI\u0027, \u0027GA\u0027, \u0027NV\u0027, \u0027CA\u0027, \u0027VA\u0027, \u0027OH\u0027, \u0027OK\u0027, \u0027FL\u0027)]\u003e but was:\u003c...M /zips WHERE state [\u003d \u0027UT\u0027 OR state \u003d \u0027DC\u0027 OR state \u003d \u0027KY\u0027 OR state \u003d \u0027CT\u0027 OR state \u003d \u0027KS\u0027 OR state \u003d \u0027CO\u0027 OR state \u003d \u0027TX\u0027 OR state \u003d \u0027LA\u0027 OR state \u003d \u0027HI\u0027 OR state \u003d \u0027TN\u0027 OR state \u003d \u0027PA\u0027 OR state \u003d \u0027WY\u0027 OR state \u003d \u0027MI\u0027 OR state \u003d \u0027OR\u0027 OR state \u003d \u0027IA\u0027 OR state \u003d \u0027DE\u0027 OR state \u003d \u0027MA\u0027 OR state \u003d \u0027ID\u0027 OR state \u003d \u0027MD\u0027 OR state \u003d \u0027ME\u0027 OR state \u003d \u0027IN\u0027 OR state \u003d \u0027SD\u0027 OR state \u003d \u0027IL\u0027 OR state \u003d \u0027WV\u0027 OR state \u003d \u0027AR\u0027 OR state \u003d \u0027MT\u0027 OR state \u003d \u0027MS\u0027 OR state \u003d \u0027WI\u0027 OR state \u003d \u0027AZ\u0027 OR state \u003d \u0027MO\u0027 OR state \u003d \u0027MN\u0027 OR state \u003d \u0027NM\u0027 OR state \u003d \u0027WA\u0027 OR state \u003d \u0027NJ\u0027 OR state \u003d \u0027NH\u0027 OR state \u003d \u0027NE\u0027 OR state \u003d \u0027NC\u0027 OR state \u003d \u0027ND\u0027 OR state \u003d \u0027AK\u0027 OR state \u003d \u0027SC\u0027 OR state \u003d \u0027AL\u0027 OR state \u003d \u0027VT\u0027 OR state \u003d \u0027NY\u0027 OR state \u003d \u0027RI\u0027 OR state \u003d \u0027GA\u0027 OR state \u003d \u0027NV\u0027 OR state \u003d \u0027CA\u0027 OR state \u003d \u0027VA\u0027 OR state \u003d \u0027OH\u0027 OR state \u003d \u0027OK\u0027 OR state \u003d \u0027FL\u0027]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest",
+        "testMethod": "testSqlWhereWithMultipleOrForLiteralFields",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...n WHERE stringValue [IN SET(\u0027abc\u0027, \u0027def\u0027) OR floatValue IN SET(1.5678, null) OR booleanValue IN SET(true, false, null)]\u003e but was:\u003c...n WHERE stringValue [\u003d \u0027abc\u0027 OR stringValue \u003d \u0027def\u0027 OR floatValue \u003d 15678 OR floatValue \u003d null OR booleanValue \u003d true OR booleanValue \u003d false OR booleanValue \u003d null]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest",
+        "testMethod": "testSqlMultipleBooleanWhereFilter",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c... WHERE booleanValue [IN SET(true, false)]\u003e but was:\u003c... WHERE booleanValue [\u003d true OR booleanValue \u003d false]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest",
+        "testMethod": "testSqlDisjunction",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...er WHERE itemNumber [IN SET(789, 123)]\u003e but was:\u003c...er WHERE itemNumber [\u003d 789 OR itemNumber \u003d 123]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.adapter.geode.rel.GeodeZipsTest",
+        "testMethod": "testWhereWithOrForNestedNumericField",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c2\u003e\n     but: was \u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1554,
+    "numberTestFiles": 240,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "branch-1.15",
+      "sha": "22038c5713041fd49304bdbb8bd67f1921a38876",
+      "url": "http://github.com/apache/calcite/commit/22038c5713041fd49304bdbb8bd67f1921a38876",
+      "date": "Nov 28, 2018 2:43:53 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "branch-1.15",
+      "sha": "36e01c62e5b7b3d6414095263d194f641965cddf",
+      "url": "http://github.com/apache/calcite/commit/36e01c62e5b7b3d6414095263d194f641965cddf",
+      "date": "Nov 28, 2018 5:03:46 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "da57c903f335141e48d13656bafc568d8eb0d2d7",
+      "url": "https://github.com/apache/calcite/commit/da57c903f335141e48d13656bafc568d8eb0d2d7",
+      "date": "Nov 28, 2018 5:03:46 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/calcite",
+      "branchName": "branch-1.15",
+      "sha": "fdb17bb794a901b586a90fee38432e9a1b3e1496",
+      "url": "https://github.com/apache/calcite/commit/fdb17bb794a901b586a90fee38432e9a1b3e1496",
+      "date": "Dec 6, 2017 7:51:18 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "da57c903f335141e48d13656bafc568d8eb0d2d7",
+      "url": "https://github.com/apache/calcite/commit/da57c903f335141e48d13656bafc568d8eb0d2d7",
+      "date": "Nov 28, 2018 5:03:46 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/calcite",
+      "branchName": "branch-1.15",
+      "sha": "fdb17bb794a901b586a90fee38432e9a1b3e1496",
+      "url": "https://github.com/apache/calcite/commit/fdb17bb794a901b586a90fee38432e9a1b3e1496",
+      "date": "Dec 6, 2017 7:51:18 AM"
+    }
+  }
+}
