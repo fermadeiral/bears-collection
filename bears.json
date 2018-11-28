@@ -1,0 +1,2567 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "opentracing-contrib/java-redis-client",
+    "githubId": 111915134,
+    "url": "https://github.com/opentracing-contrib/java-redis-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 450702564,
+      "url": "http://travis-ci.org/opentracing-contrib/java-redis-client/builds/450702564",
+      "date": "Nov 5, 2018 6:27:13 AM"
+    },
+    "fixerBuild": {
+      "id": 460768683,
+      "url": "http://travis-ci.org/opentracing-contrib/java-redis-client/builds/460768683",
+      "date": "Nov 28, 2018 2:24:21 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 28, 2018 2:24:31 PM",
+    "reproductionDateEnd": "Nov 28, 2018 2:26:45 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 354412256,
+      "totalMemory": 392167424
+    },
+    "totalDuration": 129,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 42,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/opentracing-contrib/java-redis-client/450702564/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/opentracing-contrib/java-redis-client/450702564/opentracing-redis-spring",
+    "overallMetrics": {
+      "numberRunning": 373,
+      "numberPassing": 28,
+      "numberFailing": 345,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 345
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "numberRunning": 192,
+        "numberPassing": 3,
+        "numberFailing": 189,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "numberRunning": 158,
+        "numberPassing": 2,
+        "numberFailing": 156,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPing",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PING]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRemRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREMRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSInterStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SINTERSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingEchoCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ECHO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRevRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBgSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRandomKeyCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ANDOMKEY]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDelCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DEL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingShutdownCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SHUTDOWN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSMembersCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SMEMBERS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBgReWriteAofCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGREWRITEAOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingShutdownCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SHUTDOWN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSRandMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SRANDMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBgReWriteAofCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGREWRITEAOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetNodeForKey",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER_NODE_FOR_KEY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSUnionCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUNION]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPfCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPExpireCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PEXPIRE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetMasterSlaveMap",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER MASTER-SLAVE-MAP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingExecuteCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[custom c]ommand\u003e but was:\u003c[RedisC]ommand\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSDiffCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SDIFF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSInterStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SINTERSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingUnwatchCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[UNWATCH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRestoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ESTORE]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPfMergeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFMERGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[POP]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPExpireCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PEXPIRE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSIsMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SISMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBRPopLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BRPOPLPUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingScriptLoadCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT LOAD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDecrCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DECR]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRevRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZCardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingWatchCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[WATCH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRangeByScoreWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYSCORE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZUnionStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZUNIONSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingUnwatchCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[UNWATCH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingKeys",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[KEYS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetClientListCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT LIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingKeysCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[KEYS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPExpireAtCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PEXPIREAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRestoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ESTORE]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBgSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBitOpCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BITOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPfMergeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFMERGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLPushXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPUSHX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoRadiusByMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEORADIUSBYMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPublishCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PUBLISH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingEvalCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EVAL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingEchoCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ECHO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBLPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BLPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSMoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SMOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBitCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BITCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetBitCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETBIT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBitCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BITCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHGetAllCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HGETALL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterSetSlot",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER SETSLOT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRangeByLexCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYLEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingTtlCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TTL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingScriptExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT EXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPExpireAtCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PEXPIREAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSlaveOfCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SLAVEOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetConfig",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG SET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterForget",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER FORGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSDiffCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SDIFF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMigrateCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MIGRATE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRangeWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDiscardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DISCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSelectCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SELECT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingInfo",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INFO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSlaveOfNoOneCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SLAVEOFNOONE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetKeysInSlot",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER GETKEYSINSLOT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSMoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SMOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPingCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PING]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSubscribeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUBSCRIBE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingScriptFlushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT FLUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPTtlCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PTTL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRPopLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[POPLPUSH]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterCountKeysInSlot",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER COUNTKEYSINSLOT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetExCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBRPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BRPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingTimeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TIME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetNodeForSlot",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER_NODE_FOR_SLOT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetClientList",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT LIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDelCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DEL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRenameNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ENAMENX]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingEvalShaCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EVALSHA]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDbSizeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DBSIZE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingKillClientCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT KILL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPersistCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PERSIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[POP]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoRadiusByMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEORADIUSBYMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSortCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SORT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHMSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HMSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHValsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HVALS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetBitCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETBIT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingAppendCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[APPEND]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSUnionStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUNIONSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLIndexCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LINDEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingAppendCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[APPEND]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRankCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANK]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPingCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PING]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSDiffStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SDIFFSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MSETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingWatchCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[WATCH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingScriptLoadCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT LOAD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDbSize",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DBSIZE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingFlushDb",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHDB]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRangeByLexCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYLEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSortCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SORT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetConfiCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG SET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPSetExCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PSETEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBLPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BLPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPersistCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PERSIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingFlushAll",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHALL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDiscardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DISCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLTrimCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LTRIM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetExCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetNodes",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER NODES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZInterStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZINTERSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZINCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDbSizeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DBSIZE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHGetAllCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HGETALL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoDistCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEODIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HINCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoRadiusCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEORADIUS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBRPopLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BRPOPLPUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMultiCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MULTI]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[PUSH]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterDeleteSlotsInRange",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER DELSLOTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingExecuteCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[custom c]ommand\u003e but was:\u003c[RedisC]ommand\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRandomKey",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ANDOMKEY]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSetClientNameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT SETNAME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSIsMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SISMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSCardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingScriptFlushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT FLUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRevRankCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANK]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSlaveOfNoOneCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SLAVEOFNOONE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HEXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingFlushDbCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHDB]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLTrimCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LTRIM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPpSubscribeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PSUBSCRIBE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingExpireCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXPIRE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MSETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMultiCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MULTI]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingInfoCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INFO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetBitCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETBIT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSUnionCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUNION]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHDelCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HDEL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDecrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DECRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoHashCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOHASH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPpSubscribeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PSUBSCRIBE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingTtlCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TTL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBgWriteAofCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGWRITEAOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBgReWriteAof",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGREWRITEAOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingExpireAtCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXPIREAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPfAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHDelCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HDEL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSCardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPfCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPublishCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PUBLISH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDecrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DECRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLastSave",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LASTSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingFlushAllCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHALL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingKeysCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[KEYS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingExecCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXEC]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBgWriteAofCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGWRITEAOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRevRangeWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetClientNameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT GETNAME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRangeWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterAddSlots",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER ADDSLOTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRevRangeByScoreWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGEBYSCORE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSUnionStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUNIONSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingScriptKillCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT KILL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHKeysCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HKEYS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingStrLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[STRLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRemRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREMRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HEXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSInterCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SINTER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZInterStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZINTERSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingExecCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXEC]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingEvalCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EVAL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPUSH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZUnionStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZUNIONSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingPTtlCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PTTL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRenameNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ENAMENX]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingKillClientCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT KILL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRevRangeByScoreWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGEBYSCORE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingExpireCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXPIRE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingResetConfigStatsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG RESETSTAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingIncrCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INCR]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHValsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HVALS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterDeleteSlots",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER DELSLOTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetBitCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SETBIT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBgSave",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BGSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRenameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ENAME]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPfAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PFADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingTypeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TYPE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HINCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterMeet",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER MEET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetConfigCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG GET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMigrateCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MIGRATE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetConfig",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG GET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZCardCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZCARD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRPopLPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[POPLPUSH]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLastSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LASTSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetSlotForKey",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER KEYSLOT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingResetConfigStats",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG RESETSTAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingBitOpCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BITOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingStrLenCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[STRLEN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSubscribeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SUBSCRIBE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingDumpCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DUMP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRevRankCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANK]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSInterCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SINTER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingInfoCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INFO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoRadiusCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEORADIUS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSave",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingEvalShaCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EVALSHA]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingIncrCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[INCR]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetClientNameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT GETNAME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRandomKeyCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ANDOMKEY]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoRemoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOREMOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHMSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HMSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingScriptKillCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT KILL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHSetNXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSETNX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingTimeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TIME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRangeByScoreWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGEBYSCORE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingTypeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TYPE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLastSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LASTSAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingFlushDbCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHDB]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRemRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREMRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHMGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HMGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterReplicate",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER REPLICATE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSAddCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SADD]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingShutdown",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SHUTDOWN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingResetConfigStatsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG RESETSTAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRemRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREMRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingScriptExistsCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCRIPT EXISTS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLIndexCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LINDEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZCountCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZCOUNT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetClientNameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT SETNAME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingLInsertCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LINSERT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRPushXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[PUSHX]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSaveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SAVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLInsertCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LINSERT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetSlaves",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER SLAVES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoHashCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOHASH]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingPSetExCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[PSETEX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSRandMemberCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SRANDMEMBER]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDumpCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DUMP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZRevRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingTime",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[TIME]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLPushXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPUSHX]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoPosCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOPOS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRevRangeWithScoresCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGE WITHSCORES]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingHKeysCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HKEYS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetConfigCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG GET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingBRPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[BRPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGetClientListCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLIENT LIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingDecrCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[DECR]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSMembersCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SMEMBERS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingMGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLRangeCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LRANGE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingClusterGetClusterInfo",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CLUSTER INFO]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSelectCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SELECT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGeoDistCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEODIST]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingFlushAllCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[FLUSHALL]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSRemCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SREM]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZIncrByCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZINCRBY]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRevRangeByScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZREVRANGEBYSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingSDiffStoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SDIFFSTORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingMSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[MSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingGetSetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GETSET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoPosCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOPOS]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingZScoreCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZSCORE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZRankCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZRANK]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingExpireAtCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[EXPIREAT]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingGeoRemoveCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[GEOREMOVE]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRenameCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[ENAME]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingLPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[LPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSPopCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SPOP]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingRPushXCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[PUSHX]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingRPushCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cR[PUSH]\u003e but was:\u003cR[edisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSlaveOfCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[SLAVEOF]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingSetConfiCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[CONFIG SET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisClusterConnectionTest",
+        "testMethod": "invokingZScanCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[ZSCAN]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.connection.TracingRedisConnectionTest",
+        "testMethod": "invokingHMGetCreatesNewSpan",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[HMGET]\u003e but was:\u003c[RedisCommand]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 20,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "opentracing-contrib/java-redis-client",
+      "branchName": "master",
+      "sha": "5fa3e5e2782ba80e0d57f00a27f79debecf70164",
+      "url": "http://github.com/opentracing-contrib/java-redis-client/commit/5fa3e5e2782ba80e0d57f00a27f79debecf70164",
+      "date": "Nov 5, 2018 6:24:15 AM"
+    },
+    "fixerBuild": {
+      "repoName": "opentracing-contrib/java-redis-client",
+      "branchName": "master",
+      "sha": "3ab8a67e01f1f9ee6d77cf91c5cd27ae26461c20",
+      "url": "http://github.com/opentracing-contrib/java-redis-client/commit/3ab8a67e01f1f9ee6d77cf91c5cd27ae26461c20",
+      "date": "Nov 28, 2018 2:21:50 PM"
+    }
+  },
+  "type": "passing_passing"
+}
