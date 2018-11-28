@@ -1,0 +1,1083 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Calcite
+[INFO] Calcite Linq4j
+[INFO] Calcite Core
+[INFO] Calcite Babel
+[INFO] Calcite Cassandra
+[INFO] Calcite Druid
+[INFO] Calcite Elasticsearch
+[INFO] Calcite Examples
+[INFO] Calcite Example CSV
+[INFO] Calcite Example Function
+[INFO] Calcite File
+[INFO] Calcite Geode
+[INFO] Calcite MongoDB
+[INFO] Calcite Pig
+[INFO] Calcite Piglet
+[INFO] Calcite Plus
+[INFO] Calcite Server
+[INFO] Calcite Spark
+[INFO] Calcite Splunk
+[INFO] Calcite Ubenchmark
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/target/generated-test-sources/javacc added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Linq4j 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-linq4j ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-linq4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-linq4j ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-linq4j ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-linq4j ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-linq4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-linq4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/linq4j/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-linq4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-linq4j ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/linq4j/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-linq4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/linq4j/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-linq4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-linq4j ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.pom (7 KB at 9.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 44.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.pom (4 KB at 79.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.pom (3 KB at 48.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.pom (2 KB at 35.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 62.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 144.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 59.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.0/common-junit4-2.22.0.jar (28 KB at 209.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.0/common-junit48-2.22.0.jar (22 KB at 159.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 349.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.0/common-junit3-2.22.0.jar (12 KB at 81.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.0/surefire-junit47-2.22.0.jar (157 KB at 1009.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 780.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 2540.1 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.linq4j.test.LookupImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.apache.calcite.linq4j.test.LookupImplTest
+[INFO] Running org.apache.calcite.linq4j.test.InlinerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.calcite.linq4j.test.InlinerTest
+[INFO] Running org.apache.calcite.linq4j.test.PrimitiveTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.calcite.linq4j.test.PrimitiveTest
+[INFO] Running org.apache.calcite.linq4j.test.OptimizerTest
+[INFO] Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.apache.calcite.linq4j.test.OptimizerTest
+[INFO] Running org.apache.calcite.linq4j.test.ExpressionTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s - in org.apache.calcite.linq4j.test.ExpressionTest
+[INFO] Running org.apache.calcite.linq4j.test.Linq4jTest
+[INFO] Tests run: 115, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in org.apache.calcite.linq4j.test.Linq4jTest
+[INFO] Running org.apache.calcite.linq4j.test.DeterministicTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.calcite.linq4j.test.DeterministicTest
+[INFO] Running org.apache.calcite.linq4j.test.BlockBuilderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.calcite.linq4j.test.BlockBuilderTest
+[INFO] Running org.apache.calcite.linq4j.tree.TypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.calcite.linq4j.tree.TypeTest
+[INFO] Running org.apache.calcite.linq4j.test.CorrelateJoinTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.calcite.linq4j.test.CorrelateJoinTest
+[INFO] Running org.apache.calcite.linq4j.function.FunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.calcite.linq4j.function.FunctionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 278, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Core 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- drill-fmpp-maven-plugin:1.14.0:generate (generate-fmpp-sources) @ calcite-core ---
+[INFO] Freemarker generation:
+ scope: compile,
+ config: /root/workspace/apache/calcite/460564415/core/src/main/codegen/config.fmpp,
+ templates: /root/workspace/apache/calcite/460564415/core/src/main/codegen/templates
+[INFO] Adding maven data loader
+.
+[INFO] Freemarker generation took 792ms
+[INFO] Incremental output update took 0ms
+[INFO] new: 0
+[INFO] changed: 0
+[INFO] unchanged: 1
+[INFO] 
+[INFO] --- drill-fmpp-maven-plugin:1.14.0:generate (generate-fmpp-test-sources) @ calcite-core ---
+[INFO] Freemarker generation:
+ scope: test,
+ config: /root/workspace/apache/calcite/460564415/core/src/test/codegen/config.fmpp,
+ templates: /root/workspace/apache/calcite/460564415/core/src/main/codegen/templates
+[INFO] Adding maven data loader
+.
+[INFO] Freemarker generation took 122ms
+[INFO] Incremental output update took 0ms
+[INFO] new: 0
+[INFO] changed: 0
+[INFO] unchanged: 1
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.4:javacc (javacc) @ calcite-core ---
+[INFO] Skipping - all grammars up to date
+[INFO] 
+[INFO] --- hydromatic-resource-maven-plugin:0.6:generate-sources (default) @ calcite-core ---
+[INFO] /root/workspace/apache/calcite/460564415/core/target/generated-sources/resgen/org/apache/calcite/runtime/Resources.java is up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 4 resources to codegen
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (java-compile) @ calcite-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-core ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/core/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.4:javacc (javacc-test) @ calcite-core ---
+[INFO] Skipping - all grammars up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 28 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.71:test-compile (test-compile) @ calcite-core ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (java-test-compile) @ calcite-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.TestKtTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.apache.calcite.TestKtTest
+[INFO] Running org.apache.calcite.util.ReflectVisitorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.calcite.util.ReflectVisitorTest
+[INFO] Running org.apache.calcite.util.graph.DirectedGraphTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 s - in org.apache.calcite.util.graph.DirectedGraphTest
+[INFO] Running org.apache.calcite.rel.RelCollationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.apache.calcite.rel.RelCollationTest
+[INFO] Running org.apache.calcite.util.ImmutableBitSetTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in org.apache.calcite.util.ImmutableBitSetTest
+[INFO] Running org.apache.calcite.adapter.clone.ArrayTableTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.289 s - in org.apache.calcite.adapter.clone.ArrayTableTest
+[INFO] Running org.apache.calcite.util.SourceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.calcite.util.SourceTest
+[INFO] Running org.apache.calcite.test.CalciteResourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.calcite.test.CalciteResourceTest
+[INFO] Running org.apache.calcite.util.PrecedenceClimbingParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.calcite.util.PrecedenceClimbingParserTest
+[INFO] Running org.apache.calcite.util.mapping.MappingTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.apache.calcite.util.mapping.MappingTest
+[INFO] Running org.apache.calcite.test.FilteratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.calcite.test.FilteratorTest
+[INFO] Running org.apache.calcite.util.PermutationTestCase
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.calcite.util.PermutationTestCase
+[INFO] Running org.apache.calcite.test.SqlFunctionsTest
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 s - in org.apache.calcite.test.SqlFunctionsTest
+[INFO] Running org.apache.calcite.test.SqlJsonFunctionsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.apache.calcite.test.SqlJsonFunctionsTest
+[INFO] Running org.apache.calcite.test.ModelTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 s - in org.apache.calcite.test.ModelTest
+[INFO] Running org.apache.calcite.test.SqlValidatorFeatureTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 s - in org.apache.calcite.test.SqlValidatorFeatureTest
+[INFO] Running org.apache.calcite.sql.test.SqlTypeNameTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 s - in org.apache.calcite.sql.test.SqlTypeNameTest
+2018-11-28 05:40:08,970 [pool-1-thread-15] INFO  - open start - state modified
+2018-11-28 05:40:09,013 [pool-1-thread-15] INFO  - Checkpoint start
+2018-11-28 05:40:09,013 [pool-1-thread-15] INFO  - Checkpoint end - txts: 25
+[INFO] Running org.apache.calcite.util.BitSetsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in org.apache.calcite.util.BitSetsTest
+[INFO] Running org.apache.calcite.plan.RelOptUtilTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.calcite.plan.RelOptUtilTest
+[INFO] Running org.apache.calcite.util.UtilTest
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.799 s - in org.apache.calcite.util.UtilTest
+[INFO] Running org.apache.calcite.util.TestUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.calcite.util.TestUtilTest
+[INFO] Running org.apache.calcite.test.InterpreterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.258 s - in org.apache.calcite.test.InterpreterTest
+[INFO] Running org.apache.calcite.plan.volcano.VolcanoPlannerTraitTest
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 2.693 s - in org.apache.calcite.plan.volcano.VolcanoPlannerTraitTest
+[INFO] Running org.apache.calcite.plan.RelTraitTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.calcite.plan.RelTraitTest
+[INFO] Running org.apache.calcite.plan.volcano.VolcanoPlannerTest
+[WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.269 s - in org.apache.calcite.plan.volcano.VolcanoPlannerTest
+[INFO] Running org.apache.calcite.rel.RelDistributionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.calcite.rel.RelDistributionTest
+[INFO] Running org.apache.calcite.plan.RelWriterTest
+LogicalAggregate#453
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.apache.calcite.plan.RelWriterTest
+[INFO] Running org.apache.calcite.plan.volcano.TraitPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.apache.calcite.plan.volcano.TraitPropagationTest
+[INFO] Running org.apache.calcite.test.SqlOperatorBindingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.calcite.test.SqlOperatorBindingTest
+[INFO] Running org.apache.calcite.runtime.BinarySearchTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.calcite.runtime.BinarySearchTest
+[INFO] Running org.apache.calcite.test.RexTransformerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.calcite.test.RexTransformerTest
+[INFO] Running org.apache.calcite.runtime.EnumerablesTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.calcite.runtime.EnumerablesTest
+[INFO] Running org.apache.calcite.test.InduceGroupingTypeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.calcite.test.InduceGroupingTypeTest
+[INFO] Running org.apache.calcite.plan.RelOptPlanReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.calcite.plan.RelOptPlanReaderTest
+[INFO] Running org.apache.calcite.sql.type.SqlTypeUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.calcite.sql.type.SqlTypeUtilTest
+[INFO] Running org.apache.calcite.rex.RexBuilderTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.calcite.rex.RexBuilderTest
+[INFO] Running org.apache.calcite.sql.validate.SqlValidatorUtilTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.calcite.sql.validate.SqlValidatorUtilTest
+[INFO] Running org.apache.calcite.test.ExceptionMessageTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 s - in org.apache.calcite.test.ExceptionMessageTest
+[INFO] Running org.apache.calcite.test.RexProgramTest
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 s - in org.apache.calcite.test.RexProgramTest
+[INFO] Running org.apache.calcite.sql.type.SqlTypeFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.calcite.sql.type.SqlTypeFactoryTest
+[INFO] Running org.apache.calcite.sql.parser.SqlParserTest
+[WARNING] Tests run: 329, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.832 s - in org.apache.calcite.sql.parser.SqlParserTest
+[INFO] Running org.apache.calcite.sql.SqlSetOptionOperatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.calcite.sql.SqlSetOptionOperatorTest
+[INFO] Running org.apache.calcite.sql.test.SqlPrettyWriterTest
+[WARNING] Tests run: 21, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.094 s - in org.apache.calcite.sql.test.SqlPrettyWriterTest
+[INFO] Running org.apache.calcite.test.HepPlannerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.263 s - in org.apache.calcite.test.HepPlannerTest
+[INFO] Running org.apache.calcite.test.SqlValidatorDynamicTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.calcite.test.SqlValidatorDynamicTest
+[INFO] Running org.apache.calcite.test.SqlValidatorMatchTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.calcite.test.SqlValidatorMatchTest
+[INFO] Running org.apache.calcite.sql.test.SqlAdvisorTest
+[WARNING] Tests run: 37, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.212 s - in org.apache.calcite.sql.test.SqlAdvisorTest
+[INFO] Running org.apache.calcite.rel.rules.DateRangeRulesTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.apache.calcite.rel.rules.DateRangeRulesTest
+[INFO] Running org.apache.calcite.test.SqlValidatorTest
+[WARNING] Tests run: 394, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 2.488 s - in org.apache.calcite.test.SqlValidatorTest
+[INFO] Running org.apache.calcite.test.ScannableTableTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.685 s - in org.apache.calcite.test.ScannableTableTest
+[INFO] Running org.apache.calcite.test.RelOptRulesTest
+[WARNING] Tests run: 311, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 9.034 s - in org.apache.calcite.test.RelOptRulesTest
+[INFO] Running org.apache.calcite.test.SqlLimitsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.calcite.test.SqlLimitsTest
+[INFO] Running org.apache.calcite.rex.RexExecutorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.252 s - in org.apache.calcite.rex.RexExecutorTest
+[INFO] Running org.apache.calcite.test.JdbcFrontLinqBackTest
+[WARNING] Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.632 s - in org.apache.calcite.test.JdbcFrontLinqBackTest
+[INFO] Running org.apache.calcite.test.SqlToRelConverterTest
+[WARNING] Tests run: 345, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 10.943 s - in org.apache.calcite.test.SqlToRelConverterTest
+[INFO] Running org.apache.calcite.rel.rel2sql.RelToSqlConverterTest
+[INFO] Tests run: 161, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.674 s - in org.apache.calcite.rel.rel2sql.RelToSqlConverterTest
+[INFO] Running org.apache.calcite.test.JdbcFrontJdbcBackTest
+2018-11-28 05:40:23,663 [pool-1-thread-15] INFO  - open start - state modified
+2018-11-28 05:40:35,977 [pool-1-thread-15] INFO  - Checkpoint start
+2018-11-28 05:40:35,978 [pool-1-thread-15] INFO  - Checkpoint end - txts: 279
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 13.941 s - in org.apache.calcite.test.JdbcFrontJdbcBackTest
+[INFO] Running org.apache.calcite.prepare.LookupOperatorOverloadsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.calcite.prepare.LookupOperatorOverloadsTest
+[INFO] Running org.apache.calcite.tools.FrameworksTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in org.apache.calcite.tools.FrameworksTest
+[INFO] Running org.apache.calcite.plan.volcano.CollationConversionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 s - in org.apache.calcite.plan.volcano.CollationConversionTest
+[INFO] Running org.apache.calcite.plan.volcano.TraitConversionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in org.apache.calcite.plan.volcano.TraitConversionTest
+[INFO] Running org.apache.calcite.sql.validate.LexCaseSensitiveTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 s - in org.apache.calcite.sql.validate.LexCaseSensitiveTest
+[INFO] Running org.apache.calcite.test.MutableRelTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.apache.calcite.test.MutableRelTest
+[INFO] Running org.apache.calcite.plan.volcano.ComboRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.apache.calcite.plan.volcano.ComboRuleTest
+[INFO] Running org.apache.calcite.test.enumerable.EnumerableCorrelateTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.844 s - in org.apache.calcite.test.enumerable.EnumerableCorrelateTest
+[INFO] Running org.apache.calcite.sql.test.SqlOperatorTest
+[WARNING] Tests run: 235, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.281 s - in org.apache.calcite.sql.test.SqlOperatorTest
+[INFO] Running org.apache.calcite.test.UdfTest
+[WARNING] Tests run: 25, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.086 s - in org.apache.calcite.test.UdfTest
+[INFO] Running org.apache.calcite.test.TableFunctionTest
+[WARNING] Tests run: 18, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.293 s - in org.apache.calcite.test.TableFunctionTest
+[INFO] Running org.apache.calcite.test.RelBuilderTest
+[INFO] Tests run: 102, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 s - in org.apache.calcite.test.RelBuilderTest
+[INFO] Running org.apache.calcite.test.UdtTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.apache.calcite.test.UdtTest
+[INFO] Running org.apache.calcite.test.PigRelBuilderTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in org.apache.calcite.test.PigRelBuilderTest
+[INFO] Running org.apache.calcite.test.RexImplicationCheckerTest
+2018-11-28 05:40:43,163 [pool-1-thread-15] WARN  - BOOLEAN for value of class class java.lang.Boolean is being handled in default way
+2018-11-28 05:40:43,182 [pool-1-thread-15] WARN  - $11 is not handled for null for checking implication
+2018-11-28 05:40:43,182 [pool-1-thread-15] WARN  - $11 is not handled for null for checking implication
+2018-11-28 05:40:43,186 [pool-1-thread-15] WARN  - $11 is not handled for null for checking implication
+2018-11-28 05:40:43,186 [pool-1-thread-15] WARN  - $11 is not handled for null for checking implication
+2018-11-28 05:40:43,187 [pool-1-thread-15] WARN  - $11 is not handled for null for checking implication
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 s - in org.apache.calcite.test.RexImplicationCheckerTest
+[INFO] Running org.apache.calcite.util.ChunkListTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.59 s - in org.apache.calcite.util.ChunkListTest
+[INFO] Running org.apache.calcite.tools.PlannerTest
+[WARNING] Tests run: 41, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.903 s - in org.apache.calcite.tools.PlannerTest
+[INFO] Running org.apache.calcite.test.LinqFrontJdbcBackTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.calcite.test.LinqFrontJdbcBackTest
+[INFO] Running org.apache.calcite.test.JdbcAdapterTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.196 s - in org.apache.calcite.test.JdbcAdapterTest
+[INFO] Running org.apache.calcite.test.JdbcFrontJdbcBackLinqMiddleTest
+[WARNING] Tests run: 14, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.767 s - in org.apache.calcite.test.JdbcFrontJdbcBackLinqMiddleTest
+[INFO] Running org.apache.calcite.profile.ProfilerTest
+[WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.061 s - in org.apache.calcite.profile.ProfilerTest
+[INFO] Running org.apache.calcite.test.CalciteSqlOperatorTest
+[WARNING] Tests run: 235, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 25.549 s - in org.apache.calcite.test.CalciteSqlOperatorTest
+[INFO] Running org.apache.calcite.test.fuzzer.RexProgramFuzzyTest
+2018-11-28 05:41:20,895 [pool-1-thread-12] INFO  - Using seed 44 for rex fuzzing
+2018-11-28 05:41:20,919 [pool-1-thread-12] INFO  - Rex fuzzing results: number of cases tested=18, failed cases=0, duplicate failures=0, fuzz rate=750 per second
+2018-11-28 05:41:26,918 [pool-1-thread-12] INFO  - Rex fuzzing results: number of cases tested=3361, failed cases=0, duplicate failures=0, fuzz rate=560 per second
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.024 s - in org.apache.calcite.test.fuzzer.RexProgramFuzzyTest
+2018-11-28 05:41:36,007 [pool-1-thread-10] INFO  - Logging initialized @97600ms
+2018-11-28 05:41:36,271 [pool-1-thread-10] INFO  - jetty-9.2.19.v20160908
+2018-11-28 05:41:36,505 [pool-1-thread-10] INFO  - Started ServerConnector@22e42e12{HTTP/1.1}{0.0.0.0:35445}
+2018-11-28 05:41:36,506 [pool-1-thread-10] INFO  - Started @98099ms
+2018-11-28 05:41:36,506 [pool-1-thread-10] INFO  - Service listening on port 35445.
+[INFO] Running org.apache.calcite.test.ReflectiveSchemaTest
+[WARNING] Tests run: 40, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 20.586 s - in org.apache.calcite.test.ReflectiveSchemaTest
+2018-11-28 05:42:05,098 [pool-1-thread-10] INFO  - Service terminating.
+[INFO] Running org.apache.calcite.jdbc.CalciteRemoteDriverTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.38 s - in org.apache.calcite.jdbc.CalciteRemoteDriverTest
+2018-11-28 05:42:05,113 [pool-1-thread-10] INFO  - Stopped ServerConnector@22e42e12{HTTP/1.1}{0.0.0.0:0}
+[INFO] Running org.apache.calcite.test.SqlAdvisorJdbcTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 s - in org.apache.calcite.test.SqlAdvisorJdbcTest
+[INFO] Running org.apache.calcite.materialize.LatticeSuggesterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.951 s - in org.apache.calcite.materialize.LatticeSuggesterTest
+[INFO] Running org.apache.calcite.test.StreamTest
+[WARNING] Tests run: 9, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.569 s - in org.apache.calcite.test.StreamTest
+[INFO] Running org.apache.calcite.test.TableInRootSchemaTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.calcite.test.TableInRootSchemaTest
+[INFO] Running org.apache.calcite.test.RelMdColumnOriginsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.apache.calcite.test.RelMdColumnOriginsTest
+[INFO] Running org.apache.calcite.test.MultiJdbcSchemaJoinTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.039 s - in org.apache.calcite.test.MultiJdbcSchemaJoinTest
+[INFO] Running org.apache.calcite.test.JdbcTest
+[WARNING] Tests run: 286, Failures: 0, Errors: 0, Skipped: 18, Time elapsed: 44.037 s - in org.apache.calcite.test.JdbcTest
+[INFO] Running org.apache.calcite.test.SqlLineTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.apache.calcite.test.SqlLineTest
+[INFO] Running org.apache.calcite.test.CollectionTypeTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.846 s - in org.apache.calcite.test.CollectionTypeTest
+[INFO] Running org.apache.calcite.test.SqlToRelConverterExtendedTest
+[WARNING] Tests run: 345, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 9.578 s - in org.apache.calcite.test.SqlToRelConverterExtendedTest
+[INFO] Running org.apache.calcite.sql.parser.parserextensiontesting.ExtensionSqlParserTest
+[WARNING] Tests run: 333, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.638 s - in org.apache.calcite.sql.parser.parserextensiontesting.ExtensionSqlParserTest
+[INFO] Running org.apache.calcite.util.PartiallyOrderedSetTest
+[WARNING] Tests run: 15, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.143 s - in org.apache.calcite.util.PartiallyOrderedSetTest
+[INFO] Running org.apache.calcite.sql.parser.SqlUnParserTest
+[WARNING] Tests run: 329, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.784 s - in org.apache.calcite.sql.parser.SqlUnParserTest
+[INFO] Running org.apache.calcite.test.RelMetadataTest
+[WARNING] Tests run: 144, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 4.492 s - in org.apache.calcite.test.RelMetadataTest
+[INFO] Running org.apache.calcite.test.CoreQuidemTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.74 s - in org.apache.calcite.test.CoreQuidemTest
+[INFO] Running org.apache.calcite.test.MaterializationTest
+[WARNING] Tests run: 130, Failures: 0, Errors: 0, Skipped: 17, Time elapsed: 114.506 s - in org.apache.calcite.test.MaterializationTest
+[INFO] Running org.apache.calcite.test.LatticeTest
+2018-11-28 05:41:24,774 [pool-1-thread-7] WARN  - PoolableConnectionFactory not linked to pool. Calling setPool() to fix the configuration.
+[WARNING] Tests run: 41, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 127.246 s - in org.apache.calcite.test.LatticeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 4740, Failures: 0, Errors: 0, Skipped: 117
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Babel 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-babel ---
+[INFO] 
+[INFO] --- drill-fmpp-maven-plugin:1.14.0:generate (generate-fmpp-sources) @ calcite-babel ---
+[INFO] Freemarker generation:
+ scope: compile,
+ config: /root/workspace/apache/calcite/460564415/babel/src/main/codegen/config.fmpp,
+ templates: /root/workspace/apache/calcite/460564415/babel/../core/src/main/codegen/templates
+[INFO] Adding maven data loader
+.
+[INFO] Freemarker generation took 236ms
+[INFO] Incremental output update took 0ms
+[INFO] new: 0
+[INFO] changed: 0
+[INFO] unchanged: 1
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-babel ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-babel ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (copy-fmpp-resources) @ calcite-babel ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.4:javacc (javacc) @ calcite-babel ---
+[INFO] Skipping - all grammars up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-babel ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-babel ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-babel ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-babel ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/babel/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-babel ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-babel ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/babel/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-babel ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-babel ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-babel ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.test.BabelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.calcite.test.BabelTest
+[INFO] Running org.apache.calcite.test.BabelParserTest
+[WARNING] Tests run: 334, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 2.38 s - in org.apache.calcite.test.BabelParserTest
+[INFO] Running org.apache.calcite.test.BabelQuidemTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in org.apache.calcite.test.BabelQuidemTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 336, Failures: 0, Errors: 0, Skipped: 7
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Cassandra 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-cassandra ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-cassandra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-cassandra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-cassandra ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-cassandra ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-cassandra ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/cassandra/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-cassandra ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/cassandra/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-cassandra ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+2018-11-28 05:43:38 [pool-2-thread-1] ERROR o.a.cassandra.service.StartupChecks - cassandra.jmx.local.port missing from cassandra-env.sh, unable to start local JMX service.
+[INFO] Running org.apache.calcite.test.CassandraAdapterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.148 s - in org.apache.calcite.test.CassandraAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Druid 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-druid ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-druid ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-druid ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-druid ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-druid ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-druid ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-druid ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/druid/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-druid ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-druid ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/druid/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-druid ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-druid ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-druid ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.adapter.druid.DruidQueryFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.297 s - in org.apache.calcite.adapter.druid.DruidQueryFilterTest
+[INFO] Running org.apache.calcite.test.DruidDateRangeRulesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.233 s - in org.apache.calcite.test.DruidDateRangeRulesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Elasticsearch 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-elasticsearch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-elasticsearch ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-elasticsearch ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-elasticsearch ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-elasticsearch ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-elasticsearch ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-elasticsearch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/elasticsearch/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-elasticsearch ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-elasticsearch ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/elasticsearch/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-elasticsearch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-elasticsearch ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-elasticsearch ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.adapter.elasticsearch.ElasticsearchVersionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.calcite.adapter.elasticsearch.ElasticsearchVersionTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.ElasticsearchJsonTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.56 s - in org.apache.calcite.adapter.elasticsearch.ElasticsearchJsonTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.QueryBuildersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in org.apache.calcite.adapter.elasticsearch.QueryBuildersTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.Projection2Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.997 s - in org.apache.calcite.adapter.elasticsearch.Projection2Test
+[INFO] Running org.apache.calcite.adapter.elasticsearch.AggregationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.676 s - in org.apache.calcite.adapter.elasticsearch.AggregationTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.ProjectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.45 s - in org.apache.calcite.adapter.elasticsearch.ProjectionTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.ScrollingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.701 s - in org.apache.calcite.adapter.elasticsearch.ScrollingTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.BooleanLogicTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.372 s - in org.apache.calcite.adapter.elasticsearch.BooleanLogicTest
+[INFO] Running org.apache.calcite.adapter.elasticsearch.ElasticSearchAdapterTest
+[WARNING] Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.145 s - in org.apache.calcite.adapter.elasticsearch.ElasticSearchAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 48, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Examples 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-example ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-example ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-example ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-example ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-example ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/example/target/generated-test-sources/javacc added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Example CSV 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-example-csv ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-example-csv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-example-csv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-example-csv ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-example-csv ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-example-csv ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-example-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/example/csv/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-example-csv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-example-csv ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/example/csv/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-example-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-example-csv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-example-csv ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.test.CsvTest
+Fred
+Eric
+John
+Wilma
+Alice
+100, Fred, 10, , , 30, 25, true, false, 1996-08-03
+110, Eric, 20, M, San Francisco, 3, 80, null, false, 2001-01-01
+110, John, 40, M, Vancouver, 2, null, false, true, 2002-05-03
+120, Wilma, 20, F, , 1, 5, null, true, 2005-09-07
+130, Alice, 40, F, Vancouver, 2, null, false, true, 2007-01-01
+Fred
+Eric
+John
+Wilma
+Alice
+Sales
+Marketing
+Accounts
+directory /does/not/exist not found
+1
+WARNING: Found unknown type: Integer in file: /root/workspace/apache/calcite/460564415/example/csv/target/test-classes/bug/WACKY_COLUMN_NAMES.csv for column: DEPTNO. Will assume the type of column is string
+WARNING: Found unknown type: Integer in file: /root/workspace/apache/calcite/460564415/example/csv/target/test-classes/bug/WACKY_COLUMN_NAMES.csv for column: DEPTNO. Will assume the type of column is string
+WARNING: Found unknown type: Integer in file: /root/workspace/apache/calcite/460564415/example/csv/target/test-classes/bug/WACKY_COLUMN_NAMES.csv for column: DEPTNO. Will assume the type of column is string
+WARNING: Found unknown type: Integer in file: /root/workspace/apache/calcite/460564415/example/csv/target/test-classes/bug/WACKY_COLUMN_NAMES.csv for column: DEPTNO. Will assume the type of column is string
+100, Fred, 10, , , 30, 25, true, false, 1996-08-03
+110, Eric, 20, M, San Francisco, 3, 80, null, false, 2001-01-01
+110, John, 40, M, Vancouver, 2, null, false, true, 2002-05-03
+120, Wilma, 20, F, , 1, 5, null, true, 2005-09-07
+130, Alice, 40, F, Vancouver, 2, null, false, true, 2007-01-01
+100, Fred, 10, , , 30, 25, true, false, 1996-08-03
+110, Eric, 20, M, San Francisco, 3, 80, null, false, 2001-01-01
+110, John, 40, M, Vancouver, 2, null, false, true, 2002-05-03
+120, Wilma, 20, F, , 1, 5, null, true, 2005-09-07
+130, Alice, 40, F, Vancouver, 2, null, false, true, 2007-01-01
+[WARNING] Tests run: 38, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 5.677 s - in org.apache.calcite.test.CsvTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 38, Failures: 0, Errors: 0, Skipped: 3
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Example Function 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-example-function ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-example-function ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-example-function ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-example-function ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-example-function ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-example-function ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-example-function ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/example/function/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-example-function ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-example-function ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/example/function/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-example-function ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-example-function ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-example-function ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.test.ExampleFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.117 s - in org.apache.calcite.test.ExampleFunctionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite File 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-file ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-file ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-file ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-file ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-file ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-file ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/file/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-file ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/apache/calcite/460564415/file/target/classes
+[INFO] /root/workspace/apache/calcite/460564415/file/src/main/java/org/apache/calcite/adapter/file/FileTable.java: /root/workspace/apache/calcite/460564415/file/src/main/java/org/apache/calcite/adapter/file/FileTable.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/apache/calcite/460564415/file/src/main/java/org/apache/calcite/adapter/file/FileTable.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-file ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/file/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-file ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/apache/calcite/460564415/file/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-file ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.adapter.file.FileReaderTest
+[WARNING] Tests run: 13, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 4.593 s - in org.apache.calcite.adapter.file.FileReaderTest
+[INFO] Running org.apache.calcite.adapter.file.SqlTest
+[WARNING] Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.416 s - in org.apache.calcite.adapter.file.SqlTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 24, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Calcite Geode 1.18.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ calcite-geode ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ calcite-geode ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ calcite-geode ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (add-resource) @ calcite-geode ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-resource (add-resource) @ calcite-geode ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ calcite-geode ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ calcite-geode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/calcite/460564415/geode/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ calcite-geode ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-sources) @ calcite-geode ---
+[INFO] Test Source directory: /root/workspace/apache/calcite/460564415/geode/target/generated-test-sources/javacc added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ calcite-geode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ calcite-geode ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ calcite-geode ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest
+[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.709 s <<< FAILURE! - in org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest
+[ERROR] testSqlMultipleBooleanWhereFilter(org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest)  Time elapsed: 4.615 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... WHERE booleanValue [IN SET(true, false)]> but was:<... WHERE booleanValue [= true OR booleanValue = false]>
+	at org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest.testSqlMultipleBooleanWhereFilter(GeodeAllDataTypesTest.java:124)
+
+[ERROR] testSqlWhereWithMultipleOrForLiteralFields(org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest)  Time elapsed: 4.708 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...n WHERE stringValue [IN SET('abc', 'def') OR floatValue IN SET(1.5678, null) OR booleanValue IN SET(true, false, null)]> but was:<...n WHERE stringValue [= 'abc' OR stringValue = 'def' OR floatValue = 15678 OR floatValue = null OR booleanValue = true OR booleanValue = false OR booleanValue = null]>
+	at org.apache.calcite.adapter.geode.rel.GeodeAllDataTypesTest.testSqlWhereWithMultipleOrForLiteralFields(GeodeAllDataTypesTest.java:137)
+
+[INFO] Running org.apache.calcite.adapter.geode.rel.GeodeZipsTest
+[ERROR] Tests run: 14, Failures: 5, Errors: 0, Skipped: 2, Time elapsed: 1.002 s <<< FAILURE! - in org.apache.calcite.adapter.geode.rel.GeodeZipsTest
+[ERROR] testWhereWithOrForNestedNumericField(org.apache.calcite.adapter.geode.rel.GeodeZipsTest)  Time elapsed: 0.343 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is <2>
+     but: was <0>
+	at org.apache.calcite.adapter.geode.rel.GeodeZipsTest.testWhereWithOrForNestedNumericField(GeodeZipsTest.java:234)
+
+[ERROR] testWhereWithOrForNumericField(org.apache.calcite.adapter.geode.rel.GeodeZipsTest)  Time elapsed: 0.387 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...ROM /zips WHERE pop [IN SET(34035, 40173)]> but was:<...ROM /zips WHERE pop [= 34035 OR pop = 40173]>
+	at org.apache.calcite.adapter.geode.rel.GeodeZipsTest.testWhereWithOrForNumericField(GeodeZipsTest.java:222)
+
+[ERROR] testWhereWithOrForLargeValueList(org.apache.calcite.adapter.geode.rel.GeodeZipsTest)  Time elapsed: 0.797 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...M /zips WHERE state [IN SET('UT', 'DC', 'KY', 'CT', 'KS', 'CO', 'TX', 'LA', 'HI', 'TN', 'PA', 'WY', 'MI', 'OR', 'IA', 'DE', 'MA', 'ID', 'MD', 'ME', 'IN', 'SD', 'IL', 'WV', 'AR', 'MT', 'MS', 'WI', 'AZ', 'MO', 'MN', 'NM', 'WA', 'NJ', 'NH', 'NE', 'NC', 'ND', 'AK', 'SC', 'AL', 'VT', 'NY', 'RI', 'GA', 'NV', 'CA', 'VA', 'OH', 'OK', 'FL')]> but was:<...M /zips WHERE state [= 'UT' OR state = 'DC' OR state = 'KY' OR state = 'CT' OR state = 'KS' OR state = 'CO' OR state = 'TX' OR state = 'LA' OR state = 'HI' OR state = 'TN' OR state = 'PA' OR state = 'WY' OR state = 'MI' OR state = 'OR' OR state = 'IA' OR state = 'DE' OR state = 'MA' OR state = 'ID' OR state = 'MD' OR state = 'ME' OR state = 'IN' OR state = 'SD' OR state = 'IL' OR state = 'WV' OR state = 'AR' OR state = 'MT' OR state = 'MS' OR state = 'WI' OR state = 'AZ' OR state = 'MO' OR state = 'MN' OR state = 'NM' OR state = 'WA' OR state = 'NJ' OR state = 'NH' OR state = 'NE' OR state = 'NC' OR state = 'ND' OR state = 'AK' OR state = 'SC' OR state = 'AL' OR state = 'VT' OR state = 'NY' OR state = 'RI' OR state = 'GA' OR state = 'NV' OR state = 'CA' OR state = 'VA' OR state = 'OH' OR state = 'OK' OR state = 'FL']>
+	at org.apache.calcite.adapter.geode.rel.GeodeZipsTest.testWhereWithOrForLargeValueList(GeodeZipsTest.java:266)
+
+[ERROR] testWhereWithOrForStringField(org.apache.calcite.adapter.geode.rel.GeodeZipsTest)  Time elapsed: 0.352 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...M /zips WHERE state [IN SET('MA', 'RI')]> but was:<...M /zips WHERE state [= 'MA' OR state = 'RI']>
+	at org.apache.calcite.adapter.geode.rel.GeodeZipsTest.testWhereWithOrForStringField(GeodeZipsTest.java:212)
+
+[ERROR] testWhereWithOrWithEmptyResult(org.apache.calcite.adapter.geode.rel.GeodeZipsTest)  Time elapsed: 0.528 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...M /zips WHERE state [IN SET('', null, true, false, 123, 13.892)]> but was:<...M /zips WHERE state [= '' OR state = 'null' OR state = 'true' OR state = 'false' OR state = 'true' OR state = '123' OR state = '13892']>
+	at org.apache.calcite.adapter.geode.rel.GeodeZipsTest.testWhereWithOrWithEmptyResult(GeodeZipsTest.java:292)
+
+[INFO] Running org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest
+[ERROR] Tests run: 36, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.451 s <<< FAILURE! - in org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest
+[ERROR] testInSetFilterWithNestedStringField(org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest)  Time elapsed: 4.606 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...primaryAddress.city [IN SET('Topeka', 'San Francisco')]> but was:<...primaryAddress.city [= 'Topeka' OR primaryAddress.city = 'San Francisco']>
+	at org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest.testInSetFilterWithNestedStringField(GeodeBookstoreTest.java:530)
+
+[ERROR] testWhereWithOr(org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest)  Time elapsed: 4.803 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...er WHERE itemNumber [IN SET(123, 789)]> but was:<...er WHERE itemNumber [= 123 OR itemNumber = 789]>
+	at org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest.testWhereWithOr(GeodeBookstoreTest.java:122)
+
+[ERROR] testSqlDisjunction(org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest)  Time elapsed: 0.208 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...er WHERE itemNumber [IN SET(789, 123)]> but was:<...er WHERE itemNumber [= 789 OR itemNumber = 123]>
+	at org.apache.calcite.adapter.geode.rel.GeodeBookstoreTest.testSqlDisjunction(GeodeBookstoreTest.java:491)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   GeodeAllDataTypesTest.testSqlMultipleBooleanWhereFilter:124 expected:<... WHERE booleanValue [IN SET(true, false)]> but was:<... WHERE booleanValue [= true OR booleanValue = false]>
+[ERROR]   GeodeAllDataTypesTest.testSqlWhereWithMultipleOrForLiteralFields:137 expected:<...n WHERE stringValue [IN SET('abc', 'def') OR floatValue IN SET(1.5678, null) OR booleanValue IN SET(true, false, null)]> but was:<...n WHERE stringValue [= 'abc' OR stringValue = 'def' OR floatValue = 15678 OR floatValue = null OR booleanValue = true OR booleanValue = false OR booleanValue = null]>
+[ERROR]   GeodeBookstoreTest.testInSetFilterWithNestedStringField:530 expected:<...primaryAddress.city [IN SET('Topeka', 'San Francisco')]> but was:<...primaryAddress.city [= 'Topeka' OR primaryAddress.city = 'San Francisco']>
+[ERROR]   GeodeBookstoreTest.testSqlDisjunction:491 expected:<...er WHERE itemNumber [IN SET(789, 123)]> but was:<...er WHERE itemNumber [= 789 OR itemNumber = 123]>
+[ERROR]   GeodeBookstoreTest.testWhereWithOr:122 expected:<...er WHERE itemNumber [IN SET(123, 789)]> but was:<...er WHERE itemNumber [= 123 OR itemNumber = 789]>
+[ERROR]   GeodeZipsTest.testWhereWithOrForLargeValueList:266 expected:<...M /zips WHERE state [IN SET('UT', 'DC', 'KY', 'CT', 'KS', 'CO', 'TX', 'LA', 'HI', 'TN', 'PA', 'WY', 'MI', 'OR', 'IA', 'DE', 'MA', 'ID', 'MD', 'ME', 'IN', 'SD', 'IL', 'WV', 'AR', 'MT', 'MS', 'WI', 'AZ', 'MO', 'MN', 'NM', 'WA', 'NJ', 'NH', 'NE', 'NC', 'ND', 'AK', 'SC', 'AL', 'VT', 'NY', 'RI', 'GA', 'NV', 'CA', 'VA', 'OH', 'OK', 'FL')]> but was:<...M /zips WHERE state [= 'UT' OR state = 'DC' OR state = 'KY' OR state = 'CT' OR state = 'KS' OR state = 'CO' OR state = 'TX' OR state = 'LA' OR state = 'HI' OR state = 'TN' OR state = 'PA' OR state = 'WY' OR state = 'MI' OR state = 'OR' OR state = 'IA' OR state = 'DE' OR state = 'MA' OR state = 'ID' OR state = 'MD' OR state = 'ME' OR state = 'IN' OR state = 'SD' OR state = 'IL' OR state = 'WV' OR state = 'AR' OR state = 'MT' OR state = 'MS' OR state = 'WI' OR state = 'AZ' OR state = 'MO' OR state = 'MN' OR state = 'NM' OR state = 'WA' OR state = 'NJ' OR state = 'NH' OR state = 'NE' OR state = 'NC' OR state = 'ND' OR state = 'AK' OR state = 'SC' OR state = 'AL' OR state = 'VT' OR state = 'NY' OR state = 'RI' OR state = 'GA' OR state = 'NV' OR state = 'CA' OR state = 'VA' OR state = 'OH' OR state = 'OK' OR state = 'FL']>
+[ERROR]   GeodeZipsTest.testWhereWithOrForNestedNumericField:234 
+Expected: is <2>
+     but: was <0>
+[ERROR]   GeodeZipsTest.testWhereWithOrForNumericField:222 expected:<...ROM /zips WHERE pop [IN SET(34035, 40173)]> but was:<...ROM /zips WHERE pop [= 34035 OR pop = 40173]>
+[ERROR]   GeodeZipsTest.testWhereWithOrForStringField:212 expected:<...M /zips WHERE state [IN SET('MA', 'RI')]> but was:<...M /zips WHERE state [= 'MA' OR state = 'RI']>
+[ERROR]   GeodeZipsTest.testWhereWithOrWithEmptyResult:292 expected:<...M /zips WHERE state [IN SET('', null, true, false, 123, 13.892)]> but was:<...M /zips WHERE state [= '' OR state = 'null' OR state = 'true' OR state = 'false' OR state = 'true' OR state = '123' OR state = '13892']>
+[INFO] 
+[ERROR] Tests run: 53, Failures: 10, Errors: 0, Skipped: 2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Calcite ............................................ SUCCESS [  1.961 s]
+[INFO] Calcite Linq4j ..................................... SUCCESS [  5.435 s]
+[INFO] Calcite Core ....................................... SUCCESS [03:41 min]
+[INFO] Calcite Babel ...................................... SUCCESS [  5.136 s]
+[INFO] Calcite Cassandra .................................. SUCCESS [ 36.751 s]
+[INFO] Calcite Druid ...................................... SUCCESS [  4.083 s]
+[INFO] Calcite Elasticsearch .............................. SUCCESS [ 27.731 s]
+[INFO] Calcite Examples ................................... SUCCESS [  0.018 s]
+[INFO] Calcite Example CSV ................................ SUCCESS [  7.610 s]
+[INFO] Calcite Example Function ........................... SUCCESS [  6.023 s]
+[INFO] Calcite File ....................................... SUCCESS [ 10.711 s]
+[INFO] Calcite Geode ...................................... FAILURE [ 13.012 s]
+[INFO] Calcite MongoDB .................................... SKIPPED
+[INFO] Calcite Pig ........................................ SKIPPED
+[INFO] Calcite Piglet ..................................... SKIPPED
+[INFO] Calcite Plus ....................................... SKIPPED
+[INFO] Calcite Server ..................................... SKIPPED
+[INFO] Calcite Spark ...................................... SKIPPED
+[INFO] Calcite Splunk ..................................... SKIPPED
+[INFO] Calcite Ubenchmark ................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:41 min
+[INFO] Finished at: 2018-11-28T05:45:21+01:00
+[INFO] Final Memory: 68M/1028M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project calcite-geode: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apache/calcite/460564415/geode/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :calcite-geode
