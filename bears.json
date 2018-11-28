@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SonarSource/sonar-java",
+    "githubId": 5674787,
+    "url": "https://github.com/SonarSource/sonar-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 460750986,
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/460750986",
+      "date": "Nov 28, 2018 1:49:10 PM"
+    },
+    "fixerBuild": {
+      "id": 460788574,
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/460788574",
+      "date": "Nov 28, 2018 3:18:38 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 28, 2018 3:18:55 PM",
+    "reproductionDateEnd": "Nov 28, 2018 3:28:25 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 289188192,
+      "totalMemory": 700448768
+    },
+    "totalDuration": 561,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          47
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 115,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          1,
+          113
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 146,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          146
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SonarSource/sonar-java/460750986/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SonarSource/sonar-java/460750986/java-checks",
+    "overallMetrics": {
+      "numberRunning": 2556,
+      "numberPassing": 2555,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.java.checks.security.ZipEntryCheckTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.java.checks.security.ZipEntryCheckTest",
+        "testMethod": "test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Unexpected at [12, 13, 16, 18, 55, 65]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1014,
+    "numberTestFiles": 894,
+    "numberLibrariesFailingModule": 64,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "7b13867d725c76e84287faaf596fd3975ed6ec3a",
+      "url": "http://github.com/SonarSource/sonar-java/commit/7b13867d725c76e84287faaf596fd3975ed6ec3a",
+      "date": "Nov 28, 2018 1:38:58 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SonarSource/sonar-java",
+      "branchName": "master",
+      "sha": "635afb1531d82466d85035283668ee5a4f984b9d",
+      "url": "http://github.com/SonarSource/sonar-java/commit/635afb1531d82466d85035283668ee5a4f984b9d",
+      "date": "Nov 28, 2018 3:06:14 PM"
+    }
+  },
+  "type": "passing_passing"
+}
