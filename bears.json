@@ -1,0 +1,460 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "fppt/jedis-mock",
+    "githubId": 105013650,
+    "url": "https://github.com/fppt/jedis-mock",
+    "isFork": true,
+    "original": {
+      "name": "zxl0714/redis-mock",
+      "githubId": 53111069,
+      "url": "https://github.com/zxl0714/redis-mock"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 460313214,
+      "url": "http://travis-ci.org/fppt/jedis-mock/builds/460313214",
+      "date": "Nov 27, 2018 4:27:59 PM"
+    },
+    "fixerBuild": {
+      "id": 460634706,
+      "url": "http://travis-ci.org/fppt/jedis-mock/builds/460634706",
+      "date": "Nov 28, 2018 8:16:11 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 28, 2018 8:16:49 AM",
+    "reproductionDateEnd": "Nov 28, 2018 8:18:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 251664280,
+      "totalMemory": 374341632
+    },
+    "totalDuration": 113,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 46,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          46
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/fppt/jedis-mock/460313214/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 40,
+      "numberDeleted": 93
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/fppt/jedis-mock/460313214",
+    "overallMetrics": {
+      "numberRunning": 92,
+      "numberPassing": 52,
+      "numberFailing": 34,
+      "numberErroring": 6,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 25
+        },
+        {
+          "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+          "isError": true,
+          "occurrences": 6
+        },
+        {
+          "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+          "isError": false,
+          "occurrences": 9
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "numberRunning": 32,
+        "numberPassing": 8,
+        "numberFailing": 24,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestJedisConnect",
+        "numberRunning": 3,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "numberRunning": 10,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "numberRunning": 14,
+        "numberPassing": 6,
+        "numberFailing": 8,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLpush",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testPexpire",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestJedisConnect",
+        "testMethod": "testMultipleClient",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenUsingFlushall_EnsureEverythingIsDeleted",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenUsingFlushall_EnsureEverythingIsDeleted(\"redis.clients.jedis.Jedis@4f063c0a\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "testMethod": "testExpireAtInMasterSlave",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testExpireAt",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "testMethod": "testExpireInMasterSlave",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived(\"redis.clients.jedis.Jedis@9660f4e\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLpushx",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestJedisConnect",
+        "testMethod": "testPipeline",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003credis.clients.jedis.exceptions.JedisDataException: Error initialising operation \u0027set\u0027\u003e but was:\u003cOK\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testDel",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testMget",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testDecrBy",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c:-5\n\u003e but was:\u003c-Error initialising operation \u0027decrby\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testPexpireAt",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest",
+        "testMethod": "whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner(\"redis.clients.jedis.Jedis@43814d18\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew(\"redis.clients.jedis.Jedis@26aa12dd\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testPTTL",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLindex",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLrange",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testTTL",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testStrlen",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "testMethod": "testSlave",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLpop",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenSettingKeyAndRetrievingIt_CorrectResultIsReturned",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenSettingKeyAndRetrievingIt_CorrectResultIsReturned(\"redis.clients.jedis.Jedis@76707e36\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testRpush",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect(\"redis.clients.jedis.Jedis@7c29daf3\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testHll",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testDecr",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testSetAndGet",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testIncr",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenUsingQuit_EnsureTheConnectionIsClosed",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenUsingQuit_EnsureTheConnectionIsClosed(\"redis.clients.jedis.Jedis@1f554b06\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testLlen",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "testMethod": "testDelInMasterSlave",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisServer",
+        "testMethod": "testCloseSocket",
+        "failureName": "redis.clients.jedis.exceptions.JedisDataException",
+        "detail": "Error initialising operation \u0027set\u0027",
+        "isError": true
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testIncrBy",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c:5\n\u003e but was:\u003c-Error initialising operation \u0027incrby\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenHDeleting_EnsureValuesAreRemoved",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenHDeleting_EnsureValuesAreRemoved(\"redis.clients.jedis.Jedis@5a8806ef\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.comparisontests.SimpleOperationsTest",
+        "testMethod": "whenUsingRpoplpush_CorrectResultsAreReturned",
+        "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+        "detail": "whenUsingRpoplpush_CorrectResultsAreReturned(\"redis.clients.jedis.Jedis@5d76b067\" \u003cfrom jedis[1]\u003e)",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testExists",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testSetex",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027setex\u0027\n\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.fppt.jedismock.TestRedisOperationExecutor",
+        "testMethod": "testExpire",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c+OK\n\u003e but was:\u003c-Error initialising operation \u0027set\u0027\n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 73,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "fppt/jedis-mock",
+      "branchName": "more-things",
+      "sha": "5f7ab6b0e940080f6b590c99df1f1dd757621dab",
+      "url": "http://github.com/fppt/jedis-mock/commit/5f7ab6b0e940080f6b590c99df1f1dd757621dab",
+      "date": "Nov 27, 2018 4:24:18 PM"
+    },
+    "fixerBuild": {
+      "repoName": "fppt/jedis-mock",
+      "branchName": "more-things",
+      "sha": "4d0f4b54095126c30a253416938d6c9239b4ba64",
+      "url": "http://github.com/fppt/jedis-mock/commit/4d0f4b54095126c30a253416938d6c9239b4ba64",
+      "date": "Nov 28, 2018 8:13:51 AM"
+    }
+  },
+  "type": "failing_passing"
+}
