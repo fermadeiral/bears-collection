@@ -1,0 +1,588 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jedis-mock 0.1.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ jedis-mock ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ jedis-mock ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jedis-mock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/fppt/jedis-mock/460313214/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jedis-mock ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jedis-mock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/fppt/jedis-mock/460313214/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jedis-mock ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ jedis-mock ---
+[INFO] Surefire report directory: /root/workspace/fppt/jedis-mock/460313214/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.pom (3 KB at 4.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom (3 KB at 62.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.jar (63 KB at 951.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.fppt.jedismock.TestUtils
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in com.github.fppt.jedismock.TestUtils
+Running com.github.fppt.jedismock.TestRedisServer
+Tests run: 10, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.403 sec <<< FAILURE! - in com.github.fppt.jedismock.TestRedisServer
+testDelInMasterSlave(com.github.fppt.jedismock.TestRedisServer)  Time elapsed: 0.071 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestRedisServer.testDelInMasterSlave(TestRedisServer.java:83)
+
+testSlave(com.github.fppt.jedismock.TestRedisServer)  Time elapsed: 0.001 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestRedisServer.testSlave(TestRedisServer.java:66)
+
+testExpireInMasterSlave(com.github.fppt.jedismock.TestRedisServer)  Time elapsed: 0.003 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestRedisServer.testExpireInMasterSlave(TestRedisServer.java:101)
+
+testCloseSocket(com.github.fppt.jedismock.TestRedisServer)  Time elapsed: 0.002 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestRedisServer.testCloseSocket(TestRedisServer.java:137)
+
+testExpireAtInMasterSlave(com.github.fppt.jedismock.TestRedisServer)  Time elapsed: 0 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestRedisServer.testExpireAtInMasterSlave(TestRedisServer.java:119)
+
+Running com.github.fppt.jedismock.TestCommandParser
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in com.github.fppt.jedismock.TestCommandParser
+Running com.github.fppt.jedismock.TestJedisConnect
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.308 sec <<< FAILURE! - in com.github.fppt.jedismock.TestJedisConnect
+testMultipleClient(com.github.fppt.jedismock.TestJedisConnect)  Time elapsed: 0.036 sec  <<< ERROR!
+redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.TestJedisConnect.testMultipleClient(TestJedisConnect.java:39)
+
+testPipeline(com.github.fppt.jedismock.TestJedisConnect)  Time elapsed: 0.129 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'> but was:<OK>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestJedisConnect.testPipeline(TestJedisConnect.java:27)
+
+Running com.github.fppt.jedismock.TestRedisOperationExecutor
+Tests run: 32, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec <<< FAILURE! - in com.github.fppt.jedismock.TestRedisOperationExecutor
+testPexpireAt(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testPexpireAt(TestRedisOperationExecutor.java:284)
+
+testDel(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testDel(TestRedisOperationExecutor.java:256)
+
+testHll(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.069 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testHll(TestRedisOperationExecutor.java:165)
+
+testTTL(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testTTL(TestRedisOperationExecutor.java:98)
+
+testExpireAt(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testExpireAt(TestRedisOperationExecutor.java:272)
+
+testLpush(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.034 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLpush(TestRedisOperationExecutor.java:308)
+
+testRpush(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testRpush(TestRedisOperationExecutor.java:380)
+
+testSetex(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'setex'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testSetex(TestRedisOperationExecutor.java:203)
+
+testDecr(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.021 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testDecr(TestRedisOperationExecutor.java:141)
+
+testIncr(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testIncr(TestRedisOperationExecutor.java:125)
+
+testLlen(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLlen(TestRedisOperationExecutor.java:335)
+
+testLpop(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLpop(TestRedisOperationExecutor.java:357)
+
+testMget(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testMget(TestRedisOperationExecutor.java:234)
+
+testPTTL(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.019 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testPTTL(TestRedisOperationExecutor.java:111)
+
+testPexpire(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testPexpire(TestRedisOperationExecutor.java:297)
+
+testSetAndGet(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testSetAndGet(TestRedisOperationExecutor.java:66)
+
+testDecrBy(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<:-5
+> but was:<-Error initialising operation 'decrby'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandEquals(TestRedisOperationExecutor.java:42)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testDecrBy(TestRedisOperationExecutor.java:147)
+
+testExists(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testExists(TestRedisOperationExecutor.java:265)
+
+testExpire(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.049 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testExpire(TestRedisOperationExecutor.java:87)
+
+testIncrBy(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<:5
+> but was:<-Error initialising operation 'incrby'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandEquals(TestRedisOperationExecutor.java:42)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testIncrBy(TestRedisOperationExecutor.java:131)
+
+testLindex(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLindex(TestRedisOperationExecutor.java:370)
+
+testLpushx(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLpushx(TestRedisOperationExecutor.java:346)
+
+testLrange(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testLrange(TestRedisOperationExecutor.java:326)
+
+testStrlen(com.github.fppt.jedismock.TestRedisOperationExecutor)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.assertCommandOK(TestRedisOperationExecutor.java:50)
+	at com.github.fppt.jedismock.TestRedisOperationExecutor.testStrlen(TestRedisOperationExecutor.java:250)
+
+Running com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 3.841 sec <<< FAILURE! - in com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest
+whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner(com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest)  Time elapsed: 0.04 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner("redis.clients.jedis.Jedis@43814d18" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.comparisontests.AdvanceOperationsTest.whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner(AdvanceOperationsTest.java:139)
+
+Running com.github.fppt.jedismock.comparisontests.SimpleOperationsTest
+Tests run: 14, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 1.294 sec <<< FAILURE! - in com.github.fppt.jedismock.comparisontests.SimpleOperationsTest
+whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.141 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect("redis.clients.jedis.Jedis@7c29daf3" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect(SimpleOperationsTest.java:139)
+
+whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.042 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived("redis.clients.jedis.Jedis@9660f4e" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:265)
+	at redis.clients.jedis.Jedis.hset(Jedis.java:658)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived(SimpleOperationsTest.java:230)
+
+whenHDeleting_EnsureValuesAreRemoved(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.036 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenHDeleting_EnsureValuesAreRemoved("redis.clients.jedis.Jedis@5a8806ef" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:265)
+	at redis.clients.jedis.Jedis.hset(Jedis.java:658)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenHDeleting_EnsureValuesAreRemoved(SimpleOperationsTest.java:241)
+
+whenUsingRpoplpush_CorrectResultsAreReturned(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.042 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenUsingRpoplpush_CorrectResultsAreReturned("redis.clients.jedis.Jedis@5d76b067" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:259)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:248)
+	at redis.clients.jedis.Jedis.rpoplpush(Jedis.java:1092)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenUsingRpoplpush_CorrectResultsAreReturned(SimpleOperationsTest.java:66)
+
+whenUsingFlushall_EnsureEverythingIsDeleted(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenUsingFlushall_EnsureEverythingIsDeleted("redis.clients.jedis.Jedis@4f063c0a" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenUsingFlushall_EnsureEverythingIsDeleted(SimpleOperationsTest.java:87)
+
+whenSettingKeyAndRetrievingIt_CorrectResultIsReturned(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.058 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenSettingKeyAndRetrievingIt_CorrectResultIsReturned("redis.clients.jedis.Jedis@76707e36" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenSettingKeyAndRetrievingIt_CorrectResultIsReturned(SimpleOperationsTest.java:34)
+
+whenUsingQuit_EnsureTheConnectionIsClosed(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.136 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenUsingQuit_EnsureTheConnectionIsClosed("redis.clients.jedis.Jedis@1f554b06" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.Jedis.set(Jedis.java:121)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenUsingQuit_EnsureTheConnectionIsClosed(SimpleOperationsTest.java:126)
+
+whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew(com.github.fppt.jedismock.comparisontests.SimpleOperationsTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+org.junit.experimental.theories.internal.ParameterizedAssertionError: whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew("redis.clients.jedis.Jedis@26aa12dd" <from jedis[1]>)
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:265)
+	at redis.clients.jedis.Jedis.hset(Jedis.java:658)
+	at com.github.fppt.jedismock.comparisontests.SimpleOperationsTest.whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew(SimpleOperationsTest.java:219)
+
+
+Results :
+
+Failed tests: 
+  TestJedisConnect.testPipeline:27 expected:<redis.clients.jedis.exceptions.JedisDataException: Error initialising operation 'set'> but was:<OK>
+  TestRedisOperationExecutor.testPexpireAt:284->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testDel:256->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testHll:165->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testTTL:98->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testExpireAt:272->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testLpush:308->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testRpush:380->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testSetex:203->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'setex'
+>
+  TestRedisOperationExecutor.testDecr:141->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testIncr:125->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testLlen:335->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testLpop:357->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testMget:234->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testPTTL:111->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testPexpire:297->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testSetAndGet:66->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testDecrBy:147->assertCommandEquals:42 expected:<:-5
+> but was:<-Error initialising operation 'decrby'
+>
+  TestRedisOperationExecutor.testExists:265->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testExpire:87->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testIncrBy:131->assertCommandEquals:42 expected:<:5
+> but was:<-Error initialising operation 'incrby'
+>
+  TestRedisOperationExecutor.testLindex:370->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testLpushx:346->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testLrange:326->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  TestRedisOperationExecutor.testStrlen:250->assertCommandOK:50 expected:<+OK
+> but was:<-Error initialising operation 'set'
+>
+  AdvanceOperationsTest.whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner whenUsingBrpoplpush_EnsureClientCanStillGetOtherResponsesInTimelyManner("redis.clients.jedis.Jedis@43814d18" <from jedis[1]>)
+  SimpleOperationsTest.whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect whenConcurrentlyIncrementingAndDecrementingCount_EnsureFinalCountIsCorrect("redis.clients.jedis.Jedis@7c29daf3" <from jedis[1]>)
+  SimpleOperationsTest.whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived whenHSettingAndHGetting_EnsureValuesAreSetAndRetreived("redis.clients.jedis.Jedis@9660f4e" <from jedis[1]>)
+  SimpleOperationsTest.whenHDeleting_EnsureValuesAreRemoved whenHDeleting_EnsureValuesAreRemoved("redis.clients.jedis.Jedis@5a8806ef" <from jedis[1]>)
+  SimpleOperationsTest.whenUsingRpoplpush_CorrectResultsAreReturned whenUsingRpoplpush_CorrectResultsAreReturned("redis.clients.jedis.Jedis@5d76b067" <from jedis[1]>)
+  SimpleOperationsTest.whenUsingFlushall_EnsureEverythingIsDeleted whenUsingFlushall_EnsureEverythingIsDeleted("redis.clients.jedis.Jedis@4f063c0a" <from jedis[1]>)
+  SimpleOperationsTest.whenSettingKeyAndRetrievingIt_CorrectResultIsReturned whenSettingKeyAndRetrievingIt_CorrectResultIsReturned("redis.clients.jedis.Jedis@76707e36" <from jedis[1]>)
+  SimpleOperationsTest.whenUsingQuit_EnsureTheConnectionIsClosed whenUsingQuit_EnsureTheConnectionIsClosed("redis.clients.jedis.Jedis@1f554b06" <from jedis[1]>)
+  SimpleOperationsTest.whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew whenHSettingOnTheSameKeys_EnsureReturnTypeIs1WhenKeysAreNew("redis.clients.jedis.Jedis@26aa12dd" <from jedis[1]>)
+
+Tests in error: 
+  TestRedisServer.testDelInMasterSlave:83 » JedisData Error initialising operati...
+  TestRedisServer.testSlave:66 » JedisData Error initialising operation 'set'
+  TestRedisServer.testExpireInMasterSlave:101 » JedisData Error initialising ope...
+  TestRedisServer.testCloseSocket:137 » JedisData Error initialising operation '...
+  TestRedisServer.testExpireAtInMasterSlave:119 » JedisData Error initialising o...
+  TestJedisConnect.testMultipleClient:39 » JedisData Error initialising operatio...
+
+Tests run: 93, Failures: 34, Errors: 6, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.968 s
+[INFO] Finished at: 2018-11-28T08:17:53+01:00
+[INFO] Final Memory: 24M/613M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project jedis-mock: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/fppt/jedis-mock/460313214/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
