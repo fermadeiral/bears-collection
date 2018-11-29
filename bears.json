@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "julianps/modelmapper-module-vavr",
+    "githubId": 128919618,
+    "url": "https://github.com/julianps/modelmapper-module-vavr",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441307573,
+      "url": "http://travis-ci.org/julianps/modelmapper-module-vavr/builds/441307573",
+      "date": "Oct 14, 2018 5:33:02 PM"
+    },
+    "fixerBuild": {
+      "id": 461240331,
+      "url": "http://travis-ci.org/julianps/modelmapper-module-vavr/builds/461240331",
+      "date": "Nov 29, 2018 12:58:55 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 29, 2018 12:59:14 PM",
+    "reproductionDateEnd": "Nov 29, 2018 1:00:22 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 283439416,
+      "totalMemory": 386924544
+    },
+    "totalDuration": 65,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 24,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          23
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/julianps/modelmapper-module-vavr/441307573/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 24,
+      "numberDeleted": 22
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/julianps/modelmapper-module-vavr/441307573",
+    "overallMetrics": {
+      "numberRunning": 9,
+      "numberPassing": 8,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.modelmapper.MappingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.julianps.modelmapper.ValueConverterTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.julianps.modelmapper.ValueConverterTest",
+        "testMethod": "testNormalListNull",
+        "failureName": "org.modelmapper.MappingException",
+        "detail": "ModelMapper mapping errors:\n\n1) Converter com.github.julianps.modelmapper.ValueConverter@7494e528 failed to convert io.vavr.collection.List to io.vavr.collection.List.\n\n1 error",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "julianps/modelmapper-module-vavr",
+      "branchName": "master",
+      "sha": "d1c32e6ca747b48f19fae89b4fdf695532494912",
+      "url": "http://github.com/julianps/modelmapper-module-vavr/commit/d1c32e6ca747b48f19fae89b4fdf695532494912",
+      "date": "Oct 14, 2018 5:31:17 PM"
+    },
+    "fixerBuild": {
+      "repoName": "julianps/modelmapper-module-vavr",
+      "branchName": "master",
+      "sha": "b358ccbacff0f311b46f6bdd0f7d4aca1b27a13f",
+      "url": "http://github.com/julianps/modelmapper-module-vavr/commit/b358ccbacff0f311b46f6bdd0f7d4aca1b27a13f",
+      "date": "Nov 29, 2018 12:57:16 PM"
+    }
+  },
+  "type": "passing_passing"
+}
