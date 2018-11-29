@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-dataformats-binary",
+    "githubId": 57942251,
+    "url": "https://github.com/FasterXML/jackson-dataformats-binary",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 461131167,
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-binary/builds/461131167",
+      "date": "Nov 29, 2018 7:14:23 AM"
+    },
+    "fixerBuild": {
+      "id": 461139756,
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-binary/builds/461139756",
+      "date": "Nov 29, 2018 7:54:45 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 29, 2018 7:55:09 AM",
+    "reproductionDateEnd": "Nov 29, 2018 7:57:43 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 351267440,
+      "totalMemory": 414187520
+    },
+    "totalDuration": 147,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 52,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          51
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-dataformats-binary/461131167/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 25,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor",
+    "overallMetrics": {
+      "numberRunning": 101,
+      "numberPassing": 99,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest",
+        "testMethod": "testOutputDecorators",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected token VALUE_NUMBER_INT, current token VALUE_STRING",
+        "isError": false
+      },
+      {
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest",
+        "testMethod": "testInputDecorators",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected token VALUE_NUMBER_INT, current token null",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 135,
+    "numberTestFiles": 200,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-dataformats-binary",
+      "branchName": "2.9",
+      "sha": "7fc8d59a999343ad900b91135cd2e6adf1dcfea2",
+      "url": "http://github.com/FasterXML/jackson-dataformats-binary/commit/7fc8d59a999343ad900b91135cd2e6adf1dcfea2",
+      "date": "Nov 29, 2018 7:12:03 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-dataformats-binary",
+      "branchName": "2.9",
+      "sha": "155ec35e351a4b6d8a0aa428082866a292a30a22",
+      "url": "http://github.com/FasterXML/jackson-dataformats-binary/commit/155ec35e351a4b6d8a0aa428082866a292a30a22",
+      "date": "Nov 29, 2018 7:52:27 AM"
+    }
+  },
+  "type": "passing_passing"
+}
