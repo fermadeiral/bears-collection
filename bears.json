@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-tamaya",
+    "githubId": 26951044,
+    "url": "https://github.com/apache/incubator-tamaya",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 457807119,
+      "url": "http://travis-ci.org/apache/incubator-tamaya/builds/457807119",
+      "date": "Nov 21, 2018 7:52:03 AM"
+    },
+    "fixerBuild": {
+      "id": 461484371,
+      "url": "http://travis-ci.org/apache/incubator-tamaya/builds/461484371",
+      "date": "Nov 29, 2018 10:15:58 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 29, 2018 10:16:12 PM",
+    "reproductionDateEnd": "Nov 29, 2018 10:20:05 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 322442408,
+      "totalMemory": 414187520
+    },
+    "totalDuration": 228,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 109,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          108
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-tamaya/457807119/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-tamaya/457807119/code/spi-support",
+    "overallMetrics": {
+      "numberRunning": 260,
+      "numberPassing": 259,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.tamaya.spisupport.EnumConverterTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.tamaya.spisupport.EnumConverterTest",
+        "testMethod": "testConvert_Nulls",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 104,
+    "numberTestFiles": 104,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-tamaya",
+      "branchName": "master",
+      "sha": "e7e02c4b37f0aef84bf158778faa64b00e410b51",
+      "url": "http://github.com/apache/incubator-tamaya/commit/e7e02c4b37f0aef84bf158778faa64b00e410b51",
+      "date": "Nov 21, 2018 7:49:03 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-tamaya",
+      "branchName": "master",
+      "sha": "69090c547ffd1f7ccd1e22a44cb56ff7ffea678d",
+      "url": "http://github.com/apache/incubator-tamaya/commit/69090c547ffd1f7ccd1e22a44cb56ff7ffea678d",
+      "date": "Nov 29, 2018 10:08:55 PM"
+    }
+  },
+  "type": "passing_passing"
+}
