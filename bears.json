@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "julianhyde/calcite",
+    "githubId": 22561571,
+    "url": "https://github.com/julianhyde/calcite",
+    "isFork": true,
+    "original": {
+      "name": "apache/calcite",
+      "githubId": 21193524,
+      "url": "https://github.com/apache/calcite"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 461609866,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/461609866",
+      "date": "Nov 30, 2018 5:16:52 AM"
+    },
+    "fixerBuild": {
+      "id": 461627144,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/461627144",
+      "date": "Nov 30, 2018 6:49:19 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 30, 2018 6:49:36 AM",
+    "reproductionDateEnd": "Nov 30, 2018 7:07:21 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 591387752,
+      "totalMemory": 689438720
+    },
+    "totalDuration": 1057,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          30
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 222,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          220
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 245,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          245
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/julianhyde/calcite/461609866/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/julianhyde/calcite/461609866/core",
+    "overallMetrics": {
+      "numberRunning": 4919,
+      "numberPassing": 4917,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 117,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.SqlValidatorTest",
+        "numberRunning": 391,
+        "numberPassing": 389,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 5
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.SqlValidatorTest",
+        "testMethod": "testArrayOfRecordType",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected error to have position, but actual error did not:  actual pos [line 0 col 0 thru line 0 col 0]",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.SqlValidatorTest",
+        "testMethod": "testRowWithInvalidDotOperation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected error to have position, but actual error did not:  actual pos [line -1 col -1 thru line 100 col 99]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1555,
+    "numberTestFiles": 240,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "master",
+      "sha": "a0086afb1c1767f25ea8c8f3202672722f43e6e5",
+      "url": "http://github.com/julianhyde/calcite/commit/a0086afb1c1767f25ea8c8f3202672722f43e6e5",
+      "date": "Nov 30, 2018 4:54:03 AM"
+    },
+    "fixerBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "master",
+      "sha": "92ea9deb300428965e6868590e807f640906a5bf",
+      "url": "http://github.com/julianhyde/calcite/commit/92ea9deb300428965e6868590e807f640906a5bf",
+      "date": "Nov 30, 2018 6:26:27 AM"
+    }
+  },
+  "type": "passing_passing"
+}
