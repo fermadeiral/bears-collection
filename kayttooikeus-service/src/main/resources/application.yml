@@ -1,0 +1,35 @@
+logging.level.org:
+  springframework.web: info
+  hibernate: info
+
+spring:
+  mandatory-file-encoding: UTF-8
+  profiles.active: default
+  session:
+    store-type: jdbc
+    jdbc:
+      schema: classpath:org/springframework/session/jdbc/schema-postgresql.sql
+      initialize-schema: always
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  flyway:
+    enabled: true
+    table: schema_table_ko
+    out-of-order: true
+    # Only for initial production release, set false afterwards
+    baseline-on-migrate: false
+    # If DB is not empty will not run migrations until this version
+    baseline-version: 20180419161113283
+  ldap:
+    urls: ldap://localhost:389
+    base: dc=opintopolku,dc=fi
+    username: cn=admin,ou=People,dc=opintopolku,dc=fi
+    password: password123
+
+server:
+  servlet:
+    context-path: /kayttooikeus-service
+    session:
+      cookie:
+        name: JSESSIONID

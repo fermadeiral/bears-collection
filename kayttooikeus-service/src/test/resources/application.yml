@@ -1,0 +1,67 @@
+spring:
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+      ddl-auto: create
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  ldap:
+    embedded:
+      base-dn:
+        - dc=opintopolku,dc=fi
+      enabled: true
+  flyway:
+    enabled: false
+
+hikari:
+  datasource:
+    driver-class-name: org.h2.Dialect
+    jdbc-url: jdbc:h2:mem:kayttooikeus;MODE=PostgreSQL
+    username: SA
+    maximum-pool-size: 5
+    connection-timeout: 10000
+    max-lifetime: 60000
+
+cas:
+  service: http://localhost/kayttooikeus-service
+  send-renew: false
+  key: kayttooikeus-service
+
+host:
+  host-virkailija: localhost
+  host-cas: localhost
+  host-shibboleth: localhost
+
+service-users:
+  viestinta:
+    username: test
+    password: test
+  oppijanumerorekisteri:
+    username: test
+    password: test
+
+common:
+  root-organization-oid: 1.2.246.562.10.00000000001
+  group-organization-id: 1.2.246.562.28
+  invitation-email:
+    template: kayttooikeus_kutsu
+    sender: Opetushallitus
+    from: noreply@oph.fi
+
+tasks:
+  email-invitation:
+    sender-email: noreply@oph.fi
+
+kayttooikeus:
+  ldap_synchronization:
+    dayTime:
+      intervalInMinutes: -1
+      loadThresholdInSeconds: 60
+    nightTime:
+      intervalInMinutes: -1
+      loadThresholdInSeconds: 60
+  scheduling:
+    enabled: false
+    run-on-startup: false
+    pool_size: 1
