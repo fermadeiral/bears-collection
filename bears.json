@@ -1,0 +1,272 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Opetushallitus/kayttooikeus",
+    "githubId": 67036378,
+    "url": "https://github.com/Opetushallitus/kayttooikeus",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 461156711,
+      "url": "http://travis-ci.org/Opetushallitus/kayttooikeus/builds/461156711",
+      "date": "Nov 29, 2018 9:08:11 AM"
+    },
+    "fixerBuild": {
+      "id": 461693061,
+      "url": "http://travis-ci.org/Opetushallitus/kayttooikeus/builds/461693061",
+      "date": "Nov 30, 2018 10:39:38 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 30, 2018 10:39:54 AM",
+    "reproductionDateEnd": "Nov 30, 2018 2:20:13 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 249067776,
+      "totalMemory": 371195904
+    },
+    "totalDuration": 13210,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 3293,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          3290
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 2570,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2570
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Opetushallitus/kayttooikeus/461156711/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 11,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 125,
+      "numberDeleted": 36
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Opetushallitus/kayttooikeus",
+      "branchName": "master",
+      "sha": "c6e7043ccf04ea21a13050a14fcf1f99f40293f4",
+      "url": "http://github.com/Opetushallitus/kayttooikeus/commit/c6e7043ccf04ea21a13050a14fcf1f99f40293f4",
+      "date": "Nov 29, 2018 8:59:49 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Opetushallitus/kayttooikeus",
+      "branchName": "master",
+      "sha": "80d398bcd21fa0cb90f42dd02e3153435ee43d31",
+      "url": "http://github.com/Opetushallitus/kayttooikeus/commit/80d398bcd21fa0cb90f42dd02e3153435ee43d31",
+      "date": "Nov 30, 2018 10:32:23 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Opetushallitus/kayttooikeus/461156711/kayttooikeus-service",
+    "overallMetrics": {
+      "numberRunning": 352,
+      "numberPassing": 338,
+      "numberFailing": 4,
+      "numberErroring": 10,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "javax.validation.ValidationException",
+          "isError": true,
+          "occurrences": 9
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.PermissionCheckerTest",
+        "numberRunning": 45,
+        "numberPassing": 44,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "numberRunning": 20,
+        "numberPassing": 15,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "numberRunning": 24,
+        "numberPassing": 16,
+        "numberFailing": 3,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "testMethod": "createHenkiloWithHakaIdentifierHetuExists",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "listHaetutKayttoOikeusRyhmatForVirkailijaCantSeeOwnAnomus",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c[([\"1.2.3.4.5\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nto contain exactly in any order:\n  \u003c[([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nelements not found:\n  \u003c[([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nand elements not expected:\n  \u003c[([\"1.2.3.4.5\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\n",
+        "isError": false
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.PermissionCheckerTest",
+        "testMethod": "testThatPermissionIsAllowedWhenExternalServiceAllowsAccess",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "testMethod": "createHenkiloWithDuplicateHakaIdentifier",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "listHaetutKayttoOikeusRyhmatForVirkailijaWithCriteriaOrganisaatios",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c[([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nto contain exactly in any order:\n  \u003c[([\"2.3.4\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nelements not found:\n  \u003c[([\"2.3.4\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nand elements not expected:\n  \u003c[([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\n",
+        "isError": false
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "listHaetutKayttoOikeusRyhmatForVirkailijaWithCriteriaOrganisaatiosToChildOrganisation",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "testMethod": "createHenkiloHetuExistsKayttajatiedotExists",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "testMethod": "createHenkiloWithHakaIdentifier",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.it.KutsuServiceTest",
+        "testMethod": "createHenkilo",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "grantKayttooikeusryhmaUusittu",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "grantKayttooikeusryhmaAsAdmin",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "updateHaettuKayttooikeusryhmaMyonnetty",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "grantKayttooikeusryhmaForDisabledOrganisaatioHenkilo",
+        "failureName": "javax.validation.ValidationException",
+        "detail": "Active or suunniteltu organisation not found with oid 1.2.0.0.1",
+        "isError": true
+      },
+      {
+        "testClass": "fi.vm.sade.kayttooikeus.service.KayttooikeusAnomusServiceTest",
+        "testMethod": "listHaetutKayttoOikeusRyhmatForVirkailijaWithNoCriteriaOrganisaatios",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c[([\"1.2.3.4.5\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nto contain exactly in any order:\n  \u003c[([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nelements not found:\n  \u003c[([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L]),\n    ([\"1.2.3.4.5\", \"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\nand elements not expected:\n  \u003c[([\"1.2.3.4.5\"], [23456L, 34567L, 12345L]),\n    ([\"2.3.4.5.6\"], [23456L, 34567L, 12345L])]\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberSourceFiles": 361,
+    "numberTestFiles": 87,
+    "numberLibrariesFailingModule": 206,
+    "numberLines": 0
+  }
+}
