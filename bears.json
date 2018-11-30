@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Adobe-Consulting-Services/acs-aem-commons",
+    "githubId": 13325401,
+    "url": "https://github.com/Adobe-Consulting-Services/acs-aem-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1594
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 461352808,
+      "url": "http://travis-ci.org/Adobe-Consulting-Services/acs-aem-commons/builds/461352808",
+      "date": "Nov 29, 2018 5:16:52 PM"
+    },
+    "fixerBuild": {
+      "id": 461692964,
+      "url": "http://travis-ci.org/Adobe-Consulting-Services/acs-aem-commons/builds/461692964",
+      "date": "Nov 30, 2018 10:39:07 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 30, 2018 10:39:26 AM",
+    "reproductionDateEnd": "Nov 30, 2018 10:58:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 299435904,
+      "totalMemory": 472907776
+    },
+    "totalDuration": 1135,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 642,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          5,
+          634
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 176,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          176
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Adobe-Consulting-Services/acs-aem-commons/461352808/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 29,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Adobe-Consulting-Services/acs-aem-commons/461352808/bundle",
+    "overallMetrics": {
+      "numberRunning": 1162,
+      "numberPassing": 1161,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.adobe.acs.commons.mcp.impl.processes.asset.FileAssetIngestorTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.adobe.acs.commons.mcp.impl.processes.asset.FileAssetIngestorTest",
+        "testMethod": "testSftpUrlSupportsSpecialCharacters",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003csftp://somehost[:]20/this/is/path+with...\u003e but was:\u003csftp://somehost[%3A]20/this/is/path+with...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 772,
+    "numberTestFiles": 271,
+    "numberLibrariesFailingModule": 222,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Adobe-Consulting-Services/acs-aem-commons",
+      "branchName": "master",
+      "sha": "6a7fcaa5348ef8ef34e5c060cbc37ecf4bb66335",
+      "url": "http://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/6a7fcaa5348ef8ef34e5c060cbc37ecf4bb66335",
+      "date": "Nov 29, 2018 5:04:29 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Adobe-Consulting-Services/acs-aem-commons",
+      "branchName": "master",
+      "sha": "c9756f34ec73eb1899205969467de10671419dc7",
+      "url": "http://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/c9756f34ec73eb1899205969467de10671419dc7",
+      "date": "Nov 30, 2018 10:32:01 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "cylinder-y/acs-aem-commons",
+      "branchName": "feature/fix-1593",
+      "sha": "1eb48419e4a1e051bff1382dacbac2c0212cd5ed",
+      "url": "https://github.com/cylinder-y/acs-aem-commons/commit/1eb48419e4a1e051bff1382dacbac2c0212cd5ed",
+      "date": "Nov 30, 2018 10:45:08 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "Adobe-Consulting-Services/acs-aem-commons",
+      "branchName": "master",
+      "sha": "3d753633390073d7a038a99f1c75eea2304caf76",
+      "url": "https://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/3d753633390073d7a038a99f1c75eea2304caf76",
+      "date": "Nov 29, 2018 3:09:29 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "cylinder-y/acs-aem-commons",
+      "branchName": "feature/fix-1593",
+      "sha": "1eb48419e4a1e051bff1382dacbac2c0212cd5ed",
+      "url": "https://github.com/cylinder-y/acs-aem-commons/commit/1eb48419e4a1e051bff1382dacbac2c0212cd5ed",
+      "date": "Nov 30, 2018 10:45:08 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "Adobe-Consulting-Services/acs-aem-commons",
+      "branchName": "master",
+      "sha": "3d753633390073d7a038a99f1c75eea2304caf76",
+      "url": "https://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/3d753633390073d7a038a99f1c75eea2304caf76",
+      "date": "Nov 29, 2018 3:09:29 PM"
+    }
+  }
+}
