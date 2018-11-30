@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Esri/geometry-api-java",
+    "githubId": 7630574,
+    "url": "https://github.com/Esri/geometry-api-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 459840669,
+      "url": "http://travis-ci.org/Esri/geometry-api-java/builds/459840669",
+      "date": "Nov 26, 2018 5:55:11 PM"
+    },
+    "fixerBuild": {
+      "id": 461926666,
+      "url": "http://travis-ci.org/Esri/geometry-api-java/builds/461926666",
+      "date": "Nov 30, 2018 8:13:27 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Nov 30, 2018 8:13:39 PM",
+    "reproductionDateEnd": "Nov 30, 2018 8:15:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 264502824,
+      "totalMemory": 375914496
+    },
+    "totalDuration": 118,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 50,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          50
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Esri/geometry-api-java/459840669/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 57,
+      "numberDeleted": 54
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Esri/geometry-api-java/459840669",
+    "overallMetrics": {
+      "numberRunning": 477,
+      "numberPassing": 476,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.esri.core.geometry.TestOGCContains",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.esri.core.geometry.TestOGCContains",
+        "testMethod": "testAcceleratedPiP",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 263,
+    "numberTestFiles": 59,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Esri/geometry-api-java",
+      "branchName": "master",
+      "sha": "47142f9388c6a562a78824295d03918743b79de7",
+      "url": "http://github.com/Esri/geometry-api-java/commit/47142f9388c6a562a78824295d03918743b79de7",
+      "date": "Nov 26, 2018 5:53:16 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Esri/geometry-api-java",
+      "branchName": "master",
+      "sha": "937ca24b82ddce87a66948c5e8652ab64a83aa4d",
+      "url": "http://github.com/Esri/geometry-api-java/commit/937ca24b82ddce87a66948c5e8652ab64a83aa4d",
+      "date": "Nov 30, 2018 8:11:01 PM"
+    }
+  }
+}
