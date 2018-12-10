@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 281067436,
+      "url": "http://travis-ci.org/traccar/traccar/builds/281067436",
+      "date": "Sep 28, 2017 11:48:32 PM"
+    },
+    "fixerBuild": {
+      "id": 281168588,
+      "url": "http://travis-ci.org/traccar/traccar/builds/281168588",
+      "date": "Sep 29, 2017 8:19:44 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 12:38:10 PM",
+    "reproductionDateEnd": "Dec 10, 2018 12:41:54 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 439247752,
+      "totalMemory": 509083648
+    },
+    "totalDuration": 219,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 113,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          112
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/281067436/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/281067436",
+    "overallMetrics": {
+      "numberRunning": 276,
+      "numberPassing": 275,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.Gt06FrameDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.Gt06FrameDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cBigEndianHeapChannelBuffer(ridx\u003d0, widx\u003d51, cap\u003d51)\u003e but was:\u003cBigEndianHeapChannelBuffer(ridx\u003d0, widx\u003d5, cap\u003d5)\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 552,
+    "numberTestFiles": 236,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "d793e868311918f039fc201fbe2608c6bd5ae3f3",
+      "url": "http://github.com/traccar/traccar/commit/d793e868311918f039fc201fbe2608c6bd5ae3f3",
+      "date": "Sep 28, 2017 11:46:46 PM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "cff01fd43198ce786981dd8a51061dd0d415ccfd",
+      "url": "http://github.com/traccar/traccar/commit/cff01fd43198ce786981dd8a51061dd0d415ccfd",
+      "date": "Sep 29, 2017 8:17:55 AM"
+    }
+  },
+  "type": "passing_passing"
+}
