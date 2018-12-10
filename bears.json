@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 278117267,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/278117267",
+      "date": "Sep 21, 2017 12:01:31 PM"
+    },
+    "fixerBuild": {
+      "id": 278208104,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/278208104",
+      "date": "Sep 21, 2017 4:29:36 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:45:23 PM",
+    "reproductionDateEnd": "Dec 10, 2018 1:53:28 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 285885160,
+      "totalMemory": 475004928
+    },
+    "totalDuration": 478,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 202,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          200
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 87,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          87
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/278117267/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/278117267",
+    "overallMetrics": {
+      "numberRunning": 2220,
+      "numberPassing": 2219,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.querydsl.binding.QuerydslPredicateBuilderUnitTests",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.querydsl.binding.QuerydslPredicateBuilderUnitTests",
+        "testMethod": "getPredicateShouldReturnEmptyPredicateWhenPropertiesAreEmpty",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003ccom.querydsl.core.BooleanBuilder@0\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 421,
+    "numberTestFiles": 258,
+    "numberLibrariesFailingModule": 92,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "7987896098ae1e2937e65d4d91830652fd2f203a",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/7987896098ae1e2937e65d4d91830652fd2f203a",
+      "date": "Sep 21, 2017 11:58:18 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "404610ebb46e6499324d657607d23ee465be9e99",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/404610ebb46e6499324d657607d23ee465be9e99",
+      "date": "Sep 21, 2017 4:23:40 PM"
+    }
+  }
+}
