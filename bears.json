@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 313257147,
+      "url": "http://travis-ci.org/traccar/traccar/builds/313257147",
+      "date": "Dec 8, 2017 1:49:32 AM"
+    },
+    "fixerBuild": {
+      "id": 313260584,
+      "url": "http://travis-ci.org/traccar/traccar/builds/313260584",
+      "date": "Dec 8, 2017 2:01:45 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 11:38:59 PM",
+    "reproductionDateEnd": "Dec 10, 2018 11:42:18 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 260820056,
+      "totalMemory": 447741952
+    },
+    "totalDuration": 192,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 104,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          103
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/313257147/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "f839ca4c24d80dcd78b5ad1d65f10cdf534d94d8",
+      "url": "http://github.com/traccar/traccar/commit/f839ca4c24d80dcd78b5ad1d65f10cdf534d94d8",
+      "date": "Dec 7, 2017 4:47:26 PM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "d3e39051984592f181b04256e38c2396d0cda78d",
+      "url": "http://github.com/traccar/traccar/commit/d3e39051984592f181b04256e38c2396d0cda78d",
+      "date": "Dec 7, 2017 4:58:58 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/313257147",
+    "overallMetrics": {
+      "numberRunning": 296,
+      "numberPassing": 295,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.TotemFrameDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.TotemFrameDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[24243030363545363836313137323033353932363639357c3137303931323135333235372c2d37392e3337333835332c34332e3736353631392c302c302c7c3441]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 570,
+    "numberTestFiles": 245,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
