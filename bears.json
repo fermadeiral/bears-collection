@@ -1,0 +1,162 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 277340707,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/277340707",
+      "date": "Sep 19, 2017 4:49:14 PM"
+    },
+    "fixerBuild": {
+      "id": 277454960,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/277454960",
+      "date": "Sep 19, 2017 9:32:55 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 2:39:43 PM",
+    "reproductionDateEnd": "Dec 10, 2018 2:52:44 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 264158104,
+      "totalMemory": 405798912
+    },
+    "totalDuration": 772,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 79,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          78
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 315,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          315
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/277340707/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 14
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "770e4845b911a176cb092e574a93a46fb4327328",
+      "url": "http://github.com/INRIA/spoon/commit/770e4845b911a176cb092e574a93a46fb4327328",
+      "date": "Sep 19, 2017 4:37:31 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "2aad45c1a552f4427cc8aeefb09adc55f92a9955",
+      "url": "http://github.com/INRIA/spoon/commit/2aad45c1a552f4427cc8aeefb09adc55f92a9955",
+      "date": "Sep 19, 2017 9:22:39 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/277340707",
+    "overallMetrics": {
+      "numberRunning": 1173,
+      "numberPassing": 1171,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.pkg.PackageTest",
+        "numberRunning": 9,
+        "numberPassing": 7,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.pkg.PackageTest",
+        "testMethod": "testRenamePackageAndPrettyPrintWithProcessor",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.pkg.PackageTest",
+        "testMethod": "testRenameRootPackage",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[unnamed package]\u003e but was:\u003c[test]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 514,
+    "numberTestFiles": 593,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
