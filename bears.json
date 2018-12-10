@@ -1,0 +1,254 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 3643
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 304527698,
+      "url": "http://travis-ci.org/traccar/traccar/builds/304527698",
+      "date": "Nov 20, 2017 3:01:39 AM"
+    },
+    "fixerBuild": {
+      "id": 304982581,
+      "url": "http://travis-ci.org/traccar/traccar/builds/304982581",
+      "date": "Nov 20, 2017 11:09:53 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 11:59:59 PM",
+    "reproductionDateEnd": "Dec 11, 2018 12:03:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 346362072,
+      "totalMemory": 535298048
+    },
+    "totalDuration": 222,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 114,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          4,
+          106
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/304527698/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 71,
+      "numberDeleted": 50
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/304527698",
+    "overallMetrics": {
+      "numberRunning": 288,
+      "numberPassing": 277,
+      "numberFailing": 11,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 5
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "numberRunning": 13,
+        "numberPassing": 2,
+        "numberFailing": 11,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeCustom",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,any text is ok,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeSosOn",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,*soson*,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeIdentification",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,999999,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionPeriodic",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[begin]sms2,*routetrack*99*,[end]]\u003e but was:\u003c[(123456789012345AR00003C0000)]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionStop",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[begin]sms2,*routetrackoff*,[end]]\u003e but was:\u003c[(123456789012345AR0000000000)]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeRebootDevice",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[begin]sms2,88888888,[end]]\u003e but was:\u003c[(123456789012345AT00)]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeSosOff",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,*sosoff*,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeSosNumber",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,*master*123456*+55555555555*,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeGetVersion",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[begin]sms2,*about*,[end]]\u003e but was:\u003c[(123456789012345AP07)]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionSingle",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[[begin]sms2,*getposl*,[end]]\u003e but was:\u003c[(123456789012345AP00)]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeSetConnection",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[begin]sms2,*setip*1*2*3*4*5555*,[end]\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 563,
+    "numberTestFiles": 241,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "7eef46c52d222fab35a5114d37f45777dac25bdd",
+      "url": "http://github.com/traccar/traccar/commit/7eef46c52d222fab35a5114d37f45777dac25bdd",
+      "date": "Nov 20, 2017 2:59:50 AM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "b5310c24c0f0e31103669792ec9c932663e73fac",
+      "url": "http://github.com/traccar/traccar/commit/b5310c24c0f0e31103669792ec9c932663e73fac",
+      "date": "Nov 20, 2017 11:06:09 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "ValeraVi/traccar",
+      "branchName": "t580w",
+      "sha": "b9c78ab2c6ac9f2e7598743114864aae04404ac1",
+      "url": "https://github.com/ValeraVi/traccar/commit/b9c78ab2c6ac9f2e7598743114864aae04404ac1",
+      "date": "Dec 4, 2017 9:30:45 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "a8454d0449cbd36cb02676fd750b64e7ca19a183",
+      "url": "https://github.com/traccar/traccar/commit/a8454d0449cbd36cb02676fd750b64e7ca19a183",
+      "date": "Nov 25, 2017 8:47:52 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "ValeraVi/traccar",
+      "branchName": "t580w",
+      "sha": "b9c78ab2c6ac9f2e7598743114864aae04404ac1",
+      "url": "https://github.com/ValeraVi/traccar/commit/b9c78ab2c6ac9f2e7598743114864aae04404ac1",
+      "date": "Dec 4, 2017 9:30:45 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "a8454d0449cbd36cb02676fd750b64e7ca19a183",
+      "url": "https://github.com/traccar/traccar/commit/a8454d0449cbd36cb02676fd750b64e7ca19a183",
+      "date": "Nov 25, 2017 8:47:52 PM"
+    }
+  },
+  "type": "passing_passing"
+}
