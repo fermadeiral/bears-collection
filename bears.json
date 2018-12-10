@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 280364174,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/280364174",
+      "date": "Sep 27, 2017 12:23:52 PM"
+    },
+    "fixerBuild": {
+      "id": 280449466,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/280449466",
+      "date": "Sep 27, 2017 4:17:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:33:52 PM",
+    "reproductionDateEnd": "Dec 10, 2018 1:42:18 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 270665968,
+      "totalMemory": 424673280
+    },
+    "totalDuration": 500,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 219,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          216
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 88,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          88
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/280364174/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 96,
+      "numberDeleted": 47
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/280364174",
+    "overallMetrics": {
+      "numberRunning": 2233,
+      "numberPassing": 2232,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests",
+        "testMethod": "shouldLimitImplementationBasePackages",
+        "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+        "detail": "\nregistry.registerBeanDefinition(\n    \"fragmentImpl\",\n    \u003cany org.springframework.beans.factory.config.BeanDefinition\u003e\n);\nNever wanted here:\n-\u003e at org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests.assertNoBeanDefinitionRegisteredFor(RepositoryBeanDefinitionRegistrarSupportUnitTests.java:122)\nBut invoked here:\n-\u003e at org.springframework.data.repository.config.RepositoryBeanDefinitionBuilder.lambda$potentiallyRegisterFragmentImplementation$8(RepositoryBeanDefinitionBuilder.java:228)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 421,
+    "numberTestFiles": 263,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "2220bed116ce2f8a1ba6b2f32a8d3b59b298b4f6",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/2220bed116ce2f8a1ba6b2f32a8d3b59b298b4f6",
+      "date": "Sep 27, 2017 12:19:47 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "8da9679fc1bc2e770650bfce5448464fc68635ba",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/8da9679fc1bc2e770650bfce5448464fc68635ba",
+      "date": "Sep 27, 2017 4:09:12 PM"
+    }
+  }
+}
