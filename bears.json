@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 246686241,
+      "url": "http://travis-ci.org/traccar/traccar/builds/246686241",
+      "date": "Jun 25, 2017 4:19:28 AM"
+    },
+    "fixerBuild": {
+      "id": 246721482,
+      "url": "http://travis-ci.org/traccar/traccar/builds/246721482",
+      "date": "Jun 25, 2017 9:13:15 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:58:59 AM",
+    "reproductionDateEnd": "Dec 10, 2018 2:02:23 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 305221368,
+      "totalMemory": 496500736
+    },
+    "totalDuration": 198,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          15
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 103,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          103
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/246686241/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 21
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/246686241",
+    "overallMetrics": {
+      "numberRunning": 260,
+      "numberPassing": 254,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "numberRunning": 7,
+        "numberPassing": 1,
+        "numberFailing": 6,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeRebootDevice",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AT00)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionStop",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AR0000000000)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeSetOdometer",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AX01)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodeGetVersion",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AP07)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionPeriodic",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AR00003C0000)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Tk103ProtocolEncoderTest",
+        "testMethod": "testEncodePositionSingle",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c(123456789012345AP00)\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 544,
+    "numberTestFiles": 225,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "c771f3b021780b5a48ebd5998b27803456794c9e",
+      "url": "http://github.com/traccar/traccar/commit/c771f3b021780b5a48ebd5998b27803456794c9e",
+      "date": "Jun 25, 2017 4:16:01 AM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "3a24bd121c34d4046a765cd2a55e4847df423c89",
+      "url": "http://github.com/traccar/traccar/commit/3a24bd121c34d4046a765cd2a55e4847df423c89",
+      "date": "Jun 25, 2017 9:09:42 AM"
+    }
+  }
+}
