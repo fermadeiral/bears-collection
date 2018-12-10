@@ -62,15 +62,15 @@ public class CommandResource extends ExtendedObjectResource<Command> {
         Context.getPermissionsManager().checkReadonly(getUserId());
         long deviceId = entity.getDeviceId();
         long id = entity.getId();
-        if (deviceId != 0 && id != 0) {
+        Context.getPermissionsManager().checkDevice(getUserId(), deviceId);
+        if (id != 0) {
             Context.getPermissionsManager().checkPermission(Command.class, getUserId(), id);
-            Context.getPermissionsManager().checkDevice(getUserId(), deviceId);
             Context.getPermissionsManager().checkUserDeviceCommand(getUserId(), deviceId, id);
-            Context.getCommandsManager().sendCommand(id, deviceId);
         } else {
             Context.getPermissionsManager().checkLimitCommands(getUserId());
-            Context.getPermissionsManager().checkDevice(getUserId(), deviceId);
-            Context.getCommandsManager().sendCommand(entity);
+        }
+        if (!Context.getCommandsManager().sendCommand(entity)) {
+            return Response.accepted(entity).build();
         }
         return Response.ok(entity).build();
     }
