@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 247072762,
+      "url": "http://travis-ci.org/traccar/traccar/builds/247072762",
+      "date": "Jun 26, 2017 2:06:57 PM"
+    },
+    "fixerBuild": {
+      "id": 247376770,
+      "url": "http://travis-ci.org/traccar/traccar/builds/247376770",
+      "date": "Jun 27, 2017 7:21:59 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:55:11 AM",
+    "reproductionDateEnd": "Dec 10, 2018 1:58:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 431715024,
+      "totalMemory": 513277952
+    },
+    "totalDuration": 210,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 109,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          109
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/247072762/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 39
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/247072762",
+    "overallMetrics": {
+      "numberRunning": 260,
+      "numberPassing": 259,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.Gt06ProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.Gt06ProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "position is null",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 544,
+    "numberTestFiles": 225,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "b5f0858fb881c803be83c0fb105c6b8b993b0a78",
+      "url": "http://github.com/traccar/traccar/commit/b5f0858fb881c803be83c0fb105c6b8b993b0a78",
+      "date": "Jun 26, 2017 2:03:53 PM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "d15edaf38717fae7ad482e73c9fcda66da8756a4",
+      "url": "http://github.com/traccar/traccar/commit/d15edaf38717fae7ad482e73c9fcda66da8756a4",
+      "date": "Jun 27, 2017 7:18:29 AM"
+    }
+  },
+  "type": "passing_passing"
+}
