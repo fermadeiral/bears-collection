@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 255575214,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/255575214",
+      "date": "Jul 20, 2017 10:46:50 AM"
+    },
+    "fixerBuild": {
+      "id": 255653897,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/255653897",
+      "date": "Jul 20, 2017 3:10:37 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 2:13:17 PM",
+    "reproductionDateEnd": "Dec 10, 2018 2:18:56 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 355406512,
+      "totalMemory": 488112128
+    },
+    "totalDuration": 332,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 160,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          159
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 50,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          50
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/255575214/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/255575214",
+    "overallMetrics": {
+      "numberRunning": 1241,
+      "numberPassing": 1240,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.projection.ProxyProjectionFactoryUnitTests",
+        "numberRunning": 18,
+        "numberPassing": 17,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.projection.ProxyProjectionFactoryUnitTests",
+        "testMethod": "doesNotCreateWrappingProxyIfTargetImplementsProjectionInterface",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 356,
+    "numberTestFiles": 225,
+    "numberLibrariesFailingModule": 69,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.12.x",
+      "sha": "24a39e44ea1e480ad7dc5f81fc17413c271063ab",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/24a39e44ea1e480ad7dc5f81fc17413c271063ab",
+      "date": "Jul 19, 2017 8:44:24 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.12.x",
+      "sha": "aa9cfc60ef419cc447cfdcbc28029406ce7ba3d5",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/aa9cfc60ef419cc447cfdcbc28029406ce7ba3d5",
+      "date": "Jul 20, 2017 2:59:26 PM"
+    }
+  }
+}
