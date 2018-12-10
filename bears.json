@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 315202200,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/315202200",
+      "date": "Dec 12, 2017 7:26:05 AM"
+    },
+    "fixerBuild": {
+      "id": 318458719,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/318458719",
+      "date": "Dec 19, 2017 6:48:31 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 11, 2018 12:27:45 AM",
+    "reproductionDateEnd": "Dec 11, 2018 12:31:23 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 354652200,
+      "totalMemory": 628621312
+    },
+    "totalDuration": 212,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          30
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 57,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          56
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/315202200/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 52,
+      "numberDeleted": 104
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/315202200",
+    "overallMetrics": {
+      "numberRunning": 1755,
+      "numberPassing": 1754,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest",
+        "testMethod": "testJDKTypes1855",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected an exception with one of substrings ([Illegal type]): got one (of type com.fasterxml.jackson.databind.JsonMappingException) with message \"Can not construct instance of com.sun.org.apache.bcel.internal.util.ClassLoader: no String-argument constructor/factory method to deserialize from String value (\u0027/tmp/foobar.txt\u0027)\n at [Source: {\"v\":[\"com.sun.org.apache.bcel.internal.util.ClassLoader\",\"/tmp/foobar.txt\"]}; line: 1, column: 59] (through reference chain: com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$PolyWrapper[\"v\"])\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 399,
+    "numberTestFiles": 407,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "569e36e84ed99d0f0e3a3473a794f94ca739315d",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/569e36e84ed99d0f0e3a3473a794f94ca739315d",
+      "date": "Dec 12, 2017 7:21:34 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "bade4792d12bcf7242ada53c197a924332840864",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/bade4792d12bcf7242ada53c197a924332840864",
+      "date": "Dec 19, 2017 6:44:34 AM"
+    }
+  },
+  "type": "passing_passing"
+}
