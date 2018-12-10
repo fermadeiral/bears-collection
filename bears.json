@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 271991482,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/271991482",
+      "date": "Sep 5, 2017 1:13:56 PM"
+    },
+    "fixerBuild": {
+      "id": 272568125,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/272568125",
+      "date": "Sep 6, 2017 6:58:13 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:54:50 PM",
+    "reproductionDateEnd": "Dec 10, 2018 2:00:45 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 288401728,
+      "totalMemory": 416808960
+    },
+    "totalDuration": 349,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 161,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0,
+          0,
+          157
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 52,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          52
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/271991482/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 11
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "e8fad19bc0f42b68a4ebad817bf6b7283ceed93f",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/e8fad19bc0f42b68a4ebad817bf6b7283ceed93f",
+      "date": "Sep 5, 2017 12:01:21 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "a2f8dc1676cb2ef1594b9e0620f52f8076c85617",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/a2f8dc1676cb2ef1594b9e0620f52f8076c85617",
+      "date": "Sep 6, 2017 6:49:01 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/271991482",
+    "overallMetrics": {
+      "numberRunning": 2039,
+      "numberPassing": 2038,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests",
+        "testMethod": "usesCustomObjectMapper",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is sameInstance(\u003ccom.fasterxml.jackson.databind.ObjectMapper@1b13467c\u003e)\n     but: was \u003ccom.fasterxml.jackson.databind.ObjectMapper@7bd96822\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 379,
+    "numberTestFiles": 233,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
