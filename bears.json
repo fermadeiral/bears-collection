@@ -1,0 +1,164 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 265439859,
+      "url": "http://travis-ci.org/traccar/traccar/builds/265439859",
+      "date": "Aug 17, 2017 7:15:17 AM"
+    },
+    "fixerBuild": {
+      "id": 265542197,
+      "url": "http://travis-ci.org/traccar/traccar/builds/265542197",
+      "date": "Aug 17, 2017 1:51:35 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:06:42 PM",
+    "reproductionDateEnd": "Dec 10, 2018 1:10:14 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 247040328,
+      "totalMemory": 441450496
+    },
+    "totalDuration": 207,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 109,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          108
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/265439859/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/265439859",
+    "overallMetrics": {
+      "numberRunning": 272,
+      "numberPassing": 269,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 6,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.reports.ReportUtilsTest",
+        "numberRunning": 10,
+        "numberPassing": 7,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.reports.ReportUtilsTest",
+        "testMethod": "testDetectTripAndStopByGap",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cFri Jan 01 01:24:00 CET 2016\u003e but was:\u003cFri Jan 01 01:23:00 CET 2016\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.reports.ReportUtilsTest",
+        "testMethod": "testDetectTripsWithFluctuation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cFri Jan 01 01:09:00 CET 2016\u003e but was:\u003cFri Jan 01 01:07:00 CET 2016\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.reports.ReportUtilsTest",
+        "testMethod": "testDetectTripsSimpleWithIgnition",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 549,
+    "numberTestFiles": 232,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "9e9f97ac34d882594e3d23e959775ce765447787",
+      "url": "http://github.com/traccar/traccar/commit/9e9f97ac34d882594e3d23e959775ce765447787",
+      "date": "Aug 17, 2017 7:12:44 AM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "a1f7908769d296aed7766151340426e612883c6f",
+      "url": "http://github.com/traccar/traccar/commit/a1f7908769d296aed7766151340426e612883c6f",
+      "date": "Aug 17, 2017 1:50:14 PM"
+    }
+  }
+}
