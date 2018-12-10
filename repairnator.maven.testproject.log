@@ -48,473 +48,437 @@
 [INFO] /root/workspace/spring-projects/spring-data-commons/277687236/src/test/java/org/springframework/data/repository/support/DomainClassConverterUnitTests.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ spring-data-commons ---
-[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 5.4 KB/sec)
-[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 10.9 KB/sec)
-[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 219.2 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.springframework.data.auditing.AnnotationAuditingMetadataUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.497 sec - in org.springframework.data.auditing.AnnotationAuditingMetadataUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in org.springframework.data.auditing.AnnotationAuditingMetadataUnitTests
 Running org.springframework.data.auditing.ReflectionAuditingBeanWrapperUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 sec - in org.springframework.data.auditing.ReflectionAuditingBeanWrapperUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec - in org.springframework.data.auditing.ReflectionAuditingBeanWrapperUnitTests
 Running org.springframework.data.auditing.AuditingHandlerUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.151 sec - in org.springframework.data.auditing.AuditingHandlerUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.098 sec - in org.springframework.data.auditing.AuditingHandlerUnitTests
 Running org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec - in org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 sec - in org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests
 Running org.springframework.data.auditing.config.AuditingBeanDefinitionRegistrarSupportUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in org.springframework.data.auditing.config.AuditingBeanDefinitionRegistrarSupportUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in org.springframework.data.auditing.config.AuditingBeanDefinitionRegistrarSupportUnitTests
 Running org.springframework.data.auditing.DefaultAuditableBeanWrapperFactoryUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec - in org.springframework.data.auditing.DefaultAuditableBeanWrapperFactoryUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec - in org.springframework.data.auditing.DefaultAuditableBeanWrapperFactoryUnitTests
 Running org.springframework.data.auditing.MappingAuditableBeanWrapperFactoryUnitTests
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 sec - in org.springframework.data.auditing.MappingAuditableBeanWrapperFactoryUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 sec - in org.springframework.data.auditing.MappingAuditableBeanWrapperFactoryUnitTests
 Running org.springframework.data.querydsl.QuerydslUtilsUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in org.springframework.data.querydsl.QuerydslUtilsUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in org.springframework.data.querydsl.QuerydslUtilsUnitTests
 Running org.springframework.data.querydsl.QPageRequestUnitTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.springframework.data.querydsl.QPageRequestUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.springframework.data.querydsl.QPageRequestUnitTests
 Running org.springframework.data.querydsl.SimpleEntityPathResolverUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.springframework.data.querydsl.SimpleEntityPathResolverUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.data.querydsl.SimpleEntityPathResolverUnitTests
 Running org.springframework.data.querydsl.QSortUnitTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.springframework.data.querydsl.QSortUnitTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.springframework.data.querydsl.QSortUnitTests
 Running org.springframework.data.querydsl.binding.QuerydslPredicateBuilderUnitTests
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.381 sec - in org.springframework.data.querydsl.binding.QuerydslPredicateBuilderUnitTests
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.693 sec - in org.springframework.data.querydsl.binding.QuerydslPredicateBuilderUnitTests
 Running org.springframework.data.querydsl.binding.QuerydslBindingsUnitTests
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.springframework.data.querydsl.binding.QuerydslBindingsUnitTests
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.springframework.data.querydsl.binding.QuerydslBindingsUnitTests
 Running org.springframework.data.querydsl.binding.QuerydslBindingsFactoryUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in org.springframework.data.querydsl.binding.QuerydslBindingsFactoryUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec - in org.springframework.data.querydsl.binding.QuerydslBindingsFactoryUnitTests
 Running org.springframework.data.querydsl.binding.QuerydslDefaultBindingUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.querydsl.binding.QuerydslDefaultBindingUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.querydsl.binding.QuerydslDefaultBindingUnitTests
 Running org.springframework.data.querydsl.QuerydslRepositoryInvokerAdapterUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in org.springframework.data.querydsl.QuerydslRepositoryInvokerAdapterUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in org.springframework.data.querydsl.QuerydslRepositoryInvokerAdapterUnitTests
 Running org.springframework.data.domain.DirectionUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.domain.DirectionUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.domain.DirectionUnitTests
 Running org.springframework.data.domain.ExampleUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.domain.ExampleUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.domain.ExampleUnitTests
 Running org.springframework.data.domain.AbstractAggregateRootUnitTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.domain.AbstractAggregateRootUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.domain.AbstractAggregateRootUnitTests
 Running org.springframework.data.domain.SortUnitTests
 Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.domain.SortUnitTests
 Running org.springframework.data.domain.jaxb.SpringDataJaxbUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.706 sec - in org.springframework.data.domain.jaxb.SpringDataJaxbUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 sec - in org.springframework.data.domain.jaxb.SpringDataJaxbUnitTests
 Running org.springframework.data.domain.RangeUnitTests
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.springframework.data.domain.RangeUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.domain.RangeUnitTests
 Running org.springframework.data.domain.PageRequestUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.domain.PageRequestUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.data.domain.PageRequestUnitTests
 Running org.springframework.data.domain.PageImplUnitTests
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.springframework.data.domain.PageImplUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.domain.PageImplUnitTests
 Running org.springframework.data.domain.ExampleMatcherUnitTests
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.domain.ExampleMatcherUnitTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.domain.ExampleMatcherUnitTests
 Running org.springframework.data.web.PageableHandlerMethodArgumentResolverUnitTests
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.springframework.data.web.PageableHandlerMethodArgumentResolverUnitTests
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.springframework.data.web.PageableHandlerMethodArgumentResolverUnitTests
 Running org.springframework.data.web.HateoasPageableHandlerMethodArgumentResolverUnitTests
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.springframework.data.web.HateoasPageableHandlerMethodArgumentResolverUnitTests
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.springframework.data.web.HateoasPageableHandlerMethodArgumentResolverUnitTests
 Running org.springframework.data.web.ProjectingJackson2HttpMessageConverterUnitTests
-2018-12-10 13:53:04,718  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:04,811  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:04,817  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:04,820  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:04,823  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 sec - in org.springframework.data.web.ProjectingJackson2HttpMessageConverterUnitTests
+2018-12-10 13:56:11,633  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:11,702  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:11,707  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:11,710  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:11,714  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 sec - in org.springframework.data.web.ProjectingJackson2HttpMessageConverterUnitTests
 Running org.springframework.data.web.PagedResourcesAssemblerUnitTests
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.springframework.data.web.PagedResourcesAssemblerUnitTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.springframework.data.web.PagedResourcesAssemblerUnitTests
 Running org.springframework.data.web.querydsl.QuerydslPredicateArgumentResolverUnitTests
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.springframework.data.web.querydsl.QuerydslPredicateArgumentResolverUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.springframework.data.web.querydsl.QuerydslPredicateArgumentResolverUnitTests
 Running org.springframework.data.web.JsonProjectingMethodInterceptorFactoryUnitTests
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec - in org.springframework.data.web.JsonProjectingMethodInterceptorFactoryUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec - in org.springframework.data.web.JsonProjectingMethodInterceptorFactoryUnitTests
 Running org.springframework.data.web.XmlBeamHttpMessageConverterUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec - in org.springframework.data.web.XmlBeamHttpMessageConverterUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec - in org.springframework.data.web.XmlBeamHttpMessageConverterUnitTests
 Running org.springframework.data.web.config.PageableResourcesAssemblerIntegrationTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.424 sec - in org.springframework.data.web.config.PageableResourcesAssemblerIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.385 sec - in org.springframework.data.web.config.PageableResourcesAssemblerIntegrationTests
 Running org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests
-2018-12-10 13:53:07,762  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:07,768  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:07,771  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:07,961  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,373  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,387  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,391  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,431  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,603  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,607  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,609  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:08,643  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,008  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,013  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,016  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,050  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,201  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,206  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,209  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,243  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,422  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,427  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,429  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,466  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,620  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,624  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,626  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,657  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,760  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,763  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,766  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,798  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,894  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,898  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,901  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:09,917  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:10,148  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:10,153  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:10,156  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2018-12-10 13:53:10,183  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.178 sec - in org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests
+2018-12-10 13:56:14,609  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:14,640  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:14,644  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:14,799  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,065  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,070  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,073  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,110  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,312  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,316  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,319  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,356  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,727  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,731  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,733  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,763  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,879  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,883  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,886  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:15,916  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,030  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,034  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,036  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,063  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,193  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,196  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,199  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,226  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,315  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,320  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,323  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,356  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,442  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,446  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,449  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,465  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,597  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,600  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,603  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2018-12-10 13:56:16,623  WARN nverter.json.Jackson2ObjectMapperBuilder: 773 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.719 sec - in org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests
 Running org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec - in org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests
 Running org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.web.ProxyingHandlerMethodArgumentResolverUnitTests
 Running org.springframework.data.web.SortHandlerMethodArgumentResolverUnitTests
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.springframework.data.web.SortHandlerMethodArgumentResolverUnitTests
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.web.SortHandlerMethodArgumentResolverUnitTests
 Running org.springframework.data.web.MapDataBinderUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.springframework.data.web.MapDataBinderUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.springframework.data.web.MapDataBinderUnitTests
 Running org.springframework.data.web.PagedResourcesAssemblerArgumentResolverUnitTests
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in org.springframework.data.web.PagedResourcesAssemblerArgumentResolverUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.springframework.data.web.PagedResourcesAssemblerArgumentResolverUnitTests
 Running org.springframework.data.web.HateoasSortHandlerMethodArgumentResolverUnitTests
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.springframework.data.web.HateoasSortHandlerMethodArgumentResolverUnitTests
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.web.HateoasSortHandlerMethodArgumentResolverUnitTests
 Running org.springframework.data.DependencyTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.034 sec - in org.springframework.data.DependencyTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.793 sec - in org.springframework.data.DependencyTests
 Running org.springframework.data.projection.MapAccessingMethodInterceptorUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.springframework.data.projection.MapAccessingMethodInterceptorUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.springframework.data.projection.MapAccessingMethodInterceptorUnitTests
 Running org.springframework.data.projection.ProxyProjectionFactoryUnitTests
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.springframework.data.projection.ProxyProjectionFactoryUnitTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.springframework.data.projection.ProxyProjectionFactoryUnitTests
 Running org.springframework.data.projection.ProjectingMethodInterceptorUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.springframework.data.projection.ProjectingMethodInterceptorUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in org.springframework.data.projection.ProjectingMethodInterceptorUnitTests
 Running org.springframework.data.projection.SpelEvaluatingMethodInterceptorUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.springframework.data.projection.SpelEvaluatingMethodInterceptorUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.springframework.data.projection.SpelEvaluatingMethodInterceptorUnitTests
 Running org.springframework.data.projection.DefaultProjectionInformationUnitTests
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.projection.DefaultProjectionInformationUnitTests
 Running org.springframework.data.projection.PropertyAccessingMethodInterceptorUnitTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.projection.PropertyAccessingMethodInterceptorUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.projection.PropertyAccessingMethodInterceptorUnitTests
 Running org.springframework.data.projection.SpelAwareProxyProjectionFactoryUnitTests
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.springframework.data.projection.SpelAwareProxyProjectionFactoryUnitTests
 Running org.springframework.data.projection.ProjectionIntegrationTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.springframework.data.projection.ProjectionIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.springframework.data.projection.ProjectionIntegrationTests
 Running org.springframework.data.geo.DistanceUnitTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.springframework.data.geo.DistanceUnitTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.geo.DistanceUnitTests
 Running org.springframework.data.geo.format.PointFormatterUnitTests
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.geo.format.PointFormatterUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.geo.format.PointFormatterUnitTests
 Running org.springframework.data.geo.format.DistanceFormatterUnitTests
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.geo.format.DistanceFormatterUnitTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.geo.format.DistanceFormatterUnitTests
 Running org.springframework.data.geo.BoxUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.geo.BoxUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.geo.BoxUnitTests
 Running org.springframework.data.geo.GeoResultUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.geo.GeoResultUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.geo.GeoResultUnitTests
 Running org.springframework.data.geo.PointUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.geo.PointUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.geo.PointUnitTests
 Running org.springframework.data.geo.GeoResultsUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.geo.GeoResultsUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.data.geo.GeoResultsUnitTests
 Running org.springframework.data.geo.PolygonUnitTests
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.geo.PolygonUnitTests
 Running org.springframework.data.geo.CircleUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.geo.CircleUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.springframework.data.geo.CircleUnitTests
 Running org.springframework.data.geo.GeoModuleIntegrationTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.springframework.data.geo.GeoModuleIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.springframework.data.geo.GeoModuleIntegrationTests
 Running org.springframework.data.convert.KotlinClassGeneratingEntityInstantiatorUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.762 sec - in org.springframework.data.convert.KotlinClassGeneratingEntityInstantiatorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.184 sec - in org.springframework.data.convert.KotlinClassGeneratingEntityInstantiatorUnitTests
 Running org.springframework.data.convert.ConverterBuilderUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.springframework.data.convert.ConverterBuilderUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.convert.ConverterBuilderUnitTests
 Running org.springframework.data.convert.Jsr310ConvertersUnitTests
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.springframework.data.convert.Jsr310ConvertersUnitTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.springframework.data.convert.Jsr310ConvertersUnitTests
 Running org.springframework.data.convert.ReflectionEntityInstantiatorDataClassUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.data.convert.ReflectionEntityInstantiatorDataClassUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.springframework.data.convert.ReflectionEntityInstantiatorDataClassUnitTests
 Running org.springframework.data.convert.MappingContextTypeInformationMapperUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in org.springframework.data.convert.MappingContextTypeInformationMapperUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec - in org.springframework.data.convert.MappingContextTypeInformationMapperUnitTests
 Running org.springframework.data.convert.ConfigurableTypeInformationMapperUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.convert.ConfigurableTypeInformationMapperUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.convert.ConfigurableTypeInformationMapperUnitTests
 Running org.springframework.data.convert.CustomConversionsUnitTests
-2018-12-10 13:53:18,344  WARN framework.data.convert.CustomConversions: 226 - Registering converter from class java.lang.String to class java.text.Format as writing converter although it doesn't convert to a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2018-12-10 13:53:18,371  WARN framework.data.convert.CustomConversions: 216 - Registering converter from class org.springframework.data.convert.CustomConversionsUnitTests$Left to class org.springframework.data.convert.CustomConversionsUnitTests$Right as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2018-12-10 13:53:18,371  WARN framework.data.convert.CustomConversions: 226 - Registering converter from class org.springframework.data.convert.CustomConversionsUnitTests$Right to class org.springframework.data.convert.CustomConversionsUnitTests$Left as writing converter although it doesn't convert to a store-supported type! You might wanna check you annotation setup at the converter implementation.
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.springframework.data.convert.CustomConversionsUnitTests
+2018-12-10 13:56:25,866  WARN framework.data.convert.CustomConversions: 226 - Registering converter from class java.lang.String to class java.text.Format as writing converter although it doesn't convert to a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2018-12-10 13:56:25,903  WARN framework.data.convert.CustomConversions: 216 - Registering converter from class org.springframework.data.convert.CustomConversionsUnitTests$Left to class org.springframework.data.convert.CustomConversionsUnitTests$Right as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2018-12-10 13:56:25,904  WARN framework.data.convert.CustomConversions: 226 - Registering converter from class org.springframework.data.convert.CustomConversionsUnitTests$Right to class org.springframework.data.convert.CustomConversionsUnitTests$Left as writing converter although it doesn't convert to a store-supported type! You might wanna check you annotation setup at the converter implementation.
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.springframework.data.convert.CustomConversionsUnitTests
 Running org.springframework.data.convert.ReflectionEntityInstantiatorUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.convert.ReflectionEntityInstantiatorUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.springframework.data.convert.ReflectionEntityInstantiatorUnitTests
 Running org.springframework.data.convert.SimpleTypeInformationMapperUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.convert.SimpleTypeInformationMapperUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.data.convert.SimpleTypeInformationMapperUnitTests
 Running org.springframework.data.convert.DefaultTypeMapperUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.springframework.data.convert.DefaultTypeMapperUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.springframework.data.convert.DefaultTypeMapperUnitTests
 Running org.springframework.data.convert.ClassGeneratingEntityInstantiatorUnitTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.springframework.data.convert.ClassGeneratingEntityInstantiatorUnitTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in org.springframework.data.convert.ClassGeneratingEntityInstantiatorUnitTests
 Running org.springframework.data.convert.EntityInstantiatorsUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.springframework.data.convert.EntityInstantiatorsUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.springframework.data.convert.EntityInstantiatorsUnitTests
 Running org.springframework.data.convert.ThreeTenBackPortConvertersUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.convert.ThreeTenBackPortConvertersUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.convert.ThreeTenBackPortConvertersUnitTests
 Running org.springframework.data.config.TypeFilterParserUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 sec - in org.springframework.data.config.TypeFilterParserUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 sec - in org.springframework.data.config.TypeFilterParserUnitTests
 Running org.springframework.data.annotation.TypeAliasUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.data.annotation.TypeAliasUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.springframework.data.annotation.TypeAliasUnitTests
 Running org.springframework.data.transaction.ChainedTransactionManagerTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.transaction.ChainedTransactionManagerTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.transaction.ChainedTransactionManagerTests
 Running org.springframework.data.authentication.UserCredentialsUnitTests
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.authentication.UserCredentialsUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.authentication.UserCredentialsUnitTests
 Running org.springframework.data.util.ReflectionUtilsUnitTests
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.util.ReflectionUtilsUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.util.ReflectionUtilsUnitTests
 Running org.springframework.data.util.ParameterizedTypeUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.springframework.data.util.ParameterizedTypeUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.springframework.data.util.ParameterizedTypeUnitTests
 Running org.springframework.data.util.PairUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.util.PairUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.util.PairUnitTests
 Running org.springframework.data.util.DirectFieldAccessFallbackBeanWrapperUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.util.DirectFieldAccessFallbackBeanWrapperUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.util.DirectFieldAccessFallbackBeanWrapperUnitTests
 Running org.springframework.data.util.VersionUnitTests
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.util.VersionUnitTests
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.util.VersionUnitTests
 Running org.springframework.data.util.AnnotationDetectionMethodCallbackUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.util.AnnotationDetectionMethodCallbackUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.util.AnnotationDetectionMethodCallbackUnitTests
 Running org.springframework.data.util.ClassTypeInformationUnitTests
-Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.springframework.data.util.ClassTypeInformationUnitTests
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in org.springframework.data.util.ClassTypeInformationUnitTests
 Running org.springframework.data.util.StreamUtilsTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.util.StreamUtilsTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.util.StreamUtilsTests
 Running org.springframework.data.util.TypeDiscovererUnitTests
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.springframework.data.util.TypeDiscovererUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.springframework.data.util.TypeDiscovererUnitTests
 Running org.springframework.data.util.AnnotationDetectionFieldCallbackUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.util.AnnotationDetectionFieldCallbackUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.util.AnnotationDetectionFieldCallbackUnitTests
 Running org.springframework.data.util.DataCmns511Tests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.util.DataCmns511Tests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.util.DataCmns511Tests
 Running org.springframework.data.util.AnnotatedTypeScannerUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.springframework.data.util.AnnotatedTypeScannerUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.springframework.data.util.AnnotatedTypeScannerUnitTests
 Running org.springframework.data.util.LazyUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.util.LazyUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.springframework.data.util.LazyUnitTests
 Running org.springframework.data.util.ParsingUtilsUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.springframework.data.util.ParsingUtilsUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.util.ParsingUtilsUnitTests
 Running org.springframework.data.history.RevisionUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.springframework.data.history.RevisionUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.springframework.data.history.RevisionUnitTests
 Running org.springframework.data.history.RevisionsUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.history.RevisionsUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.history.RevisionsUnitTests
 Running org.springframework.data.repository.query.EvaluationContextExtensionInformationUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.data.repository.query.EvaluationContextExtensionInformationUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.springframework.data.repository.query.EvaluationContextExtensionInformationUnitTests
 Running org.springframework.data.repository.query.QueryMethodUnitTests
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.springframework.data.repository.query.QueryMethodUnitTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.springframework.data.repository.query.QueryMethodUnitTests
 Running org.springframework.data.repository.query.ParametersUnitTests
 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.repository.query.ParametersUnitTests
 Running org.springframework.data.repository.query.parser.OrderBySourceUnitTests
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.repository.query.parser.OrderBySourceUnitTests
 Running org.springframework.data.repository.query.parser.PartTreeUnitTests
-Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in org.springframework.data.repository.query.parser.PartTreeUnitTests
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in org.springframework.data.repository.query.parser.PartTreeUnitTests
 Running org.springframework.data.repository.query.ResultProcessorUnitTests
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 sec - in org.springframework.data.repository.query.ResultProcessorUnitTests
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec - in org.springframework.data.repository.query.ResultProcessorUnitTests
 Running org.springframework.data.repository.query.SimpleParameterAccessorUnitTests
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.data.repository.query.SimpleParameterAccessorUnitTests
 Running org.springframework.data.repository.query.ParametersParameterAccessorUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.repository.query.ParametersParameterAccessorUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.repository.query.ParametersParameterAccessorUnitTests
 Running org.springframework.data.repository.query.ReturnedTypeUnitTests
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.springframework.data.repository.query.ReturnedTypeUnitTests
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.springframework.data.repository.query.ReturnedTypeUnitTests
 Running org.springframework.data.repository.query.ExtensionAwareEvaluationContextProviderUnitTests
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.springframework.data.repository.query.ExtensionAwareEvaluationContextProviderUnitTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.springframework.data.repository.query.ExtensionAwareEvaluationContextProviderUnitTests
 Running org.springframework.data.repository.config.DefaultRepositoryConfigurationUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.springframework.data.repository.config.DefaultRepositoryConfigurationUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.springframework.data.repository.config.DefaultRepositoryConfigurationUnitTests
 Running org.springframework.data.repository.config.AnnotationRepositoryConfigurationSourceUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in org.springframework.data.repository.config.AnnotationRepositoryConfigurationSourceUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.springframework.data.repository.config.AnnotationRepositoryConfigurationSourceUnitTests
 Running org.springframework.data.repository.config.CustomRepositoryImplementationDetectorUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 sec - in org.springframework.data.repository.config.CustomRepositoryImplementationDetectorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in org.springframework.data.repository.config.CustomRepositoryImplementationDetectorUnitTests
 Running org.springframework.data.repository.config.RepositoryConfigurationExtensionSupportUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.data.repository.config.RepositoryConfigurationExtensionSupportUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.repository.config.RepositoryConfigurationExtensionSupportUnitTests
 Running org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.348 sec - in org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.306 sec - in org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests
 Running org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec - in org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportUnitTests
 Running org.springframework.data.repository.config.ResourceReaderRepositoryPopulatorBeanDefinitionParserIntegrationTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in org.springframework.data.repository.config.ResourceReaderRepositoryPopulatorBeanDefinitionParserIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in org.springframework.data.repository.config.ResourceReaderRepositoryPopulatorBeanDefinitionParserIntegrationTests
 Running org.springframework.data.repository.config.XmlRepositoryConfigurationSourceUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in org.springframework.data.repository.config.XmlRepositoryConfigurationSourceUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in org.springframework.data.repository.config.XmlRepositoryConfigurationSourceUnitTests
 Running org.springframework.data.repository.config.RepositoryConfigurationDelegateUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.springframework.data.repository.config.RepositoryConfigurationDelegateUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.springframework.data.repository.config.RepositoryConfigurationDelegateUnitTests
 Running org.springframework.data.repository.config.SelectionSetUnitTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.springframework.data.repository.config.SelectionSetUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.repository.config.SelectionSetUnitTests
 Running org.springframework.data.repository.config.RepositoryComponentProviderUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec - in org.springframework.data.repository.config.RepositoryComponentProviderUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.springframework.data.repository.config.RepositoryComponentProviderUnitTests
 Running org.springframework.data.repository.config.RepositoryBeanNameGeneratorUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.repository.config.RepositoryBeanNameGeneratorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.data.repository.config.RepositoryBeanNameGeneratorUnitTests
 Running org.springframework.data.repository.core.support.PersistableEntityInformationUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.repository.core.support.PersistableEntityInformationUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.springframework.data.repository.core.support.PersistableEntityInformationUnitTests
 Running org.springframework.data.repository.core.support.PersistenceExceptionTranslationRepositoryProxyPostProcessorUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in org.springframework.data.repository.core.support.PersistenceExceptionTranslationRepositoryProxyPostProcessorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.springframework.data.repository.core.support.PersistenceExceptionTranslationRepositoryProxyPostProcessorUnitTests
 Running org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptorUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptorUnitTests
 Running org.springframework.data.repository.core.support.AnnotationRepositoryMetadataUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.repository.core.support.AnnotationRepositoryMetadataUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.repository.core.support.AnnotationRepositoryMetadataUnitTests
 Running org.springframework.data.repository.core.support.RepositoryFactoryBeanSupportUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.springframework.data.repository.core.support.RepositoryFactoryBeanSupportUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.springframework.data.repository.core.support.RepositoryFactoryBeanSupportUnitTests
 Running org.springframework.data.repository.core.support.QueryExecutionResultHandlerUnitTests
-Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec <<< FAILURE! - in org.springframework.data.repository.core.support.QueryExecutionResultHandlerUnitTests
-convertsIterableIntoStreamable(org.springframework.data.repository.core.support.QueryExecutionResultHandlerUnitTests)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expecting:
-  <[java.lang.Object@597ef918]>
-to be an instance of:
-  <org.springframework.data.util.Streamable>
-but was instance of:
-  <java.util.Arrays.ArrayList>
-	at org.springframework.data.repository.core.support.QueryExecutionResultHandlerUnitTests.convertsIterableIntoStreamable(QueryExecutionResultHandlerUnitTests.java:362)
-
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.springframework.data.repository.core.support.QueryExecutionResultHandlerUnitTests
 Running org.springframework.data.repository.core.support.ReactiveRepositoryInformationUnitTests
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.springframework.data.repository.core.support.ReactiveRepositoryInformationUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.springframework.data.repository.core.support.ReactiveRepositoryInformationUnitTests
 Running org.springframework.data.repository.core.support.AbstractRepositoryMetadataUnitTests
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.springframework.data.repository.core.support.AbstractRepositoryMetadataUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.springframework.data.repository.core.support.AbstractRepositoryMetadataUnitTests
 Running org.springframework.data.repository.core.support.TransactionRepositoryProxyPostProcessorUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.springframework.data.repository.core.support.TransactionRepositoryProxyPostProcessorUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.springframework.data.repository.core.support.TransactionRepositoryProxyPostProcessorUnitTests
 Running org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests
 Running org.springframework.data.repository.core.support.DefaultRepositoryMetadataUnitTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.repository.core.support.DefaultRepositoryMetadataUnitTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.repository.core.support.DefaultRepositoryMetadataUnitTests
 Running org.springframework.data.repository.core.support.DefaultRepositoryInformationUnitTests
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.springframework.data.repository.core.support.DefaultRepositoryInformationUnitTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.springframework.data.repository.core.support.DefaultRepositoryInformationUnitTests
 Running org.springframework.data.repository.core.support.ReflectionEntityInformationUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.repository.core.support.ReflectionEntityInformationUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.repository.core.support.ReflectionEntityInformationUnitTests
 Running org.springframework.data.repository.core.support.RepositoryFactorySupportUnitTests
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.903 sec - in org.springframework.data.repository.core.support.RepositoryFactorySupportUnitTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.887 sec - in org.springframework.data.repository.core.support.RepositoryFactorySupportUnitTests
 Running org.springframework.data.repository.core.support.TransactionRepositoryFactoryBeanSupportUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.springframework.data.repository.core.support.TransactionRepositoryFactoryBeanSupportUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.springframework.data.repository.core.support.TransactionRepositoryFactoryBeanSupportUnitTests
 Running org.springframework.data.repository.core.support.PersistentEntityInformationUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.repository.core.support.PersistentEntityInformationUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.repository.core.support.PersistentEntityInformationUnitTests
 Running org.springframework.data.repository.core.support.ReactiveWrapperRepositoryFactorySupportUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in org.springframework.data.repository.core.support.ReactiveWrapperRepositoryFactorySupportUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in org.springframework.data.repository.core.support.ReactiveWrapperRepositoryFactorySupportUnitTests
 Running org.springframework.data.repository.core.support.RepositoryCompositionUnitTests
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.springframework.data.repository.core.support.RepositoryCompositionUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.springframework.data.repository.core.support.RepositoryCompositionUnitTests
 Running org.springframework.data.repository.core.support.AbstractEntityInformationUnitTests
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.repository.core.support.AbstractEntityInformationUnitTests
 Running org.springframework.data.repository.core.support.QueryExecutorMethodInterceptorUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in org.springframework.data.repository.core.support.QueryExecutorMethodInterceptorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.springframework.data.repository.core.support.QueryExecutorMethodInterceptorUnitTests
 Running org.springframework.data.repository.core.support.DefaultCrudMethodsUnitTests
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.springframework.data.repository.core.support.DefaultCrudMethodsUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.springframework.data.repository.core.support.DefaultCrudMethodsUnitTests
 Running org.springframework.data.repository.core.support.ExampleSpecificationAccessorUnitTests
 Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.springframework.data.repository.core.support.ExampleSpecificationAccessorUnitTests
 Running org.springframework.data.repository.core.support.CustomAnnotationTransactionAttributeSourceUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.repository.core.support.CustomAnnotationTransactionAttributeSourceUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.repository.core.support.CustomAnnotationTransactionAttributeSourceUnitTests
 Running org.springframework.data.repository.cdi.WebbeansCdiRepositoryExtensionSupportIntegrationTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.118 sec - in org.springframework.data.repository.cdi.WebbeansCdiRepositoryExtensionSupportIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.624 sec - in org.springframework.data.repository.cdi.WebbeansCdiRepositoryExtensionSupportIntegrationTests
 Running org.springframework.data.repository.cdi.CdiRepositoryBeanUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.springframework.data.repository.cdi.CdiRepositoryBeanUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.springframework.data.repository.cdi.CdiRepositoryBeanUnitTests
 Running org.springframework.data.repository.init.ResourceReaderRepositoryInitializerUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 sec - in org.springframework.data.repository.init.ResourceReaderRepositoryInitializerUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in org.springframework.data.repository.init.ResourceReaderRepositoryInitializerUnitTests
 Running org.springframework.data.repository.init.Jackson2ResourceReaderIntegrationTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.springframework.data.repository.init.Jackson2ResourceReaderIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.springframework.data.repository.init.Jackson2ResourceReaderIntegrationTests
 Running org.springframework.data.repository.util.ReactiveWrapperConvertersUnitTests
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.springframework.data.repository.util.ReactiveWrapperConvertersUnitTests
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.springframework.data.repository.util.ReactiveWrapperConvertersUnitTests
 Running org.springframework.data.repository.util.QueryExecutionConvertersUnitTests
-Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in org.springframework.data.repository.util.QueryExecutionConvertersUnitTests
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in org.springframework.data.repository.util.QueryExecutionConvertersUnitTests
 Running org.springframework.data.repository.util.ClassUtilsUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.repository.util.ClassUtilsUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.repository.util.ClassUtilsUnitTests
 Running org.springframework.data.repository.util.ReactiveWrappersUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.repository.util.ReactiveWrappersUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.repository.util.ReactiveWrappersUnitTests
 Running org.springframework.data.repository.support.RepositoriesIntegrationTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.repository.support.RepositoriesIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.springframework.data.repository.support.RepositoriesIntegrationTests
 Running org.springframework.data.repository.support.RepositoriesUnitTests
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.springframework.data.repository.support.RepositoriesUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.springframework.data.repository.support.RepositoriesUnitTests
 Running org.springframework.data.repository.support.DefaultRepositoryInvokerFactoryIntegrationTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.data.repository.support.DefaultRepositoryInvokerFactoryIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.springframework.data.repository.support.DefaultRepositoryInvokerFactoryIntegrationTests
 Running org.springframework.data.repository.support.PageableExecutionUtilsUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.springframework.data.repository.support.PageableExecutionUtilsUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.springframework.data.repository.support.PageableExecutionUtilsUnitTests
 Running org.springframework.data.repository.support.DomainClassConverterUnitTests
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.springframework.data.repository.support.DomainClassConverterUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in org.springframework.data.repository.support.DomainClassConverterUnitTests
 Running org.springframework.data.repository.support.DomainClassConverterIntegrationTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in org.springframework.data.repository.support.DomainClassConverterIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in org.springframework.data.repository.support.DomainClassConverterIntegrationTests
 Running org.springframework.data.repository.support.ReflectionRepositoryInvokerUnitTests
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.springframework.data.repository.support.ReflectionRepositoryInvokerUnitTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.springframework.data.repository.support.ReflectionRepositoryInvokerUnitTests
 Running org.springframework.data.repository.support.PaginginAndSortingRepositoryInvokerUnitTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.springframework.data.repository.support.PaginginAndSortingRepositoryInvokerUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in org.springframework.data.repository.support.PaginginAndSortingRepositoryInvokerUnitTests
 Running org.springframework.data.repository.support.MethodParametersUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.repository.support.MethodParametersUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.repository.support.MethodParametersUnitTests
 Running org.springframework.data.repository.support.AnnotationAttributeUnitTests
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.repository.support.AnnotationAttributeUnitTests
 Running org.springframework.data.repository.support.CrudRepositoryInvokerUnitTests
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.springframework.data.repository.support.CrudRepositoryInvokerUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.springframework.data.repository.support.CrudRepositoryInvokerUnitTests
 Running org.springframework.data.support.PersistableIsNewStrategyUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.support.PersistableIsNewStrategyUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.support.PersistableIsNewStrategyUnitTests
 Running org.springframework.data.support.CachingIsNewStrategyFactoryUnitTests
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.support.CachingIsNewStrategyFactoryUnitTests
 Running org.springframework.data.mapping.PropertyPathUnitTests
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.springframework.data.mapping.PropertyPathUnitTests
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.springframework.data.mapping.PropertyPathUnitTests
 Running org.springframework.data.mapping.PreferredConstructorDiscovererUnitTests
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.mapping.PreferredConstructorDiscovererUnitTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.data.mapping.PreferredConstructorDiscovererUnitTests
 Running org.springframework.data.mapping.SimpleTypeHolderUnitTests
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.mapping.SimpleTypeHolderUnitTests
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.data.mapping.SimpleTypeHolderUnitTests
 Running org.springframework.data.mapping.ParameterUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.mapping.ParameterUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.mapping.ParameterUnitTests
 Running org.springframework.data.mapping.TargetAwareIdentifierAccessorUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.mapping.TargetAwareIdentifierAccessorUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.mapping.TargetAwareIdentifierAccessorUnitTests
 Running org.springframework.data.mapping.PropertyReferenceExceptionUnitTests
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.mapping.PropertyReferenceExceptionUnitTests
 Running org.springframework.data.mapping.MappingMetadataTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.springframework.data.mapping.MappingMetadataTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.mapping.MappingMetadataTests
 Running org.springframework.data.mapping.context.AbstractMappingContextIntegrationTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.464 sec - in org.springframework.data.mapping.context.AbstractMappingContextIntegrationTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.466 sec - in org.springframework.data.mapping.context.AbstractMappingContextIntegrationTests
 Running org.springframework.data.mapping.context.PropertyMatchUnitTests
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.mapping.context.PropertyMatchUnitTests
 Running org.springframework.data.mapping.context.MappingContextIsNewStrategyFactoryUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.springframework.data.mapping.context.MappingContextIsNewStrategyFactoryUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.springframework.data.mapping.context.MappingContextIsNewStrategyFactoryUnitTests
 Running org.springframework.data.mapping.context.AbstractMappingContextUnitTests
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in org.springframework.data.mapping.context.AbstractMappingContextUnitTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in org.springframework.data.mapping.context.AbstractMappingContextUnitTests
 Running org.springframework.data.mapping.context.PersistentEntitiesUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in org.springframework.data.mapping.context.PersistentEntitiesUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in org.springframework.data.mapping.context.PersistentEntitiesUnitTests
 Running org.springframework.data.mapping.context.DefaultPersistenPropertyPathUnitTests
 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.springframework.data.mapping.context.DefaultPersistenPropertyPathUnitTests
 Running org.springframework.data.mapping.context.MappingContextEventUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.springframework.data.mapping.context.MappingContextEventUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.springframework.data.mapping.context.MappingContextEventUnitTests
 Running org.springframework.data.mapping.model.AnnotationBasedPersistentPropertyUnitTests
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in org.springframework.data.mapping.model.AnnotationBasedPersistentPropertyUnitTests
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in org.springframework.data.mapping.model.AnnotationBasedPersistentPropertyUnitTests
 Running org.springframework.data.mapping.model.PreferredConstructorDiscovererUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in org.springframework.data.mapping.model.PreferredConstructorDiscovererUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in org.springframework.data.mapping.model.PreferredConstructorDiscovererUnitTests
 Running org.springframework.data.mapping.model.AbstractPersistentPropertyUnitTests
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.springframework.data.mapping.model.AbstractPersistentPropertyUnitTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.springframework.data.mapping.model.AbstractPersistentPropertyUnitTests
 Running org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryDatatypeTests
-Tests run: 272, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.938 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryDatatypeTests
+Tests run: 272, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.175 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryDatatypeTests
 Running org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests
-Tests run: 432, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.657 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests
+Tests run: 432, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.651 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests
 Running org.springframework.data.mapping.model.IdPropertyIdentifierAccessorUnitTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.mapping.model.IdPropertyIdentifierAccessorUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.mapping.model.IdPropertyIdentifierAccessorUnitTests
 Running org.springframework.data.mapping.model.SpelExpressionParameterProviderUnitTests
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in org.springframework.data.mapping.model.SpelExpressionParameterProviderUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.springframework.data.mapping.model.SpelExpressionParameterProviderUnitTests
 Running org.springframework.data.mapping.model.CamelCaseAbbreviatingFieldNamingStrategyUnitTests
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.mapping.model.CamelCaseAbbreviatingFieldNamingStrategyUnitTests
 Running org.springframework.data.mapping.model.BasicPersistentEntityUnitTests
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.063 sec - in org.springframework.data.mapping.model.BasicPersistentEntityUnitTests
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.047 sec - in org.springframework.data.mapping.model.BasicPersistentEntityUnitTests
 Running org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategyUnitTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategyUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategyUnitTests
 Running org.springframework.data.mapping.model.ConvertingPropertyAccessorUnitTests
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.mapping.model.ConvertingPropertyAccessorUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.mapping.model.ConvertingPropertyAccessorUnitTests
 Running org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryEntityTypeTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryEntityTypeTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryEntityTypeTests
 Running org.springframework.data.mapping.model.PersistentEntityParameterValueProviderUnitTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.springframework.data.mapping.model.PersistentEntityParameterValueProviderUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.springframework.data.mapping.model.PersistentEntityParameterValueProviderUnitTests
 
 Results :
 
-Failed tests: 
-  QueryExecutionResultHandlerUnitTests.convertsIterableIntoStreamable:362 
-Expecting:
-  <[java.lang.Object@597ef918]>
-to be an instance of:
-  <org.springframework.data.util.Streamable>
-but was instance of:
-  <java.util.Arrays.ArrayList>
-
-Tests run: 2201, Failures: 1, Errors: 0, Skipped: 1
+Tests run: 2201, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:22 min
-[INFO] Finished at: 2018-12-10T13:53:35+01:00
-[INFO] Final Memory: 72M/1275M
+[INFO] Total time: 01:23 min
+[INFO] Finished at: 2018-12-10T13:56:43+01:00
+[INFO] Final Memory: 71M/1566M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project spring-data-commons: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/spring-projects/spring-data-commons/277687236/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
