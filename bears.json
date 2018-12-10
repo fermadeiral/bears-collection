@@ -1,0 +1,170 @@
+{
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 238234811,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/238234811",
+      "date": "Jun 1, 2017 9:33:55 AM"
+    },
+    "fixerBuild": {
+      "id": 238235509,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/238235509",
+      "date": "Jun 1, 2017 9:35:46 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 3:38:29 AM",
+    "reproductionDateEnd": "Dec 10, 2018 3:49:52 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 361580648,
+      "totalMemory": 450887680
+    },
+    "totalDuration": 676,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          1,
+          69
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 265,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          265
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/238234811/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 2
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "419d8133ce970465eb018f074d251a7a26562de9",
+      "url": "http://github.com/INRIA/spoon/commit/419d8133ce970465eb018f074d251a7a26562de9",
+      "date": "Jun 1, 2017 9:25:20 AM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "d3a9c911046c1ca36fd193d5f333ed8f8e3e76d7",
+      "url": "http://github.com/INRIA/spoon/commit/d3a9c911046c1ca36fd193d5f333ed8f8e3e76d7",
+      "date": "Jun 1, 2017 9:27:28 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/238234811",
+    "overallMetrics": {
+      "numberRunning": 1095,
+      "numberPassing": 1093,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.prettyprinter.LinesTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.trycatch.TryCatchTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.prettyprinter.LinesTest",
+        "testMethod": "testPrettyPrinterWithLines",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.trycatch.TryCatchTest",
+        "testMethod": "testMultiTryCatchWithCustomExceptions",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[]catch (spoon.test.tr...\u003e but was:\u003c[ ]catch (spoon.test.tr...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 486,
+    "numberTestFiles": 516,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
