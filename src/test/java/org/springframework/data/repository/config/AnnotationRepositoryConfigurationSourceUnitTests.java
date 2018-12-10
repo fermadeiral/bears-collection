@@ -73,8 +73,9 @@ public class AnnotationRepositoryConfigurationSourceUnitTests {
 
 		Streamable<BeanDefinition> candidates = source.getCandidates(new DefaultResourceLoader());
 
-		assertThat(candidates).hasSize(2).extracting("beanClassName").containsOnly(MyRepository.class.getName(),
-				ComposedRepository.class.getName());
+		assertThat(candidates).extracting("beanClassName")
+				.contains(MyRepository.class.getName(), ComposedRepository.class.getName())
+				.doesNotContain(MyOtherRepository.class.getName(), ExcludedRepository.class.getName());
 	}
 
 	@Test // DATACMNS-47

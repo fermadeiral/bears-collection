@@ -40,13 +40,13 @@ import org.springframework.data.repository.query.QueryLookupStrategy.Key;
  * 
  * @author Oliver Gierke
  * @author Jens Schauder
+ * @author Mark Paluch
  */
 @RunWith(MockitoJUnitRunner.class)
 public class DefaultRepositoryConfigurationUnitTests {
 
 	@Mock RepositoryConfigurationSource source;
 
-	BeanDefinition definition = new RootBeanDefinition("com.acme.MyRepository");
 	RepositoryConfigurationExtension extension = new SimplerRepositoryConfigurationExtension("factory", "module");
 
 	@Before
@@ -85,7 +85,12 @@ public class DefaultRepositoryConfigurationUnitTests {
 
 	private DefaultRepositoryConfiguration<RepositoryConfigurationSource> getConfiguration(
 			RepositoryConfigurationSource source) {
-		RootBeanDefinition beanDefinition = createBeanDefinition();
+		return getConfiguration(source, "com.acme.MyRepository");
+	}
+
+	private DefaultRepositoryConfiguration<RepositoryConfigurationSource> getConfiguration(
+			RepositoryConfigurationSource source, String repositoryInterfaceName) {
+		RootBeanDefinition beanDefinition = createBeanDefinition(repositoryInterfaceName);
 		return new DefaultRepositoryConfiguration<>(source, beanDefinition, extension);
 	}
 
@@ -95,9 +100,9 @@ public class DefaultRepositoryConfigurationUnitTests {
 		String repositoryFactoryBeanClassName, modulePrefix;
 	}
 
-	private static RootBeanDefinition createBeanDefinition() {
+	private static RootBeanDefinition createBeanDefinition(String repositoryInterfaceName) {
 
-		RootBeanDefinition beanDefinition = new RootBeanDefinition("com.acme.MyRepository");
+		RootBeanDefinition beanDefinition = new RootBeanDefinition(repositoryInterfaceName);
 
 		ConstructorArgumentValues constructorArgumentValues = new ConstructorArgumentValues();
 		constructorArgumentValues.addGenericArgumentValue(MyRepository.class);
@@ -105,4 +110,6 @@ public class DefaultRepositoryConfigurationUnitTests {
 
 		return beanDefinition;
 	}
+
+	private interface NestedInterface {}
 }
