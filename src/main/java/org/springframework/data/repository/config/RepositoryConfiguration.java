@@ -38,6 +38,14 @@ public interface RepositoryConfiguration<T extends RepositoryConfigurationSource
 	Streamable<String> getBasePackages();
 
 	/**
+	 * Returns the base packages to scan for repository implementations.
+	 *
+	 * @return
+	 * @since 2.0
+	 */
+	Streamable<String> getImplementationBasePackages();
+
+	/**
 	 * Returns the interface name of the repository.
 	 *
 	 * @return

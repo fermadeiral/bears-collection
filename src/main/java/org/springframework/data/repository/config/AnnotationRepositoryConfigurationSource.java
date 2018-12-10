@@ -53,6 +53,7 @@ import org.springframework.util.StringUtils;
  * @author Thomas Darimont
  * @author Peter Rietzler
  * @author Jens Schauder
+ * @author Mark Paluch
  */
 public class AnnotationRepositoryConfigurationSource extends RepositoryConfigurationSourceSupport {
 

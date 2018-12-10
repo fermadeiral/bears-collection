@@ -31,6 +31,7 @@ import org.springframework.lang.Nullable;
  * @author Thomas Darimont
  * @author Peter Rietzler
  * @author Jens Schauder
+ * @author Mark Paluch
  */
 public interface RepositoryConfigurationSource {
 
