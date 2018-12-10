@@ -1,0 +1,151 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 246175274,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/246175274",
+      "date": "Jun 23, 2017 2:18:32 PM"
+    },
+    "fixerBuild": {
+      "id": 246195936,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/246195936",
+      "date": "Jun 23, 2017 3:19:11 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 3:00:25 AM",
+    "reproductionDateEnd": "Dec 10, 2018 3:12:04 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 373699120,
+      "totalMemory": 521142272
+    },
+    "totalDuration": 693,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 75,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          73
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 274,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          274
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/246175274/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 10,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 18,
+      "numberDeleted": 18
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/246175274",
+    "overallMetrics": {
+      "numberRunning": 1129,
+      "numberPassing": 1128,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.api.MetamodelTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.api.MetamodelTest",
+        "testMethod": "testGetterSetterFroRole",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[]\u003e but was:\u003c[@spoon.reflect.annotations.PropertyGetter(role \u003d spoon.reflect.path.CtRole.EXPRESSION)\n\u003cC extends spoon.reflect.declaration.CtCodeSnippet\u003e C setValue(java.lang.String value);]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 492,
+    "numberTestFiles": 560,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "d5fd5f3691accbbc23d794064bc4f7833c04231a",
+      "url": "http://github.com/INRIA/spoon/commit/d5fd5f3691accbbc23d794064bc4f7833c04231a",
+      "date": "Jun 23, 2017 2:10:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "99a84a7499413a45c6f1cbf6df7b37a12b1acb6b",
+      "url": "http://github.com/INRIA/spoon/commit/99a84a7499413a45c6f1cbf6df7b37a12b1acb6b",
+      "date": "Jun 23, 2017 3:10:34 PM"
+    }
+  }
+}
