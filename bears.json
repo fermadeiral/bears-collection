@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 260612138,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/260612138",
+      "date": "Aug 3, 2017 3:49:11 PM"
+    },
+    "fixerBuild": {
+      "id": 265581135,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/265581135",
+      "date": "Aug 17, 2017 3:53:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 3:10:53 PM",
+    "reproductionDateEnd": "Dec 10, 2018 3:23:29 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 268591760,
+      "totalMemory": 403701760
+    },
+    "totalDuration": 749,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 81,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          80
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 299,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          299
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/260612138/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/260612138",
+    "overallMetrics": {
+      "numberRunning": 1150,
+      "numberPassing": 1149,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "spoon.SpoonException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.prettyprinter.DefaultPrettyPrinterTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.prettyprinter.DefaultPrettyPrinterTest",
+        "testMethod": "testIssue1501",
+        "failureName": "spoon.SpoonException",
+        "detail": "spoon.SpoonException: Printing of spoon.support.reflect.code.CtFieldReadImpl on path \n CtPackageImpl:org\n CtPackageImpl:ethack\n CtPackageImpl:orwall\n CtClassImpl:PreferencesActivity\n CtClassImpl:NetworkPrefs\n CtFieldImpl:listener\n CtNewClassImpl\n CtClassImpl:1\n CtMethodImpl:onSharedPreferenceChanged\n CtBlockImpl\n CtIfImpl\n CtBlockImpl\n CtInvocationImpl\n CtFieldReadImpl:PARAM_ACTIVATE\nat position (/root/workspace/INRIA/spoon/260612138/src/test/resources/noclasspath/orwall/PreferencesActivity.java:126) failed",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 509,
+    "numberTestFiles": 574,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "fbf56d6f6628980965c3b2f8eab9ee9db1e3649c",
+      "url": "http://github.com/INRIA/spoon/commit/fbf56d6f6628980965c3b2f8eab9ee9db1e3649c",
+      "date": "Aug 3, 2017 3:39:32 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "27e3d3f895346849555bcd09e47968351dc04b31",
+      "url": "http://github.com/INRIA/spoon/commit/27e3d3f895346849555bcd09e47968351dc04b31",
+      "date": "Aug 17, 2017 3:43:09 PM"
+    }
+  }
+}
