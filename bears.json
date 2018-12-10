@@ -1,0 +1,223 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 247494790,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/247494790",
+      "date": "Jun 27, 2017 2:28:02 PM"
+    },
+    "fixerBuild": {
+      "id": 247495563,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/247495563",
+      "date": "Jun 27, 2017 2:31:07 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 2:48:15 AM",
+    "reproductionDateEnd": "Dec 10, 2018 2:59:59 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 342902560,
+      "totalMemory": 491782144
+    },
+    "totalDuration": 699,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 74,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          71
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 273,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          273
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/247494790/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 134,
+      "numberDeleted": 156
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/247494790",
+    "overallMetrics": {
+      "numberRunning": 1130,
+      "numberPassing": 1124,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 5
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.filters.FilterTest",
+        "numberRunning": 40,
+        "numberPassing": 39,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.reference.TypeReferenceTest",
+        "numberRunning": 26,
+        "numberPassing": 25,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.annotation.AnnotationValuesTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.annotation.AnnotationTest",
+        "numberRunning": 41,
+        "numberPassing": 39,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.arrays.ArraysTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.reference.TypeReferenceTest",
+        "testMethod": "testAnnotationOnMethodWithPrimitiveReturnTypeInNoClasspath",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c@java.lang.Override[]\u003e but was:\u003c@java.lang.Override[\n]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.annotation.AnnotationTest",
+        "testMethod": "testWritingAnnotParamArray",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...sed\" , \"rawtypes\" })[]\u003e but was:\u003c...sed\" , \"rawtypes\" })[\n]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.annotation.AnnotationValuesTest",
+        "testMethod": "testAnnotationPrintAnnotation",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...SpecTest.AnnotationA[, q \u003d @com.squareup.javapoet.AnnotationSpecTest.AnnotationC(value \u003d \"bar\")], r \u003d { java.lang.Fl...\u003e but was:\u003c...SpecTest.AnnotationA[\n, q \u003d @com.squareup.javapoet.AnnotationSpecTest.AnnotationC(value \u003d \"bar\")\n], r \u003d { java.lang.Fl...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.filters.FilterTest",
+        "testMethod": "testFilters",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c4\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.arrays.ArraysTest",
+        "testMethod": "testArrayReferences",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...otation(integer \u003d 1)[]\u003e but was:\u003c...otation(integer \u003d 1)[\n]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "spoon.test.annotation.AnnotationTest",
+        "testMethod": "testUsageOfParametersInTypeAnnotation",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "array of complexes parameters in type annotation expected:\u003c...nerAnnot(value \u003d \"\")[], values \u003d { @spoon....\u003e but was:\u003c...nerAnnot(value \u003d \"\")[\n], values \u003d { @spoon....\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 493,
+    "numberTestFiles": 560,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "98589fb4ffb46885d4ff4ba5fdcd376f5549bf08",
+      "url": "http://github.com/INRIA/spoon/commit/98589fb4ffb46885d4ff4ba5fdcd376f5549bf08",
+      "date": "Jun 27, 2017 2:19:32 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "80085ccca9669deebfcc8e5dc177560954dbeb04",
+      "url": "http://github.com/INRIA/spoon/commit/80085ccca9669deebfcc8e5dc177560954dbeb04",
+      "date": "Jun 27, 2017 2:21:57 PM"
+    }
+  }
+}
