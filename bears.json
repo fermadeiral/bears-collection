@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 323136554,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/323136554",
+      "date": "Dec 30, 2017 12:01:42 PM"
+    },
+    "fixerBuild": {
+      "id": 323139351,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/323139351",
+      "date": "Dec 30, 2017 12:22:15 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 11, 2018 12:34:53 AM",
+    "reproductionDateEnd": "Dec 11, 2018 12:43:11 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 303361616,
+      "totalMemory": 480247808
+    },
+    "totalDuration": 491,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 210,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          207
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 86,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          86
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/323136554/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 4
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "2.0.x",
+      "sha": "d05312327a8f82a7b39bb3f54532c1871517fe12",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/d05312327a8f82a7b39bb3f54532c1871517fe12",
+      "date": "Dec 30, 2017 11:34:51 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "2.0.x",
+      "sha": "c93e647eebe7e8f8072e8032de10117c982bb38a",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/c93e647eebe7e8f8072e8032de10117c982bb38a",
+      "date": "Dec 30, 2017 12:14:01 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/323136554",
+    "overallMetrics": {
+      "numberRunning": 2321,
+      "numberPassing": 2320,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.web.PagedResourcesAssemblerUnitTests",
+        "numberRunning": 19,
+        "numberPassing": 18,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.web.PagedResourcesAssemblerUnitTests",
+        "testMethod": "createsPaginationLinksForOneIndexedArgumentResolverCorrectly",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[2]L\u003e but was:\u003c[1]L\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 422,
+    "numberTestFiles": 263,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
