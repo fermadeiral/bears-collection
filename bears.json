@@ -1,0 +1,208 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "traccar/traccar",
+    "githubId": 4038949,
+    "url": "https://github.com/traccar/traccar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 3373
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 256060936,
+      "url": "http://travis-ci.org/traccar/traccar/builds/256060936",
+      "date": "Jul 21, 2017 3:45:57 PM"
+    },
+    "fixerBuild": {
+      "id": 256303106,
+      "url": "http://travis-ci.org/traccar/traccar/builds/256303106",
+      "date": "Jul 22, 2017 8:19:49 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 1:17:41 PM",
+    "reproductionDateEnd": "Dec 10, 2018 1:21:46 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 194844576,
+      "totalMemory": 403701760
+    },
+    "totalDuration": 237,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 121,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8,
+          0,
+          0,
+          4,
+          109
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/traccar/traccar/256060936/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 13,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 245,
+      "numberDeleted": 383
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "f64448bc3e969f7892435d7e5a8382cf25ff8c39",
+      "url": "http://github.com/traccar/traccar/commit/f64448bc3e969f7892435d7e5a8382cf25ff8c39",
+      "date": "Jul 21, 2017 3:41:49 PM"
+    },
+    "fixerBuild": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "dcb9e51e678b9c9f6bfa906097e1d1c2384fdba9",
+      "url": "http://github.com/traccar/traccar/commit/dcb9e51e678b9c9f6bfa906097e1d1c2384fdba9",
+      "date": "Jul 22, 2017 8:16:14 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Abyss777/traccar",
+      "branchName": "refactor_managers",
+      "sha": "5a65c0d6be8ffc2db0ffdb0c35ecedfb2b3750c7",
+      "url": "https://github.com/Abyss777/traccar/commit/5a65c0d6be8ffc2db0ffdb0c35ecedfb2b3750c7",
+      "date": "Jul 23, 2017 6:15:38 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "d7d66e3b724cde1a681e5e7f24e930d2bddfe703",
+      "url": "https://github.com/traccar/traccar/commit/d7d66e3b724cde1a681e5e7f24e930d2bddfe703",
+      "date": "Jul 19, 2017 9:35:52 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Abyss777/traccar",
+      "branchName": "refactor_managers",
+      "sha": "5a65c0d6be8ffc2db0ffdb0c35ecedfb2b3750c7",
+      "url": "https://github.com/Abyss777/traccar/commit/5a65c0d6be8ffc2db0ffdb0c35ecedfb2b3750c7",
+      "date": "Jul 23, 2017 6:15:38 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "traccar/traccar",
+      "branchName": "master",
+      "sha": "d7d66e3b724cde1a681e5e7f24e930d2bddfe703",
+      "url": "https://github.com/traccar/traccar/commit/d7d66e3b724cde1a681e5e7f24e930d2bddfe703",
+      "date": "Jul 19, 2017 9:35:52 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/traccar/traccar/256060936",
+    "overallMetrics": {
+      "numberRunning": 264,
+      "numberPassing": 261,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 6,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.traccar.protocol.Gl200BinaryProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.traccar.protocol.Gt06ProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.traccar.protocol.CastelProtocolDecoderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.traccar.protocol.Gl200BinaryProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "position is null",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.CastelProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "list is null",
+        "isError": false
+      },
+      {
+        "testClass": "org.traccar.protocol.Gt06ProtocolDecoderTest",
+        "testMethod": "testDecode",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 538,
+    "numberTestFiles": 229,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  }
+}
