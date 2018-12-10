@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 240714544,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/240714544",
+      "date": "Jun 8, 2017 11:46:59 AM"
+    },
+    "fixerBuild": {
+      "id": 241322094,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/241322094",
+      "date": "Jun 9, 2017 9:30:15 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 10, 2018 2:28:30 AM",
+    "reproductionDateEnd": "Dec 10, 2018 2:34:19 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 314685336,
+      "totalMemory": 427819008
+    },
+    "totalDuration": 342,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 155,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          154
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 53,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          53
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/240714544/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/240714544",
+    "overallMetrics": {
+      "numberRunning": 2028,
+      "numberPassing": 2027,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.springframework.core.convert.ConversionFailedException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "numberRunning": 29,
+        "numberPassing": 28,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "convertsValueToVavrOption",
+        "failureName": "org.springframework.core.convert.ConversionFailedException",
+        "detail": "Failed to convert from type [org.springframework.data.repository.util.NullableWrapper] to type [io.vavr.control.Option\u003c?\u003e] for value \u0027org.springframework.data.repository.util.NullableWrapper@433ae0b0\u0027; nested exception is java.lang.IllegalArgumentException: wrong number of arguments",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 379,
+    "numberTestFiles": 233,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "0398bdd22f56aebc8fc05aa498873fc0b2407435",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/0398bdd22f56aebc8fc05aa498873fc0b2407435",
+      "date": "Jun 8, 2017 11:26:19 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "e1761f6c8c1f1189144427785b590823134d1cf4",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/e1761f6c8c1f1189144427785b590823134d1cf4",
+      "date": "Jun 9, 2017 9:24:08 PM"
+    }
+  },
+  "type": "passing_passing"
+}
