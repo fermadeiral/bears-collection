@@ -1,0 +1,188 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 291985323,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/291985323",
+      "date": "Oct 24, 2017 11:40:57 AM"
+    },
+    "fixerBuild": {
+      "id": 292483458,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/292483458",
+      "date": "Oct 25, 2017 9:40:29 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 11, 2018 12:52:36 AM",
+    "reproductionDateEnd": "Dec 11, 2018 12:58:35 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 289010664,
+      "totalMemory": 425197568
+    },
+    "totalDuration": 352,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 159,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          157
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 54,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          54
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/291985323/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 8
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/291985323",
+    "overallMetrics": {
+      "numberRunning": 2124,
+      "numberPassing": 2118,
+      "numberFailing": 0,
+      "numberErroring": 6,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 3
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "numberRunning": 510,
+        "numberPassing": 504,
+        "numberFailing": 0,
+        "numberErroring": 6,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "accessorShouldDeclareConstructor[Class in default package]",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "setPropertyShouldFailOnUnhandledProperty[Class in default package]",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.UnsupportedOperationException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "shouldUseClassPropertyAccessorFactory[Class in default package]",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "shouldFailOnNullBean[Class in default package]",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "getPropertyShouldFailOnUnhandledProperty[Class in default package]",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.UnsupportedOperationException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests",
+        "testMethod": "shouldSupportGeneratedPropertyAccessors[Class in default package]",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 379,
+    "numberTestFiles": 237,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "d0d0d72c980fc5b5bde949ae051b433f8daf5c9f",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/d0d0d72c980fc5b5bde949ae051b433f8daf5c9f",
+      "date": "Oct 12, 2017 6:19:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "14a56dee00c1651573c41b601b653c88af3a3c69",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/14a56dee00c1651573c41b601b653c88af3a3c69",
+      "date": "Oct 25, 2017 9:36:43 AM"
+    }
+  },
+  "type": "passing_passing"
+}
