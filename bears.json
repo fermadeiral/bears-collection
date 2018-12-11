@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 286617333,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/286617333",
+      "date": "Oct 11, 2017 7:08:01 PM"
+    },
+    "fixerBuild": {
+      "id": 287128429,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/287128429",
+      "date": "Oct 12, 2017 6:24:57 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Dec 11, 2018 1:03:10 AM",
+    "reproductionDateEnd": "Dec 11, 2018 1:09:04 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 303869256,
+      "totalMemory": 501219328
+    },
+    "totalDuration": 348,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 158,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          156
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 52,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          52
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/286617333/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 72,
+      "numberDeleted": 46
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/286617333",
+    "overallMetrics": {
+      "numberRunning": 2046,
+      "numberPassing": 2045,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.util.ParameterizedTypeInformationUnitTests",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.util.ParameterizedTypeInformationUnitTests",
+        "testMethod": "detectsNestedGenerics",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is type \u003c org.springframework.data.util.ParameterizedTypeInformationUnitTests$MyEnum\n     but: \"java.lang.Object\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 379,
+    "numberTestFiles": 237,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "91fd1a4cafffc22530d11713044e8fdad64d8106",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/91fd1a4cafffc22530d11713044e8fdad64d8106",
+      "date": "Oct 11, 2017 7:00:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "d0d0d72c980fc5b5bde949ae051b433f8daf5c9f",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/d0d0d72c980fc5b5bde949ae051b433f8daf5c9f",
+      "date": "Oct 12, 2017 6:19:15 PM"
+    }
+  },
+  "type": "passing_passing"
+}
